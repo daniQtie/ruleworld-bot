@@ -133,17 +133,19 @@ def ask(text, key, first=None):
     import time
     import urllib.error
     last = None
-    for m in ([first] if first else []) + [x for x in MODELS if x != first]:
-        for wait in (0, 20):
-            time.sleep(wait)
-            try:
-                return call_gemini(text, key, m)
-            except urllib.error.HTTPError as e:
-                last = f"{m}: HTTP {e.code}"
-                if e.code not in (429, 500, 503):
-                    break
-            except (json.JSONDecodeError, KeyError) as e:
-                last = f"{m}: bad reply {e}"
+    for rnd in (0, 60, 180):   # whole-list retries: Gemini's free tier is often busy for a few minutes (503 on every model)
+        time.sleep(rnd)
+        for m in ([first] if first else []) + [x for x in MODELS if x != first]:
+            for wait in (0, 20):
+                time.sleep(wait)
+                try:
+                    return call_gemini(text, key, m)
+                except urllib.error.HTTPError as e:
+                    last = f"{m}: HTTP {e.code}"
+                    if e.code not in (429, 500, 503):
+                        break
+                except (json.JSONDecodeError, KeyError) as e:
+                    last = f"{m}: bad reply {e}"
     raise RuntimeError(f"all Gemini models failed (last: {last})")
 
 
