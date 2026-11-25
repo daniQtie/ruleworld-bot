@@ -1,0 +1,95 @@
+{
+  "id": "2026-11-18-gta-every-second",
+  "version": 3,
+  "topic": "money",
+  "outfit": "money",
+  "title_yt": "What If You Got Paid for Every GTA 5 Sale? #Shorts",
+  "title_fb": "What if you got paid for every GTA 5 sale?",
+  "hook": "What if you got paid for every G, T, A five sale?",
+  "open_loop": "Frame 0 bubble 'HOW MUCH?!' plants how much per second; line 3 gives the per-second answer, and the biggest number (about $333 million by tomorrow) is held until line 6. Line 7 turns it into a spend-or-save dilemma.",
+  "payoff": "One day of GTA 5's estimated sales is about $333 million.",
+  "ending": "choice",
+  "lines": [
+    {
+      "text": "What if you got paid for *every *GTA *5 sale?",
+      "say": "What if you got paid for every G, T, A five sale?",
+      "beat": "hook",
+      "visual": "Frame 0: Benny (money outfit) in a delivery cap holds a pizza box, smug; a big generic cash register with a gold '$ PER SECOND' counter at $0 and a wall clock sits beside him. Plain white outlined text 'GTA 5' (no logo). Bubble 'HOW MUCH?!' on 'every'. Snap-zoom on 'sale'.",
+      "on_screen": "PAID PER SALE"
+    },
+    {
+      "text": "It sold *about *one *billion dollars in three days.",
+      "say": "It sold about one billion dollars in three days.",
+      "beat": "stakes",
+      "visual": "Badge 'ESTIMATED SALES'; stamp '3 DAYS'; counter climbs to $1 BILLION; Benny gasps, pizza box flies up; cash rains from the register.",
+      "on_screen": "$1B IN 3 DAYS"
+    },
+    {
+      "text": "So you would get *almost *four thousand dollars every second.",
+      "say": "So you would get almost four thousand dollars every second.",
+      "beat": "escalate",
+      "visual": "Tick sfx each second; each tick the register fires a cash stack and a '+$3,858' badge; cash piles up and buries Benny to his eyes with a coin on his head; thud sfx; Benny shocked then happy.",
+      "on_screen": "ABOUT $3,858 A SECOND"
+    },
+    {
+      "text": "You *quit your delivery job.",
+      "say": "You quit your delivery job.",
+      "beat": "escalate",
+      "visual": "Benny digs out, throws his cap, slams stamp 'QUIT' on the pizza box; hero pose, shades on, smug, flips a coin.",
+      "on_screen": "I QUIT!"
+    },
+    {
+      "text": "Your friend asks for a *loan.",
+      "say": "Your friend asks for a loan.",
+      "beat": "twist",
+      "visual": "The hooded stranger runs in, begs with bubble 'LOAN?!' and empty pockets (broke expression); Benny crosses his arms and shrugs, then slides him one coin; stranger slumps.",
+      "on_screen": "LOAN?!"
+    },
+    {
+      "text": "By tomorrow, you would have *about *three *hundred *thirty *million dollars.",
+      "say": "By tomorrow, you would have about three hundred thirty million dollars.",
+      "beat": "payoff",
+      "visual": "Hard cut with flash; calendar flips one day; gold counter races up to $333,000,000 with 'ABOUT' and 'IN ONE DAY'; coin rain and confetti; Benny buried again, shocked, then laughing. Small badge 'NOT FINANCIAL ADVICE'.",
+      "on_screen": "$333 MILLION A DAY"
+    },
+    {
+      "text": "Spend it all, or *save it? Comment *A or *B.",
+      "say": "Spend it all, or save it? Comment A or B.",
+      "beat": "ending",
+      "visual": "Benny points at viewer, thinking; list rows 'A: SPEND IT ALL' and 'B: SAVE IT'; stranger shrugs on the other side; gold headline 'COMMENT A OR B'. Hard cut after the last word (tail ~0.3 s).",
+      "on_screen": "A OR B?"
+    }
+  ],
+  "facts_used": [
+    {
+      "claim": "GTA 5 sold over $1 billion in its first 3 days (retail sales estimate).",
+      "source_url": "https://www.engadget.com/2013-09-20-grand-theft-auto-5-sales-surpass-1-billion.html"
+    },
+    {
+      "claim": "Same $1B in 3 days figure.",
+      "source_url": "https://shacknews.com/article/81231/grand-theft-auto-5-hits-1-billion-sets-new-record"
+    }
+  ],
+  "math_check": "Python: $1,000,000,000 / 3 = $333,333,333 per day ('about three hundred thirty million'); / 86,400 = $3,858.02 per second ('almost four thousand', exact $3,858 on screen). Revenue (retail sales), not profit: wording is 'sold' / 'sales' plus an ESTIMATED SALES badge.",
+  "est_seconds": 27,
+  "est_seconds_at_0.9_speed": 30,
+  "word_count": 63,
+  "longest_sentence_words": 12,
+  "word_count_note": "Counted on 'say' (G, T, A five = 4 words). Seven spoken lines; the video-generator should split into 8-10 scenes at word anchors (e.g. line 3 into 'ticks' and 'buried', line 6 into calendar flip and counter).",
+  "ip_notes": "'GTA 5' is plain topic text only. No Rockstar characters, logos, lettering, footage, art or music; register is a generic cartoon prop.",
+  "upload": {
+    "title": "What If You Got Paid for Every GTA 5 Sale?",
+    "description": "Imagine every GTA 5 sale landing in your bank account. 💰\nWould you spend it all, or save it? Comment A or B!\nBy sales estimates, GTA 5 sold over $1 billion in its first 3 days. That is about $3,858 every second, or about $333 million a day.\nNot financial advice. Estimated retail sales (not profit). Source: Engadget, Shacknews.\n#gta5 #gtav #gaming #money #Shorts",
+    "tags": [
+      "gta 5 sales record",
+      "gta 5 sales",
+      "how much money did gta 5 make",
+      "gta 5 money per second",
+      "gta 5 first 3 days",
+      "gaming facts",
+      "video game sales",
+      "gta 5 sold 1 billion"
+    ]
+  },
+  "changes_from_previous": "(1) One premise, no switch: dropped the 'one second a day' rule, the $1.4M and $1M numbers, and the invented $10,000 car. (2) Narration is a story: quit your delivery job, friend asks for a loan; numbers only in lines 2, 3 and 6 (about one per two lines). (3) Biggest number last: about $333 million by tomorrow is the held payoff, after the per-second figure. (4) Plainer hook: 'What if you got paid for every G, T, A five sale?' (12 words). (5) Length cut from 73 to the count above (about 30 s at 2.1 words/s). (6) New foil: pizza delivery job instead of the lemonade stand (original, not echoing test #1). (7) Ending is a values split (spend it all vs save it), tied to the money in the payoff, instead of a lopsided math comparison. (8) Upload: removed 'gta 6 vs gta 5' and #gta6 (video does not mention GTA 6), added 'gta 5 money per second', kept 'Not financial advice.', description line 1 is a new hook."
+}

@@ -1,0 +1,25 @@
+{
+  "pass": true,
+  "average": 8.0,
+  "scores": {"hook": 8, "stakes": 8, "open_loop": 8, "escalation": 8, "payoff": 8, "surprise": 7, "ending": 8, "clarity": 8, "facts": 8, "originality": 9, "entertainment": 8},
+  "hard_gates": {"what_if_opener": true, "benny_in_story": true, "length_25_35s": true, "english_clear": true},
+  "verdict_reason": "All 4 gates pass, no item below 7, average 88/11 = 8.0. A narrow pass. Weakest: surprise (7) and length margin (75 spoken words, at the cap).",
+  "v2_fixes_check": "All landed: sixteen dollars is now spoken; heavy-jar line cut and the gag moved to the start of the jar scene; friend tied to the payoff (wants the game, has no money, begs for two cents); line 4 has a hard cut, '13 YEARS LATER' stamp, coin pile and aged friend; stray authoring note and 'jar prop scale' removed; scene 8 simplified; no friend-as-cashier; badge now 'ABOUT $16 LEFT'; snap-zoom on 'two cents a day'.",
+  "checks": {
+    "math": "Recomputed with .venv/Scripts/python: 2013-09-17 to 2026-11-19 = 4,811 days; x $0.02 = $96.22; minus $79.99 = $16.23; 1 cent/day = $48.11. Correct. Speech 'ninety-six' is a safe round-down, 'sixteen left' matches. Caveat: Sept 17, 2013 is inferred from a Sept 20 article, not stated on a page; speech says only 'since 2013' and no date is shown, so acceptable. $79.99 comes from a secondary news source.",
+    "word_count": "Spoken (say) words = 75 by my count (the file says 74), at the top of the 55-75 window. At am_liam 0.9 (about 2.2-2.3 w/s) that is about 32-34 s, still inside 35 s but with no slack; 'G T A six' spelled out is slow. Do not add a word. 10 scenes, on-screen text all <= 5 words, no ph/Taglish.",
+    "clarity": "Every line is a complete plain sentence and <= 12 words except the hook (17 spoken, owner-approved). A non-native listener follows it on one listen; 'G T A six' x2 is the only risk (TTS may blur the letters).",
+    "hype": "Strong fit for release day: GTA 6 named in the first 3 s and again at the 'comes out' beat; present tense is true only on Nov 19, 2026. Hold and post on Nov 19 (today is Nov 17). The '2 cents a day' number is the shareable hook.",
+    "ip": "Clean. 'GTA 6' only as plain white outlined text and speech; blank generic game box; plain counter; no Rockstar characters, logos, lettering, footage, art style or music. 'NOT FINANCIAL ADVICE' badge plus description note; hypothetical, no guaranteed outcome.",
+    "drawability": "Feasible with docs/scene-format.md: headline, badge, stamp, bubble, counter (prefix/suffix), coin props, confetti, stranger cast with flip, and the new jar item. Risks: scene 7 packs heavy-jar gag, SMASH stamp, coin rain and counter into one ~2 s line, so keep the counter climbing for at least 1 s; 'SMASH!' stamp without a jar-break action may read oddly, so cut it if the jar item has no break; scene 1 stacks zoom, badge and headline in about 4 s, so check readability; 'ABOUT $16 LEFT' counter text must fit on screen with the NOT FINANCIAL ADVICE badge."
+  },
+  "fixes": [
+    "Hook (8) / clarity (8), line 1: 17 spoken words take about 7 s, with 'G T A six' landing last. Allowed by the owner, but test am_liam on 'G T A six' before rendering. If the TTS blurs it, say 'Grand Theft Auto six' only if the word count allows (it does not), so keep the letters spaced.",
+    "Surprise (7), lines 6-7: the answer 'two cents buys the game' is already promised in the hook, so the jar total is confirmation, not a shock. Keep the viewer doubting: in scene 2-3 show the coin as tiny and the jar nearly empty, and have the 'TOO SMALL' bubble land harder (a visible 'LOL' laugh) so the pile in scene 4 and $96.22 in scene 7 feel like a reversal.",
+    "Escalation (8), line 4: 'You keep going for thirteen years.' still restates the hook span in speech. The cut, stamp, pile and aged friend carry it visually; make sure the aged-friend gag ('MY BACK!') lands in the first 1 s.",
+    "Payoff / ending (8), lines 8-9: the final A/B question follows sixteen dollars left quickly, which is good, but 'spend it all' has no concrete image. In the visual, show B as a pile of coins vanishing so the choice is funny, not abstract.",
+    "Length (format): 75 words is at the cap. Do not add anything; if the render runs over 35 s, cut 'So you start a jar.' to a visual-only beat.",
+    "Facts (8): keep Sept 17 off screen (as planned). Prefer a second source for the $79.99 price if one is available on release day.",
+    "Posting: publish on Nov 19, 2026 (release day) with the description 'Not financial advice. Hypothetical example.' and hashtags #gta6 #savingmoney #money."
+  ]
+}

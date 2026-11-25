@@ -1,0 +1,22 @@
+{"pass": false, "average": 7.92,
+ "scores": {"hook": 9, "world_rule": 7, "characters": 7, "escalation": 8, "reveal": 8, "ending": 8, "clarity": 9, "visual": 8, "consistency": 8, "originality": 8, "retention": 8, "performance": 8, "dialogue": 7},
+ "hard_gates": {"rotation": true, "structure": true, "original": true, "length": true, "english_clear": true, "producible": true, "kit_story_blockers": true, "voice_tags_safe": true, "title_first_ruleR": true},
+ "gate_notes": {
+  "rotation": "Owner-directed, exempt.",
+  "length": "156 words, est. 36.2 s incl. 2 s tail. Inside the owner exception (25-180 s). Not padded.",
+  "original": "Same skeleton and moral, new people (Maya/Ellie/Theo/Mr. Reed), new vote rule (who you'd want beside you on a bad day) and a materially new reveal (hallway flashback, Ellie sat silently with Theo). No word-for-word lines. Closest beats, skeleton-level only: line 3 (expected winner), line 5 (eats alone), lines 8-9 (laugh/prank/recount all real), line 11 (one person stands up). Wording differs, so not too close; PASS with a warning.",
+  "voice_tags_safe": "All tags documented s1 basic emotions/tones, none from unsafe_tags. (moved) and (frustrated) are untested for leaks; the Whisper leak check must cover them.",
+  "title_first_ruleR": "Line 1 text equals the upload title minus ' #Shorts'.",
+  "rule_Q": "Speeds 0.82-0.96 (none under 0.75), sad/tender at 0.82, pauses 0.2-0.5 (max 0.5). Shock lines louder (l7 +4, l11 +3), sad/tender -3. OK."
+ },
+ "story_logic": "Rule 'vote for who you'd want beside you on a bad day' is the setup, the flashback (Ellie sat silently beside crying Theo) is exactly that behaviour, so the win is earned and the hook is paid off. Escalation silence > win > laugh/prank > recount > Maya stunned > Theo stands > flashback > hands > landing is clean. Weakness: the 'hands up' payoff is told ('She had done the same for all of them') rather than shown with specifics, and Ellie's lonely-library life is not reconciled with her sitting beside a stranger in a hallway.",
+ "fixes": [
+  "Line 8: tag (happy) for 'Someone laughed' mismatches the mocking beat (emotion 'mocking'). Use (sarcastic) or no mood tag, keep volume 0.",
+  "Line 2 vs lines 12/14: narrator says 'Our class' (a classmate POV) yet describes 'a boy at the back' and Ellie's private lunches in the third person, and Adam also voices Theo. Change 'Our class' to 'The class' for consistent POV.",
+  "Line 14: 'other hands went up' is ambiguous (hands for what?). Make the action visible and specific in the shot, e.g. several named kids stand and one nods as Ellie helped each; add a one-line concrete proof, as the generic claim is the weakest part of the payoff.",
+  "Line 5 to line 12: bridge the gap between 'lonely in the library' and Ellie noticing Theo in the hallway (a shot of her passing with a book, stopping) so her kindness reads as habit, not a one-off. Shot-only fix is enough.",
+  "Line 3, 5, 8-9: skeleton phrases sit close to the competitor beats. Optional hardening: line 3 'Maya, the class president, was sure she'd win'; line 5 give a specific detail (library table by the window, same corner seat); line 9 change recount detail.",
+  "Line 11: narrator VO at volume +3 for 'Maya stared at the paper, speechless' is a quiet reaction; use volume +1 so line 7 stays the loudest shock.",
+  "Line 15: 16 words in one line; split into two lines (the 'counting' landing and the moral) so each carries one idea, pause 0.4 between.",
+  "Characters: Maya has no motive beyond 'expected winner'; give her one line of reaction (e.g. a short 'Wait, what?') to show her stakes. Theo's name is never spoken, so the audience cannot track him."
+ ]}

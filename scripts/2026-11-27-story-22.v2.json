@@ -1,0 +1,508 @@
+{
+ "id": "2026-11-27-story-22",
+ "version": 2,
+ "source": "Claude, new hook/logic/twist method; owner approved the text drafts 2026-11-25 (scripts/drafts-2026-11-25-new-method.md); v2 per owner revision 2026-11-25 (Rule AE: explicit twist, backstory, resolution, longer)",
+ "hook_type": {
+  "number": null,
+  "name": "new method (owner-approved drafts, exempt from rotation)"
+ },
+ "format": {
+  "number": null,
+  "name": "Story with a fair twist"
+ },
+ "title_working": "The Team With Nobody On It",
+ "hook_text": "WHY IS THAT GOAL EMPTY?",
+ "hook_until": 2.6,
+ "music": "tender",
+ "music_gain": 0.13,
+ "world_rule": "The Team With Nobody On It",
+ "lines": [
+  {
+   "text": "Every day at recess, Leo picks the same team. The one with nobody on it.",
+   "say": "(confident) Every day at recess, Leo picks the same team. The one with nobody on it.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "set": "soccer",
+    "cast": [
+     "Leo"
+    ],
+    "face": "determined",
+    "action": "still",
+    "prop": {
+     "type": "goal"
+    },
+    "camera": "drone",
+    "tag": {
+     "name": "Leo",
+     "role": "always loses"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "He plays soccer alone against the whole class. And he loses. Every single day.",
+   "say": "(happy) He plays soccer alone against the whole class. And he loses. Every single day.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Leo",
+     "Rex",
+     "Zoe",
+     "Marcus"
+    ],
+    "face": "determined",
+    "action": "run",
+    "camera": "follow"
+   },
+   "acting": {}
+  },
+  {
+   "text": "When Rex asked why, Leo pointed at the empty goal. That spot is taken.",
+   "say": "(serious) When Rex asked why, Leo pointed at the empty goal. That spot is taken.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "cast": [
+     "Leo",
+     "Rex"
+    ],
+    "face": "determined",
+    "action": "point",
+    "prop": {
+     "type": "goal"
+    },
+    "camera": "push",
+    "tag": {
+     "name": "Rex",
+     "role": "class captain"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "Kids laughed. They called him Leo the Loser.",
+   "say": "(sad) Kids laughed. They called him Leo the Loser.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "cast": [
+     "Rex",
+     "Zoe",
+     "Marcus"
+    ],
+    "face": "laugh",
+    "action": "point",
+    "camera": "low"
+   },
+   "acting": {}
+  },
+  {
+   "text": "For a whole year, nobody stood in that goal. Leo never let anyone take it.",
+   "say": "(sad) For a whole year, nobody stood in that goal. Leo never let anyone take it.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "cast": [
+     "Leo"
+    ],
+    "face": "sad",
+    "action": "still",
+    "prop": {
+     "type": "goal"
+    },
+    "camera": "wide",
+    "time": "sunset",
+    "mood": "sad"
+   },
+   "acting": {}
+  },
+  {
+   "text": "What nobody knew was why.",
+   "say": "(serious) What nobody knew was why.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "time": "day",
+    "cast": [
+     "Leo"
+    ],
+    "face": "sad",
+    "action": "still",
+    "camera": "close",
+    "mood": "sad"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Last year, Leo's best friend Ollie was the best goalie in school.",
+   "say": "(happy) Last year, Leo's best friend Ollie was the best goalie in school.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Ollie",
+     "Leo"
+    ],
+    "face": "laugh",
+    "action": "cheer",
+    "prop": {
+     "type": "goal"
+    },
+    "camera": "pull",
+    "mood": "win",
+    "tag": {
+     "name": "Ollie",
+     "role": "best friend"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "Then Ollie was hurt in a car accident. The doctors said he might never come back to school.",
+   "say": "(sad) Then Ollie was hurt in a car accident. The doctors said he might never come back to school.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "set": "house",
+    "time": "day",
+    "cast": [
+     "Ollie"
+    ],
+    "face": "sad",
+    "action": "wheelchair",
+    "camera": "high",
+    "mood": "sad"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Before Ollie moved away, Leo made him a promise. Your spot is waiting. I'll keep it until you come back.",
+   "say": "(soft tone) Before Ollie moved away, Leo made him a promise. Your spot is waiting. I'll keep it until you come back.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "cast": [
+     "Leo",
+     "Ollie"
+    ],
+    "face": "determined",
+    "action": "talk",
+    "camera": "push",
+    "mood": "sad"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So every day, Leo played alone. Two hundred games. Two hundred losses.",
+   "say": "(serious) So every day, Leo played alone. Two hundred games. Two hundred losses.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "soccer",
+    "time": "day",
+    "cast": [
+     "Leo"
+    ],
+    "face": "determined",
+    "action": "run",
+    "prop": {
+     "type": "sign",
+     "text": "0 - 200"
+    },
+    "camera": "follow"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Then one Monday, a boy in a wheelchair rolled onto the field.",
+   "say": "(happy) Then one Monday, a boy in a wheelchair rolled onto the field.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Ollie"
+    ],
+    "face": "happy",
+    "action": "wheelchair",
+    "camera": "low",
+    "trans": "flash"
+   },
+   "acting": {},
+   "card": "Monday"
+  },
+  {
+   "text": "Leo dropped the ball and ran. Ollie! You're back!",
+   "say": "(happy) Leo dropped the ball and ran. Ollie! You're back!",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Leo",
+     "Ollie"
+    ],
+    "face": "laugh",
+    "action": "run",
+    "camera": "follow"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Ollie looked at the empty goal. You really kept it for me?",
+   "say": "(sad) Ollie looked at the empty goal. You really kept it for me?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "cast": [
+     "Ollie",
+     "Leo"
+    ],
+    "face": "sob",
+    "action": "wheelchair",
+    "prop": {
+     "type": "goal"
+    },
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Leo smiled. Every single day.",
+   "say": "(happy) Leo smiled. Every single day.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Leo",
+     "Ollie"
+    ],
+    "face": "happy",
+    "action": "agree",
+    "camera": "close"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Rex looked at Ollie. Then at the scoreboard. Two hundred losses, all for one promise.",
+   "say": "(serious) Rex looked at Ollie. Then at the scoreboard. Two hundred losses, all for one promise.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "cast": [
+     "Rex"
+    ],
+    "face": "thinking",
+    "action": "still",
+    "prop": {
+     "type": "sign",
+     "text": "0 - 200"
+    },
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Rex walked over and stood on Leo's side. So did everyone else.",
+   "say": "(confident) Rex walked over and stood on Leo's side. So did everyone else.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "cast": [
+     "Rex",
+     "Leo",
+     "Zoe",
+     "Marcus"
+    ],
+    "face": "determined",
+    "action": "walk",
+    "camera": "follow"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Ollie rolled into the goal. That day, Leo's team finally won. Ollie didn't let in a single goal.",
+   "say": "(happy) Ollie rolled into the goal. That day, Leo's team finally won. Ollie didn't let in a single goal.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Ollie",
+     "Leo",
+     "Rex",
+     "Zoe"
+    ],
+    "face": "laugh",
+    "action": "wheelchair",
+    "prop": {
+     "type": "goal"
+    },
+    "mood": "win",
+    "camera": "pull"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Now nobody calls him Leo the Loser. They call him the kid who kept his promise.",
+   "say": "(happy) Now nobody calls him Leo the Loser. They call him the kid who kept his promise.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Leo",
+     "Ollie"
+    ],
+    "face": "laugh",
+    "action": "still",
+    "mood": "win",
+    "camera": "drone"
+   },
+   "acting": {}
+  }
+ ],
+ "word_count": 232,
+ "est_seconds": 68.2,
+ "tail_hold": 2.8,
+ "upload": {
+  "title": "The Team With Nobody On It #Shorts",
+  "description": "Every day Leo picked the team with nobody on it.\nNobody knew why, until Monday.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "soccer story",
+   "best friend story",
+   "plot twist",
+   "roblox story",
+   "animated story",
+   "emotional story",
+   "school story",
+   "story time",
+   "animated story",
+   "roblox story"
+  ]
+ }
+}

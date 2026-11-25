@@ -1,0 +1,46 @@
+{
+ "pass": true,
+ "average": 8.0,
+ "scores": {"hook": 8, "world_rule": 8, "characters": 8, "escalation": 8, "reveal": 8, "ending": 8, "clarity": 9, "visual": 8, "consistency": 8, "originality": 8, "retention": 8, "performance": 8, "dialogue": 7},
+ "hard_gates": {"rotation": true, "structure": true, "original": true, "length": true, "english_clear": true, "producible": true, "kit_story_blockers": true, "voice_tags_safe": true, "title_first_rule_r": true},
+ "checked": {
+  "words": 197,
+  "est_seconds_words_plus_pauses": 42.5,
+  "est_seconds_in_script": 44.5,
+  "length_note": "Inside the owner-accepted exception (the formula gives 42-45 s; the 52 s in the request is not what the formula yields). Not padded.",
+  "sentences_over_14_words": "none (longest is 11 words)",
+  "rule_r": "Line 1 equals upload title minus ' #Shorts': OK (both now say 'onto the gym roof').",
+  "voice_tags": "All tags are documented basic Fish s1 tags (confident, calm, soft tone, sad, nervous, worried, surprised, happy, moved). No unsafe ones. Max 2 per line. (moved), (confident) and (happy) are untested for leaks: run the Whisper tag-leak check before voicing.",
+  "rule_q": "Speeds 0.8-0.96 (floor respected); pauses 0-0.6; line 13 is the loudest at +4 dB; shock lines +1 to +2 dB; sad/hushed lines -2 to -3 dB. Line 5 is labelled 'mocking' but is a flat (calm) at 0 dB (polish only).",
+  "maths": "Record 2 m (sign on line 8, board on line 16), spoken 'two'; roof 20.4 m, spoken and shown as 'twenty'/20 m (rounded consistently, 2 x 10). Chase clears the bar for the new record. Voice, caption and screen agree (Rule A).",
+  "logic": "Decision now motivated: Chase's record, then a whispered 'Why is he even here?', then Nico remembers the promise and breaks it. Title matches picture (onto the roof, with a visible arc: crouch, launch, tilt). Promise paid off by mum's smile; loop ending echoes the title ('smallest kid in school... never small again').",
+  "originality_remaining_close_phrases": [
+   "Line 14 'Seconds later, Nico was waving down from the gym roof' still echoes the competitor's 'a second later he was at the finish line' (opener only; the rest is new). Minor: change to 'Then he was standing...' or drop the time marker.",
+   "Line 5 'the crowd snickered as Nico took his place' keeps the 'crowd reacts as he steps up' shape of 'everyone laughed as he stepped onto the track'. Verbs and nouns are different, so it is acceptable (owner kept the beat plan), but a different framing would be safer.",
+   "Beat overlap that is accepted by the owner: an adult checks the measurement; the silence beat; the rival who is sure to win."
+  ],
+  "originality_ok": "The flagged v1 phrases are all gone: 'ever since X was five', 'everyone laughed when', 'a second later' as an opener, 'three times ... broken ... but it wasn't', 'ten times the school record' and 'from that day on ... highest human alive'. They are replaced by new shapes ('secret gift, higher than a house', 'Nobody breathed', 'Twenty metres. The old record was two.', 'Even Chase clapped', 'never small again')."
+ },
+ "blocking_failures": [],
+ "fixes": [
+  "Line 14: drop 'Seconds later' (closest remaining echo of the competitor's 'a second later').",
+  "Line 5: tag is a flat (calm) while the label says 'mocking'; use a documented tone that fits or drop the label. Optionally re-frame the line so it does not mirror 'as he stepped onto the track'.",
+  "Dialogue (7): still almost all narration; one whispered quote only. The mum never speaks. If runtime allows, give the mum a 3-5 word spoken line in the kitchen beat, and keep Chase's reaction in a short line.",
+  "Line 9: the whisper is delivered by the narrator in a soft voice; make sure the picture shows who whispers (a named crowd kid) so the trigger reads with sound off.",
+  "Line 8 / 9 order: Nico 'took his place' on line 5 but Chase jumps first; add a shot of Chase going first so the turn order is clear.",
+  "The title question ('how?') is only half answered (the crack hints that the power breaks the ground). Optional: add a visual of the crack lighting up on the launch.",
+  "Run the Whisper tag-leak check for (moved), (confident) and (happy) before voicing."
+ ],
+ "retention_review": {
+  "open_loop_promise": "Promise set in line 3, tested in lines 9-10, paid off in line 19.",
+  "stakes": "One jump (line 7), now with an emotional trigger.",
+  "rival": "Chase sets the record, then concedes by clapping.",
+  "foreshadow_silence": "Crack plus 0.6 s pause (line 12), then the launch.",
+  "numbers_on_screen": "2 m sign, OLD 2 m / NEW 20 m board.",
+  "micro_cliffhangers": "Lines 11-12 and 14-15.",
+  "loop_ending": "Last line echoes the title; strong enough to loop."
+ },
+ "producibility": "All feasible with code-rendered avatars: field with bleachers, bar and mat, tall flat-roof gym, hallway, kitchen flashback, signs and board, crack decal, jump arc with camera tilt, headband prop.",
+ "kid_safe": true,
+ "verdict": "PASS (8.00, no item below 7, all hard gates true). Originality is now an 8: only line 14 and line 5 keep faint echoes, both minor."
+}

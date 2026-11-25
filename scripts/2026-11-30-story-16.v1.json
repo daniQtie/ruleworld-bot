@@ -1,0 +1,204 @@
+{
+ "id": "2026-11-30-story-16",
+ "version": 1,
+ "source": "TeamDeam 'In This Town, You Get A New Power Every Birthday' (1.2M) premise only; original plot (snow power saves the heatwave), loop ending",
+ "hook_type": {
+  "number": null,
+  "name": "owner-directed (exempt from rotation)"
+ },
+ "format": {
+  "number": 1,
+  "name": "A new power every birthday"
+ },
+ "title_working": "In This Town, Every Birthday Gives You A New Power",
+ "hook_text": "WORST POWER EVER?",
+ "hook_until": 2.6,
+ "music": "drift",
+ "music_gain": 0.13,
+ "world_rule": "A new power every birthday",
+ "lines": [
+  {
+   "text": "In this town, every birthday gives you a brand new power.",
+   "say": "(confident) In this town, every birthday gives you a brand new power.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "When Eli turned ten, he got super speed.",
+   "say": "(happy) When Eli turned ten, he got super speed.",
+   "speaker": "narrator",
+   "speed": 0.96,
+   "volume": 1,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "excited",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Then it was Mason's turn. He blew out his candles,",
+   "say": "(happy) Then it was Mason's turn. He blew out his candles,",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.15,
+   "beat": "",
+   "voice": {
+    "emotion": "anticipation",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "and a tiny bit of snow fell on the cake. That was it.",
+   "say": "(sad) and a tiny bit of snow fell on the cake. That was it.",
+   "speaker": "narrator",
+   "speed": 0.88,
+   "volume": -1,
+   "pause": 0.35,
+   "beat": "",
+   "voice": {
+    "emotion": "deflated",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Everyone laughed. Snow? That's the worst power ever.",
+   "say": "(sad) Everyone laughed. Snow? That's the worst power ever.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "mocking",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Then summer came, and it was the hottest day the town had ever seen.",
+   "say": "(nervous) Then summer came, and it was the hottest day the town had ever seen.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "ominous",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "The power went out. People were fainting in the street.",
+   "say": "(nervous) The power went out. People were fainting in the street.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 1,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "danger",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Even Eli was too tired to run.",
+   "say": "(sad) Even Eli was too tired to run.",
+   "speaker": "narrator",
+   "speed": 0.86,
+   "volume": -1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "weak",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "So Mason closed his eyes, and made it snow. Really snow.",
+   "say": "(confident) So Mason closed his eyes, and made it snow. Really snow.",
+   "speaker": "narrator",
+   "speed": 0.88,
+   "volume": 1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "determined",
+    "tags": "(confident)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "For the first time ever, it snowed in July, and the whole town cheered.",
+   "say": "(happy) For the first time ever, it snowed in July, and the whole town cheered.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "triumph",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Now every kid in town makes the same birthday wish.",
+   "say": "(soft tone) Now every kid in town makes the same birthday wish.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "warm",
+    "tags": "(soft tone)"
+   },
+   "shot": "",
+   "acting": {}
+  }
+ ],
+ "word_count": 120,
+ "est_seconds": 34.3,
+ "tail_hold": 1.2,
+ "upload": {
+  "title": "In This Town, Every Birthday Gives You A New Power #Shorts",
+  "description": "Everyone laughed at his snow power, until the hottest day ever.\nWhat power would you want for your birthday?\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "birthday power",
+   "superpower story",
+   "in this town",
+   "rule world story",
+   "plot twist story",
+   "animated story",
+   "story time animation",
+   "roblox story",
+   "roblox animation"
+  ]
+ }
+}

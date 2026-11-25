@@ -1,0 +1,40 @@
+# Reconnect YouTube. Started by the Telegram bot (Cloudflare Worker, cloud/worker/worker.js). See cloud/README.md.
+name: Reconnect YouTube
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: reconnect
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Write .env from secrets
+        run: python -m pipeline.cloudjobs env
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FISH_API_KEY: ${{ secrets.FISH_API_KEY }}
+          FISH_VOICE_ID: ${{ secrets.FISH_VOICE_ID }}
+          FISH_MODEL: ${{ secrets.FISH_MODEL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_OAUTH_CLIENT: ${{ secrets.YOUTUBE_OAUTH_CLIENT }}
+          CLIENT_SECRET_JSON: ${{ secrets.CLIENT_SECRET_JSON }}
+          CLIENT_TV_JSON: ${{ secrets.CLIENT_TV_JSON }}
+      - name: Run
+        run: python -m pipeline.cloudjobs reconnect
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+

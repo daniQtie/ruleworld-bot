@@ -1,0 +1,448 @@
+{
+ "id": "2026-11-24-gemini-test",
+ "version": 1,
+ "source": "Gemini writer, format bank: Rule world",
+ "hook_type": {
+  "number": null,
+  "name": "format bank"
+ },
+ "format": {
+  "number": null,
+  "name": "Rule world"
+ },
+ "title_working": "In This Town, A Floating Meter Shows Your Personal Gravity Strength",
+ "hook_text": "ZERO GRAVITY BOY?",
+ "hook_until": 2.6,
+ "music": "bounce",
+ "music_gain": 0.13,
+ "world_rule": "In This Town, A Floating Meter Shows Your Personal Gravity Strength",
+ "lines": [
+  {
+   "text": "In this town, a floating meter shows your personal gravity strength.",
+   "say": "(serious) In this town, a floating meter shows your personal gravity strength.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Noob",
+     "Marcus",
+     "Zoe"
+    ],
+    "face": "neutral",
+    "action": "still",
+    "camera": "drone",
+    "prop": {
+     "type": "number",
+     "text": "100%"
+    },
+    "board": "",
+    "tag": {
+     "name": "Noob",
+     "role": "Zero Gravity"
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "Everyone scored a solid hundred, keeping them firmly anchored to the earth.",
+   "say": "(confident) Everyone scored a solid hundred, keeping them firmly anchored to the earth.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Marcus",
+     "Zoe"
+    ],
+    "face": "happy",
+    "action": "walk",
+    "camera": "eye",
+    "prop": {
+     "type": "number",
+     "text": "100%"
+    },
+    "board": "",
+    "tag": {
+     "name": "Marcus",
+     "role": "Classmate"
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "But Noob received a zero, making him float away like a loose balloon.",
+   "say": "(sad) But Noob received a zero, making him float away like a loose balloon.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Noob"
+    ],
+    "face": "scared",
+    "action": "shiver",
+    "camera": "push",
+    "prop": {
+     "type": "number",
+     "text": "0%"
+    },
+    "board": "",
+    "tag": {
+     "name": "Zoe",
+     "role": "Student"
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "The kids laughed as he desperately grabbed a streetlight to stay on the ground.",
+   "say": "(worried) The kids laughed as he desperately grabbed a streetlight to stay on the ground.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Noob",
+     "Marcus"
+    ],
+    "face": "laugh",
+    "action": "point",
+    "camera": "low",
+    "prop": {
+     "type": "number",
+     "text": "0%"
+    },
+    "board": "",
+    "tag": {
+     "name": "",
+     "role": ""
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "Suddenly, a massive quake cracked the floor and triggered a magnetic pull.",
+   "say": "(worried) Suddenly, a massive quake cracked the floor and triggered a magnetic pull.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Noob",
+     "Marcus",
+     "Zoe"
+    ],
+    "face": "shocked",
+    "action": "shock",
+    "camera": "dutch",
+    "prop": {
+     "type": "crack",
+     "text": "CRACK"
+    },
+    "board": "",
+    "tag": {
+     "name": "",
+     "role": ""
+    },
+    "trans": "glitch",
+    "glitch": true
+   },
+   "acting": {}
+  },
+  {
+   "text": "The heavy force pinned everyone flat, trapping them on the crumbling rocks.",
+   "say": "(nervous) The heavy force pinned everyone flat, trapping them on the crumbling rocks.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Marcus",
+     "Zoe"
+    ],
+    "face": "scared",
+    "action": "still",
+    "camera": "high",
+    "prop": {
+     "type": "crack",
+     "text": ""
+    },
+    "board": "",
+    "tag": {
+     "name": "",
+     "role": ""
+    },
+    "trans": "flash",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "Their high numbers made them too heavy to even lift a foot.",
+   "say": "(serious) Their high numbers made them too heavy to even lift a foot.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Marcus"
+    ],
+    "face": "sob",
+    "action": "still",
+    "camera": "close",
+    "prop": {
+     "type": "number",
+     "text": "100%"
+    },
+    "board": "",
+    "tag": {
+     "name": "",
+     "role": ""
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "But Noob felt no pull at all and drifted weightlessly across the gap.",
+   "say": "(confident) But Noob felt no pull at all and drifted weightlessly across the gap.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Noob"
+    ],
+    "face": "determined",
+    "action": "jump",
+    "camera": "follow",
+    "prop": {
+     "type": "number",
+     "text": "0%"
+    },
+    "board": "",
+    "tag": {
+     "name": "",
+     "role": ""
+    },
+    "trans": "whip",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "He dropped a long rope, lifting each classmate to safe ground.",
+   "say": "(happy) He dropped a long rope, lifting each classmate to safe ground.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Noob",
+     "Zoe"
+    ],
+    "face": "happy",
+    "action": "cheer",
+    "camera": "low",
+    "prop": {
+     "type": "stack",
+     "text": "ROPE"
+    },
+    "board": "",
+    "tag": {
+     "name": "",
+     "role": ""
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "Now nobody teases the boy who floats above the street.",
+   "say": "(soft tone) Now nobody teases the boy who floats above the street.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "sunset",
+    "mood": "day",
+    "cast": [
+     "Noob",
+     "Marcus",
+     "Zoe"
+    ],
+    "face": "smirk",
+    "action": "wave",
+    "camera": "ots",
+    "prop": {
+     "type": "number",
+     "text": "0%"
+    },
+    "board": "",
+    "tag": {
+     "name": "",
+     "role": ""
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "Because in this town, a floating meter shows your personal gravity strength.",
+   "say": "(confident) Because in this town, a floating meter shows your personal gravity strength.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Noob"
+    ],
+    "face": "happy",
+    "action": "still",
+    "camera": "pull",
+    "prop": {
+     "type": "number",
+     "text": "0%"
+    },
+    "board": "",
+    "tag": {
+     "name": "",
+     "role": ""
+    },
+    "trans": "zoom",
+    "glitch": false
+   },
+   "acting": {}
+  }
+ ],
+ "word_count": 132,
+ "est_seconds": 38.8,
+ "tail_hold": 1.2,
+ "upload": {
+  "title": "In This Town, A Floating Meter Shows Your Personal Gravity Strength #Shorts",
+  "description": "Noob got a 0% gravity score and everyone laughed at him... until disaster struck!\nSubscribe to Rule World Stories for new daily animated shorts!\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "roblox",
+   "robloxstory",
+   "ruleworld",
+   "animation",
+   "shorts",
+   "viral",
+   "storytime",
+   "gravity",
+   "superpowers",
+   "cartoon",
+   "animated story",
+   "roblox story"
+  ]
+ }
+}

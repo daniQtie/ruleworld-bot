@@ -1,0 +1,36 @@
+{
+  "profile_name": "Channel Master Narrator",
+  "status": "template_requires_current_provider_values",
+  "voice_provider": "KEEP_EXISTING_PROVIDER",
+  "model_id": "FILL_FROM_EXISTING_CONFIGURATION",
+  "voice_id": "FILL_FROM_EXISTING_CONFIGURATION",
+  "language": "English",
+  "accent": "American English (only if supported by the existing selected voice)",
+  "base_speed_wpm": 145,
+  "base_rate_multiplier": 1.0,
+  "pitch": "KEEP_EXISTING_PROVIDER_DEFAULT_AND_LOCK_IT",
+  "stability": "FILL_ONLY_IF_PROVIDER_SUPPORTS_IT",
+  "similarity": "FILL_ONLY_IF_PROVIDER_SUPPORTS_IT",
+  "style": "FILL_ONLY_IF_PROVIDER_SUPPORTS_IT",
+  "seed": "FILL_ONLY_IF_PROVIDER_SUPPORTS_A_STABLE_SEED",
+  "speaker_change_policy": "Never change voice_id or model_id between scenes or uploads without owner approval.",
+  "rendering_policy": "Prefer one continuous narration render. If segmented, use exactly the same voice and settings for every segment.",
+  "speed_policy": {
+    "normal_wpm": [
+      140,
+      150
+    ],
+    "emotional_wpm": [
+      120,
+      130
+    ],
+    "urgent_wpm": [
+      150,
+      160
+    ],
+    "note": "These are performance targets, not instructions to switch speakers or radically alter pitch. Preserve intelligibility and natural rhythm."
+  },
+  "emotion_policy": "Direct the performance using supported provider controls or supported markup. If unavailable, use punctuation, sentence phrasing, pause placement and separate performance notes. Never send stage directions as spoken words.",
+  "loudness_policy": "Use the existing audio pipeline's consistent output target; avoid clipping and aggressive compression.",
+  "approval_policy": "Render a short voice sample and get owner approval before producing a long narration when the profile has changed."
+}

@@ -1,0 +1,123 @@
+{
+  "id": "2026-11-16-coin-flip-brain",
+  "version": 6,
+  "topic": "psychology",
+  "outfit": "psych",
+  "title_yt": "This Stranger's Coin Flip Has a Hidden Trap #Shorts",
+  "title_fb": "May patibong 'tong coin flip ng stranger...",
+  "hook": "What if he offers you: heads, win $150. Tails, lose $100?",
+  "open_loop": "Line 3 ('Weird part? HE should run.') plants a question: why should the guy offering the deal be scared? Line 5's 'Quit now?' bubble and line 6's 'His plan? You quit.' show his motive. He is betting on loss aversion and expects you to quit after one tails, so he keeps your $100. The question is answered only in line 8, about 6 s from the end: on average every flip pays you $25 and costs HIM $25. The $25 is not said or shown anywhere before line 8.",
+  "payoff": "The stranger's trick is your own brain. A $100 loss feels like about $195, so he expects you to quit after one tails. Benny keeps flipping instead, and the reveal hits both sides at once: +$25 a flip for you, -$25 a flip for him. Over 100 flips you are almost never behind.",
+  "ending": "choice",
+  "lines": [
+    {
+      "text": "What if he offers you: heads, win $150. Tails, lose $100?",
+      "say": "What if he offers you: heads, win one fifty bucks. Tails, lose a hundred?",
+      "ph": "What if alukin ka niya: heads, panalo ka ng $150. Tails, talo ka ng $100?",
+      "beat": "hook",
+      "visual": "SCENE 1, frame 0, dark street (bg #2b2a33, floor #1d1c24). Hooded stranger (cast, outfit stranger, x 780, flip true, pose present, expr smug, prop coin) holds the coin out toward Benny (x 320, pose wave, expr smile). Green headline '+$150' at y 420 is visible from frame 0. Benny beat on 'heads': expr happy, hop true. On 'Tails': red headline '-$100' at y 560 (sfx thud) plus camera shake 0.4 s; Benny beat: pose shock, expr shocked, hop false.",
+      "on_screen": "+$150 / -$100"
+    },
+    {
+      "text": "*Nope!* You run.",
+      "ph": "*Ayoko!* Takbo!",
+      "beat": "stakes",
+      "visual": "SCENE 2. Red stamp 'NOPE' slams over Benny on 'Nope' (sfx thud). Benny beat on 'run': flip true, pose run, expr shocked, drift toward x 140 (sfx whoosh). The stranger stays put: pose shrug, expr smug.",
+      "on_screen": "NOPE"
+    },
+    {
+      "text": "Weird part? *HE* should run.",
+      "ph": "Ang weird pa? *Siya* dapat ang tumakbo.",
+      "beat": "loop",
+      "visual": "SCENE 3. Camera snap-zoom (1.3, focus on the stranger, [780, 900]) on 'HE'; the stranger keeps pose shrug, expr smug. Benny (x 140, flip false, pose think, expr thinking) peeks back. Bubble '?!' over Benny (tail left). Gold headline 'HE should run?' at y 420.",
+      "on_screen": "HE should run?"
+    },
+    {
+      "text": "Your brain makes that loss feel like about $195.",
+      "say": "Your brain makes that loss feel like about a hundred ninety five dollars.",
+      "ph": "Sa utak mo, ang talo na $100 parang $195.",
+      "beat": "escalate",
+      "visual": "SCENE 4, same dark street (no cutaway). Benny frozen mid-step at x 300 holding his brain (prop brain), pose worry, expr shocked. The red headline '-$100' sits at y 560 again; on 'dollars' a red stamp 'FEELS LIKE -$195' slams over it (sfx thud, camera shake 0.5 s). The stranger in the background: pose point at Benny, expr happy (sly grin).",
+      "on_screen": "FEELS LIKE -$195"
+    },
+    {
+      "text": "You flip. *Tails.* Ouch. He grins: \"Quit now?\"",
+      "ph": "Nag-flip ka. *Tails.* Aray. Ngumisi siya: \"Suko ka na?\"",
+      "beat": "escalate",
+      "visual": "SCENE 5. On 'flip' a flipcoin item launches from Benny's hand (x 340, y 1000, height 650) and lands ON his head (x2 320, y2 880). On 'Tails' red stamp 'TAILS -$100' (sfx thud) and camera shake; on 'Ouch' Benny beat: pose slump, expr broke (tear). SCENE 6 starts at word 'He' of this line: snap-zoom on the stranger (pose present, expr smug); bubble 'Quit now?' over his hood (tail right, sfx pop).",
+      "on_screen": "Quit now?"
+    },
+    {
+      "text": "His plan? You quit. You *don't*. Flip, flip, flip.",
+      "ph": "Plano niya? Susuko ka. *Hindi* ka sumuko. Flip, flip, flip.",
+      "beat": "twist",
+      "visual": "SCENE 7. Red badge 'PLAN: YOU QUIT' under the stranger on 'plan'. On 'don't' Benny stands up (pose flex, expr determined) and a stamp 'NOPE' slams on the badge. On each 'flip' a flipcoin item from Benny's hand (sfx clink), 3 in total. Stranger beats: on 'don't' pose think, expr thinking; on the last 'flip' pose worry. No dollar number is shown or said in this scene. Badge 'Not financial advice' (size 40) at x 300, y 1230 from this scene to the end.",
+      "on_screen": "PLAN: YOU QUIT"
+    },
+    {
+      "text": "After 100 flips, you're almost never *behind*.",
+      "say": "After a hundred flips, you're almost never behind.",
+      "ph": "Pag 100 flips na, halos *never* kang lugi.",
+      "beat": "payoff",
+      "visual": "SCENE 8. Coin rain (coins, n 40, floor 1300, layer back) piles up around Benny's feet while a gold counter runs 0 -> 100 with suffix ' FLIPS' (dur 1.4). On 'behind' a gold headline '<2% end behind' at y 420; Benny beat: pose hero, expr happy, hop true (sfx ding). Stranger: pose worry. The 'Not financial advice' badge stays at x 300, y 1230.",
+      "on_screen": "<2% end behind"
+    },
+    {
+      "text": "Wait... every flip pays *YOU* $25 on average. And costs *HIM*.",
+      "say": "Wait... every flip pays you twenty five on average. And costs him.",
+      "ph": "Teka... bawat flip, *+$25* sa 'yo sa average. At *-$25* sa *kanya*.",
+      "beat": "twist",
+      "visual": "SCENE 9 (flash true). Re-add the coin pile (coins, n 14, floor 1300, layer back) under Benny (x 320, pose point at the stranger, expr smug). On '$25' a green headline '+$25 YOU' at y 420 (sfx ding); on 'HIM' a red headline '-$25 HIM' at y 560 next to the stranger, and a snap-zoom on the stranger: pose worry, expr shocked, bubble 'GULP.' (tail right, sfx pop). The 'Not financial advice' badge stays at x 300, y 1230.",
+      "on_screen": "+$25 YOU / -$25 HIM"
+    },
+    {
+      "text": "One flip only. A: flip. B: run. *You?*",
+      "ph": "Isang flip lang. A: flip. B: takbo. *Ikaw?*",
+      "beat": "ending",
+      "visual": "SCENE 10, loop setup: the frame-0 layout again with the roles swapped. The stranger (x 780, flip true, pose present, expr smug, prop coin) holds the coin out to the CAMERA; Benny at x 320 (pose shrug, expr thinking). Green '+$150' at y 420 and red '-$100' at y 560 pop on 'One'. List (x 300, y 760, w 560): rows 'A  FLIP' (mark check) on 'flip' and 'B  RUN' (mark x) on 'run'. Badges inside the safe area: '1 flip = 50/50' at x 300, y 1150 and 'Not financial advice' at x 300, y 1230. Tail 0.3 s with a hard cut on 'You?', which loops into frame 0.",
+      "on_screen": "A: FLIP  B: RUN"
+    }
+  ],
+  "disclaimer_on_screen": "'Not financial advice' badge from scene 7 (the keep-flipping scene) to the end, plus '1 flip = 50/50' in the last scene. Framed as a brain/decision thought experiment, not advice to gamble.",
+  "facts_used": [
+    {
+      "claim": "In the coin toss (win $150 / lose $100), most people decline ('Nope! You run.', and the stranger expects you to quit).",
+      "source_url": "https://litcharts.com/lit/thinking-fast-and-slow/part-4-chapter-26"
+    },
+    {
+      "claim": "Most people reject the 50/50 win $150 / lose $100 flip even though it is positive on average (corroborating).",
+      "source_url": "https://margin-notes-600.pages.dev/books/thinking-fast-and-slow/ch-26"
+    },
+    {
+      "claim": "Losses are treated as about twice as large as an equivalent gain (loss aversion).",
+      "source_url": "https://en.wikipedia.org/wiki/Loss_aversion"
+    },
+    {
+      "claim": "Meta-analysis mean loss-aversion coefficient 1.955, so a $100 loss feels like about $195.",
+      "source_url": "https://www.aeaweb.org/doi/10.1257/jel.20221698"
+    },
+    {
+      "claim": "The ratio varies by context (hence 'about $195').",
+      "source_url": "https://atticusli.com/replication-crisis/loss-aversion/"
+    },
+    {
+      "claim": "On average +$25 per flip for you and -$25 per flip for the stranger (zero-sum). Over 100 fair flips the chance of ending behind is 1.76% (<2%). A single flip is 50/50.",
+      "source_url": "computed; no external source needed"
+    }
+  ],
+  "math_check": "You, per flip: 0.5*150 - 0.5*100 = +$25; zero-sum, so the stranger averages -$25 per flip. Felt loss = 1.955*100 = $195.50 -> 'about $195' (95% range $182.00-$210.20, all > $150). 100 flips: total = 150h - 100(100-h) = 250h - 10,000 < 0 iff h <= 39; P(h <= 39 | n=100, p=0.5) = 0.017600 = 1.76% -> 'almost never behind' spoken, '<2% end behind' on screen. The lost first flip (-$100) is consistent with a single 50/50 flip. The ending's 'One flip only' is a true 50/50 (+$150 or -$100), so the A/B choice is a real split. Re-computed in python.",
+  "est_seconds": 30.8,
+  "word_count": 80,
+  "changes_from_previous": [
+    "Hook/stakes (QA fix 3): line 1 now puts the viewer in the deal and says money: 'What if he offers you: heads, win one fifty bucks. Tails, lose a hundred?' 'Heads' starts at word 6 (~1.9 s). The stranger, the coin and '+$150' are on screen from frame 0, and '-$100' lands on 'Tails' with a camera shake.",
+    "Stranger's motive (QA fix 2): his plan IS loss aversion. After Benny loses flip #1 (flipcoin on his head, TAILS -$100, tear), the stranger's bubble says 'Quit now?', and line 6 says 'His plan? You quit. You don't.' (badge 'PLAN: YOU QUIT' gets a NOPE stamp). Benny beating the plan is the choice that makes the final gulp mean something.",
+    "Twist held back (QA fix 1): the $25 is gone from the montage line (line 6 is now pure action: 'Flip, flip, flip'). Line 8 reveals both sides at once: 'Wait... every flip pays you twenty five on average. And costs him.', with '+$25 YOU / -$25 HIM' and a GULP bubble.",
+    "No lecture cutaway (QA fix 4): the brain/$195 beat stays on the dark street. Benny freezes mid-step holding his brain, and 'FEELS LIKE -$195' slams onto the scene's own '-$100' headline while the stranger grins.",
+    "Ending (QA fix 5): it is now a real dilemma, 'One flip only. A: flip. B: run. You?' A single flip is a true 50/50 (shown by the '1 flip = 50/50' badge). The ending mirrors frame 0, with the stranger offering the coin to the camera, and the hard cut loops into it.",
+    "Originality/policy (QA fix 6): the episode is now 'the stranger whose trick is your own brain'. The 'Not financial advice' badge appears from scene 7 (the keep-flipping scene) through the end, inside the safe area (x 300, y 1230).",
+    "Clarity (QA fix 7): 'bucks' in line 1, and line 4 says 'about a hundred ninety five dollars'.",
+    "Drawability (QA fix 8): hop/flip as timed beats is confirmed by the coordinator (beats merge into the character state). Coin rain is re-added in scene 9 (items don't persist). The stranger's fading grin uses expr thinking, then worry/shocked. No 'laughing' or depth is relied on (x positions only). The final badges are inside the safe area. Each line's visual text now matches its on_screen text exactly.",
+    "ph (QA fix 9): line 4 'Sa utak mo, ang talo na $100 parang $195.' The $25 caption is now 'bawat flip, +$25 sa 'yo sa average. At -$25 sa kanya.' (in line 8, since the $25 moved there).",
+    "Length: 80 spoken words = ~30.8 s at 2.6 wps (~32.9 s with pauses), 9 lines, 10 scenes."
+  ]
+}

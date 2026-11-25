@@ -1,0 +1,37 @@
+# Upload approved. Started by the Telegram bot (Cloudflare Worker, cloud/worker/worker.js). See cloud/README.md.
+name: Upload approved
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: upload
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - name: Write .env from secrets
+        run: python -m pipeline.cloudjobs env
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FISH_API_KEY: ${{ secrets.FISH_API_KEY }}
+          FISH_VOICE_ID: ${{ secrets.FISH_VOICE_ID }}
+          FISH_MODEL: ${{ secrets.FISH_MODEL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_OAUTH_CLIENT: ${{ secrets.YOUTUBE_OAUTH_CLIENT }}
+          CLIENT_SECRET_JSON: ${{ secrets.CLIENT_SECRET_JSON }}
+          CLIENT_TV_JSON: ${{ secrets.CLIENT_TV_JSON }}
+      - name: Run
+        run: python -m pipeline.cloudjobs uploads
+      - if: always()
+        uses: ./.github/actions/commit

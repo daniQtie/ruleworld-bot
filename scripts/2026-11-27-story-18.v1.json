@@ -1,0 +1,319 @@
+{
+ "id": "2026-11-27-story-18",
+ "version": 1,
+ "source": "Claude (Opus) scriptwriter, original idea; hook rotation #7, format rotation #3",
+ "hook_type": {
+  "number": 7,
+  "name": "The \"Before You...\" Hook"
+ },
+ "format": {
+  "number": 3,
+  "name": "The Town Where..."
+ },
+ "title_working": "The Town Where Broken Promises Crack The Street",
+ "hook_text": "BEFORE YOU PROMISE...",
+ "hook_until": 2.6,
+ "music": "tender",
+ "music_gain": 0.13,
+ "world_rule": "Every broken promise cracks the street under your feet",
+ "lines": [
+  {
+   "text": "Before you make a promise in this town, look at the ground.",
+   "say": "(serious) Before you make a promise in this town, look at the ground.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "field",
+    "camera": "drone",
+    "cast": [
+     "Eli"
+    ],
+    "face": "thinking",
+    "action": "still"
+   },
+   "acting": {}
+  },
+  {
+   "text": "This is the town where every broken promise cracks the street.",
+   "say": "(confident) This is the town where every broken promise cracks the street.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "set": "field",
+    "cast": [
+     "Eli"
+    ],
+    "face": "neutral",
+    "action": "point",
+    "camera": "high",
+    "prop": {
+     "type": "crack"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "Rex breaks promises all day. His whole street looks like a puzzle.",
+   "say": "(happy) Rex breaks promises all day. His whole street looks like a puzzle.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Rex"
+    ],
+    "face": "smirk",
+    "action": "walk",
+    "tag": {
+     "name": "Rex",
+     "role": "promise breaker"
+    },
+    "prop": {
+     "type": "crack"
+    },
+    "camera": "high"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Eli has never broken one. Not a single crack.",
+   "say": "(confident) Eli has never broken one. Not a single crack.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "cast": [
+     "Eli"
+    ],
+    "face": "happy",
+    "action": "wave",
+    "camera": "low",
+    "tag": {
+     "name": "Eli",
+     "role": "never broke one"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "Then he promised his little sister Mia he would see her sing at six.",
+   "say": "(soft tone) Then he promised his little sister Mia he would see her sing at six.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "set": "house",
+    "cast": [
+     "Mia",
+     "Eli"
+    ],
+    "face": "starstruck",
+    "action": "hug",
+    "camera": "push",
+    "tag": {
+     "name": "Mia",
+     "role": "little sister"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "At five, Rex begged him to stay for one more game.",
+   "say": "(nervous) At five, Rex begged him to stay for one more game.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "set": "field",
+    "cast": [
+     "Rex",
+     "Eli"
+    ],
+    "face": "happy",
+    "action": "point",
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Eli stayed. At six, the street split open between him and the school. Too wide to jump.",
+   "say": "(worried) Eli stayed. At six, the street split open between him and the school. Too wide to jump.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "shot": {
+    "cast": [
+     "Eli"
+    ],
+    "face": "shocked",
+    "action": "still",
+    "mood": "danger",
+    "prop": {
+     "type": "crack"
+    },
+    "trans": "flash",
+    "camera": "high"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So he ran the long way, through the forest.",
+   "say": "(serious) So he ran the long way, through the forest.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "forest",
+    "cast": [
+     "Eli"
+    ],
+    "face": "determined",
+    "action": "run",
+    "time": "sunset"
+   },
+   "acting": {}
+  },
+  {
+   "text": "He burst in on the very last note. Mia saw him and smiled.",
+   "say": "(happy) He burst in on the very last note. Mia saw him and smiled.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "house",
+    "time": "sunset",
+    "cast": [
+     "Mia",
+     "Eli"
+    ],
+    "face": "laugh",
+    "action": "wave",
+    "mood": "win",
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Back in town, the crack closed. A late promise still counts.",
+   "say": "(confident) Back in town, the crack closed. A late promise still counts.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "set": "field",
+    "cast": [
+     "Rex"
+    ],
+    "face": "shocked",
+    "action": "still",
+    "mood": "win",
+    "trans": "glitch",
+    "camera": "drone"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So before you make a promise in this town, keep it. Even late.",
+   "say": "(serious) So before you make a promise in this town, keep it. Even late.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "cast": [
+     "Eli"
+    ],
+    "face": "determined",
+    "action": "talk",
+    "camera": "close"
+   },
+   "acting": {}
+  }
+ ],
+ "word_count": 132,
+ "est_seconds": 38.8,
+ "tail_hold": 1.2,
+ "upload": {
+  "title": "The Town Where Broken Promises Crack The Street #Shorts",
+  "description": "Every broken promise cracks the street. Eli never broke one, until today.\nWould you have stayed for the game?\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "promise story",
+   "rule world story",
+   "roblox story",
+   "animated story",
+   "plot twist",
+   "sister story",
+   "story time",
+   "roblox animation",
+   "animated story",
+   "roblox story"
+  ]
+ }
+}

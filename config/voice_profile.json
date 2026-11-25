@@ -1,0 +1,80 @@
+{
+  "profile_name": "Channel Master Narrator: Adam",
+  "status": "locked (owner-approved 2026-11-19; values audited 2026-11-20)",
+  "voice_provider": "Fish Audio REST API (POST https://api.fish.audio/v1/tts), paid, owner-approved",
+  "model_id": "s1",
+  "model_note": "Fish docs (fetched 2026-11-20): s1 is deprecated and is retired 2026-12-31. After that, s1 requests are served by s2.1-pro, which ignores (parenthesis) tags and uses [bracket] tags. Migrate before 2026-12-31: owner approval + a short continuity test first.",
+  "voice_id_source": ".env FISH_VOICE_ID (the 'Adam' voice model chosen by the owner). Never printed, never changed without owner approval.",
+  "api_key_source": ".env FISH_API_KEY (never printed)",
+  "language": "English",
+  "accent": "whatever Adam's voice model has; do not try to change it",
+  "base_rate_multiplier": 1.0,
+  "measured_speed": "Measured 2026-11-20 (trimmed speech, no pauses): speed 1.0 = 6.3 w/s, 0.85 = 5.4, 0.75 = 4.9, 0.7 = 4.7, 0.6 = 4.1 (rate ~ 6.26*speed^0.83). Adam is far faster than the kit's 145 WPM (2.4 w/s); pacing comes from speed 0.65-0.85 PLUS (break) at phrase boundaries PLUS pipeline pauses/reaction beats. The old '3.4 w/s' figure included pauses.",
+  "supported_controls": {
+    "prosody.speed": "0.5-2.0, per line",
+    "prosody.volume": "dB, 0 = no change, per line",
+    "temperature": "0-1, default 0.7 (expressiveness); keep the default unless a continuity test approves a change",
+    "top_p": "0-1, default 0.7; keep the default",
+    "s1_inline_tags": "(emotion) at the START of a sentence, max 3 per sentence. Fish documents these as tags, not spoken text",
+    "s1_emotions": "happy sad angry excited calm nervous confident surprised satisfied delighted scared worried upset frustrated depressed empathetic embarrassed disgusted moved proud relaxed grateful curious sarcastic disdainful unhappy anxious hysterical indifferent uncertain doubtful confused disappointed regretful guilty ashamed jealous envious hopeful optimistic pessimistic nostalgic lonely bored contemptuous sympathetic compassionate determined resigned",
+    "s1_tones": "(in a hurry tone) (shouting) (screaming) (whispering) (soft tone)",
+    "s1_effects": "(laughing) (chuckling) (sobbing) (crying loudly) (sighing) (groaning) (panting) (gasping) (yawning) (break) (long-break)",
+    "pauses": "pipeline gap between lines (line.pause seconds) is exact; (break)/(long-break) inside a line are model-decided lengths",
+    "seed": "NOT supported (no seed field in the Fish TTS schema)",
+    "ssml": "NOT supported"
+  },
+  "rendering_policy": "One Fish call per script line with identical voice/model/settings (the pipeline needs per-line timings for captions and shots). Every line uses the same reference_id, model, temperature and top_p. Only prosody.speed, prosody.volume, inline s1 tags and the pause after the line vary.",
+  "speaker_change_policy": "Never change voice_id or model_id between lines, scenes or uploads without owner approval. Character dialogue is performed by Adam with emotion/tone tags, not by other voices, unless the owner approves a second voice.",
+  "tag_safety": "Tags go only in the line's `say` field, never in captions. After every narration, Whisper must NOT hear any tag word (e.g. 'sad', 'whispering') that is not in the caption text; if it does, that tag is being spoken: remove it and re-render that line.",
+  "speed_policy": {
+    "narration": 0.9,
+    "dialogue_normal": 0.92,
+    "emotional_sad_tender": 0.8,
+    "shock_urgent": [
+      0.95,
+      1.0
+    ],
+    "floor": 0.75,
+    "note": "Owner Rule Q (2026-11-21): the 0.65-0.75 pacing of the Lie-Monster episode was too slow. Stay near Adam's natural pace; slow only a little for sad/tender lines."
+  },
+  "loudness_policy": "Final mix via pipeline/assemble.py loudnorm (I=-13 target, TP -1.5); measured result must be -14 LUFS +-1.5 with no clipping.",
+  "approval_policy": "Any change to model, voice, temperature or top_p: render the hook + the most emotional line as a test and get owner approval before a full narration.",
+  "unsafe_tags": {
+    "(regretful)": "spoken aloud in the 2026-11-20 test; use (sad) or (guilty) instead",
+    "(hopeful)": "spoken aloud in the 2026-11-20 full narration; use (happy)(soft tone)",
+    "_rule": "Advanced emotions leak at random (regretful, hopeful, guilty). Use only the 24 BASIC emotions + tones. The leak gate in pipeline/assemble.py and pipeline/voicecheck.py catches the rest.",
+    "(guilty)": "spoken aloud in the 2026-11-20 full narration (passed one earlier test: leaks are random); use (sad)"
+  },
+  "estimate_formula": "seconds = sum(words / (6.26*speed^0.83) + pause + 0.25 per (break)) + tail",
+  "tested_tags": {
+    "no_leak_2026_11_20": "(nervous) (worried) (soft tone) (guilty) (sad) (break)",
+    "leaked": "(regretful)",
+    "untested": "every other tag: run the Whisper tag-leak check on every narration"
+  },
+  "pause_policy": {
+    "between_lines": [
+      0.15,
+      0.35
+    ],
+    "dramatic_max": 0.6,
+    "silent_visual_beat": "only where the screen shows an action/effect; keep it as short as the action"
+  },
+  "volume_policy": {
+    "shock_surprise": [
+      3,
+      5
+    ],
+    "anger_urgency": 2,
+    "normal": 0,
+    "worry_unease": [
+      -2,
+      -3
+    ],
+    "sad_tender": [
+      -3,
+      -4
+    ],
+    "note": "prosody.volume in dB per line (Fish). Loudnorm on the final keeps these relative differences."
+  },
+  "model_switch_2026_11_24": "Owner approved by ear: Adam on s2.1-pro-free ($0, fair-use) via .env FISH_MODEL. Tags: leading (tag) is sent as [tag]. Pace: prosody.speed x1.14 (audio.S2_PACE) to match s1. To go back: FISH_MODEL=s1 (paid, retires 2026-12-31)."
+}

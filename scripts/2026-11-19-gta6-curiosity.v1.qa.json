@@ -1,0 +1,35 @@
+{
+ "pass": false,
+ "average": 5.64,
+ "scores": {"hook": 6, "stakes": 6, "open_loop": 5, "escalation": 5, "payoff": 4, "surprise": 5, "ending": 7, "clarity": 7, "facts": 6, "originality": 7, "entertainment": 4},
+ "hard_gates": {"hook_rotation_assigned_type": true, "benny_in_story": false, "length_25_35s": true, "english_clear": true},
+ "hook_gate": {
+  "assigned": "#3 Curiosity/Shock", "previous_episode": "#2 Listicle (2026-11-19-gta6-listicle)", "differs": true,
+  "style_check": "Opener 'This will surprise you.' is the skill's own 'This will blow your mind' pattern and it withholds the reason, so the type matches. But the curiosity gap is thin: line 2 already states the claim, and it is only mildly surprising for a viewer who owes the video nothing. The payoff partly fizzles (see fixes)."
+ },
+ "word_count_recomputed": 67, "est_seconds_at_2.3wps": 29.1, "est_seconds_at_speed_0.9": "about 32",
+ "math": "No arithmetic. 1,530 adults and 974 vacationers match the ScienceDaily page (re-fetched and confirmed).",
+ "claim_check": {
+  "nawijn_stretch": "The study (Dutch adults) compared people planning a vacation with non-travelers: planners were happier before the trip, and after the trip there was no difference (a small boost only after very relaxing trips, gone by 8 weeks). It is an association, not before/after within the same people, and the author only 'suggests' anticipation. It does NOT compare anticipation with the trip experience itself. The script's lines 4-6 are individually accurate and sourced, but they do not support the hook's thesis 'tonight may be the best part of GTA 6' (waiting beats playing). Line 7 'a study about vacations, not games' is honest, but it is the only bridge, so the video ends by admitting its evidence does not apply to its own headline claim. Hedged with 'may', yet the promise (the best part) is bigger than what is delivered. The open_loop field 'happier before their trip than after' misstates the finding. Research file lists the games extrapolation as unverified.",
+  "misleading_risk": "Moderate. The hedges are honest, but the 'best part' framing is unsupported and the upload title 'Why tonight may beat GTA 6 launch day' promises an answer the study cannot give."
+ },
+ "eve_tonight": "Correct only for viewers in US time zones between 7 PM ET Nov 18 and midnight. Wrong or stale for Europe/Asia/Philippines (already Nov 19), for anyone watching after midnight ET, and if the release slips again. The video never says GTA 6 launches tomorrow, so 'tonight' has no anchor for a cold viewer. Short shelf life, no evergreen fallback. Scene 4 'waits all night outside the store' implies a midnight store launch, which is unsourced.",
+ "consistency": [
+  {"item": "GTA 6", "say": "G, T, A, six", "text": "G T A 6", "visual": "badge 'GTA 6'", "verdict": "OK (Rule B text matches say; badge in written form is allowed)"},
+  {"item": "1,530", "say": "one thousand, five hundred thirty", "text": "1,530", "visual": "counter 1,530 ADULTS", "verdict": "OK, same value everywhere"},
+  {"item": "Tonight / best part", "say": "Tonight may be the best part", "visual": "'TONIGHT', stamp 'BEST PART'", "verdict": "Stamp drops the hedge 'may'. It is a Rule C risk: the screen asserts 'BEST PART' flatly while the voice says 'may be'."},
+  {"item": "vacationers vs others", "say": "happier than others", "visual": "bar 'OTHERS'", "verdict": "OK, but 'others' is vague; the source says non-vacationers"},
+  {"item": "gone", "say": "extra happiness was gone", "visual": "bar sinks, stamp 'GONE'", "verdict": "OK, but the visual shows a full collapse, whereas the source has a small boost for relaxing trips only"},
+  {"item": "A/B rows", "say": "Comment A or B", "visual": "A: THE WAIT / B: THE GAME", "verdict": "OK. Row text is about 6 tokens, borderline on the 5-word limit"},
+  {"item": "upload", "verdict": "Title and description match the video and have 4 hashtags, sources and caveats (good). Description line 1 is a hook, not a copy of the title (good). Title promises 'beat launch day', which the video does not prove. No money topic, so no disclaimer is needed."}
+ ],
+ "fixes": [
+  "BENNY IN STORY (gate fail): only scene 4 has a gag; scenes 5-8 are a narrator walking through a study with a counter and bars, the lecture format the owner rejected. Keep Benny in the queue throughout: a rival camper, the store door, a clock, and each study line is something that happens to him. For example, Benny is happy in the line, then loses his spot, or the tall bar is his mood bar. The study becomes his experience, not a chart.",
+  "Hook (line 1): 'This will surprise you.' is an empty filler with no picture. Open with line 2's claim plus an image: say 'Tonight, the best part of G T A 6 is not the game.' while Benny sits in the queue. This withholds the reason and is more shocking.",
+  "Open loop / payoff (lines 2 vs 7): the video promises 'the best part' and ends by saying 'not games', which deflates the promise. Either soften the headline promise to match the evidence ('Why waiting feels so good') or add a bridging line that says what the study actually shows: 'Looking forward made people happier than the trip did.' Do not claim that beyond the source. The study shows planners happier than non-travelers, so do not say 'before vs after'.",
+  "Line 7 'a study about vacations, not games': keep the honesty, but move it earlier (before the twist) and end on a real punchline or Benny gag, not a disclaimer.",
+  "Surprise (lines 5-6): 'happier than others' and 'gone' are abstract. Use plain words: 'People who planned a trip were happier. After the trip, they were not.' Avoid 'vacationers' for non-native listeners. Hedge the stamp: show 'MAYBE' or drop 'BEST PART' (Rule C).",
+  "Tonight: anchor with 'tomorrow' ('G T A 6 comes out tomorrow. Tonight...') or avoid time words ('The wait may be the best part'). Confirm that the release date is still Nov 19 before posting, and also post time-zone-safe ('the night before'). Consider a safer evergreen: 'the night before launch'.",
+  "Entertainment: add a physical gag every 3 s (sleeping-bag fall, door rattle, a yawn that turns into a cheer); no scene should be only a bar or a counter. The ending A/B is good comment bait: keep it, and do show Benny reacting to each option."
+]
+}

@@ -1,0 +1,174 @@
+{
+ "id": "2026-11-29-story-15",
+ "version": 1,
+ "source": "TeamDeam 'Which Room Would You Pick To Save Your Mom?' (1.5M) choice format; new wording",
+ "hook_type": {
+  "number": null,
+  "name": "owner-directed (exempt from rotation)"
+ },
+ "format": {
+  "number": 1,
+  "name": "Survive one year in a room"
+ },
+ "title_working": "Which Room Would You Pick To Save Your Mom?",
+ "hook_text": "ONE YEAR TO SAVE MOM",
+ "hook_until": 2.6,
+ "music": "tender",
+ "music_gain": 0.13,
+ "world_rule": "Survive one year in a room",
+ "lines": [
+  {
+   "text": "Which room would you pick to save your mom?",
+   "say": "(sad) Which room would you pick to save your mom?",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "You have to survive one full year inside it.",
+   "say": "(nervous) You have to survive one full year inside it.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "stakes",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Room one is freezing. No bed, no food, and every hour it gets colder.",
+   "say": "(nervous) Room one is freezing. No bed, no food, and every hour it gets colder.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "cold",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "And not one person will ever come to see you.",
+   "say": "(sad) And not one person will ever come to see you.",
+   "speaker": "narrator",
+   "speed": 0.88,
+   "volume": -1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "lonely",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Room two is pitch black. You can hear your mom calling your name.",
+   "say": "(nervous) Room two is pitch black. You can hear your mom calling your name.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": -1,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "eerie",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "But no matter where you walk, you can never reach her.",
+   "say": "(sad) But no matter where you walk, you can never reach her.",
+   "speaker": "narrator",
+   "speed": 0.86,
+   "volume": -2,
+   "pause": 0.35,
+   "beat": "",
+   "voice": {
+    "emotion": "heavy",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Room three is perfect. Your dream bedroom, endless snacks and the biggest gaming setup ever.",
+   "say": "(happy) Room three is perfect. Your dream bedroom, endless snacks and the biggest gaming setup ever.",
+   "speaker": "narrator",
+   "speed": 0.97,
+   "volume": 1,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "amazed",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "And your mom is right there with you, smiling.",
+   "say": "(soft tone) And your mom is right there with you, smiling.",
+   "speaker": "narrator",
+   "speed": 0.88,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "warm",
+    "tags": "(soft tone)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "But to pick room three, you have to subscribe and comment which room you chose.",
+   "say": "(happy) But to pick room three, you have to subscribe and comment which room you chose.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 1,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "playful",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  }
+ ],
+ "word_count": 105,
+ "est_seconds": 30.0,
+ "tail_hold": 1.2,
+ "upload": {
+  "title": "Which Room Would You Pick To Save Your Mom? #Shorts",
+  "description": "One year in one room to save your mom. Room 1, 2 or 3?\nComment your room below.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "which room would you pick",
+   "save your mom",
+   "would you rather",
+   "choose one",
+   "emotional choice",
+   "animated story",
+   "story time animation",
+   "roblox story",
+   "roblox animation"
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+{"pass": true, "average": 8.5,
+ "scores": {"hook": 9, "stakes": 9, "open_loop": 8, "escalation": 8, "payoff": 9, "surprise": 8, "ending": 9, "clarity": 8, "facts": 9, "originality": 8},
+ "fixes": [
+  "Lines 4-5 (open_loop): the brain half of the loop is named at ~15.0 s of ~43.1 s (35%), so only the math half carries the back 60%. Make line 3's promise sharper so the viewer waits for a specific number, e.g. 'Math says yes, big time. Stay for the number.' Or make line 7 re-open it ('But here's what your brain hides:') before the +$25.",
+  "Line 9 (escalation): at 13 spoken words (~5.0 s), it stacks the <2% reveal and Benny's 'Wait... and I said no?' in one scene. Split it into two cuts: (a) pie chart + 'Under two percent.' and (b) a close-up on Benny + 'Wait... and I said no?', so the beat changes every ~2.5 s instead of holding one scene for 5 s.",
+  "Line 6 (surprise): '$100 feels like $195' is the standard Kahneman recap that psych-Shorts viewers already know. Make the visual do the 'wait, what': the red bar should visibly overtake the green +$150 bar on the word 'ninety five', with a hard zoom, so the moment the loss beats the win is a visual flip, not just a number.",
+  "Line 1 / line 10 (clarity): 'one fifty' is said aloud twice and can be misheard by ear (time, 1.50). Line 1 is covered by the on-screen '+$150'. In line 10, say 'a hundred fifty' (+1 word) or make sure '+$150 / -$100' is on screen during line 10 as the visual says. Line 4 'multiplies one side' is slightly abstract for a 12-year-old; 'makes one side of this coin feel bigger' is plainer at the same length if a word is trimmed elsewhere.",
+  "Originality: Benny's 'Wait... and I said no?' now makes the story his own (v2 fix landed), but lines 3-8 are still a textbook narration. Give Benny one more small physical gag tied to the brain prop, e.g. in line 6 the pink brain he holds puffs up the red bar like a balloon pump, so the mechanism is Benny-specific, not stock infographics.",
+  "Line 3 ph (minor): 'oo, sobra pa' for 'yes, big time' reads a little odd. 'Sabi ng *math*, oo, at malaki pa ang panalo.' or 'Sabi ng *math*: oo, sulit na sulit.' is more natural Taglish."
+ ],
+ "notes": {
+  "verdict_1am_viewer": "Would stop: yes. A second-person money question with +$150 / -$100 on screen at frame 0, and 'Flip?' now lands at ~4.2 s (v2: ~5.8 s). Would stay: yes. The 'secretly multiplies' tease pulls through to the 2x reveal, and the +$25 -> +$2,500 -> under 2% ladder plus Benny's 'and I said no?' gives a real ending. The only drag is the 5-s line 9 and a familiar Kahneman middle (lines 5-6).",
+  "previous_fixes_check": {
+   "1_line4_ph_leak": "DONE ('pinalalaki' no longer leaks the 2x; meaning matches 'multiplies').",
+   "2_hook_length": "DONE (line 1 say = 11 words; 'Flip?' at ~4.2 s).",
+   "3_explicit_math_loop": "DONE (line 3 'Math says yes, big time'; paid off by +$2,500 and <2% in lines 8-9). The brain half still resolves at 35% (see fix 1).",
+   "4_line5_trim": "DONE (10 spoken words; '150 studies' is on screen only).",
+   "5_say_dollars": "DONE (lines 6 and 8 now say 'dollars').",
+   "6_tie_payoff_to_brain": "DONE ('Wait... and I said no?' in line 9).",
+   "7_line10_lose": "DONE ('Tails, lose a hundred'; caveat kept short).",
+   "8_benny_voiced_reaction": "DONE (merged with fix 6)."
+  },
+  "math_recomputed": "In .venv python: EV/flip = 0.5*150 - 0.5*100 = +25 (OK). 1.955*100 = 195.5 -> 'about $195' (OK; 95% range 182.0-210.2, all > 150). 100 flips: 100*25 = +2,500 (OK). Net = 250h - 10,000 < 0 iff h <= 39 (h = 40 gives exactly 0); P(h <= 39 | n=100, p=0.5) = 0.0176001 = 1.76% < 2% (OK). 'One flip's still 50/50' is correct and matches the research caveat.",
+  "sources_checked": "Every number maps to a research-file entry with a source_url: coin toss and 'most people decline' (litcharts + margin-notes), 150 articles / 1.955 (aeaweb JEL), 'about twice' (Wikipedia, with the atticusli caveat). The computed figures are re-verified above. No claim looked shaky and the facts are unchanged since v2, so no URL was refetched.",
+  "format": "10 lines (OK, 8-14). 95 display words / 112 spoken words (OK, 75-130; matches word_count and word_count_spoken). Spoken length 112 / 2.6 = 43.1 s (OK, 30-50; est_seconds 43 is accurate). Line start times at 2.6 wps: 0.0, 4.2, 7.3, 11.5, 15.0, 18.8, 23.8, 27.7, 32.3, 37.3 s. Spoken words per line: 11, 8, 11, 9, 10, 13, 10, 12, 13, 15. On-screen text max 4 words per scene (OK). 'Not financial advice' tag is on screen in the final scene (OK). No gambling, casino or crypto mentions (OK).",
+  "ph_check": "All 10 ph lines read as natural Taglish with the same meaning. The line 4 leak is fixed. Line 3 'oo, sobra pa' is slightly awkward (minor fix above)."
+ }
+}

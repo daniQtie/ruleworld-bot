@@ -1,0 +1,755 @@
+{
+ "id": "2026-11-22-story-03",
+ "version": 1,
+ "hook_type": {
+  "number": 6,
+  "name": "The Question Hook"
+ },
+ "format": {
+  "number": 2,
+  "name": "In This World..."
+ },
+ "title_working": "In This World, You Only Get 1,000 Steps a Day",
+ "premise": "In a world where everyone gets 1,000 steps a day, a boy with 62 left must climb a 100-step hill to light the lighthouse for his mum's ferry.",
+ "world_rule": "Everyone gets 1,000 steps a day, shown as a glowing number on the chest. At zero you freeze where you stand until sunrise. Steps cannot be saved; at sunrise everyone resets to 1,000. Hidden part (planted, revealed late): when people walk holding hands, only one of their numbers goes down.",
+ "logline": "A boy who is running out of steps needs the one neighbour who never walks anywhere.",
+ "characters": [
+  {
+   "name": "Kai",
+   "age": 11,
+   "role": "protagonist / first-person narrator",
+   "want": "light the lighthouse lamp so his mum's night ferry finds the harbour",
+   "personality": "brave, impatient, loves his mum",
+   "arc": "racing alone > failing > asking for help > walking together",
+   "look": {
+    "skin": "#c98e62",
+    "hair": "short black, slightly spiky",
+    "clothes": "yellow raincoat, navy pants, red boots",
+    "palette": "yellow / navy / red",
+    "accessories": "lighthouse key (from Marlo)",
+    "scale": 0.82
+   }
+  },
+  {
+   "name": "Mrs. Pell",
+   "age": 70,
+   "role": "obstacle who becomes the solution",
+   "want": "never freeze alone in the dark",
+   "personality": "fearful, guarded, secretly lonely",
+   "arc": "hoarding > refusal > choosing to share",
+   "look": {
+    "skin": "#f0c9a6",
+    "hair": "white bun",
+    "clothes": "purple dress, green knitted shawl",
+    "palette": "purple / green",
+    "accessories": "round glasses",
+    "scale": 0.95
+   }
+  },
+  {
+   "name": "Keeper Marlo",
+   "age": 65,
+   "role": "mentor, frozen at zero",
+   "want": "the lamp lit",
+   "personality": "steady, proud of Kai",
+   "arc": "frozen helper who passes on the key",
+   "look": {
+    "skin": "#d9a27a",
+    "hair": "grey beard",
+    "clothes": "navy sweater, captain-style cap",
+    "palette": "navy / white",
+    "accessories": "big brass key",
+    "scale": 1.05
+   }
+  },
+  {
+   "name": "Mum",
+   "role": "on the ferry (memory flash only)",
+   "look": {
+    "skin": "#c98e62",
+    "hair": "black ponytail",
+    "clothes": "red raincoat",
+    "scale": 1.0
+   }
+  },
+  {
+   "name": "Two small kids",
+   "role": "plant for the hidden rule",
+   "look": "small avatars in matching red and blue, holding hands"
+  }
+ ],
+ "locations": [
+  {
+   "name": "Town street at dusk",
+   "look": "Kenney city, dusk/sunset light, people with glowing chest numbers"
+  },
+  {
+   "name": "Lighthouse hill in fog",
+   "look": "existing hill set: winding dirt path, bench halfway, striped lighthouse, sea with a ferry, thick blue-grey fog, night"
+  }
+ ],
+ "beats": {
+  "hook": "62 steps left vs a 100-step hill (question)",
+  "rule": "1,000 steps a day, zero = freeze till sunrise, no saving",
+  "plant": "two kids holding hands: only one number moves",
+  "conflict": "fog horn; mum on the ferry; keeper frozen with the key",
+  "escalation": [
+   "Kai climbs alone and drops to 12 at halfway",
+   "Mrs. Pell (900 steps) refuses",
+   "Kai drops to 4 with 42 to go; ferry drifts toward rocks"
+  ],
+  "reveal": "Kai's plea: unspent steps vanish at sunrise; Pell takes his hand: holding hands, you walk on one number",
+  "resolution": "lamp lit, ferry turns home",
+  "ending": "Steps you keep disappear at sunrise; steps you share bring someone home."
+ },
+ "lines": [
+  {
+   "text": "What would you do with sixty-two steps left, and a hill that needs one hundred?",
+   "say": "(nervous)(soft tone) What would you do with sixty-two steps left, (break) and a hill that needs one hundred?",
+   "speaker": "narrator",
+   "beat": "hook",
+   "speed": 0.7,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "suspense",
+    "tags": "(nervous)(soft tone)"
+   },
+   "shot": "Close on Kai's chest: a glowing 62. Tilt up past his worried face to a dark lighthouse on a foggy hill.",
+   "acting": {
+    "Kai": "worried, looking up at the hill"
+   }
+  },
+  {
+   "text": "In this world, everyone gets one thousand steps a day.",
+   "say": "(calm) In this world, everyone gets one thousand steps a day.",
+   "speaker": "narrator",
+   "beat": "rule",
+   "speed": 0.72,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "mystery",
+    "tags": "(calm)"
+   },
+   "shot": "Town street at dusk. People walk with glowing numbers on their chests.",
+   "acting": {}
+  },
+  {
+   "text": "A glowing number on your chest counts every single one.",
+   "say": "(calm) A glowing number on your chest counts every single one.",
+   "speaker": "narrator",
+   "beat": "rule",
+   "speed": 0.72,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "mystery",
+    "tags": "(calm)"
+   },
+   "shot": "Close on a walker's chest number ticking down with each step: 214, 213, 212.",
+   "acting": {}
+  },
+  {
+   "text": "When it hits zero, you freeze. Right where you stand. Until sunrise.",
+   "say": "(worried) When it hits zero, (break) you freeze. Right where you stand. Until sunrise.",
+   "speaker": "narrator",
+   "beat": "rule",
+   "speed": 0.68,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "suspense",
+    "tags": "(worried)"
+   },
+   "shot": "A man mid-stride hits 0. He locks in place, pale blue, frost sparkles.",
+   "acting": {
+    "Man": "surprised, then frozen"
+   }
+  },
+  {
+   "text": "And you can't save them. At sunrise, everyone goes back to one thousand.",
+   "say": "(calm) And you can't save them. At sunrise, everyone goes back to one thousand.",
+   "speaker": "narrator",
+   "beat": "rule",
+   "speed": 0.72,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "mystery",
+    "tags": "(calm)"
+   },
+   "shot": "Time-lapse: sunrise light sweeps the street; every number flips to 1000; the frozen man walks on.",
+   "acting": {}
+  },
+  {
+   "text": "That evening, I saw two little kids holding hands. Only one of their numbers was going down.",
+   "say": "(curious) That evening, I saw two little kids holding hands. Only one of their numbers was going down.",
+   "speaker": "narrator",
+   "beat": "rule",
+   "speed": 0.72,
+   "pause": 1.2,
+   "voice": {
+    "emotion": "curiosity",
+    "tags": "(curious)"
+   },
+   "shot": "PLANT: two small kids walk holding hands. One number ticks down; the other stays still. Kai glances, then looks away.",
+   "acting": {
+    "Kai": "curious glance"
+   },
+   "silent_beat": "hold on the two counters"
+  },
+  {
+   "text": "I didn't think about it. Because then, the fog horn sounded.",
+   "say": "(nervous) I didn't think about it. Because then, the fog horn sounded.",
+   "speaker": "narrator",
+   "beat": "conflict",
+   "speed": 0.72,
+   "pause": 0.8,
+   "voice": {
+    "emotion": "unease",
+    "tags": "(nervous)"
+   },
+   "shot": "Kai turns toward the sea. Fog rolls over the harbour. A horn sounds (sfx).",
+   "acting": {
+    "Kai": "nervous, turns head"
+   },
+   "silent_beat": "fog horn"
+  },
+  {
+   "text": "My mum was on the night ferry. And the lighthouse was dark.",
+   "say": "(worried)(soft tone) My mum was on the night ferry. And the lighthouse was dark.",
+   "speaker": "narrator",
+   "beat": "conflict",
+   "speed": 0.68,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "worry",
+    "tags": "(worried)(soft tone)"
+   },
+   "shot": "Wide: ferry lights blur in the fog at sea; the lighthouse on the hill is dark.",
+   "acting": {
+    "Kai": "worried, eyes on the sea"
+   }
+  },
+  {
+   "text": "She always waved at the lamp from the deck. Tonight, there was nothing to wave at.",
+   "say": "(sad)(soft tone) She always waved at the lamp from the deck. Tonight, there was nothing to wave at.",
+   "speaker": "narrator",
+   "beat": "conflict",
+   "speed": 0.68,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "longing",
+    "tags": "(sad)(soft tone)"
+   },
+   "shot": "Memory flash (warm tint): a woman on a ferry deck waving up at a bright lighthouse. Back to the dark tower.",
+   "acting": {
+    "Mum": "happy, waving"
+   }
+  },
+  {
+   "text": "At the foot of the hill stood Keeper Marlo. Frozen. Zero steps.",
+   "say": "(sad) At the foot of the hill stood Keeper Marlo. Frozen. Zero steps.",
+   "speaker": "narrator",
+   "beat": "conflict",
+   "speed": 0.7,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "shock",
+    "tags": "(sad)"
+   },
+   "shot": "Old keeper frozen mid-step on the path, pale blue, a glowing 0, the big lamp key held out in his hand.",
+   "acting": {
+    "Marlo": "frozen, eyes still move to Kai"
+   }
+  },
+  {
+   "text": "Kai! Take my key. Someone has to light the lamp!",
+   "say": "(worried)(in a hurry tone) Kai! Take my key. Someone has to light the lamp!",
+   "speaker": "Marlo",
+   "beat": "conflict",
+   "speed": 0.8,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "urgency",
+    "tags": "(worried)(in a hurry tone)"
+   },
+   "shot": "Marlo's eyes and mouth move inside the frozen body. Kai takes the key from his hand.",
+   "acting": {
+    "Marlo": "urgent",
+    "Kai": "scared, takes key"
+   }
+  },
+  {
+   "text": "I only have sixty-two steps. The path is one hundred!",
+   "say": "(scared) I only have sixty-two steps. The path is one hundred!",
+   "speaker": "Kai",
+   "beat": "conflict",
+   "speed": 0.78,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "fear",
+    "tags": "(scared)"
+   },
+   "shot": "Kai looks from his 62 up the winding path. The top is lost in fog.",
+   "acting": {
+    "Kai": "scared, looks up the path"
+   }
+  },
+  {
+   "text": "Then don't waste a single one.",
+   "say": "(calm)(soft tone) Then don't waste (break) a single one.",
+   "speaker": "Marlo",
+   "beat": "conflict",
+   "speed": 0.7,
+   "pause": 0.7,
+   "voice": {
+    "emotion": "resolve",
+    "tags": "(calm)(soft tone)"
+   },
+   "shot": "Close on frozen Marlo; a small proud smile.",
+   "acting": {
+    "Marlo": "comforting"
+   }
+  },
+  {
+   "text": "So I climbed. And I counted.",
+   "say": "(confident) So I climbed. And I counted.",
+   "speaker": "narrator",
+   "beat": "escalate",
+   "speed": 0.7,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "determination",
+    "tags": "(confident)"
+   },
+   "shot": "Kai starts up the dirt path, key in hand.",
+   "acting": {
+    "Kai": "determined"
+   }
+  },
+  {
+   "text": "Fifty. Forty. Thirty. Twenty...",
+   "say": "(nervous) Fifty. Forty. Thirty. Twenty...",
+   "speaker": "narrator",
+   "beat": "escalate",
+   "speed": 0.7,
+   "pause": 0.6,
+   "voice": {
+    "emotion": "tension",
+    "tags": "(nervous)"
+   },
+   "shot": "Montage of the chest counter dropping as the path winds; fog thickens.",
+   "acting": {
+    "Kai": "nervous"
+   },
+   "silent_beat": "counter ticks"
+  },
+  {
+   "text": "Twelve. And I was only halfway up.",
+   "say": "(scared) Twelve. And I was only halfway up.",
+   "speaker": "narrator",
+   "beat": "escalate",
+   "speed": 0.68,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "fear",
+    "tags": "(scared)"
+   },
+   "shot": "Kai stops at a bend. His chest reads 12. The lighthouse is still far above.",
+   "acting": {
+    "Kai": "scared"
+   }
+  },
+  {
+   "text": "There sat Mrs. Pell on her bench, like every night. She never walked anywhere.",
+   "say": "(calm) There sat Mrs. Pell on her bench, like every night. She never walked anywhere.",
+   "speaker": "narrator",
+   "beat": "escalate",
+   "speed": 0.72,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "observation",
+    "tags": "(calm)"
+   },
+   "shot": "An old woman sits on a bench by the path, wrapped in a shawl, hands in her lap.",
+   "acting": {
+    "Pell": "neutral, guarded"
+   }
+  },
+  {
+   "text": "She still had nine hundred steps.",
+   "say": "(curious) She still had nine hundred steps.",
+   "speaker": "narrator",
+   "beat": "escalate",
+   "speed": 0.72,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "observation",
+    "tags": "(curious)"
+   },
+   "shot": "Close on her chest: a bright 900.",
+   "acting": {
+    "Pell": "neutral"
+   }
+  },
+  {
+   "text": "Mrs. Pell, please! Walk with me to the top!",
+   "say": "(scared) Mrs. Pell, please! Walk with me to the top!",
+   "speaker": "Kai",
+   "beat": "escalate",
+   "speed": 0.8,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "pleading",
+    "tags": "(scared)"
+   },
+   "shot": "Kai begs, pointing up the hill.",
+   "acting": {
+    "Kai": "pleading, scared",
+    "Pell": "surprised"
+   }
+  },
+  {
+   "text": "Up there? In the fog? If my number hits zero, I freeze alone in the dark.",
+   "say": "(scared) Up there? In the fog? If my number hits zero, I freeze alone in the dark.",
+   "speaker": "Pell",
+   "beat": "escalate",
+   "speed": 0.72,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "fear",
+    "tags": "(scared)"
+   },
+   "shot": "Mrs. Pell clutches her shawl and shakes her head.",
+   "acting": {
+    "Pell": "scared"
+   }
+  },
+  {
+   "text": "I froze on this hill once, when I was a girl. All night. Nobody came.",
+   "say": "(sad)(soft tone) I froze on this hill once, when I was a girl. All night. Nobody came.",
+   "speaker": "Pell",
+   "beat": "escalate",
+   "speed": 0.68,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "old fear",
+    "tags": "(sad)(soft tone)"
+   },
+   "shot": "Memory flash (cold blue tint): a small girl frozen on the dark hill, a 0 on her chest.",
+   "acting": {
+    "Pell": "sad, eyes down"
+   }
+  },
+  {
+   "text": "No. My steps are mine.",
+   "say": "(upset) No. My steps are mine.",
+   "speaker": "Pell",
+   "beat": "escalate",
+   "speed": 0.7,
+   "pause": 0.9,
+   "voice": {
+    "emotion": "refusal",
+    "tags": "(upset)"
+   },
+   "shot": "She looks away from him.",
+   "acting": {
+    "Pell": "angry, looks away",
+    "Kai": "sad"
+   },
+   "silent_beat": "Kai turns and keeps climbing"
+  },
+  {
+   "text": "So I went on alone. Ten. Seven. Four.",
+   "say": "(sad) So I went on alone. Ten. Seven. Four.",
+   "speaker": "narrator",
+   "beat": "escalate",
+   "speed": 0.68,
+   "pause": 0.6,
+   "voice": {
+    "emotion": "despair",
+    "tags": "(sad)"
+   },
+   "shot": "Kai climbs alone; the counter drops 10, 7, 4.",
+   "acting": {
+    "Kai": "sad, determined"
+   }
+  },
+  {
+   "text": "I stopped. Forty-two steps to the top. Four steps on my chest.",
+   "say": "(worried) I stopped. (break) Forty-two steps to the top. Four steps on my chest.",
+   "speaker": "narrator",
+   "beat": "escalate",
+   "speed": 0.68,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "despair",
+    "tags": "(worried)"
+   },
+   "shot": "Kai stands still on the path, 4 on his chest, lighthouse far above in the fog.",
+   "acting": {
+    "Kai": "trying not to cry"
+   }
+  },
+  {
+   "text": "I could go back down. Or I could freeze up here, alone in the dark.",
+   "say": "(worried) I could go back down. Or I could freeze up here, alone in the dark.",
+   "speaker": "narrator",
+   "beat": "escalate",
+   "speed": 0.68,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "choice",
+    "tags": "(worried)"
+   },
+   "shot": "Kai looks down the path, then up into the fog.",
+   "acting": {
+    "Kai": "scared, looking down then up"
+   }
+  },
+  {
+   "text": "And out in the fog, the horn sounded again. Closer to the rocks.",
+   "say": "(scared)(soft tone) And out in the fog, the horn sounded again. Closer to the rocks.",
+   "speaker": "narrator",
+   "beat": "escalate",
+   "speed": 0.7,
+   "pause": 0.6,
+   "voice": {
+    "emotion": "dread",
+    "tags": "(scared)(soft tone)"
+   },
+   "shot": "Ferry lights drift toward dark rocks below the hill. Horn (sfx).",
+   "acting": {},
+   "silent_beat": "horn"
+  },
+  {
+   "text": "Mrs. Pell! Your steps disappear at sunrise anyway!",
+   "say": "(frustrated) Mrs. Pell! Your steps disappear at sunrise anyway!",
+   "speaker": "Kai",
+   "beat": "reveal",
+   "speed": 0.8,
+   "pause": 0.25,
+   "voice": {
+    "emotion": "desperation",
+    "tags": "(frustrated)"
+   },
+   "shot": "Kai turns and shouts down the hill.",
+   "acting": {
+    "Kai": "angry-desperate"
+   }
+  },
+  {
+   "text": "Tonight, they could bring my mum home.",
+   "say": "(sad)(soft tone) Tonight, they could bring my mum home.",
+   "speaker": "Kai",
+   "beat": "reveal",
+   "speed": 0.7,
+   "pause": 1.0,
+   "voice": {
+    "emotion": "plea",
+    "tags": "(sad)(soft tone)"
+   },
+   "shot": "Kai's voice breaks. Below, Mrs. Pell looks out at the ferry lights.",
+   "acting": {
+    "Kai": "crying",
+    "Pell": "sad"
+   },
+   "silent_beat": "Pell looks at the sea"
+  },
+  {
+   "text": "For a long moment, she didn't move.",
+   "say": "(worried) For a long moment, she didn't move.",
+   "speaker": "narrator",
+   "beat": "reveal",
+   "speed": 0.7,
+   "pause": 0.6,
+   "voice": {
+    "emotion": "suspense",
+    "tags": "(worried)"
+   },
+   "shot": "Hold on Mrs. Pell on her bench, the fog drifting.",
+   "acting": {
+    "Pell": "trying not to cry"
+   }
+  },
+  {
+   "text": "Then she stood up, climbed to me, and took my hand.",
+   "say": "(moved) Then she stood up, climbed to me, and took my hand.",
+   "speaker": "narrator",
+   "beat": "reveal",
+   "speed": 0.72,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "relief",
+    "tags": "(moved)"
+   },
+   "shot": "Mrs. Pell climbs to Kai (her number drops) and takes his hand.",
+   "acting": {
+    "Pell": "determined",
+    "Kai": "surprised"
+   }
+  },
+  {
+   "text": "You won't freeze alone. And neither will I.",
+   "say": "(empathetic)(soft tone) You won't freeze alone. And neither will I.",
+   "speaker": "Pell",
+   "beat": "reveal",
+   "speed": 0.72,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "warmth",
+    "tags": "(empathetic)(soft tone)"
+   },
+   "shot": "Close on Mrs. Pell, eyes wet, a small brave smile.",
+   "acting": {
+    "Pell": "comforting",
+    "Kai": "surprised"
+   }
+  },
+  {
+   "text": "Hold on tight. We walk on mine.",
+   "say": "(confident)(soft tone) Hold on tight. We walk on mine.",
+   "speaker": "Pell",
+   "beat": "reveal",
+   "speed": 0.72,
+   "pause": 0.6,
+   "voice": {
+    "emotion": "warmth",
+    "tags": "(confident)(soft tone)"
+   },
+   "shot": "Close on their joined hands.",
+   "acting": {
+    "Pell": "comforting",
+    "Kai": "relieved"
+   }
+  },
+  {
+   "text": "My four didn't move. Only her number went down.",
+   "say": "(surprised) My four didn't move. Only her number went down.",
+   "speaker": "narrator",
+   "beat": "reveal",
+   "speed": 0.72,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "wonder",
+    "tags": "(surprised)"
+   },
+   "shot": "They climb together: his 4 stays still, her 850s tick down.",
+   "acting": {
+    "Kai": "surprised"
+   }
+  },
+  {
+   "text": "Just like those two kids. When you hold hands, you walk on one number.",
+   "say": "(moved) Just like those two kids. When you hold hands, you walk on one number.",
+   "speaker": "narrator",
+   "beat": "reveal",
+   "speed": 0.7,
+   "pause": 0.8,
+   "voice": {
+    "emotion": "realization",
+    "tags": "(moved)"
+   },
+   "shot": "Quick echo of the two kids holding hands, then back to Kai and Mrs. Pell climbing into the fog.",
+   "acting": {
+    "Kai": "happy"
+   }
+  },
+  {
+   "text": "At the top, I turned the key. The lamp cut through the fog.",
+   "say": "(happy) At the top, I turned the key. The lamp cut through the fog.",
+   "speaker": "narrator",
+   "beat": "resolution",
+   "speed": 0.75,
+   "pause": 0.6,
+   "voice": {
+    "emotion": "triumph",
+    "tags": "(happy)"
+   },
+   "shot": "The lamp blazes; a beam sweeps over the sea.",
+   "acting": {
+    "Kai": "happy"
+   },
+   "silent_beat": "beam sweep"
+  },
+  {
+   "text": "And the ferry turned toward the harbour.",
+   "say": "(relaxed) And the ferry turned toward the harbour.",
+   "speaker": "narrator",
+   "beat": "resolution",
+   "speed": 0.72,
+   "pause": 1.5,
+   "voice": {
+    "emotion": "relief",
+    "tags": "(relaxed)"
+   },
+   "shot": "Ferry lights turn away from the rocks toward the harbour lights. Horn, softer.",
+   "acting": {
+    "Kai": "relieved",
+    "Pell": "relieved"
+   },
+   "silent_beat": "ferry turns"
+  },
+  {
+   "text": "Eight hundred and fifty steps left. I've never felt so rich.",
+   "say": "(happy)(soft tone) Eight hundred and fifty steps left. I've never felt so rich.",
+   "speaker": "Pell",
+   "beat": "ending",
+   "speed": 0.72,
+   "pause": 0.6,
+   "voice": {
+    "emotion": "warmth",
+    "tags": "(happy)(soft tone)"
+   },
+   "shot": "Mrs. Pell laughs softly, still holding Kai's hand at the top.",
+   "acting": {
+    "Pell": "happy",
+    "Kai": "happy"
+   }
+  },
+  {
+   "text": "Steps you keep for yourself disappear at sunrise.",
+   "say": "(moved)(soft tone) Steps you keep for yourself disappear at sunrise.",
+   "speaker": "narrator",
+   "beat": "ending",
+   "speed": 0.68,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "reflection",
+    "tags": "(moved)(soft tone)"
+   },
+   "shot": "Wide: the two of them at the lamp; the beam sweeps; at the foot of the hill frozen Marlo smiles.",
+   "acting": {}
+  },
+  {
+   "text": "Steps you share can bring someone home.",
+   "say": "(moved)(soft tone) Steps you share can bring someone home.",
+   "speaker": "narrator",
+   "beat": "ending",
+   "speed": 0.68,
+   "pause": 0,
+   "voice": {
+    "emotion": "reflection",
+    "tags": "(moved)(soft tone)"
+   },
+   "shot": "Final image: the lit lighthouse over the fog, the ferry coming into the harbour.",
+   "acting": {}
+  }
+ ],
+ "word_count": 401,
+ "est_seconds": 108.7,
+ "tail_hold": 2.5,
+ "est_method": "6.26*speed^0.83 w/s + pauses + 0.25 s per (break) + tail",
+ "upload": {
+  "title": "In This World, You Only Get 1,000 Steps a Day #Shorts",
+  "description": "He had 62 steps left. The hill needed 100.\nWould you have shared your steps? Tell us below.\nIn a world where every step is counted, a boy races to light the lighthouse for his mum's ferry.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animation #storytime #shorts",
+  "tags": [
+   "roblox story",
+   "roblox animation",
+   "in this world",
+   "animated story",
+   "emotional story",
+   "1000 steps a day",
+   "lighthouse story",
+   "story time animation"
+  ]
+ },
+ "est_note": "Episode 2 measured ~1.2x this formula (102.7 s real vs 85 s est); expected real runtime ~ est x 1.2"
+}

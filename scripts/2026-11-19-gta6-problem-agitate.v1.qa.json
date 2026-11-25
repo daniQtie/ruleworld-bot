@@ -1,0 +1,41 @@
+{
+  "pass": false,
+  "average": 7.1,
+  "scores": {"hook": 7, "stakes": 8, "open_loop": 8, "escalation": 8, "payoff": 6, "surprise": 8, "ending": 8, "clarity": 7, "facts": 4, "originality": 6, "entertainment": 8},
+  "hard_gates": {"hook_rotation_assigned_type": true, "benny_in_story": true, "length_50_60s": true, "english_clear": false},
+  "hard_gate_notes": {
+    "hook_rotation_assigned_type": "hook_rotation show: this episode = #4 Problem-Agitate, previous (gta6-curiosity) = #3, so different. Opener names the pain, but it reads closer to a bold/shock statement; the 'and it gets worse' agitate promised in the research hook is missing from line 1 (the agitation arrives in lines 3-12). Passes, weakly.",
+    "length_50_60s": "137 words. Calibration from this project's own rendered voice WAVs (kokoro am_liam speed 0.9, gap 0.22): 2.5-2.8 words/s, so 137 words is about 49-55 s, with number-heavy lines ('seventy-nine ninety-nine', 'one hundred ninety-five eighty-seven') pulling it slower, about 52-57 s. The real risk is landing UNDER 50 s (Rule E), not over the 62 s video QA limit. Even at the pessimistic 2.3 w/s it is 59.6 s, so no overrun. Confirm with the real TTS render before video QA.",
+    "english_clear": "Line 13 'Not financial advice.' is a telegraphic fragment, which the hard gate forbids. Make it a complete sentence: 'This is not financial advice.' Everything else is complete, plain and at most 12 words (longest sentence 11)."
+  },
+  "fact_check": {
+    "the_95_88_195_87_claim": "MISLEADING. The GTA+ trial is one FREE month, so after launch only 11 months are paid inside the first 12 months. 'One year costs $95.88' is true only as 12 paid months, which are months 2-13, i.e. 'a year AFTER the free month'. 'His real total for the year is $195.87' is FALSE as worded. Re-computed: 11 x 7.99 = $87.89, so the true first-12-month total is $99.99 + $87.89 = $187.88. $195.87 is the 13-month total. 'More than double' still holds either way ($79.99 x 2 = $159.98). The script's own math_check admits this nuance, yet ships 'for the year'. The research file's 'year one' label is itself wrong and should not be inherited.",
+    "beyond_sources": [
+      "Lines 3-4 'There is no disc / It is just a download code' are stated as flat fact; the cited tech-insider source is 'as reported' (the research marks it that way). Needs 'reportedly' or similar, or a primary source.",
+      "$7.99/month rests on a 2024 TweakTown article; no 2026 primary source confirms the price GTA+ converts to when the GTA VI trial ends. The IBTimes source only says the trial can convert to paid. Prefer 'at the usual seven ninety-nine' or verify on a store page.",
+      "Hook 'does NOT cost $79.99. It costs way more.' overstates the sources: the Standard price IS $79.99. The extra $20 upgrade and the GTA+ charge are Benny's optional or forgotten choices, not mandatory costs. Calling it the 'real total' implies everyone pays it.",
+      "Line 1-2 'preorder' plus 'It is launch day' conflict: you cannot preorder on release day. Use 'launch day purchase' or drop 'preorder' from the spoken hook while keeping the 'digital preorder' trial claim consistent (source says digital pre-orders get the trial).",
+      "Launch date is sourced to Rockstar's page and used only as 'launch day': OK.",
+      "$99.99 - $79.99 = $20.00 and $79.99 + $20 = $99.99: correct."
+    ]
+  },
+  "format_checks": {
+    "scenes": "16 scenes, within 12-18: OK",
+    "on_screen_text": "All badges are 5 words or fewer: OK",
+    "rule_a_numbers": "$79.99, $99.99, $20, $7.99, $95.88 and $195.87 agree across say, text and on_screen. The only issue is that $195.87 is labelled 'for the year' (a fact problem, not a consistency one).",
+    "rule_b_c": "Caption text equals the spoken form; scene 12 badge '1 YEAR = $95.88' matches the claim but inherits the 'one year' wording flaw (see fact_check).",
+    "rule_d": "OK: say 'GTA six' / 'GTA plus', text 'GTA 6' / 'GTA+'. No spelled-out letters.",
+    "upload_block": "Title pays off; description line 1 is a real hook, not a title copy; 5 hashtags; 'Not financial advice.' present; fan-commentary disclaimer present. Same 'year' wording as the script ('$95.88 a year' is fine as a plain price fact, but the description also says 'or $95.88 a year' which is accurate only as 12 paid months)."
+  },
+  "viewer_read": "At 1 a.m. I stop at 0.5 s: the '$79.99' sign slashed with a red STRIKE plus 'It costs way more' is a clear gap. I stay for the running counter and the twist that upgrading lands exactly on the Ultimate price. The payoff weakens because the final number is padded by a forgotten trial that the viewer would choose to cancel, and the headline contradicts itself (the price is $79.99 if you just buy Standard).",
+  "fixes": [
+    "Line 11-12 (fact, must fix): change to 'After the free month, a year costs ninety-five eighty-eight.' and 'His real total after thirteen months is one hundred ninety-five eighty-seven. That is more than double.' Update the visuals: scene 12 badge '1 YEAR = $95.88' to 'AFTER FREE MONTH', scene 13/14 badge to '13 MONTHS = $195.87'. Alternative: keep 'the year' and use 11 paid months: $87.89 and $187.88, with 'eighty-seven eighty-nine' and 'one eighty-seven eighty-eight' everywhere (Rule A). Also fix the research file's 'year one' label and the math_check text.",
+    "Line 13 (hard gate): replace the fragment with 'This is not financial advice.' (complete sentence), and keep the 'NOT FINANCIAL ADVICE' footer.",
+    "Line 1 (hook and policy): 'does not cost $79.99. It costs way more.' is false if you only buy Standard. Reword to something true that still agitates, for example 'Your GTA six price is not seventy-nine ninety-nine. It gets way worse.' or 'That seventy-nine ninety-nine price tag is a trap.' Keep the first word by 0.1 s and the Problem-Agitate shape (pain, then twist the knife).",
+    "Lines 1-2: drop the 'preorder' / 'launch day' contradiction. Say 'Your GTA six purchase' or set the story as launch-day purchase; keep 'digital preorder' only in line 9 if you want the trial claim to match the source wording.",
+    "Lines 3-4: add 'reportedly' or soften ('The store says it is only a download code'), because the only source is a secondary 'as reported' note.",
+    "Line 10: verify the post-trial GTA+ price on a current store page or Rockstar's GTA+ page and add that URL to facts_used (the current source is 2024); otherwise say 'about eight dollars a month' only if it is shown as '~$8' everywhere (Rule A), which would break the exact math, so verification is preferred.",
+    "Length: run the real TTS render and confirm 50-60 s before video QA. If under 50 s, add a short complete sentence, for example in line 8 'Same price, plus a wasted night.', rather than padding the numbers."
+  ],
+  "verdict": "FAIL (facts 4 < 7, english_clear gate false). Story, gags, escalation, A/B ending and structure are strong; fix the 13-month/11-month math wording, the fragment and the overstated hook, then resubmit as v2 with the same hook type #4."
+}

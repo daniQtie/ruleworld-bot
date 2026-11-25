@@ -1,0 +1,45 @@
+{
+  "id": "2026-11-19-gta6-listicle",
+  "hook_type": {"number": 2, "name": "The Listicle / Number Hook"},
+  "hook_candidates": [
+    "3 money mistakes people make on GTA 6 launch day.",
+    "Three launch-day money traps. Number two is almost half of us.",
+    "3 ways GTA 6 launch day empties your wallet.",
+    "Three money mistakes, and one of them costs you twenty dollars for nothing."
+  ],
+  "chosen_hook": "3 money mistakes people make on GTA 6 launch day.",
+  "angle": "MONEY + psychology. Benny at a launch-day line (original character, hoodie + gold shades) falls for three traps in a row: (1) the $20 'Ultimate' upsell, (2) buy now pay later, (3) the too-good fake key. Psych hook: launch FOMO makes us pay for the feeling of being first.",
+  "items": [
+    {"n": 1, "name": "The upsell", "fact_ref": 1, "number": "$20 extra = 25 percent more for the Ultimate edition"},
+    {"n": 2, "name": "Buy now, pay later", "fact_ref": 3, "number": "47 percent of BNPL users paid late in the past year"},
+    {"n": 3, "name": "The fake key", "fact_ref": 4, "number": "dozens of fake sites (NordVPN)"}
+  ],
+  "facts": [
+    {"claim": "GTA 6 Standard Edition $79.99, Ultimate Edition $99.99 (difference $20.00). Ultimate adds extra in-game vehicles, weapon variants, storefronts and a mission. Release Nov 19, 2026 on PS5 and Xbox Series X|S only (consoles). Pre-order/early-buy bonus pack for purchases before Nov 20, 2026 (contents not listed).", "source_url": "https://gameluster.com/gta-6-pre-order-pricing-standard-ultimate-edition/"},
+    {"claim": "Math (python): $99.99 - $79.99 = $20.00; 20 / 79.99 = 25.0 percent more for extra in-game items only. Say 'twenty dollars, a quarter more'.", "source_url": "https://gameluster.com/gta-6-pre-order-pricing-standard-ultimate-edition/"},
+    {"claim": "LendingTree survey (2,060 US consumers aged 18-80, fielded March 17-23, 2026): 47 percent of buy-now-pay-later users paid late on a BNPL loan in the past year, up from 41 percent in 2025 and 34 percent in 2024. 34 percent of BNPL users have used it for tech devices (page does not mention video games).", "source_url": "https://www.lendingtree.com/personal/buy-now-pay-later-loan-statistics/"},
+    {"claim": "NordVPN Threat Protection team (reported by CyberInsider, May 26, 2026) found dozens of malicious websites impersonating Rockstar Games and game storefronts: fake pre-orders, beta access, early downloads, phishing pages stealing Social Club logins, fake storefronts charging for nonexistent early access, malware disguised as installers. No victim or loss totals reported.", "source_url": "https://cyberinsider.com/fake-gta-6-pre-order-beta-scams-spread-malware-before-launch/"},
+    {"claim": "Older context (2024 survey, 34 percent late) shows the trend rising; do not mix with the 47 percent figure on screen.", "source_url": "https://www.lendingtree.com/personal/bnpl-late-survey/"}
+  ],
+  "the_twist": "The scariest trap is the one that looks like a deal: a cheap early key for a game that, per the verified platform info, only exists on PS5 and Xbox. Number two is the 'wait, what': 47 percent of pay-later users paid late, so almost half of the 'four easy payments' crowd got caught. Number one has a clean number: twenty dollars (25 percent) for extras that are only in-game items.",
+  "outfit": "City Benny (original: hoodie, backwards cap, gold shades, $ chain). No Rockstar designs.",
+  "open_loop_idea": "Hook promises 3 mistakes; Benny says 'number three nearly got me, wait for it.' Item 3 (fake key) is held until the end, so people stay to the last second.",
+  "payoff_idea": "Deliver all 3 in order with a counter: +$20 upsell, then 47 percent paid late, then the fake-key page that asks for his login. End line: buy only from the console's own store, pay in full, standard edition is the whole game. Not financial advice.",
+  "ending_AB_idea": "Which would you pick: Ultimate for $20 more, or Standard and keep the twenty? Comment A for Ultimate, B for Standard. (Splits opinion; the twenty-dollar number is the same on screen, voice and caption.)",
+  "notes_for_scriptwriter": [
+    "Hook #2 Listicle: promise exactly 3 items, use a number in the first 1.5 s, deliver all 3 in 25-35 s. Pure English, complete plain sentences.",
+    "Say 'Not financial advice.' once, on voice and caption.",
+    "Rule A/C: figures identical in voice, caption and every counter/badge. Use only: $79.99, $99.99, $20 (say 'twenty dollars'), 25 percent, 47 percent, 3 mistakes. If 25 percent is rounded say 'a quarter more' and show '25%' (exactly 25.0).",
+    "Say 'LendingTree survey, 2026' for the 47 percent; it is a survey of BNPL users, not all gamers. Do not say people bought games with BNPL (not verified).",
+    "Scam item: verified only that NordVPN found 'dozens' of fake sites. Do not invent victim counts or dollar losses. 'Only on PS5 and Xbox' is from the price/release article; fine to say 'the game is console only'.",
+    "Rule B: caption must show spoken form; 'GTA 6' spelled aloud means caption 'G T A 6'.",
+    "IP: no Rockstar characters, logos, footage, art or music; write GTA 6 as plain text; do not name Ultimate-edition items. Brand stunts and fake storefront drawn as a generic original 'shady key site'.",
+    "No guaranteed-income claims; don't tell people to skip real purchases they want, only to pay in full and use official stores.",
+    "Past-hook check: previous episode used a different hook (run hook_rotation show)."
+  ],
+  "could_not_verify": [
+    "Whether BNPL is actually widely used for GTA 6 specifically (no source).",
+    "Loss totals from GTA 6 scams (none published in the source).",
+    "Tom's Guide scam article body not readable; use only CyberInsider/NordVPN."
+  ]
+}

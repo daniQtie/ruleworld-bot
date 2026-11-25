@@ -1,0 +1,15 @@
+[Unit]
+Description=Rule World Stories - Telegram controller (makes, sends and uploads the Shorts)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=__USER__
+WorkingDirectory=__APP__
+Environment=PYTHONUNBUFFERED=1
+ExecStart=__APP__/.venv/bin/python -m pipeline.controller
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target

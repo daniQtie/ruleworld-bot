@@ -1,0 +1,69 @@
+{
+ "history": [
+  {
+   "id": "2026-11-16-coin-flip-brain",
+   "hook": 1,
+   "name": "The What If Hook"
+  },
+  {
+   "id": "2026-11-19-gta6-two-cent-jar",
+   "hook": 1,
+   "name": "The What If Hook"
+  },
+  {
+   "id": "2026-11-18-gta6-sick-day",
+   "hook": 1,
+   "name": "The What If Hook"
+  },
+  {
+   "id": "2026-11-19-gta6-listicle",
+   "hook": 2,
+   "name": "The Listicle / Number Hook"
+  },
+  {
+   "id": "2026-11-19-gta6-curiosity",
+   "hook": 3,
+   "name": "The Curiosity / Shock Hook"
+  },
+  {
+   "id": "2026-11-19-gta6-problem-agitate",
+   "hook": 4,
+   "name": "The Problem-Agitate Hook"
+  },
+  {
+   "id": "2026-11-21-story-01",
+   "hook": 5,
+   "name": "The Bold Statement / Controversial Hook",
+   "format": 1,
+   "format_name": "In This Town..."
+  },
+  {
+   "id": "2026-11-22-story-03",
+   "hook": 6,
+   "name": "The Question Hook",
+   "format": 2,
+   "format_name": "In This World..."
+  },
+  {
+   "id": "2026-11-27-story-18",
+   "hook": 7,
+   "name": "The \"Before You...\" Hook",
+   "format": 3,
+   "format_name": "The Town Where..."
+  },
+  {
+   "id": "2026-11-27-story-19",
+   "hook": 8,
+   "name": "The Story / Personal Hook",
+   "format": 4,
+   "format_name": "Everyone Has... Except Me..."
+  },
+  {
+   "id": "2026-11-28-story-20",
+   "hook": 9,
+   "name": "The \"Secret / Nobody Tells You\" Hook",
+   "format": 5,
+   "format_name": "Strange Rules and Consequences"
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "2026-11-19-gta6-two-cent-jar",
+  "version": 1,
+  "topic": "money",
+  "outfit": "everyday",
+  "title_yt": "If You Saved 2 Cents a Day Since 2013... #Shorts",
+  "title_fb": "If you saved two cents a day since 2013, you could buy GTA 6",
+  "hook": "If you saved two cents a day, you could buy GTA 6.",
+  "open_loop": "Hook asks how two cents a day can buy GTA 6; paid off in the last ~7 s when Benny smashes the jar ($96.22 vs $79.99 game, $16.23 left). The mocking friend's 'it is too small' doubt is also paid off.",
+  "payoff": "Two cents a day for 4,811 days is $96.22: enough for the $79.99 game with $16.23 left, while the friend who laughed is broke on launch day.",
+  "ending": "choice",
+  "lines": [
+    {
+      "text": "If you saved two *cents a day, you could buy *GTA 6.",
+      "say": "If you saved two cents a day, you could buy G T A six.",
+      "beat": "hook",
+      "visual": "Scene 1 at frame 0: Benny (everyday hoodie, coin prop) hops and holds up a coin with a smug smile; a big coin jar prop and headline '2 CENTS A DAY' already visible. Word 'GTA 6' lands as a plain text headline (no logo/art). Camera snap-zoom on 'GTA'.",
+      "on_screen": "2 CENTS A DAY"
+    },
+    {
+      "text": "In *2013, Benny started a coin jar.",
+      "say": "In twenty thirteen, Benny started a coin jar.",
+      "beat": "stakes",
+      "visual": "Badge 'YEAR 2013'. Benny drops a coin into a big jar, clink sfx; jar is tiny and nearly empty. Stranger (hooded, friend) enters on the right.",
+      "on_screen": "YEAR 2013"
+    },
+    {
+      "text": "His friend *laughed at him.",
+      "beat": "escalate",
+      "visual": "Stranger (flip, point, smug) points at the jar and shakes with laughter; bubble 'HA HA HA' pops. Benny looks worried then determined; a coin bonks off Benny's head as a gag.",
+      "on_screen": "TOO SMALL!"
+    },
+    {
+      "text": "Benny saved two cents *daily for thirteen years.",
+      "say": "Benny saved two cents daily for thirteen years.",
+      "beat": "escalate",
+      "visual": "Montage: Benny keeps dropping a coin, calendar-like counter runs from 2013 up to 2026 while the jar fills; coins rain behind. Benny hops, determined, then smug. Stranger stays in the back, bored, scrolling a phone.",
+      "on_screen": "13 YEARS"
+    },
+    {
+      "text": "Game day came, and everyone was *broke.",
+      "beat": "twist",
+      "visual": "Badge 'NOV 19, 2026'. Stranger slumps with expression broke and empty pockets; a bubble 'I AM BROKE!' with worried pose. Crowd panic gag: cash prop blows away. Benny stays calm with a smug look and the full jar next to him.",
+      "on_screen": "NOV 19, 2026"
+    },
+    {
+      "text": "Benny smashed the jar and found *ninety-six dollars.",
+      "say": "Benny smashed the jar and found ninety-six dollars.",
+      "beat": "payoff",
+      "visual": "Benny raises the jar, slams it down: stamp 'SMASH!', coins rain, flash on the cut. Counter counts up to $96.22 in gold; stranger shocked.",
+      "on_screen": "$96.22"
+    },
+    {
+      "text": "He paid for the game and kept *sixteen dollars.",
+      "say": "He paid for the game and kept sixteen dollars.",
+      "beat": "payoff",
+      "visual": "Benny at the store counter hands cash across; a generic blank game box (no logo, no art) and badge '-$79.99'. Counter shows '$16.23 LEFT' in gold; confetti burst, Benny hero pose, happy expression.",
+      "on_screen": "$16.23 LEFT"
+    },
+    {
+      "text": "Tiny habits beat *panic.",
+      "beat": "payoff",
+      "visual": "Benny flex pose, smug, next to stack of coins; stranger slumped small behind him. Headline 'TINY HABITS WIN' in gold. Small badge 'NOT FINANCIAL ADVICE'.",
+      "on_screen": "TINY HABITS WIN"
+    },
+    {
+      "text": "Would you save daily or *panic later?",
+      "beat": "ending",
+      "visual": "Split picture: left Benny with jar (list row 'A  SAVE DAILY'), right stranger broke (list row 'B  PANIC LATER'). Benny points at the viewer, thinking expression.",
+      "on_screen": "A: SAVE  B: PANIC"
+    },
+    {
+      "text": "Comment *A or B.",
+      "beat": "ending",
+      "visual": "Benny points at the viewer and smiles; headline 'COMMENT A OR B' in gold. Hard cut right after the last word.",
+      "on_screen": "COMMENT A OR B"
+    }
+  ],
+  "facts_used": [
+    {"claim": "GTA 6 launches November 19, 2026; Standard Edition is $79.99.", "source_url": "https://gameluster.com/gta-6-pre-order-pricing-standard-ultimate-edition/"},
+    {"claim": "GTA 5 launched about Sept 17, 2013 (inferred from article dated Sept 20, 2013 saying $1B in 3 days). Spoken line says only 'since 2013'; do not show a Sept 17 date on screen.", "source_url": "https://www.engadget.com/2013-09-20-grand-theft-auto-5-sales-surpass-1-billion.html"},
+    {"claim": "Fans joke about '13 years since GTA 5' and about calling in sick for launch (hype that leaves people unprepared).", "source_url": "https://vgtimes.com/gaming-news/174487-less-than-a-week-until-gta-6-the-internet-is-already-going-wild-over-memes.html"}
+  ],
+  "math_check": "Python: Sept 17, 2013 to Nov 19, 2026 = 4,811 days (13.17 years). 4,811 x $0.02 = $96.22. $96.22 - $79.99 = $16.23 left. 1 cent a day would be only $48.11 (not enough, unused). $79.99 / 4,811 = $0.0166 per day (about 1.7 cents). Spoken numbers: 'ninety-six dollars' (96.22 rounded down) and 'sixteen dollars' (16.23 rounded down), both safe.",
+  "est_seconds": 31,
+  "word_count": 71,
+  "ip_notes": "'GTA 6' appears only as a spoken/written topic. No Rockstar characters, logos, wordmark, footage, art style or music. The game box is a generic blank cartoon box. City is plain cartoon, not palm-and-neon.",
+  "description_note": "Add 'Not financial advice. Hypothetical example.' to the description. Hashtags: #gta6 #savingmoney #money.",
+  "changes_from_previous": "First version."
+}

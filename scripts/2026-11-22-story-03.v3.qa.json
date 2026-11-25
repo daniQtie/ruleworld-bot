@@ -1,0 +1,33 @@
+{
+ "id": "2026-11-22-story-03",
+ "version": 3,
+ "pass": true,
+ "average": 8.0,
+ "scores": {"hook": 8, "world_rule": 8, "characters": 8, "escalation": 8, "reveal": 8, "ending": 8, "clarity": 8, "visual": 8, "consistency": 8, "originality": 8, "retention": 8, "performance": 8, "dialogue": 8},
+ "hard_gates": {"rotation": true, "structure": true, "original": true, "length": true, "english_clear": true, "producible": true, "kit_story_blockers": true, "voice_tags_safe": true},
+ "gate_notes": {
+  "rotation": "Hook #6 Question Hook (line 1 'What would you do?') and format #2 'In this world' (line 2). Previous AI episode was #5 / format 1. Story-02 owner-supplied, exempt.",
+  "length": "427 words. Formula 112.4 s + 2.5 s tail = 114.9 s (1:55). Raw formula is under 2:00; expected real = 114.9 x 1.2 = about 138 s (2:18), inside the window and near the 2:20 aim. It stays at or above 2:00 down to a 1.05x factor. That factor is measured on one episode only, so the real Adam render must confirm 2:00 or more; if it comes in under 2:00, add one short story beat rather than padding.",
+  "kit_story_blockers": "Pass. Hook is clear in 3 s, Kai wants to light the lamp for his mum's ferry, the conflict comes from the step rule, Pell's refusal is motivated (froze alone here as a girl), the solution (going together) is forced by that, and the ending pays off the hook.",
+  "voice_tags_safe": "All tags are documented Fish s1 tags and in the 24 basic set (nervous, soft tone, calm, worried, curious, sad, in a hurry tone, scared, confident, upset, frustrated, moved, empathetic, surprised, happy, relaxed, break). No regretful, hopeful or guilty. No tags in text; max 2 per sentence. Many are not yet leak-tested: moved, empathetic, frustrated, upset, relaxed, curious, surprised, confident, scared, in a hurry tone. Whisper leak check is required on the real narration.",
+  "english_clear": "Every sentence is 14 words or fewer. Lines 6 (17), 10 (16), 23 (15) and 4 (15) exceed 14 only as two or three short sentences. No slang.",
+  "numbers": "Verified: start 62; fog wastes 3 (12, 11, 10, 9 shown); halfway = 50 path steps + 3 wasted = 53 spent, 62-53 = 9 (line 18) OK; 8, 6, 4 = 5 more steps = 55 climbed, 100-55 = 45 to go (line 26, sign '45 TO THE TOP') OK; Pell 900 -> 895 (5 steps to reach Kai) -> 895-45 = 850 at the top (line 39) OK. Hold-hands rule planted in line 6, discovered in lines 35-36 by both Kai and Pell. The count 'Fifty. Forty. Thirty. Twenty...' now leads to 12 on screen (8 unspoken steps after 20 is fine)."
+ },
+ "fixed_from_v2": [
+  "Line 34: Pell no longer knows the rule; line 35 'She looked as surprised as me' makes the discovery shared and the reveal earned.",
+  "Lines 29-31: Kai's plea split into three single-idea lines and the choice is earned by 'Even if I freeze, I'll stay right next to you.'",
+  "Line 16-17: count continues to Twenty and the fog shot now has colour notes (yellow raincoat, warm lamp glow).",
+  "Line 7 tag changed to worried; fixed looks added for the frozen man, young Pell and the two kids."
+ ],
+ "originality_notes": "Title 'In This World, Every Step You Take Is Counted' no longer mirrors the TeamDeam 'You Only Get N ... A Year' title. Premise is a daily step budget with a freeze, a lighthouse rescue and a hold-hands twist, so it is not a noun-swap of '10 Jumps A Year'. Clearly different from story-01 (accessories jump on kindness) and story-02 (lies make a monster). The shared mechanic family (limited movement allowance) is acceptable.",
+ "fixes": [
+  "Non-blocking, line 29 and 30 shots: both show Kai holding out his free hand; change line 29 to shouting down the hill with cupped hands and keep the held-out hand for line 30 so each line shows a new action. Line 29 tag (frustrated) is harsh for 'You won't be alone this time'; (determined) or (empathetic) fits a promise better.",
+  "Non-blocking, line 40: 'Steps you keep for yourself disappear at sunrise.' is a good rule echo; make sure the shot shows Pell's 850 and the other numbers resetting hint is not needed. Fine as is.",
+  "Non-blocking, line 16-17: add a visible 20 then a jump to 12 in the montage so the unspoken 8 steps do not look like a teleport (Rule O).",
+  "Non-blocking, looks: 'Frozen man' wears grey pants. Change to navy or brown to keep Rule J (no grey world); also give the town extras bright, different colours.",
+  "Production: the real Adam narration must be measured. If under 2:00, add a short 4-6 s beat (for example a frozen neighbour on the path who can only blink at Kai). Run the Whisper tag-leak check on every line, especially the untested tags above.",
+  "Line 17: 'Three steps the wrong way' then 'Wasted.' is fine on screen (exactly 3 drops); keep the shot to 3 drops so the voice, caption and number agree."
+ ],
+ "producibility_notes": "Feasible with the existing hill set, chest number sprites, freeze tint with frost, fog, lamp beam, ferry with lights, memory-flash tints, a '45 TO THE TOP' sign and the sunrise sweep. All characters now have fixed looks.",
+ "checked": "Read v3 and its changes_from_previous, recomputed words, formula duration and every number in Python, and compared against my v1 and v2 notes. Did not listen to audio or run Whisper."
+}

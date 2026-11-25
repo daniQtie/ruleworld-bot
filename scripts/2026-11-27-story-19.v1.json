@@ -1,0 +1,306 @@
+{
+ "id": "2026-11-27-story-19",
+ "version": 1,
+ "source": "Claude (Opus) scriptwriter, original idea; hook rotation #8, format rotation #4",
+ "hook_type": {
+  "number": 8,
+  "name": "The Story / Personal Hook"
+ },
+ "format": {
+  "number": 4,
+  "name": "Everyone Has... Except Me..."
+ },
+ "title_working": "Everyone Got A Future Card, Except Me",
+ "hook_text": "MY CARD WAS BLANK",
+ "hook_until": 2.6,
+ "music": "tender",
+ "music_gain": 0.13,
+ "world_rule": "Everyone gets a card that says what they will be. Except me.",
+ "lines": [
+  {
+   "text": "I was the only kid in my school whose future card came out blank.",
+   "say": "(sad) I was the only kid in my school whose future card came out blank.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "set": "classroom",
+    "board": "FUTURE CARDS",
+    "cast": [
+     "Eli"
+    ],
+    "face": "sad",
+    "action": "still",
+    "camera": "push",
+    "prop": {
+     "type": "screen",
+     "text": "?"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "Everyone gets one on their first day. It tells you what you will be.",
+   "say": "(confident) Everyone gets one on their first day. It tells you what you will be.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "cast": [
+     "Zoe",
+     "Marcus",
+     "Eli"
+    ],
+    "face": "happy",
+    "action": "cheer",
+    "camera": "wide"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Zoe's card said doctor. Marcus got astronaut.",
+   "say": "(happy) Zoe's card said doctor. Marcus got astronaut.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Zoe",
+     "Marcus"
+    ],
+    "face": "laugh",
+    "action": "point",
+    "prop": {
+     "type": "sign",
+     "text": "DOCTOR"
+    },
+    "tag": {
+     "name": "Zoe",
+     "role": "future doctor"
+    },
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Mine was empty. So they called me Nobody.",
+   "say": "(sad) Mine was empty. So they called me Nobody.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "cast": [
+     "Eli",
+     "Marcus",
+     "Zoe"
+    ],
+    "face": "sad",
+    "action": "cry",
+    "camera": "high",
+    "tag": {
+     "name": "Eli",
+     "role": "blank card"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "I tried everything. Painting, cooking, soccer. I was bad at all of it.",
+   "say": "(happy) I tried everything. Painting, cooking, soccer. I was bad at all of it.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "field",
+    "cast": [
+     "Eli"
+    ],
+    "face": "nervous",
+    "action": "run",
+    "camera": "follow"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Then a new kid, Ollie, opened his card. It was blank too. He started crying.",
+   "say": "(sad) Then a new kid, Ollie, opened his card. It was blank too. He started crying.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "set": "classroom",
+    "cast": [
+     "Ollie",
+     "Eli"
+    ],
+    "face": "sob",
+    "action": "cry",
+    "tag": {
+     "name": "Ollie",
+     "role": "new kid"
+    },
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "I sat next to him and said, blank just means nobody decided for you.",
+   "say": "(soft tone) I sat next to him and said, blank just means nobody decided for you.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "cast": [
+     "Eli",
+     "Ollie"
+    ],
+    "face": "happy",
+    "action": "talk",
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "That night, my card finally printed one word. Teacher.",
+   "say": "(happy) That night, my card finally printed one word. Teacher.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "cast": [
+     "Eli"
+    ],
+    "face": "starstruck",
+    "action": "still",
+    "prop": {
+     "type": "sign",
+     "text": "TEACHER"
+    },
+    "trans": "flash",
+    "glitch": true,
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Blank cards wait until you do the thing you were born for.",
+   "say": "(confident) Blank cards wait until you do the thing you were born for.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "cast": [
+     "Eli"
+    ],
+    "face": "smirk",
+    "action": "think",
+    "camera": "close"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Now I help the new kids open their cards. And this morning, one came out blank.",
+   "say": "(soft tone) Now I help the new kids open their cards. And this morning, one came out blank.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "set": "classroom",
+    "time": "day",
+    "cast": [
+     "Eli",
+     "Ollie"
+    ],
+    "face": "determined",
+    "action": "point",
+    "prop": {
+     "type": "screen",
+     "text": "?"
+    },
+    "camera": "pull"
+   },
+   "acting": {}
+  }
+ ],
+ "word_count": 122,
+ "est_seconds": 35.9,
+ "tail_hold": 1.2,
+ "upload": {
+  "title": "Everyone Got A Future Card, Except Me #Shorts",
+  "description": "Everyone's future card said what they'd be. Mine was blank.\nWhat would your card say?\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "underdog story",
+   "emotional story",
+   "roblox story",
+   "animated story",
+   "plot twist",
+   "school story",
+   "story time",
+   "roblox animation",
+   "animated story",
+   "roblox story"
+  ]
+ }
+}

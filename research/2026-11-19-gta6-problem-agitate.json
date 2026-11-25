@@ -1,0 +1,54 @@
+{
+  "id": "2026-11-19-gta6-problem-agitate",
+  "hook_type": {"number": 4, "name": "The Problem-Agitate Hook"},
+  "hook": "Your GTA six preorder was never an eighty dollar purchase. And it gets worse.",
+  "hook_alt_candidates": [
+    "You think GTA six costs seventy-nine ninety-nine. It does not. And it gets worse.",
+    "Everyone is hyped for GTA six. Almost nobody counted what it really costs."
+  ],
+  "angle": "Money psychology: the $79.99 sticker price is an anchor. Problem: fans pay the headline number, then the small extras stack up. Agitate: buy Standard at $79.99, later pay the $20 upgrade, and you land at $99.99, exactly the Ultimate price, so 'saving $20' saved nothing. The 'free' month of GTA+ on digital pre-orders can turn into a paid $7.99/month plan if you forget to cancel ($95.88 a year). The 'physical edition' is a download code, no disc. Benny's story: he plans a clean $79.99 launch day, then watches the real total creep up. Payoff: the real cost is the price plus the small choices you do not track; decide your total BEFORE you click buy, and cancel the trial the same day. Not a trend recycle: the angle is Benny's own money-habit take, not a copy of any Short.",
+  "release_status_verified_2026_11_19": {
+    "summary": "As of Nov 19, 2026 Rockstar's own GTA VI page still says 'Coming November 19, 2026' for PlayStation 5 and Xbox Series X|S. No delay found. I could NOT find a primary source saying it is live/available now, so scripts must say 'launch day is here / today is the day' only as 'launch day' framing, NOT claim it is playable or reviewed.",
+    "not_verified": ["PC release (none announced)", "Game Pass / PS Plus at launch (not announced)", "preload date (Rockstar page says Nov 10, IBTimes says Nov 12: do not state)", "current console prices (PS5 list $649.99 since Apr 2, 2026 is confirmed, but an Aug 2026 rollback is reported by weak sources only: do NOT use console prices)", "Metacritic score / review scores", "any 'GTA 6 saves you $5000' claims (viral, not our angle)"]
+  },
+  "facts": [
+    {"claim": "Rockstar's official GTA VI page says 'Coming November 19, 2026', platforms PlayStation 5 and Xbox Series X|S; the Vintage Vice City Pack is a pre-order bonus. No 'available now' wording on the page.", "source_url": "https://www.rockstargames.com/VI"},
+    {"claim": "Standard Edition is $79.99 (US) and Ultimate Edition is $99.99; Standard buyers can later pay the $20 difference to upgrade. Math: $99.99 - $79.99 = $20.00, and $79.99 + $20 = $99.99, so upgrading later costs exactly the Ultimate price (no saving).", "source_url": "https://www.ibtimes.co.uk/gta-6-release-date-pre-load-time-price-editions-platforms-confirmed-rockstar-1819557"},
+    {"claim": "The boxed 'physical edition' is only a download code with no disc in the box (Rockstar Store listing, as reported); same $79.99 price as digital.", "source_url": "https://tech-insider.org/gta-6-launch-nov-19-79-99-whats-confirmed-2026/"},
+    {"claim": "Digital pre-orders include one month of GTA+; the PlayStation Store warns it can convert to a paid subscription if not cancelled in time.", "source_url": "https://www.ibtimes.co.uk/gta-6-release-date-pre-load-time-price-editions-platforms-confirmed-rockstar-1819557"},
+    {"claim": "GTA+ costs $7.99 per month in the US (raised from $5.99 in 2024, one plan, no annual option). Math: 12 x $7.99 = $95.88 a year.", "source_url": "https://www.tweaktown.com/news/97501/gta-price-increased-by-33-was-5-99-now-7-per-month/index.html"},
+    {"claim": "Combined math for the on-screen total: $79.99 + $20 upgrade = $99.99; $99.99 + 12 months of GTA+ ($95.88) = $195.87 for year one if the trial is never cancelled. Say 'about one hundred ninety-six dollars' with 'about' and show '~$196' OR use exact $195.87 everywhere (Rule A).", "source_url": "https://www.tweaktown.com/news/97501/gta-price-increased-by-33-was-5-99-now-7-per-month/index.html"},
+    {"claim": "GTA 6 slipped from May 26, 2026 to Nov 19, 2026 (two delays in total counting the earlier 2025 window): fans waited, and the date held.", "source_url": "https://www.videogameschronicle.com/news/grand-theft-auto-6-has-been-delayed-again-to-the-end-of-2026/"}
+  ],
+  "inspiration_urls": [
+    "https://insider-gaming.com/gta-6-save-you-5000-according-to-millionaire/",
+    "https://gtaboom.com/the-gta-6-creator-gold-rush-starts-november-19-fc60"
+  ],
+  "inspiration_note": "Pattern-only inspiration (GTA 6 + money framing exists in news, e.g. the 'saves you $5000' story). Benny's take is the opposite and original: the hidden costs fans forget. No lines, footage or characters copied. A quick check found no stickman Short with this exact hidden-cost framing; owner/QA should skim YouTube Shorts search 'GTA 6 price' before posting if wanted.",
+  "outfit": "Benny in a plain hoodie holding a controller and a phone showing a shopping cart total (generic UI, no PlayStation/Xbox/Rockstar logos). Expressions: confident -> shocked -> sweating -> relieved smart-shopper grin.",
+  "notes_for_scriptwriter": [
+    "TARGET 50-60 s of speech, about 115-140 words (Rule E hard gate, under 50 s fails). Pure English, short sentences, say 'GTA six' as one word and caption 'GTA 6' (Rule D). Opener must be hook type #4 Problem-Agitate: name the pain, twist the knife, then Benny's story and payoff.",
+    "Stay on niche (Rule F): Benny stickman GTA 6 hype for US viewers, money/psychology angle. Do NOT drift into an unrelated parable.",
+    "Beat outline (14 beats):",
+    "1. HOOK (0-4 s): Benny at a store counter, big sign '$79.99'. Voice: 'Your GTA six preorder was never an eighty dollar purchase. And it gets worse.'",
+    "2. PROBLEM named: Benny smiles at the price tag, controller in hand. 'You see seventy-nine ninety-nine and think, easy.'",
+    "3. AGITATE 1: the 'physical copy' box is opened and has only a code card inside. 'The box? Just a download code. No disc.' (fact 3)",
+    "4. AGITATE 2: a tiny sign 'Ultimate $99.99' pops up, Benny peeks at it. 'Ultimate costs ninety-nine ninety-nine.' (fact 2)",
+    "5. AGITATE 3 (the knife twist): Benny picks Standard to save twenty dollars. 'So you buy Standard to save twenty.' Cut: counter adds '+$20 upgrade'.",
+    "6. TWIST: later he upgrades. Counter shows $79.99 + $20 = $99.99. 'Then you upgrade later. Total: ninety-nine ninety-nine. Same as Ultimate.' Benny face-palms.",
+    "7. AGITATE 4: free trial banner. 'Digital preorders include one free month of GTA plus.' (fact 4)",
+    "8. Benny forgets the calendar; a month flips; counter ticks $7.99. 'Forget to cancel and it costs seven ninety-nine a month.'",
+    "9. Math beat: calendar spins 12 times, counter lands on $95.88. 'That is ninety-five eighty-eight a year.' Use exact figures everywhere on screen and voice (Rule A).",
+    "10. Total reveal: '$99.99 + $95.88 = $195.87'. Voice: 'One hundred ninety-five eighty-seven. For a game you thought was eighty.' (If rounded, say 'about' and show '~'.)",
+    "11. STORY PAYOFF: Benny rewinds his own day: he sets a total before buying, writes '$99.99 max' on a sticky note, sets a phone reminder to cancel the trial. 'Benny decides his total before he clicks buy.'",
+    "12. RULE 1: 'Pick your edition once, not twice.' Sticky note on screen.",
+    "13. RULE 2: 'Cancel the trial the same day.' Phone reminder pops.",
+    "14. ENDING / comment bait: Benny happy at launch day screen (generic, no game footage), 'Did you buy Standard or Ultimate? Tell me in the comments.' End the moment the question is asked.",
+    "Keep every on-screen number identical to the voice (Rules A and C). Caption shows heard words (Rule B).",
+    "SAY FOR SPEECH: 'seventy-nine ninety-nine', 'ninety-nine ninety-nine', 'seven ninety-nine a month', 'ninety-five eighty-eight', 'one ninety-five eighty-seven'. Write prices with hyphens, never spell GTA letter by letter.",
+    "STATUS CAUTION: Today is launch day. Do NOT say it is out/playable, do not mention reviews, scores, servers, preload dates, console prices, PC, or Game Pass. Safe: 'launch day is here / today is launch day' (date confirmed by Rockstar's page).",
+    "Do not say 'Rockstar says' beyond the date; prices come from press reports of the store listings (say 'listed at'). Add 'prices listed in US dollars, check the store' in the description; 'not financial advice'.",
+    "COPYRIGHT/IP: no Rockstar characters, logos, wordmark, trailer/game footage, cover art or music; use generic box and generic phone UI. Benny is the only character. 'GTA 6' only as spoken/written topic.",
+    "Description/hashtags: #gta6 #money #gaming. Title idea: 'GTA 6 Really Costs More Than $80'."
+  ]
+}

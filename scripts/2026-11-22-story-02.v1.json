@@ -1,0 +1,439 @@
+{
+ "id": "2026-11-22-story-02",
+ "version": 1,
+ "source": "owner-supplied kit script 001 (docs/storytelling-kit/03_SCRIPTS/001_every_lie_creates_a_monster.md); text unchanged, Plan A approved 2026-11-20",
+ "hook_type": {
+  "number": null,
+  "name": "owner-supplied (exempt from rotation)"
+ },
+ "format": {
+  "number": 1,
+  "name": "In This Town..."
+ },
+ "world_rule": "Every lie creates a creature. Only the person being lied to can see it; the liar cannot. It grows with every lie. Telling the truth makes it disappear.",
+ "logline": "A brother keeps lying to protect his little sister from their dad's absence, not knowing she can see the monster his lies create.",
+ "characters": [
+  {
+   "name": "Noah",
+   "age": 15,
+   "role": "protagonist / first-person narrator",
+   "want": "protect Lily from disappointment",
+   "personality": "protective, conflict-avoidant, quietly guilty",
+   "arc": "false reassurance > denial > guilt > truth > connection",
+   "look": "render/kit.js KIT_CAST.noah: messy dark-brown hair, blue hoodie, dark jeans, white sneakers, peach skin, scale 1.0"
+  },
+  {
+   "name": "Lily",
+   "age": 8,
+   "role": "younger sister, emotional POV",
+   "want": "for Dad to come; not to be sad alone",
+   "personality": "hopeful, observant, honest",
+   "arc": "hope > fear > sadness > honest connection",
+   "look": "render/kit.js KIT_CAST.lily: long brown hair, pink bow, pink sweater with heart, cream pants, scale 0.8"
+  },
+  {
+   "name": "Lie-Monster",
+   "role": "the rule made visible",
+   "look": "render/kit.js lieMonster: navy-black smoky block body, smoke spikes, round amber eyes; shoe > knee > waist > taller than Noah > dissolves"
+  }
+ ],
+ "locations": [
+  "kitchen (warm)",
+  "hallway (dim)",
+  "Lily's bedroom at night (blue, moon)",
+  "front gate after school (city)",
+  "birthday room (warm gold vs cold empty chair)",
+  "town street (rule demo)"
+ ],
+ "lines": [
+  {
+   "text": "In our town, the person you lie to is the only one who can see the monster.",
+   "say": "(nervous)(soft tone) In our town, (break) the person you lie to is the only one who can see the monster.",
+   "speaker": "narrator",
+   "beat": "hook",
+   "speed": 0.7,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "suspense",
+    "tags": "(nervous)(soft tone)"
+   }
+  },
+  {
+   "text": "And my little sister watched mine grow for three days.",
+   "say": "(worried)(soft tone) And my little sister watched mine grow (break) for three days.",
+   "speaker": "narrator",
+   "beat": "hook",
+   "speed": 0.7,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "suspense",
+    "tags": "(worried)(soft tone)"
+   }
+  },
+  {
+   "text": "Every lie creates a creature.",
+   "say": "(calm) Every lie creates a creature.",
+   "speaker": "narrator",
+   "beat": "rule",
+   "speed": 0.75,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "mystery",
+    "tags": "(calm)"
+   }
+  },
+  {
+   "text": "The liar can't see it. Only the person hearing the lie can.",
+   "say": "(calm) The liar can't see it. Only the person hearing the lie can.",
+   "speaker": "narrator",
+   "beat": "rule",
+   "speed": 0.75,
+   "pause": 0.25,
+   "voice": {
+    "emotion": "mystery",
+    "tags": "(calm)"
+   }
+  },
+  {
+   "text": "And there's only one way to make it disappear.",
+   "say": "(calm) And there's only one way (break) to make it disappear.",
+   "speaker": "narrator",
+   "beat": "rule",
+   "speed": 0.75,
+   "pause": 0.45,
+   "voice": {
+    "emotion": "mystery",
+    "tags": "(calm)"
+   }
+  },
+  {
+   "text": "Tell the truth.",
+   "say": "(confident)(soft tone) Tell the truth.",
+   "speaker": "narrator",
+   "beat": "rule",
+   "speed": 0.7,
+   "pause": 2.6,
+   "voice": {
+    "emotion": "mystery",
+    "tags": "(confident)(soft tone)"
+   },
+   "silent_beat": "kitchen: phone insert 'I'm sorry. I can't make it this weekend.' Noah hides it; Lily enters with paper crown"
+  },
+  {
+   "text": "Do you think Dad will come early for my birthday?",
+   "say": "(happy)(soft tone) Do you think Dad will come early for my birthday?",
+   "speaker": "Lily",
+   "beat": "conflict",
+   "speed": 0.75,
+   "pause": 0.7,
+   "voice": {
+    "emotion": "hope",
+    "tags": "(happy)(soft tone)"
+   }
+  },
+  {
+   "text": "Of course. He promised.",
+   "say": "(confident) Of course. (break) He promised.",
+   "speaker": "Noah",
+   "beat": "conflict",
+   "speed": 0.75,
+   "pause": 2.4,
+   "voice": {
+    "emotion": "false reassurance",
+    "tags": "(confident)"
+   },
+   "silent_beat": "tiny black creature crawls out from behind Noah's shoe; Lily notices, smile fades"
+  },
+  {
+   "text": "Noah... what's standing behind you?",
+   "say": "(scared)(whispering) Noah... (break) what's standing behind you?",
+   "speaker": "Lily",
+   "beat": "conflict",
+   "speed": 0.65,
+   "pause": 0.7,
+   "voice": {
+    "emotion": "fear",
+    "tags": "(scared)(whispering)"
+   }
+  },
+  {
+   "text": "Nothing. You're probably just tired. Go finish your crown.",
+   "say": "(relaxed) Nothing. You're probably just tired. Go finish your crown.",
+   "speaker": "Noah",
+   "beat": "conflict",
+   "speed": 0.85,
+   "pause": 2.0,
+   "voice": {
+    "emotion": "denial",
+    "tags": "(relaxed)"
+   },
+   "silent_beat": "creature grows to knee height; Lily takes one step away"
+  },
+  {
+   "text": "Did Dad remember my favorite cake?",
+   "say": "(happy)(soft tone) Did Dad remember my favorite cake?",
+   "speaker": "Lily",
+   "beat": "escalate",
+   "speed": 0.75,
+   "pause": 0.7,
+   "voice": {
+    "emotion": "hope",
+    "tags": "(happy)(soft tone)"
+   }
+  },
+  {
+   "text": "Of course. Chocolate, right?",
+   "say": "(nervous) Of course. Chocolate, right?",
+   "speaker": "Noah",
+   "beat": "escalate",
+   "speed": 0.8,
+   "pause": 1.4,
+   "voice": {
+    "emotion": "unease",
+    "tags": "(nervous)"
+   },
+   "silent_beat": "creature grows behind him at breakfast"
+  },
+  {
+   "text": "Do you think he'll like this?",
+   "say": "(happy)(soft tone) Do you think he'll like this?",
+   "speaker": "Lily",
+   "beat": "escalate",
+   "speed": 0.75,
+   "pause": 0.7,
+   "voice": {
+    "emotion": "hope",
+    "tags": "(happy)(soft tone)"
+   }
+  },
+  {
+   "text": "He's going to love it.",
+   "say": "(nervous) He's going to love it.",
+   "speaker": "Noah",
+   "beat": "escalate",
+   "speed": 0.8,
+   "pause": 1.4,
+   "voice": {
+    "emotion": "unease",
+    "tags": "(nervous)"
+   },
+   "silent_beat": "Noah breaks eye contact; creature waist-high"
+  },
+  {
+   "text": "Will he really be here tomorrow?",
+   "say": "(worried)(soft tone) Will he really be here tomorrow?",
+   "speaker": "Lily",
+   "beat": "escalate",
+   "speed": 0.7,
+   "pause": 0.7,
+   "voice": {
+    "emotion": "unease",
+    "tags": "(worried)(soft tone)"
+   }
+  },
+  {
+   "text": "Yes, Lily. I already told you.",
+   "say": "(frustrated) Yes, Lily. (soft tone) I already told you.",
+   "speaker": "Noah",
+   "beat": "escalate",
+   "speed": 0.8,
+   "pause": 2.4,
+   "voice": {
+    "emotion": "impatient then softer",
+    "tags": "(frustrated)"
+   },
+   "silent_beat": "reveal: creature taller than Noah behind him at the night window; cut to birthday table, empty chair push-in"
+  },
+  {
+   "text": "Should we wait a little longer?",
+   "say": "(sad)(soft tone) Should we wait a little longer?",
+   "speaker": "Lily",
+   "beat": "reveal",
+   "speed": 0.65,
+   "pause": 1.6,
+   "voice": {
+    "emotion": "sadness",
+    "tags": "(sad)(soft tone)"
+   },
+   "silent_beat": "Noah opens his mouth but cannot answer"
+  },
+  {
+   "text": "Noah... I think it gets bigger every time you tell me he's coming.",
+   "say": "(sad)(soft tone) Noah... (break) I think it gets bigger every time you tell me he's coming.",
+   "speaker": "Lily",
+   "beat": "reveal",
+   "speed": 0.7,
+   "pause": 0.7,
+   "voice": {
+    "emotion": "sadness",
+    "tags": "(sad)(soft tone)"
+   }
+  },
+  {
+   "text": "That's when I realized...",
+   "say": "(worried) That's when I realized...",
+   "speaker": "narrator",
+   "beat": "reveal",
+   "speed": 0.65,
+   "pause": 0.55,
+   "voice": {
+    "emotion": "realization",
+    "tags": "(worried)"
+   }
+  },
+  {
+   "text": "She had seen every lie.",
+   "say": "(sad)(soft tone) She had seen every lie.",
+   "speaker": "narrator",
+   "beat": "reveal",
+   "speed": 0.65,
+   "pause": 1.2,
+   "voice": {
+    "emotion": "realization",
+    "tags": "(sad)(soft tone)"
+   },
+   "silent_beat": "close-up: Noah's fake smile disappears, eyes lower"
+  },
+  {
+   "text": "Dad isn't coming, Lily.",
+   "say": "(sad) Dad isn't coming, (break) Lily.",
+   "speaker": "Noah",
+   "beat": "resolution",
+   "speed": 0.65,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "guilt",
+    "tags": "(sad)"
+   }
+  },
+  {
+   "text": "He messaged me yesterday.",
+   "say": "(sad) He messaged me yesterday.",
+   "speaker": "Noah",
+   "beat": "resolution",
+   "speed": 0.65,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "guilt",
+    "tags": "(sad)"
+   }
+  },
+  {
+   "text": "I was scared you'd be heartbroken.",
+   "say": "(sad)(soft tone) I was scared you'd be heartbroken.",
+   "speaker": "Noah",
+   "beat": "resolution",
+   "speed": 0.65,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "guilt",
+    "tags": "(sad)(soft tone)"
+   }
+  },
+  {
+   "text": "I thought if I kept saying yes, tomorrow wouldn't hurt.",
+   "say": "(sad)(soft tone) I thought if I kept saying yes, (break) tomorrow wouldn't hurt.",
+   "speaker": "Noah",
+   "beat": "resolution",
+   "speed": 0.65,
+   "pause": 4.0,
+   "voice": {
+    "emotion": "guilt",
+    "tags": "(sad)(soft tone)"
+   },
+   "silent_beat": "creature cracks, eyes dim, dissolves into particles (~4 s)"
+  },
+  {
+   "text": "I was already sad, Noah.",
+   "say": "(sad)(soft tone) I was already sad, (break) Noah.",
+   "speaker": "Lily",
+   "beat": "resolution",
+   "speed": 0.65,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "vulnerability",
+    "tags": "(sad)(soft tone)"
+   }
+  },
+  {
+   "text": "I just didn't want to be sad alone.",
+   "say": "(sad)(soft tone) I just didn't want to be sad alone.",
+   "speaker": "Lily",
+   "beat": "resolution",
+   "speed": 0.65,
+   "pause": 1.8,
+   "voice": {
+    "emotion": "vulnerability",
+    "tags": "(sad)(soft tone)"
+   },
+   "silent_beat": "Lily wipes her eyes, takes Noah's hand, puts the paper crown on his head"
+  },
+  {
+   "text": "Can you stay for the dance?",
+   "say": "(happy)(soft tone) Can you stay for the dance?",
+   "speaker": "Lily",
+   "beat": "ending",
+   "speed": 0.7,
+   "pause": 0.7,
+   "voice": {
+    "emotion": "hope returning",
+    "tags": "(happy)(soft tone)"
+   }
+  },
+  {
+   "text": "Of course. And this time, I mean it.",
+   "say": "(empathetic) Of course. And this time, (break) I mean it.",
+   "speaker": "Noah",
+   "beat": "ending",
+   "speed": 0.7,
+   "pause": 5.0,
+   "voice": {
+    "emotion": "warmth",
+    "tags": "(empathetic)"
+   },
+   "silent_beat": "they dance beside the cake; empty chair stays visible; monster gone"
+  },
+  {
+   "text": "Sometimes, the truth hurts for a moment.",
+   "say": "(moved)(soft tone) Sometimes, the truth hurts for a moment.",
+   "speaker": "narrator",
+   "beat": "ending",
+   "speed": 0.7,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "reflection",
+    "tags": "(moved)(soft tone)"
+   }
+  },
+  {
+   "text": "But a lie can make someone feel alone for much longer.",
+   "say": "(moved)(soft tone) But a lie can make someone feel alone (break) for much longer.",
+   "speaker": "narrator",
+   "beat": "ending",
+   "speed": 0.7,
+   "pause": 0,
+   "voice": {
+    "emotion": "reflection",
+    "tags": "(moved)(soft tone)"
+   }
+  }
+ ],
+ "word_count": 214,
+ "est_seconds": 85.2,
+ "tail_hold": 2.5,
+ "upload": {
+  "title": "In This Town, Only The Person You Lie To Can See Your Monster #Shorts",
+  "description": "Every lie he told his little sister made the monster bigger.\nWould you have told her the truth sooner?\nIn a town where lies become monsters only the listener can see, a brother learns what his kind lies really cost.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animation #storytime #shorts",
+  "tags": [
+   "roblox story",
+   "roblox animation",
+   "in this town",
+   "animated story",
+   "emotional story",
+   "brother and sister story",
+   "lie monster",
+   "story time animation"
+  ]
+ },
+ "est_method": "measured Adam rate 6.26*speed^0.83 w/s (2026-11-20 test) + pauses + 0.25 s per (break) + tail"
+}

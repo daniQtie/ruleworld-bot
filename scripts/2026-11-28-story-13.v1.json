@@ -1,0 +1,174 @@
+{
+ "id": "2026-11-28-story-13",
+ "version": 1,
+ "source": "TeamDeam 'Which Place Would You Choose To Survive A Tsunami?' (3.4M) choice format; new wording",
+ "hook_type": {
+  "number": null,
+  "name": "owner-directed (exempt from rotation)"
+ },
+ "format": {
+  "number": 1,
+  "name": "Choose a place to survive"
+ },
+ "title_working": "A Giant Tsunami Is Coming. Where Would You Hide?",
+ "hook_text": "WHERE WOULD YOU HIDE?",
+ "hook_until": 2.6,
+ "music": "bounce",
+ "music_gain": 0.13,
+ "world_rule": "Choose a place to survive",
+ "lines": [
+  {
+   "text": "A giant tsunami is coming. Where would you hide?",
+   "say": "(nervous) A giant tsunami is coming. Where would you hide?",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "urgent",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "You only have seconds to choose.",
+   "say": "(nervous) You only have seconds to choose.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 1,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "urgent",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Option one: a big beach house with food, power and soft beds.",
+   "say": "(happy) Option one: a big beach house with food, power and soft beds.",
+   "speaker": "narrator",
+   "speed": 0.96,
+   "volume": 0,
+   "pause": 0.15,
+   "beat": "",
+   "voice": {
+    "emotion": "inviting",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "But the wave will smash the windows and flood every room.",
+   "say": "(nervous) But the wave will smash the windows and flood every room.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "danger",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Option two: a tall apartment building a few blocks back. You are high above the street.",
+   "say": "(happy) Option two: a tall apartment building a few blocks back. You are high above the street.",
+   "speaker": "narrator",
+   "speed": 0.96,
+   "volume": 0,
+   "pause": 0.15,
+   "beat": "",
+   "voice": {
+    "emotion": "hopeful",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "But if the water reaches it, there is nowhere left to run.",
+   "say": "(nervous) But if the water reaches it, there is nowhere left to run.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "danger",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Option three: a secret bunker deep inside a mountain, with endless food, a gaming room and a private pool.",
+   "say": "(happy) Option three: a secret bunker deep inside a mountain, with endless food, a gaming room and a private pool.",
+   "speaker": "narrator",
+   "speed": 0.97,
+   "volume": 1,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "amazed",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "The wave can never reach you there.",
+   "say": "(confident) The wave can never reach you there.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 1,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "But to pick the bunker, you have to subscribe and comment which one you chose.",
+   "say": "(happy) But to pick the bunker, you have to subscribe and comment which one you chose.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 1,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "playful",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  }
+ ],
+ "word_count": 107,
+ "est_seconds": 30.6,
+ "tail_hold": 1.2,
+ "upload": {
+  "title": "A Giant Tsunami Is Coming. Where Would You Hide? #Shorts",
+  "description": "A tsunami is coming and you have seconds. Beach house, tall building or the secret bunker?\nComment 1, 2 or 3 below.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "tsunami choice",
+   "where would you hide",
+   "would you rather",
+   "survival choice",
+   "choose one",
+   "animated story",
+   "story time animation",
+   "roblox story",
+   "roblox animation"
+  ]
+ }
+}

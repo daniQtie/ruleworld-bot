@@ -1,0 +1,133 @@
+{
+  "id": "2026-11-16-coin-flip-brain",
+  "version": 1,
+  "topic": "psychology",
+  "outfit": "psych",
+  "title_yt": "Heads +$150, Tails -$100. Would You Flip? #Shorts",
+  "title_fb": "Heads +$150, Tails -$100. I-flip mo ba?",
+  "hook": "Heads, you win $150. Tails, you lose $100. Do you flip?",
+  "open_loop": "Line 3 plants two promises: 'the math says yes' and 'why does your brain refuse?'. The brain half (the ~2x number) is withheld until line 6 (~60% in); the math half (+$25 per flip, <2% chance of ending behind over 100 flips) is withheld until the last ~8 s (lines 9-10).",
+  "payoff": "Your brain weighs a loss about twice as heavily as a win (meta-analysis mean 1.955), so the $100 loss feels like about $195 and beats the $150 win. Twist: on average each flip pays +$25, and over 100 flips you end up behind less than 2% of the time.",
+  "ending": "choice",
+  "lines": [
+    {
+      "text": "Heads, you win $150. Tails, you lose $100. Do you flip?",
+      "say": "Heads, you win a hundred fifty dollars. Tails, you lose a hundred dollars. Do you flip?",
+      "ph": "Heads, panalo ka ng $150. Tails, talo ka ng $100. I-flip mo ba?",
+      "beat": "hook",
+      "visual": "Frame 0: Psychology Benny already holding a giant gold coin up to camera, one brow up (hmm). Green '+$150' pops on the left, red '-$100' on the right. No title card; first word at 0.0 s.",
+      "on_screen": "+$150 / -$100"
+    },
+    {
+      "text": "Most people say *no*.",
+      "ph": "Karamihan, *ayaw*.",
+      "beat": "stakes",
+      "visual": "Quick cut: a crowd of tiny stick figures all shaking heads; a big red 'NO' stamp slams down. Benny shrugs (pose shrug, expression thinking).",
+      "on_screen": "Most people: NO"
+    },
+    {
+      "text": "But the *math* says yes. So why does your brain refuse?",
+      "ph": "Pero sabi ng *math*, oo. E bakit ayaw ng utak mo?",
+      "beat": "loop",
+      "visual": "Split screen: a calculator with a green check vs. Benny's pink brain with a red X. Benny points at the brain (pose point, expression thinking). A '?' pulses over the brain.",
+      "on_screen": "Math: YES. Brain: NO?"
+    },
+    {
+      "text": "Psychologists call it *loss aversion*.",
+      "ph": "Tawag diyan ng psychologists: *loss aversion*.",
+      "beat": "escalate",
+      "visual": "Rubber stamp 'LOSS AVERSION' thuds across the screen; Benny pushes up his round glasses (pose present, expression smug).",
+      "on_screen": "LOSS AVERSION"
+    },
+    {
+      "text": "Researchers pooled 607 measurements from 150 papers.",
+      "say": "Researchers pooled six hundred seven measurements from a hundred fifty papers.",
+      "ph": "Pinagsama ng researchers ang 607 measurements mula sa 150 papers.",
+      "beat": "escalate",
+      "visual": "Paper stacks fly in and pile up beside Benny; a counter races up to 607. Benny scrolls through them (pose scroll, expression thinking).",
+      "on_screen": "607 measurements"
+    },
+    {
+      "text": "The verdict: losing hurts about *twice* as much as winning feels good.",
+      "ph": "Ang resulta: mas masakit ang talo, mga *doble*, kaysa sa saya ng panalo.",
+      "beat": "twist",
+      "visual": "Zoom punch on Benny, eyes wide (expression shocked, pose shock). A giant '~2x' slams in; a scale tips hard toward a red 'LOSS' weight.",
+      "on_screen": "Losses hurt ~2x"
+    },
+    {
+      "text": "So that $100 loss feels like about $195.",
+      "say": "So that hundred-dollar loss feels like about a hundred ninety-five dollars.",
+      "ph": "Kaya 'yung $100 na talo, parang mga $195 ang sakit.",
+      "beat": "escalate",
+      "visual": "Benny holds the pink brain; the red '-$100' bar stretches upward and relabels to 'feels like -$195'. Benny winces (expression broke, pose worry).",
+      "on_screen": "Feels like -$195"
+    },
+    {
+      "text": "*Bigger* than your $150 win. So you say no.",
+      "say": "Bigger than your hundred-fifty-dollar win. So you say no.",
+      "ph": "*Mas malaki* pa sa $150 na panalo mo. Kaya ayaw mo.",
+      "beat": "escalate",
+      "visual": "Two bars side by side: red 'feels -$195' towers over green 'real +$150'. Benny slumps and pockets the coin (pose slump).",
+      "on_screen": "-$195 > +$150"
+    },
+    {
+      "text": "But on average, each flip *pays you* $25.",
+      "say": "But on average, each flip pays you twenty-five dollars.",
+      "ph": "Pero sa average, bawat flip, *kumikita ka* ng $25.",
+      "beat": "twist",
+      "visual": "Benny pulls the coin back out with a smug 'alam ko na' half-lidded grin (expression smug, pose flex). A green '+$25' counter ticks up over a fast coin-flip montage.",
+      "on_screen": "+$25 per flip"
+    },
+    {
+      "text": "Flip 100 times, and you end up behind less than 2% of the time.",
+      "say": "Flip a hundred times, and you end up behind less than two percent of the time.",
+      "ph": "Mag-flip ka ng 100 beses, talo ka sa dulo wala pang 2% ng chance.",
+      "beat": "payoff",
+      "visual": "A '100 FLIPS' counter spins to 100; a mini pie chart shows a tiny red sliver labeled '<2%'. Benny's jaw drops then grins (expression shocked to happy, pose present).",
+      "on_screen": "Behind? Under 2%"
+    },
+    {
+      "text": "One flip is still 50/50. So how much would *you* need to win? Comment it.",
+      "say": "One flip is still fifty-fifty. So how much would you need to win? Comment it.",
+      "ph": "Isang flip, 50/50 pa rin. So magkano ang kailangan mong panalo? I-comment mo.",
+      "beat": "ending",
+      "visual": "Benny holds the coin up to camera exactly like frame 0 (seamless loop), gap-tooth grin (expression happy, pose point at viewer). Small corner tag 'Not financial advice' stays on screen through this scene. Hard cut on the last word.",
+      "on_screen": "Your number?"
+    }
+  ],
+  "disclaimer_on_screen": "Not financial advice (corner tag, final scene; brain/decision thought experiment, not advice to gamble)",
+  "facts_used": [
+    {
+      "claim": "In the coin toss (win $150 / lose $100), most people decline.",
+      "source_url": "https://litcharts.com/lit/thinking-fast-and-slow/part-4-chapter-26"
+    },
+    {
+      "claim": "Most people reject a 50/50 win $150 / lose $100 flip even though it is positive on average (corroborating).",
+      "source_url": "https://margin-notes-600.pages.dev/books/thinking-fast-and-slow/ch-26"
+    },
+    {
+      "claim": "Meta-analysis of 607 loss-aversion estimates from 150 articles; mean coefficient 1.955 (losses weigh about 2x an equal gain).",
+      "source_url": "https://www.aeaweb.org/doi/10.1257/jel.20221698"
+    },
+    {
+      "claim": "Losses tend to be treated as about twice as large as an equivalent gain; named 'loss aversion'.",
+      "source_url": "https://en.wikipedia.org/wiki/Loss_aversion"
+    },
+    {
+      "claim": "The ~2:1 ratio varies by context (hence 'about twice', not 'exactly').",
+      "source_url": "https://atticusli.com/replication-crisis/loss-aversion/"
+    },
+    {
+      "claim": "+$25 average per flip; $100 loss 'feels like' about $195 at weight 1.955.",
+      "source_url": "https://www.aeaweb.org/doi/10.1257/jel.20221698"
+    },
+    {
+      "claim": "Chance of ending behind after 100 fair flips = 1.76% (<2%); a single flip is 50/50.",
+      "source_url": "computed; no external source needed"
+    }
+  ],
+  "math_check": "Average per flip = 0.5*150 - 0.5*100 = +$25. Felt loss = 1.955*100 = $195.50 -> said as 'about $195' (range 182.00-210.20, all > $150). Felt value = 75 - 97.75 = -$22.75. 100 flips with h heads: total = 150h - 100(100-h) = 250h - 10,000 < 0 iff h < 40; P(h <= 39 | n=100, p=0.5) = 0.017600 = 1.76% < 2%. Expected total over 100 flips = 100*25 = +$2,500 (not stated in script). Re-computed in .venv python.",
+  "est_seconds": 40,
+  "word_count": 104,
+  "changes_from_previous": "n/a (version 1)"
+}

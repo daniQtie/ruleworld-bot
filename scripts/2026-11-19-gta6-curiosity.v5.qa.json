@@ -1,0 +1,71 @@
+{
+  "pass": false,
+  "average": 7.9,
+  "scores": {"hook": 8, "stakes": 7, "open_loop": 8, "escalation": 8, "payoff": 8, "surprise": 8, "ending": 8, "clarity": 8, "facts": 9, "originality": 8, "entertainment": 7},
+  "hard_gates": {"hook_rotation_assigned_type": true, "benny_in_story": true, "length_25_35s": true, "english_clear": true, "rule_D_gta_acronym": true},
+  "hook_gate": {
+    "assigned": "#3 Curiosity / Shock",
+    "script_hook_type": 3,
+    "previous_episode": "2026-11-19-gta6-listicle (#2)",
+    "different_from_previous": true,
+    "style_check": "Line 1 now carries the shock inside the first sentence pair ('Its famous writer says he did not write it') and withholds WHO. The name arrives in line 4 (~11 s) and the 'still a GTA game?' question pays off in line 7. Genuine gap, no bait-and-switch. Weakness: 'Tomorrow, GTA six comes out' (0-2 s) is the old-news half; the withhold works because the stamp/headline 'WHO WROTE IT?' is on frame 0."
+  },
+  "rule_D": "PASS. say has 'GTA six' in one piece (L1, L6) and 'GTA game' (L7); no spelled-out form. text = 'GTA 6'. 'March twenty twenty' (voice) vs 'March 2020'/'MARCH 2020' (caption/badge) = acceptable. Rules A-C: no mismatch of numbers.",
+  "v4_fixes_verified": {
+    "curious_not_disgusted_reaction": "LANDED (expr thinking, 'HMM?', 'TASTES NEW'; no tongue-out/slump)",
+    "great_beat_added": "LANDED (L6 'He also said GTA six will be great'; exact source wording 'The game will be great, I'm sure.' confirmed on TechRadar)",
+    "says_in_line_1": "LANDED",
+    "led_the_writing": "LANDED",
+    "natural_english_take_a_bite": "LANDED",
+    "neutral_houser": "LANDED (plain everyday cast, not hooded)",
+    "single_exit_and_no_duplicate_headline": "LANDED",
+    "undrawable_visuals_removed": "LANDED (no plate/sign wobble/belly/tongue)",
+    "upload_title_and_tags": "LANDED ('didn't write it'; reason tag removed; disclaimer kept)"
+  },
+  "format": {
+    "spoken_words": 72,
+    "breakdown": "L1 5+9=14, L2 4+8=12, L3 4+3=7, L4 5+8=13, L5 6 (twenty twenty = 2 words), L6 5+7=12, L7 4+4=8",
+    "note": "Matches the script's 72. Longest sentence 12 words (<=12). At speed 0.9 roughly 31-34 s: inside 25-35 but near the upper end; no room to add words. 11 scenes. on_screen <=5 words per moment; A/B rows are 6 tokens across two rows (same accepted pattern as v4)."
+  },
+  "factual_accuracy": [
+    {"line": "L1 'Tomorrow, GTA six comes out.'", "verdict": "SUPPORTED", "note": "Nov 19, 2026; script says it re-opened GameLuster quoting Rockstar's confirmation. Research row itself still says exact day came from search summaries, but several outlets agree. 'Tomorrow' is correct for the Nov 18 7 PM ET post."},
+    {"line": "L1 'Its famous writer says he did not write it.'", "verdict": "SUPPORTED, attributed", "note": "Houser to IGN (TechRadar, 30 Sep 2025): 'It's not going to be a story that I wrote or a character set that I developed.' 'Says' is the right tense. Fair to Houser and Rockstar."},
+    {"line": "L2 restaurant parable", "verdict": "ACCURATE AS ANALOGY", "note": "No factual claim about the game. 'Quits' is fair: Houser described leaving as his own decision."},
+    {"line": "L3 'Benny takes a bite. It tastes new.'", "verdict": "NEUTRAL", "note": "'New' is not 'worse'. Curious expression, no insinuation. L6 then balances it with 'great'."},
+    {"line": "L4 'The chef is Dan Houser. He led the writing of Rockstar's famous stories.'", "verdict": "SUPPORTED", "note": "Research row: co-founder, VP of Creative, lead writer of the GTA and Red Dead stories (Game Informer)."},
+    {"line": "L5 'He left in March twenty twenty.'", "verdict": "ACCURATE", "note": "Last day March 11, 2020 (Game Informer). No reason implied; burnout, vacation, 100-hour weeks and the 2022 claim are absent."},
+    {"line": "L6 'He said so last year. He also said GTA six will be great.'", "verdict": "SUPPORTED", "note": "Same IGN interview, reported Sept 2025 (= last year from Nov 2026); exact quote 'The game will be great, I'm sure.' confirmed on TechRadar. 'I'm sure' hedge is dropped in the paraphrase: acceptable, it is still 'he said'. NOTE: the research file's own row for this only says 'He also said the game will be great' in a note; the verbatim line is in the script's facts_used from TechRadar."},
+    {"line": "L7 'Still a GTA game? Comment A or B.'", "verdict": "OPINION", "note": "No fact claimed. Not defamatory; no insinuation the game is bad."},
+    {"line": "Scene 2 stamp 'DIDN'T WRITE'", "verdict": "MINOR ATTRIBUTION GAP", "note": "On screen it states the claim flat, while the voice says 'says he did not write it'. Rule C wants screen = voice. Change to 'HE SAYS: NO' or 'NOT WRITTEN BY HIM' attributed form, or make the stamp 'SAYS NO'."},
+    {"line": "Title / title_fb / upload.title", "verdict": "SLIGHTLY STRONGER THAN VOICE", "note": "'Its famous writer didn't write it' is unattributed (voice says 'says'). It is true by Houser's own statement and not defamatory; optionally 'Its famous writer says he didn't write it' (check length). Description is properly attributed and has the unofficial-commentary disclaimer, sources and 4 hashtags. No over-promise; the tag reason claims are gone."},
+    {"line": "Houser depiction", "verdict": "NEUTRAL", "note": "Plain everyday cast, smile, no hood. One fairness wrinkle: the parable chef in scene 4 is the hooded stranger, then Houser in scene 6 is a different plain character, so 'the chef is Dan Houser' does not visually match the chef who left. Not unfair, only a small continuity gap."}
+  ],
+  "consistency_findings": [
+    "GTA six / GTA 6 and March twenty twenty / MARCH 2020: PASS.",
+    "Scene 2 stamp 'DIDN'T WRITE' is unattributed vs the spoken 'says' (Rule C, minor).",
+    "Scene 8: Houser 'stays in place' while the voice says 'He left in March 2020': slightly odd but the MARCH 2020 badge carries it.",
+    "Scene 9 badge 'LAST YEAR' matches 'He said so last year'. Scene 10 'HE SAID: GREAT' matches the voice.",
+    "Scene 4 visual is crowded at one beat window: stamp QUIT + badge CHEF + badge RESTAURANT + drift + camera shake all within about 4 words of speech."
+  ],
+  "drawability_vs_scene_format": {
+    "ok": ["badges, headlines (incl. gold + sub), stamps, bubbles, list rows", "cast with flip/drift (stranger chef and plain Houser)", "phone prop", "snap-zoom, flash cut, camera shake", "thud/ding/pop sfx", "all poses and expressions used (shock, point, think, worry, shrug, wave; shocked, happy, thinking, smile) exist"],
+    "at_risk": [
+      "Scene 5 gag: 'takes a bite' is now carried only by a 'HMM?' bubble and a 'TASTES NEW' badge with no food or bite. The beat is legal and drawable but the physical gag is gone, so it reads as a reaction, not a bite.",
+      "Scene 4: the stranger 'drifts off to the right ONCE' (drift 500) while a stamp, two badges and a camera shake land in about 4 words: risk of clutter, not undrawable.",
+      "Scene 1/2: badge and headline at -0.3 then headline clears on 'Its' (word 0 of the next scene) is fine; ensure the stamp slam on 'did' does not overlap the Benny reaction text."
+    ],
+    "verdict": "Everything is buildable from docs/scene-format.md. No undrawable items remain (unlike v4)."
+  },
+  "listener_check": "Read aloud as a non-native listener at 0.9: all sentences complete and <=12 words. 'The sign stays' is still a metaphor that costs one beat to decode (resolved by L4). 'It tastes new' is a little odd as a food phrase but understandable. 'He said so' needs the listener to hold L1 in mind; acceptable at 2 s of gap since L5 sits between. 'Comment A or B' fine.",
+  "story_check": "Benny is inside the parable (favorite restaurant, bites, reacts, then learns the chef was Houser), which satisfies the hard gate. Weak spot: Benny's role is mostly reacting (curious/thinking); the restaurant is described by narration and badges more than lived. Wait-what moment is the L6 'also said it will be great' flip (same man says it will be great), a good counter-beat but quiet. A/B is real: studio/name vs writer.",
+  "fixes": [
+    "Stakes 7 (L2): the viewer is only asked to 'imagine' a restaurant; the stake 'it is about you' arrives via 'your favorite'. Strengthen with Benny wanting something: e.g. Benny walks in hungry (scene 3 expr happy, pose run into frame) so the chef quitting costs him. Without adding words, change scene 3 so Benny drifts in toward the 'RESTAURANT' badge, then freezes on the QUIT stamp.",
+    "Entertainment 7 (scene 5 and 8): the only physical gag is the camera shake on 'stays'. Add one cheap gag from legal items: on 'bite' Benny's expr flips smile to thinking with a 'pop' and a one-brow-up beat; on 'new' a 'ding' badge; or have the plain Houser wave goodbye at 'left'.",
+    "Rule C (scene 2): replace stamp 'DIDN'T WRITE' with the attributed 'HE SAYS: NO' (3 words) or 'SAYS NO' so the screen matches 'says he did not write it'.",
+    "Continuity (scenes 4 and 6): the parable chef is the hooded stranger but Houser in scene 6 is a different plain character. Make the stranger remain visible and shed the 'CHEF' badge at line 4 (or put a small 'CHEF' badge on the plain Houser) so 'the chef is Dan Houser' is a visual match. Keep Houser neutral.",
+    "Hook 8 / Clarity 8 (L2 'but the sign stays'): the metaphor needs one beat; optional rewrite 'The famous chef quits, but the name stays.' (same word count; 'name' is plainer than 'sign'); match the RESTAURANT badge text to the word heard.",
+    "Title/upload: optionally 'Its famous writer says he didn't write it' for parity with the voice; keep 'Unofficial fan commentary' disclaimer. Not required.",
+    "Research file hygiene: add the verbatim 'The game will be great, I'm sure.' as its own VERIFIED row in research/2026-11-19-gta6-curiosity.json so every spoken claim has a row, and re-open one release-date source before publishing.",
+    "Length: 72 words is at the top of 55-75; do not add words to fix the points above."
+  ]
+}

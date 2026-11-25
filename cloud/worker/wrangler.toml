@@ -1,0 +1,15 @@
+# Cloudflare Worker for the Telegram bot. __KV_ID__ and __REPO__ are filled in by .github/workflows/deploy-worker.yml.
+name = "ruleworld-bot"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+workers_dev = true
+
+[vars]
+REPO = "__REPO__"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "__KV_ID__"
+
+[triggers]
+crons = ["0 3,7,13 * * *"]   # 11:00, 15:00, 21:00 PHT

@@ -1,0 +1,5 @@
+logs/*.csv merge=union
+logs/*.log merge=union
+rubrics/lessons.md merge=union
+*.mp4 binary
+*.glb binary

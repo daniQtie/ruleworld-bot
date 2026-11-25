@@ -1,0 +1,105 @@
+{
+  "id": "2026-11-18-gta-every-second",
+  "version": 1,
+  "topic": "money",
+  "outfit": "money",
+  "title_yt": "What If You Earned $3,858 Every Second? #Shorts",
+  "title_fb": "What if you earned thousands of dollars every second? GTA 5 did, by estimates",
+  "hook": "What if you earned three thousand dollars every second?",
+  "open_loop": "The hook promises thousands of dollars per second; the viewer wonders who earns that. Answer (GTA 5 estimated sales, about $3,858 a second) comes in lines 4-5, and the final lemonade-cup comparison and the GTA 6 question pay off in the last ~8 s.",
+  "payoff": "About $1B in 3 days is about $333M a day, about $3,858 a second, almost 4,000 lemonade cups every second.",
+  "ending": "choice",
+  "lines": [
+    {
+      "text": "What if you earned *three thousand dollars every second?",
+      "say": "What if you earned three thousand dollars every second?",
+      "beat": "hook",
+      "visual": "Frame 0: Benny (money outfit) stands smug, flipping a coin; gold counter already ticking up to $3,000 beside a small wall clock. Snap-zoom on 'three thousand'; counter bumps on 'second'.",
+      "on_screen": "$3,000 EVERY SECOND"
+    },
+    {
+      "text": "You sell lemonade for *one dollar a cup.",
+      "say": "You sell lemonade for one dollar a cup.",
+      "beat": "stakes",
+      "visual": "Benny behind a tiny wooden lemonade stand, happy, holds a cup; clink sfx; badge '$1 A CUP'. Hop on 'one dollar'.",
+      "on_screen": "$1 A CUP"
+    },
+    {
+      "text": "Then a giant *register opens next door.",
+      "say": "Then a giant register opens next door.",
+      "beat": "escalate",
+      "visual": "Whoosh. A huge generic cartoon cash register (cash prop, big scale, no logos) slams in on the right with thud sfx and camera shake; Benny shocked, lemonade cup flies off. Bubble 'WHAT?!'.",
+      "on_screen": "GIANT REGISTER"
+    },
+    {
+      "text": "GTA 5 made *about *one *billion dollars in three days.",
+      "say": "G, T, A five made about one billion dollars in three days.",
+      "beat": "loop",
+      "visual": "Benny in worry pose beside a plain white outlined text 'GTA 5' (plain text only, no logo); gold counter climbs to $1 BILLION; badge 'ESTIMATED SALES'; stamp '3 DAYS'; cash rains from the register.",
+      "on_screen": "$1B IN 3 DAYS"
+    },
+    {
+      "text": "Every second is about *three thousand, eight hundred fifty-eight dollars.",
+      "say": "Every second is about three thousand, eight hundred fifty-eight dollars.",
+      "beat": "twist",
+      "visual": "Benny stares at a wall clock; each tick (tick sfx) the register spits a cash stack with ding and a '+$3,858' badge; Benny scoops with both hands, cash flying past. Gold counter to $3,858 with 'ABOUT'.",
+      "on_screen": "ABOUT $3,858 A SECOND"
+    },
+    {
+      "text": "You try to count, but cannot *keep up.",
+      "say": "You try to count, but cannot keep up.",
+      "beat": "escalate",
+      "visual": "Benny runs in place with a notepad, brain-panic, dizzy; expression shocked then broke; cash piles over his head; fast ticks; thought bubble '1... 2...?!'.",
+      "on_screen": "CAN'T KEEP UP"
+    },
+    {
+      "text": "One second of sales equals *almost *four thousand cups.",
+      "say": "One second of sales equals almost four thousand cups.",
+      "beat": "payoff",
+      "visual": "Benny slumps small at his stand. Bar 'YOUR STAND: 1 CUP' stays tiny beside a huge bar '1 SECOND: ABOUT 3,858 CUPS'; coins rain; Benny shrugs, broke expression.",
+      "on_screen": "1 SECOND = 3,858 CUPS"
+    },
+    {
+      "text": "Will *GTA *6 beat it? Comment *yes or no.",
+      "say": "Will G, T, A six beat it? Comment yes or no.",
+      "beat": "ending",
+      "visual": "Benny points at the viewer, smug; plain white outlined text 'GTA 6?' (no art); list rows 'YES' and 'NO'; gold headline 'COMMENT YES OR NO'. Hard cut after the last word (tail ~0.3 s).",
+      "on_screen": "YES OR NO?"
+    }
+  ],
+  "facts_used": [
+    {
+      "claim": "GTA 5 made over $1 billion in its first 3 days (retail sales estimate, record at the time).",
+      "source_url": "https://www.engadget.com/2013-09-20-grand-theft-auto-5-sales-surpass-1-billion.html"
+    },
+    {
+      "claim": "Same $1B in 3 days figure.",
+      "source_url": "https://shacknews.com/article/81231/grand-theft-auto-5-hits-1-billion-sets-new-record"
+    },
+    {
+      "claim": "GTA 6 releases November 19, 2026 (hype context for the ending question).",
+      "source_url": "https://gameluster.com/gta-6-pre-order-pricing-standard-ultimate-edition/"
+    }
+  ],
+  "math_check": "Python: $1,000,000,000 / 3 days = $333,333,333 per day; / 86,400 s = $3,858.02 per second (about $3,858). One $1 cup per $1 => about 3,858 cups per second ('almost four thousand'). Speech skips the per-day step to stay under 75 words; the hook's 'three thousand' is a rounded-down hypothetical, exact figure said in line 5.",
+  "est_seconds": 32,
+  "word_count": 74,
+  "word_count_note": "Counted on the 'say' field (G, T, A five = 4 words).",
+  "ip_notes": "'GTA' appears only as plain spoken/written topic text. No Rockstar characters, logos, lettering, footage, art or music. The register is a generic cartoon cash register.",
+  "upload": {
+    "title": "What If You Earned $3,858 Every Second?",
+    "description": "A lemonade stand vs the money GTA 5 made every single second. 🍋\nWill GTA 6 beat it? Comment YES or NO!\nBy sales estimates, GTA 5 made about $1 billion in its first 3 days. That is about $333 million a day, or about $3,858 every second.\nSource: Engadget, Shacknews. Estimated retail sales, not exact.\n#gta6 #gta5 #gaming #money #Shorts",
+    "tags": [
+      "gta 6",
+      "gta 5 sales",
+      "gta 5 first 3 days",
+      "how much money did gta 5 make",
+      "gta 6 release date",
+      "gta 6 hype",
+      "gaming facts",
+      "money per second",
+      "gta 6 vs gta 5"
+    ]
+  },
+  "changes_from_previous": "first version"
+}

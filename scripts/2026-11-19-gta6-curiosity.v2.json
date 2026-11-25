@@ -1,0 +1,90 @@
+{
+  "id": "2026-11-19-gta6-curiosity",
+  "version": 2,
+  "hook_type": {
+    "number": 3,
+    "name": "The Curiosity / Shock Hook"
+  },
+  "topic": "psychology",
+  "outfit": "psych",
+  "title_yt": "Why waiting for GTA 6 can feel good #Shorts",
+  "title_fb": "Why waiting for GTA 6 can feel good",
+  "hook": "Benny sleeps outside a store the night before G T A 6. The reason will surprise you.",
+  "open_loop": "Benny sleeps outside a store and smiles even when a rival steals his spot (lines 1-3); the reason is withheld until the study (lines 4-6) and the 'waiting can feel good' line.",
+  "payoff": "Honest claim only: in a 2010 study, people who planned a vacation were happier before the trip than people who did not, and after the trip there was no overall difference. Waiting can feel good. It was a study about trips, not games.",
+  "ending": "choice",
+  "scenes_planned": 9,
+  "lines": [
+    {
+      "text": "Benny sleeps outside a store the night before G T A 6.",
+      "say": "Benny sleeps outside a store the night before G, T, A, six.",
+      "beat": "hook",
+      "visual": "SCENE 1 (frame 0): dark-blue night bg, Benny (psych) in a sleeping bag by a plain store door (no logo/sign), grinning (happy), a yawn bubble; badge 'GTA 6' plain text at top. Snap-zoom on 'sleeps'; zzz sfx tick.",
+      "on_screen": "GTA 6"
+    },
+    {
+      "text": "The reason will surprise you.",
+      "beat": "loop",
+      "visual": "SCENE 2: Benny shocked-then-smug, pose point at viewer, big headline '?!' (2 chars, no words); he hops in the bag (hop true), pop sfx.",
+      "on_screen": "?!"
+    },
+    {
+      "text": "A rival steals his spot, and he still smiles.",
+      "beat": "stakes",
+      "visual": "SCENE 3 (on 'rival'): hooded stranger (cast, flip) shoves in from the right and bonks Benny aside (thud), Benny's sleeping bag slides left. SCENE 4 (on 'still'): Benny, squashed in the corner, smiles anyway (smile expr), a tiny sun-glow behind him; stranger grumpy with arms crossed.",
+      "on_screen": "STILL SMILING"
+    },
+    {
+      "text": "A study found people who planned a trip felt happier.",
+      "beat": "escalate",
+      "visual": "SCENE 5: Benny holds a phone showing a plain calendar (prop phone) and glows happy; stranger beside him has a grey cloud and no phone. Benny's mood hearts float up. No bars, no counter. On 'planned' Benny points at the calendar.",
+      "on_screen": "PLANNED A TRIP"
+    },
+    {
+      "text": "After the trip, there was no big difference.",
+      "beat": "twist",
+      "visual": "SCENE 6 (on 'After'): morning bg, Benny and the stranger both yawn and shrug with the same flat face (buzz sfx), Benny's hearts pop and vanish. Wait-what gag: Benny blinks at the camera.",
+      "on_screen": "NO BIG DIFFERENCE"
+    },
+    {
+      "text": "That study was about trips, not games.",
+      "beat": "payoff",
+      "visual": "SCENE 7: Benny stops, holds up one hand like a fair judge, honest face; headline 'TRIPS' on 'trips', then 'NOT GAMES' on 'games' with a small thud.",
+      "on_screen": "TRIPS, NOT GAMES"
+    },
+    {
+      "text": "Waiting can feel good. Wait or play? Comment A or B.",
+      "beat": "ending",
+      "visual": "SCENE 8 (on 'Waiting'): back at the door, Benny cuddles the sleeping bag, happy; stamp 'CAN FEEL GOOD' on 'can feel good'. SCENE 9 (on 'Wait'): rows 'A: WAIT' and 'B: PLAY' pop (hype crowd silhouette gag: stranger snores). Benny points at viewer on 'Comment'. Rows only.",
+      "on_screen": "A: WAIT / B: PLAY"
+    }
+  ],
+  "facts_used": [
+    {
+      "claim": "Nawijn et al. 2010 (1,530 Dutch adults): people planning a vacation were happier before it than non-vacationers (anticipation suggested); overall no difference after the trip; very relaxing break gave a small boost gone by eight weeks.",
+      "source_url": "https://www.sciencedaily.com/releases/2010/02/100218125204.htm"
+    },
+    {
+      "claim": "Bibliographic summary: Applied Research in Quality of Life 5(1) 35-47.",
+      "source_url": "https://personal.eur.nl/veenhoven/Pub2010s/2010g-ab.html"
+    }
+  ],
+  "math_check": "No arithmetic. No numbers spoken or shown except the plain-text 'GTA 6' (spoken 'G, T, A, six'). Word count by script.",
+  "est_seconds": 27.0,
+  "word_count": 62,
+  "upload": {
+    "title": "Why waiting for GTA 6 can feel good #Shorts",
+    "description": "Why would anyone smile while sleeping outside a store?\nWait or play: which feels better to you? Comment A or B.\nA 2010 study found people who planned a trip were happier before it. After the trip there was no big difference. It studied trips, not games.\nSource: Nawijn et al. 2010, Applied Research in Quality of Life.\n#gta6 #psychology #happiness #Shorts",
+    "tags": [
+      "gta 6 hype",
+      "gta 6 release",
+      "anticipation happiness",
+      "psychology of waiting",
+      "why waiting feels good",
+      "vacation happiness study",
+      "gta 6 psychology",
+      "happiness psychology"
+    ]
+  },
+  "changes_from_previous": "(1) Story: Benny lives it start to end (camps outside the store, a hooded rival steals his spot, he still smiles, morning shrug). The study is his and the rival's experience; no bars or counters. (2) Honest claim: only 'people who planned a trip felt happier' and 'after the trip, no big difference'; 'best part of GTA 6' removed; 'trips, not games' said before the ending; stamp reads 'CAN FEEL GOOD', matching the voice (Rule C). (3) Line 1 is a pictured shock (sleeping outside a store, smiling); the reason is withheld to the study. (4) 'Tonight' replaced with 'the night before G T A 6'; no 'all night' or midnight-launch claim. (5) 'vacationers/others/gone' replaced with 'people who planned a trip'. (6) A/B is WAIT vs PLAY, rows of 2-3 words. (7) Title 'Why waiting for GTA 6 can feel good' no longer promises a verdict. 1,530 removed from video (no numbers)."
+}

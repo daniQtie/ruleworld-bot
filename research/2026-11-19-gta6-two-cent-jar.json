@@ -1,0 +1,32 @@
+{
+  "id": "2026-11-19-gta6-two-cent-jar",
+  "hook": "If you saved two cents a day since the last GTA, you could buy the new one.",
+  "angle": "Waiting-and-hype meets tiny-habit math. GTA 5 came out in September 2013; GTA 6 arrives 2026-11-19, 4,811 days later. The price ($79.99) divided by those days is only about 1.7 cents a day. So the 13-year wait was long, but the money needed was almost nothing. Psych lesson: tiny steady savings beat last-minute panic; you only feel the price when the date arrives.",
+  "facts": [
+    {"claim": "GTA 6 launches November 19, 2026 on PlayStation 5 and Xbox Series X|S; Standard Edition is $79.99 and Ultimate Edition is $99.99 (Rockstar pre-order announcement June 25, 2026, as reported).", "source_url": "https://gameluster.com/gta-6-pre-order-pricing-standard-ultimate-edition/"},
+    {"claim": "GTA 5 made over $1 billion in its first 3 days (September 2013, Take-Two estimate); previous record was 15 days (Call of Duty: Black Ops 2). Article dated Sept 20, 2013, so GTA 5 launched about Sept 17, 2013 (launch date inferred; confirm for on-screen use).", "source_url": "https://www.engadget.com/2013-09-20-grand-theft-auto-5-sales-surpass-1-billion.html"},
+    {"claim": "GTA 5 has sold over 220 million copies (Take-Two CEO Zelnick, after Q2 FY2026 earnings, reported Nov 11, 2025). Secondary source, not Take-Two primary.", "source_url": "https://gurugamer.com/pc-console/gta-5-sold-another-20-mil-copies-delays-gta-6-another-year-25856/amp"},
+    {"claim": "Fans joke about '13 years since GTA 5' and about calling in sick for launch (the 'GTA Flu' meme); memes dated Nov 13, 2026.", "source_url": "https://vgtimes.com/gaming-news/174487-less-than-a-week-until-gta-6-the-internet-is-already-going-wild-over-memes.html"},
+    {"claim": "GTA Flu trend: fans pretend to be sick to play on launch day; KFC Australia staged a fake funeral stunt (meme-wiki, not measured data).", "source_url": "https://meme.com/memes/gta-flu"},
+    {"claim": "MATH (recomputed with Python): Sept 17, 2013 to Nov 19, 2026 = 4,811 days = 13.17 years. $79.99 / 4,811 days = $0.0166 per day (about 1.7 cents). 2 cents x 4,811 = $96.22, which covers the $79.99 game with $16.23 left over. 1 cent a day would only reach $48.11 (not enough). $79.99 / 13.17 years = about $6.07 per year.", "source_url": "computed locally with .venv/Scripts/python from the two dated sources above"},
+    {"claim": "MATH: $1 billion in 3 days is about $333 million per day, about $3,858 per second (GTA 5 launch).", "source_url": "https://www.engadget.com/2013-09-20-grand-theft-auto-5-sales-surpass-1-billion.html"}
+  ],
+  "inspiration_urls": [
+    "https://vgtimes.com/gaming-news/174487-less-than-a-week-until-gta-6-the-internet-is-already-going-wild-over-memes.html",
+    "https://meme.com/memes/gta-flu"
+  ],
+  "outfit": "Original 'City Benny': Everyday green hoodie, but with a backwards cap, gold shades on the cap and a small gold $ chain, sneakers, plus a cartoon coin jar prop. Keep the face and green accent. No Rockstar styles, no palm-and-neon-logo imitation; use a plain cartoon city skyline of our own.",
+  "open_loop": "Planted by the hook plus a second line: 'Guess how much it costs per day?' Hold the number until the last 5 seconds. Visual loop: a jar fills with coins over 13 'years' while Benny ages with a long beard and a growing gap-tooth smile.",
+  "payoff_idea": "Benny drops two cents in a jar every day since 2013 while friends spend big on other things. On launch day he pours out the jar at the store counter: $96 coins pile up; cashier checks $79.99; Benny walks away with the game and $16 left. Reveal: the whole 13-year wait cost less than two cents a day.",
+  "ending_idea": "Comment bait / A-B choice: 'Would you save two cents a day or spend it all on launch day? Pick A or B.' Or loop back to the first line. End the moment the question is asked.",
+  "notes_for_scriptwriter": [
+    "Spoken length 25-35 s, about 55-75 words, every sentence complete and 12 words or fewer, pure English, no idioms. Open with 'If you...' (hook above, 14 words: shorten to 'If you saved two cents a day since 2013, you could buy GTA 6.').",
+    "Benny must live a story: he starts a jar in 2013, gets laughed at by a friend, ages in a quick montage, then pays at the counter. Physical gag ideas: the jar overflows, coins spill, the cashier counts with a tiny abacus.",
+    "COPYRIGHT/IP LIMITS: do NOT use Rockstar characters (Lucia, Jason, CJ, etc.), logos, the GTA/VI wordmark, trailer or game footage, cover art, art-style imitation, or any game music. Benny is the only character. Say 'GTA 6' only as spoken/written topic in the title and description. Any 'game box' must be generic with no logo.",
+    "Do not say 'Rockstar says' or imply endorsement. Avoid violent or crime content; frame as a money-and-patience story.",
+    "Add 'not financial advice' in the description. The jar is a hypothetical, not a claim anyone will reach any outcome; no guaranteed-income wording.",
+    "Numbers to speak plainly: 'thirteen years', 'two cents a day', 'about ninety-six dollars', 'seventy-nine ninety-nine'. The game is $79.99 base; do not claim Ultimate is the price.",
+    "Verify before on-screen date text: GTA 5 launch Sept 17, 2013 was inferred from article dates and my own knowledge; not found stated on a fetched page.",
+    "Timing: post today (Nov 17) or Nov 18 to ride launch hype; hashtags #gta6 #savingmoney #money. Title may include 'GTA 6'."
+  ]
+}

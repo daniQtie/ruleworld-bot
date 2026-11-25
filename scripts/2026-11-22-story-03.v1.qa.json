@@ -1,0 +1,40 @@
+{
+ "id": "2026-11-22-story-03",
+ "version": 1,
+ "pass": false,
+ "average": 7.31,
+ "scores": {"hook": 7, "world_rule": 7, "characters": 7, "escalation": 8, "reveal": 6, "ending": 8, "clarity": 8, "visual": 8, "consistency": 7, "originality": 7, "retention": 7, "performance": 8, "dialogue": 7},
+ "hard_gates": {"rotation": true, "structure": true, "original": true, "length": true, "english_clear": true, "producible": true, "kit_story_blockers": false, "voice_tags_safe": true},
+ "gate_notes": {
+  "rotation": "Hook #6 Question Hook (line 1 asks the viewer a direct question) and format #2 In This World (line 2). Previous AI episode was hook #5 / format 1. Story-02 is owner-supplied and exempt.",
+  "length": "Formula estimate = 106.2 s + 2.5 s tail = 108.7 s (1:49), 401 words. That is BELOW 2:00 by the formula. It passes only if the ~1.2x measured factor holds: 108.7 x 1.2 = about 130 s (2:10). That factor comes from ONE episode, so it is thin: at 1.1x the runtime is 2:00, at 1.0x it fails. It sits at the low end of the window, not the 2:20 aim. Not padded, so any extra seconds must come from story, not filler.",
+  "kit_story_blockers": "FAIL on causal logic of the climax (see fixes 1-2): the solution is not forced by the rule as shown, and the protagonist's plea to Pell is not motivated. Hook clarity, goal, originality and payoff pass.",
+  "voice_tags_safe": "All tags are documented Fish s1 tags and all emotions are inside the 24 basic set. None of the unsafe tags (regretful, hopeful, guilty) are used. No tags in text. Max 2 tags per sentence. Still untested for leakage: moved, empathetic, frustrated, upset, relaxed, curious, surprised, confident, scared, in a hurry tone. Run the Whisper leak check on the real narration.",
+  "english_clear": "Every sentence is 14 words or fewer except line 1 (15 words, one sentence). Lines 6, 9, 20, 21, 25 exceed 14 only as two sentences; each sentence is fine. No slang.",
+  "numbers": "Checked: 62 start; 100-step path; halfway = 50 steps climbed = 62-50 = 12 (line 17) OK; 50/40/30/20 counts then 12 OK; 12 -> 10, 7, 4 = 58 climbed, 100-58 = 42 to go OK; Pell 900 - 8 (bench to Kai) - 42 = 850 OK, so 850 at the top is exactly right. Hold-hands rule planted in line 6 and paid off in line 37. The maths is consistent."
+ },
+ "originality_notes": "Vs story-01 (kindness moves an accessory) and story-02 (lies make a monster; owner-supplied): different rule, characters and plot. Vs TeamDeam 'You Only Get 10 Jumps A Year': the mechanic is a daily movement allowance with a freeze, but the story (lighthouse rescue, hand-holding secret, mother at sea) is materially different, so it is not a noun-swap. BUT the title 'In This World, You Only Get 1,000 Steps a Day' (title_working and upload.title) is a near word-for-word mirror of the TeamDeam title. Change the title.",
+ "fixes": [
+  "BLOCKING, lines 19-21 and 30 (logic hole): Pell has 900 steps and the climb is only about 42 more. She could simply take Marlo's key and light the lamp alone, so Kai's own step shortage does not matter and the hold-hands trick is not needed. Make the rule force the solution: e.g. only the person Marlo hands the key to can turn the lamp, or Pell cannot climb alone (fear) and Kai must be the one at the top. State that rule before line 11.",
+  "BLOCKING, line 19 'Walk with me to the top!': Kai does not know the hand-holding secret, so asking Pell to walk with him gains him nothing and reads as an unmotivated choice. Give Kai a reason that fits what he knows (he asks her to LEND steps and she says steps cannot be given, or he asks her to carry the key) so Pell's later hand-take is the surprise that reveals the secret.",
+  "Line 20: Pell says 'If my number hits zero, I freeze' but she has 900 steps and the climb costs about 42; the fear makes no sense on the numbers. Change her fear to being alone in the fog or at the top in the dark, or let her say the fog could turn them around and burn every step.",
+  "Line 4 vs lines 10-11 (rule consistency): the rule says you freeze right where you stand, yet frozen Marlo talks and moves his eyes and mouth. Add to line 4 that you stay awake but cannot move (this also gives Pell's line 21 'All night. Nobody came.' its horror). Same for the memory-flash girl.",
+  "Title, upload.title, title_working: avoid the TeamDeam 'You Only Get N ... A Year' pattern. Use e.g. 'Every Step You Take Is Counted' or 'Zero Steps, Frozen Till Sunrise'. Keep the 'In this world' line in the script.",
+  "Length (gate risk): the formula gives 108.7 s; real runtime is about 130 s only if 1.2x holds. Add 8-15 s of real story value, not padding: a line showing why Kai has only 62 left (he searched the whole town for the keeper), one more obstacle beat on the climb with a visual (fog hides the path, he loses 3 steps on a wrong turn), or a fuller rule demo. Re-estimate to about 120-125 s by formula so the real runtime lands near 2:20-2:30.",
+  "Line 1 (hook clarity): 'sixty-two steps' means nothing until lines 2-4 explain it. Keep the glowing-62 close-up and let the first shot show a frozen person beside Kai so the stakes read in 3 s. Shorten to one sentence of 14 words or fewer.",
+  "Line 7: 'I didn't think about it. Because then, the fog horn sounded.' is stiff. Rewrite: 'I forgot about it. Then the fog horn sounded.'",
+  "Line 26 (Rule A): the voice says 'Forty-two steps to the top' but the shot shows no 42. Add a '42 to go' marker in the shot. Line 35 shot says 'her 850s tick down': write it as 'her number ticks down toward 850' so the screen matches the 900 in line 19 and the 850 in line 40.",
+  "Line 28 'Your steps disappear at sunrise anyway' repeats the rule from line 5 and Pell already knows it; it sounds like a lecture. Make it a plea or cut it. Keep line 29, which is the strongest line.",
+  "Lines 38-39 (ending): 'Steps you keep for yourself disappear at sunrise. Steps you share can bring someone home.' states the moral outright, and 'share steps' does not match what happened (nothing was transferred, they walked together). Reword to match the rule, e.g. 'Steps you hoard vanish at sunrise. Steps you walk together can bring someone home.'",
+  "Line 13 Marlo 'Then don't waste a single one' is never paid off. Pay it off or replace it with 'You can't do this alone, but go.'"
+ ],
+ "strengths": [
+  "Clean original rule with a built-in ticking clock and strong visuals, all producible in three.js.",
+  "Early plant of the hold-hands rule (line 6) with a silent beat, and the maths is exact (12 at halfway, 4 with 42 to go, 900 to 850).",
+  "Emotional peak (line 29) and the question hook pays off in the ending.",
+  "Tags are all documented and basic; no stage directions leak into text."
+ ],
+ "producibility_notes": "Feasible: chest number sprites, freeze tint with frost, fog, lamp beam, ferry with lights, memory-flash tints, existing lighthouse hill set. The 'Man', the memory-flash girl and the two kids have no fixed look entry (Rule N). Keep colour saturated (Rules J/M): fog is blue-grey, so add warm lamp and sunset colour.",
+ "upload_notes": "Description opener 'He had 62 steps left. The hill needed 100.' is good. Fix the title (see fixes).",
+ "checked": "Read script, research, rotation output, voice_profile, all rubrics, kit QA checklist and hook library, story-01 v4 and story-02 premise and lines. Counted words and durations in Python. Did not search the web for the TeamDeam title and did not listen to audio."
+}

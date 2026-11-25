@@ -1,0 +1,101 @@
+{
+  "episode_id": "2026-11-22-story-03",
+  "hook_type": {"number": 6, "name": "The Question Hook"},
+  "format": {"number": 2, "name": "In This World..."},
+  "recommended": 1,
+  "premise": "In This World, You Only Get 1,000 Steps a Day. At Zero, You Freeze Where You Stand...",
+  "world_rule": "Everyone gets 1,000 steps a day, shown as a glowing number on the chest that ticks down with every step. At zero you freeze solid, standing wherever you are, until sunrise. Steps cannot be saved or traded. Hidden half (revealed late): when people walk holding hands, each counter ticks down at half speed, and a chain of linked people costs each person almost nothing.",
+  "characters": {
+    "protagonist": {"name": "Kai", "age": "about 11", "want": "Reach the lighthouse hilltop before the fog closes in and light the lamp, so the night ferry carrying his mum finds the harbour. He has 62 steps left; the hill needs 100."},
+    "mentor": {"name": "Keeper Marlo", "motive": "Old lighthouse keeper who taught Kai. His counter hit zero at the foot of the hill, so he stands frozen with the lamp key held out in his hand. He cannot move; he can only hold the key."},
+    "obstacle": {"name": "Mrs. Pell", "motive": "Neighbour who guards her steps, walks in tiny shuffles and refuses to spend any on others. Not evil: she is afraid of freezing alone in the dark. Her refusal is the obstacle, then her turn is the payoff."}
+  },
+  "locations": ["City street at dusk (Kenney street)", "Lighthouse hill with fog (existing older set)", "Optional 5 s kitchen opener (house set)"],
+  "beats": {
+    "1_hook": "Kai, with 62 on his chest, stares up a foggy hill while the number ticks. The narrator asks: what would you do with sixty-two steps left and a hill that needs one hundred?",
+    "2_context": "Rule in two lines: 1,000 steps a day, a number on the chest, zero means frozen till sunrise. Show frozen people mid-stride in the street, each glowing 0. PLANT: two small kids walk holding hands with counters near 700 while their friends nearby are low. Do not explain it yet.",
+    "3_goal": "A fog horn sounds. Mum's ferry is out there. Marlo is frozen at the foot of the hill, key held out. Someone must light the lamp, and only Kai can still move.",
+    "4_first_consequence": "Kai runs. The counter races 62 -> 40 and he realises he will freeze halfway, in the dark, with the lamp unlit.",
+    "5_escalation": [
+      "He begs Mrs. Pell to lend steps. She refuses and shuffles away, saying steps cannot be given.",
+      "He takes the key from Marlo's hand and climbs. Counter 17. The fog thickens and the horn is closer.",
+      "Halfway up: counter 6, 5, 4. Mrs. Pell, scared of being alone in the fog, has followed him."
+    ],
+    "6_choice": "At 4 steps, Kai does not race on alone. He takes the frightened neighbour's hand and steps forward, spending his last steps on her fear.",
+    "7_reveal_payoff": "Holding hands halves the cost. Both counters drop slowly, and the planted kids from the street now make sense. Mrs. Pell links the next neighbour, who links the next. A chain of townsfolk climbs the hill while everyone's numbers barely move.",
+    "8_emotional_landing": "Kai lights the lamp. The ferry horn answers. His counter reads 3, not 0. Last image: a long chain of tiny glowing numbers climbing the dark hill, all higher than anyone expected. Nobody in this world walks alone anymore."
+  },
+  "why_it_works": "The rule is one sentence and measurable. A ticking number is a built-in clock, the cheapest possible tension. The twist (together is cheaper) is earned, foreshadowed, and carries a theme, not just a gimmick. Strong personal stake (mum on the ferry) with a concrete, visual goal (light the lamp).",
+  "premises": [
+    {
+      "rank": 1,
+      "title": "In This World, You Only Get 1,000 Steps a Day",
+      "world_rule": "Step counter on the chest, zero = frozen till sunrise, linked hands = half cost.",
+      "protagonist_goal": "Kai (11) must climb the lighthouse hill and light the lamp before fog hides the harbour from the ferry carrying his mum. He has 62 steps; the hill costs 100.",
+      "relationship_stakes": "Kai's mum is on the ferry; Keeper Marlo, his teacher, is frozen holding the key; Mrs. Pell, a frightened step-hoarder, is the obstacle who becomes the solution.",
+      "escalation": ["Mrs. Pell refuses to lend steps", "He takes the key and climbs, counter drops to 17 as fog closes in", "Counter hits 4 halfway up as the horn gets closer"],
+      "choice": "Kai stops racing alone and takes the frightened neighbour's hand, spending his last steps on company.",
+      "payoff_twist": "Linked hands halve the cost. Planted early with two hand-holding kids whose counters stay high. A human chain climbs the hill.",
+      "ending_image": "A winding line of hand-holding glowing numbers up the foggy hill; the lamp sweeps the water; Kai's counter reads 3, not 0.",
+      "hook_candidates": [
+        "What would you do with sixty-two steps left and a hill that needs one hundred?",
+        "How far can you really walk when every single step is counted?",
+        "What happens to a boy whose number hits zero halfway up a hill?"
+      ],
+      "visual_producible": "Counter = a number sprite on the chest (cheap and exact). Freeze = stop pose + pale blue tint + frost particles. Linked hands = a glow line between hands. Lamp = a beam of light. Fog = fog colour. Sets: Kenney street (start) and lighthouse hill (existing). 3 named characters plus frozen extras reusing avatars with a number tag. Dusk, fog and lamp beam give strong mood-colour changes.",
+      "originality_notes": "Vs 2026-11-21-story-01 (kindness costs an accessory): no helping-trade mechanic and no outsider arriving; the rule is a resource clock, not an exchange. Vs 2026-11-22-story-02 (lies make a monster, siblings, absent dad): no lies, no monster, no siblings, no absent father; the relationships are a mother at sea, a mentor and a scared neighbour. Vs TeamDeam: nearest is 'You Only Get 10 Jumps A Year' (a limited movement allowance), but ours is a daily step counter with a freeze mechanic, a cooperation twist and a lighthouse rescue. A search summary also mentions a spoken-word counter in the niche (different action and story). Acceptable, but the script must not be framed as a punishment-for-moving story."
+    },
+    {
+      "rank": 2,
+      "title": "In This World, Everyone Wears a Lantern That Glows When They Are Remembered",
+      "world_rule": "Each person has a floating lantern whose brightness equals how much they are remembered by people around them. Forgotten people dim to dark and turn see-through at night. You can pass a little of your light to someone by holding their lantern.",
+      "protagonist_goal": "Ravi (10) wants to relight his Grandpa's nearly dark lantern before the town's night-lamp ceremony.",
+      "relationship_stakes": "Grandpa raised him; shop owner Ms. Dara depends on the town's lights.",
+      "escalation": ["Ravi gives Grandpa his own light; his lantern dims and Grandpa refuses", "Ravi borrows light from neighbours; Dara's shop goes dark and she is angry", "Grandpa flickers and starts to fade as the street goes dark"],
+      "choice": "Ravi stops taking light and asks each neighbour to tell one real memory of Grandpa.",
+      "payoff_twist": "Grandpa's lantern was dim because he secretly gave his light to half the street over the years. Every lantern in town was lit from his. Memories return it.",
+      "ending_image": "Every lantern on the street leans toward Grandpa's doorway and brightens; his is the brightest.",
+      "hook_candidates": [
+        "What would you do if your grandpa's light was almost out?",
+        "Who gives away their own light and never tells anyone?",
+        "What does it cost to be remembered in a world that can see it?"
+      ],
+      "visual_producible": "Lanterns = emissive spheres with point lights over each head (very cheap). Dimming/tinting/fading = colour and alpha. Locations: kitchen, Kenney street at night, bedroom. 3 characters. Strong mood colour.",
+      "originality_notes": "Vs story-01: about being remembered, not an accessory trade. Vs story-02: no lies, no monster; grandson and grandfather, no absent parent. Vs TeamDeam: no matching title found; derived from our own kit hook pattern 6. Risk: sentimental register close to story-02's ending, so keep adventure and humour higher."
+    },
+    {
+      "rank": 3,
+      "title": "In This World, Every Feeling You Don't Say Out Loud Becomes a Balloon on Your Wrist",
+      "world_rule": "Every feeling you keep inside inflates a coloured balloon tied to your wrist (blue = sad, red = angry, yellow = worried). It grows each hour. Say the feeling out loud to the right person and it pops into confetti. Too many big balloons and you float away.",
+      "protagonist_goal": "Theo (12) wants to stay on the ground long enough to reach his school football trial, while hiding that he is terrified of letting his mum down.",
+      "relationship_stakes": "His mum works nights and always says she is fine; Coach Ruiz.",
+      "escalation": ["Two blue balloons lift his toes off the ground at breakfast", "At school four balloons make him bounce up the stairs; everyone sees but nobody mentions it", "On the street he drifts above the cars; his mum's huge balloons rise past the window"],
+      "choice": "Theo grabs his mum's balloon strings and says the feeling he was hiding; she answers, and both pop.",
+      "payoff_twist": "Everyone could always see everyone's balloons; the town only floated because nobody dared name them first.",
+      "ending_image": "Confetti raining over the street, mother and son landing softly on the pavement.",
+      "hook_candidates": [
+        "What do you do when your feelings start floating you off the ground?",
+        "Why is a twelve-year-old boy rising above the kitchen table?",
+        "How big can a secret feeling get before it carries you away?"
+      ],
+      "visual_producible": "Balloons = tinted spheres with Y offset and scale growth. Popping = confetti particles. Kitchen, Kenney street, bedroom. 3 characters. Easy.",
+      "originality_notes": "Closest to story-02 in theme (hiding something to protect a family member), which is why it ranks third. Frame it as unspoken feelings, never as lying. Vs story-01 fine. Vs TeamDeam no matching title found."
+    }
+  ],
+  "pattern_sources": [
+    {"title": "In This World, EVERYONE has an voice in their head... (Short)", "url": "https://www.youtube.com/shorts/Y7IyM87DmrQ", "published": "unknown (search result said roughly 4-25 days before 2026-11-21)", "date_checked": "2026-11-21", "views": "not visible in search result", "observed": "title style 'In This World, EVERYONE has...'; protagonist named Leo (from a search summary)", "interpreted": "capitalised emphasis word in the title; the rule is a one-line universal condition"},
+    {"title": "In This World Roblox Animation Epic Stories Compilation", "url": "https://www.youtube.com/watch?v=iP42we0J35o", "published": "recent per search summary", "date_checked": "2026-11-21", "views": "not visible", "observed": "compilation of 'In This World' stories; one rule summarised as a word count that drops with every spoken word", "interpreted": "resource-counter rules already exist in the niche, so ours uses a different resource, a different cycle and a different emotional core"},
+    {"title": "TeamDeam channel (kit research, not re-fetched today)", "url": "https://www.youtube.com/@TeamDeam-q6r", "date_checked": "2026-11-20 per kit", "views": "recent range 8K-256K per TEAMDEAM_CONTENT_FRAMEWORK.md", "observed": "'In This Town, You Only Get 10 Jumps A Year...' about 202K views", "interpreted": "a limited movement allowance performs well, so appeal is proven; ours must stay clearly our own"}
+  ],
+  "candidates": ["premise 2 (lanterns of remembering)", "premise 3 (feelings as balloons)"],
+  "notes_for_scriptwriter": [
+    "Hook #6: the first spoken sentence is a direct, specific question (not 'Have you ever wondered'). Best candidate: 'What would you do with sixty-two steps left and a hill that needs one hundred?' The story must answer it.",
+    "Plant the payoff early: in the street shot, two small kids walk holding hands with counters near 700 while their friends nearby are low. Do not explain it then.",
+    "Keep sentences at 14 words or fewer, plain English. State the rule in two lines after the hook.",
+    "Cast: Kai, Marlo, Mrs. Pell. Extras are frozen avatars and the hand-holding chain in the last scene.",
+    "Logic to settle in the script: only walkers spend steps. Marlo stays frozen at the base holding out the key; Kai takes it. Keep Marlo's frozen state visible (blue tint, 0).",
+    "Counters must be big enough to read on a phone, mid-frame, outside the top 220 px and bottom 560 px.",
+    "Reuse sets: Kenney street at dusk and the lighthouse hill with fog; a kitchen only if a 5 s opener is needed.",
+    "Do not reuse story-01 or story-02 beats: no gifts, no accessories, no lying, no monsters, no siblings, no absent dad."
+  ]
+}

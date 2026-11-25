@@ -1,0 +1,43 @@
+# Make video. Started by the Telegram bot (Cloudflare Worker, cloud/worker/worker.js). See cloud/README.md.
+name: Make video
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "new = a new video, revise = redo videos the owner sent notes for"
+        default: new
+      format:
+        description: "rule, choice, underdog, school or any"
+        default: any
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: make
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - name: Write .env from secrets
+        run: python -m pipeline.cloudjobs env
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FISH_API_KEY: ${{ secrets.FISH_API_KEY }}
+          FISH_VOICE_ID: ${{ secrets.FISH_VOICE_ID }}
+          FISH_MODEL: ${{ secrets.FISH_MODEL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_OAUTH_CLIENT: ${{ secrets.YOUTUBE_OAUTH_CLIENT }}
+          CLIENT_SECRET_JSON: ${{ secrets.CLIENT_SECRET_JSON }}
+          CLIENT_TV_JSON: ${{ secrets.CLIENT_TV_JSON }}
+      - name: Run
+        run: python -m pipeline.cloudjobs make --mode "${{ inputs.mode }}" --format "${{ inputs.format }}"
+      - if: always()
+        uses: ./.github/actions/commit

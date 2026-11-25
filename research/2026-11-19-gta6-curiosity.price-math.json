@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-19-gta6-curiosity",
+  "hook_type": {
+    "number": 3,
+    "name": "The Curiosity / Shock Hook"
+  },
+  "hook": "Tomorrow, G T A 6 comes out. Benny pays about eighty dollars. The cashier calls it a bargain.",
+  "angle": "Counter-intuitive: $79.99 feels $20 more than GTA 5's $59.99, but in today's money GTA 5 cost about $86, so GTA 6 is about $6 cheaper.",
+  "facts": [
+    {
+      "claim": "GTA V launched Sept 2013 at US standard price $59.99 (about $86 adjusted to today's money using BLS CPI-U).",
+      "source_url": "https://www.ggrecon.com/articles/gta-6-cost-per-hour-every-gta/"
+    },
+    {
+      "claim": "CPI-U all items, September 2013 = 234.149 (1982-84=100).",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_10302013.htm"
+    },
+    {
+      "claim": "CPI-U all items, October 2026 = 337.511 (September 2026 = 336.940).",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm"
+    },
+    {
+      "claim": "GTA 6 releases November 19, 2026; Standard $79.99, Ultimate $99.99.",
+      "source_url": "https://gameluster.com/gta-6-pre-order-pricing-standard-ultimate-edition/"
+    }
+  ],
+  "twist": "The 'expensive' game is cheaper than GTA 5 was after inflation.",
+  "open_loop": "Why does the cashier call about $80 a bargain? Paid off in lines 5-7.",
+  "payoff": "About $86 then vs about $80 now: about $6 cheaper.",
+  "ab_ending": "A: Worth it / B: Too much. Splits opinion; the real-terms math does not settle affordability.",
+  "outfit": "money",
+  "ip_notes": "No Rockstar characters, logos, footage, art, music. 'GTA 6' plain text. Cashier is Benny's generic hooded stranger.",
+  "math": "59.99 x 337.511 / 234.149 = 86.47 -> 'about 86' (Sep 2026 CPI 336.940 gives 86.33, also about 86). 86.47 - 79.99 = 6.48 -> 'about 6'; on screen ~$86, ~$80, ~$6 using the same rounded figures (86 - 80 = 6). Voice 'about eighty/sixty/eighty-six/six' = screen '~$80/~$60/~$86/~$6'.",
+  "unverified": [
+    "GTA 5 $59.99 launch price is from one outlet I opened (GG Recon); other search snippets agree but I did not open them",
+    "September 2026 CPI 336.940 is from a secondary site; October 2026 337.511 is from the BLS release I opened (either gives about $86)",
+    "Inflation-adjusted price is not affordability (wages), and CPI is the all-items index, not a games price index",
+    "Standard $79.99 relies on GameLuster, an outlet, not Rockstar's own page"
+  ],
+  "notes_for_scriptwriter": "Keep 'about' in voice and '~' on screen. Money outfit. Not financial advice in description."
+}

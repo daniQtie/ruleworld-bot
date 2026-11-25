@@ -1,0 +1,25 @@
+{
+  "pass": false,
+  "average": 7.73,
+  "scores": {"hook": 8, "stakes": 8, "open_loop": 7, "escalation": 8, "payoff": 7, "surprise": 7, "ending": 8, "clarity": 7, "facts": 9, "originality": 8, "entertainment": 8},
+  "hard_gates": {"what_if_opener": true, "benny_in_story": true, "length_25_35s": true, "english_clear": true},
+  "checks": {
+    "spoken_words": 70,
+    "words_per_line": [9, 7, 5, 11, 5, 8, 10, 8, 7],
+    "est_seconds_2.3wps": 30.4,
+    "scenes": 9,
+    "math": "EV 0.5*150-0.5*100=+25; 1.955*100=195.5 (range 182.0-210.2) -> 'nearly two hundred' ok; zero-sum stranger -25 ok",
+    "taglish_ph": "none found",
+    "v7_fixes_landed": "Yes: you/your in lines 2-4, explicit 'Why does the stranger want you to quit?', turn-back beat, 'on average' replaced, 'Your brain says no. The math says flip.' added, length trimmed 76 to 70. Not fully fixed: line 7 still has an abstract hedge ('over time') and line 4 remains dense."
+  },
+  "fixes": [
+    "Line 7 (clarity/payoff/open loop): 'each flip pays you twenty five dollars, over time' contradicts the -$100 the viewer just saw, and 'over time' is tacked on. Replace with two short plain sentences, e.g. 'Flip many times. You win twenty five dollars per flip, on average.' or 'Flip it a hundred times, and you come out ahead.' Keep the coin rain so the picture shows many flips.",
+    "Line 4 (clarity, hardest line, 11 words): 'makes losing one hundred feel like nearly two hundred' needs a replay for a non-native listener. Split: 'Losing hurts twice as much. Your brain feels one hundred as two hundred.' or 'To your brain, losing one hundred feels like two hundred.' (drop 'nearly'; the stamp can still say about $200).",
+    "Line 5 (clarity/story logic): 'You turn back and flip.' follows Benny fleeing with no motive; the viewer asks why. Give a reason in 5 words, e.g. 'But you want that money. You flip.' so the flip reads as a choice, and it sets up line 6.",
+    "Line 6 (open loop): the question appears after the tails bonk and is paid off two lines later, ~9 s. Plant a curiosity seed earlier, e.g. have the stranger smile at line 3 ('Why is he smiling?' as a bubble or on-screen text), and keep the full answer only at line 7. This lifts open_loop and surprise.",
+    "Line 1 (hook): 'What if a stranger offers you' is slightly ungrammatical ('offered' or 'What if a stranger offered you a coin flip?'). Fix the verb so a non-native listener hears standard English.",
+    "Line 8/9 (payoff/ending): payoff reveals a modest fact (average +$25). Make the stranger's loss the punchline before the A/B, e.g. 'The stranger loses. Your brain just quits for him.' only if it fits 12 words and the word budget (currently 70; ceiling 75).",
+    "Scene 4 (drawability/entertainment): beats pile up (snap-zoom, headline, stamp, shake, flee) in ~4 s; check it is timed to word marks, or drop the snap-zoom so the stamp 'FEELS LIKE -$200' reads."
+  ],
+  "viewer_verdict": "As a 1 a.m. scroller: I stop at 0.5 s (hooded stranger plus giant coin, 'What if'). I stay through the bonk gag and the 'why quit?' question, but the answer in line 7 is muddy (I just lost $100, how does each flip pay me $25?), so the payoff feels like a maths claim, not a twist. A non-native listener hears the first three lines cleanly; line 4 and line 7 are the likely replays."
+}

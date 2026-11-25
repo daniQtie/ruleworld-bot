@@ -1,0 +1,159 @@
+{
+ "id": "2026-11-28-story-12",
+ "version": 1,
+ "source": "TeamDeam 'Which Pill Are You Taking?' (3.2M) choice format; new wording",
+ "hook_type": {
+  "number": null,
+  "name": "owner-directed (exempt from rotation)"
+ },
+ "format": {
+  "number": 1,
+  "name": "Choose one pill"
+ },
+ "title_working": "Which Pill Would You Take For A Million Dollars?",
+ "hook_text": "PICK ONE PILL",
+ "hook_until": 2.6,
+ "music": "bounce",
+ "music_gain": 0.13,
+ "world_rule": "Choose one pill",
+ "lines": [
+  {
+   "text": "Which pill would you take for a million dollars?",
+   "say": "(confident) Which pill would you take for a million dollars?",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "A stranger hands you three pills. You must swallow one to get the money.",
+   "say": "(happy) A stranger hands you three pills. You must swallow one to get the money.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "intrigued",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "The blue pill gives you super strength.",
+   "say": "(happy) The blue pill gives you super strength.",
+   "speaker": "narrator",
+   "speed": 0.96,
+   "volume": 1,
+   "pause": 0.15,
+   "beat": "",
+   "voice": {
+    "emotion": "excited",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "But you can only use it one day a year, and after that, you are weak for a whole month.",
+   "say": "(nervous) But you can only use it one day a year, and after that, you are weak for a whole month.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "catch",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "The red pill lets you read every mind around you.",
+   "say": "(happy) The red pill lets you read every mind around you.",
+   "speaker": "narrator",
+   "speed": 0.96,
+   "volume": 1,
+   "pause": 0.15,
+   "beat": "",
+   "voice": {
+    "emotion": "excited",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "But you can never turn it off. Every thought, all day, forever.",
+   "say": "(nervous) But you can never turn it off. Every thought, all day, forever.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": -1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "creepy",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "The green pill gives you speed, strength and flight, with no downside at all.",
+   "say": "(happy) The green pill gives you speed, strength and flight, with no downside at all.",
+   "speaker": "narrator",
+   "speed": 0.96,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "amazed",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "But to take the green pill, you have to subscribe and comment which pill you chose.",
+   "say": "(happy) But to take the green pill, you have to subscribe and comment which pill you chose.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 1,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "playful",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  }
+ ],
+ "word_count": 102,
+ "est_seconds": 29.1,
+ "tail_hold": 1.2,
+ "upload": {
+  "title": "Which Pill Would You Take For A Million Dollars? #Shorts",
+  "description": "Three pills, one million dollars. Which one are you taking?\nComment blue, red or green below.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "which pill would you choose",
+   "would you rather",
+   "choose one",
+   "pill challenge",
+   "superpower choice",
+   "animated story",
+   "story time animation",
+   "roblox story",
+   "roblox animation"
+  ]
+ }
+}

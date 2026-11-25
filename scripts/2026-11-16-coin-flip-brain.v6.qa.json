@@ -1,0 +1,78 @@
+{
+  "pass": true,
+  "average": 8.09,
+  "scores": {
+    "hook": 8,
+    "stakes": 8,
+    "open_loop": 8,
+    "escalation": 8,
+    "payoff": 8,
+    "surprise": 8,
+    "ending": 8,
+    "clarity": 8,
+    "facts": 9,
+    "originality": 8,
+    "entertainment": 8
+  },
+  "hard_gates": {
+    "what_if_opener": true,
+    "benny_in_story": true,
+    "length_25_35s": true
+  },
+  "viewer_test": "1 a.m. scroller: frame 0 is a hooded, glowing-eyed stranger holding a coin out to me with a green '+$150' already up, and the first words are 'What if he offers you'. That is a picturable, slightly threatening situation aimed at me, so I stop at 0.5 s. The offer is still one 14-word, 5.4 s sentence and it is the stock Kahneman bet, so a psych-Shorts regular may think 'seen it'. What keeps me is lines 2-3: NOPE stamp, Benny bolts, then 'Weird part? HE should run.' with a snap-zoom on the stranger. That is a real curiosity gap. Line 4 (the $195 brain beat) is now in the scene, but it holds about 4 s with only one change at the very end, which is the soft spot. Lines 5-6 are the best stretch: the coin bonks Benny's head, a tear, 'Quit now?', 'His plan? You quit. You don't.', flip-flip-flip. It reads as a mini cartoon with a villain plan and a hero refusal. Line 7 ('almost never behind') then line 8 ('every flip pays YOU $25... and costs HIM') plus the GULP gives the villain a defeat. The ending asks a real 50/50 question and loops to frame 0. I would stay to the end and might comment A or B. I would not share it yet: the premise is familiar, and the $25 'Wait...' lands softer than the 100-flip stat right before it.",
+  "gate_notes": {
+    "what_if_opener": "First spoken words (say): 'What if he offers you...'. Pass.",
+    "benny_in_story": "Pass. Benny refuses and runs, is frozen by his own brain, loses flip #1 (coin on head, tear), rejects the stranger's 'Quit now?' plan, keeps flipping, and ends on a coin pile while the stranger gulps. A second character with a goal (make you quit) drives the conflict. No presenter or chart beats remain.",
+    "length_25_35s": "80 spoken words (from `say`, else `text`) / 2.6 = 30.8 s; with 8 default pauses (0.22 s) and a 0.3 s tail about 32.8 s. Pass."
+  },
+  "v5_fixes_landed": {
+    "1_hold_back_25": "Landed. Line 6 is pure action with no number; the $25 appears for the first time in line 8. Remaining issue: line 7's '100 flips, almost never behind' now comes before it and is the bigger reveal, so the 'Wait...' in line 8 feels like an explanation, not the twist.",
+    "2_stranger_motive": "Landed. 'Quit now?' bubble after the lost flip, then 'His plan? You quit. You don't.' with a NOPE stamp on 'PLAN: YOU QUIT'. The gulp now means a defeated plan. Small logic gap: even a single flip still costs him $25 on average, so his plan is a hustler's gamble, not a sure trick. This is fine for a cartoon.",
+    "3_hook_you_and_bucks": "Landed. 'What if he offers you: heads, win one fifty bucks...'. 'You' is at word 5 and 'bucks' at word 9 (~3.5 s). Still 14 words / 5.4 s, and 'he' has no spoken referent (the visual covers it).",
+    "4_no_cutaway": "Landed. The brain/$195 beat stays on the dark street and the stamp hits the scene's own '-$100'.",
+    "5_real_dilemma": "Landed. 'One flip only. A: flip. B: run. You?' is a genuine 50/50 outcome (still +$25 on average, which is exactly why it splits people). It mirrors frame 0 and hard-cuts into it.",
+    "6_originality_policy": "Landed partly. The 'Not financial advice' badge runs from scene 7 to the end, and the stranger frame helps. The suggested stranger visual gag (his pockets emptying a coin per flip) was not adopted, and the bet is still Kahneman's stock example.",
+    "7_clarity_dollars": "Landed ('bucks' in line 1, 'a hundred ninety five dollars' in line 4).",
+    "8_drawability": "Landed. Beats may set hop/flip (confirmed), coins are re-added in scene 9, the grin fade uses thinking/worry/shocked, x positions replace depth, and badges sit in the safe area. New minor issues are listed under `drawability`.",
+    "9_ph": "Landed. Both suggested captions are in (line 4 verbatim; the $25 caption moved to line 8 and was reworded naturally)."
+  },
+  "math_recheck": {
+    "ev_per_flip": "0.5*150 - 0.5*100 = +$25 for you; zero-sum, so -$25 per flip for the stranger. Correct.",
+    "felt_loss": "1.955*100 = $195.50 -> 'about $195'. The 95% range 1.820-2.102 gives $182.00-$210.20, all above $150. Correct.",
+    "100_flips": "Total = 250h - 10,000 < 0 iff h <= 39. P(h <= 39 | n=100, p=0.5) = 0.017600 = 1.76% -> '<2% end behind'. Correct as a general statement (P(h<=40) = 2.84%, so 'behind' must mean a strict loss, which it does).",
+    "in_story_nuance": "Benny already lost flip #1. Conditional on that, his chance of ending behind after 100 total flips is P(h <= 39 | n=99) = 2.19%, just above 2%. The spoken 'almost never behind' is still true. The on-screen '<2% end behind' is the unconditional figure, so it is accurate as written but not exact for Benny's path. Not a fact error.",
+    "expected_100": "100 * $25 = +$2,500 (not used in the script).",
+    "sources": "Every number traces to the research file: LitCharts + margin-notes (most people decline), Wikipedia (~2x), the AEA/JEL 2024 meta-analysis (1.955 -> $195), the atticusli caveat ('about'), and computed EV/binomial. 'Feel like about $195' simplifies a decision weight; this is acceptable with 'about'."
+  },
+  "format_check": {
+    "spoken_words": 80,
+    "est_seconds": 30.8,
+    "est_seconds_with_pauses": 32.8,
+    "lines": 9,
+    "scenes": 10,
+    "words_per_line": [14, 3, 5, 13, 8, 9, 8, 12, 8],
+    "line_timing_s": ["0.0-5.4", "5.4-6.5", "6.5-8.5", "8.5-13.5", "13.5-16.5", "16.5-20.0", "20.0-23.1", "23.1-27.7", "27.7-30.8"],
+    "on_screen_max_words": 4,
+    "on_screen_ok": true,
+    "notes": "Each `on_screen` field has 5 words or fewer. Scene 10, however, shows '+$150', '-$100', two list rows and two badges at once (about 12 words on screen), which breaks the spirit of '<=5 words per moment' (see fixes)."
+  },
+  "drawability": [
+    "Scene 4: 'on dollars a red stamp ...'. Word indexes count whitespace words of `text`, and line 4's text says '$195.' (word 8), not 'dollars'. Anchor the stamp to word 8.",
+    "Scene 4 holds about 4 s (8.5-12.5 s) with no change until the stamp on the last word, which breaks 'never hold > 2.5 s'. Add a beat on 'brain' (word 1) and one on 'loss' (word 4), for example by popping the '-$100' headline on 'loss' instead of at the scene start.",
+    "Scene 10: the list at x 300, y 760 (rows at ~760 and ~880) plus badges at x 300, y 1150 and 1230 all sit on top of Benny at x 320, covering his head and legs. Move the list to x 560 (between the characters) or Benny to x 220, and drop one badge.",
+    "Scenes 7-9: the 'Not financial advice' badge at x 300, y 1230 sits over Benny's feet (x 300-340). Consider x 540, y 1230, which is still inside the safe area.",
+    "Scene 5: the flipcoin landing at (320, 880) assumes Benny's head is at y ~880. Benny's scale is not given; check it with --stills.",
+    "Everything else maps to documented fields: stranger cast with flip, the poses and expressions used, prop coin/brain, headline/stamp/bubble/badge/counter/list/flipcoin/coins items, flash, camera beats/shake, sfx thud/whoosh/clink/ding/pop, tail 0.3."
+  ],
+  "ph_check": "All 9 captions read like natural Taglish with the same meaning. 'What if alukin ka niya', 'Ang weird pa? Siya dapat ang tumakbo', 'Suko ka na?', 'Plano niya? Susuko ka. Hindi ka sumuko.' and 'halos never kang lugi' are good. Line 8's ph states '-$25 sa kanya' explicitly while the EN says only 'And costs him.'. That is fine, and it hints that the EN line should say the number too.",
+  "fixes": [
+    "Lines 7-8 (surprise 8, payoff 8): the 100-flip stat in line 7 is the bigger 'wait, what?', yet it comes before the 'Wait...' line, so line 8 lands as an explanation. Either swap them (line 7: 'Wait... every flip pays YOU twenty five on average. And costs HIM twenty five.' with the GULP; line 8: 'After a hundred flips, he's almost always the one behind.' with the coin rain), or keep the order and move 'Wait...' to line 7. Also say the number in 'And costs him.' -> 'And costs HIM twenty five.' (+2 words, still ~31.5 s).",
+    "Line 1 (hook 8, stakes 8): 14 words / 5.4 s, and the threat of losing money to HIM only lands at ~4-5 s. Make it adversarial and faster: 'What if he bets you: heads, you get one fifty. Tails, he takes a hundred?' 'He takes' puts the stranger's menace and the conflict into the hook itself.",
+    "Line 4 / scene 4 (escalation 8): about a 4 s hold with one change at the end, and the stamp is anchored to 'dollars', which is not a word of `text`. Anchor the stamp to word 8 ('$195.'), and add beats on 'brain' (word 1) and 'loss' (word 4) so the picture changes every ~1.5 s.",
+    "Line 3 (open loop 8): 'HE should run?' is answered in spirit by line 7 ('almost never behind'), so the loop closes ~7 s before the end. Keep the HE-side reveal last: line 7 should be about YOU (the coin pile), and only the final reveal line should mention HIM.",
+    "Line 9 / scene 10 (ending 8, clarity 8): about 12 words of on-screen text at once ('+$150', '-$100', 'A FLIP', 'B RUN', '1 flip = 50/50', 'Not financial advice'), and the list overlaps Benny. Drop the '1 flip = 50/50' badge (the spoken 'One flip only' already says it) and move the list to x 560. For a tighter loop, end on the stranger holding the coin to the camera with a bubble 'Flip?' so it cuts straight into 'What if he offers you'.",
+    "Originality (8): the stranger is still a generic hood. Give him one running visual gag the episode is remembered by, e.g. a cash prop that is gone by line 8, or a bubble 'my coins...' on GULP, so it is 'the hustler who got out-flipped', not the textbook Kahneman bet.",
+    "Lines 2-5 story gap (entertainment 8): Benny runs in line 2, then flips in line 5 with no beat showing why he came back. Add one beat in scene 4: Benny turns back toward the stranger (flip false) on 'loss', so the return is shown, not skipped.",
+    "Line 7 on_screen (facts 9, optional): '<2% end behind' is the from-scratch figure; for Benny, who already lost flip #1, it is 2.19%. Keep the spoken 'almost never' and consider '~2% end behind' on screen to be exact for his path."
+  ]
+}

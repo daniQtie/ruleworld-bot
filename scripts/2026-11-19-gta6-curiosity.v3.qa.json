@@ -1,0 +1,65 @@
+{
+ "pass": false,
+ "average": 6.73,
+ "scores": {"hook": 7, "stakes": 6, "open_loop": 7, "escalation": 7, "payoff": 6, "surprise": 6, "ending": 7, "clarity": 7, "facts": 8, "originality": 7, "entertainment": 6},
+ "hard_gates": {"hook_rotation_assigned_type": true, "benny_in_story": true, "length_25_35s": true, "english_clear": true},
+ "hard_gates_notes": "All four pass, narrowly. benny_in_story passes because Benny pays, is shocked, gets bonked by coins and time-hops; lines 5-7 are still price math with Benny only reacting. Length: 68 words, about 29.6 s at 2.3 w/s, about 33 s at speed 0.9 (inside 25-35). Every sentence is 12 words or fewer; no Taglish.",
+ "hook_gate": {
+  "assigned": "#3 Curiosity/Shock",
+  "previous_episode": "#2 Listicle (2026-11-19-gta6-listicle)",
+  "differs": true,
+  "style_check": "PASS, but modest. It withholds (why does a cashier call an about-$80 game a bargain?) and pays off in lines 5-8 (GTA 5 is about $86 in today's money, so GTA 6 is cheaper). Weaknesses: (a) the first 1.5 s is only 'Tomorrow, G T A 6 comes out', a news statement, not a shock; the oddity lands at about 4 s ('The cashier calls it a bargain'). The 0.5 s stop-power is the GTA 6 topic, not the hook. (b) A cashier saying 'bargain' is mild, not mind-blowing. (c) The loop is about 'bargain' but the payoff only says 'cheaper', so it pays off the word loosely. Still a legitimate curiosity gap with an explicit referent (the price), which v2 lacked."
+ },
+ "word_count_recomputed": 68,
+ "est_seconds_at_2.3wps": 29.6,
+ "est_seconds_at_speed_0.9": "about 33",
+ "scenes": 10,
+ "v2_fixes_verified": {
+  "explicit_referent_in_hook": "Landed: line 2 names the price and the cashier's odd claim.",
+  "caveat_before_twist": "Partly landed: 'Prices rise, so we compare in today's money' comes before the twist and is a method statement. The real caveats (CPI all-items, not wages or a games index; cheaper in real terms is not the same as affordable) appear only in the description, never in voice or on screen.",
+  "early_you": "Weak: 'you' arrives at about 8 s (line 3), not within 3 s.",
+  "plain_reveal_before_AB": "Landed: lines 6-7 state about $86 then 'about six dollars cheaper' plainly before the A/B.",
+  "drawable_assets_only": "Mostly landed (badge, headline, bubble, counter with prefix, bars with value_label, stamp, coins, confetti, stranger cast, cash prop all exist). Residual risks in drawability below.",
+  "no_tonight": "Landed: 'Tomorrow' used, no 'tonight'."
+ },
+ "math_check": {
+  "recomputed": "59.99 x 337.511 / 234.149 = 86.47 (Sep 2026 CPI 336.940 gives 86.33). 86.47 - 79.99 = 6.48 (6.34 with Sep CPI). Nominal gap 79.99 - 59.99 = 20.00.",
+  "sources_opened": "BLS cpi_10302013 confirms Sept 2013 = 234.149; BLS cpi_11102026 confirms Oct 2026 = 337.511 and Sept 2026 = 336.940.",
+  "verdict": "Correct and consistently rounded. 'about sixty' (59.99), 'about eighty' (79.99), 'about eighty-six' (86.47), 'about six' (6.48); on screen 86 - 80 = 6 exactly, so a viewer subtracting sees no mismatch. 'Pays about eighty dollars' for $79.99 is consistent (about in voice, ~ on screen). Caveats: the $86 uses CPI-U all items NSA, not wages or a games price index; the $79.99 is the Standard edition (Ultimate is $99.99, not mentioned in the video); GTA 5 $59.99 rests on one outlet (GG Recon) plus common knowledge; GTA 6 price rests on GameLuster, not Rockstar."
+ },
+ "claim_honesty": "The number claim is honest as written ('about', 'today's money'). Two softness issues: (1) the cashier's 'bargain' is supported only as 'a bit cheaper than GTA 5 after inflation'; a $6 gap does not make $80 a bargain, so the hook oversells and the payoff under-delivers; (2) the video never says 'inflation' or 'prices, not paychecks', so 'cheaper' can be heard as 'easier to afford'. The description carries the caveat; the video should carry one short line.",
+ "post_timing": "Safe for US viewers if posted 7 PM ET Nov 18 (release Nov 19 per the research file). Going stale: 7 PM ET Nov 18 is already Nov 19 morning in Manila/Asia and after midnight in Europe, so 'Tomorrow' is wrong there and for any viewer after release. No evergreen fallback in the video.",
+ "surprise_and_split": "The real-terms reveal is a genuine, checkable 'huh', but moderate: many gamers have seen the inflation argument and $6 is a small gap, so 'wait, what?' is about a 6. It does split opinion in the A/B (people hate $80, others defend inflation), though 'Worth it or too much' asks about value while the video shows only price math.",
+ "story_vs_math": "Gags: jaw drop, stagger, coin bonk, smirk at 2013 cash, confetti flex. The first third is a real scene (cashier, shock). Lines 5-7 become a narrator doing price math with a counter; Benny only reacts there. Entertainment 6.",
+ "drawability": {
+  "ok": ["badge '~$80', headline 'TOMORROW', 'CRAZY?', 'TODAY'S MONEY'", "bubble 'BARGAIN!'", "counter from=60 to=86 prefix '~$'", "bars with value_label", "stamp '~$6 CHEAPER'", "coins, confetti, list rows A/B", "stranger cast flipped, held cash prop"],
+  "at_risk": [
+   "No counter, till or store prop exists: scenes 1-3 and 10 call the hooded stranger a 'cashier' with no context, and the stranger has glowing eyes in shadow, so it reads sinister, not a cashier. 'Cashier' lives only in the voice. Add a badge 'CASHIER' or 'STORE' to make the first frame readable.",
+   "'Benny slaps cash on the counter' has no counter; only the held cash prop or a prop item exists.",
+   "Scene 7 swaps Benny to the everyday outfit mid-video as a 'time-hop': confirm per-scene outfit swaps are supported and read as 2013, not as a glitch.",
+   "Scene 6: 'headline replaces the badge' needs explicit until/timing so both never overlap."
+  ]
+ },
+ "consistency": [
+  {"item": "line 1", "say": "G, T, A, six", "text": "G T A 6", "visual": "badge 'GTA 6', headline 'TOMORROW'", "verdict": "OK (Rule B: text uses the spoken form; badge in written form allowed)"},
+  {"item": "line 2 money", "say": "about eighty dollars", "text": "about eighty dollars", "visual": "badge '~$80'", "verdict": "OK, 79.99 rounded with about and ~ (Rule A)"},
+  {"item": "line 2 bargain", "say": "calls it a bargain", "visual": "bubble 'BARGAIN!'", "verdict": "OK"},
+  {"item": "line 5 acronym", "say": "G, T, A, five", "text": "G T A 5", "visual": "badge '2013'", "verdict": "OK"},
+  {"item": "line 5 price", "say": "about sixty dollars", "text": "about sixty dollars", "visual": "counter '~$60'", "verdict": "OK, 59.99 rounded"},
+  {"item": "line 6", "say": "about eighty-six dollars today", "visual": "counter 60 to 86 '~$86', badge 'TODAY'", "verdict": "OK. A non-native listener must link 'That' to the sixty dollars; the counter climb helps."},
+  {"item": "line 7", "say": "about six dollars cheaper", "visual": "bars '~$86' vs '~$80', stamp '~$6 CHEAPER'", "verdict": "OK numerically (86-80=6). The comparator ('cheaper than what?') is not spoken; the bars supply it, the voice alone does not."},
+  {"item": "line 8", "say": "Comment A or B", "visual": "'A: WORTH IT' / 'B: TOO MUCH'", "verdict": "OK"},
+  {"item": "upload", "verdict": "Title (41 chars + #Shorts) is a curiosity gap that pays off. Description line 1 is a real hook, not the title; line 2 is the A/B; the key numbers are present; 'Not financial advice.' present; sources present; 4 hashtags incl #Shorts; 8 relevant tags. The description's 'Cheaper after inflation does not mean easy to afford' is the caveat missing from the video. Mild: description says '$80 game' while the body says $79.99; acceptable."},
+  {"item": "numbers overall", "verdict": "No mismatch across voice, caption, screen and upload (about sixty/eighty/eighty-six/six = ~$60/~$80/~$86/~$6)."}
+ ],
+ "fixes": [
+  "Hook, lines 1-2 (hook 7, surprise 6): the first 1.5 s is flat news. Lead with the odd part, e.g. line 1 'A cashier calls an eighty dollar game a bargain.' then 'Tomorrow, G, T, A, six comes out.' (or keep order and show the cashier bubble first). Makes the 0.5 s stop about the oddity, not just the game name.",
+  "Stakes, line 3 (stakes 6): 'you' lands at about 8 s. Put 'you' inside line 2 within 3 s, e.g. 'You pay about eighty dollars. The cashier calls it a bargain.', and fold or cut 'Does that sound crazy to you?'.",
+  "Payoff, lines 2 and 7 (payoff 6): the loop promises 'bargain' but the payoff says only 'cheaper'. Close the loop in plain words before the A/B ('So the cashier has a point.') and say the comparator in line 7: 'So the new game costs about six dollars less.' / 'less than G, T, A, five did.' Avoid repeating 'six'.",
+  "Caveat in voice (facts 8, clarity 7): add one plain line before the ending, e.g. 'That compares prices, not paychecks.' (5 words). Trim the 'Does that sound crazy' line to stay near 68-72 words. Fix line 6 ambiguity: 'So that game costs about eighty-six dollars today.'",
+  "Entertainment, lines 5-7 (entertainment 6): these are price math. Give Benny a physical task (the cashier stacks cash as the counter climbs; Benny counts it, shocked) rather than a counter plus a reaction pose; add a second gag at the flash cut in scene 8.",
+  "Drawability, scenes 1-3 and 10: add a 'CASHIER' or 'STORE' badge, drop 'counter' references, and give the stranger a friendly smug/happy expression so it reads as a cashier. Confirm the per-scene outfit swap in scene 7.",
+  "Surprise (surprise 6): the $6 gap is small. Lead with the sticker jump then flip it: 'That is twenty dollars more, but about six dollars less in today's money.'",
+  "Timing: 'Tomorrow' is correct only until release; post before midnight ET Nov 18 (earlier for Asia) or use evergreen wording if the post slips."
+ ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "2026-11-19-gta6-curiosity",
+  "version": 3,
+  "hook_type": {
+    "number": 3,
+    "name": "The Curiosity / Shock Hook"
+  },
+  "topic": "money",
+  "outfit": "money",
+  "title_yt": "Is GTA 6 really expensive? Check the math #Shorts",
+  "title_fb": "Is GTA 6 really expensive? Check the math",
+  "hook": "Tomorrow, GTA 6 comes out. Benny pays about eighty dollars. The cashier calls it a bargain.",
+  "open_loop": "Lines 1-2 picture a cashier calling an about-eighty-dollar game a bargain and Benny staggering; the 'why' (inflation-adjusted GTA 5 price) is withheld to lines 5-7.",
+  "payoff": "GTA 5 cost $59.99 in Sept 2013, about $86 in today's money (CPI-U 234.149 to 337.511). GTA 6 Standard is $79.99, about $6 cheaper in real terms.",
+  "ending": "choice",
+  "scenes_planned": 10,
+  "lines": [
+    {
+      "text": "Tomorrow, GTA 6 comes out.",
+      "say": "Tomorrow, GTA six comes out.",
+      "beat": "hook",
+      "visual": "SCENE 1 (frame 0): Benny (money outfit, cash prop) beside a counter spot, excited, headline 'TOMORROW' already on screen, badge 'GTA 6' plain text; hooded stranger (cast, flip) as the cashier on the right. Snap-zoom on 'Tomorrow'.",
+      "on_screen": "TOMORROW / GTA 6"
+    },
+    {
+      "text": "Benny pays about eighty dollars. The cashier calls it a bargain.",
+      "beat": "loop",
+      "visual": "SCENE 2 (on 'pays'): Benny slaps cash on the counter (cash prop), badge '~$80' with a clink. SCENE 3 (on 'bargain'): the cashier points and grins (smug) with bubble 'BARGAIN!' (pop); GAG: Benny's jaw drops, he staggers back (thud), shock pose.",
+      "on_screen": "~$80 / BARGAIN!"
+    },
+    {
+      "text": "Does that sound crazy to you?",
+      "beat": "stakes",
+      "visual": "SCENE 4: Benny points at the viewer on 'you', headline 'CRAZY?' on 'crazy'; GAG: coins rain (coins) and one bonks his head (thud), he spins with worry pose.",
+      "on_screen": "CRAZY?"
+    },
+    {
+      "text": "Prices rise, so we compare in today's money.",
+      "beat": "escalate",
+      "visual": "SCENE 5 (on 'Prices'): Benny thinking, badge 'PRICES RISE' (pop). SCENE 6 (on 'today's'): headline 'TODAY'S MONEY' replaces the badge (never both at once beyond 4 words); Benny presents with a flourish.",
+      "on_screen": "PRICES RISE / TODAY'S MONEY"
+    },
+    {
+      "text": "In 2013, GTA 5 cost about sixty dollars.",
+      "say": "In two thousand thirteen, GTA five cost about sixty dollars.",
+      "beat": "escalate",
+      "visual": "SCENE 7: Benny in everyday outfit shrugs (whoosh time-hop); badge '2013' and a counter to 60 with prefix '~$' (ding) on 'sixty'. GAG: the cashier hands him a cash prop, he smirks.",
+      "on_screen": "2013: ~$60"
+    },
+    {
+      "text": "That is about eighty-six dollars today.",
+      "beat": "twist",
+      "visual": "SCENE 8: flash cut; the counter climbs from 60 to 86 with prefix '~$' (ding, drum), snap-zoom, Benny shocked, badge 'TODAY'; cashier smug.",
+      "on_screen": "TODAY: ~$86"
+    },
+    {
+      "text": "So the new game is about six dollars cheaper.",
+      "beat": "payoff",
+      "visual": "SCENE 9 (on 'So'): two bars, labels 'GTA 5' value_label '~$86' (red) and 'GTA 6' value_label '~$80' (green). On 'cheaper': stamp '~$6 CHEAPER' slams (thud), Benny flex, confetti.",
+      "on_screen": "~$6 CHEAPER"
+    },
+    {
+      "text": "Worth it or too much? Comment A or B.",
+      "beat": "ending",
+      "visual": "SCENE 10 (on 'Worth'): rows 'A: WORTH IT' and 'B: TOO MUCH' pop; Benny points at the viewer on 'Comment'; cashier shrugs. Rows only, no footer.",
+      "on_screen": "A: WORTH IT / B: TOO MUCH"
+    }
+  ],
+  "facts_used": [
+    {
+      "claim": "GTA V launched Sept 2013 at US standard price $59.99 (about $86 adjusted to today's money using BLS CPI-U).",
+      "source_url": "https://www.ggrecon.com/articles/gta-6-cost-per-hour-every-gta/"
+    },
+    {
+      "claim": "CPI-U all items, September 2013 = 234.149 (1982-84=100).",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_10302013.htm"
+    },
+    {
+      "claim": "CPI-U all items, October 2026 = 337.511 (September 2026 = 336.940).",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm"
+    },
+    {
+      "claim": "GTA 6 releases November 19, 2026; Standard $79.99, Ultimate $99.99.",
+      "source_url": "https://gameluster.com/gta-6-pre-order-pricing-standard-ultimate-edition/"
+    }
+  ],
+  "math_check": "59.99 x 337.511 / 234.149 = 86.47 -> 'about 86' (Sep 2026 CPI 336.940 gives 86.33, also about 86). 86.47 - 79.99 = 6.48 -> 'about 6'; on screen ~$86, ~$80, ~$6 using the same rounded figures (86 - 80 = 6). Voice 'about eighty/sixty/eighty-six/six' = screen '~$80/~$60/~$86/~$6'.",
+  "est_seconds": 29.6,
+  "word_count": 68,
+  "upload": {
+    "title": "Is GTA 6 really expensive? Check the math #Shorts",
+    "description": "A cashier calls an $80 game a bargain. Is she right?\nWorth it or too much? Comment A or B.\nGTA 5 launched at $59.99 in September 2013, about $86 in today's money (BLS CPI-U). GTA 6 Standard is $79.99, about $6 less in real terms. Cheaper after inflation does not mean easy to afford.\nNot financial advice. Sources: BLS CPI-U, GG Recon, GameLuster.\n#gta6 #money #inflation #Shorts",
+    "tags": [
+      "gta 6 price",
+      "gta 6 price inflation",
+      "gta 5 price 2013",
+      "is gta 6 too expensive",
+      "inflation adjusted price",
+      "video game prices",
+      "gta 6 standard edition",
+      "how inflation works"
+    ]
+  },
+  "changes_from_previous": "PIVOT from the vacation study (weak, shrug reveal, could not honestly reach GTA) to a number reveal: GTA 5's $59.99 in 2013 is about $86 in today's money, so GTA 6 at $79.99 is about $6 cheaper in real terms. Hook now pictures a cashier calling the game a bargain (explicit referent: the price). Benny lives the story throughout (counter, bonk gag, time hop, cashier). Early 'you' in line 3; caveat 'compare in today's money' spoken before the twist; reveal stated plainly (line 7) before the A/B. 'Tomorrow' anchor, no 'tonight'. Only drawable assets (badges, headlines, stamps, bubble, counter, bars, coins, confetti, stranger cast, cash prop). All numbers rounded with 'about' in voice and '~' on screen (Rule A)."
+}

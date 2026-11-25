@@ -1,0 +1,298 @@
+{
+ "id": "2026-11-25-story-08",
+ "version": 0,
+ "status": "DRAFT for owner review (not approved, not rendered)",
+ "title_working": "In This World, The First Word You Say Becomes Your Superpower",
+ "lines": [
+  {
+   "text": "In this world, the first word you ever say becomes your superpower.",
+   "say": "(confident) In this world, the first word you ever say becomes your superpower.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": 2,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   }
+  },
+  {
+   "text": "Jada said up, and now she floats. Leo said no, and nothing can touch him.",
+   "say": "(happy) Jada said up, and now she floats. Leo said no, and nothing can touch him.",
+   "speaker": "narrator",
+   "speed": 0.93,
+   "volume": 0,
+   "pause": 0.25,
+   "voice": {
+    "emotion": "amused",
+    "tags": "(happy)"
+   }
+  },
+  {
+   "text": "Rex's first word was fast. He was the fastest kid in school, and he never let anyone forget it.",
+   "say": "(confident) Rex's first word was fast. He was the fastest kid in school, and he never let anyone forget it.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 1,
+   "pause": 0.25,
+   "voice": {
+    "emotion": "proud",
+    "tags": "(confident)"
+   }
+  },
+  {
+   "text": "Then there was Marcus. His first word was mine.",
+   "say": "(nervous) Then there was Marcus. His first word was mine.",
+   "speaker": "narrator",
+   "speed": 0.86,
+   "volume": -1,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "hushed",
+    "tags": "(nervous)"
+   }
+  },
+  {
+   "text": "Anything he pointed at and said mine to became his. Only he could give it back.",
+   "say": "(nervous) Anything he pointed at and said mine to became his. Only he could give it back.",
+   "speaker": "narrator",
+   "speed": 0.86,
+   "volume": -1,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "tense",
+    "tags": "(nervous)"
+   }
+  },
+  {
+   "text": "So everyone feared him. They called him the greediest kid alive.",
+   "say": "(sad) So everyone feared him. They called him the greediest kid alive.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 0.25,
+   "voice": {
+    "emotion": "mocking",
+    "tags": "(sad)"
+   }
+  },
+  {
+   "text": "But Marcus never took anything. His shoes were falling apart, and his cough never stopped.",
+   "say": "(sad) But Marcus never took anything. His shoes were falling apart, and his cough never stopped.",
+   "speaker": "narrator",
+   "speed": 0.8,
+   "volume": -3,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   }
+  },
+  {
+   "text": "One day, Rex asked, You can take anything. Why not take new shoes?",
+   "say": "(surprised) One day, Rex asked, You can take anything. Why not take new shoes?",
+   "speaker": "narrator",
+   "speed": 0.93,
+   "volume": 1,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "curious",
+    "tags": "(surprised)"
+   }
+  },
+  {
+   "text": "Marcus said, I already took the only thing I wanted. Then he walked away, coughing.",
+   "say": "(soft tone) Marcus said, I already took the only thing I wanted. Then he walked away, coughing.",
+   "speaker": "narrator",
+   "speed": 0.82,
+   "volume": -2,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "soft",
+    "tags": "(soft tone)"
+   }
+  },
+  {
+   "text": "The next week, Rex's new running shoes vanished.",
+   "say": "(surprised) The next week, Rex's new running shoes vanished.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 3,
+   "pause": 0.25,
+   "voice": {
+    "emotion": "shock",
+    "tags": "(surprised)"
+   }
+  },
+  {
+   "text": "Everyone turned to Marcus. Rex shouted, Give them back!",
+   "say": "(angry) Everyone turned to Marcus. Rex shouted, Give them back!",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 3,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   }
+  },
+  {
+   "text": "Marcus did not even look up. A week later, the shoes turned up in another kid's locker. Nobody said sorry.",
+   "say": "(sad) Marcus did not even look up. A week later, the shoes turned up in another kid's locker. Nobody said sorry.",
+   "speaker": "narrator",
+   "speed": 0.86,
+   "volume": -2,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "flat",
+    "tags": "(sad)"
+   }
+  },
+  {
+   "text": "That night, Rex followed Marcus home to apologize.",
+   "say": "(nervous) That night, Rex followed Marcus home to apologize.",
+   "speaker": "narrator",
+   "speed": 0.88,
+   "volume": 0,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   }
+  },
+  {
+   "text": "Through the window, he saw a little girl laughing in bed. Marcus's sister.",
+   "say": "(happy) Through the window, he saw a little girl laughing in bed. Marcus's sister.",
+   "speaker": "narrator",
+   "speed": 0.88,
+   "volume": 0,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "wonder",
+    "tags": "(happy)"
+   }
+  },
+  {
+   "text": "On her wall hung an old get-well card, from last year.",
+   "say": "(soft tone) On her wall hung an old get-well card, from last year.",
+   "speaker": "narrator",
+   "speed": 0.85,
+   "volume": -1,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "soft",
+    "tags": "(soft tone)"
+   }
+  },
+  {
+   "text": "Marcus had said mine to her sickness. Now he was the one who coughed.",
+   "say": "(surprised) Marcus had said mine to her sickness. Now he was the one who coughed.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": 4,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "shock",
+    "tags": "(surprised)"
+   }
+  },
+  {
+   "text": "Rex knocked. Marcus, pale and shaking, whispered, Go away.",
+   "say": "(sad) Rex knocked. Marcus, pale and shaking, whispered, Go away.",
+   "speaker": "narrator",
+   "speed": 0.82,
+   "volume": -3,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "weak",
+    "tags": "(sad)"
+   }
+  },
+  {
+   "text": "Rex said, Give it to me.",
+   "say": "(confident) Rex said, Give it to me.",
+   "speaker": "narrator",
+   "speed": 0.88,
+   "volume": 1,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "determined",
+    "tags": "(confident)"
+   }
+  },
+  {
+   "text": "Marcus whispered, You can't outrun it.",
+   "say": "(sad) Marcus whispered, You can't outrun it.",
+   "speaker": "narrator",
+   "speed": 0.8,
+   "volume": -3,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "weak",
+    "tags": "(sad)"
+   }
+  },
+  {
+   "text": "Rex smiled. Watch me.",
+   "say": "(confident) Rex smiled. Watch me.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 2,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "determined",
+    "tags": "(confident)"
+   }
+  },
+  {
+   "text": "Marcus gave it back. The cough hit Rex, and he ran.",
+   "say": "(surprised) Marcus gave it back. The cough hit Rex, and he ran.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 3,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "rising",
+    "tags": "(surprised)"
+   }
+  },
+  {
+   "text": "Faster than he had ever run. The sickness fell behind and faded away.",
+   "say": "(happy) Faster than he had ever run. The sickness fell behind and faded away.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 2,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "triumphant",
+    "tags": "(happy)"
+   }
+  },
+  {
+   "text": "The greediest kid alive had only taken one thing: his sister's pain.",
+   "say": "(soft tone) The greediest kid alive had only taken one thing: his sister's pain.",
+   "speaker": "narrator",
+   "speed": 0.82,
+   "volume": -1,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "warm",
+    "tags": "(soft tone)"
+   }
+  },
+  {
+   "text": "And the fastest kid in school finally had something worth running for.",
+   "say": "(happy) And the fastest kid in school finally had something worth running for.",
+   "speaker": "narrator",
+   "speed": 0.8,
+   "volume": 0,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "warm",
+    "tags": "(happy)"
+   }
+  }
+ ],
+ "word_count": 281,
+ "est_seconds": 96.9
+}

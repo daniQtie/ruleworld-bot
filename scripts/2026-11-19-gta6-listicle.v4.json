@@ -1,0 +1,110 @@
+{
+  "id": "2026-11-19-gta6-listicle",
+  "version": 4,
+  "hook_type": {
+    "number": 2,
+    "name": "The Listicle / Number Hook"
+  },
+  "topic": "money",
+  "outfit": "everyday",
+  "title_yt": "3 GTA 6 mistakes. Number 3 is the worst #Shorts",
+  "title_fb": "3 GTA 6 mistakes. Number 3 is the worst",
+  "hook": "Three G T A 6 mistakes. Number three is the worst.",
+  "open_loop": "Line 1 promises three mistakes and teases that number three is the worst; the fake pre-order site and malware gremlin pay it off in lines 5-7, then the lesson and A/B.",
+  "payoff": "Three traps with consequences: $20 more for Ultimate, pay later bills chasing you (LendingTree: 47% of pay later users paid late), a fake pre-order site with malware. Lesson: pay in full, use official stores.",
+  "ending": "choice",
+  "scenes_planned": 13,
+  "lines": [
+    {
+      "text": "Three G T A 6 mistakes. Number three is the worst.",
+      "beat": "hook",
+      "visual": "SCENE 1 (frame 0): Benny in hoodie, backwards cap, gold shades, pumped, cash in hand; a plain-text store sign 'GTA 6' behind him. Headline '3 MISTAKES' already on screen. Snap-zoom on 'G'. SCENE 2 (on 'Number'): a big red '3' pulses, stamp 'WORST' on 'worst', Benny gulps.",
+      "on_screen": "GTA 6 / 3 MISTAKES",
+      "say": "Three G, T, A, six mistakes. Number three is the worst."
+    },
+    {
+      "text": "One: Ultimate costs you $20 more than Standard.",
+      "say": "One: Ultimate costs you twenty dollars more than Standard.",
+      "beat": "stakes",
+      "visual": "SCENE 3: Number '1' pops. Benny slaps cash, smug. A generic gold 'ULTIMATE' box with a small 'EXTRAS' tag (no art, no logo, no item names). SCENE 4 (on 'twenty'): '+$20 MORE' slams with a clink; GAG: the cash in Benny's hand vanishes with a thud and his smirk wobbles; a plain 'STANDARD' box pops on 'Standard'.",
+      "on_screen": "+$20 MORE"
+    },
+    {
+      "text": "Two: you pay later. Bills chase you.",
+      "beat": "escalate",
+      "visual": "SCENE 5: Number '2' pops. Benny taps a phone, grins at a sticker 'PAY LATER' (no game shown). SCENE 6 (on 'Bills'): 'BILL' slips pop up closer and closer as Benny runs in panic; thud sfx on 'you'.",
+      "on_screen": "2: PAY LATER"
+    },
+    {
+      "text": "LendingTree says 47% of pay later users paid late.",
+      "say": "LendingTree says forty-seven percent of pay later users paid late.",
+      "beat": "twist",
+      "visual": "SCENE 7: small badge 'LENDINGTREE' with a grid of 100 grey icons. On 'forty-seven': flash, snap-zoom, 47 of the 100 icons snap to red at once, headline '47%' slams (ding), Benny gasps (shock). On 'paid late': headline 'PAID LATE' (only after the LENDINGTREE badge has gone; max 3 text items).",
+      "on_screen": "47% / PAID LATE"
+    },
+    {
+      "text": "Three: you click a fake pre-order site.",
+      "beat": "escalate",
+      "visual": "SCENE 8: Number '3' pops. Benny in a dark room taps a phone (no console); a generic shady sticker 'FAKE PRE-ORDER' (no logo); a hooded stranger grins from the screen edge; Benny drools, clicks.",
+      "on_screen": "3: FAKE PRE-ORDER"
+    },
+    {
+      "text": "Dozens of fake sites exist. Some spread malware.",
+      "beat": "payoff",
+      "visual": "SCENE 9 (on 'Dozens'): grid of many identical blank fake-site windows pops up, headline 'DOZENS OF FAKE SITES'. SCENE 10 (on 'Some'): red tint, the hooded stranger grins, Benny's phone gets hit; stamp 'MALWARE' on 'malware' (buzz, shake).",
+      "on_screen": "DOZENS OF FAKE SITES"
+    },
+    {
+      "text": "Not my device!",
+      "beat": "payoff",
+      "visual": "SCENE 11: Benny hugs his phone, shocked then broke face; speech bubble 'Not my device!' (quip).",
+      "on_screen": "NOT MY DEVICE"
+    },
+    {
+      "text": "Pay in full. Use official stores.",
+      "beat": "payoff",
+      "visual": "SCENE 12: green tint, Benny calm with shades back on, ticks a check list 'PAY IN FULL' and 'OFFICIAL STORES'.",
+      "on_screen": "PAY IN FULL / OFFICIAL STORES"
+    },
+    {
+      "text": "Ultimate, or keep $20? Comment A or B.",
+      "say": "Ultimate, or keep twenty dollars? Comment A or B.",
+      "beat": "ending",
+      "visual": "SCENE 13 (on 'Ultimate'): Benny smug, row 'A: ULTIMATE'. On 'keep': Benny holds cash, happy, row 'B: KEEP $20'. Benny points at viewer on 'Comment'. No footer (rows only).",
+      "on_screen": "A: ULTIMATE / B: KEEP $20"
+    }
+  ],
+  "facts_used": [
+    {
+      "claim": "Standard $79.99, Ultimate $99.99; difference $20.00 (voice and screen use $20 only). Ultimate adds in-game extras (vehicles, weapons, storefronts, a mission); shown only as a neutral 'EXTRAS' tag.",
+      "source_url": "https://gameluster.com/gta-6-pre-order-pricing-standard-ultimate-edition/"
+    },
+    {
+      "claim": "LendingTree 2026 survey: 47% of buy-now-pay-later users paid late in the past year (general BNPL fact, not about GTA 6 buyers).",
+      "source_url": "https://www.lendingtree.com/personal/buy-now-pay-later-loan-statistics/"
+    },
+    {
+      "claim": "NordVPN found dozens of malicious sites impersonating Rockstar/game storefronts (fake pre-orders, beta access, malware installers). Platform of the malware not stated, so the video says 'your device'.",
+      "source_url": "https://cyberinsider.com/fake-gta-6-pre-order-beta-scams-spread-malware-before-launch/"
+    }
+  ],
+  "math_check": "99.99-79.99=20.00 = $20. 47 of 100 icons red = 47%. 'Dozens' not a number. Items 1/2/3 = 3 mistakes.",
+  "est_seconds": 30.4,
+  "word_count": 70,
+  "upload": {
+    "title": "3 GTA 6 mistakes. Number 3 is the worst #Shorts",
+    "description": "Number 3 could wreck your device, not just your wallet.\nUltimate, or keep $20? Comment A or B.\nUltimate costs $20 more than Standard. LendingTree says 47% of pay later users paid late. Dozens of fake sites exist, and some spread malware (NordVPN research). Pay in full and use official stores.\nNot financial advice. Sources: LendingTree, NordVPN via CyberInsider.\n#gta6 #money #savingmoney #Shorts",
+    "tags": [
+      "gta 6 price",
+      "gta 6 ultimate edition",
+      "gta 6 standard vs ultimate",
+      "buy now pay later",
+      "buy now pay later mistakes",
+      "fake pre-order scam",
+      "gta 6 scam",
+      "gaming money tips",
+      "save money gaming"
+    ]
+  },
+  "changes_from_previous": "(Owner-QA round) The unreadable 30 px on-screen NOT FINANCIAL ADVICE badge was removed (it was a 6th on-screen word); the disclaimer stays in the upload description. DOZENS OF headline moved down to clear the top UI zone. (1) Hook now says GTA 6: say 'Three G, T, A, six mistakes. Number three is the worst.' / text 'Three G T A 6 mistakes. Number three is the worst.' ('launch day' dropped from hook, titles and upload). (2) 'BONUS PACK' tag replaced by 'EXTRAS' everywhere. (3) On-screen text <= 5 words per moment: LENDINGTREE badge alone first, then 47% + PAID LATE (PAY LATER USERS and SURVEY dropped); A/B scene has only the two rows; 'NOT FINANCIAL ADVICE' shown once, small, in the item 2 (pay later) scene. (4) 47% reveal punched up: 47 of 100 icons snap red at once on 'forty-seven' with flash/zoom/ding, Benny gasps. (5) Kept One/Two/Three numbering, '$20' and 'KEEP $20', 'Not my device!', phone (no console), 'dozens' (no invented counts), no claim that people finance GTA 6. Upload title/description updated to match ('last year' removed)."
+}

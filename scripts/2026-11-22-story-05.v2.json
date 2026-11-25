@@ -1,0 +1,451 @@
+{
+ "id": "2026-11-22-story-05",
+ "version": 2,
+ "source": "owner-approved draft scripts/2026-11-22-story-05.DRAFT.md; beat plan modelled on a competitor Short (structure only; new ability, event, names, looks and words)",
+ "hook_type": {
+  "number": null,
+  "name": "owner-directed (exempt from rotation)"
+ },
+ "format": {
+  "number": 8,
+  "name": "Unusual Powers and Abilities"
+ },
+ "title_working": "The Smallest Kid In School Just Jumped Onto The Gym Roof",
+ "music": "musicbox",
+ "world_rule": "Nico can jump higher than any human, but promised his mum to keep it secret.",
+ "logline": "The smallest kid in school breaks a promise to his mum to prove himself, and she smiles.",
+ "characters": [
+  {
+   "name": "Nico",
+   "role": "hero",
+   "look": {
+    "skin": "#d9a27a",
+    "hair": "spiky blond",
+    "clothes": "cyan T-shirt with a yellow lightning bolt, dark jeans, big red sneakers",
+    "scale": 0.78
+   }
+  },
+  {
+   "name": "Chase",
+   "role": "star jumper (rival)",
+   "look": {
+    "skin": "#f0c9a6",
+    "hair": "slicked black, gold headband",
+    "clothes": "navy and gold varsity jacket",
+    "scale": 1.25
+   }
+  },
+  {
+   "name": "Coach Reyes",
+   "role": "teacher",
+   "look": {
+    "skin": "#c98e62",
+    "hair": "dark ponytail/bun",
+    "clothes": "red tracksuit, whistle",
+    "scale": 1.05
+   }
+  },
+  {
+   "name": "Nico's mum",
+   "role": "mum",
+   "look": {
+    "skin": "#d9a27a",
+    "hair": "long black",
+    "clothes": "orange coat",
+    "scale": 1.0
+   }
+  },
+  {
+   "name": "Crowd",
+   "role": "extras",
+   "look": "8 distinct bright avatars"
+  }
+ ],
+ "locations": [
+  "kitchen (flashback)",
+  "school hallway",
+  "school field with bleachers, high-jump bar and mat, tall gym building with a flat roof"
+ ],
+ "lines": [
+  {
+   "text": "The smallest kid in school just jumped onto the gym roof.",
+   "say": "(confident) The smallest kid in school just jumped onto the gym roof.",
+   "speaker": "narrator",
+   "beat": "hook",
+   "speed": 0.9,
+   "volume": 2,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "title hook",
+    "tags": "(confident)"
+   },
+   "shot": "Extreme close-up of Nico's smirking face; flash cut to the gym roof high above.",
+   "acting": {
+    "Nico": "smirk"
+   }
+  },
+  {
+   "text": "Nico had a secret gift. He could jump higher than a house.",
+   "say": "(calm) Nico had a secret gift. He could jump higher than a house.",
+   "speaker": "narrator",
+   "beat": "ability",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "matter-of-fact",
+    "tags": "(calm)"
+   },
+   "shot": "Flashback (warm tint): little Nico bounds from the floor onto the kitchen table, then up to a high shelf.",
+   "acting": {
+    "Nico": "cheerful"
+   }
+  },
+  {
+   "text": "His mum made him promise: never use it where anyone can see.",
+   "say": "(calm)(soft tone) His mum made him promise: never use it where anyone can see.",
+   "speaker": "narrator",
+   "beat": "secret",
+   "speed": 0.85,
+   "volume": -2,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "serious",
+    "tags": "(calm)(soft tone)"
+   },
+   "shot": "Close-up: his mum, serious, holds his shoulders; he nods slowly.",
+   "acting": {
+    "Mum": "serious, loving",
+    "Nico": "promising"
+   }
+  },
+  {
+   "text": "So at school, he was only the tiny kid nobody noticed.",
+   "say": "(sad)(soft tone) So at school, he was only the tiny kid nobody noticed.",
+   "speaker": "narrator",
+   "beat": "contrast",
+   "speed": 0.82,
+   "volume": -3,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)(soft tone)"
+   },
+   "shot": "Hallway: Nico walks alone, kids walk past without looking at him.",
+   "acting": {
+    "Nico": "sad, eyes down"
+   }
+  },
+  {
+   "text": "At the jump contest, the crowd snickered as Nico took his place.",
+   "say": "(calm) At the jump contest, the crowd snickered as Nico took his place.",
+   "speaker": "narrator",
+   "beat": "humiliation",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "mocking",
+    "tags": "(calm)"
+   },
+   "shot": "Field wide: bleachers full, the crowd snickering; Nico tiny beside the tall bar.",
+   "acting": {
+    "crowd": "snickering",
+    "Nico": "nervous"
+   }
+  },
+  {
+   "text": "Chase, the star jumper, had won three years in a row. The trophy was practically his.",
+   "say": "(nervous) Chase, the star jumper, had won three years in a row. The trophy was practically his.",
+   "speaker": "narrator",
+   "beat": "rival",
+   "speed": 0.9,
+   "volume": -1,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "tense",
+    "tags": "(nervous)"
+   },
+   "shot": "Chase flexes, low-angle close-up; the crowd chants his name.",
+   "acting": {
+    "Chase": "smug"
+   }
+  },
+  {
+   "text": "Each athlete got one jump. Just one.",
+   "say": "(worried) Each athlete got one jump. Just one.",
+   "speaker": "narrator",
+   "beat": "stakes",
+   "speed": 0.85,
+   "volume": -2,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "tense",
+    "tags": "(worried)"
+   },
+   "shot": "Coach Reyes holds up one finger; a sign reads ONE JUMP.",
+   "acting": {
+    "Coach Reyes": "serious"
+   }
+  },
+  {
+   "text": "Chase soared over the bar. A new school record. The stands exploded.",
+   "say": "(surprised) Chase soared over the bar. A new school record. The stands exploded.",
+   "speaker": "narrator",
+   "beat": "false defeat",
+   "speed": 0.95,
+   "volume": 2,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "rising",
+    "tags": "(surprised)"
+   },
+   "shot": "Chase soars over the bar (a sign: 2 m RECORD); the crowd erupts.",
+   "acting": {
+    "Chase": "triumphant",
+    "crowd": "cheering"
+   }
+  },
+  {
+   "text": "Then someone behind him whispered, \"Why is he even here?\"",
+   "say": "(nervous)(soft tone) Then someone behind him whispered, \"Why is he even here?\"",
+   "speaker": "narrator",
+   "beat": "trigger",
+   "speed": 0.85,
+   "volume": -2,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "hushed",
+    "tags": "(nervous)(soft tone)"
+   },
+   "shot": "Over-the-shoulder: a kid in the crowd whispers; Nico's fists tighten.",
+   "acting": {
+    "Nico": "stung"
+   }
+  },
+  {
+   "text": "Nico remembered his promise. Then he decided to break it.",
+   "say": "(confident)(soft tone) Nico remembered his promise. Then he decided to break it.",
+   "speaker": "narrator",
+   "beat": "decision",
+   "speed": 0.85,
+   "volume": 0,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "resolve",
+    "tags": "(confident)(soft tone)"
+   },
+   "shot": "Close-up: Nico's eyes narrow; a flash of his mum's face; he lifts his chin.",
+   "acting": {
+    "Nico": "determined"
+   }
+  },
+  {
+   "text": "He barely bent his knees.",
+   "say": "(worried)(soft tone) He barely bent his knees.",
+   "speaker": "narrator",
+   "beat": "cliffhanger",
+   "speed": 0.82,
+   "volume": -3,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "hushed",
+    "tags": "(worried)(soft tone)"
+   },
+   "shot": "Extreme close-up of Nico's sneakers on the mat; the cheering fades.",
+   "acting": {
+    "Nico": "calm"
+   }
+  },
+  {
+   "text": "Then the ground cracked under his feet.",
+   "say": "(nervous)(soft tone) Then the ground cracked under his feet.",
+   "speaker": "narrator",
+   "beat": "foreshadow",
+   "speed": 0.85,
+   "volume": -3,
+   "pause": 0.6,
+   "voice": {
+    "emotion": "hushed",
+    "tags": "(nervous)(soft tone)"
+   },
+   "shot": "Low angle: a crack spreads under Nico's shoes; a beat of silence.",
+   "acting": {
+    "Nico": "focused"
+   }
+  },
+  {
+   "text": "He crouched, pushed off, and shot into the sky like a rocket.",
+   "say": "(surprised) He crouched, pushed off, and shot into the sky like a rocket.",
+   "speaker": "narrator",
+   "beat": "twist",
+   "speed": 0.96,
+   "volume": 4,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "shock",
+    "tags": "(surprised)"
+   },
+   "shot": "Nico crouches, launches; the camera follows and tilts up fast past the bar, the flagpole, the sky.",
+   "acting": {
+    "Nico": "calm, grinning"
+   }
+  },
+  {
+   "text": "Nico was waving down from the gym roof.",
+   "say": "(surprised) Nico was waving down from the gym roof.",
+   "speaker": "narrator",
+   "beat": "twist",
+   "speed": 0.95,
+   "volume": 2,
+   "pause": 0.45,
+   "voice": {
+    "emotion": "wonder",
+    "tags": "(surprised)"
+   },
+   "shot": "Low-angle from the field: tiny Nico on the roof edge against the sun, waving.",
+   "acting": {
+    "Nico": "waving, grinning"
+   }
+  },
+  {
+   "text": "Nobody breathed.",
+   "say": "(worried)(soft tone) Nobody breathed.",
+   "speaker": "narrator",
+   "beat": "silence",
+   "speed": 0.8,
+   "volume": -3,
+   "pause": 0.45,
+   "voice": {
+    "emotion": "hushed",
+    "tags": "(worried)(soft tone)"
+   },
+   "shot": "Wide: a frozen crowd, mouths open; Chase's gold headband slips off.",
+   "acting": {
+    "crowd": "stunned",
+    "Chase": "shocked"
+   }
+  },
+  {
+   "text": "Coach Reyes unrolled her tape with shaking hands.",
+   "say": "(surprised) Coach Reyes unrolled her tape with shaking hands.",
+   "speaker": "narrator",
+   "beat": "proof",
+   "speed": 0.93,
+   "volume": 1,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "disbelief",
+    "tags": "(surprised)"
+   },
+   "shot": "Close-up of Coach Reyes with the tape; her hands tremble.",
+   "acting": {
+    "Coach Reyes": "disbelief"
+   }
+  },
+  {
+   "text": "Twenty meters. The old record was two.",
+   "say": "(surprised) Twenty meters. The old record was two.",
+   "speaker": "narrator",
+   "beat": "escalation",
+   "speed": 0.95,
+   "volume": 2,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "awe",
+    "tags": "(surprised)"
+   },
+   "shot": "Board: OLD RECORD 2 m, NEW 20 m.",
+   "acting": {
+    "Coach Reyes": "stunned"
+   }
+  },
+  {
+   "text": "Nobody snickered anymore. They chanted his name.",
+   "say": "(happy) Nobody snickered anymore. They chanted his name.",
+   "speaker": "narrator",
+   "beat": "payoff",
+   "speed": 0.92,
+   "volume": 1,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "warm",
+    "tags": "(happy)"
+   },
+   "shot": "Hallway and field: kids gather around Nico, chanting, smiling.",
+   "acting": {
+    "kids": "cheering",
+    "Nico": "shy smile"
+   }
+  },
+  {
+   "text": "Even Chase clapped.",
+   "say": "(calm)(soft tone) Even Chase clapped.",
+   "speaker": "narrator",
+   "beat": "payoff",
+   "speed": 0.85,
+   "volume": -1,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "gracious",
+    "tags": "(calm)(soft tone)"
+   },
+   "shot": "Close-up: Chase, humbled, slowly claps.",
+   "acting": {
+    "Chase": "humbled, clapping"
+   }
+  },
+  {
+   "text": "And his mum? She had watched it all from the stands. She just smiled.",
+   "say": "(moved)(soft tone) And his mum? She had watched it all from the stands. She just smiled.",
+   "speaker": "narrator",
+   "beat": "emotional close",
+   "speed": 0.82,
+   "volume": -2,
+   "pause": 0.45,
+   "voice": {
+    "emotion": "tender",
+    "tags": "(moved)(soft tone)"
+   },
+   "shot": "Close-up of his mum, wiping a tear, smiling; the crowd cheers around her.",
+   "acting": {
+    "Mum": "smiling, tearful"
+   }
+  },
+  {
+   "text": "The smallest kid in school was never small again.",
+   "say": "(confident)(soft tone) The smallest kid in school was never small again.",
+   "speaker": "narrator",
+   "beat": "loop ending",
+   "speed": 0.85,
+   "volume": 0,
+   "pause": 0,
+   "voice": {
+    "emotion": "warm",
+    "tags": "(confident)(soft tone)"
+   },
+   "shot": "Hero low-angle shot: Nico against the bright sky.",
+   "acting": {
+    "Nico": "proud"
+   }
+  }
+ ],
+ "word_count": 197,
+ "est_seconds": 44.5,
+ "tail_hold": 2.0,
+ "upload": {
+  "title": "The Smallest Kid In School Just Jumped Onto The Gym Roof #Shorts",
+  "description": "He promised his mum nobody would ever see.\nWould you have broken the promise? Tell us below.\nThe smallest kid in school can jump higher than any human, and one jump changes everything.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animation #storytime #shorts",
+  "tags": [
+   "roblox story",
+   "roblox animation",
+   "school story",
+   "superpower story",
+   "underdog story",
+   "animated story",
+   "story time animation",
+   "jump story"
+  ]
+ },
+ "changes_from_previous": "QA v1 (originality 4) fixes: ALL phrasing rebuilt in new sentence shapes (no 'ever since X was five', 'a second later', 'three times ... broken ... but it wasn't', 'ten times the school record', 'from that day on ... highest human alive'); 'laughed' removed; sentences <=14 words; new decision beat (a whispered 'Why is he even here?' triggers the broken promise); title and line 1 now say 'onto the gym roof' to match the picture; jump arc shown (crouch, launch, tilt); the proof is told with a tape and numbers (twenty metres vs two); rival concedes; the mum smiles; the last line echoes the title."
+}

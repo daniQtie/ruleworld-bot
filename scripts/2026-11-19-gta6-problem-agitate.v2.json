@@ -1,0 +1,153 @@
+{
+  "id": "2026-11-19-gta6-problem-agitate",
+  "version": 2,
+  "hook_type": {
+    "number": 4,
+    "name": "The Problem-Agitate Hook"
+  },
+  "topic": "money",
+  "outfit": "everyday",
+  "title_yt": "That $79.99 GTA 6 Price Tag Is a Trap #Shorts",
+  "title_fb": "That $79.99 GTA 6 Price Tag Is a Trap",
+  "hook": "That seventy-nine ninety-nine price tag on GTA six is a trap. And it gets worse.",
+  "open_loop": "Line 2 promises 'Watch his total more than double' with an 'x2?' badge next to a running TOTAL counter; the counter climbs all video and the first-twelve-months total ($187.88, more than double $79.99) lands only in line 12, after the 'wait, what?' twist in line 8 (the upgrade lands exactly on the Ultimate price).",
+  "payoff": "Benny's total for his first twelve months is $187.88: $79.99 + $20 upgrade = $99.99, plus 11 paid months of a forgotten GTA+ trial ($87.89). Fix: pick your edition once, cancel the trial the same day.",
+  "ending": "choice",
+  "scenes_planned": 16,
+  "lines": [
+    {
+      "text": "That $79.99 price tag on GTA 6 is a trap. And it gets worse.",
+      "say": "That seventy-nine ninety-nine price tag on GTA six is a trap. And it gets worse.",
+      "beat": "hook",
+      "visual": "SCENE 1 (frame 0, first word by 0.1 s): Benny (hoodie, controller in one hand, phone in the other) at a generic store counter, pose point, expr smug, pointing at a big price tag '$79.99' already on screen at frame 0. On 'trap' the price tag snaps shut like a bear trap on his finger (clack, thud); Benny expr shocked, hops. SCENE 2 (on 'And'): a running TOTAL counter appears top-right at '$79.99' and wobbles on 'worse'; camera snap-zoom, Benny pose shock.",
+      "on_screen": "$79.99 = TRAP"
+    },
+    {
+      "text": "Before launch, Benny went shopping. Watch his total more than double.",
+      "beat": "stakes",
+      "visual": "SCENE 3 (on 'Before'): Benny strolls into a generic game store, pose flex, expr happy, wallet in hand; badge 'BEFORE LAUNCH' on 'launch'. On 'double' a gold badge 'x2?' pops next to the TOTAL counter (still $79.99); Benny glances at the camera, expr smug (gag: he has no idea).",
+      "on_screen": "TOTAL x2?"
+    },
+    {
+      "text": "He shook the store box. Nothing rattled.",
+      "beat": "escalate",
+      "visual": "SCENE 4 (on 'He'): Benny holds a plain generic game box (no logos) to his ear and shakes it hard (pose present, expr thinking); a sound bubble 'rattle?' appears on 'Nothing' and gets crossed out (silence gag, cricket chirp).",
+      "on_screen": "RATTLE? NOTHING"
+    },
+    {
+      "text": "Reportedly, there is no disc, just a download code.",
+      "beat": "escalate",
+      "visual": "SCENE 5 (on 'Reportedly'): small tag 'REPORTEDLY' top-left; the box pops open and a single small card flutters out on 'download', badge 'NO DISC' on 'disc' then 'DOWNLOAD CODE' on 'code'; Benny pose shrug, expr annoyed, tosses the box over his shoulder (bonk off-screen) and holds up his phone.",
+      "on_screen": "NO DISC / DOWNLOAD CODE"
+    },
+    {
+      "text": "Ultimate is listed at $99.99.",
+      "say": "Ultimate is listed at ninety-nine ninety-nine.",
+      "beat": "stakes",
+      "visual": "SCENE 6 (on 'Ultimate'): generic phone shop screen splits into two cards: 'STANDARD $79.99' and 'ULTIMATE $99.99' (gold); the Ultimate card glows on 'ninety-nine'. Benny pose think, expr thinking, eyebrows jump.",
+      "on_screen": "ULTIMATE $99.99"
+    },
+    {
+      "text": "He picked Standard to save $20.",
+      "say": "He picked Standard to save twenty dollars.",
+      "beat": "escalate",
+      "visual": "SCENE 7 (on 'He'): Benny taps 'STANDARD $79.99' (click); badge 'SAVED $20' pops on 'twenty'; Benny pose flex, expr smug, a tiny graduation cap lands on his head (gag: he feels like a genius). TOTAL counter stays $79.99.",
+      "on_screen": "SAVED $20"
+    },
+    {
+      "text": "On launch day, he paid $20 to upgrade.",
+      "say": "On launch day, he paid twenty dollars to upgrade.",
+      "beat": "escalate",
+      "visual": "SCENE 8 (on 'On'): generic calendar badge 'LAUNCH DAY' drops (ding); Benny on the couch scrolling (pose scroll, expr thinking), the Ultimate card glows at him. On 'upgrade' he taps it; badge '+$20 UPGRADE' flies into the TOTAL counter (cha-ching); the graduation cap falls off his head.",
+      "on_screen": "LAUNCH DAY / +$20 UPGRADE"
+    },
+    {
+      "text": "His total became $99.99, the Ultimate price!",
+      "say": "His total became ninety-nine ninety-nine, the Ultimate price!",
+      "beat": "twist",
+      "visual": "SCENE 9 (on 'His'): TOTAL counter rolls $79.99 -> $99.99 and lands on 'ninety-nine'; on 'Ultimate' it slides next to the 'ULTIMATE $99.99' card and the numbers match with a ding. Benny face-palms (pose slump, expr broke); the 'SAVED $20' badge deflates like a balloon. Wait-what beat.",
+      "on_screen": "$99.99 = ULTIMATE"
+    },
+    {
+      "text": "His digital preorder came with one free month of GTA+.",
+      "say": "His digital preorder came with one free month of GTA plus.",
+      "beat": "loop",
+      "visual": "SCENE 10 (on 'His'): a gift box pops out of the phone with badge 'GTA+ 1 FREE MONTH' on 'free'; Benny pose wave, expr happy, hugs the gift (gag: suspiciously happy music sting).",
+      "on_screen": "GTA+ 1 FREE MONTH"
+    },
+    {
+      "text": "He forgot to cancel. Reportedly, it then costs $7.99 a month.",
+      "say": "He forgot to cancel. Reportedly, it then costs seven ninety-nine a month.",
+      "beat": "escalate",
+      "visual": "SCENE 11 (on 'He'): Benny plays happily (pose present, controller), a sticky note 'CANCEL TRIAL' falls behind the couch unseen. On 'Reportedly' small tag 'REPORTEDLY' top-left; a wall calendar flips from 'MONTH 1: FREE' to 'MONTH 2' and bites a coin out of Benny's wallet; badge '$7.99 A MONTH' on 'seven'. Benny expr shocked.",
+      "on_screen": "$7.99 A MONTH"
+    },
+    {
+      "text": "Eleven paid months cost $87.89.",
+      "say": "Eleven paid months cost eighty-seven eighty-nine.",
+      "beat": "escalate",
+      "visual": "SCENE 12 (on 'Eleven'): the calendar flips fast through months 2 to 12 (month 1 stays stamped FREE); each flip a coin bonks Benny's head (11 quick bonks, comedic); a counter beside it rolls to '$87.89' on 'eighty-seven'. Benny pose worry, expr broke, sweat drops.",
+      "on_screen": "11 MONTHS = $87.89"
+    },
+    {
+      "text": "His total for the first twelve months is $187.88. That is more than double.",
+      "say": "His total for the first twelve months is one hundred eighty-seven eighty-eight. That is more than double.",
+      "beat": "payoff",
+      "visual": "SCENE 13 (on 'His'): a receipt prints from the phone and keeps unrolling to the floor (gag); equation slams in rows: '$99.99 + $87.89' then '= $187.88' (gold) on 'one hundred'; small label '12 MONTHS'. SCENE 14 (on 'That'): the old '$79.99' tag sits small next to the big '$187.88'; badge 'MORE THAN x2' stamps on 'double' (thud), closing the 'x2?' from line 2. Benny pose shock, expr shocked, jaw drops.",
+      "on_screen": "12 MONTHS = $187.88 / MORE THAN x2"
+    },
+    {
+      "text": "Pick your edition once. Cancel the trial the same day. This is not financial advice.",
+      "beat": "payoff",
+      "visual": "SCENE 15 (on 'Pick'): rewind effect (tape whoosh) back to the store counter; Benny pose determined, expr determined, slaps a sticky note 'PICK ONCE' on the phone. On 'Cancel' a phone reminder 'CANCEL TRIAL TODAY' pops with a check mark; Benny pose hero, expr happy. On 'This' small footer 'NOT FINANCIAL ADVICE'.",
+      "on_screen": "PICK ONCE / CANCEL TRIAL TODAY"
+    },
+    {
+      "text": "Did you pick Standard or Ultimate? Comment A or B.",
+      "beat": "ending",
+      "visual": "SCENE 16 (on 'Did'): Benny on the couch with a generic 'LAUNCH DAY' screen behind him (no game footage), pose point at viewer on 'Comment', expr smile. List rows 'A: STANDARD' on 'Standard' and 'B: ULTIMATE' on 'Ultimate'. End on 'B'.",
+      "on_screen": "A: STANDARD / B: ULTIMATE"
+    }
+  ],
+  "facts_used": [
+    {
+      "claim": "Rockstar's official GTA VI page says 'Coming November 19, 2026' (today). We only say 'launch day'; we never say it is out, playable or reviewed.",
+      "source_url": "https://www.rockstargames.com/VI"
+    },
+    {
+      "claim": "Standard Edition $79.99, Ultimate Edition $99.99 (US, as listed); Standard buyers can later pay the $20 difference to upgrade.",
+      "source_url": "https://www.ibtimes.co.uk/gta-6-release-date-pre-load-time-price-editions-platforms-confirmed-rockstar-1819557"
+    },
+    {
+      "claim": "The boxed 'physical edition' is reportedly only a download code with no disc in the box (spoken with 'Reportedly').",
+      "source_url": "https://tech-insider.org/gta-6-launch-nov-19-79-99-whats-confirmed-2026/"
+    },
+    {
+      "claim": "Digital pre-orders include one month of GTA+, which can convert to a paid subscription if not cancelled in time.",
+      "source_url": "https://www.ibtimes.co.uk/gta-6-release-date-pre-load-time-price-editions-platforms-confirmed-rockstar-1819557"
+    },
+    {
+      "claim": "GTA+ is reported at $7.99 per month in the US (2024 price rise; spoken with 'Reportedly' because no 2026 primary source was found).",
+      "source_url": "https://www.tweaktown.com/news/97501/gta-price-increased-by-33-was-5-99-now-7-per-month/index.html"
+    }
+  ],
+  "math_check": "$99.99 - $79.99 = $20.00. $79.99 + $20.00 = $99.99 (= Ultimate). First twelve months of GTA+: month 1 free, months 2-12 paid = 11 x $7.99 = $87.89. Total for the first twelve months = $99.99 + $87.89 = $187.88. $79.99 x 2 = $159.98 < $187.88, so 'more than double' is true. Every figure is identical in say, text and on_screen: $79.99, $99.99, $20, $7.99, $87.89, $187.88. The v1 figures $95.88 / $195.87 are gone everywhere. Spoken words: 143 (whitespace count of 'say', else 'text'); longest sentence 12 words (line 12, first sentence). At 2.5-2.8 w/s (project's real am_liam pace) = 51-57 s; at 2.3 w/s = 62.2 s.",
+  "est_seconds": 55,
+  "word_count": 143,
+  "upload": {
+    "title": "That $79.99 GTA 6 Price Tag Is a Trap #Shorts",
+    "description": "The price on the tag is rarely the price you end up paying. Benny found out the hard way.\nDid you pick Standard or Ultimate? Comment A or B.\nStandard is listed at $79.99 and Ultimate at $99.99, so a $20 upgrade later costs exactly the Ultimate price. Forget the free GTA+ month and it reportedly costs $7.99 a month: 11 paid months is $87.89, so $187.88 in the first twelve months.\nThis is not financial advice. Prices listed in US dollars, check the store. Unofficial fan commentary, not affiliated with Rockstar or Take-Two.\n#gta6 #money #gaming #savingmoney #Shorts",
+    "tags": [
+      "gta 6",
+      "gta 6 price",
+      "gta 6 ultimate edition",
+      "gta 6 standard vs ultimate",
+      "gta plus subscription",
+      "gta 6 preorder",
+      "gta 6 launch day",
+      "how to save money gaming"
+    ],
+    "hashtags": ["#gta6", "#money", "#gaming", "#savingmoney", "#Shorts"]
+  },
+  "changes_from_previous": "v2 fixes every QA note. (1) Facts: the GTA+ month 1 is free, so the script now uses 11 paid months = $87.89 and first-twelve-months total $187.88 everywhere (say, text, badges '11 MONTHS = $87.89' and '12 MONTHS = $187.88', equation, math_check, description); $95.88 and $195.87 are removed. 'More than double' still holds ($159.98). (2) Hook rewritten to a true Problem-Agitate opener: 'That seventy-nine ninety-nine price tag on GTA six is a trap. And it gets worse.' (names the problem, twists the knife); no false 'does not cost' claim, no 'preorder' in the hook. Timeline fixed: Benny shops before launch (digital preorder, matching the trial source), and upgrades on launch day, so 'preorder' and 'launch day' no longer conflict. (3) Hedging: 'Reportedly, there is no disc, just a download code.' and 'Reportedly, it then costs seven ninety-nine a month.' with a small 'REPORTEDLY' tag on screen. (4) Fragment fixed: 'This is not financial advice.' (5) Rule D kept (say 'GTA six'/'GTA plus', caption 'GTA 6'/'GTA+'); every sentence <= 12 words; upload title/description numbers match the script. Length raised to 143 words for the real 2.5-2.8 w/s TTS pace (about 51-58 s). Not done: no 2026 primary source for the $7.99 price was added (research-only rule), hence the hedge."
+}

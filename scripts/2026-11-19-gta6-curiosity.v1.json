@@ -1,0 +1,97 @@
+{
+  "id": "2026-11-19-gta6-curiosity",
+  "version": 1,
+  "hook_type": {
+    "number": 3,
+    "name": "The Curiosity / Shock Hook"
+  },
+  "topic": "psychology",
+  "outfit": "psych",
+  "title_yt": "Why tonight may beat GTA 6 launch day #Shorts",
+  "title_fb": "Why tonight may beat GTA 6 launch day",
+  "hook": "This will surprise you. Tonight may be the best part of G T A 6.",
+  "open_loop": "Lines 1-2 withhold why tonight could be the best part; the study (lines 4-6) pays it off: people were happier before their trip than after.",
+  "payoff": "Vacationers were happier before the trip, and after it the extra happiness was gone (Nawijn et al. 2010). Honest limit: a vacation study, not a game study. Enjoy the wait.",
+  "ending": "choice",
+  "scenes_planned": 10,
+  "lines": [
+    {
+      "text": "This will surprise you.",
+      "beat": "hook",
+      "visual": "SCENE 1 (frame 0): Benny in psych outfit, shocked face, pose shock, headline 'SURPRISE' already on screen; snap-zoom on 'surprise'.",
+      "on_screen": "SURPRISE"
+    },
+    {
+      "text": "Tonight may be the best part of G T A 6.",
+      "say": "Tonight may be the best part of G, T, A, six.",
+      "beat": "loop",
+      "visual": "SCENE 2 (on 'Tonight'): Benny smug, headline 'TONIGHT' with a plain moon-colour dark-blue background. SCENE 3 (on 'best'): stamp 'BEST PART' slams (thud), Benny gasps. On 'G': badge 'GTA 6' plain text pops.",
+      "on_screen": "TONIGHT / BEST PART"
+    },
+    {
+      "text": "Benny waits all night outside the store.",
+      "beat": "stakes",
+      "visual": "SCENE 4: Benny in a sleeping-bag pose (slump to hop), cheering and yawning in turns, generic plain store door at right with no logo or sign; badge 'ALL NIGHT' on 'all night'. GAG: he nods off, jerks awake, hops with joy.",
+      "on_screen": "ALL NIGHT"
+    },
+    {
+      "text": "A study tracked the happiness of 1,530 adults.",
+      "say": "A study tracked the happiness of one thousand, five hundred thirty adults.",
+      "beat": "escalate",
+      "visual": "SCENE 5: Benny thinking, brain prop; on 'one thousand' a counter climbs to 1,530 (suffix ' ADULTS' only after it lands, ding). No other text.",
+      "on_screen": "1,530 ADULTS"
+    },
+    {
+      "text": "Before their trips, vacationers were happier than others.",
+      "beat": "escalate",
+      "visual": "SCENE 6: two bars with labels only, no numbers: 'VACATIONERS' tall, 'OTHERS' short; Benny happy, flex. Headline 'BEFORE' on 'Before'.",
+      "on_screen": "BEFORE / VACATIONERS"
+    },
+    {
+      "text": "After the trip, the extra happiness was gone.",
+      "beat": "twist",
+      "visual": "SCENE 7 (on 'After'): the tall bar sinks to equal height with the other (buzz, shake), Benny slumps, expression broke. On 'gone': stamp 'GONE' slams (thud).",
+      "on_screen": "AFTER / GONE"
+    },
+    {
+      "text": "That was a study about vacations, not games.",
+      "beat": "payoff",
+      "visual": "SCENE 8: Benny shrug, honest face, headline 'VACATIONS' on 'vacations', then 'NOT GAMES' on 'not' (max 2 words each).",
+      "on_screen": "VACATIONS / NOT GAMES"
+    },
+    {
+      "text": "Enjoy tonight. Which do you pick? Comment A or B.",
+      "beat": "ending",
+      "visual": "SCENE 9 (on 'Enjoy'): Benny happy in the sleeping bag. SCENE 10 (on 'Which'): rows 'A: THE WAIT', 'B: THE GAME' pop; Benny points at viewer on 'Comment'. Rows only, no footer.",
+      "on_screen": "A: THE WAIT / B: THE GAME"
+    }
+  ],
+  "facts_used": [
+    {
+      "claim": "Nawijn et al. 2010: 1,530 Dutch adults tracked; vacationers were happier than non-vacationers before their trip (anticipation is the suggested reason); after the trip overall no difference; a very relaxing break gave a small boost that wore off by eight weeks.",
+      "source_url": "https://www.sciencedaily.com/releases/2010/02/100218125204.htm"
+    },
+    {
+      "claim": "Same study, bibliographic summary (Applied Research in Quality of Life 5(1), 35-47).",
+      "source_url": "https://personal.eur.nl/veenhoven/Pub2010s/2010g-ab.html"
+    }
+  ],
+  "math_check": "No arithmetic beyond the sample size: 1,530 adults (974 took a vacation, not used in the script). Voice 'one thousand, five hundred thirty', caption/screen 1,530. Word count computed by script.",
+  "est_seconds": 29.6,
+  "word_count": 68,
+  "upload": {
+    "title": "Why tonight may beat GTA 6 launch day #Shorts",
+    "description": "The happiest part of a big wait may be the wait itself.\nWould you pick the wait or the game? Comment A or B.\nA study of 1,530 adults found vacationers were happier before their trip, and the extra happiness was gone after it. It studied vacations, not games.\nSource: Nawijn et al. 2010, Applied Research in Quality of Life.\n#gta6 #psychology #happiness #Shorts",
+    "tags": [
+      "gta 6 hype",
+      "gta 6 release",
+      "anticipation happiness",
+      "psychology of waiting",
+      "why waiting feels good",
+      "vacation happiness study",
+      "gta 6 psychology",
+      "happiness psychology"
+    ]
+  },
+  "changes_from_previous": "v1"
+}

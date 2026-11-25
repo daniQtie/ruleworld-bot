@@ -1,0 +1,57 @@
+{
+  "id": "2026-11-16-coin-flip-brain",
+  "hook": "Heads, you win $150. Tails, you lose $100. Do you flip?",
+  "angle": "Loss aversion: your brain weighs a loss about twice as heavily as a win, so most people refuse a coin flip that pays them +$25 on average. A second-person question in the first second, answered with one named mechanism and one math twist.",
+  "facts": [
+    {
+      "claim": "In Kahneman's coin-toss example (lose $100 or win $150), most people decline; to balance a possible $100 loss, most people need a chance to win about $200.",
+      "source_url": "https://litcharts.com/lit/thinking-fast-and-slow/part-4-chapter-26"
+    },
+    {
+      "claim": "Most people reject a coin flip with equal chances to win $150 or lose $100, even though its expected value is positive (secondary summary, corroborating).",
+      "source_url": "https://margin-notes-600.pages.dev/books/thinking-fast-and-slow/ch-26"
+    },
+    {
+      "claim": "A 2024 meta-analysis of 607 loss-aversion estimates from 150 articles found a mean loss-aversion coefficient of 1.955 (95% probability the true value is between 1.820 and 2.102), i.e. losses weigh about 2x an equal gain.",
+      "source_url": "https://www.aeaweb.org/doi/10.1257/jel.20221698"
+    },
+    {
+      "claim": "Empirically, losses tend to be treated as if they were twice as large as an equivalent gain (Kahneman & Tversky).",
+      "source_url": "https://en.wikipedia.org/wiki/Loss_aversion"
+    },
+    {
+      "claim": "Caveat: the 2:1 ratio is not a universal constant; it varies by context and is weaker for small stakes and experienced traders, but the asymmetry in risky financial choices is considered robust.",
+      "source_url": "https://atticusli.com/replication-crisis/loss-aversion/"
+    },
+    {
+      "claim": "MATH (re-computed in python): expected value per flip = 0.5*150 - 0.5*100 = +$25. With a weight of 1.955 on losses the flip 'feels like' 75 - 97.75 = -$22.75. Break-even win = 1.955*100 = $195.50 (range $182.00-$210.20).",
+      "source_url": "https://www.aeaweb.org/doi/10.1257/jel.20221698"
+    },
+    {
+      "claim": "MATH (binomial, fair coin): chance of ending with a net loss = 50% after 1 flip, 17.19% after 10 flips (needs <=3 heads), 1.76% after 100 flips (needs <40 heads). Expected total after 100 flips = +$2,500.",
+      "source_url": "computed; no external source needed"
+    }
+  ],
+  "inspiration_urls": [
+    "https://www.youtube.com/shorts/ttuKeS5k4Uo",
+    "https://danielrusnok.substack.com/p/how-a-faceless-channel-engineered",
+    "https://virlo.ai/agents/mindset-human-behavior-hgdd4g",
+    "https://www.youtube.com/shorts/05uk86Zy5oU"
+  ],
+  "outfit": "psych",
+  "open_loop": "Right after the question: 'Most people say no. The math says yes. And one number in your brain decides.' Withhold the number (about 2x) until the last third.",
+  "payoff": "Reveal the number: your brain counts a loss about 2x (scientists averaged 607 studies: 1.955). So the $100 loss feels like about $195, which is bigger than the $150 win, and you say no. Then the twist: each flip earns +$25 on average, and over 100 flips you end up down less than 2% of the time.",
+  "ending": "A/B or comment bait that loops: Benny holds up the coin again: 'So how much would YOU need to flip? Comment your number.' Alternatively, end on 'Heads, $150. Tails, $100. Now… do you flip?' for a seamless loop to the first line.",
+  "notes_for_scriptwriter": [
+    "First word by 0.1 s: open directly on 'Heads, you win $150…' with the coin already in Benny's hand and '+$150 / -$100' burned in on screen. No title card.",
+    "Name the mechanism once ('loss aversion'); it gives the authority that psych hooks get from named concepts.",
+    "Say 'about twice' / 'about 2x' and 'most people', never 'always' or 'exactly 2'. The 1.955 is a mean across studies; the effect varies.",
+    "'1.76% / less than 2%' applies only to 100 independent flips of a fair coin. A single flip is still 50/50, so do NOT say 'you will win'.",
+    "Policy: frame it as a brain/decision thought experiment, NOT advice to gamble. Add 'not financial advice' on screen at the end, and do not mention casinos, betting apps or crypto.",
+    "Do not add unsourced real-life extensions (stocks, jobs, breakups). If you want one, ask research to source it first.",
+    "Visuals (easy props): giant coin flip; two bars, 'feels like -$195' vs 'real +$150'; a '+$25' counter ticking up over a flip montage; a '100 flips' counter; a stamp 'LOSS AVERSION'; Benny holding a pink brain that 'shrinks' the $150 bar.",
+    "Expressions: hmm (brow up) on the question, shocked on the 2x reveal, smug 'alam ko na' grin on the +$25 twist, gap-tooth grin on the closing question.",
+    "Target 30-40 s, ~85-110 words, 9-12 scenes, a cut every 1-2 s, on-screen text <=5 words per moment.",
+    "Clarity check: avoid 'expected value'; say 'on average, each flip pays you $25'."
+  ]
+}

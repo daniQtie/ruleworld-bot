@@ -1,0 +1,9 @@
+{
+  "OPENART_AUTO_SPEND": false,
+  "OPENART_MAX_CREDITS_PER_VIDEO": null,
+  "_notes": [
+    "null = UNSET: no paid generation without the owner's explicit approval of the quoted cost.",
+    "When the owner sets a number and OPENART_AUTO_SPEND=true, generate only if the total estimate (all shots + revisions) <= that number.",
+    "Never buy credits or change plans. Never switch to a more expensive model without approval. If credits are short: stop and alert via Telegram."
+  ]
+}

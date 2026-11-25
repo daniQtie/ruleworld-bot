@@ -1,0 +1,12 @@
+emotion,trigger,eyes,brows,mouth,body,hold_guidance
+neutral,baseline,steady,relaxed,resting,relaxed posture,short
+happy,good news,soft focus,slightly raised,natural smile,open posture,medium
+sad,loss or disappointment,downward gaze,inner corners raised,small frown,head lowered,medium
+angry,boundary crossed,locked focus,angled down,pressed lips,jaw and shoulders tense,short
+scared,threat revealed,wide and darting,raised,slightly open,lean away,medium
+surprised,unexpected reveal,wide and fixed,high,round open,brief freeze,short
+confused,unclear event,side glance,one raised,uneven,head tilt,short
+crying,emotional overwhelm,wet and blinking,inner corners raised,trembling,shoulders contract,medium-long
+relieved,threat resolved,soft focus,relaxed,gentle smile,exhale and shoulders drop,medium
+guilty,truth concealed,avoidant,inner corners raised,tight mouth,look down,medium
+determined,decision made,focused,stable,firm,stand upright,medium

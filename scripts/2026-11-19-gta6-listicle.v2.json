@@ -1,0 +1,104 @@
+{
+  "id": "2026-11-19-gta6-listicle",
+  "version": 2,
+  "hook_type": {
+    "number": 2,
+    "name": "The Listicle / Number Hook"
+  },
+  "topic": "money",
+  "outfit": "everyday",
+  "title_yt": "3 GTA 6 money mistakes. Number 3 is the worst #Shorts",
+  "title_fb": "3 GTA 6 money mistakes. Number 3 is the worst",
+  "hook": "Three G T A six money mistakes. Number three is the worst.",
+  "open_loop": "Line 1 promises three mistakes and teases that number three is the worst; the fake pre-order site and malware gremlin pay it off in lines 5-6, then the lesson and A/B.",
+  "payoff": "Three traps with consequences: $20 for a tiny coin, pay later bills chasing him (47% of pay later users paid late), a fake pre-order site with malware. Lesson: pay in full, use official stores.",
+  "ending": "choice",
+  "scenes_planned": 12,
+  "lines": [
+    {
+      "text": "Three G T A 6 money mistakes. Number three is the worst.",
+      "say": "Three G T A six money mistakes. Number three is the worst.",
+      "beat": "hook",
+      "visual": "SCENE 1 (frame 0): Benny in hoodie, backwards cap, gold shades, pumped in a launch-day line, cash in hand. Headline '3 MISTAKES' already on screen. Snap-zoom on 'Three'. SCENE 2 (on 'Number'): a big red '3' pulses, Benny gulps.",
+      "on_screen": "3 MISTAKES"
+    },
+    {
+      "text": "Ultimate costs you $20 more.",
+      "say": "Ultimate costs you twenty dollars more.",
+      "beat": "stakes",
+      "visual": "SCENE 3: Row '1' pops. Benny slaps cash on a counter, smug. Two generic boxes, 'STANDARD' and a bigger 'ULTIMATE' with gold ribbon (no art, no logo). Counter climbs to +$20. GAG: the clerk hands him one tiny gold coin as a 'bonus'; Benny opens his wallet, moths fly out, empty, smirk collapses. Small 'NOT FINANCIAL ADVICE'.",
+      "on_screen": "+$20"
+    },
+    {
+      "text": "Two: he pays later. Bills chase him.",
+      "beat": "escalate",
+      "visual": "SCENE 4: Row '2' pops. Benny taps a phone, grins at a sticker 'PAY LATER' (no game shown). SCENE 5 (on 'Bills'): a pile of bill papers and clock faces sprouts legs and chases Benny across the screen; he runs in panic, thud sfx on the catch.",
+      "on_screen": "2: PAY LATER"
+    },
+    {
+      "text": "LendingTree says 47% of pay later users paid late.",
+      "say": "LendingTree says forty-seven percent of pay later users paid late.",
+      "beat": "twist",
+      "visual": "SCENE 6 (on 'forty-seven'): snap-zoom, badge 'PAY LATER USERS' then counter counts to 47% and headline 'PAID LATE' slams under it. Benny, caught in the pile, freezes with a shocked face.",
+      "on_screen": "47% PAID LATE"
+    },
+    {
+      "text": "Three: he clicks a fake pre-order site.",
+      "beat": "escalate",
+      "visual": "SCENE 7: Row '3' pops. Benny in a dark room clicks a generic shady storefront 'PRE-ORDER' (no logo); a hooded stranger grins from the screen edge, Benny drools, clicks Buy. Small 'NOT FINANCIAL ADVICE'.",
+      "on_screen": "3: FAKE PRE-ORDER"
+    },
+    {
+      "text": "Researchers found dozens of fake sites. Some spread malware.",
+      "beat": "payoff",
+      "visual": "SCENE 8 (on 'dozens'): grid of many identical fake-site windows pops up, headline 'DOZENS OF FAKE SITES'. SCENE 9 (on 'malware'): a green malware gremlin pops out of the screen and eats Benny's generic console box (crunch, buzz sfx); Benny wails, stamp 'MALWARE'.",
+      "on_screen": "DOZENS OF FAKE SITES"
+    },
+    {
+      "text": "Pay in full. Use official stores.",
+      "beat": "payoff",
+      "visual": "SCENE 10: Gremlin vanishes, Benny calm, fix-it: ticks a check list 'PAY IN FULL' and 'OFFICIAL STORE', shades back on, nodding.",
+      "on_screen": "PAY IN FULL"
+    },
+    {
+      "text": "Ultimate, or Standard and keep $20? Comment A or B.",
+      "say": "Ultimate, or Standard and keep twenty dollars? Comment A or B.",
+      "beat": "ending",
+      "visual": "SCENE 11 (on 'Ultimate'): Benny smug with the tiny gold coin, row 'A: ULTIMATE'. SCENE 12 (on 'Standard'): Benny holding $20 cash, happy, row 'B: STANDARD +$20'. Benny points at viewer on 'Comment'. Small 'NOT FINANCIAL ADVICE'.",
+      "on_screen": "A: ULTIMATE / B: STANDARD"
+    }
+  ],
+  "facts_used": [
+    {
+      "claim": "Standard $79.99, Ultimate $99.99; difference $20.00 (voice and screen use $20 only).",
+      "source_url": "https://gameluster.com/gta-6-pre-order-pricing-standard-ultimate-edition/"
+    },
+    {
+      "claim": "LendingTree 2026 survey: 47% of buy-now-pay-later users paid late in the past year (general BNPL fact, not about GTA 6 buyers).",
+      "source_url": "https://www.lendingtree.com/personal/buy-now-pay-later-loan-statistics/"
+    },
+    {
+      "claim": "NordVPN found dozens of malicious sites impersonating Rockstar/game storefronts (fake pre-orders, beta access, malware installers).",
+      "source_url": "https://cyberinsider.com/fake-gta-6-pre-order-beta-scams-spread-malware-before-launch/"
+    }
+  ],
+  "math_check": "99.99-79.99=20.00 = $20 (25.0% more, not stated in the video). 47% quoted as is. 'Dozens' not a number.",
+  "est_seconds": 29.6,
+  "word_count": 68,
+  "upload": {
+    "title": "3 GTA 6 money mistakes. Number 3 is the worst #Shorts",
+    "description": "Number three could wreck your console, not just your wallet.\nUltimate, or Standard and keep $20? Comment A or B.\nUltimate costs $20 more than Standard. A LendingTree survey found 47% of pay later users paid late last year. Researchers at NordVPN found dozens of fake game sites, and some spread malware. Pay in full and use official stores.\nNot financial advice. Sources: LendingTree, NordVPN via CyberInsider.\n#gta6 #money #savingmoney #Shorts",
+    "tags": [
+      "gta 6 price",
+      "gta 6 ultimate edition",
+      "gta 6 standard vs ultimate",
+      "buy now pay later",
+      "buy now pay later mistakes",
+      "fake pre-order scam",
+      "gta 6 scam",
+      "gaming money tips",
+      "save money gaming"
+    ]
+  },
+  "changes_from_previous": "(1) Line 1 now teases 'Number three is the worst' (open loop + tension) while keeping the 3-item Listicle promise. (2) Viewer stake: 'Ultimate costs you $20 more.' (3) Items are mini-stories: tiny gold coin + empty wallet; bills sprout legs and chase Benny; fake pre-order site leads to a malware gremlin eating his console. 'First/Second/Third, Benny buys' removed. (4) 47% line: 'pay later users' in say, text and screen (badge PAY LATER USERS + 47% + PAID LATE); no game financing shown. (5) Line 6: 'Researchers found dozens of fake sites. Some spread malware.' with one on-screen headline 'DOZENS OF FAKE SITES' everywhere; NordVPN named in the description only to avoid TTS/caption mismatch. (6) 'cheap key' replaced by 'fake pre-order site'. (7) Ending says 'twenty dollars' / $20; lesson line 'Pay in full. Use official stores.' added before the A/B. (8) 25% dropped to fit words; removed from description too."
+}

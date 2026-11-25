@@ -1,0 +1,311 @@
+{
+ "id": "2026-11-27-story-21",
+ "version": 1,
+ "source": "Claude, new hook/logic/twist method; owner approved the text drafts 2026-11-25 (scripts/drafts-2026-11-25-new-method.md)",
+ "hook_type": {
+  "number": null,
+  "name": "new method (owner-approved drafts, exempt from rotation)"
+ },
+ "format": {
+  "number": null,
+  "name": "Story with a fair twist"
+ },
+ "title_working": "The Walkie-Talkie From 1995",
+ "hook_text": "A KID ANSWERED FROM 1995",
+ "hook_until": 2.6,
+ "music": "tender",
+ "music_gain": 0.13,
+ "world_rule": "The Walkie-Talkie From 1995",
+ "lines": [
+  {
+   "text": "My dad gave me an old walkie-talkie instead of a phone. That night, a kid answered.",
+   "say": "(nervous) My dad gave me an old walkie-talkie instead of a phone. That night, a kid answered.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "surprised",
+    "action": "still",
+    "prop": {
+     "type": "walkie"
+    },
+    "camera": "push",
+    "tag": {
+     "name": "Kaito",
+     "role": "no phone"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "He said his name was Noel, and that it was 1995.",
+   "say": "(happy) He said his name was Noel, and that it was 1995.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "house",
+    "time": "sunset",
+    "cast": [
+     "Leo"
+    ],
+    "face": "happy",
+    "action": "talk",
+    "prop": {
+     "type": "walkie"
+    },
+    "camera": "push",
+    "trans": "glitch",
+    "tag": {
+     "name": "Noel",
+     "role": "year 1995"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "I laughed. But he had never heard of a phone.",
+   "say": "(happy) I laughed. But he had never heard of a phone.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "laugh",
+    "action": "still",
+    "prop": {
+     "type": "walkie"
+    },
+    "camera": "close"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So every night we talked. He was terrible at math, so I helped him.",
+   "say": "(happy) So every night we talked. He was terrible at math, so I helped him.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Kaito"
+    ],
+    "face": "happy",
+    "action": "talk",
+    "prop": {
+     "type": "walkie"
+    },
+    "camera": "pull"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Then one night, Noel said a big kid took his lunch every single day.",
+   "say": "(sad) Then one night, Noel said a big kid took his lunch every single day.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "set": "hallway",
+    "time": "day",
+    "cast": [
+     "Rex",
+     "Leo"
+    ],
+    "face": "smirk",
+    "action": "pickup",
+    "camera": "push",
+    "mood": "danger"
+   },
+   "acting": {}
+  },
+  {
+   "text": "I told him what my dad always tells me. Stand tall. Look him in the eye. Say no.",
+   "say": "(serious) I told him what my dad always tells me. Stand tall. Look him in the eye. Say no.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "determined",
+    "action": "talk",
+    "prop": {
+     "type": "walkie"
+    },
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "The next night, he didn't answer. Or the night after that.",
+   "say": "(worried) The next night, he didn't answer. Or the night after that.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "shot": {
+    "cast": [
+     "Kaito"
+    ],
+    "face": "worried",
+    "action": "still",
+    "prop": {
+     "type": "walkie"
+    },
+    "camera": "high",
+    "mood": "sad"
+   },
+   "acting": {}
+  },
+  {
+   "text": "I ran to tell Dad the walkie-talkie was broken.",
+   "say": "(nervous) I ran to tell Dad the walkie-talkie was broken.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "set": "house",
+    "time": "night",
+    "cast": [
+     "Kaito",
+     "Teacher"
+    ],
+    "face": "worried",
+    "action": "run",
+    "camera": "follow"
+   },
+   "acting": {}
+  },
+  {
+   "text": "He was holding an old photo. A boy with a walkie-talkie. On the back: Noel, 1995.",
+   "say": "(soft tone) He was holding an old photo. A boy with a walkie-talkie. On the back: Noel, 1995.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "cast": [
+     "Teacher",
+     "Kaito"
+    ],
+    "face": "happy",
+    "action": "still",
+    "prop": {
+     "type": "sign",
+     "text": "1995"
+    },
+    "camera": "push",
+    "trans": "flash"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Dad smiled. Thanks for the math help. And for the advice.",
+   "say": "(happy) Dad smiled. Thanks for the math help. And for the advice.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Teacher",
+     "Kaito"
+    ],
+    "face": "happy",
+    "action": "talk",
+    "camera": "pull",
+    "mood": "win"
+   },
+   "acting": {}
+  }
+ ],
+ "word_count": 130,
+ "est_seconds": 38.2,
+ "tail_hold": 1.2,
+ "upload": {
+  "title": "The Walkie-Talkie From 1995 #Shorts",
+  "description": "A kid answered my walkie-talkie. He said it was 1995.\nWait for the photo.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "walkie talkie story",
+   "time travel story",
+   "dad story",
+   "plot twist",
+   "roblox story",
+   "animated story",
+   "emotional story",
+   "story time",
+   "animated story",
+   "roblox story"
+  ]
+ }
+}

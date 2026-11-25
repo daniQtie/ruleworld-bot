@@ -1,0 +1,497 @@
+{
+ "id": "2026-11-27-story-21",
+ "version": 2,
+ "source": "Claude, new hook/logic/twist method; owner approved the text drafts 2026-11-25 (scripts/drafts-2026-11-25-new-method.md); v2 per owner revision 2026-11-25 (Rule AE: explicit twist, backstory, resolution, longer)",
+ "hook_type": {
+  "number": null,
+  "name": "new method (owner-approved drafts, exempt from rotation)"
+ },
+ "format": {
+  "number": null,
+  "name": "Story with a fair twist"
+ },
+ "title_working": "The Walkie-Talkie From 1995",
+ "hook_text": "A KID ANSWERED FROM 1995",
+ "hook_until": 2.6,
+ "music": "tender",
+ "music_gain": 0.13,
+ "world_rule": "The Walkie-Talkie From 1995",
+ "lines": [
+  {
+   "text": "My dad gave me an old walkie-talkie instead of a phone. That night, a kid answered.",
+   "say": "(nervous) My dad gave me an old walkie-talkie instead of a phone. That night, a kid answered.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "surprised",
+    "action": "still",
+    "prop": {
+     "type": "walkie"
+    },
+    "camera": "push",
+    "tag": {
+     "name": "Kaito",
+     "role": "no phone"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "He said his name was Noel, and that it was 1995.",
+   "say": "(happy) He said his name was Noel, and that it was 1995.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "house",
+    "time": "sunset",
+    "cast": [
+     "Leo"
+    ],
+    "face": "happy",
+    "action": "talk",
+    "prop": {
+     "type": "walkie"
+    },
+    "camera": "push",
+    "trans": "glitch",
+    "tag": {
+     "name": "Noel",
+     "role": "year 1995"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "I laughed. But he had never heard of a phone, or the internet.",
+   "say": "(happy) I laughed. But he had never heard of a phone, or the internet.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "laugh",
+    "action": "still",
+    "prop": {
+     "type": "walkie"
+    },
+    "camera": "close"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So every night, we talked. He was terrible at math, so I helped him with his homework.",
+   "say": "(happy) So every night, we talked. He was terrible at math, so I helped him with his homework.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Kaito"
+    ],
+    "face": "happy",
+    "action": "talk",
+    "prop": {
+     "type": "walkie"
+    },
+    "camera": "pull"
+   },
+   "acting": {}
+  },
+  {
+   "text": "He told me his biggest dream. One day, he wanted a son he could talk to every night.",
+   "say": "(soft tone) He told me his biggest dream. One day, he wanted a son he could talk to every night.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "set": "house",
+    "time": "sunset",
+    "cast": [
+     "Leo"
+    ],
+    "face": "happy",
+    "action": "still",
+    "prop": {
+     "type": "walkie"
+    },
+    "camera": "close",
+    "mood": "win"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Then one night, Noel sounded scared. A big kid named Vince took his lunch every single day.",
+   "say": "(sad) Then one night, Noel sounded scared. A big kid named Vince took his lunch every single day.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "set": "hallway",
+    "time": "day",
+    "cast": [
+     "Vince",
+     "Leo"
+    ],
+    "face": "smirk",
+    "action": "pickup",
+    "camera": "push",
+    "mood": "danger",
+    "tag": {
+     "name": "Vince",
+     "role": "the big kid"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "I told him what my dad always tells me. Stand tall. Look him in the eye. Say no.",
+   "say": "(serious) I told him what my dad always tells me. Stand tall. Look him in the eye. Say no.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "determined",
+    "action": "talk",
+    "prop": {
+     "type": "walkie"
+    },
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "The next night, he didn't answer. Or the night after that. Or ever again.",
+   "say": "(worried) The next night, he didn't answer. Or the night after that. Or ever again.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "shot": {
+    "cast": [
+     "Kaito"
+    ],
+    "face": "worried",
+    "action": "still",
+    "prop": {
+     "type": "walkie"
+    },
+    "camera": "high",
+    "mood": "sad"
+   },
+   "acting": {}
+  },
+  {
+   "text": "I ran to tell Dad the walkie-talkie was broken.",
+   "say": "(nervous) I ran to tell Dad the walkie-talkie was broken.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "set": "house",
+    "time": "sunset",
+    "cast": [
+     "Kaito",
+     "Teacher"
+    ],
+    "face": "worried",
+    "action": "walk",
+    "camera": "follow"
+   },
+   "acting": {}
+  },
+  {
+   "text": "But Dad wasn't surprised. He was holding an old photo.",
+   "say": "(soft tone) But Dad wasn't surprised. He was holding an old photo.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "cast": [
+     "Teacher",
+     "Kaito"
+    ],
+    "face": "happy",
+    "action": "still",
+    "camera": "push",
+    "tag": {
+     "name": "Dad",
+     "role": "my dad"
+    },
+    "time": "sunset"
+   },
+   "acting": {}
+  },
+  {
+   "text": "It was a boy with the same yellow walkie-talkie. On the back, it said: Noel, 1995.",
+   "say": "(serious) It was a boy with the same yellow walkie-talkie. On the back, it said: Noel, 1995.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "cast": [
+     "Kaito"
+    ],
+    "face": "shocked",
+    "action": "still",
+    "prop": {
+     "type": "sign",
+     "text": "NOEL 1995"
+    },
+    "camera": "push",
+    "trans": "flash",
+    "time": "sunset"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Then it hit me. My dad's name is Noel. The boy on the walkie-talkie was my dad, when he was ten.",
+   "say": "(nervous) Then it hit me. My dad's name is Noel. The boy on the walkie-talkie was my dad, when he was ten.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "cast": [
+     "Kaito",
+     "Teacher"
+    ],
+    "face": "shocked",
+    "action": "still",
+    "camera": "eye",
+    "glitch": true,
+    "time": "sunset"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Dad said, The next day, I stood tall and said no. Vince never took my lunch again.",
+   "say": "(happy) Dad said, The next day, I stood tall and said no. Vince never took my lunch again.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "hallway",
+    "time": "day",
+    "cast": [
+     "Leo",
+     "Vince"
+    ],
+    "face": "determined",
+    "action": "disagree",
+    "camera": "push",
+    "mood": "win"
+   },
+   "acting": {}
+  },
+  {
+   "text": "I never found out who that voice was. Not until tonight.",
+   "say": "(soft tone) I never found out who that voice was. Not until tonight.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "set": "house",
+    "time": "sunset",
+    "cast": [
+     "Teacher",
+     "Kaito"
+    ],
+    "face": "happy",
+    "action": "talk",
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So the advice my dad gave me all my life, he got it from me.",
+   "say": "(soft tone) So the advice my dad gave me all my life, he got it from me.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "cast": [
+     "Kaito"
+    ],
+    "face": "starstruck",
+    "action": "still",
+    "camera": "close",
+    "time": "sunset"
+   },
+   "acting": {}
+  },
+  {
+   "text": "He hugged me and said, Thanks for the math help, son. You were the best friend I ever had.",
+   "say": "(sad) He hugged me and said, Thanks for the math help, son. You were the best friend I ever had.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "cast": [
+     "Teacher",
+     "Kaito"
+    ],
+    "face": "sob",
+    "action": "hug",
+    "camera": "pull",
+    "mood": "win",
+    "time": "sunset"
+   },
+   "acting": {}
+  },
+  {
+   "text": "His dream came true. Now Dad and I talk every night. No walkie-talkie needed.",
+   "say": "(happy) His dream came true. Now Dad and I talk every night. No walkie-talkie needed.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "cast": [
+     "Kaito",
+     "Teacher"
+    ],
+    "face": "laugh",
+    "action": "talk",
+    "camera": "wide",
+    "mood": "win"
+   },
+   "acting": {}
+  }
+ ],
+ "word_count": 256,
+ "est_seconds": 75.3,
+ "tail_hold": 2.8,
+ "upload": {
+  "title": "The Walkie-Talkie From 1995 #Shorts",
+  "description": "A kid answered my walkie-talkie. He said it was 1995.\nWait for the photo.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "walkie talkie story",
+   "time travel story",
+   "dad story",
+   "plot twist",
+   "roblox story",
+   "animated story",
+   "emotional story",
+   "story time",
+   "animated story",
+   "roblox story"
+  ]
+ }
+}

@@ -1,0 +1,49 @@
+{
+  "episode_id": "2026-11-21-story-01",
+  "hook_type": {"number": 5, "name": "The Bold Statement / Controversial Hook"},
+  "format": {"number": 1, "name": "In This Town..."},
+  "premise": "In This Town, Being Kind Costs You Everything You're Wearing...",
+  "world_rule": "In Mirrowick, every time you do something kind for someone, one accessory you are wearing jumps onto them. Help with a bag: your hat is now theirs. Share lunch: your glasses are gone. Hold a door: your scarf flies to the person who walked through. Because of this, nobody in town has helped anybody for years, and everyone wears the same plain outfit.",
+  "characters": {
+    "protagonist": {"name": "Milo", "want": "Find his missing little sister's trail; arrives from outside covered in accessories (crown of hats, scarves, glasses, backpack) and doesn't know the rule. Secret: every accessory he wears was given to him by people he once helped back home, and he is the only person who has ever received kindness and kept it."},
+    "mentor": {"name": "Old Mayor Tilda", "motive": "Oldest resident, plain outfit, no accessories at all. Explains the rule and tells Milo the one 'fix': stop being kind. He refuses."},
+    "supporting": [
+      {"name": "Pip", "motive": "Town kid who has never owned a single accessory because nobody dares help him; wants a hat of his own."},
+      {"name": "The Baker", "motive": "Cold and grumpy; hasn't shared bread in years, secretly lonely."},
+      {"name": "Sister (Lena)", "motive": "Milo's little sister, vanished into the town months ago; secret reveal."}
+    ]
+  },
+  "beats": [
+    {"n": 1, "name": "Rule + 3 examples", "text": "Bold opener: 'In this town, being kind will cost you everything you're wearing.' Examples: carry a bag, your hat flies to them; share lunch, your glasses vanish; hold a door, your scarf wraps the stranger. Because of this, nobody ever helped anybody."},
+    {"n": 2, "name": "Outsider with a secret", "text": "One day Milo arrived wearing more accessories than anyone had ever seen, and he had a secret."},
+    {"n": 3, "name": "First consequence", "text": "Pip trips; Milo helps him up and his cap jumps to Pip's head. Pip's face lights up, but something is strange: Milo's hair flickers a little brighter."},
+    {"n": 4, "name": "Mentor", "text": "Mayor Tilda warns: stop helping or you'll end up like me, with nothing. Milo refuses."},
+    {"n": 5, "name": "Wider escalation", "text": "Milo keeps helping: the baker gets a scarf, a fisher gets glasses, the town square slowly fills with colour. Villagers argue over who is 'allowed' to be helped; some hide, afraid of kindness."},
+    {"n": 6, "name": "Mystery", "text": "Milo, down to a plain outfit, follows a trail of single accessories (a tiny red hat, a ribbon) to the lighthouse hill; clues lead to a hidden cellar, the Lost And Found."},
+    {"n": 7, "name": "Stacked reveals", "text": "Milo's secret: he never lost his accessories to the rule; he came because his little sister Lena wandered here and gave away everything helping others. She is the small plain kid who has been quietly leaving gifts for the town. Emotional beat: she did not recognise him, because she had given away even her scarf, the one he knitted her."},
+    {"n": 8, "name": "Resolution through the theme", "text": "The rule was never a punishment: accessories jump to the helped person, and when that person says 'thank you' out loud and passes one kindness on, it returns, brighter. Gratitude closes the circle. The town starts thanking each other and everything comes back."},
+    {"n": 9, "name": "Mentor twist", "text": "Mayor Tilda, who has worn nothing for years, finally gets thanked by the whole town, and a golden crown appears on her head. She was the one who gave the town everything long ago."},
+    {"n": 10, "name": "Sequel hook", "text": "In the Lost And Found cellar, one tiny chest stayed locked, and a note on it read: 'For the one who was helped first.'"}
+  ],
+  "why_it_works": "Bold, slightly shocking hook (kindness is dangerous) that creates instant curiosity and pays off in the theme (gratitude/kindness). Fully visual: transformations are accessory swaps and colour changes on blocky avatars, simple poses, strong emotional family beat, kid-safe and universal worldwide.",
+  "closest_existing": "TeamDeam 'wish for 1 thing on Christmas' / 'golden gift except me' touch on giving, but their rules are about wishes and gifts; ours is an accessory-transfer rule with a gratitude resolution. No exact 'kindness costs your outfit' premise found.",
+  "pattern_sources": [
+    "https://youtube.com/shorts/0m8uFEfLv1g",
+    "https://www.youtube.com/@TeamDeam-q6r"
+  ],
+  "search_note": "Quick WebSearch for other 'In This Town' Roblox story shorts returned nothing relevant (only the unrelated Roblox game 'In This Town' and spam); no overlap found. Avoid TeamDeam titles listed by the owner.",
+  "candidates": [
+    {"title": "In This Town, Your Clothes Change Colour With What You Really Feel...", "one_line": "Mood-colour town; outsider hides his feelings in grey; honesty theme. Closest to the lie-animal theme, so dropped."},
+    {"title": "In This Town, Your Shadow Does What You Were Too Scared To Do...", "one_line": "Shadows act out refused fears; courage theme; hard to render shadows as distinct characters in AI shots."},
+    {"title": "In This Town, Anything You Borrow Must Be Returned By Sunset Or You Shrink...", "one_line": "Promise-keeping theme; shrinking is hard to show consistently."},
+    {"title": "In This Town, The Last Person You Thanked Wears Your Hat...", "one_line": "Gratitude variation; too close to the chosen premise, merged into it as the resolution."}
+  ],
+  "notes_for_scriptwriter": [
+    "Pure natural English, third person past tense, simple sentences, lots of Suddenly / But then / Meanwhile. 2:30-3:00, about 400-470 words.",
+    "Opener must be the Bold Statement hook about the world: 'In this town, being kind will cost you everything you're wearing.' and pay off in the story.",
+    "Transformations = accessory swaps only (hat, glasses, scarf, backpack, crown); keep each character's base outfit colour fixed for consistency.",
+    "Kid-safe: no violence, no real people; Lena is safe at the end.",
+    "Keep the rule to 3 examples fast, then 'Because of this, nobody ever helped anybody'.",
+    "Do not reuse any TeamDeam names, lines or twists."
+  ]
+}

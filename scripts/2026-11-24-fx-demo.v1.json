@@ -1,0 +1,189 @@
+{
+ "id": "2026-11-24-fx-demo",
+ "version": 1,
+ "source": "TeamDeam 'The Teacher Banned Talking In Class For Weeks' (1.7M) premise; new wording, names and an extra twist ending",
+ "hook_type": {
+  "number": null,
+  "name": "owner-directed (exempt from rotation)"
+ },
+ "format": {
+  "number": 1,
+  "name": "No talking for a week"
+ },
+ "title_working": "Our Teacher Banned Talking For A Whole Week",
+ "hook_text": "NOBODY CAN ANSWER HIM",
+ "hook_until": 2.6,
+ "music": "bounce",
+ "music_gain": 0.13,
+ "world_rule": "No talking for a week",
+ "lines": [
+  {
+   "text": "Our teacher banned talking for a whole week.",
+   "say": "(confident) Our teacher banned talking for a whole week.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Say one word, he warned, and you get detention.",
+   "say": "(serious) Say one word, he warned, and you get detention.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "stern",
+    "tags": "(serious)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "So the whole class went completely silent.",
+   "say": "(soft tone) So the whole class went completely silent.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": -1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "hushed",
+    "tags": "(soft tone)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Then he started the lesson like nothing had happened.",
+   "say": "(happy) Then he started the lesson like nothing had happened.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "matter-of-fact",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Okay, who knows the answer to this one?",
+   "say": "(confident) Okay, who knows the answer to this one?",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "teacher",
+    "tags": "(confident)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Nobody moved. Thirty kids, just staring at him.",
+   "say": "(nervous) Nobody moved. Thirty kids, just staring at him.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "tense",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Come on! Somebody answer me!",
+   "say": "(angry) Come on! Somebody answer me!",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 2,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "frustrated",
+    "tags": "(angry)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Then Leo slowly raised his hand, and pointed at the board.",
+   "say": "(nervous) Then Leo slowly raised his hand, and pointed at the board.",
+   "speaker": "narrator",
+   "speed": 0.88,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "slow build",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "No talking. The teacher had asked a question nobody was allowed to answer.",
+   "say": "(happy) No talking. The teacher had asked a question nobody was allowed to answer.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 1,
+   "pause": 0.35,
+   "beat": "",
+   "voice": {
+    "emotion": "punchline",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "The next week, he banned homework instead. And nobody said a word.",
+   "say": "(happy) The next week, he banned homework instead. And nobody said a word.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 1,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "playful",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  }
+ ],
+ "word_count": 90,
+ "est_seconds": 25.7,
+ "tail_hold": 1.2,
+ "upload": {
+  "title": "Our Teacher Banned Talking For A Whole Week #Shorts",
+  "description": "He banned talking, then asked the class a question. Would you have answered?\nTell us below.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "teacher banned talking",
+   "funny school story",
+   "no talking challenge",
+   "school story",
+   "plot twist story",
+   "animated story",
+   "story time animation",
+   "roblox story",
+   "roblox animation"
+  ]
+ }
+}

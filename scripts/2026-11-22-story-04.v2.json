@@ -1,0 +1,455 @@
+{
+ "id": "2026-11-22-story-04",
+ "version": 2,
+ "source": "owner-approved draft scripts/2026-11-22-story-04.DRAFT.md; skeleton modelled on a competitor Short (structure only, new words)",
+ "hook_type": {
+  "number": null,
+  "name": "owner-directed (exempt from rotation)"
+ },
+ "format": {
+  "number": 9,
+  "name": "Family and School Situations"
+ },
+ "title_working": "Nobody Noticed Her, Until The Votes Came In",
+ "music": "musicbox",
+ "world_rule": "Not a rule world: a school class votes for the person they'd want beside them on a bad day.",
+ "logline": "The girl nobody noticed wins the class vote, and the reason is a silence she once shared.",
+ "characters": [
+  {
+   "name": "Ellie",
+   "role": "protagonist (barely speaks)",
+   "want": "to be left alone / to belong",
+   "look": {
+    "skin": "#e4a676",
+    "hair": "long brown, side fringe",
+    "clothes": "oversized mustard cardigan, teal pants",
+    "accessories": "sleeves pulled over her hands",
+    "scale": 0.9
+   }
+  },
+  {
+   "name": "Maya",
+   "role": "class president, expected winner",
+   "look": {
+    "skin": "#f0c9a6",
+    "hair": "blonde bun",
+    "clothes": "red blazer, navy skirt",
+    "scale": 1.0
+   }
+  },
+  {
+   "name": "Theo",
+   "role": "the boy who tells the truth",
+   "look": {
+    "skin": "#8d5a3a",
+    "hair": "short black",
+    "clothes": "orange hoodie, jeans",
+    "scale": 0.95
+   }
+  },
+  {
+   "name": "Mr. Reed",
+   "role": "teacher",
+   "look": {
+    "skin": "#d9a27a",
+    "hair": "grey short, round glasses",
+    "clothes": "teal striped shirt",
+    "scale": 1.08
+   }
+  },
+  {
+   "name": "Classmates",
+   "role": "extras",
+   "look": "varied bright hoodies and hair styles, 5 distinct avatars"
+  },
+  {
+   "name": "Mia",
+   "role": "classmate (testimony)",
+   "look": "stu3: pink heart top, dark pigtails"
+  },
+  {
+   "name": "Sam",
+   "role": "classmate (testimony)",
+   "look": "stu4: blue striped shirt, short black hair"
+  }
+ ],
+ "locations": [
+  "classroom (board reads CLASS VOTE)",
+  "library",
+  "hallway with lockers (flashback)"
+ ],
+ "lines": [
+  {
+   "text": "Nobody noticed her, until the votes came in.",
+   "say": "(confident) Nobody noticed her, until the votes came in.",
+   "speaker": "narrator",
+   "beat": "hook",
+   "speed": 0.9,
+   "volume": 2,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "title hook",
+    "tags": "(confident)"
+   },
+   "shot": "Close on a ballot box labelled VOTE; a hand drops a folded paper through the slot.",
+   "acting": {}
+  },
+  {
+   "text": "The class voted for the person they'd want beside them on a bad day.",
+   "say": "(calm) The class voted for the person they'd want beside them on a bad day.",
+   "speaker": "narrator",
+   "beat": "setup",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "calm",
+    "tags": "(calm)"
+   },
+   "shot": "Classroom: the board reads CLASS VOTE; students write names on slips of paper.",
+   "acting": {}
+  },
+  {
+   "text": "Everyone expected Maya, the class president, to win.",
+   "say": "(calm) Everyone expected Maya, the class president, to win.",
+   "speaker": "narrator",
+   "beat": "expect",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "calm",
+    "tags": "(calm)"
+   },
+   "shot": "Maya in a red blazer waves and smiles; classmates cheer her.",
+   "acting": {
+    "Maya": "smug, confident"
+   }
+  },
+  {
+   "text": "Nobody even looked at Ellie, the girl in the oversized cardigan.",
+   "say": "(sad)(soft tone) Nobody even looked at Ellie, the girl in the oversized cardigan.",
+   "speaker": "narrator",
+   "beat": "underdog",
+   "speed": 0.82,
+   "volume": -3,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)(soft tone)"
+   },
+   "shot": "Ellie sits alone at the back, head down, sleeves over her hands.",
+   "acting": {
+    "Ellie": "shy, sad, eyes down"
+   }
+  },
+  {
+   "text": "She ate lunch alone in the library, every single day.",
+   "say": "(sad)(soft tone) She ate lunch alone in the library, every single day.",
+   "speaker": "narrator",
+   "beat": "stakes",
+   "speed": 0.82,
+   "volume": -3,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "lonely",
+    "tags": "(sad)(soft tone)"
+   },
+   "shot": "Library: one long table, a single tray and an open book; Ellie eats alone.",
+   "acting": {
+    "Ellie": "lonely"
+   }
+  },
+  {
+   "text": "But she always noticed who else was alone.",
+   "say": "(calm)(soft tone) But she always noticed who else was alone.",
+   "speaker": "narrator",
+   "beat": "stakes",
+   "speed": 0.85,
+   "volume": -2,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "tender",
+    "tags": "(calm)(soft tone)"
+   },
+   "shot": "In the library doorway, Ellie glances up from her book at a boy sitting alone in the hallway.",
+   "acting": {
+    "Ellie": "noticing, gentle"
+   }
+  },
+  {
+   "text": "When the teacher read the result, the room went silent.",
+   "say": "(nervous) When the teacher read the result, the room went silent.",
+   "speaker": "narrator",
+   "beat": "twist",
+   "speed": 0.85,
+   "volume": -2,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "tension",
+    "tags": "(nervous)"
+   },
+   "shot": "Mr. Reed at the front, holding a paper; every student frozen and staring.",
+   "acting": {
+    "Mr. Reed": "stunned",
+    "students": "frozen"
+   }
+  },
+  {
+   "text": "Ellie had won. By a lot.",
+   "say": "(surprised) Ellie had won. By a lot.",
+   "speaker": "narrator",
+   "beat": "twist",
+   "speed": 0.96,
+   "volume": 4,
+   "pause": 0.45,
+   "voice": {
+    "emotion": "shock",
+    "tags": "(surprised)"
+   },
+   "shot": "Ellie looks up, wide-eyed, then looks behind her to see who they mean.",
+   "acting": {
+    "Ellie": "surprised"
+   }
+  },
+  {
+   "text": "Someone laughed.",
+   "say": "(calm) Someone laughed.",
+   "speaker": "narrator",
+   "beat": "doubt",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "mocking",
+    "tags": "(calm)"
+   },
+   "shot": "Two students laugh, one with squeezed-shut eyes.",
+   "acting": {
+    "students": "laughing"
+   }
+  },
+  {
+   "text": "This has to be a prank.",
+   "say": "(frustrated) This has to be a prank.",
+   "speaker": "Kid",
+   "beat": "doubt",
+   "speed": 0.96,
+   "volume": 2,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "disbelief",
+    "tags": "(frustrated)"
+   },
+   "shot": "A boy waves the idea away, scoffing.",
+   "acting": {
+    "Kid": "scoffing"
+   }
+  },
+  {
+   "text": "So the teacher recounted every vote. They were all real.",
+   "say": "(calm) So the teacher recounted every vote. They were all real.",
+   "speaker": "narrator",
+   "beat": "proof",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "calm",
+    "tags": "(calm)"
+   },
+   "shot": "Mr. Reed counts the slips one at a time on his desk; a tall stack grows beside Ellie's name.",
+   "acting": {
+    "Mr. Reed": "serious"
+   }
+  },
+  {
+   "text": "Maya stared at the paper, speechless.",
+   "say": "(surprised) Maya stared at the paper, speechless.",
+   "speaker": "narrator",
+   "beat": "rival",
+   "speed": 0.94,
+   "volume": 3,
+   "pause": 0.45,
+   "voice": {
+    "emotion": "shock",
+    "tags": "(surprised)"
+   },
+   "shot": "Maya, mouth open, the paper trembling in her hands.",
+   "acting": {
+    "Maya": "shocked"
+   }
+  },
+  {
+   "text": "That... that can't be right.",
+   "say": "(nervous) That... that can't be right.",
+   "speaker": "Maya",
+   "beat": "rival",
+   "speed": 0.92,
+   "volume": 1,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "disbelief",
+    "tags": "(nervous)"
+   },
+   "shot": "Maya, paper shaking in her hands, shakes her head.",
+   "acting": {
+    "Maya": "shaken, disbelief"
+   }
+  },
+  {
+   "text": "Then Theo, a boy at the back, stood up.",
+   "say": "(nervous) Then Theo, a boy at the back, stood up.",
+   "speaker": "narrator",
+   "beat": "turn",
+   "speed": 0.9,
+   "volume": 1,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "tension",
+    "tags": "(nervous)"
+   },
+   "shot": "Theo pushes his chair back and rises; every head turns.",
+   "acting": {
+    "Theo": "nervous, determined"
+   }
+  },
+  {
+   "text": "Last spring, I cried in the hallway after bad news. Everyone walked past.",
+   "say": "(sad)(soft tone) Last spring, I cried in the hallway after bad news. Everyone walked past.",
+   "speaker": "Theo",
+   "beat": "reveal",
+   "speed": 0.82,
+   "volume": -3,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)(soft tone)"
+   },
+   "shot": "Flashback (cool tint): a hallway of lockers; Theo sits on the floor, head down, kids stream past.",
+   "acting": {
+    "Theo": "crying"
+   }
+  },
+  {
+   "text": "Ellie sat down next to me. She didn't say a word. She just stayed.",
+   "say": "(moved)(soft tone) Ellie sat down next to me. She didn't say a word. She just stayed.",
+   "speaker": "Theo",
+   "beat": "reveal",
+   "speed": 0.82,
+   "volume": -3,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "tender",
+    "tags": "(moved)(soft tone)"
+   },
+   "shot": "Flashback: Ellie sits beside Theo on the floor, shoulder to shoulder, silent.",
+   "acting": {
+    "Ellie": "gentle",
+    "Theo": "comforted"
+   }
+  },
+  {
+   "text": "She waited with me when nobody came to pick me up.",
+   "say": "(moved)(soft tone) She waited with me when nobody came to pick me up.",
+   "speaker": "Mia",
+   "beat": "payoff",
+   "speed": 0.85,
+   "volume": -2,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "tender",
+    "tags": "(moved)(soft tone)"
+   },
+   "shot": "Mia (pigtails) stands, smiling at Ellie.",
+   "acting": {
+    "Mia": "warm"
+   }
+  },
+  {
+   "text": "She gave me her lunch when I forgot mine.",
+   "say": "(moved)(soft tone) She gave me her lunch when I forgot mine.",
+   "speaker": "Sam",
+   "beat": "payoff",
+   "speed": 0.88,
+   "volume": -1,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "tender",
+    "tags": "(moved)(soft tone)"
+   },
+   "shot": "Sam (blue stripes) stands, grinning.",
+   "acting": {
+    "Sam": "warm"
+   }
+  },
+  {
+   "text": "One by one, hands went up. Ellie had stayed for all of them.",
+   "say": "(moved) One by one, hands went up. Ellie had stayed for all of them.",
+   "speaker": "narrator",
+   "beat": "payoff",
+   "speed": 0.88,
+   "volume": 0,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "warm",
+    "tags": "(moved)"
+   },
+   "shot": "Hand after hand rises across the room; Ellie turns, eyes filling with tears.",
+   "acting": {
+    "students": "raising hands",
+    "Ellie": "holding back tears"
+   }
+  },
+  {
+   "text": "Ellie never knew anyone was counting.",
+   "say": "(moved)(soft tone) Ellie never knew anyone was counting.",
+   "speaker": "narrator",
+   "beat": "landing",
+   "speed": 0.82,
+   "volume": -2,
+   "pause": 0.45,
+   "voice": {
+    "emotion": "tender",
+    "tags": "(moved)(soft tone)"
+   },
+   "shot": "Ellie, tears in her eyes, smiles shyly; the class begins to clap.",
+   "acting": {
+    "Ellie": "happy, touched"
+   }
+  },
+  {
+   "text": "Kindness doesn't have to be loud to win.",
+   "say": "(confident)(soft tone) Kindness doesn't have to be loud to win.",
+   "speaker": "narrator",
+   "beat": "landing",
+   "speed": 0.85,
+   "volume": 0,
+   "pause": 0,
+   "voice": {
+    "emotion": "warm",
+    "tags": "(confident)(soft tone)"
+   },
+   "shot": "Final image: Ellie in warm light among her smiling classmates, Maya clapping too.",
+   "acting": {}
+  }
+ ],
+ "word_count": 187,
+ "est_seconds": 43.1,
+ "tail_hold": 2.0,
+ "upload": {
+  "title": "Nobody Noticed Her, Until The Votes Came In #Shorts",
+  "description": "The whole class voted. Nobody expected her to win.\nWho made the biggest difference to you, without saying a word? Tell us below.\nA quiet girl wins a class vote, and the reason makes the room go silent.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animation #storytime #shorts",
+  "tags": [
+   "roblox story",
+   "roblox animation",
+   "school story",
+   "quiet girl",
+   "kindness story",
+   "animated story",
+   "emotional story",
+   "story time animation"
+  ]
+ },
+ "changes_from_previous": "QA v1 (7.92) fixes: payoff made specific (Mia and Sam each say what Ellie did, then the hands); bridge line 'But she always noticed who else was alone' with a library-doorway glance; 'The class voted' (narrator is outside the class); line 8 mood tag calm; Maya gets a reaction line; Theo is named; shock volumes re-balanced (line 7 loudest)."
+}

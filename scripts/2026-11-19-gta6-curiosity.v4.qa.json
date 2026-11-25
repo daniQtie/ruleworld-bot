@@ -1,0 +1,64 @@
+{
+  "pass": false,
+  "average": 7.7,
+  "scores": {"hook": 8, "stakes": 8, "open_loop": 8, "escalation": 8, "payoff": 7, "surprise": 7, "ending": 8, "clarity": 8, "facts": 8, "originality": 7, "entertainment": 8},
+  "hard_gates": {"hook_rotation_assigned_type": true, "benny_in_story": true, "length_25_35s": true, "english_clear": true, "rule_D_gta_acronym": true},
+  "hook_gate": {
+    "assigned": "#3 Curiosity / Shock",
+    "script_hook_type": 3,
+    "previous_episode": "2026-11-19-gta6-listicle (#2)",
+    "different_from_previous": true,
+    "style_check": "Line 1 withholds WHO the writer is. The name comes in line 4 (about 11 s in) and the 'still a GTA game?' question pays off in line 7. It is a real curiosity gap, not a bait-and-switch. Weakness: 'Tomorrow, GTA six comes out' (0-2 s) is old news, and the shock only lands at about 2.5 s on 'did not write it'."
+  },
+  "rule_D": "PASS. say = 'GTA six' in one piece in lines 1 and 6, with no spelled-out form. Line 7 says 'GTA game' (no number). text/badge/sign = 'GTA 6'. Rule A/B: voice 'March twenty twenty' vs caption/badge 'MARCH 2020' is the same value written as digits; same accepted pattern as 'six' / '6'. No Rule A/B/C violation found.",
+  "format": {
+    "spoken_words": 68,
+    "note": "The script's math_check counts 67 because it counts 'twenty twenty' as one word. Still inside 55-75. Longest sentence 12 words. Estimate about 31-33 s at speed 0.9. 11 scenes. on_screen is 5 words or fewer per moment. The A/B rows total 6 tokens ('A: STILL GTA' / 'B: NOT GTA'), shown on separate rows."
+  },
+  "factual_accuracy": [
+    {"line": "L1 'Tomorrow, GTA six comes out.'", "verdict": "SUPPORTED", "note": "Nov 19, 2026 is verified, but the research note says the fetched page bodies were truncated and the exact day came from search summaries. Re-open one source before publishing. 'Tomorrow' is true only for viewers before midnight ET Nov 19 (see timing)."},
+    {"line": "L1 'Its famous writer did not write it.'", "verdict": "ACCURATE BUT UNATTRIBUTED", "note": "Backed by Houser's own IGN quote (TechRadar/PC Gamer, Sept 2025) and he was the lead writer of the GTA stories. In line 1 it is stated in the narrator's voice, with 'he said' only in line 6. Fair to Houser and Rockstar because it is his own statement and no wrongdoing is implied. 'Its famous writer' is fair: Rockstar had other writers, but Houser is the famous one. Safer: 'Its famous writer says he did not write it.' (13 words, sentences 5+8, still legal), but this weakens the withhold. Optional, not required."},
+    {"line": "L2 restaurant parable (chef quits, sign stays)", "verdict": "ACCURATE AS ANALOGY", "note": "Chef = writer, sign = GTA name, quits = left Rockstar. Houser's departure was announced by Take-Two and he later described it as his own decision (BBC Radio 4). 'Quits' is fair."},
+    {"line": "L3 'It tastes different.' + scene 5 visual (face flip, tongue out, slump, 'HUH?')", "verdict": "UNSUPPORTED INSINUATION (policy risk)", "note": "No verified row says GTA 6 is worse or different, and the research notes say 'Do not say the game is bad'. Houser himself said the game will be great. Benny's disgusted reaction implies a quality drop, which is the one real exposure for Rockstar. Fix: make the reaction curious, not disgusted (scene 5: no tongue-out/slump), or say 'Benny bites in. Is it the same?'."},
+    {"line": "L4 'The chef is Dan Houser. He wrote Rockstar's famous stories.'", "verdict": "SUPPORTED, slightly broad", "note": "Research row: co-founder, VP of Creative, lead writer of the GTA and Red Dead stories. 'He wrote' can read as sole author. Better 'He led the writing of Rockstar's famous stories.'"},
+    {"line": "L5 'He left in March twenty twenty, after a long break.'", "verdict": "ACCURATE", "note": "Last day was March 11, 2020. Take-Two's filing (Feb 2020) says extended break since spring 2019, so 'a long break' is correct. No reason is given and none is implied. The dropped burnout, vacation and 100-hour claims are NOT present. Good."},
+    {"line": "L6 'Last year, he said he wrote none of GTA six.'", "verdict": "SUPPORTED", "note": "IGN, reported Sept 30, 2025: 'not going to be a story that I wrote or a character set that I developed'. PC Gamer headline says he 'didn't write any of GTA 6'. 'Last year' is correct from Nov 2026. The bubble 'I WROTE NONE' is a paraphrase, not a verbatim quote: acceptable, since the bubble is not in quotation marks and the voice says 'he said'."},
+    {"line": "L7 'Still a GTA game? Comment A or B.'", "verdict": "OPINION", "note": "Fine. It is an opinion question and states no fact."},
+    {"line": "Visual: Houser shown as a hooded 'stranger' with glowing eyes, smug", "verdict": "FAIRNESS RISK", "note": "A real, named person is drawn as a shadowy figure with glowing eyes and a smug grin. This is not defamatory, but it reads as sinister and shady in a story that says 'he left' and 'he said'. Use a neutral look (cast outfit everyday/chef-like) or drop the smug expression."},
+    {"line": "Upload block", "verdict": "MOSTLY OK", "note": "Description attributes his statement ('he said'), cites sources and says 'Unofficial fan commentary, not affiliated with Rockstar or Take-Two': good. Title 'isn't in it' is ambiguous (reads like a cameo or character) and the video says 'did not write it'. Tag 'why dan houser left rockstar' promises a reason the video does not give (the reason claims were dropped): remove it. 'gta 6 release date' is mild bait: optional removal."}
+  ],
+  "consistency_findings": [
+    "Voice vs caption vs screen: 'March twenty twenty' / 'March 2020' / badge 'MARCH 2020'. Same value, PASS. 'GTA six' / 'GTA 6' / sign 'GTA 6'. PASS.",
+    "L1 on-screen stamp 'NOT HIM' and headline 'WHO WROTE IT?' agree with the voice ('did not write it'). PASS under Rule C. But 'NOT HIM' slams BEFORE the viewer knows who 'him' is: fine as a tease.",
+    "L2 headline 'THE CHEF QUITS' and the stamp 'QUIT' both appear on 'quits': duplicate. Drop one.",
+    "L6 on-screen 'HE SAID: NONE' + bubble 'I WROTE NONE' + badge 'LAST YEAR': all match the voice. PASS.",
+    "Continuity: the stranger already drifts out in scene 4 (chef quits), is 'filled in' in scene 6, then walks off AGAIN in scene 8 (he left in March 2020). Reads as a double exit and muddles the parable timeline. Keep scene 4 as the only exit and make scene 8 a still, sad stranger or just the MARCH 2020 badge.",
+    "Line 6 repeats the claim of line 1 with only the attribution added, so the payoff is a re-statement, not a new beat (see top fixes).",
+    "Time-sensitive: 'Tomorrow' is wrong from midnight ET Nov 19, and for viewers in later time zones (Philippines is already on Nov 19 at 7 PM ET Nov 18 posting + ~13 h). It is OK for the owner's chosen 7 PM ET post, but the video will date quickly. 'Last year' OK."
+  ],
+  "drawability_vs_scene_format": {
+    "ok": ["headlines (WHO WROTE IT?, DAN HOUSER/WRITER)", "stamps (NOT HIM, QUIT)", "bubbles (YOUR FAVORITE, HUH?, I WROTE NONE)", "badges (MARCH 2020, LAST YEAR, STORIES)", "cast stranger with flip and drift", "A/B list rows", "phone as held prop", "flash cut, snap-zoom, thud/ding/drum/buzz sfx"],
+    "at_risk": [
+      "Restaurant sign: no 'sign' item. Build it from a badge/headline ('GTA 6', 'RESTAURANT'). Plain-text OK, but say 'badge' in the visual.",
+      "'The sign wobbles' (scene 4) and silhouette box 'pulses' (scene 2): items have no wobble/pulse animation (only the jar has shake). Use camera shake or drop the gag.",
+      "'Benny bites a plain plate icon' (scene 5): held props are only cash/brain/phone/coin and there is no plate item or bite action. Replace with a badge 'FOOD' or have Benny hold nothing and use a 'YUM?' bubble.",
+      "'Thick stack' of stories (scene 7): no prop for it. Use the badge 'STORIES' only.",
+      "Benny 'rubs belly, drooling', 'tongue out', 'hands on head': the pose list (wave, point, think, run, shock, hero, scroll, present, flex, worry, shrug, slump) and expression list (smile, smug, happy, shocked, thinking, broke, determined) have none of these. Substitute happy+smile, then shocked+slump.",
+      "'Silhouette fills in as the stranger' (scene 6): approximate by the cast stranger appearing."
+    ],
+    "verdict": "Story beats survive with substitutions. The gags that depend on props/animations that do not exist (plate bite, sign wobble, belly rub, tongue out) will be cut or replaced by video-generator, so the physical comedy is weaker than the script suggests."
+  },
+  "listener_check": "Read aloud as a non-native listener (am_liam, 0.9): no line needs a replay. 'Benny bites in' is unnatural English ('bites into it' / 'takes a bite'). 'The sign stays' is a metaphor that needs one beat to decode. The parable is decoded by line 4, which works. 'GTA' is said as normal letters-as-word, per Rule D.",
+  "fixes": [
+    "Payoff 7 / Surprise 7 (line 6): line 6 re-states line 1. Replace or follow it with a NEW verified beat from research (Houser also said the game will be great, PC Gamer/TechRadar), e.g. 'He also said it will be great.' (7 words, total 75, top of the 55-75 range; drop 'after a long break' to compensate). This gives the A/B real tension, and balances the insinuation.",
+    "Originality & policy 7 (line 3 + scene 5): 'It tastes different' with a disgusted face insinuates a worse game, which no verified row supports. Make Benny's reaction curious/confused ('HUH?', thinking expression), not disgusted, or change to 'Benny bites in. Is it the same?'.",
+    "Real-person depiction (scene 6): show Houser neutrally, not as a smug hooded figure with glowing eyes. Remove 'stranger smug'.",
+    "Line 3 'Benny bites in.' is not natural English: use 'Benny takes a bite.'",
+    "Scene continuity: the stranger leaves in scene 4 and again in scene 8: keep one exit.",
+    "Scene 2/4: duplicate 'THE CHEF QUITS' headline + 'QUIT' stamp: drop one.",
+    "Undrawable visuals (plate, sign wobble, belly rub, tongue out, stack, silhouette pulse): rewrite them with pose/expression/item types from docs/scene-format.md.",
+    "Upload: change title 'isn't in it' to 'didn't write it' (title_yt/title_fb/upload.title; 'GTA 6 is out tomorrow. Its famous writer didn't write it' = 54 chars). Remove tag 'why dan houser left rockstar' (no reason is given in the video) and optionally 'gta 6 release date'.",
+    "Hook (8): optional, say 'says he did not write it' in line 1 if you want line 1 safely attributed on its own.",
+    "Before publish: re-open one release-date source, since the date came from search summaries."
+  ]
+}

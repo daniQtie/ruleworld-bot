@@ -1,0 +1,103 @@
+{
+  "id": "2026-11-16-coin-flip-brain",
+  "version": 8,
+  "topic": "psychology",
+  "outfit": "psych",
+  "title_yt": "A Stranger Offers You a Coin Flip. Would You? #Shorts",
+  "title_fb": "A stranger offers you a coin flip. Would you take it?",
+  "hook": "What if a stranger offers you a coin flip?",
+  "open_loop": "Line 6 asks outright: 'Why does the stranger want you to quit?' (right after the tails bonk, about 60% in). It is paid off only in line 7 and the line 8 payoff, the last ~9 s: over time each flip pays you twenty five dollars, so the stranger loses. The $25 is not said or shown before line 7.",
+  "payoff": "Your brain makes a one hundred dollar loss feel like nearly two hundred, so you say no. But over many flips each flip pays you twenty five dollars, which is why the stranger wants you to quit. 'Your brain says no. The math says flip.'",
+  "ending": "choice",
+  "lines": [
+    {
+      "text": "What if a stranger offers you a coin flip?",
+      "beat": "hook",
+      "visual": "SCENE 1, frame 0, dark street (bg #2b2a33, floor #1d1c24). Hooded stranger (cast, outfit stranger, x 780, flip true, pose present, expr smug, prop coin) holds the coin out toward Benny (x 320, pose wave, expr smile). Big prop coin visible from frame 0. Benny beat on 'coin': expr thinking. Benny is the viewer's avatar.",
+      "on_screen": "COIN FLIP?"
+    },
+    {
+      "text": "Heads, you win one hundred fifty dollars.",
+      "beat": "stakes",
+      "visual": "SCENE 2. Green headline '+$150' at y 420 pops on 'Heads' (sfx ding). Benny beat on 'win': expr happy, hop true. Stranger stays smug.",
+      "on_screen": "+$150"
+    },
+    {
+      "text": "Tails, you lose one hundred.",
+      "beat": "stakes",
+      "visual": "SCENE 3. Red headline '-$100' at y 560 pops on 'Tails' (sfx thud) with camera shake 0.4 s. Benny beat on 'lose': pose shock, expr shocked, hop false. Green '+$150' remains at y 420.",
+      "on_screen": "-$100"
+    },
+    {
+      "text": "Your brain makes losing one hundred feel like nearly two hundred.",
+      "beat": "escalate",
+      "visual": "SCENE 4, same street. Benny holds his brain (prop brain), pose worry, expr shocked, x 300. Beat on 'brain' (word 1): snap-zoom 1.2 on the brain. Red headline '-$100' at y 560 on 'losing' (word 3). On 'nearly' (word 8) red stamp 'FEELS LIKE -$200' slams over it (sfx thud, shake 0.5 s). Then on the last word Benny beat: flip true, pose run, drift toward x 140 (sfx whoosh) as he flees. Stranger in the background: pose point, expr happy (sly grin).",
+      "on_screen": "FEELS LIKE -$200"
+    },
+    {
+      "text": "You turn back and flip.",
+      "beat": "escalate",
+      "visual": "SCENE 5. Benny stops, turns back (flip false, x 340, pose flex, expr determined). On 'flip' (word 4) a flipcoin item launches from his hand (x 340, y 1000, height 650) and lands ON his head (x2 320, y2 880); red stamp 'TAILS -$100' (sfx thud), camera shake; Benny: pose slump, expr broke (tear). Stranger grins (pose present, expr smug), bubble 'Quit!' (tail right, sfx pop).",
+      "on_screen": "TAILS -$100"
+    },
+    {
+      "text": "Why does the stranger want you to quit?",
+      "beat": "loop",
+      "visual": "SCENE 6. Snap-zoom on the stranger on 'stranger' (pose present, expr smug, bubble 'Quit!'). Big gold headline 'WHY QUIT?' at y 420 on 'quit'. Benny slumped (tear) at x 320, then on 'you' (word 5) looks up toward the stranger (look). Stranger beat: pose point.",
+      "on_screen": "WHY QUIT?"
+    },
+    {
+      "text": "Because each flip pays you twenty five dollars, over time.",
+      "say": "Because each flip pays you twenty five dollars, over time.",
+      "beat": "twist",
+      "visual": "SCENE 7 (flash true). Benny stands up (pose hero, expr happy, hop true, x 320, sfx ding). Coin rain (coins, n 30, floor 1300, layer back) to show many flips. On 'twenty' (word 6) green headline '+$25 EACH FLIP' at y 420. Red headline '-$25 HIM' at y 560 near the stranger on 'time' (sfx ding): stranger snap-zoom, pose worry, expr shocked, bubble 'GULP' (tail right, sfx pop). Badge 'Not financial advice' (size 40) at x 540, y 1230 from this scene to the end.",
+      "on_screen": "+$25 EACH FLIP"
+    },
+    {
+      "text": "Your brain says no. The math says flip.",
+      "beat": "payoff",
+      "visual": "SCENE 8. Benny holds the brain (prop brain, pose think, expr thinking); on 'no' a red stamp 'NO' slams over the brain (sfx thud). On 'math' (word 5) the stamp becomes a green check and Benny beat: pose point, expr smug. Coin pile under him (coins, n 14, floor 1300, layer back). Badge stays at x 540, y 1230.",
+      "on_screen": "BRAIN: NO. MATH: FLIP"
+    },
+    {
+      "text": "Would you flip? Comment A or B.",
+      "beat": "ending",
+      "visual": "SCENE 9. Frame-0 layout with roles swapped: stranger (x 780, flip true, pose present, expr smug, prop coin) holds the coin out to the CAMERA; Benny (x 220, pose shrug, expr thinking). List (x 560, y 760, w 400): rows 'A  FLIP' (mark check) on 'Would' and 'B  RUN' (mark x) on 'B'. Badge 'Not financial advice' at x 540, y 1230. Tail 0.3 s, hard cut on 'B', looping into frame 0.",
+      "on_screen": "A: FLIP  B: RUN"
+    }
+  ],
+  "disclaimer_on_screen": "'Not financial advice' badge from scene 7 to the end. Framed as a brain/decision thought experiment, not advice to gamble.",
+  "facts_used": [
+    {
+      "claim": "In the coin toss (win $150 / lose $100), most people decline.",
+      "source_url": "https://litcharts.com/lit/thinking-fast-and-slow/part-4-chapter-26"
+    },
+    {
+      "claim": "Most people reject the 50/50 win $150 / lose $100 flip even though it pays on average (corroborating).",
+      "source_url": "https://margin-notes-600.pages.dev/books/thinking-fast-and-slow/ch-26"
+    },
+    {
+      "claim": "Meta-analysis mean loss-aversion coefficient 1.955, so a $100 loss feels like about $195 ('nearly two hundred').",
+      "source_url": "https://www.aeaweb.org/doi/10.1257/jel.20221698"
+    },
+    {
+      "claim": "Losses are treated as about twice as large as an equivalent gain; the ratio varies by context, hence 'nearly'.",
+      "source_url": "https://en.wikipedia.org/wiki/Loss_aversion"
+    },
+    {
+      "claim": "Over many flips, +$25 per flip on average for you and -$25 for the stranger (zero-sum). A single flip is still a 50/50.",
+      "source_url": "computed; no external source needed"
+    }
+  ],
+  "math_check": "Per flip: 0.5*150 - 0.5*100 = 75 - 50 = +$25 on average (stranger -$25, zero-sum). Felt loss = 1.955*100 = $195.50 -> 'nearly two hundred' (95% range $182.00-$210.20, all above the $150 win, so the brain says no). 'Over time' is the hedge: one flip is still a true 50/50.",
+  "est_seconds": 30.4,
+  "word_count": 70,
+  "changes_from_previous": [
+    "Note 1 (you/your): line 2 'Heads, you win one hundred fifty dollars.', line 3 'Tails, you lose one hundred.', line 4 'Your brain makes losing one hundred feel like nearly two hundred.', lines 5-7 use 'you'. Benny stays on screen as the viewer's avatar; no more 'Benny says / his brain'.",
+    "Note 2 (explicit open loop): new line 6 'Why does the stranger want you to quit?' is planted right after the tails bonk and the 'Quit!' bubble, and only answered in line 7 ('Because each flip pays you twenty five dollars, over time.') with the '-$25 HIM' GULP gag.",
+    "Note 3 (turn-back beat): line 4 ends with Benny running away, then new line 5 'You turn back and flip.' shows him stopping and turning before the first flip.",
+    "Note 4 (concrete, not abstract): removed 'on average'. Now 'each flip pays you twenty five dollars, over time' with coin rain showing many flips; the new one-line payoff 'Your brain says no. The math says flip.' (line 8) sits before the A/B ending.",
+    "Note 5 (length): 70 spoken words = 30.4 s at 2.3 w/s, 9 lines, 9 scenes. Trimmed by dropping the separate 'Benny keeps flipping' and 'It costs the stranger' lines (the stranger loss is now shown on screen in scene 7) and 'dollars' on the tails line.",
+    "Kept: stranger frame-0 hook, brain prop, coin bonks head, GULP gag, 'Not financial advice' badge, A/B list that loops to frame 0."
+  ]
+}

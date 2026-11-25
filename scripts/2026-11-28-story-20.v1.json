@@ -1,0 +1,327 @@
+{
+ "id": "2026-11-28-story-20",
+ "version": 1,
+ "source": "Claude (Opus) scriptwriter, original idea; hook rotation #9, format rotation #5",
+ "hook_type": {
+  "number": 9,
+  "name": "The \"Secret / Nobody Tells You\" Hook"
+ },
+ "format": {
+  "number": 5,
+  "name": "Strange Rules and Consequences"
+ },
+ "title_working": "The Secret Behind Our School's Weirdest Rule",
+ "hook_text": "NEVER SAY THIS",
+ "hook_until": 2.6,
+ "music": "bounce",
+ "music_gain": 0.13,
+ "world_rule": "Never say: it's quiet today",
+ "lines": [
+  {
+   "text": "Nobody tells new kids the secret behind our school's weirdest rule.",
+   "say": "(serious) Nobody tells new kids the secret behind our school's weirdest rule.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "hallway",
+    "cast": [
+     "Leo"
+    ],
+    "face": "confused",
+    "action": "walk",
+    "camera": "follow"
+   },
+   "acting": {}
+  },
+  {
+   "text": "There's a sign in every classroom. Never say, it's quiet today.",
+   "say": "(serious) There's a sign in every classroom. Never say, it's quiet today.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "classroom",
+    "board": "NEVER SAY:|IT'S QUIET TODAY",
+    "cast": [
+     "Leo"
+    ],
+    "face": "thinking",
+    "action": "think",
+    "prop": {
+     "type": "sign",
+     "text": "SHH"
+    },
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "On Leo's first day, the class was silent. So he smiled and said it.",
+   "say": "(happy) On Leo's first day, the class was silent. So he smiled and said it.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Leo",
+     "Pia",
+     "Mason"
+    ],
+    "face": "smirk",
+    "action": "talk",
+    "tag": {
+     "name": "Leo",
+     "role": "new kid"
+    },
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Everyone gasped. Then the recess bell rang, two hours early.",
+   "say": "(nervous) Everyone gasped. Then the recess bell rang, two hours early.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "cast": [
+     "Mason",
+     "Pia",
+     "Leo"
+    ],
+    "face": "shocked",
+    "action": "still",
+    "trans": "whip",
+    "camera": "low"
+   },
+   "acting": {}
+  },
+  {
+   "text": "The board started flashing one word. Recess.",
+   "say": "(happy) The board started flashing one word. Recess.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "board": "RECESS!",
+    "cast": [
+     "Leo"
+    ],
+    "face": "shocked",
+    "action": "point",
+    "glitch": true,
+    "camera": "pull"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Then the lights started flickering.",
+   "say": "(nervous) Then the lights started flickering.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "time": "day",
+    "cast": [
+     "Leo",
+     "Mason"
+    ],
+    "face": "scared",
+    "action": "shiver",
+    "camera": "dutch",
+    "glitch": true
+   },
+   "acting": {}
+  },
+  {
+   "text": "The teacher spun around. Who said it?",
+   "say": "(angry) The teacher spun around. Who said it?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   },
+   "shot": {
+    "time": "day",
+    "cast": [
+     "Teacher",
+     "Leo"
+    ],
+    "face": "angry",
+    "action": "point",
+    "camera": "push",
+    "tag": {
+     "name": "Mr. Grant",
+     "role": "teacher"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "Leo turned and saw the quiet girl in the back holding a tiny remote.",
+   "say": "(nervous) Leo turned and saw the quiet girl in the back holding a tiny remote.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "time": "day",
+    "cast": [
+     "Pia"
+    ],
+    "face": "smirk",
+    "action": "still",
+    "trans": "flash",
+    "camera": "close",
+    "tag": {
+     "name": "Pia",
+     "role": "the quiet girl"
+    },
+    "prop": {
+     "type": "screen",
+     "text": "OFF"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "Then Pia winked at him. She built it herself, for extra recess.",
+   "say": "(happy) Then Pia winked at him. She built it herself, for extra recess.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "time": "day",
+    "cast": [
+     "Pia",
+     "Leo"
+    ],
+    "face": "laugh",
+    "action": "wave",
+    "mood": "win",
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Leo never told anyone. Now they're best friends.",
+   "say": "(confident) Leo never told anyone. Now they're best friends.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "set": "field",
+    "cast": [
+     "Leo",
+     "Pia"
+    ],
+    "face": "laugh",
+    "action": "cheer",
+    "mood": "win",
+    "camera": "drone"
+   },
+   "acting": {}
+  },
+  {
+   "text": "That's the secret nobody tells new kids. And tomorrow, there's a new kid.",
+   "say": "(serious) That's the secret nobody tells new kids. And tomorrow, there's a new kid.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "hallway",
+    "cast": [
+     "Pia",
+     "Leo"
+    ],
+    "face": "smirk",
+    "action": "still",
+    "camera": "close"
+   },
+   "acting": {}
+  }
+ ],
+ "word_count": 112,
+ "est_seconds": 33.5,
+ "tail_hold": 1.2,
+ "upload": {
+  "title": "The Secret Behind Our School's Weirdest Rule #Shorts",
+  "description": "Our school has one rule nobody explains. Leo broke it on day one.\nWould you say it?\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "school story",
+   "funny school story",
+   "roblox story",
+   "animated story",
+   "plot twist",
+   "secret rule",
+   "story time",
+   "roblox animation",
+   "animated story",
+   "roblox story"
+  ]
+ }
+}

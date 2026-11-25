@@ -1,0 +1,40 @@
+{
+  "pass": false,
+  "average": 7.91,
+  "scores": {"hook": 8, "stakes": 8, "open_loop": 8, "escalation": 7, "payoff": 8, "surprise": 8, "ending": 8, "clarity": 8, "facts": 8, "originality": 8, "entertainment": 8},
+  "hard_gates": {"what_if_opener": true, "benny_in_story": true, "length_25_35s": true, "english_clear": true},
+  "gate_notes": {
+    "opener": "Starts 'If you fake sick for G T A six...' = allowed 'If you...' opener.",
+    "length": "67 spoken words (say-adjusted: 12+7+9+13+8+8+10). 29.1 s at 2.3 w/s, ~32.4 s at speed 0.9. Both inside 25-35 s. est_seconds 29 and word_count 67 are correct.",
+    "english_clear": "Every sentence <= 12 words (longest: hook = 12; line 4 is 5 + 8 across two sentences). No idioms/Taglish/ph anywhere. G T A spelled out; $247 said as 'two hundred fifty dollars'.",
+    "scenes": "9 scenes (within 8-12). On-screen text max 5 tokens ('A: SICK / B: AFTER WORK', 'TYPICAL PAY, 40 H, UNPAID')."
+  },
+  "v2_fixes_verified": {
+    "line3_literal": "LANDED: 'Now you play all day. But nobody pays you.' no hourly drain.",
+    "line2_new_beat": "LANDED: boss suspicion moved to scene 1 visuals; line 2 is a small win.",
+    "line4_defines_unpaid": "LANDED: 'No pay that day.' said aloud, then the number.",
+    "line5_hold_beat": "LANDED: 'More than three whole games. For one day.' plus held pile beat.",
+    "line6_closes_free_loop": "LANDED: 'That one is really free.'",
+    "hook_concrete": "LANDED: 'what's the price?' (12 words).",
+    "title_no_spoiler": "LANDED in title_yt, title_fb and upload.title (41 chars + #Shorts).",
+    "scene_count": "LANDED: 9 scenes."
+  },
+  "math_recheck": "1235/40 = 30.875/h; x8 = 247.00; 247/79.99 = 3.088; 3 x 79.99 = 239.97 < 247, so 'more than three games' is true (margin $7). Spoken 'two hundred fifty' is a rounded 247 and still > 239.97. 40 h/week is an example and is labelled on screen ('TYPICAL PAY, 40 H, UNPAID'). Math correct.",
+  "viewer_notes": {
+    "one_a_m_scroller": "Stays past 0.5 s: GTA 6 launch week, a fake cough, a suspicious hooded boss, and a '$?' stamp slam at 'price'. Clear curiosity gap and a funny first frame. Would stay to the end for the boxes-bury-Benny gag and the A/B. Weak point is the middle: line 3 ('nobody pays you') and line 4 ('No pay that day') say the same thing back to back, so about 4 s add no new information before the number.",
+    "non_native_listener": "Understood on one listen at 0.9. Only soft spot: 'what's the price?' (price of what? a non-native may expect a money price of the game) and 'really free' in line 6 (free = no cost vs. free time); both resolve by line 4-6, so no replay needed. 'typical pay' is plain."
+  },
+  "facts_check": "All numbers trace to research file source_urls (BLS $1,235; $79.99 via gameluster, a secondary pre-launch site, not Rockstar; GTA Flu meme with no stats). No unverified stat used. Paid-sick-leave caveat is only in the description, not in the video; the spoken line 4 assumes an unpaid day ('No pay that day') which is acceptable but could mislead viewers with paid leave. Price source is secondary; re-check against Rockstar/PlayStation Store at launch.",
+  "upload_check": {
+    "status": "good",
+    "notes": "Title is a curiosity gap that pays off and is <= 60 chars + #Shorts. Description line 1 ('One day off can cost more than the game itself.') is a real hook and not a title copy (it slightly pre-states the answer, acceptable). Line 2 is the A/B. Line 3 gives the number with context. 'Not financial advice.' plus paid-leave caveat and BLS source present. 4 hashtags (#gta6 #money #savingmoney #Shorts), no tag spam. 9 relevant tags."
+  },
+  "fixes": [
+    "Line 4 vs line 3 (escalation 7): 'But nobody pays you.' and 'No pay that day.' repeat the same fact. Cut the repeat: make line 3 'Now you play all day. Hour after hour, it feels free.' (11 words) so line 4's 'No pay that day' is the first mention of the cost and the turn lands harder; the HOUR 3 clock gag still works.",
+    "Line 4 (clarity 8, escalation 7): it is the longest spoken line (13 words across two sentences, 'two hundred fifty dollars' is slow to say). Shorten to 'No pay that day. That costs two hundred fifty dollars.' or keep, but cut line 3 repetition first.",
+    "Line 1 (hook 8, clarity 8): 'what's the price?' is abstract for a non-native listener. Consider 'If you fake sick for G T A six, what does it cost you?' (13 words, over the cap) so instead 'If you fake sick for G T A six, what do you pay?' (12 words), which is more personal and ties to the 'nobody pays you' turn.",
+    "Line 6 (payoff 8): 'That one is really free.' is a modest payoff; add the human beat in the visual: Benny winks at the viewer and the tie stays on the hook, or say 'Play after work. Same game, zero cost.' to make the benefit concrete.",
+    "Line 4 (facts 8): the video never says the day is unpaid-only-if-no-sick-leave. Add 'if unpaid' on the badge, e.g. 'IF UNPAID, 40 H' (4 words), so viewers with paid leave do not feel misled. Also confirm the $79.99 price from an official source before final render.",
+    "Ending (ending 8): the A/B is fine, but A (sick day) has no payoff either way. Add a one-beat visual on 'B' that rewards it (confetti on B row) to give comment bait a clear 'winner' frame."
+  ]
+}

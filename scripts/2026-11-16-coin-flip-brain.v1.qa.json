@@ -1,0 +1,19 @@
+{"pass": false, "average": 7.8,
+ "scores": {"hook": 8, "stakes": 8, "open_loop": 7, "escalation": 7, "payoff": 8, "surprise": 7, "ending": 8, "clarity": 8, "facts": 9, "originality": 8},
+ "fixes": [
+  "Line 4 (open_loop): 'Psychologists call it loss aversion' answers line 3's 'why does your brain refuse?' only ~8 s in, so the brain half of the loop closes early. Keep the question open by teasing a hidden number ('Your brain secretly multiplies one side of this coin.') and reveal the name together with the ~2x in line 6.",
+  "Line 5 (escalation): '607 measurements from 150 papers' is a credibility beat with no new tension, and it is the slowest line. Cut it to a 3-word on-screen tag over line 6 ('150 studies agree') or merge it into line 6: '150 studies agree: losing hurts about twice as much...'. Use the saved ~4 s to tighten the script.",
+  "Line 8 (escalation): 'Bigger than your $150 win. So you say no.' repeats the visual of line 7 and the 'no' from line 2. Fold it into line 7 ('So that $100 loss feels like $195, bigger than your $150 win.') and drop 'So you say no.'",
+  "Line 1 / line 2 (surprise): Kahneman's $150/$100 coin flip is a well-known psych-Shorts example, so the 'most people say no' setup is not a surprise to this audience. Make line 9-10 the 'wait, what?' moment hit harder by giving the scale: 'Flip 100 times: on average you're up $2,500, and you lose money less than 2% of the time.' ($2,500 = 100 x $25, already computed in research.)",
+  "Line 11 (ending): 'One flip is still 50/50' is a needed caveat but deflates right before the CTA, and the spoken words do not loop to line 1 even though the visual does. Try: 'Still 50/50 each time. So... heads $150, tails $100. Do YOU flip? Comment.' That gives an A/B choice that loops into the hook.",
+  "Line 5 / line 10 (clarity): 'pooled ... measurements' and 'end up behind' are abstract for a 12-year-old; use 'studies' and 'lose money overall'. Also, est_seconds says 40, but the spoken 'say' text is 119 words, which is about 46 s at 2.6 words/s. Update est_seconds, or trim to hit ~40 s.",
+  "Line 10 ph: 'talo ka sa dulo wala pang 2% ng chance' is awkward Taglish. Use 'wala pang 2% ang chance na talo ka sa dulo.'",
+  "Originality: add one Benny-specific beat, e.g. Benny's own hand hesitating over the coin in line 2 instead of generic stick figures, so the story is Benny's and not a textbook recap of Kahneman."
+ ],
+ "notes": {
+  "verdict_1am_viewer": "Would stop: yes, an instant money question in second person with the numbers on screen. Would stay: probably to line 6. Lines 5 and 8 sag, and loss aversion is familiar, so some viewers swipe before the +$25 / <2% payoff.",
+  "math_recomputed": "EV/flip = 0.5*150 - 0.5*100 = +25 (OK). 1.955*100 = 195.5 -> 'about $195' (OK; CI 182.0-210.2, all > 150). P(net loss after 100 flips) = P(heads <= 39) = 0.01760 = 1.76% < 2% (OK; 40 heads = exactly break-even, not 'behind').",
+  "sources_checked": "aeaweb JEL meta-analysis confirmed: 607 estimates, 150 articles, mean 1.955, 95% [1.820, 2.102]. LitCharts ch. 26 confirmed the $100/$150 coin toss and that most people decline (need ~$200).",
+  "format": "11 lines (OK). 104 display words / 119 spoken words (OK, 75-130). Spoken length ~46 s at 2.6 wps (within 30-50, but est_seconds of 40 is understated). On-screen text max 4 words (OK). Disclaimer present in final scene (OK)."
+ }
+}

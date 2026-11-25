@@ -1,0 +1,304 @@
+{
+ "id": "2026-11-27-story-10",
+ "version": 1,
+ "source": "owner order 2026-11-24: copy TeamDeam's 'I Was Made To Help People In Need' (3.3M) beat plan, look, camera and reactions; new names and wording; characters move",
+ "hook_type": {
+  "number": null,
+  "name": "owner-directed (exempt from rotation)"
+ },
+ "format": {
+  "number": 1,
+  "name": "Rule world: importance numbers"
+ },
+ "title_working": "In This World, Your Number Shows How Important You Will Become",
+ "music": "drift",
+ "music_gain": 0.13,
+ "world_rule": "Every child is born with a number above the head that shows how important they will become.",
+ "logline": "The boy born with zero saves everyone from a school fire, last of all his best friend, and his number turns to infinity.",
+ "characters": [
+  {
+   "name": "Eli",
+   "role": "narrator, born with zero"
+  },
+  {
+   "name": "Mason",
+   "role": "best friend, 1204"
+  }
+ ],
+ "lines": [
+  {
+   "text": "In this world, your number shows how important you will become.",
+   "say": "(confident) In this world, your number shows how important you will become.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": 2,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Every child is born with one, floating right above their head.",
+   "say": "(happy) Every child is born with one, floating right above their head.",
+   "speaker": "narrator",
+   "speed": 0.93,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "matter-of-fact",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Some kids get twelve. Some get forty-five. A few even get nine hundred.",
+   "say": "(happy) Some kids get twelve. Some get forty-five. A few even get nine hundred.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "light",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "My best friend Mason was born with twelve hundred and four.",
+   "say": "(happy) My best friend Mason was born with twelve hundred and four.",
+   "speaker": "narrator",
+   "speed": 0.93,
+   "volume": 1,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "impressed",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Everyone knew he would grow up to be someone big.",
+   "say": "(happy) Everyone knew he would grow up to be someone big.",
+   "speaker": "narrator",
+   "speed": 0.93,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "proud",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "But when I was born, the doctor looked at my number and went completely silent.",
+   "say": "(nervous) But when I was born, the doctor looked at my number and went completely silent.",
+   "speaker": "narrator",
+   "speed": 0.88,
+   "volume": -1,
+   "pause": 0.35,
+   "beat": "",
+   "voice": {
+    "emotion": "tense",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "It was zero.",
+   "say": "(sad) It was zero.",
+   "speaker": "narrator",
+   "speed": 0.8,
+   "volume": -3,
+   "pause": 0.5,
+   "beat": "",
+   "voice": {
+    "emotion": "hush",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Growing up, everyone treated me like I would never matter.",
+   "say": "(sad) Growing up, everyone treated me like I would never matter.",
+   "speaker": "narrator",
+   "speed": 0.82,
+   "volume": -3,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "At school, the kids with big numbers were treated like celebrities.",
+   "say": "(sad) At school, the kids with big numbers were treated like celebrities.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": -1,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "flat",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "I tried everything to raise mine. I studied harder. I helped people. I even won competitions.",
+   "say": "(confident) I tried everything to raise mine. I studied harder. I helped people. I even won competitions.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 1,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "determined",
+    "tags": "(confident)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "But my number never moved.",
+   "say": "(sad) But my number never moved.",
+   "speaker": "narrator",
+   "speed": 0.8,
+   "volume": -3,
+   "pause": 0.45,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Then one day, a fire broke out at school.",
+   "say": "(nervous) Then one day, a fire broke out at school.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 3,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "alarm",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Everyone panicked. Students were trapped inside.",
+   "say": "(nervous) Everyone panicked. Students were trapped inside.",
+   "speaker": "narrator",
+   "speed": 0.97,
+   "volume": 2,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "panic",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "I ran inside to help. One by one, I pulled them out.",
+   "say": "(confident) I ran inside to help. One by one, I pulled them out.",
+   "speaker": "narrator",
+   "speed": 0.97,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "determined",
+    "tags": "(confident)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "The very last one was Mason.",
+   "say": "(soft tone) The very last one was Mason.",
+   "speaker": "narrator",
+   "speed": 0.85,
+   "volume": -1,
+   "pause": 0.4,
+   "beat": "",
+   "voice": {
+    "emotion": "hush",
+    "tags": "(soft tone)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "When he was finally safe, I looked up and saw that my number had changed.",
+   "say": "(soft tone) When he was finally safe, I looked up and saw that my number had changed.",
+   "speaker": "narrator",
+   "speed": 0.85,
+   "volume": 0,
+   "pause": 0.35,
+   "beat": "",
+   "voice": {
+    "emotion": "wonder",
+    "tags": "(soft tone)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "It was not zero anymore. It was infinity.",
+   "say": "(happy) It was not zero anymore. It was infinity.",
+   "speaker": "narrator",
+   "speed": 0.82,
+   "volume": 2,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "awe",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  }
+ ],
+ "word_count": 172,
+ "est_seconds": 49.1,
+ "tail_hold": 2.0,
+ "upload": {
+  "title": "In This World, Your Number Shows How Important You Will Become #Shorts",
+  "description": "In this world, your number shows how important you will become. ✨\nWhat number do you think you would have? Tell us below.\nEli was born with a zero. His best friend was born with 1,204. Then a fire broke out at school. An animated rule-world story with a twist ending.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "in this world story",
+   "number above head",
+   "rule world story",
+   "hero story",
+   "emotional story",
+   "animated story",
+   "story time animation",
+   "plot twist story",
+   "roblox story",
+   "roblox animation"
+  ]
+ }
+}

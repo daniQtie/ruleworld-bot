@@ -1,0 +1,60 @@
+{
+ "pass": false,
+ "average": 7.6,
+ "scores": {"hook": 8, "stakes": 7, "open_loop": 8, "escalation": 8, "payoff": 8, "surprise": 7, "ending": 8, "clarity": 7, "facts": 8, "originality": 8, "entertainment": 7},
+ "hard_gates": {"assigned_hook_type": true, "previous_episode_differs": true, "benny_in_story": true, "length_25_35s": true, "english_clear": true},
+ "hook_gate_detail": "hook_rotation show: this_episode #2 Listicle/Number, previous episode 2026-11-18-gta6-sick-day was #1. Script hook_type=2. Opener 'Three G T A six money mistakes. Number three is the worst.' promises 3 and pays all 3; the tease pays off (item 3, fake site + malware, is the worst). Passes. Weak spot: spelled-out 'G T A six' eats ~1.2 s before the tease lands at ~2.5 s.",
+ "math": {"99.99-79.99": 20.0, "20/79.99": "25.003 percent (not used in video, correctly dropped)", "say_words": 68, "est_seconds_at_2.3wps": 29.6, "scenes": 12, "ph_fields": 0, "title_chars": 53},
+ "v1_fixes_check": {
+  "landed": [
+   "Open-loop tease 'Number three is the worst' now in the voice",
+   "47% now says 'pay later users' with badge 'PAY LATER USERS'; no game financing shown",
+   "'cheap key' replaced by 'fake pre-order site' (matches source)",
+   "'keep twenty dollars' now has the unit",
+   "Lesson line 'Pay in full. Use official stores.' added before the A/B",
+   "DOZENS OF FAKE SITES identical in on_screen and visual",
+   "Per-item gags and consequences added (moths wallet, legged bills, malware gremlin)",
+   "25% dropped from video and description"
+  ],
+  "partly_landed": [
+   "Stakes: only one 'you' (line 2); items 2 and 3 are still narrated as 'he'",
+   "Benny still never speaks; the voice is a narrator reading a numbered list, though the visuals are now mini-stories"
+  ]
+ },
+ "consistency": {
+  "ok": [
+   "3 mistakes: say 'Three', text 'Three', on_screen '3 MISTAKES', red '3', title and upload '3'.",
+   "$20: say 'twenty dollars', text '$20', counter '+$20', B row '+$20', upload '$20'. Same figure everywhere (Rule A).",
+   "47%: say 'forty-seven percent', text, badge, counter and upload '47%'; all say 'pay later users'.",
+   "'dozens of fake sites': say = text = headline. 'malware' stamp = spoken 'malware'.",
+   "Acronym: text 'G T A 6' vs say 'G T A six' follows Rule B; 'GTA 6' in title/tags is the written form, allowed.",
+   "Upload block: title matches the video's hook and payoff; description numbers ($20, 47%, dozens) match; line 1 is a real hook, not a title copy; 4 hashtags; 'Not financial advice.' present."
+  ],
+  "findings": [
+   "Scene 3 gag: clerk hands Benny 'one tiny gold coin as a bonus' and scene 11 shows him smug with it. The source says Ultimate adds in-game vehicles, weapon variants, storefronts and a mission. The tiny coin misrepresents the edition and tilts the A/B toward B. Use a neutral 'bonus pack' box instead.",
+   "'+$20' is used both for extra cost (scene 3) and money kept (scene 12, B row): same string, opposite meaning. Voice says 'keep twenty dollars', so the B row should read 'KEEP $20' (Rule C).",
+   "'NOT FINANCIAL ADVICE' appears on screen 3 times but is never spoken (research note asked for voice + caption). Rule C: screen says more than voice. Flagged, not a fail.",
+   "Line 3 voice says 'Two:' but item 1 is never voiced as 'One'; the numbering is only visible on screen. Add 'One:' or use 'Next'.",
+   "Line 2 'Ultimate costs you twenty dollars more.' has no 'than Standard' and never says Ultimate is a game edition. A non-native listener has no referent; only the Standard/Ultimate boxes explain it.",
+   "Upload description line 1 'could wreck your console' overclaims. CyberInsider does not say what platform the malware targets (disguised installers and graphics-driver components hint PC) and the game is console-only. Scene 9 also shows the gremlin eating a console box. Say 'your device' and show a phone or laptop.",
+   "Line 4: 'LendingTree' is a brand with no on-screen text and a possible TTS stumble. Show 'LENDINGTREE SURVEY' small on the badge so screen matches voice (Rule C).",
+   "Scene 4: pay-later sticker with no game shown; 47% is generic. This is OK and does not imply financing GTA 6."
+  ]
+ },
+ "extra_checks": {
+  "story_vs_narrator": "Visuals are mini-stories with a gag per item (empty wallet with moths, bills with legs, malware gremlin) plus a shock beat, so it is fun sound-off. The voice track is still a third-person narrator list ('he pays', 'he clicks'); Benny never speaks and the viewer is addressed once. Benny-in-story gate: true.",
+  "researchers_fake_sites": "Faithful. Fetched CyberInsider: NordVPN found 'dozens' of malicious sites: fake pre-orders, beta/early access, fake storefronts charging for nonexistent access, Social Club login phishing, installer malware. No victim or loss numbers. Script says 'dozens', 'fake sites', 'some spread malware' with no invented counts; item 3 'fake pre-order site' matches. Only the malware platform (console) is overreached, see findings.",
+  "bnpl_47": "Safe. Voice, text, badge and upload all say 'pay later users'; the visual shows a PAY LATER sticker with no game. Does not imply financing GTA 6. LendingTree: 47% paid late in the past year.",
+  "ab_dilemma": "Real choice ($20 for in-game extras vs keeping $20) and good comment bait. Weakened because item 1 was framed as a 'money mistake', so picking A contradicts the video, and the tiny-coin gag mocks A. Reframe item 1 as 'the upsell' with a neutral gag.",
+  "upload": "Good overall: title pays off, line 1 hook, 9 tags, 4 hashtags, 'Not financial advice.', sources. Fix the 'console' claim."
+ },
+ "fixes": [
+  "Clarity 7 / Line 2: 'One: Ultimate costs you twenty dollars more than Standard.' (adds 'One' and 'than Standard'; 10 words, within the sentence limit). Non-native listeners then know what is compared, and 'Two:/Three:' match.",
+  "Stakes 7 / Lines 3 and 5: swap narrator 'he' for 'you' or Benny's own voice, e.g. 'Two: you pay later. Bills chase you.' and 'Three: you click a fake pre-order site.' Word count unchanged.",
+  "Surprise 7 / Line 4: 47% lands as a stat read. Add a visual of 'almost half' (about half the bill icons turn red) while keeping the exact 47% figure on screen and in voice (Rule A).",
+  "Entertainment 7: Benny never reacts aloud. Give him one quip or the lesson line himself, e.g. 'Not my device!' after the gremlin, to turn the list into a story.",
+  "Facts 8 / scene 9 and upload line 1: drop the 'console' malware implication (gremlin eats a laptop or phone; description 'your device').",
+  "Payoff/Ending 8 / scenes 3, 11, 12: neutral 'bonus pack' instead of the tiny gold coin; B row 'KEEP $20' instead of '+$20'.",
+  "Hook 8 / Line 1 (optional): spelled-out 'G T A six' slows the first 1.5 s. Weigh against needing GTA in the hook for gamers; the on-screen '3 MISTAKES' already lands at frame 0."
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "pass": false,
+ "average": 6.27,
+ "scores": {"hook": 7, "stakes": 5, "open_loop": 6, "escalation": 6, "payoff": 5, "surprise": 5, "ending": 7, "clarity": 7, "facts": 7, "originality": 8, "entertainment": 6},
+ "hard_gates": {"hook_rotation_assigned_type": true, "benny_in_story": true, "length_25_35s": true, "english_clear": true},
+ "hard_gates_notes": "benny_in_story passes narrowly: he now lives a night-in-the-queue story with a rival gag, but lines 4-6 are still a narrator explaining a study while Benny only reacts.",
+ "hook_gate": {
+  "assigned": "#3 Curiosity/Shock", "previous_episode": "#2 Listicle (2026-11-19-gta6-listicle)", "differs": true,
+  "style_check": "PASS, but only just. Line 1 gives a picture (Benny sleeping outside a store) and line 2 withholds the reason, so it is a real curiosity gap. Weak points: (a) 'The reason will surprise you' is generic filler and its referent is unclear: line 1 never says he is smiling, so 'the reason' reads as 'why sleep outside a store', which any gamer already knows; the real mystery (why he smiles) only appears in line 3. (b) Sleeping outside a store before a launch is mildly odd, not shocking. (c) The payoff is soft: the video never links the study back to 'that is why Benny smiles', so the loop closes only by implication."
+ },
+ "word_count_recomputed": 62, "est_seconds_at_2.3wps": 27.0, "est_seconds_at_speed_0.9": "about 30", "scenes": 9,
+ "v1_fixes_verified": {
+  "benny_story": "Mostly landed: Benny camps, a rival bonks him aside, he smiles, morning shrug, cuddle ending. No bars or counters. Remaining weakness: lines 4-6 are narration of a study.",
+  "hook_picture": "Landed (line 1 is a picture; 'tonight' removed).",
+  "honest_claim": "Landed: 'best part' removed, 'vacationers/others/gone' replaced, no overclaim that anticipation beats the trip, stamp 'CAN FEEL GOOD' matches the hedge. Residual: line 4 'felt happier' has no 'before' and no comparator, and line 5 'no big difference' has no stated 'between whom'.",
+  "caveat_placement": "NOT fully landed: 'trips, not games' (line 6) comes AFTER the twist (line 5), not before it. It does come before the ending.",
+  "tonight_to_night_before": "Landed, but see staleness note.",
+  "title": "Landed: no longer promises a verdict. Mild residual: asserts waiting for GTA 6 can feel good although the evidence is about trips (hedged by 'can')."
+ },
+ "claim_check": {
+  "nawijn": "Honest and sourced (ScienceDaily + Erasmus abstract): vacationers/planners happier before the trip than non-vacationers; after the trip no overall difference. 'Planned a trip' is a fair gloss (the source compares people who took a vacation with those who did not; anticipation is the authors' suggestion, not proven). No overclaim. Clarity gap: a listener hears 'planned a trip felt happier' with no 'before' and no 'than people who did not', so line 5 'no big difference' has no clear comparator.",
+  "scene_6_visual": "Shows Benny's hearts popping and both characters flat 'in the morning' after the queue night. That implies 'the joy ended once the wait ended', stronger than the study, and mixes the queue with the 'trip'. Keep it light (shrug only) or make a trip visible."
+ },
+ "night_before_staleness": "Correct for a 7 PM ET Nov 18 post for US viewers, if the release is still Nov 19 (the research file does not verify the date; re-confirm before posting). It goes stale (false) from release day: at 7 PM ET Nov 18 it is already about 8 AM Nov 19 in Manila/Asia, and after midnight anywhere. If posted after launch it is simply wrong. The video never says GTA 6 is out tomorrow, so a cold viewer gets no anchor; 'store' implies a physical queue, which is unsourced. Safe fallback: post early Nov 18 ET, or use evergreen 'Benny sleeps outside a store before a big game launch'.",
+ "drawability": {
+  "ok": ["hooded stranger (outfit stranger, flip) shoving in and drifting", "phone held by Benny (prop phone)", "morning/night bg changes", "headlines '?!', 'TRIPS', 'NOT GAMES'", "stamp 'CAN FEEL GOOD'", "list rows A/B", "poses point/shrug/present/slump, expr happy/smile/shocked", "hop, thud/buzz/pop sfx"],
+  "at_risk": [
+   "Sleeping bag (scenes 1, 3, 8): no such prop. Use slump pose or hop plus a 'zzz' bubble. 'Bag slides left' (scene 3) and 'cuddles the bag' (scene 8) will not read.",
+   "Store door (scenes 1, 8): not a prop. Needs a plain badge 'STORE' (no logo) or 'outside a store' lives only in the voice.",
+   "Calendar on the phone (scene 5): prop phone has no screen content. Use the badge 'PLANNED A TRIP' instead.",
+   "Hearts floating, grey cloud over the stranger, sun-glow (scenes 4-6): no particle or cloud props. Replace with expressions (happy vs broke/slump) and a bubble.",
+   "Yawn bubble and snoring (scenes 1, 9): feasible only as bubble text 'zzz'. 'Hype crowd silhouette' in scene 9 does not exist; drop it."
+  ]
+ },
+ "consistency": [
+  {"item": "GTA 6", "say": "G, T, A, six", "text": "G T A 6", "visual": "badge 'GTA 6'", "verdict": "OK (Rule B text matches say; badge in written form is allowed)"},
+  {"item": "line 2", "say": "The reason will surprise you", "text": "same", "visual": "headline '?!'", "verdict": "OK"},
+  {"item": "line 3", "say": "A rival steals his spot, and he still smiles", "visual": "stranger shoves, Benny smiles, 'STILL SMILING'", "verdict": "OK. 'Rival' is a mild non-native word; the shove shows it."},
+  {"item": "line 4", "say": "planned a trip felt happier", "visual": "badge 'PLANNED A TRIP', hearts, stranger has cloud", "verdict": "Voice has no 'before' or comparator; visual implies 'happier than the stranger'. Mild mismatch, not wrong."},
+  {"item": "line 5", "say": "After the trip, no big difference", "visual": "'NO BIG DIFFERENCE', both shrug in the morning", "verdict": "Text matches voice (OK); visual shows the queue morning, not a trip, and hearts 'vanish' says more than the voice."},
+  {"item": "line 6", "say": "trips, not games", "visual": "'TRIPS' then 'NOT GAMES'", "verdict": "OK"},
+  {"item": "line 7", "say": "Waiting can feel good", "visual": "stamp 'CAN FEEL GOOD'", "verdict": "OK, hedge preserved (v1 'BEST PART' Rule C risk fixed)."},
+  {"item": "A/B", "say": "Comment A or B", "visual": "A: WAIT / B: PLAY", "verdict": "OK, 2-3 words per row; voice says 'Wait or play' just before."},
+  {"item": "upload", "verdict": "Title no longer overpromises; description line 1 is a real hook, not the title; line 2 is the A/B; states 'trips, not games'; 4 hashtags incl #Shorts; 8 relevant tags; no money topic so no disclaimer needed. Fine."},
+  {"item": "numbers", "verdict": "No numbers except GTA 6; no mismatch possible."}
+ ],
+ "fixes": [
+  "Line 2 (hook referent): 'The reason will surprise you' does not say what the reason is for. Make the oddity explicit, e.g. line 1 'Benny sleeps outside a store before G, T, A, six, and smiles.' and line 2 'Why is he so happy?', so the gap and the payoff line up. Trim elsewhere to stay near 62 words.",
+  "Payoff (lines 6-7): the video never says 'that is why Benny smiles'. Add the link in plain words before the A/B, e.g. 'So waiting can feel good, like Benny.' Now the loop closes only by implication and 'trips, not games' reads as a disclaimer, not a payoff.",
+  "Caveat placement (lines 5-6): put 'That study was about trips, not games.' BEFORE the 'no big difference after' twist, as the brief required, then end the twist on a Benny gag. Now the caveat lands as an anticlimax after the twist.",
+  "Lines 4-5 clarity: 'felt happier' / 'no big difference' have no comparator. Use 'People who planned a trip were happier before it.' then 'After the trip, they were no happier than others.' (each <= 12 words). Prefer plainer words than 'rival' and 'a study found'.",
+  "Stakes (whole video): everything is about Benny until the last line. Add one second-person beat early ('You know this feeling.') so the viewer's own wait for GTA 6 is the stake.",
+  "Surprise: 'no big difference' is a shrug, not a 'wait, what?'. Strengthen the visual beat on line 5 (Benny's smile freezes, he stares at the camera) without claiming more than the study.",
+  "Drawability: rewrite scenes 1, 3, 5, 6, 8, 9 with only available assets (see drawability.at_risk): badge 'STORE', bubble 'zzz', slump/hop poses, expressions for the mood contrast; no hearts, cloud, sleeping bag, calendar or crowd.",
+  "Staleness: confirm the release is still Nov 19 and post before midnight ET Nov 18 (earlier for Asia), or switch to evergreen phrasing."
+ ]
+}

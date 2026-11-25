@@ -1,0 +1,30 @@
+{"pass": true, "average": 8.3,
+ "scores": {"hook": 8, "stakes": 9, "open_loop": 8, "escalation": 8, "payoff": 8, "surprise": 8, "ending": 9, "clarity": 8, "facts": 9, "originality": 8},
+ "fixes": [
+  "Line 4 ph (open_loop, PH audience): 'palihim na *dinodoble* ng utak mo' means 'secretly DOUBLES', which gives away the ~2x that the English line withholds until line 5. Use a neutral verb that matches 'multiplies', e.g. 'Kasi palihim na *pinalalaki* ng utak mo ang isang side ng coin.'",
+  "Line 1 (hook): the 'say' text is 15 words (~5.8 s), so the question 'Do you flip?' does not land until almost 6 s. Tighten the spoken line to e.g. 'Heads, you win one-fifty. Tails, you lose a hundred. Flip?' (~10 words) so the tension peaks inside 4 s. The on-screen '+$150 / -$100' already carries the dollar signs.",
+  "Lines 3-5 (open_loop): the brain half of the loop is named at line 5, which starts at ~16.5 s of ~43 s (~38%, not ~45% as the open_loop field says). After that, only the implicit 'math says yes' loop remains. Make it explicit in line 3 or 4 so it carries to the end, e.g. line 3: 'The math says yes, and by a lot. So why does your brain say no?' Then line 9 (<2%) pays off 'by a lot'.",
+  "Line 5 (escalation): at 15 spoken words (~5.8 s), this is the joint-longest beat and stacks three ideas: the name, '150 studies', and '2x'. The '150 studies' tag is already on screen, so drop it from the voice: 'Loss aversion: losses hurt about twice as much as wins.' (~4 s).",
+  "Line 6 / line 8 (clarity): the 'say' text drops 'dollars' ('about one ninety five', 'up twenty five hundred'), which is easy to mishear on first watch, and 'one ninety five' can sound like a time. Say 'about a hundred ninety-five dollars' and 'up twenty-five hundred dollars', or trim elsewhere to make room.",
+  "Line 9 / line 10 (payoff/surprise): '<2%' is the real 'wait, what?', but it is not tied back to the brain. Add a 3-5 word bridge before line 10, e.g. a spoken half-line in line 9 such as 'Under two percent. Your brain still says no.' This makes the payoff land on the viewer's own bias instead of on arithmetic. The Kahneman $150/$100 flip is familiar to psych-Shorts viewers, so the surprise has to come from this contrast.",
+  "Line 10 (ending): 'Tails, a hundred' loses the 'lose' and is ambiguous by ear. Say 'Tails, lose a hundred.' Also, keep the caveat 'One flip's still 50/50' as short as it is now. Do not let it grow.",
+  "Originality: Benny's hand-freeze in line 2 helps, but the spoken script is still a textbook Kahneman recap. Give Benny one voiced personal reaction at the twist (line 7 or 9), e.g. Benny muttering 'Wait... I've been saying no?' before line 10, so the story is Benny discovering his own bias."
+ ],
+ "notes": {
+  "verdict_1am_viewer": "Would stop: yes. It is an instant second-person money question with +$150 / -$100 burned in at frame 0. Would stay: likely to the end now. Line 4's tease and the tighter 2x -> $195 beat fixed v1's sag, and the 100-flip / <2% numbers give a real reason to wait. The remaining drag is the long spoken line 1 and line 5.",
+  "previous_fixes_check": {
+   "1_open_loop_line4": "DONE in English ('secretly multiplies'; name + 2x land together in line 5). The ph line 4 'dinodoble' leaks the 2x (see fix 1).",
+   "2_cut_607_measurements": "DONE ('150 studies' merged into line 5 + corner tag).",
+   "3_fold_lines_7_8": "DONE (single line 6, 'So you say no' dropped).",
+   "4_scale_payoff": "DONE (+$2,500 over 100 flips, <2%).",
+   "5_spoken_loop_ending": "DONE (line 10 repeats the hook question; on-screen A/B + Comment; visual matches frame 0).",
+   "6_clarity_and_est_seconds": "DONE ('studies', 'lose money overall'; est_seconds 43 matches 112 spoken words / 2.6 = 43.1 s).",
+   "7_line10_ph": "DONE ('Chance na talo ka sa dulo? Wala pang 2%.' is natural).",
+   "8_benny_beat": "DONE (Benny's hand freezes in line 2 and returns, confident, in line 10)."
+  },
+  "math_recomputed": "EV/flip = 0.5*150 - 0.5*100 = +25 (OK). 1.955*100 = 195.5 -> 'about $195' (OK; 95% range 182.0-210.2, all > 150). 100 flips: 100*25 = +2,500 (OK). Net total = 250h - 10,000 < 0 iff h <= 39; P(h <= 39 | n=100, p=0.5) = 0.017600 = 1.76% < 2% (OK; h = 40 gives exactly 0, so it is correctly not counted as a loss).",
+  "sources_checked": "Every number in the script maps to a research-file entry with a source_url: the coin toss and 'most people decline' (litcharts + margin-notes), 150 articles / 1.955 (aeaweb JEL), and 'about twice' (Wikipedia, with the atticusli caveat). Computed figures are re-verified above. No shaky claim, so no URL was refetched; the v1 QA had already confirmed aeaweb and litcharts.",
+  "format": "10 lines (OK, 8-14). 94 display words / 112 spoken words (OK, 75-130; matches the script's own counts). Spoken length 112 / 2.6 = 43.1 s (OK, 30-50; est_seconds 43 is accurate). On-screen text max 4 words per scene (OK). The 'Not financial advice' tag is on screen in the final scene (OK). Line start times at 2.6 wps: 0.0, 5.8, 8.8, 13.1, 16.5, 22.3, 26.5, 30.4, 34.6, 37.7 s.",
+  "ph_check": "Lines 1-3 and 5-10 read as natural Taglish with the same meaning. Line 4 ph changes the meaning ('doubles' vs 'multiplies') and spoils the loop."
+ }
+}

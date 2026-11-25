@@ -1,0 +1,53 @@
+{
+  "pass": false,
+  "average": 7.5,
+  "scores": {"hook": 8, "stakes": 8, "open_loop": 7, "escalation": 7, "payoff": 7, "surprise": 7, "ending": 8, "clarity": 8, "facts": 8, "originality": 8, "entertainment": 7},
+  "hard_gates": {"what_if_opener": true, "benny_in_story": true, "length_25_35s": true, "english_clear": true},
+  "gate_notes": {
+    "length": "65 spoken words (12+8+9+12+6+8+10); script says 66. ~28 s at 2.3 w/s, ~31 s at speed 0.9. 7 scenes/lines (visual beats), see fix on scene count.",
+    "english_clear": "All 7 sentences-groups <= 12 words (line 1 = 12, line 4 = 12). No idioms/Taglish. 'G T A six' spelled out in say. Numbers plain."
+  },
+  "v1_fixes_verified": {
+    "hook_16_words": "LANDED: now 12 words, question, withholds the number.",
+    "three_games_not_in_hook": "LANDED: first said in line 5.",
+    "average_to_typical": "LANDED in say, badge and description.",
+    "on_screen_le_5_words": "LANDED: 'A: SICK / B: AFTER WORK' = 5 words incl. letters. OK.",
+    "line3_literal": "LANDED ('lose money every hour'), but see new issue below.",
+    "boxes_gag_and_vanishing_boxes": "LANDED in visuals.",
+    "upload_more_than_three": "LANDED."
+  },
+  "math_recheck": "1235/40=30.875/h; x8=247.00; 247/79.99=3.09; 3x79.99=239.97 < 247 so 'more than three games' is true, narrowly (margin $7). At 35 h/wk day = 282. Spoken 'about two hundred fifty' is a rounded 247: acceptable. Math correct.",
+  "viewer_notes": {
+    "one_a_m_scroller": "Stays past 0.5 s: GTA 6 launch week plus a fake-cough visual and 'is it free?' is a clear curiosity gap. Mild risk: the question is abstract ('free?' of what?) until line 3-4, and the first 3 s are mostly setup. Lines 2-3 are the sagging middle (a cough, then relax), ~8 s with little new information. The $247 / three-boxes reveal lands well because 'three games' is no longer pre-spoiled.",
+    "non_native_listener": "Understands almost everything at 0.9. Possible replay: 'is it free?' (free = costs no money, or free of consequences?) and line 3, where 'you relax' plus 'lose money every hour' sounds odd. 'Unpaid day' in line 4 is the key word and is not defined aloud.",
+    "new_issues": [
+      "Line 3 'you lose money every hour' is not literally true. The loss is one day of pay, and it is not hourly while on the couch; it also adds the idea that money drains continuously, then line 4 says 'an unpaid day costs $247'. Mixed model. Facts/clarity cost.",
+      "'More than three whole games' is true by only $7 (239.97 vs 247). Safe, but fragile if the viewer's mental price is $70 or if the price changes. Price source is a secondary site (gameluster.com), not Rockstar; research flags it as pre-launch."
+    ]
+  },
+  "title_check": {
+    "title": "The GTA 6 sick day costs more than 3 games #Shorts",
+    "spoils_reveal": true,
+    "why": "Yes. The in-video twist (line 5, 'more than three whole games') and the whole answer to the hook question are in the title, so anyone who read the title already knows the payoff and the 'is it free?' loop is dead before play. It is not clickbait (it pays off), but it undercuts retention and the surprise score. It also reads as a statement, not a question.",
+    "suggestions": [
+      "Is a fake sick day for GTA 6 really free? #Shorts",
+      "The hidden price of a GTA 6 sick day #Shorts",
+      "I faked sick for GTA 6. Do the math. #Shorts (but note Benny is 'you' in the script; 'Do the math on a GTA 6 sick day' is safer)"
+    ],
+    "also": "Mirror the change in upload.title and title_fb. Description line 1 ('Is a fake sick day really free? Do the math first.') then duplicates the new question title: rewrite line 1 to e.g. 'One day off can cost more than the game itself.' only if the title no longer gives it away; otherwise keep."
+  },
+  "upload_check": {
+    "status": "good, minor",
+    "notes": "Line 1 is a real hook, line 2 is the A/B, key number with context in line 3, 'Not financial advice.' present with paid-leave caveat, source named, 4 hashtags (#gta6 #money #savingmoney #Shorts), 9 relevant tags. Only issue: title spoils the reveal (see title_check)."
+  },
+  "fixes": [
+    "Line 3 (clarity/facts 8, escalation 7): 'Now you relax, and you lose money every hour.' implies an hourly drain. Say instead: 'Now you play all day. Your boss pays you nothing.' (10 words) so the unpaid day is introduced aloud before line 4, and the on-screen HOUR 3 clock gag still works.",
+    "Line 2 (escalation 7): 'You fake a cough. Your boss looks suspicious.' repeats the hook visual (the cough already happened in line 1). Move the boss reaction into line 1 visuals and make line 2 a new beat, e.g. 'Your boss believes you. Benny is free!' no: say 'Your boss believes you. You are free!' (7 words), so there is a small win before the twist.",
+    "Line 4 (surprise/open loop 7): define 'unpaid' aloud: 'No pay for that day? At typical pay, you lose two hundred fifty dollars.' Keep each sentence <= 12 words. This also lets a non-native listener catch the key condition.",
+    "Line 5 (surprise 7, payoff 7): the twist is good but quick and the margin is only $7. Add a number the viewer feels: say 'That is more than three whole games!' as is, but let the ending hold one beat on the boxes burying Benny; consider 'More than three whole games. For one day.' (8 words) to land the stakes.",
+    "Line 6 (payoff 7): 'Play after work, and it costs nothing extra.' reads as a tip. Add a human beat: 'Play after work. Same fun, zero cost.' or show the tie back on. Optional: tie back to the hook word 'free': 'Play after work. That one is really free.' (8 words), which closes the loop with the first line.",
+    "Line 1 (hook 8): 'free' is ambiguous. Make it concrete: 'If you fake sick for G T A six, is that day free?' (13 words, over the cap), so instead 'If you fake sick for G T A six, what does it cost?' (12 words) which keeps the gap and the stakes.",
+    "Title (upload.title and title_yt, title_fb): replace the spoiler with a curiosity gap, e.g. 'Is a fake sick day for GTA 6 really free? #Shorts'.",
+    "Scene count: only 7 scene entries for 28-31 s, below the 8-12 target. Split line 1 (desk cough, then '$0?' stamp) and line 7 (A frame, B frame) into separate scenes, or insert a boss-reaction scene, to reach 8-9."
+  ]
+}

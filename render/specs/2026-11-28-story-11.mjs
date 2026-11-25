@@ -1,0 +1,25 @@
+// "Ever Since He Was Five, Leo Could See When Someone Lied" (12 lines). Liars' faces flash red (redFlash windows are fractions of the shot).
+import * as K from './_common.mjs';
+const ID = '2026-11-28-story-11'; const { OUT, slot } = K.timing(ID);
+const { C, arm, both, push, pull, drift, low, high, follow, cam, FX } = K;
+const HALL = { loc: 'hallway', light: 'day', exposure: 0.7, fx: FX.indoor };
+const CLASS = { loc: 'classroom', light: 'day', exposure: 0.7, fx: FX.indoor, boardText: 'HOMEWORK' };
+const KITCHEN = { loc: 'house', light: 'sunset', time: 'evening', exposure: 0.95, dx: 9, fx: FX.sad };
+const DUSK = { loc: 'field', light: 'sunset', exposure: 0.95, fx: FX.sad };
+const LEO = (o = {}) => C('l', 'leo', 0, 4, 0, 'neutral', { scale: 0.95, ...o });
+const PIA = (o = {}) => C('p', 'pia', 0, 4, 0, 'happy', o);
+const BRO = (o = {}) => C('b', 'eli', 0, 4, 0, 'happy', { scale: 0.62, ...o });
+const S = [];
+S[0] = { ...HALL, cast: [LEO({ face: 'thinking' }), C('a', 'beanie', -3.5, 9, 160, 'neutral'), C('c', 'lucy', 3.5, 11, 200, 'happy')], acts: [], cam: push(0, 4, 3.4, 17, 12.5, 38) };
+S[1] = { ...HALL, cast: [C('a', 'beanie', 1.6, 4, -50, 'smirk', { redFlash: [[0.35, 0.6]] }), LEO({ at: [-1.6, 4], rot: 50, face: 'neutral' })], acts: [], cam: drift(0, 4, 3.4, 15, 3) };
+S[2] = { ...HALL, cast: [PIA({ at: [0, 3], redFlash: [[0.3, 0.45], [0.7, 0.85]] }), LEO({ at: [5, 9], rot: -40, face: 'confused' })], acts: [arm('p', -1.2, 0.5, [0.2, 0.4])], cam: push(0, 4, 3.4, 18, 14, 40) };
+S[3] = { ...HALL, cast: [PIA({ at: [0, 3], face: 'happy', redFlash: [[0.2, 0.38], [0.72, 0.9]] })], acts: [], cam: push(0, 3, 3.6, 13, 10.5, 34) };
+S[4] = { ...HALL, cast: [LEO({ at: [-1.5, 4], rot: 180, face: 'neutral' }), PIA({ at: [2, 2], face: 'sad' })], acts: [{ who: 'l', do: 'walk', to: [-1.5, 16], t: [0.15, 1] }], cam: pull(0, 3, 3.4, 12, 17, 40) };
+S[5] = { ...CLASS, cast: [C('t', 'gwen', -2.5, 1, 30, 'angry'), PIA({ at: [2, 4], rot: -30, face: 'nervous', redFlash: [[0.78, 0.95]] }), LEO({ at: [-5, 9], rot: 30, face: 'neutral' })], acts: [arm('t', -1.6, 0.4, [0.1, 0.35])], cam: drift(0, 3, 3.4, 16, 3.5, 40) };
+S[6] = { ...DUSK, cast: [PIA({ at: [-4, 2], rot: 90, face: 'sad' }), LEO({ at: [-10, 6], rot: 90, face: 'neutral' })], acts: [{ who: 'p', do: 'walk', to: [8, 2], t: [0.05, 1] }, { who: 'l', do: 'walk', to: [2, 6], t: [0.1, 1] }], cam: follow(-6, 6, 4, 3.2, 18) };
+S[7] = { ...KITCHEN, cast: [PIA({ at: [-1.6, 4], rot: 40, face: 'happy' }), BRO({ at: [1.8, 4.5], rot: -40, face: 'happy' })], acts: [arm('p', -1.5, 0.4, [0.1, 0.3]), arm('p', -1.5, -0.4, [0.1, 0.3], 'L')], cam: push(0, 4, 3.0, 16, 12.5, 40) };
+S[8] = { ...KITCHEN, cast: [PIA({ at: [2, 3], rot: -20, face: 'sad' }), BRO({ at: [3.6, 3.5], rot: -30, face: 'neutral' })], acts: [], cam: high(1, 4, 2.4, 15, 46) };
+S[9] = { ...KITCHEN, cast: [PIA({ at: [-1.3, 4], rot: 60, face: 'happy', redFlash: [[0.78, 0.98]] }), BRO({ at: [1.5, 4], rot: -60, face: 'worried' })], acts: [], cam: drift(0, 4, 3.0, 14, 3) };
+S[10] = { ...DUSK, cast: [LEO({ at: [0, 5], face: 'sob' })], acts: [{ who: 'l', do: 'lookdown', t: [0.2, 1], hold: true }], cam: push(0, 5, 3.6, 16, 12, 36) };
+S[11] = { ...CLASS, fx: { ...FX.indoor, sparkles: { color: '#ffe9a0', count: 80, size: 0.35, speed: 0.3 } }, cast: [LEO({ at: [-1.4, 4], rot: 50, face: 'happy' }), PIA({ at: [1.4, 4], rot: -50, face: 'sad' })], acts: [{ who: 'p', do: 'face', kind: 'happy', t: 0.6 }, arm('l', -1.2, 0.5, [0.3, 0.5])], cam: pull(0, 4, 3.4, 12, 17, 38) };
+K.write(ID, S, slot, OUT);

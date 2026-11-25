@@ -1,0 +1,51 @@
+{
+  "pass": false,
+  "average": 7.5,
+  "scores": {"hook": 8, "stakes": 8, "open_loop": 7, "escalation": 8, "payoff": 7, "surprise": 6, "ending": 8, "clarity": 8, "facts": 8, "originality": 7, "entertainment": 8},
+  "hard_gates": {"what_if_opener": true, "benny_in_story": true, "length_25_35s": true, "english_clear": true},
+  "gate_notes": {
+    "length_25_35s": "Python word count on 'say': 12+9+10+5+6+11+10 = 63 (G, T, A counted as 3 tokens, 'five' separate). 63 / 2.1 w/s = 30 s, plus letter-by-letter 'G, T, A' and a 0.3 s tail, about 31 s. Safe margin under 35 s. v2 length problem is fixed.",
+    "english_clear": "Every line is complete and <= 12 words (longest is line 1 at 12). No idioms or slang. 'G, T, A five' is slow but clear at 0.9 speed. No ph/Taglish anywhere.",
+    "scenes": "7 spoken lines; the script itself says the generator will split to 8-10 scenes at word anchors. Acceptable, but the generator must do the split (line 3 and line 6 need two scenes each).",
+    "on_screen": "All on_screen strings are <= 5 words ('ABOUT $3,858 A SECOND' = 4, '$333 MILLION A DAY' = 4)."
+  },
+  "v2_fixes_check": {
+    "premise_switch": "LANDED. One premise (paid for every sale) all the way through; the 'one second a day' rule, $1.4M and $1M are gone.",
+    "story_vs_numbers": "LANDED. Lines 4 and 5 are story beats (quit the job, friend asks for a loan). Numbers sit in lines 2, 3 and 6 only.",
+    "biggest_number_last": "LANDED. $333M is held for line 6.",
+    "plainer_hook": "LANDED. 'What if you got paid for every G, T, A five sale?'",
+    "length": "LANDED. 73 to 63 words.",
+    "ending_dilemma": "LANDED. 'Spend it all, or save it? Comment A or B.' is self-contained, no ambiguous 'that'. The dilemma is no longer lopsided in arithmetic; it is a values split.",
+    "originality_foil": "LANDED. Delivery job and pizza box replace the lemonade stand.",
+    "upload_tags": "LANDED. 'gta 6 vs gta 5' and #gta6 removed, 'gta 5 money per second' added. (See timeliness note: this removal is now the cause of a trade-off.)",
+    "not_landed": "Surprise (v2 6) and open loop (v2 6) improved only a little: see fixes 1 and 2."
+  },
+  "math_recheck": "Python: 1e9 / 3 = 333,333,333 per day ('about three hundred thirty million' OK); / 86,400 = 3,858.02 per second ('almost four thousand' OK; screen '$3,858' OK). Both are averages of 'over $1B in 3 days' (Engadget + Shacknews, both in the research file, both opened there). 'By tomorrow' = 24 h at a constant rate = $333M, consistent with line 3. Hedged correctly with 'about', 'ESTIMATED SALES' and 'NOT FINANCIAL ADVICE'. Facts 8, not 9: (a) the source says 'over $1B', the line says 'about one billion' (safe, understated); (b) launch sales were not evenly spread over 3 days, so a per-second rate is a simplification; (c) the revenue vs profit caveat lives only in the description and badge, not in speech. No wrong number found.",
+  "viewer_notes": {
+    "1am_scroller": "Would I stop at 0.5 s? Yes, mostly. 'What if you got paid for every GTA 5 sale' is easy to picture, and frame 0 (pizza-box Benny, cash register, $ PER SECOND counter at $0, 'HOW MUCH?!') gives me a number to wait for. I stay: the $1B, the cash burial, the quit gag and the one-coin loan are quick and funny. I would stay to the end for the $333M and the comment prompt. What stops it from being a 9: nothing in it makes me say 'wait, what?'. It is a big-number video; the numbers are big but expected for a game that sold a billion.",
+    "non_native": "'G, T, A five' is clear when spelled out. 'almost four thousand dollars every second' is plain. 'By tomorrow, you would have about three hundred thirty million dollars' is the longest line (11 words, a conditional plus a big number); fine at 0.9 speed but the one line most likely to need a replay. 'Spend it all, or save it?' is easy. No idioms."
+  },
+  "timeliness_note": {
+    "problem": "This episode is in a series riding GTA 6 launch hype (release Nov 19, 2026; research file shows launch-week memes already circulating). The script, title and upload block never mention GTA 6. A scroller on launch eve sees a GTA 5 sales video; the algorithm and viewer both lose the 'this is about the thing everyone is talking about' signal. v2 QA asked to remove #gta6 because the video did not mention it, so the loss is real but self-inflicted.",
+    "does_it_weaken": "Yes, mildly. The hook and story stand alone, and GTA 5 money is evergreen, so it is not fatal. But the series premise is launch-week riding, and the video currently gives the viewer zero link to it.",
+    "cheapest_fix": "Zero script change, zero new facts: add the link in the upload block and one on-screen element. (1) Description line 1 or 2: 'GTA 6 launches Nov 19. GTA 5 made this much in 3 days.' (Nov 19 date is verified in research.) (2) Re-add #gta6 and the tag 'gta 6 launch' (now accurate, because the description mentions it). (3) Optional, free for the generator: a small corner badge in frame 0 and in the last scene, 'GTA 6 DROPS TOMORROW', plain text, no logos. Do NOT put it in speech: the spoken length is already at 63 words and a second game confuses the premise."
+  },
+  "upload_check": {
+    "title": "OK. 'What If You Got Paid for Every GTA 5 Sale?' matches the hook; the video pays it off ($333M a day). No exact number in the title, fine.",
+    "description_line1": "OK. 'Imagine every GTA 5 sale landing in your bank account.' is a real hook, not a copy of the title. One emoji.",
+    "description_line2": "OK. A/B comment prompt.",
+    "value_lines": "OK. $1B in 3 days, $3,858 a second, $333M a day, 'Not financial advice.', estimated retail sales (not profit), sources named.",
+    "hashtags": "5 tags (#gta5 #gtav #gaming #money #Shorts), relevant, no spam. Add #gta6 once the description mentions the launch (see timeliness).",
+    "tags": "8 phrases, relevant. Add 'gta 6 launch' and 'gta 6 release date' only with the description fix above.",
+    "title_yt_title_fb": "title_yt = title + ' #Shorts' (fine). The 'title' field in upload matches title_fb."
+  },
+  "fixes": [
+    "Line 6 / line 3 (surprise 6): nothing breaks an assumption; $3,858 a second and $333M a day are both big numbers of the same kind. Add one 'wait, what?' that is verified by arithmetic: after line 3, a gag beat on screen (no extra words needed): 'Read this sentence, about 5 seconds, and you earn about $19,000' (3,858 x 5 = $19,290). Or swap line 4's 'You quit your delivery job.' for a beat that makes the viewer's own time the cost: 'You blink, and you earn four thousand dollars.' Keep it <= 12 words, plain English. Alternatively add a gag at the end of line 6: Benny is buried yet the counter keeps going.",
+    "Line 3 (open_loop 6-7): the hook's 'HOW MUCH?!' is answered by line 3 at about 9 s. The held reveal ($333M) is the same kind of number, so it feels like a repeat. Hold the per-second answer until after the loan beat, or end line 2 on a question the viewer can't answer ('How much is that every second?') and move the quit/loan beats after the per-second line. Or plant a second question in line 4 ('Could you spend it all in one day?') and pay it off in line 6/7.",
+    "Line 6 (payoff 7): $333M a day is the same rate as line 3 restated bigger, not a new idea. Give the payoff a story piece: make Benny's reaction a decision (he tries to count the cash, the counter outruns him) so the surprise comes from what he does, not only the bigger number. 'About three hundred thirty million' is also the longest spoken line; consider 'By tomorrow, you would have three hundred thirty million dollars.' (10 words, say 'about' on screen).",
+    "Timeliness (series fit): add the GTA 6 link in the upload block and a small on-screen 'GTA 6 DROPS TOMORROW' badge in frame 0 and the final scene (see timeliness_note). No change to the narration. Re-add #gta6 and 'gta 6 launch' to hashtags/tags only after the description names the launch.",
+    "Originality (7): premise is a close cousin of 'hype ride' money videos, but the pizza-box foil and the one-coin loan gag are fresh. For 8+, make the loan gag the twist with a consequence: the stranger comes back in line 7 with the coin as a hat, or Benny keeps a coin in the final frame while burying in cash.",
+    "Facts (8): say the revenue caveat once in speech or on the line-2 badge ('SALES, NOT PROFIT'). The 'ESTIMATED SALES' badge is there; add one on-screen word that shows it is not what Rockstar kept. Optionally change 'about one billion' to 'over one billion' to match the source exactly.",
+    "Clarity (8): line 1 'G, T, A five' is fine, but keep 'sale' singular and short. Line 6 is the line most likely to be replayed: either trim as above or put the number on screen at the same moment it is said."
+  ]
+}

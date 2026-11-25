@@ -1,0 +1,29 @@
+{
+  "production_id": "GENERATE_UNIQUE_ID",
+  "title": "",
+  "format": "youtube_short",
+  "niche": "roblox_rule_based_world_story",
+  "target_duration_seconds": 140,
+  "aspect_ratio": "9:16",
+  "language": "en",
+  "competitor_reference": "TeamDeam (format inspiration only; no copying)",
+  "story": {
+    "world_rule": "",
+    "protagonist_goal": "",
+    "personal_stakes": "",
+    "conflict": "",
+    "payoff": ""
+  },
+  "voice_profile_ref": "04_VOICE/voice_profile.json",
+  "characters": [],
+  "scenes": [],
+  "provider": {
+    "name": "USE_CURRENT_CONFIGURED_PROVIDER",
+    "model": "VERIFY_CURRENT_MODEL",
+    "estimated_credits": null,
+    "commercial_use_checked": false
+  },
+  "qa_status": "not_started",
+  "telegram_status": "pending_review",
+  "youtube_status": "not_uploaded"
+}

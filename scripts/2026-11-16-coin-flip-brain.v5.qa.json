@@ -1,0 +1,81 @@
+{
+  "pass": false,
+  "average": 7.64,
+  "scores": {
+    "hook": 7,
+    "stakes": 7,
+    "open_loop": 8,
+    "escalation": 8,
+    "payoff": 7,
+    "surprise": 7,
+    "ending": 8,
+    "clarity": 8,
+    "facts": 9,
+    "originality": 7,
+    "entertainment": 8
+  },
+  "hard_gates": {
+    "what_if_opener": true,
+    "benny_in_story": true,
+    "length_25_35s": true
+  },
+  "viewer_test": "1 a.m. scroller: frame 0 (hooded glowing-eyed stranger holding out a coin, '+$150' burned in) is a reasonable stop at 0.5 s, and the offer now starts at ~2 s instead of ~4 s. But line 1 is still one 13-word, 5-second sentence with no 'you' in it ('a stranger offers' - offers whom?), and the bet itself is the textbook Kahneman flip that psych Shorts reuse a lot, so the 'I've seen this' swipe is a real risk. Lines 2-3 (NOPE stamp, sprint, peek back, 'He's the one who should run') are the best 4 seconds of the episode and would keep me. Line 4 cuts away to a light background for a fact (a small lecture dip), then lines 5-7 are proper action (coin bonks Benny, tear, flip montage, coin rain). The problem is the twist in line 8: line 6 already said each flip pays YOU $25, so 'every flip costs HIM $25' is the obvious other side of a sentence I heard 5 s earlier. It lands as a confirmation, not a 'wait, what?'. And the stranger still has no reason to offer a deal that loses him money, so his gulp is a gag without a motive. I would probably stay to the end (30 s, things keep moving), but I would not rewatch or share.",
+  "gate_notes": {
+    "what_if_opener": "First spoken words: 'What if a stranger offers...'. Pass.",
+    "benny_in_story": "Pass. Benny runs, comes back, flips, loses flip #1 (coin on head, tear), keeps going, ends on a coin pile; a second character reacts. Only line 4 (light-bg brain/stamp cutaway) is presenter-style.",
+    "length_25_35s": "79 spoken words (from `say`, else `text`) / 2.6 = 30.4 s; with 8 default pauses (0.22 s) and a 0.3 s tail ~32.4 s. Pass with room."
+  },
+  "v4_fixes_landed": {
+    "1_hook_offer_earlier": "Landed partly. Lines 1-2 merged; the offer starts at word 6 (~1.9 s), the full +$150/-$100 is said by ~5.0 s; '+$150' and the stranger + coin are on screen from frame 0. Still a long single sentence without 'you'.",
+    "2_twist_logic": "Landed partly. 'He bet you'd run' is gone and the twist is now zero-sum EV ('every flip costs him $25'), which is correct. But the stranger's motive to offer is still missing, and line 6 gives the twist away.",
+    "3_open_loop": "Landed. Line 3 plants 'He's the one who should run' at ~6-9 s; paid off in line 8 at ~22-26 s.",
+    "4_lecture_lines_5_8": "Landed mostly. Stats merged; lines 5-7 are action. Line 4 is still a fact beat on a separate light background.",
+    "5_length": "Landed. 89 -> 79 words, 34.2 s -> 30.4 s.",
+    "6_line_8_clarity": "Landed ('A hundred flips? You almost never end up behind.').",
+    "7_ending_hedge": "Landed. Hedge moved to corner badges; ending re-says the offer and asks A/B.",
+    "8_originality": "Landed partly. Benny's arc is the unique part now, but the premise is still the stock Kahneman example.",
+    "9_drawability": "Landed for the three v4 items (flipcoin head bonk, camera shake instead of brain shake, 'gulps' + bubble instead of sweating). New minor issues listed under `drawability`.",
+    "10_ph": "Landed ('Pustahan niya' gone; 'Ang weird pa?' used)."
+  },
+  "math_recheck": {
+    "ev_per_flip": "0.5*150 - 0.5*100 = +$25 for you; zero-sum, so -$25 per flip on average for the stranger. Correct.",
+    "felt_loss": "1.955*100 = $195.50 -> 'about $195' (95% range 1.820-2.102 -> $182.00-$210.20, all above $150). Correct.",
+    "100_flips": "Total = 150h - 100(100-h) = 250h - 10,000 < 0 iff h <= 39 (h = 40 is break-even). P(h <= 39 | n=100, p=0.5) = 0.017600 = 1.76% -> '<2%' / 'almost never'. Correct (P(h<=40) = 2.84%, so 'end behind' must mean strict loss, which it does).",
+    "one_flip": "Line 5 loses flip #1 (-$100): consistent with a 50/50 single flip and the '1 flip = 50/50' badge.",
+    "sources": "Every number traces to the research file: LitCharts + margin-notes (most people decline the $150/$100 flip), Wikipedia (~2x), AEA/JEL 2024 meta-analysis (1.955 -> $195), atticusli caveat ('about'), computed EV/binomial. No unsourced number. Minor wording stretch: the 1.955 coefficient is a decision weight, 'feel like about $195' is an acceptable simplification given 'about'."
+  },
+  "format_check": {
+    "spoken_words": 79,
+    "est_seconds": 30.4,
+    "est_seconds_with_pauses": 32.4,
+    "scenes": 10,
+    "lines": 9,
+    "words_per_line": [13, 3, 8, 12, 5, 8, 9, 10, 11],
+    "line_timing_s": ["0.0-5.0", "5.0-6.2", "6.2-9.2", "9.2-13.8", "13.8-15.8", "15.8-18.8", "18.8-22.3", "22.3-26.2", "26.2-30.4"],
+    "on_screen_max_words": 4,
+    "on_screen_ok": true,
+    "notes": "Line 1 (5.0 s) and line 4 (4.6 s) are the longest single lines; both rely on in-scene beats to avoid a >2.5 s hold. Line 1 has beats on 'heads' and 'Tails'; line 4 has items on 'brain' and '$195'. OK."
+  },
+  "drawability": [
+    "Scenes 1, 2 and 7: 'hop true' and 'flip true' are written as timed beat changes ('Beat on heads: ... hop true', 'On run Benny flips around (flip true)', 'beat -> ... hop true'). The doc documents hop/flip only as top-level benny fields and shows beats changing pose/expr. Either confirm beats accept hop/flip, or start a new scene at that word (scene 2 at 'run' with flip true) / set hop at scene level.",
+    "Scene 8: 'Benny in the foreground on his coin pile'. Items vanish when the scene ends, so scene 7's coin rain will not persist. Add a `coins` item (small n, floor 1300, layer back) to scene 8 and scene 9 if the pile should stay.",
+    "Scene 6: 'his grin fades, expr smile'. Per the doc, smile is a confident smirk on the stranger (a sly grin), so the grin will not fade. Use expr thinking (or shocked) for the fade.",
+    "Scene 5: 'expr happy (laughing)'. There is no laugh; happy gives a sly grin under the hood. Fine, but don't rely on reading 'laughing'.",
+    "Scene 9: 'the stranger behind him'. There is no depth/z-order for cast; use x positions (e.g. Benny x 380 scale 1.5, stranger x 800) and say so.",
+    "Scene 10: 'badges in the corner'. Place them inside the safe area (y 260-1250, x 60-940); not in the top 220 px or right 140 px.",
+    "Text mismatches between `visual` and `on_screen`: line 6 badge '+$25 / flip (avg)' vs on_screen '+$25 per flip (avg)'; line 7 '< 2% end behind' vs '<2% end behind'; line 8 '-$25 EVERY FLIP' vs 'HIM: -$25 every flip'. Pick one per line.",
+    "Everything else maps to documented fields: stranger cast with flip, poses wave/shock/run/shrug/think/worry/point/slump/flex/hero/present, expressions, prop coin/brain, headline/stamp/bubble/badge/counter/list/flipcoin/coins items, flash, camera beats/shake, sfx thud/whoosh/clink/ding/pop, tail 0.3."
+  ],
+  "ph_check": "Natural Taglish with the same meaning overall. Polish: line 4 'Pinaparamdam ng utak mo na ang talo na $100, parang mga $195.' is stiff and long for a caption; try 'Sa utak mo, ang talo na $100 parang $195.' Line 6 'sa average, bawat isa, *+$25* sa 'yo' is clunky; try 'Average: *+$25* sa 'yo bawat flip.' Line 1 'What if may stranger na nag-alok' is fine (keeps the channel's 'What if' format).",
+  "fixes": [
+    "Line 8 + line 6 (payoff 7, surprise 7): line 6 already says each flip pays YOU $25, so line 8's 'Every flip costs HIM twenty five' is the obvious flip side, not a twist. Hold the $25 back until line 8: make line 6 pure action ('Keep flipping. Flip. Flip. Flip.' with the coin montage and no number), and let line 8 do the reveal in one go: 'Wait... the stranger gulps. On average, every flip pays YOU twenty five. And costs HIM twenty five.' Keep '+$25 / -$25' on screen there.",
+    "Line 3 / line 8 (payoff 7, entertainment 8): the stranger still has no reason to offer a deal that loses him money. Give him a motive that IS the mechanism: he is counting on you to quit after one tails (loss aversion). E.g. line 5 ends with the stranger saying/bubbling 'Quit now?' after the first loss, and Benny's 'Keep flipping' becomes the choice that beats him. That turns his gulp into a defeated plan instead of a random gag.",
+    "Line 1 (hook 7, stakes 7): 13 words / 5 s with no 'you'. Put the viewer in it and shorten: 'What if a stranger offers YOU this: heads, win one fifty. Tails, lose a hundred?' or cut to 'What if this stranger says: heads, you win one fifty, tails, you lose a hundred?'. Also say 'dollars' once ('one fifty dollars' -> 'a hundred fifty bucks') so the ear knows it's money before the on-screen text is read.",
+    "Line 4 (entertainment 8, escalation 8): the light-background brain cutaway is the last lecture moment. Keep it on the dark street: Benny freezes mid-run, holds his brain (prop brain), and the 'FEELS LIKE -$195' stamp slams on the stranger's '-$100' headline, so the fact happens inside the scene.",
+    "Line 9 (ending 8): after being told flipping wins 98% of the time over 100 flips, 'A: flip. B: run.' is not a real dilemma, so comment bait is weak. Make the choice genuinely split: 'One flip only. A: flip. B: run. You?' (true 50/50, matches the badge) or ask the research-suggested number question: 'How much would YOU need to win to flip? Comment it.'",
+    "Originality 7 (policy): the $150/$100 flip is Kahneman's stock example. Keep the Benny arc but give the stranger a visual identity/gag (e.g. his pockets empty one coin per flip, sfx clink) so the episode is remembered as 'the stranger who went broke', not the textbook bet. Also, line 6 'Keep flipping' + coin-pile reward reads close to 'gambling pays'; the 'Not financial advice' badge should appear from scene 7 (coin rain), not only in the last scene.",
+    "Clarity 8: spoken numbers never say 'dollars' ('one fifty', 'a hundred', 'one ninety five', 'twenty five'); by ear 'about one ninety five' is hard to parse. Say 'a hundred ninety five dollars' once in line 4 (adds ~2 words, still ~31 s).",
+    "Drawability: fix the beat-level hop/flip in scenes 1, 2, 7; add a `coins` pile to scene 8 (items don't persist); use expr thinking for the stranger's fading grin in scene 6; align the visual vs on_screen text in lines 6-8.",
+    "ph lines 4 and 6: use 'Sa utak mo, ang talo na $100 parang $195.' and 'Average: *+$25* sa 'yo bawat flip.'"
+  ]
+}

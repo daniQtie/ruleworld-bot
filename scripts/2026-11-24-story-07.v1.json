@@ -1,0 +1,393 @@
+{
+ "id": "2026-11-24-story-07",
+ "version": 1,
+ "source": "owner order 2026-11-22 (study the competitor's 'Halloween costume' Short, add hook/twist/plot, render); beat plan modelled on TeamDeam's rule-world Short, new device, names, lines and ending",
+ "hook_type": {
+  "number": null,
+  "name": "owner-directed (exempt from rotation)"
+ },
+ "format": {
+  "number": 1,
+  "name": "Rule world: the mask that holds you in memory"
+ },
+ "title_working": "In This Town, Taking Off Your Mask Erases You From Everyone's Memory",
+ "music": "tension",
+ "music_gain": 0.11,
+ "world_rule": "Everyone wears a smile mask. Taking it off erases you from everyone's memory.",
+ "logline": "Only the narrator remembers his vanished friend, until a nameless new girl scratches her mask the same way, and his own mask starts to itch.",
+ "characters": [
+  {
+   "name": "Marcus",
+   "role": "narrator"
+  },
+  {
+   "name": "Rex",
+   "role": "best friend, vanishes"
+  },
+  {
+   "name": "the new girl (Pia)",
+   "role": "Rex, back with a new face"
+  },
+  {
+   "name": "Ms. Gwen",
+   "role": "teacher"
+  }
+ ],
+ "locations": [
+  "cafeteria",
+  "hallway",
+  "parents' bedroom at night",
+  "old playground at dawn"
+ ],
+ "lines": [
+  {
+   "text": "In this town, taking off your mask erases you from everyone's memory.",
+   "say": "(confident) In this town, taking off your mask erases you from everyone's memory.",
+   "speaker": "narrator",
+   "beat": "hook",
+   "speed": 0.9,
+   "volume": 2,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "Everyone wears a white smile mask, all day and all night.",
+   "say": "(happy) Everyone wears a white smile mask, all day and all night.",
+   "speaker": "narrator",
+   "beat": "context",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.25,
+   "voice": {
+    "emotion": "matter-of-fact",
+    "tags": "(happy)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "My best friend Rex hated his. He scratched at it when he was nervous.",
+   "say": "(sad) My best friend Rex hated his. He scratched at it when he was nervous.",
+   "speaker": "narrator",
+   "beat": "context",
+   "speed": 0.88,
+   "volume": -1,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "soft",
+    "tags": "(sad)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "One lunch, he checked that nobody was looking.",
+   "say": "(nervous) One lunch, he checked that nobody was looking.",
+   "speaker": "narrator",
+   "beat": "goal",
+   "speed": 0.85,
+   "volume": -2,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "hushed",
+    "tags": "(nervous)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "Then he slowly pulled his mask off.",
+   "say": "(nervous) Then he slowly pulled his mask off.",
+   "speaker": "narrator",
+   "beat": "choice",
+   "speed": 0.82,
+   "volume": -3,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "hushed",
+    "tags": "(nervous)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "The cafeteria froze. A teacher screamed, Rex, don't!",
+   "say": "(surprised) The cafeteria froze. A teacher screamed, Rex, don't!",
+   "speaker": "narrator",
+   "beat": "consequence",
+   "speed": 0.95,
+   "volume": 4,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "shock",
+    "tags": "(surprised)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "He vanished before his mask even hit the floor.",
+   "say": "(surprised) He vanished before his mask even hit the floor.",
+   "speaker": "narrator",
+   "beat": "consequence",
+   "speed": 0.95,
+   "volume": 3,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "shock",
+    "tags": "(surprised)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "By dinner, nobody remembered him. Not his teachers. Not even his parents.",
+   "say": "(sad) By dinner, nobody remembered him. Not his teachers. Not even his parents.",
+   "speaker": "narrator",
+   "beat": "escalation",
+   "speed": 0.8,
+   "volume": -3,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "Nobody, except me.",
+   "say": "(sad) Nobody, except me.",
+   "speaker": "narrator",
+   "beat": "escalation",
+   "speed": 0.8,
+   "volume": -3,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "soft",
+    "tags": "(sad)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "A week later, a new girl joined our class.",
+   "say": "(happy) A week later, a new girl joined our class.",
+   "speaker": "narrator",
+   "beat": "event",
+   "speed": 0.93,
+   "volume": 0,
+   "pause": 0.25,
+   "voice": {
+    "emotion": "curious",
+    "tags": "(happy)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "She wouldn't tell anyone her name.",
+   "say": "(nervous) She wouldn't tell anyone her name.",
+   "speaker": "narrator",
+   "beat": "event",
+   "speed": 0.88,
+   "volume": 0,
+   "pause": 0.25,
+   "voice": {
+    "emotion": "wondering",
+    "tags": "(nervous)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "But she kept scratching her mask, exactly the way Rex used to.",
+   "say": "(surprised) But she kept scratching her mask, exactly the way Rex used to.",
+   "speaker": "narrator",
+   "beat": "clue",
+   "speed": 0.9,
+   "volume": 1,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "rising",
+    "tags": "(surprised)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "After school, she grabbed my arm. Have you ever seen your parents without their masks?",
+   "say": "(nervous) After school, she grabbed my arm. Have you ever seen your parents without their masks?",
+   "speaker": "narrator",
+   "beat": "event",
+   "speed": 0.95,
+   "volume": 1,
+   "pause": 0.25,
+   "voice": {
+    "emotion": "urgent",
+    "tags": "(nervous)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "I tried to remember. I couldn't.",
+   "say": "(sad) I tried to remember. I couldn't.",
+   "speaker": "narrator",
+   "beat": "escalation",
+   "speed": 0.82,
+   "volume": -2,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "soft",
+    "tags": "(sad)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "That night, I shined a flashlight into my parents' bedroom.",
+   "say": "(nervous) That night, I shined a flashlight into my parents' bedroom.",
+   "speaker": "narrator",
+   "beat": "tension",
+   "speed": 0.85,
+   "volume": -2,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "hushed",
+    "tags": "(nervous)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "Their masks had no straps. No seams. And they were breathing.",
+   "say": "(nervous) Their masks had no straps. No seams. And they were breathing.",
+   "speaker": "narrator",
+   "beat": "tension",
+   "speed": 0.82,
+   "volume": -3,
+   "pause": 0.5,
+   "voice": {
+    "emotion": "creepy",
+    "tags": "(nervous)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "At dawn, I found her at the old playground. I whispered, Rex?",
+   "say": "(nervous) At dawn, I found her at the old playground. I whispered, Rex?",
+   "speaker": "narrator",
+   "beat": "reveal",
+   "speed": 0.82,
+   "volume": -2,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "hush",
+    "tags": "(nervous)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "She froze. Then she nodded.",
+   "say": "(soft tone) She froze. Then she nodded.",
+   "speaker": "narrator",
+   "beat": "reveal",
+   "speed": 0.8,
+   "volume": -2,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "tender",
+    "tags": "(soft tone)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "The masks bring you back, she said, but with a new face nobody will ever look at.",
+   "say": "(sad) The masks bring you back, she said, but with a new face nobody will ever look at.",
+   "speaker": "narrator",
+   "beat": "payoff",
+   "speed": 0.88,
+   "volume": -1,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "wistful",
+    "tags": "(sad)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "I smiled. I had my friend back.",
+   "say": "(happy) I smiled. I had my friend back.",
+   "speaker": "narrator",
+   "beat": "payoff",
+   "speed": 0.88,
+   "volume": 0,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "warm",
+    "tags": "(happy)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "Then my own mask started to itch.",
+   "say": "(surprised) Then my own mask started to itch.",
+   "speaker": "narrator",
+   "beat": "twist",
+   "speed": 0.92,
+   "volume": 3,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "shock",
+    "tags": "(surprised)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  },
+  {
+   "text": "And I couldn't stop scratching it.",
+   "say": "(nervous) And I couldn't stop scratching it.",
+   "speaker": "narrator",
+   "beat": "hook-loop",
+   "speed": 0.8,
+   "volume": -3,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "hush",
+    "tags": "(nervous)"
+   },
+   "shot": "see render/specs/2026-11-24-story-07.mjs",
+   "acting": {}
+  }
+ ],
+ "word_count": 207,
+ "est_seconds": 71.4,
+ "tail_hold": 2.0,
+ "upload": {
+  "title": "In This Town, Taking Off Your Mask Erases You From Everyone's Memory #Shorts",
+  "description": "In this town, taking off your mask erases you from everyone's memory. 🎭\nWhat would you do if only you remembered your best friend? Tell us below.\nA boy is the only one who remembers his vanished best friend, until a nameless new girl scratches her mask the same way. An animated rule-world mystery with a twist ending.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "scary story animation",
+   "mask story",
+   "rule world story",
+   "town with a rule",
+   "plot twist story",
+   "animated story",
+   "story time animation",
+   "mystery story",
+   "roblox story",
+   "roblox animation"
+  ]
+ }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "2026-11-19-gta6-two-cent-jar",
+  "version": 3,
+  "topic": "money",
+  "outfit": "everyday",
+  "title_yt": "If You Saved 2 Cents a Day Since 2013... #Shorts",
+  "title_fb": "If you saved two cents a day since 2013, you could buy GTA 6",
+  "hook": "If you saved two cents a day since 2013, you could buy GTA 6.",
+  "open_loop": "The hook promises two cents a day buys GTA 6. The friend says it is too small, so the viewer expects a letdown; the answer arrives only in the last ~8 s ($96.22 vs the $79.99 game, sixteen dollars left) while the laughing friend is the one with no money.",
+  "payoff": "Two cents a day for 4,811 days is $96.22: enough for the $79.99 game with sixteen dollars left, while the friend who laughed wants the game too but has no money.",
+  "ending": "choice",
+  "lines": [
+    {
+      "text": "If you saved *two *cents a day since *2013, you could buy *GTA 6.",
+      "say": "If you saved two cents a day since twenty thirteen, you could buy G T A six.",
+      "beat": "hook",
+      "visual": "Frame 0: Benny (everyday hoodie, your avatar) holds up one tiny coin, smug, hopping; headline '2 CENTS A DAY' already visible. Snap-zoom on 'two cents a day'. At 'since 2013' a badge 'SINCE 2013' slams in. On 'GTA 6' a plain white outlined text headline 'GTA 6' appears (no logo, no game lettering or colors).",
+      "on_screen": "2 CENTS A DAY"
+    },
+    {
+      "text": "So you start a jar.",
+      "beat": "stakes",
+      "visual": "Badge 'YEAR 2013'. Benny drops one tiny coin into a nearly empty jar (a few coin props), clink sfx, happy. The hooded stranger (the friend) walks in from the right.",
+      "on_screen": "YEAR 2013"
+    },
+    {
+      "text": "Your friend says it is too small.",
+      "beat": "escalate",
+      "visual": "Stranger (flip, point, smug) leans over the jar and laughs; bubble 'TOO SMALL!' with tail toward the stranger. Benny worried, then determined. A coin bonks off Benny's head.",
+      "on_screen": "TOO SMALL!"
+    },
+    {
+      "text": "You keep going for *thirteen years.",
+      "beat": "loop",
+      "visual": "Hard cut with flash and whoosh to a new scene: stamp '13 YEARS LATER'. Benny is happy and smug next to a huge pile of coins (many coin props, coin rain). The stranger beside him is slumped with a bubble 'MY BACK!' (the friend got old).",
+      "on_screen": "13 YEARS LATER"
+    },
+    {
+      "text": "Then GTA 6 comes out.",
+      "say": "Then G T A six comes out.",
+      "beat": "twist",
+      "visual": "Badge 'NOV 19, 2026'. Plain white outlined text headline 'GTA 6 IS OUT' (no logo or art). Benny gasps happily, hop; ding sfx. The stranger perks up and looks at his phone.",
+      "on_screen": "NOV 19, 2026"
+    },
+    {
+      "text": "Your friend wants it, but has no *money.",
+      "beat": "twist",
+      "visual": "Stranger runs to Benny, begs with a bubble 'TWO CENTS?', turns out empty pockets, expression broke. Benny smug, arms crossed, shakes his head, jar beside him.",
+      "on_screen": "FRIEND: $0"
+    },
+    {
+      "text": "The jar holds *ninety-six dollars.",
+      "say": "The jar holds ninety-six dollars.",
+      "beat": "payoff",
+      "visual": "First 1.5 s heavy-jar gag: Benny hugs the huge jar, slump pose, camera shake, thud sfx, bubble 'SO HEAVY!'. Then a stamp 'SMASH!' with coins rain, and a gold counter climbs to $96.22.",
+      "on_screen": "$96.22"
+    },
+    {
+      "text": "You buy the game, with *sixteen dollars left.",
+      "beat": "payoff",
+      "visual": "Benny at a plain store counter hands over cash, hero pose, happy; generic blank game box (no logo or art); badge '-$79.99', then counter 'ABOUT $16 LEFT' in gold; confetti. Small badge 'NOT FINANCIAL ADVICE'.",
+      "on_screen": "ABOUT $16 LEFT"
+    },
+    {
+      "text": "Would you save daily, or spend it *all?",
+      "beat": "ending",
+      "visual": "Two list rows: 'A: SAVE DAILY' and 'B: SPEND IT ALL'. Benny points at the viewer, thinking expression; the stranger shrugs on the other side.",
+      "on_screen": "A: SAVE  B: SPEND"
+    },
+    {
+      "text": "Comment *A or B.",
+      "beat": "ending",
+      "visual": "Benny points at the viewer and smiles; headline 'COMMENT A OR B' in gold. Hard cut right after the last word (tail about 0.3 s).",
+      "on_screen": "COMMENT A OR B"
+    }
+  ],
+  "facts_used": [
+    {"claim": "GTA 6 launches November 19, 2026; Standard Edition is $79.99.", "source_url": "https://gameluster.com/gta-6-pre-order-pricing-standard-ultimate-edition/"},
+    {"claim": "GTA 5 launched about Sept 17, 2013 (inferred from an article dated Sept 20, 2013 saying $1B in 3 days). Speech says only 'since 2013'; do not show a Sept 17 date on screen.", "source_url": "https://www.engadget.com/2013-09-20-grand-theft-auto-5-sales-surpass-1-billion.html"},
+    {"claim": "Fans joke about '13 years since GTA 5' and about GTA launch hype (the thirteen-years beat).", "source_url": "https://vgtimes.com/gaming-news/174487-less-than-a-week-until-gta-6-the-internet-is-already-going-wild-over-memes.html"}
+  ],
+  "math_check": "Python: Sept 17, 2013 to Nov 19, 2026 = 4,811 days (13.17 years). 4,811 x $0.02 = $96.22. $96.22 - $79.99 = $16.23 left, before sales tax, so the screen says 'ABOUT $16 LEFT' and speech says 'sixteen dollars left'. 1 cent a day would be only $48.11 (not used). Spoken 'ninety-six dollars' is the rounded-down $96.22.",
+  "est_seconds": 31,
+  "word_count": 74,
+  "word_count_note": "74 counting the 'say' field (G T A six = 4 words, twenty thirteen = 2); 71 counting the on-screen text. Inside 60-75. Hook is 14 written / 17 spoken words, allowed by the owner for clarity.",
+  "timing_note": "Present tense 'comes out' is true on release day. Post on Nov 19, 2026.",
+  "ip_notes": "'GTA 6' appears only as plain spoken/written topic text. No Rockstar characters, logos, wordmark lettering/colors, footage, art style or music. The game box is blank and generic; the store is a plain counter.",
+  "description_note": "Add 'Not financial advice. Hypothetical example.' to the description. Hashtags: #gta6 #savingmoney #money.",
+  "changes_from_previous": "(1) The leftover is now spoken: 'You buy the game, with sixteen dollars left.' (screen says ABOUT $16 LEFT, no tax nitpick). 'You carry the heavy jar inside.' is cut; the heavy-jar gag opens the jar scene. (2) The friend is tied to the payoff: 'Your friend wants it, but has no money', and he begs for two cents; the one who laughed is the broke one. (3) Line 4 now adds new visuals: hard cut, stamp '13 YEARS LATER', huge coin pile, and the friend aged and slumped. (4) Jar scene simplified to gag, stamp, coins and counter; no cashier and no reuse of the friend, just a plain counter and blank game box. (5) Stray authoring notes and the unsupported 'jar prop scale' removed from visuals. Word count 74 (was 73), 10 lines and scenes. Snap-zoom now also on 'two cents a day' in the hook."
+}

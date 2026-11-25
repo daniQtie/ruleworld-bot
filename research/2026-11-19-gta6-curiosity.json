@@ -1,0 +1,68 @@
+{
+  "id": "2026-11-19-gta6-curiosity",
+  "hook_type": {
+    "number": 3,
+    "name": "The Curiosity / Shock Hook"
+  },
+  "topic_note": "Gaming commentary (outside money/psychology niche). Inspired by the topic of Runtime Caffeine's Short 'The GTA 6 Situation' (https://youtube.com/shorts/KT82sgkubHU). Facts re-verified independently; wording is ours. No sourced money/psychology angle exists, so it stays pure gaming.",
+  "hook": "Tomorrow, GTA six comes out. Its famous writer did not write it.",
+  "angle": "Withhold WHO the writer is and WHY it matters, using a restaurant parable (famous chef quits, sign stays) that makes the viewer ask 'how can GTA 6 not be a GTA game?'. Plain facts first, then the A/B question.",
+  "claims": [
+    {
+      "claim": "GTA 6 releases Nov 19, 2026 (delayed from May 26, 2026), PS5 and Xbox Series X|S; Rockstar/Take-Two confirmed the date.",
+      "status": "verified",
+      "source_url": "https://www.pcgamer.com/games/action/grand-theft-auto-6-is-delayed-to-november-these-extra-months-will-allow-us-to-finish-the-game-with-the-level-of-polish-you-have-come-to-expect-and-deserve",
+      "note": "Date confirmed by several outlets (TechRadar, GameLuster, PC Gamer); fetched page bodies were truncated, so the exact day comes from search summaries of those outlets."
+    },
+    {
+      "claim": "Dan Houser is a Rockstar co-founder and was VP of Creative, lead writer of the GTA and Red Dead stories.",
+      "status": "verified",
+      "source_url": "https://www.gameinformer.com/2020/02/04/rockstar-games-vp-dan-houser-leaves-company"
+    },
+    {
+      "claim": "Take-Two's filing (reported Feb 4, 2020) said Houser would leave Rockstar; his last day was March 11, 2020. It said he had been on an extended break since spring 2019.",
+      "status": "verified",
+      "source_url": "https://www.gameinformer.com/2020/02/04/rockstar-games-vp-dan-houser-leaves-company",
+      "note": "Game Informer confirms last day March 11, 2020 and break from spring 2019; no reason was given in that article."
+    },
+    {
+      "claim": "Video's claim: after RDR2 (2018) he took a vacation and never returned.",
+      "status": "unverified",
+      "source_url": "",
+      "note": "Sources say an 'extended break' that began spring 2019 (after RDR2's Oct 2018 release). No source I opened says 'vacation'. Script says only 'a long break' and does not say 2018."
+    },
+    {
+      "claim": "Video's claim: severe burnout from 100-hour work weeks caused him to leave.",
+      "status": "unverified",
+      "source_url": "",
+      "note": "Houser said in Oct 2018 (Vulture) the team worked '100-hour weeks' on RDR2, then told Kotaku he meant only the 4-person senior writing team for about 3 weeks. His own stated reason for leaving (BBC Radio 4, reported late Nov 2025 by GamesRadar): the games were long and tough, 'I don't know if I had another one of those games in me.' No source ties his exit to 100-hour weeks, and neither he nor Rockstar is quoted saying burnout. DROPPED."
+    },
+    {
+      "claim": "Houser said GTA 6 is 'not going to be a story that I wrote or a character set that I developed' (IGN interview at LA Comic Con, reported Sept 30, 2025).",
+      "status": "verified",
+      "source_url": "https://www.techradar.com/gaming/rockstar-co-founder-and-gta-writer-dan-houser-says-gta-6s-story-will-be-great-despite-zero-involvement-in-the-game",
+      "note": "Also https://www.pcgamer.com/games/grand-theft-auto/rockstar-co-founder-dan-houser-says-he-didnt-write-any-of-gta-6-the-worlds-probably-had-enough-gta-from-me . He also said the game will be great; the script does not smear the game."
+    },
+    {
+      "claim": "Houser, same IGN interview (reported Sept 30, 2025), on GTA 6: \"The game will be great, I'm sure.\" (verbatim quote)",
+      "status": "verified",
+      "source_url": "https://www.techradar.com/gaming/rockstar-co-founder-and-gta-writer-dan-houser-says-gta-6s-story-will-be-great-despite-zero-involvement-in-the-game",
+      "note": "Verbatim wording as quoted by TechRadar (script QA v5 confirmed on the page). Used in line 6: 'He also said GTA six will be great.'"
+    },
+    {
+      "claim": "Video's claim: in 2022 Rockstar encouraged writers not to offend anyone.",
+      "status": "unverified",
+      "source_url": "",
+      "note": "No 2022 primary report found. What exists: Bloomberg (Jason Schreier, Dec 2024) reported Rockstar asked GTA 6 writers to be 'less crude' toward transgender people and other minorities; no Rockstar comment found. Different year and narrower than 'not offend anyone'. DROPPED."
+    }
+  ],
+  "reveal": "The famous writer behind GTA's stories is Dan Houser, and he said he wrote none of GTA 6.",
+  "open_loop": "Line 1 withholds who the writer is; lines 2-3 (restaurant parable) tease the problem; the name is revealed in line 4; the GTA question is paid in the last line.",
+  "payoff": "Plain facts: Houser wrote Rockstar's famous stories, left in March 2020 after a long break, and said he wrote none of GTA 6. Then: still a GTA game?",
+  "ab_idea": "A: Still a GTA game. B: Not a GTA game. Splits fans (name/world/studio vs the writer). Alternative test: 'A: The name is enough / B: The writer was the heart'.",
+  "notes_for_scriptwriter": "Phrase everything as 'he said' / reported. No Rockstar logos, art, footage, music or characters; 'GTA 6' plain text only. Do not claim burnout, vacation, 2018, 100-hour weeks or the 2022 offend claim. Do not say the game is bad.",
+  "inspiration_urls": [
+    "https://youtube.com/shorts/KT82sgkubHU"
+  ],
+  "outfit": "everyday"
+}

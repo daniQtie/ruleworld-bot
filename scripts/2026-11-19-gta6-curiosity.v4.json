@@ -1,0 +1,75 @@
+{
+  "id": "2026-11-19-gta6-curiosity",
+  "version": 4,
+  "hook_type": {"number": 3, "name": "The Curiosity / Shock Hook"},
+  "topic": "gaming",
+  "outfit": "everyday",
+  "title_yt": "GTA 6 is out tomorrow. Its famous writer isn't in it #Shorts",
+  "title_fb": "GTA 6 is out tomorrow. Its famous writer isn't in it",
+  "hook": "Tomorrow, GTA six comes out. Its famous writer did not write it.",
+  "open_loop": "Line 1 withholds who the writer is; the restaurant parable teases the problem; the name is revealed in line 4; the question 'still a GTA game?' pays off in the last line.",
+  "payoff": "Plain facts: Dan Houser wrote Rockstar's famous stories, left in March 2020 after a long break, and said he wrote none of GTA 6. Then the viewer decides.",
+  "ending": "choice",
+  "scenes_planned": 11,
+  "lines": [
+    {
+      "text": "Tomorrow, GTA 6 comes out. Its famous writer did not write it.",
+      "say": "Tomorrow, GTA six comes out. Its famous writer did not write it.",
+      "beat": "hook",
+      "visual": "SCENE 1 (frame 0): Benny, shocked, holds a phone; plain-text sign 'GTA 6' behind him; a dark silhouette box with '?' beside it. Headline 'WHO WROTE IT?' already on screen. Snap-zoom on 'six'. SCENE 2 (on 'Its'): the '?' silhouette pulses, stamp 'NOT HIM' slams on 'not' (thud), Benny's jaw drops.",
+      "on_screen": "WHO WROTE IT?"
+    },
+    {
+      "text": "Imagine your favorite restaurant. The famous chef quits, but the sign stays.",
+      "beat": "stakes",
+      "visual": "SCENE 3 (on 'Imagine'): thought bubble 'YOUR FAVORITE' with a plain sign 'RESTAURANT' (no brand); Benny, happy, rubs his belly, drooling; points at the viewer on 'your'. SCENE 4 (on 'The'): a hooded stranger waves bye and drifts out (drift -500); stamp 'QUIT' on 'quits'; GAG: the sign wobbles but Benny still smiles on 'sign stays'.",
+      "on_screen": "THE CHEF QUITS"
+    },
+    {
+      "text": "Benny bites in. It tastes different.",
+      "beat": "escalate",
+      "visual": "SCENE 5 (on 'Benny'): Benny bites a plain generic plate icon (no logo), eyes squeezed shut. On 'different': buzz, face flips to shocked then slump, tongue out; bubble 'HUH?'.",
+      "on_screen": "HUH?"
+    },
+    {
+      "text": "The chef is Dan Houser. He wrote Rockstar's famous stories.",
+      "beat": "twist",
+      "visual": "SCENE 6 (on 'Dan'): headline 'DAN HOUSER' slams (ding) with sub 'WRITER'; the silhouette from scene 1 fills in as the hooded stranger, Benny points at him, wide-eyed. SCENE 7 (on 'He wrote'): Benny holds a thick stack with a plain text badge 'STORIES' (no art); stranger smug.",
+      "on_screen": "DAN HOUSER / WRITER"
+    },
+    {
+      "text": "He left in March 2020, after a long break.",
+      "say": "He left in March twenty twenty, after a long break.",
+      "beat": "escalate",
+      "visual": "SCENE 8 (on 'He'): badge 'MARCH 2020' drops (clink); the stranger walks off-screen (drift) on 'long break'; Benny waves a sad goodbye, then worry pose.",
+      "on_screen": "MARCH 2020"
+    },
+    {
+      "text": "Last year, he said he wrote none of GTA 6.",
+      "say": "Last year, he said he wrote none of GTA six.",
+      "beat": "payoff",
+      "visual": "SCENE 9 (on 'Last'): badge 'LAST YEAR' pops; speech bubble from the stranger on 'he said': 'I WROTE NONE'. SCENE 10 (on 'GTA'): the plain-text 'GTA 6' sign flashes, flash cut, snap-zoom, Benny shock pose with both hands on head; drum sfx.",
+      "on_screen": "HE SAID: NONE"
+    },
+    {
+      "text": "Still a GTA game? Comment A or B.",
+      "beat": "ending",
+      "visual": "SCENE 11 (on 'Still'): Benny, thinking, hand on chin, looks at the sign 'GTA 6'. Rows: 'A: STILL GTA' on 'Still', 'B: NOT GTA' on 'Comment'; Benny points at viewer on 'Comment'. Rows only, no footer.",
+      "on_screen": "A: STILL GTA / B: NOT GTA"
+    }
+  ],
+  "facts_used": [
+    {"claim": "GTA 6 releases November 19, 2026 (we say 'tomorrow' because the video publishes Nov 18 at 7 PM ET).", "source_url": "https://www.pcgamer.com/games/action/grand-theft-auto-6-is-delayed-to-november-these-extra-months-will-allow-us-to-finish-the-game-with-the-level-of-polish-you-have-come-to-expect-and-deserve"},
+    {"claim": "Dan Houser, Rockstar co-founder and VP of Creative, wrote the stories of GTA and Red Dead. Take-Two said (Feb 2020) he would leave, last day March 11, 2020, after an extended break.", "source_url": "https://www.gameinformer.com/2020/02/04/rockstar-games-vp-dan-houser-leaves-company"},
+    {"claim": "Houser told IGN (reported Sept 30, 2025) GTA 6 is 'not going to be a story that I wrote or a character set that I developed'.", "source_url": "https://www.techradar.com/gaming/rockstar-co-founder-and-gta-writer-dan-houser-says-gta-6s-story-will-be-great-despite-zero-involvement-in-the-game"}
+  ],
+  "math_check": "Spoken words: L1 12, L2 12, L3 6, L4 10, L5 9, L6 10, L7 8 = 67. Longest sentence 12 words. 67 / 2.3 = 29.1 s + pauses = about 31 s. March 2020 is identical in voice (twenty twenty), caption and badge. 'Last year' = Sept 2025 interview, correct from Nov 2026.",
+  "est_seconds": 31,
+  "word_count": 67,
+  "upload": {
+    "title": "GTA 6 is out tomorrow. Its famous writer isn't in it #Shorts",
+    "description": "Can it still be a GTA game if its famous writer wrote none of it?\nA or B: still a GTA game, or not? Comment below.\nDan Houser wrote Rockstar's famous stories. He left in March 2020, and last year he said GTA 6 is not a story he wrote.\nSources: Dan Houser to IGN (via TechRadar, Sept 2025); Take-Two filing (via Game Informer, 2020). Unofficial fan commentary, not affiliated with Rockstar or Take-Two.\n#gta6 #gaming #rockstar #Shorts",
+    "tags": ["gta 6", "gta 6 release date", "dan houser", "dan houser gta 6", "gta 6 writer", "why dan houser left rockstar", "is gta 6 still gta", "rockstar games", "gta 6 story"]
+  },
+  "changes_from_previous": "New episode idea replacing the price-math script. Original wording and a restaurant parable; the other creator's claims about a 2018 vacation, burnout/100-hour weeks and the 2022 'don't offend' report were dropped as unverified."
+}

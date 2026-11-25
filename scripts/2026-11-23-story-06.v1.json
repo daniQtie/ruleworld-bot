@@ -1,0 +1,313 @@
+{
+ "id": "2026-11-23-story-06",
+ "version": 1,
+ "source": "owner-approved (ituloy) draft scripts/2026-11-23-story-06.DRAFT.md; beat plan modelled on a competitor Short (structure only)",
+ "hook_type": {
+  "number": null,
+  "name": "owner-directed (exempt from rotation)"
+ },
+ "format": {
+  "number": 1,
+  "name": "Rule world: chest heart counts who would miss you"
+ },
+ "title_working": "In This World, A Heart On Your Chest Counts Who Would Miss You",
+ "music": "piano",
+ "music_gain": 0.11,
+ "world_rule": "A heart on every chest counts how many people would miss you.",
+ "logline": "A lonely quiet kid's heart goes from 0 to 1, and the one person who would miss him is the new girl.",
+ "characters": [
+  {
+   "name": "Ollie",
+   "role": "narrator, quiet kid"
+  },
+  {
+   "name": "Rex",
+   "role": "popular boy"
+  },
+  {
+   "name": "Jada",
+   "role": "new girl"
+  }
+ ],
+ "locations": [
+  "hallway",
+  "library",
+  "bedroom",
+  "bench in the rain"
+ ],
+ "lines": [
+  {
+   "text": "In this world, a heart on your chest counts who would miss you.",
+   "say": "(confident) In this world, a heart on your chest counts who would miss you.",
+   "speaker": "narrator",
+   "beat": "hook",
+   "speed": 0.9,
+   "volume": 2,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "Mine had said zero for as long as I can remember.",
+   "say": "(sad) Mine had said zero for as long as I can remember.",
+   "speaker": "narrator",
+   "beat": "context",
+   "speed": 0.85,
+   "volume": -2,
+   "pause": 0.25,
+   "voice": {
+    "emotion": "soft",
+    "tags": "(sad)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "I was the kid who ate lunch alone in the library.",
+   "say": "(sad) I was the kid who ate lunch alone in the library.",
+   "speaker": "narrator",
+   "beat": "context",
+   "speed": 0.8,
+   "volume": -3,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "Rex, the most popular boy in school, had a zero too.",
+   "say": "(happy) Rex, the most popular boy in school, had a zero too.",
+   "speaker": "narrator",
+   "beat": "twist",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.25,
+   "voice": {
+    "emotion": "dry",
+    "tags": "(happy)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "Everyone wanted to be near him. Nobody would miss him.",
+   "say": "(sad) Everyone wanted to be near him. Nobody would miss him.",
+   "speaker": "narrator",
+   "beat": "twist",
+   "speed": 0.88,
+   "volume": -1,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "flat",
+    "tags": "(sad)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "Then a new girl named Jada joined our class.",
+   "say": "(happy) Then a new girl named Jada joined our class.",
+   "speaker": "narrator",
+   "beat": "event",
+   "speed": 0.93,
+   "volume": 0,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "curious",
+    "tags": "(happy)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "Rex flexed and bragged, sure she would pick him.",
+   "say": "(happy) Rex flexed and bragged, sure she would pick him.",
+   "speaker": "narrator",
+   "beat": "event",
+   "speed": 0.95,
+   "volume": 1,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "amused",
+    "tags": "(happy)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "I just went back to my book.",
+   "say": "(sad) I just went back to my book.",
+   "speaker": "narrator",
+   "beat": "event",
+   "speed": 0.85,
+   "volume": -2,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "soft",
+    "tags": "(sad)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "The next morning, my heart said one.",
+   "say": "(surprised) The next morning, my heart said one.",
+   "speaker": "narrator",
+   "beat": "twist",
+   "speed": 0.95,
+   "volume": 4,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "shock",
+    "tags": "(surprised)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "One person would miss me. But who?",
+   "say": "(nervous) One person would miss me. But who?",
+   "speaker": "narrator",
+   "beat": "mystery",
+   "speed": 0.88,
+   "volume": 0,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "wondering",
+    "tags": "(nervous)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "After that, Jada sat with me in the library every day.",
+   "say": "(happy) After that, Jada sat with me in the library every day.",
+   "speaker": "narrator",
+   "beat": "build",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "warm",
+    "tags": "(happy)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "We swapped books. We walked home the long way.",
+   "say": "(happy) We swapped books. We walked home the long way.",
+   "speaker": "narrator",
+   "beat": "build",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 0.25,
+   "voice": {
+    "emotion": "warm",
+    "tags": "(happy)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "And somewhere along the way, I fell for her.",
+   "say": "(soft tone) And somewhere along the way, I fell for her.",
+   "speaker": "narrator",
+   "beat": "build",
+   "speed": 0.85,
+   "volume": -2,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "tender",
+    "tags": "(soft tone)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "One rainy afternoon, she tapped my glowing heart and smiled.",
+   "say": "(soft tone) One rainy afternoon, she tapped my glowing heart and smiled.",
+   "speaker": "narrator",
+   "beat": "confession",
+   "speed": 0.85,
+   "volume": -2,
+   "pause": 0.35,
+   "voice": {
+    "emotion": "hush",
+    "tags": "(soft tone)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "She whispered, that one has been me since my first day.",
+   "say": "(soft tone) She whispered, that one has been me since my first day.",
+   "speaker": "narrator",
+   "beat": "confession",
+   "speed": 0.82,
+   "volume": -3,
+   "pause": 0.4,
+   "voice": {
+    "emotion": "whisper",
+    "tags": "(soft tone)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "Then I looked at her chest. Her heart said one as well.",
+   "say": "(surprised) Then I looked at her chest. Her heart said one as well.",
+   "speaker": "narrator",
+   "beat": "reveal",
+   "speed": 0.92,
+   "volume": 2,
+   "pause": 0.3,
+   "voice": {
+    "emotion": "rising",
+    "tags": "(surprised)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  },
+  {
+   "text": "And that one was me.",
+   "say": "(happy) And that one was me.",
+   "speaker": "narrator",
+   "beat": "payoff",
+   "speed": 0.8,
+   "volume": -1,
+   "pause": 0.2,
+   "voice": {
+    "emotion": "warm",
+    "tags": "(happy)"
+   },
+   "shot": "see render/specs/2026-11-23-story-06.mjs",
+   "acting": {}
+  }
+ ],
+ "word_count": 159,
+ "est_seconds": 54.8,
+ "tail_hold": 2.0,
+ "upload": {
+  "title": "In This World, A Heart On Your Chest Counts Who Would Miss You #Shorts",
+  "description": "In this world, a heart on your chest counts who would miss you. 💗\nWho is the one person who would miss you? Tell us below.\nA quiet kid with a zero on his chest meets a new girl, and one morning his heart changes to one. Who could it be? An animated rule-world love story.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "quiet kid story",
+   "love story animation",
+   "school story animation",
+   "rule world story",
+   "animated story",
+   "story time animation",
+   "plot twist story",
+   "roblox story",
+   "roblox animation"
+  ]
+ }
+}

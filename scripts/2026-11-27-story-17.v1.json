@@ -1,0 +1,254 @@
+{
+ "id": "2026-11-27-story-17",
+ "version": 1,
+ "source": "Owner's FB reel 1903284867324230 (headphones romance) premise; new names, new details (rain instead of whales), new wording; implied loss, nothing shown",
+ "hook_type": {
+  "number": null,
+  "name": "owner-directed (exempt from rotation)"
+ },
+ "format": {
+  "number": null,
+  "name": "Emotional story with a twist"
+ },
+ "title_working": "She Whispers I Love You Every Morning, Thinking I Can't Hear",
+ "hook_text": "SHE THINKS I CAN'T HEAR",
+ "hook_until": 2.6,
+ "music": "tender",
+ "music_gain": 0.13,
+ "world_rule": "Broken headphones, a secret he can never react to",
+ "lines": [
+  {
+   "text": "Every morning on the walk to school, the prettiest girl I know whispers that she loves me.",
+   "say": "(soft tone) Every morning on the walk to school, the prettiest girl I know whispers that she loves me.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "tender hook",
+    "tags": "(soft tone)"
+   },
+   "shot": {},
+   "acting": {}
+  },
+  {
+   "text": "She thinks I can't hear her, because of my big headphones.",
+   "say": "(nervous) She thinks I can't hear her, because of my big headphones.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "secret",
+    "tags": "(nervous)"
+   },
+   "shot": {},
+   "acting": {}
+  },
+  {
+   "text": "They broke two years ago. I only wear them so nobody talks to me.",
+   "say": "(sad) They broke two years ago. I only wear them so nobody talks to me.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": -1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "quiet confession",
+    "tags": "(sad)"
+   },
+   "shot": {},
+   "acting": {}
+  },
+  {
+   "text": "Her name is Hana. The shyest girl in our whole school.",
+   "say": "(happy) Her name is Hana. The shyest girl in our whole school.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "warm",
+    "tags": "(happy)"
+   },
+   "shot": {},
+   "acting": {}
+  },
+  {
+   "text": "On Monday, she looked straight ahead and whispered, I love you.",
+   "say": "(soft tone) On Monday, she looked straight ahead and whispered, I love you.",
+   "speaker": "narrator",
+   "speed": 0.88,
+   "volume": -1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "hushed",
+    "tags": "(soft tone)"
+   },
+   "shot": {},
+   "acting": {},
+   "card": "Monday"
+  },
+  {
+   "text": "I kept my face perfectly still. Then I walked right into a pole.",
+   "say": "(happy) I kept my face perfectly still. Then I walked right into a pole.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "comic",
+    "tags": "(happy)"
+   },
+   "shot": {},
+   "acting": {}
+  },
+  {
+   "text": "If she ever finds out I heard, she'll stop. So I can never react.",
+   "say": "(worried) If she ever finds out I heard, she'll stop. So I can never react.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "tense",
+    "tags": "(worried)"
+   },
+   "shot": {},
+   "acting": {}
+  },
+  {
+   "text": "On Tuesday, she tapped my headphones and asked what I was listening to. I panicked. Rain sounds.",
+   "say": "(nervous) On Tuesday, she tapped my headphones and asked what I was listening to. I panicked. Rain sounds.",
+   "speaker": "narrator",
+   "speed": 0.96,
+   "volume": 1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "panic",
+    "tags": "(nervous)"
+   },
+   "shot": {},
+   "acting": {},
+   "card": "Tuesday"
+  },
+  {
+   "text": "On Wednesday, she knew thirty facts about rain. She stayed up all night, just to have something to tell me.",
+   "say": "(happy) On Wednesday, she knew thirty facts about rain. She stayed up all night, just to have something to tell me.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "touched",
+    "tags": "(happy)"
+   },
+   "shot": {},
+   "acting": {},
+   "card": "Wednesday"
+  },
+  {
+   "text": "On Thursday, she fell asleep on my shoulder and mumbled, one day you'll really hear me.",
+   "say": "(soft tone) On Thursday, she fell asleep on my shoulder and mumbled, one day you'll really hear me.",
+   "speaker": "narrator",
+   "speed": 0.86,
+   "volume": -2,
+   "pause": 0.35,
+   "beat": "",
+   "voice": {
+    "emotion": "tender",
+    "tags": "(soft tone)"
+   },
+   "shot": {},
+   "acting": {},
+   "card": "Thursday"
+  },
+  {
+   "text": "On Friday, she whispered it again. So I took my headphones off and said, I love you too.",
+   "say": "(confident) On Friday, she whispered it again. So I took my headphones off and said, I love you too.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": 1,
+   "pause": 0.35,
+   "beat": "",
+   "voice": {
+    "emotion": "brave",
+    "tags": "(confident)"
+   },
+   "shot": {},
+   "acting": {},
+   "card": "Friday"
+  },
+  {
+   "text": "She turned bright red, then laughed and ran across the road, shouting it so the whole street could hear.",
+   "say": "(happy) She turned bright red, then laughed and ran across the road, shouting it so the whole street could hear.",
+   "speaker": "narrator",
+   "speed": 0.97,
+   "volume": 2,
+   "pause": 0.4,
+   "beat": "",
+   "voice": {
+    "emotion": "joy",
+    "tags": "(happy)"
+   },
+   "shot": {},
+   "acting": {}
+  },
+  {
+   "text": "That was the last thing she ever said to me.",
+   "say": "(sad) That was the last thing she ever said to me.",
+   "speaker": "narrator",
+   "speed": 0.82,
+   "volume": -2,
+   "pause": 0.5,
+   "beat": "",
+   "voice": {
+    "emotion": "heartbreak",
+    "tags": "(sad)"
+   },
+   "shot": {},
+   "acting": {}
+  },
+  {
+   "text": "I still wear my broken headphones every morning. And at the corner, I still hear her.",
+   "say": "(soft tone) I still wear my broken headphones every morning. And at the corner, I still hear her.",
+   "speaker": "narrator",
+   "speed": 0.85,
+   "volume": -1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "aching loop",
+    "tags": "(soft tone)"
+   },
+   "shot": {},
+   "acting": {}
+  }
+ ],
+ "word_count": 207,
+ "est_seconds": 71.4,
+ "tail_hold": 1.4,
+ "upload": {
+  "title": "She Whispers I Love You Every Morning, Thinking I Can't Hear #Shorts",
+  "description": "She tells him every morning, thinking his headphones are on. Wait for the ending.\nWould you have taken the headphones off?\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "sad love story",
+   "headphones story",
+   "roblox love story",
+   "emotional story",
+   "plot twist story",
+   "animated story",
+   "story time animation",
+   "roblox story",
+   "roblox animation"
+  ]
+ }
+}

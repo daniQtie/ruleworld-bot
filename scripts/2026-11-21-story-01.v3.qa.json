@@ -1,0 +1,22 @@
+{
+ "id": "2026-11-21-story-01",
+ "version": 3,
+ "pass": true,
+ "average": 8.09,
+ "scores": {"hook": 8, "world_rule": 8, "characters": 8, "escalation": 8, "reveal": 8, "ending": 8, "clarity": 8, "visual": 8, "consistency": 8, "originality": 9, "retention": 8},
+ "hard_gates": {"rotation": true, "structure": true, "original": true, "length": true, "english_clear": true, "producible": true},
+ "measured": {"spoken_words": 594, "est_seconds": 169.7, "shot_plan_seconds": 169.3, "shots": 48, "motion_shots": 6, "max_shot_seconds": 4.3, "max_sentence_words": 14, "text_equals_say": true, "length_gate": "420-620 words (Adam), pass"},
+ "v2_fixes_check": {
+  "glow rule": "landed: no glow before thanks; glow only at line 36 (Milo) and 46 (Tilda); Lena's new red scarf at 42 follows the rule",
+  "Pip first hat and thank-you motive": "landed (line 14, line 34 'still wearing his red cap')",
+  "Young Tilda and Home folk looks": "landed as fixed character entries; line 18 and 38 prompts consistent",
+  "celebration lighting": "landed (sunrise preset, lines 40-46)",
+  "repeated hat transfer": "landed (line 1 backpack, line 2 bow tie)",
+  "Lena unthanked line": "landed (line 37)"
+ },
+ "fixes": [
+  "Optional polish, not blocking: line 35 Pip's thank-you is still a leap (give him one clause, e.g. 'because of his hat'); line 38 flashback interrupts the move from the cellar to the town (consider placing it right after line 36); line 44 does not say why the crowd turns to Tilda (add 'remembering her bare hands'). Line 38 prompt is long; keep the accessory list but trim for the image model."
+ ],
+ "kid_safety": "Pass.",
+ "upload": "Title and description good; #roblox exclusion per owner policy not flagged."
+}

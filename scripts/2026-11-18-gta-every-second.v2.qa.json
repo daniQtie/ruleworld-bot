@@ -1,0 +1,51 @@
+{
+  "pass": false,
+  "average": 6.9,
+  "scores": {"hook": 7, "stakes": 8, "open_loop": 6, "escalation": 7, "payoff": 6, "surprise": 6, "ending": 7, "clarity": 7, "facts": 8, "originality": 7, "entertainment": 7},
+  "hard_gates": {"what_if_opener": true, "benny_in_story": true, "length_25_35s": true, "english_clear": true},
+  "gate_notes": {
+    "length_25_35s": "Marginal true. Say-words per line: 12+9+9+8+11+12+12 = 73. At 0.9 speed (about 2.1 w/s) that is about 34.8 s, and 'G, T, A' is spoken letter by letter (slower than 4 normal words). Plus 0.3 s tail. Real risk of 35+ s. Cut 4-6 words (see fixes).",
+    "english_clear": "True but borderline: all lines <= 12 words and complete. 'paid G, T, A five's sales' is awkward English and a non-native listener may need a replay (see clarity fix)."
+  },
+  "v1_fixes_check": {
+    "viewer_is_earner": "LANDED. Hook now makes 'you' the one paid; Benny is buried in cash, buys a car, quits.",
+    "sold_not_earned": "LANDED. 'sold' / 'sales', ESTIMATED SALES badge, description says estimated retail sales, not profit.",
+    "rate_not_repeated": "LANDED. Rate appears once (line 3); new number each beat.",
+    "exact_number_on_screen_only": "LANDED. Speech 'almost four thousand', screen $3,858.",
+    "register_in_frame_0": "LANDED.",
+    "physical_gag_with_consequence": "LANDED (cash burial, apron quit, friend begs).",
+    "clear_AB": "PARTLY. A/B exists, but 'that' in line 7 is ambiguous and the dilemma is lopsided (see extra checks).",
+    "upload": "LANDED. Title has no exact number, 'Not financial advice.' added, 'gta 5 sales record' tag added.",
+    "length_margin": "NOT LANDED. v1 asked for slack below 35 s; v2 went from 71 to 73 words."
+  },
+  "math_recheck": "Python: 1e9/3 = 333,333,333/day ('about three hundred thirty million' OK); /86,400 = 3,858.02/s ('almost four thousand' OK, 3,858 < 4,000); $10,000 / 3,858.02 = 2.59 s ('three seconds' OK, labelled EXAMPLE); 3,858.02 x 365 = $1,408,179 ('about one point four million' OK). All sourced from Engadget/Shacknews (over $1B in 3 days, in the research file). Estimated retail sales is correctly hedged. Facts 8, not 9: global retail sales are not what a 'you' would be paid, and the $10,000 car is an invented example (labelled).",
+  "extra_checks": {
+    "1_premise_consistency": "CONFUSING on one listen. Lines 1-5 set the premise 'you are paid GTA 5's sales every second' (and line 5 says you have $330M by tomorrow). Line 6 silently changes the premise to 'one SECOND of sales, once a DAY' with no bridge line ('now imagine you only get ONE second of pay each day'). A listener hears 'One second a day is about 1.4 million a year' right after '330 million in a day' and thinks the number went wrong or the video is contradicting itself. Also the 1.4M is far smaller than 330M, so the line-6 'reveal' reads as a letdown, not a payoff. Line 7 'that' then has no clear referent. Fix: add the bridge and say it as a new rule.",
+    "2_real_dilemma": "Weak dilemma. A (about $1.4M, paid $3,858 a day over a year) beats B ($1M now) on any sensible reading: 40% more, small time cost. Few people would pick B, so comments will be uniform. A real dilemma needs A and B close or a tension (e.g. A = $1.4M spread over a year vs B = $1.5M now, or B = 'one million today' vs A = 'one second a day for 10 years'). Also the viewer has to do mental work to see that A is a trickle; the 'A: 1 SECOND A DAY' text is clear enough on screen but the spoken line is not.",
+    "3_story_vs_numbers": "Visually a story (Benny buried in cash, buys car, quits lemonade, friend begs, shrugs). The narration is a numbers list: $1B, $3,858/s, $10K car, $333M/day, $1.4M/yr, $1M. Every line is a number; no line gives Benny a want, a reaction line, or a consequence in words. With sound on, it plays as a stat list; with sound off, it plays as a cartoon. Hard gate 'benny_in_story' passes on the visuals, but the narration does not carry it. Add 1-2 lines where Benny acts or feels ('You quit your job. Your friend asks for a loan.') in place of a number line."
+  },
+  "viewer_notes": {
+    "1am_scroller": "Would I stop at 0.5 s? Mid. 'What if you got paid GTA 5's sales every second' is an abstract sentence and the first word 'What if' is fine, but 'G, T, A five's sales' is a mouthful, and I can't picture it from the words alone; the cash register + $ counter in frame 0 helps. I stay for lines 2-5 because the numbers rise and the cash pile is funny. I leave feeling short-changed at line 6 because the number goes down.",
+    "non_native": "Line 1 'paid G, T, A five's sales every second' is the hardest line: letters, possessive, odd verb. Line 5 'By tomorrow, you would have about three hundred thirty million dollars' is a long number plus a conditional. At 0.9 speed these are OK but probably need a replay."
+  },
+  "upload_check": {
+    "title": "OK. 46 chars + #Shorts, curiosity gap, no exact number, matches hook.",
+    "description_line1": "OK. Real hook, not a copy of the title.",
+    "description_line2": "OK. A/B comment question present.",
+    "value_lines": "OK. Key fact with number, 'Not financial advice.', estimate vs profit stated, sources named.",
+    "hashtags": "5 tags, within range. #gta6 is a loose fit for a GTA 5 sales video (it is a launch-week topic, so acceptable); keep or swap for #gtav.",
+    "tags": "8 phrases, relevant. 'gta 6 vs gta 5' is not what the video is about; replace with 'gta 5 money per second' or 'how much does gta 5 make'.",
+    "emoji": "1 emoji on line 1: OK."
+  },
+  "fixes": [
+    "Line 6 (open_loop 6, payoff 6, clarity 7): the premise silently changes from 'paid every second' to 'one second a day', and the result ($1.4M) is smaller than line 5 ($330M), so it feels like a letdown. Add the rule as its own beat: 'Now you only get one second a day.' then 'In a year, that is about one point four million.' Or drop line 6's year total and keep the dilemma purely 'one second a day for a year, or one million now'.",
+    "Line 7 (ending 7): 'that' has no clear referent and the A/B is lopsided (A is 40% bigger, so almost everyone picks A). Make it a real dilemma and name both: 'A: one second of pay every day for a year. B: one million dollars right now. Which one? Comment A or B.' Better: tilt B up (e.g. one and a half million now) or A down so it is truly close, or change the A to 'every second, but only for one day' vs 'one million now' (about $333M vs $1M, no-brainer, not recommended).",
+    "Narration lines 2-6 (entertainment 7, escalation 7): every spoken line is a number, so Benny has no want or reaction in words. Replace line 4 (the $10,000 car, the weakest number) with a story beat that has no number: 'You quit your job. Your friend asks for a loan.' (9 words). This also cuts length and removes the invented car example.",
+    "Length (hard gate marginal): 73 words at 0.9 speed is about 34.8 s, and 'G, T, A' is letter-by-letter. Cut 5-8 words, e.g. line 1 to 'What if you got paid G, T, A five's sales every second?' -> 'What if you earned G, T, A five's sales every second?' is shorter but 'earned' was flagged in v1; better: 'What if you got paid like G, T, A five? Every second.' or trim line 5 to 'By tomorrow, you would have three hundred thirty million dollars.' (10 words, drop 'about' and say it on screen).",
+    "Line 1 (hook 7, clarity 7): 'paid G, T, A five's sales' is awkward and abstract. Use a picture: 'What if every second, G, T, A five paid you four thousand dollars?' is wrong math/claim; instead keep the register in frame and say 'What if you got paid every time G, T, A five sold a copy?' (14 words, too long) or 'What if you got paid for every G, T, A five sale?' (11 words, plainer).",
+    "Line 5 (surprise 6): the $333M-a-day line is the real wow, but it comes after a $10K car anticlimax. Put the per-day figure earlier (right after the $3,858 line) and use the saved time for a Benny reaction beat. Right now the biggest number is followed by a smaller one, which flattens the end.",
+    "Line 3 (open_loop 6): the hook plants 'how much per second?' but pays it off at about 9 s with no delay. The only held reveal is the year total, which is not a question the viewer is asking. Plant a second question early (e.g. 'Could you spend it all in a day?') and answer it in the last two lines.",
+    "Originality (7): the lemonade stand vs giant register is reused from v1 and echoes rejected test #1 ('The $1 Jar'). Consider a different Benny location or a different foil so the story looks new.",
+    "Upload tags (minor): replace 'gta 6 vs gta 5' with 'gta 5 money per second'; #gta6 in hashtags is a loose fit for a GTA 5 video, consider #gtav."
+  ]
+}

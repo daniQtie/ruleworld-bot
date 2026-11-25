@@ -1,0 +1,33 @@
+{
+  "pass": true,
+  "average": 8.0,
+  "scores": {"hook": 8, "stakes": 8, "open_loop": 8, "escalation": 8, "payoff": 8, "surprise": 8, "ending": 8, "clarity": 8, "facts": 8, "originality": 8, "entertainment": 8},
+  "hard_gates": {"hook_rotation_assigned_type": true, "benny_in_story": true, "length_50_60s": true, "english_clear": true},
+  "hard_gate_notes": {
+    "hook_rotation_assigned_type": "Assigned #4 Problem-Agitate; previous episode (gta6-curiosity) was #3. Opener names the pain ('price tag is a trap') and twists the knife ('And it gets worse'), then the video agitates in lines 3-12 and pays off. The false 'does not cost' claim is gone.",
+    "length_50_60s": "143 words. At the project's real 2.5-2.8 w/s that is 51-57 s, inside 50-62 s. The margin on the low side is thin (51.1 s at 2.8 w/s) but the number-heavy lines slow real speech, so about 53-57 s expected; confirm on the real render. At the pessimistic 2.3 w/s it is 62.2 s, which is not realistic for this voice.",
+    "english_clear": "Every sentence is complete and 12 words or fewer (longest is line 12, first sentence, exactly 12). 'This is not financial advice.' is now a complete sentence. No Taglish, no slang. Line 10 'Reportedly, it then costs seven ninety-nine a month.' is plain."
+  },
+  "fact_check": {
+    "math": "Re-computed: 99.99 - 79.99 = 20.00; 79.99 + 20 = 99.99; month 1 free so months 2-12 = 11 paid; 11 x 7.99 = 87.89; 99.99 + 87.89 = 187.88; 79.99 x 2 = 159.98 < 187.88, so 'more than double' is true. 'First twelve months' now correctly counts the free month. The v1 error is fixed.",
+    "rule_a_b_c_d": "All figures agree across say, text and on_screen ($79.99, $99.99, $20, $7.99, $87.89, $187.88). Badges 'LAUNCH DAY / +$20 UPGRADE', '11 MONTHS = $87.89', '12 MONTHS = $187.88' match the narration. Rule D ok (say 'GTA six'/'GTA plus', text 'GTA 6'/'GTA+').",
+    "residual_risks": [
+      "The $7.99 GTA+ price rests on a 2024 TweakTown article; it is hedged with 'Reportedly' in speech and on screen, which is acceptable, but a 2026 primary source would remove the risk.",
+      "'No disc, just a download code' is a secondary report (tech-insider); hedged with 'Reportedly'. Acceptable.",
+      "The 12-month window assumes the free month starts at the same time as the paid clock; the sources do not state when the trial starts, so 'first twelve months' is an illustrative Benny-timeline figure, not a universal bill. It is framed as 'His total', which is fair.",
+      "Hook 'is a trap' is editorial but true as framing: the sticker price is only the start for Benny's choices."
+    ]
+  },
+  "format_checks": {
+    "scenes": "16 scenes, within 12-18",
+    "on_screen_text": "All badges are 5 words or fewer ('12 MONTHS = $187.88 / MORE THAN x2' is shown as two moments)",
+    "upload_block": "Title pays off, description line 1 is a real hook (not a title copy), 5 hashtags, 'This is not financial advice.' present, US-dollar and fan-commentary disclaimers present, and the numbers match the script."
+  },
+  "viewer_read": "I stop at 0.5 s for a '$79.99' tag snapping shut like a bear trap on Benny's finger. I stay for the running total and the 'wait, what?' that upgrading lands exactly on the Ultimate price, and the 'x2?' loop closes at the end. The A/B ending invites comments.",
+  "fixes": [
+    "Optional, not blocking: line 4 and line 10 both start with 'Reportedly,' which slightly slows the rhythm. Keep the hedge on line 10 only if the $7.99 price cannot be verified from a 2026 source, and add that source URL to facts_used if found.",
+    "Optional: after the real TTS render, confirm the speech is at least 50 s; if it is under, add a short complete sentence to line 3 or 8 rather than padding the numbers.",
+    "Optional: line 3 'Nothing rattled.' is a gag fragment-length pair but complete; fine, no change required."
+  ],
+  "verdict": "PASS (average 8.0, no item below 7, all hard gates true). Send to the video stage; video QA must verify real audio length 50-62 s and the Rule A-C consistency table."
+}

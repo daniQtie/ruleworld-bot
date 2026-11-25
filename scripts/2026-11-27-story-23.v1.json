@@ -1,0 +1,326 @@
+{
+ "id": "2026-11-27-story-23",
+ "version": 1,
+ "source": "Claude, new hook/logic/twist method; owner approved the text drafts 2026-11-25 (scripts/drafts-2026-11-25-new-method.md)",
+ "hook_type": {
+  "number": null,
+  "name": "new method (owner-approved drafts, exempt from rotation)"
+ },
+ "format": {
+  "number": null,
+  "name": "Story with a fair twist"
+ },
+ "title_working": "Grandma Pays Me To Eat Vegetables. Grandpa Pays Me Not To.",
+ "hook_text": "THEY'RE PAYING ME TO FIGHT",
+ "hook_until": 2.6,
+ "music": "bounce",
+ "music_gain": 0.13,
+ "world_rule": "Grandma Pays Me To Eat Vegetables. Grandpa Pays Me Not To.",
+ "lines": [
+  {
+   "text": "Grandma pays me a dollar for every vegetable I eat. Grandpa pays me two dollars not to.",
+   "say": "(confident) Grandma pays me a dollar for every vegetable I eat. Grandpa pays me two dollars not to.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "set": "house",
+    "time": "day",
+    "cast": [
+     "Eli",
+     "Grandma",
+     "Grandpa"
+    ],
+    "face": "confused",
+    "action": "still",
+    "prop": {
+     "type": "plate"
+    },
+    "camera": "wide"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So every dinner is a war.",
+   "say": "(happy) So every dinner is a war.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Grandma",
+     "Grandpa"
+    ],
+    "face": "smirk",
+    "action": "point",
+    "camera": "push",
+    "tag": {
+     "name": "Grandma",
+     "role": "team broccoli"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "Grandma hides broccoli in my pasta. Grandpa slips me cash under the table.",
+   "say": "(happy) Grandma hides broccoli in my pasta. Grandpa slips me cash under the table.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Grandpa",
+     "Eli"
+    ],
+    "face": "smirk",
+    "action": "pickup",
+    "camera": "low",
+    "tag": {
+     "name": "Grandpa",
+     "role": "team no veggies"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "By Friday, I had forty dollars and a very confused stomach.",
+   "say": "(nervous) By Friday, I had forty dollars and a very confused stomach.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "cast": [
+     "Eli"
+    ],
+    "face": "nervous",
+    "action": "still",
+    "prop": {
+     "type": "sign",
+     "text": "$40"
+    },
+    "camera": "push"
+   },
+   "acting": {},
+   "card": "Friday"
+  },
+  {
+   "text": "Then I found their secret notebook under the cookie jar.",
+   "say": "(serious) Then I found their secret notebook under the cookie jar.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "cast": [
+     "Eli"
+    ],
+    "face": "surprised",
+    "action": "pickup",
+    "prop": {
+     "type": "notebook"
+    },
+    "camera": "pull",
+    "trans": "whip"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Two columns. Grandma's said: he came. Grandpa's said: he came.",
+   "say": "(serious) Two columns. Grandma's said: he came. Grandpa's said: he came.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "cast": [
+     "Eli"
+    ],
+    "face": "thinking",
+    "action": "still",
+    "prop": {
+     "type": "notebook"
+    },
+    "camera": "close"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Every single night had two check marks.",
+   "say": "(soft tone) Every single night had two check marks.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "cast": [
+     "Eli"
+    ],
+    "face": "surprised",
+    "action": "still",
+    "prop": {
+     "type": "notebook"
+    },
+    "camera": "push"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Before the vegetable war, I only visited on holidays.",
+   "say": "(sad) Before the vegetable war, I only visited on holidays.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "time": "day",
+    "cast": [
+     "Grandma",
+     "Grandpa"
+    ],
+    "face": "sad",
+    "action": "sit",
+    "camera": "high",
+    "mood": "sad"
+   },
+   "acting": {}
+  },
+  {
+   "text": "They never cared about the vegetables. They just wanted me at their table.",
+   "say": "(sad) They never cared about the vegetables. They just wanted me at their table.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "time": "day",
+    "cast": [
+     "Eli"
+    ],
+    "face": "sad",
+    "action": "still",
+    "camera": "push",
+    "mood": "sad"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So tonight I ate the broccoli. And I gave Grandpa his money back.",
+   "say": "(happy) So tonight I ate the broccoli. And I gave Grandpa his money back.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Eli",
+     "Grandpa",
+     "Grandma"
+    ],
+    "face": "happy",
+    "action": "agree",
+    "prop": {
+     "type": "plate"
+    },
+    "camera": "wide"
+   },
+   "acting": {}
+  },
+  {
+   "text": "He leaned in and whispered, Same time tomorrow? Three dollars.",
+   "say": "(happy) He leaned in and whispered, Same time tomorrow? Three dollars.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Grandpa",
+     "Eli"
+    ],
+    "face": "smirk",
+    "action": "talk",
+    "camera": "push",
+    "mood": "win"
+   },
+   "acting": {}
+  }
+ ],
+ "word_count": 119,
+ "est_seconds": 35.0,
+ "tail_hold": 1.2,
+ "upload": {
+  "title": "Grandma Pays Me To Eat Vegetables. Grandpa Pays Me Not To. #Shorts",
+  "description": "Grandma pays me to eat vegetables. Grandpa pays me not to.\nThen I found their notebook.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "grandma story",
+   "funny family story",
+   "plot twist",
+   "roblox story",
+   "animated story",
+   "wholesome story",
+   "story time",
+   "grandpa story",
+   "animated story",
+   "roblox story"
+  ]
+ }
+}

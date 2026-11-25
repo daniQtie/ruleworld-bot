@@ -1,0 +1,96 @@
+{
+  "id": "2026-11-19-gta6-curiosity",
+  "version": 6,
+  "hook_type": {
+    "number": 3,
+    "name": "The Curiosity / Shock Hook"
+  },
+  "topic": "gaming",
+  "outfit": "everyday",
+  "title_yt": "GTA 6 is out tomorrow. Its famous writer says he didn't write it #Shorts",
+  "title_fb": "GTA 6 is out tomorrow. Its famous writer says he didn't write it",
+  "hook": "Tomorrow, GTA six comes out. Its famous writer says he did not write it.",
+  "open_loop": "Line 1 withholds who the writer is; the restaurant parable teases the problem; the name is revealed in line 4; the question 'still a GTA game?' pays off in the last line.",
+  "payoff": "Plain facts: Dan Houser led the writing of Rockstar's famous stories, left in March 2020, said last year he wrote none of GTA 6, and also said it will be great. Then the viewer decides.",
+  "ending": "choice",
+  "scenes_planned": 12,
+  "lines": [
+    {
+      "text": "Tomorrow, GTA 6 comes out. Its famous writer says he did not write it.",
+      "say": "Tomorrow, GTA six comes out. Its famous writer says he did not write it.",
+      "beat": "hook",
+      "visual": "SCENE 1 (frame 0): Benny, pose shock, expr shocked, prop phone, center-left. Badge 'GTA 6' and headline 'WHO WROTE IT?' (white) already visible at frame 0 (at -0.3). Camera snap-zoom on 'six'. SCENE 2 (on 'Its'): headline and badge clear; stamp 'HE SAYS: NO' slams on 'did' (thud); Benny stays shocked.",
+      "on_screen": "WHO WROTE IT?"
+    },
+    {
+      "text": "Imagine your favorite restaurant. The famous chef quits, but the sign stays.",
+      "beat": "stakes",
+      "visual": "SCENE 3 (on 'Imagine'): Benny wants food: he walks in hungry (pose run, expr happy, drift right) toward a badge 'RESTAURANT' on the right; bubble 'YOUR FAVORITE' on 'your'; Benny stops and points. SCENE 4 (on 'The'): the plain chef/Houser character (cast, outfit psych = shirt + glasses, flip, pose wave, expr smile; NEUTRAL, not the hooded stranger) stands at x 780 with a small badge 'CHEF' on 'chef'; on 'quits' stamp 'QUIT' (thud), the chef turns away (pose wave goodbye) and Benny FREEZES (pose shock, expr shocked). SCENE 5 (on 'but'): spread out: badge 'RESTAURANT' stays big in the centre, the chef stays at the side (back turned, same character); camera shake on 'stays'; Benny expr smile (relieved).",
+      "on_screen": "YOUR FAVORITE / RESTAURANT / CHEF / QUIT"
+    },
+    {
+      "text": "Benny takes a bite. It tastes new.",
+      "beat": "escalate",
+      "visual": "SCENE 6 (on 'Benny'): Benny pose present, expr happy (expecting the usual); on 'bite' expr flips to thinking (one brow up) with a pop and bubble 'HMM?' (curious, not disgusted); on 'new' badge 'TASTES NEW' (ding). The same chef character stays at the far side, back turned. No food prop, no bite animation.",
+      "on_screen": "HMM? / TASTES NEW"
+    },
+    {
+      "text": "The chef is Dan Houser. He led the writing of Rockstar's famous stories.",
+      "beat": "twist",
+      "visual": "SCENE 7 (on 'The'): the SAME chef character (psych outfit, glasses), now facing Benny with the small 'CHEF' badge until 'Dan'; on 'Dan' the badge clears and headline 'DAN HOUSER' (gold, sub 'WRITER') slams (ding) on that same character; Benny pose point, expr shocked. SCENE 8 (on 'He'): sides swap; small badge 'DAN HOUSER' stays over him; badge 'LED THE WRITING' pops on 'led'; Houser neutral, expr smile.",
+      "on_screen": "DAN HOUSER / WRITER"
+    },
+    {
+      "text": "He left in March 2020.",
+      "say": "He left in March twenty twenty.",
+      "beat": "escalate",
+      "visual": "SCENE 9 (on 'He'): on 'left' Houser waves goodbye (pose wave, expr happy) and walks off once (drift); Benny waves back (gag); badge 'MARCH 2020' drops on 'March' (clink).",
+      "on_screen": "MARCH 2020"
+    },
+    {
+      "text": "He said so last year. He also said GTA 6 will be great.",
+      "say": "He said so last year. He also said GTA six will be great.",
+      "beat": "payoff",
+      "visual": "SCENE 10 (on 'He'): Houser back (same character), pose shrug, expr smile; badge 'LAST YEAR' on 'last' (until 'also'); Benny pose think, expr thinking. SCENE 11 (flash cut on 'GTA'): green tint; badge 'GTA 6'; headline 'HE SAID: GREAT' (green) slams on 'great' (ding); Houser pose present, expr happy; Benny pose shrug, expr thinking ('HMM?' curious). Wait-what beat: the same man says the game will be great.",
+      "on_screen": "LAST YEAR / HE SAID: GREAT"
+    },
+    {
+      "text": "Still a GTA game? Comment A or B.",
+      "beat": "ending",
+      "visual": "SCENE 12 (on 'Still'): Benny pose think, expr thinking. Badge 'GTA 6' small at top. List rows 'A: STILL GTA' on 'Still' and 'B: NOT GTA' on 'Comment'; Benny pose point at viewer on 'Comment'. Rows only, no footer (badge cleared by word 2).",
+      "on_screen": "A: STILL GTA / B: NOT GTA"
+    }
+  ],
+  "facts_used": [
+    {
+      "claim": "Rockstar Games officially confirmed GTA 6 will launch on November 19, 2026 (re-opened and read: 'Rockstar Games has officially confirmed that Grand Theft Auto 6 will launch on November 19, 2026'). We say 'tomorrow' because the video publishes Nov 18 at 7 PM ET.",
+      "source_url": "https://gameluster.com/rockstar-confirms-gta-6-release-date-apology/"
+    },
+    {
+      "claim": "Dan Houser, Rockstar co-founder and VP of Creative, led the writing of the GTA and Red Dead stories. Take-Two said (Feb 2020) he would leave, last day March 11, 2020.",
+      "source_url": "https://www.gameinformer.com/2020/02/04/rockstar-games-vp-dan-houser-leaves-company"
+    },
+    {
+      "claim": "Houser told IGN at LA Comic Con (reported Sept 30, 2025) GTA 6 is 'not going to be a story that I wrote or a character set that I developed', and also: 'The game will be great, I'm sure.'",
+      "source_url": "https://www.techradar.com/gaming/rockstar-co-founder-and-gta-writer-dan-houser-says-gta-6s-story-will-be-great-despite-zero-involvement-in-the-game"
+    }
+  ],
+  "math_check": "Spoken words (say): L1 5+9=14, L2 12, L3 7, L4 5+8=13, L5 6, L6 5+7=12, L7 8 = 72. Longest sentence 12 words. 72 / 2.3 = 31.3 s plus pauses, about 33 s. March 2020 identical in voice (twenty twenty), caption and badge. 'Last year' = Sept 2025 interview, correct from Nov 2026. 'He said so' = he said he did not write it; 'great' quote is his own words.",
+  "est_seconds": 33,
+  "word_count": 72,
+  "upload": {
+    "title": "GTA 6 is out tomorrow. Its famous writer says he didn't write it #Shorts",
+    "description": "Can it still be a GTA game if its famous writer wrote none of it?\nA or B: still a GTA game, or not? Comment below.\nDan Houser led the writing of Rockstar's famous stories. He left in March 2020. Last year he told IGN GTA 6 is not a story he wrote, and also that the game will be great.\nSources: Dan Houser to IGN (via TechRadar, Sept 2025); Take-Two filing (via Game Informer, 2020). Unofficial fan commentary, not affiliated with Rockstar or Take-Two.\n#gta6 #gaming #rockstar #Shorts",
+    "tags": [
+      "gta 6",
+      "dan houser",
+      "dan houser gta 6",
+      "gta 6 writer",
+      "is gta 6 still gta",
+      "rockstar games",
+      "gta 6 story",
+      "gta 6 news"
+    ]
+  },
+  "changes_from_previous": "v6 = v5 with word-neutral changes only (spoken words unchanged, 72). (1) Rule C: scene 2 stamp 'DIDN'T WRITE' -> 'HE SAYS: NO' (voice says 'says'). (2) Continuity: the parable chef is now the same plain, neutral character as Dan Houser (cast outfit psych: shirt + glasses, expr smile; no hooded stranger, no glowing eyes); he wears a small 'CHEF' badge from scene 4, stays on screen through line 3, and the 'DAN HOUSER / WRITER' headline lands on that same character in line 4. (3) Scene 3: Benny wants something: walks in hungry toward the RESTAURANT badge, freezes at the QUIT stamp. Scene 4 un-crowded: split into scene 4 (CHEF badge on 'chef', QUIT stamp on 'quits') and scene 5 (RESTAURANT + camera shake on 'stays'). Cheap gags: expression flip happy->thinking with a pop on 'bite'; Houser waves goodbye on 'left' and Benny waves back. (4) Title/title_fb/upload.title -> 'GTA 6 is out tomorrow. Its famous writer says he didn't write it' (attributed, matches the voice). Research file: verbatim quote 'The game will be great, I'm sure.' added as its own VERIFIED row (TechRadar). Scenes planned 11 -> 12. GTA 6 is never called bad; Benny's reaction stays curious ('HMM?')."
+}

@@ -1,0 +1,278 @@
+{
+ "id": "2026-11-26-story-09",
+ "version": 1,
+ "source": "owner-chosen Short by @Gneef (beat plan only; new name, wording and additions), Option A ending",
+ "hook_type": {
+  "number": null,
+  "name": "owner-directed (exempt from rotation)"
+ },
+ "format": {
+  "number": 1,
+  "name": "Rule world: luck numbers"
+ },
+ "title_working": "In This World, You Can See How Much Luck You Have Left",
+ "music": "drift",
+ "music_gain": 0.13,
+ "world_rule": "Everyone has a glowing luck number on the chest, and luck is never free: it is moved from someone else.",
+ "logline": "A boy's best day ever is paid for by his own mother's luck.",
+ "characters": [
+  {
+   "name": "Noel",
+   "role": "the boy"
+  },
+  {
+   "name": "Mia",
+   "role": "little sister"
+  },
+  {
+   "name": "Mum",
+   "role": "mother"
+  }
+ ],
+ "lines": [
+  {
+   "text": "In this world, you can see how much luck you have left.",
+   "say": "(confident) In this world, you can see how much luck you have left.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": 2,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Everyone has a glowing number on their chest. Green means good luck. Red means bad luck.",
+   "say": "(happy) Everyone has a glowing number on their chest. Green means good luck. Red means bad luck.",
+   "speaker": "narrator",
+   "speed": 0.93,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "matter-of-fact",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "One morning, a boy named Noel woke up to a blinding green one thousand.",
+   "say": "(happy) One morning, a boy named Noel woke up to a blinding green one thousand.",
+   "speaker": "narrator",
+   "speed": 0.93,
+   "volume": 1,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "wonder",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "He ran outside and had the best day of his life.",
+   "say": "(happy) He ran outside and had the best day of his life.",
+   "speaker": "narrator",
+   "speed": 0.97,
+   "volume": 1,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "joyful",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "He found one hundred dollars on the sidewalk.",
+   "say": "(happy) He found one hundred dollars on the sidewalk.",
+   "speaker": "narrator",
+   "speed": 0.97,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "joyful",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Strangers smiled and gave him compliments.",
+   "say": "(happy) Strangers smiled and gave him compliments.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "warm",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Then someone handed him the keys to a brand new car, for free.",
+   "say": "(surprised) Then someone handed him the keys to a brand new car, for free.",
+   "speaker": "narrator",
+   "speed": 0.97,
+   "volume": 2,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "amazed",
+    "tags": "(surprised)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Every time something good happened, a number somewhere else turned red. Noel never looked.",
+   "say": "(nervous) Every time something good happened, a number somewhere else turned red. Noel never looked.",
+   "speaker": "narrator",
+   "speed": 0.86,
+   "volume": -1,
+   "pause": 0.35,
+   "beat": "",
+   "voice": {
+    "emotion": "ominous",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Late that night, he finally went home.",
+   "say": "(soft tone) Late that night, he finally went home.",
+   "speaker": "narrator",
+   "speed": 0.88,
+   "volume": -1,
+   "pause": 0.35,
+   "beat": "",
+   "voice": {
+    "emotion": "calm",
+    "tags": "(soft tone)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "The moment he stepped inside, his chest flashed red. Minus one million.",
+   "say": "(surprised) The moment he stepped inside, his chest flashed red. Minus one million.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 4,
+   "pause": 0.5,
+   "beat": "",
+   "voice": {
+    "emotion": "shock",
+    "tags": "(surprised)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "His heart pounded. His little sister was crying on the kitchen floor.",
+   "say": "(sad) His heart pounded. His little sister was crying on the kitchen floor.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "panic",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "And his mother lay beside her, clutching her chest.",
+   "say": "(sad) And his mother lay beside her, clutching her chest.",
+   "speaker": "narrator",
+   "speed": 0.8,
+   "volume": -3,
+   "pause": 0.4,
+   "beat": "",
+   "voice": {
+    "emotion": "devastated",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "That is when he understood. The system never gives free luck.",
+   "say": "(sad) That is when he understood. The system never gives free luck.",
+   "speaker": "narrator",
+   "speed": 0.82,
+   "volume": -2,
+   "pause": 0.35,
+   "beat": "",
+   "voice": {
+    "emotion": "realization",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "It only moves it from someone else.",
+   "say": "(soft tone) It only moves it from someone else.",
+   "speaker": "narrator",
+   "speed": 0.8,
+   "volume": -3,
+   "pause": 0.5,
+   "beat": "",
+   "voice": {
+    "emotion": "hush",
+    "tags": "(soft tone)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "And Noel had taken every drop from his own mother.",
+   "say": "(sad) And Noel had taken every drop from his own mother.",
+   "speaker": "narrator",
+   "speed": 0.78,
+   "volume": -3,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "heavy",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  }
+ ],
+ "word_count": 162,
+ "est_seconds": 46.3,
+ "tail_hold": 2.0,
+ "upload": {
+  "title": "In This World, You Can See How Much Luck You Have Left #Shorts",
+  "description": "In this world, you can see how much luck you have left. 🍀\nWould you trust a perfect day? Tell us below.\nA boy wakes up with a glowing green 1,000 and the best day of his life, until he learns where luck really comes from. An animated rule-world story with a twist ending.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "luck story",
+   "in this world story",
+   "rule world story",
+   "plot twist story",
+   "sad story animation",
+   "animated story",
+   "story time animation",
+   "twist ending",
+   "roblox story",
+   "roblox animation"
+  ]
+ }
+}

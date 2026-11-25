@@ -1,0 +1,36 @@
+{
+  "id": "2026-11-19-gta6-curiosity",
+  "hook_type": {
+    "number": 3,
+    "name": "The Curiosity / Shock Hook"
+  },
+  "hook": "Benny sleeps outside a store the night before G T A 6. The reason will surprise you.",
+  "chosen_hook_alternatives": [
+    "Nobody talks about this part of the GTA 6 wait.",
+    "Here is what the GTA 6 wait is secretly doing to you."
+  ],
+  "angle": "Honest claim only: people who planned a vacation were happier before it than people who did not; after the trip, no overall difference. Waiting can feel good. Study is about trips, not games; said aloud.",
+  "facts": [
+    {
+      "claim": "1,530 Dutch adults; 974 took a vacation. Vacationers were happier than non-vacationers before the trip (anticipation suggested). After the trip overall no difference; a very relaxing trip gave a small boost, gone after eight weeks.",
+      "source_url": "https://www.sciencedaily.com/releases/2010/02/100218125204.htm"
+    },
+    {
+      "claim": "Nawijn, Marchand, Veenhoven, Vingerhoets (2010), Applied Research in Quality of Life 5(1) 35-47, DOI 10.1007/s11482-009-9091-9.",
+      "source_url": "https://personal.eur.nl/veenhoven/Pub2010s/2010g-ab.html"
+    }
+  ],
+  "twist": "No big difference after the trip, plus the honest limit: trips, not games.",
+  "open_loop": "Why could tonight be the best part? Paid off at lines 5-7.",
+  "payoff": "Waiting can feel good.",
+  "ab_ending": "A: The wait / B: The game. Comment bait, no right answer.",
+  "outfit": "psych",
+  "ip_notes": "No Rockstar characters, logos, footage, art or music; 'GTA 6' plain text only. Store door is generic, no sign.",
+  "unverified": [
+    "Whether the effect applies to video game launches (no study found)",
+    "Exact happiness scores/effect sizes (not on pages opened)",
+    "Springer full text not opened; used ScienceDaily plus Erasmus abstract page via search summary",
+    "Claim 'anticipation beats the experience' is NOT made; study compares planners vs non-travelers, not before vs after in the same people."
+  ],
+  "notes_for_scriptwriter": "Say 'vacations, not games' explicitly. Psych outfit. No money tip, so no financial disclaimer needed."
+}

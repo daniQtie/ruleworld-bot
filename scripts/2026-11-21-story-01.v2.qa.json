@@ -1,0 +1,26 @@
+{
+ "id": "2026-11-21-story-01",
+ "version": 2,
+ "pass": false,
+ "average": 7.91,
+ "scores": {"hook": 8, "world_rule": 8, "characters": 7, "escalation": 8, "reveal": 8, "ending": 8, "clarity": 8, "visual": 8, "consistency": 7, "originality": 9, "retention": 8},
+ "hard_gates": {"rotation": true, "structure": true, "original": true, "length": true, "english_clear": true, "producible": true},
+ "measured": {"spoken_words": 579, "est_seconds": 165.4, "shot_plan_seconds": 165.0, "shots": 47, "motion_shots": 6, "max_shot_seconds": 4.3, "max_sentence_words": 14, "text_equals_say": true, "character_keys_match_names": true, "length_gate": "420-620 words (Adam), pass"},
+ "v1_fixes_check": {
+  "cellar shelves / red hat trail / Pip following / town learns of Lena": "landed (empty cellar, Lena's own accessories on sleepers set up in lines 7-8 and paid off in 30-31, footprints, baker wears the knitted scarf, Pip follows and tells the town)",
+  "glow and accessory pile paid off": "mostly landed (lines 14, 35, 37, 45) but see new gap on glow rule",
+  "Tilda stakes": "landed (lines 16-17)",
+  "fight beat shown": "landed (lines 21, 23)",
+  "hook sharpened, motion on hook and rule examples": "landed (line 1 is a true bold claim, motion on 1, 3, 4, 5, 28, 40)",
+  "lighting / sign text / Baker key": "landed (lighting_presets per shot, no signs, keys match)",
+  "title / description": "landed (Hat; sister no longer spoiled)"
+ },
+ "fixes": [
+  "New logic gap, lines 13-14 vs world_rule: the hidden half says the hair glows gold and a copy appears when the helped person says thank you, but Milo's hair glows gold at line 14 before anyone thanked him. Either show the glow as a different thing (a quiet glow every time he helps) and say so in line 14, or cut the glow from line 14 and keep it for 35 and 45 only (and make line 14 'But something was strange. Milo did not look sad at all.').",
+  "Regression, characters / lines 12-13 and 34: v1's Pip beat ('first hat he had ever owned') was cut, so Pip's thank-you at line 34 is unmotivated and Pip's want is never shown. Restore one short line after 13 (Pip touches the red cap, his first hat), and have line 33-34 say why he thanks (he ran up because of the hat).",
+  "Line 17 prompt contradicts itself: the Tilda look says white hair bun but the action says a younger Tilda with dark hair. Give a fixed 'young Tilda' look (dark hair bun, straight back, no cane) as its own character entry, and do the same for the line 37 flashback people (fixed colourful look, plus Milo's accessory colours). Lines 41-45 are rendered at night 'no daylight' while the grey town turns bright: set the celebration shots (40-45) to sunrise or 'warm lantern glow, bright' so the colour payoff reads.",
+  "Minor: lines 1 and 2 show the same hat transfer twice; make line 2 show a different object, or drop one. Line 36's 'kindness waited for thanks' could add the secret-help hint ('and nobody could thank Lena, because nobody knew') for a stronger reveal re-frame."
+ ],
+ "kid_safety": "Pass. No violence; slamming doors and yelling only.",
+ "upload": "Title 'In This Town, Being Kind Costs You Your Hat... #Shorts' and the description are good: hook line, YES/NO CTA, no spoiler, disclaimer present. The plain #roblox hashtag is excluded per owner policy and not flagged."
+}

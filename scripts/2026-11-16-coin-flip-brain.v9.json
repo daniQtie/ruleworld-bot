@@ -1,0 +1,103 @@
+{
+  "id": "2026-11-16-coin-flip-brain",
+  "version": 9,
+  "topic": "psychology",
+  "outfit": "psych",
+  "title_yt": "A Stranger Offered You a Coin Flip. Would You? #Shorts",
+  "title_fb": "A stranger offered you a coin flip. Would you take it?",
+  "hook": "What if a stranger offered you a coin flip?",
+  "open_loop": "Seed at line 3: the stranger smirks and on-screen text asks 'WHY SMILE?'. Line 6 asks outright 'Why does the stranger want you to quit?'. Both are paid off only in line 7 (over many flips, you win more money; +$25 per flip and -$25 HIM on screen) and the line 8 payoff.",
+  "payoff": "To your brain a one hundred dollar loss feels like two hundred, so you say no. But over many flips you win more money, which is why the stranger wants you to quit. Your brain says no. The math says flip.",
+  "ending": "choice",
+  "lines": [
+    {
+      "text": "What if a stranger offered you a coin flip?",
+      "beat": "hook",
+      "visual": "SCENE 1, frame 0, dark street (bg #2b2a33, floor #1d1c24). Hooded stranger (cast, outfit stranger, x 780, flip true, pose present, expr smug, prop coin) holds the coin out toward Benny (x 320, pose wave, expr smile). Big prop coin visible from frame 0. Benny beat on 'coin': expr thinking. Benny is the viewer's avatar.",
+      "on_screen": "COIN FLIP?"
+    },
+    {
+      "text": "Heads, you win one hundred fifty dollars.",
+      "beat": "stakes",
+      "visual": "SCENE 2. Green headline '+$150' at y 420 pops on 'Heads' (sfx ding). Benny beat on 'win': expr happy, hop true. Stranger stays smug.",
+      "on_screen": "+$150"
+    },
+    {
+      "text": "Tails, you lose one hundred.",
+      "beat": "stakes",
+      "visual": "SCENE 3. Red headline '-$100' at y 560 pops on 'Tails' (sfx thud) with camera shake 0.4 s. Benny beat on 'lose': pose shock, expr shocked, hop false. Green '+$150' remains at y 420. On 'lose' the stranger smirks (pose present, expr smug, glowing grin) and a small gold bubble 'WHY SMILE?' (tail right, sfx pop) appears over his hood. Visual only, not spoken.",
+      "on_screen": "-$100"
+    },
+    {
+      "text": "To your brain, losing one hundred feels like two hundred.",
+      "beat": "escalate",
+      "visual": "SCENE 4, same street. Benny holds his brain (prop brain), pose worry, expr shocked, x 300. No snap-zoom. Red headline '-$100' at y 560 on 'losing' (word 3). On 'two' (word 8) red stamp 'FEELS LIKE ABOUT -$200' slams over it (sfx thud, shake 0.4 s). Benny runs only after the stamp has been read: beat on 'hundred' (word 9): flip true, pose run, drift toward x 140 (sfx whoosh). Stranger in the background: pose point, expr happy (sly grin).",
+      "on_screen": "FEELS LIKE -$200"
+    },
+    {
+      "text": "But you want that money. So you flip.",
+      "beat": "escalate",
+      "visual": "SCENE 5. On 'But' Benny stops and turns back (flip false, x 340, pose think, expr thinking), a green '+$150' coin icon glows in his thought bubble on 'money' (word 4). On 'flip' (word 7) beat: pose flex, expr determined; a flipcoin item launches from his hand (x 340, y 1000, height 650) and lands ON his head (x2 320, y2 880); red stamp 'TAILS -$100' (sfx thud), camera shake; Benny: pose slump, expr broke (tear). Stranger grins (pose present, expr smug), bubble 'Quit!' (tail right, sfx pop).",
+      "on_screen": "TAILS -$100"
+    },
+    {
+      "text": "Why does the stranger want you to quit?",
+      "beat": "loop",
+      "visual": "SCENE 6. Snap-zoom on the stranger on 'stranger' (pose present, expr smug, bubble 'Quit!'). Big gold headline 'WHY QUIT?' at y 420 on 'quit'. Benny slumped (tear) at x 320, then on 'you' (word 5) looks up toward the stranger (look). Stranger beat: pose point.",
+      "on_screen": "WHY QUIT?"
+    },
+    {
+      "text": "Because over many flips, you win more money.",
+      "say": "Because over many flips, you win more money.",
+      "beat": "twist",
+      "visual": "SCENE 7 (flash true). Benny stands up (pose hero, expr happy, hop true, x 320, sfx ding). Coin rain (coins, n 30, floor 1300, layer back) to show many flips. On 'many' (word 3) a counter 'FLIP 1, 2, 3...' ticks; on 'ahead' (word 8) green headline '+$25 PER FLIP' at y 420 and red headline '-$25 HIM' at y 560 near the stranger (sfx ding): stranger snap-zoom, pose worry, expr shocked, bubble 'GULP' (tail right, sfx pop). Badge 'Not financial advice' (size 40) at x 540, y 1230 from this scene to the end.",
+      "on_screen": "+$25 PER FLIP"
+    },
+    {
+      "text": "Your brain says no. The math says flip.",
+      "beat": "payoff",
+      "visual": "SCENE 8. Benny holds the brain (prop brain, pose think, expr thinking); on 'no' a red stamp 'NO' slams over the brain (sfx thud). On 'math' (word 5) the stamp becomes a green check and Benny beat: pose point, expr smug. Coin pile under him (coins, n 14, floor 1300, layer back). Badge stays at x 540, y 1230.",
+      "on_screen": "BRAIN: NO. MATH: FLIP"
+    },
+    {
+      "text": "Would you flip? Comment A or B.",
+      "beat": "ending",
+      "visual": "SCENE 9. Frame-0 layout with roles swapped: stranger (x 780, flip true, pose present, expr smug, prop coin) holds the coin out to the CAMERA; Benny (x 220, pose shrug, expr thinking). List (x 560, y 760, w 400): rows 'A  FLIP' (mark check) on 'Would' and 'B  RUN' (mark x) on 'B'. Badge 'Not financial advice' at x 540, y 1230. Tail 0.3 s, hard cut on 'B', looping into frame 0.",
+      "on_screen": "A: FLIP  B: RUN"
+    }
+  ],
+  "disclaimer_on_screen": "'Not financial advice' badge from scene 7 to the end. Framed as a brain/decision thought experiment, not advice to gamble.",
+  "facts_used": [
+    {
+      "claim": "In the coin toss (win $150 / lose $100), most people decline.",
+      "source_url": "https://litcharts.com/lit/thinking-fast-and-slow/part-4-chapter-26"
+    },
+    {
+      "claim": "Most people reject the 50/50 win $150 / lose $100 flip even though it pays on average (corroborating).",
+      "source_url": "https://margin-notes-600.pages.dev/books/thinking-fast-and-slow/ch-26"
+    },
+    {
+      "claim": "Meta-analysis mean loss-aversion coefficient 1.955, so a $100 loss feels like about $195 to the brain ('about two hundred'; research says about 2x).",
+      "source_url": "https://www.aeaweb.org/doi/10.1257/jel.20221698"
+    },
+    {
+      "claim": "Losses are treated as about twice as large as an equivalent gain; the ratio varies by context, so the stamp says 'about'.",
+      "source_url": "https://en.wikipedia.org/wiki/Loss_aversion"
+    },
+    {
+      "claim": "Over many flips, +$25 per flip on average for you and -$25 for the stranger (zero-sum). A single flip is still a 50/50.",
+      "source_url": "computed; no external source needed"
+    }
+  ],
+  "math_check": "Per flip: 0.5*150 - 0.5*100 = +$25 on average (stranger -$25, zero-sum). Felt loss = 1.955*100 = $195.50, about 2x -> 'two hundred' (95% range $182.00-$210.20, all above the $150 win). One flip is still 50/50, so the spoken line says 'over many flips, you win more money' (100 flips: net loss only ~1.76% of the time).",
+  "est_seconds": 30.4,
+  "word_count": 70,
+  "changes_from_previous": [
+    "Line 1: 'offers' -> 'offered' (standard English); titles updated to match.",
+    "Line 4: now 'To your brain, losing one hundred feels like two hundred.' (10 words, was 11). 'Nearly' dropped; hedge moved to the stamp 'FEELS LIKE ABOUT -$200' (research: about 2x, mean 1.955). Snap-zoom removed and the flee is timed after the stamp so it reads.",
+    "Line 5: 'But you want that money. So you flip.' gives Benny a motive for turning back, and sets up the tails bonk and line 6.",
+    "Curiosity seed planted early: at line 3 the stranger smirks and a 'WHY SMILE?' bubble appears (visual only, no extra words). Line 6 still asks the question outright; both pay off only at line 7.",
+    "Line 7: now 'Because over many flips, you win more money.' It no longer says each flip pays $25, so it does not contradict the -$100 just shown. The screen shows a flip counter, '+$25 PER FLIP' and '-$25 HIM' with the GULP gag.",
+    "Length: 70 spoken words (9+7+5+10+8+8+8+8+7) = 30.4 s at 2.3 w/s, 9 lines, 9 scenes. No ph fields. Kept the A/B ending and the line 8 payoff."
+  ]
+}

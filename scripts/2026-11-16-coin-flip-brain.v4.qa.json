@@ -1,0 +1,73 @@
+{
+  "pass": false,
+  "average": 7.27,
+  "scores": {
+    "hook": 7,
+    "stakes": 7,
+    "open_loop": 7,
+    "escalation": 7,
+    "payoff": 7,
+    "surprise": 7,
+    "ending": 8,
+    "clarity": 7,
+    "facts": 9,
+    "originality": 7,
+    "entertainment": 7
+  },
+  "hard_gates": {
+    "what_if_opener": true,
+    "benny_in_story": true,
+    "length_25_35s": true
+  },
+  "viewer_test": "1 a.m. scroller: the glowing-eyed hooded stranger is a decent stop at 0.5 s, but line 1 is 11 words and the actual offer ('one fifty') only lands at ~4 s, and 'lose a hundred' at ~6 s, so the tension arrives late. Lines 1-4 are a real mini cartoon (offer, NOPE, sprint, peek back). Lines 5-8 (~16 s, 41 of 89 words) turn back into four stacked facts with a brain, bars and counters: the story stops while Benny reacts to numbers, which is the episode-1 lecture problem in a smaller dose. Line 9's twist ('he bet you'd run') is not logical on first watch: if he loses $25 a flip and expects you to refuse, he gains nothing, so why offer? I would likely stay to ~10 s and drift during the stat run.",
+  "gate_notes": {
+    "what_if_opener": "First spoken words: 'What if a hooded stranger says...'. Pass.",
+    "benny_in_story": "Pass, with a caveat: lines 1-4 and 9-10 are story with a second character; lines 5-8 are explanation beats where nothing happens to Benny except a coin bonk.",
+    "length_25_35s": "89 spoken words (from `say`, else `text`) / 2.6 = 34.2 s. Pass, but 0.8 s from the ceiling. 9 default line pauses (~0.22 s each, ~2 s) plus a 0.3 s tail can push the render to ~36-37 s."
+  },
+  "math_recheck": {
+    "ev_per_flip": "0.5*150 - 0.5*100 = +$25 (stranger -$25, zero-sum). Correct.",
+    "felt_loss": "1.955*100 = $195.50 -> 'about $195' (95% range $182.00-$210.20, all > $150). Correct.",
+    "100_flips": "Total = 250h - 10,000; strict loss iff h <= 39 (h = 40 is break-even, $0). P(h<=39 | n=100, p=0.5) = 0.017600 = 1.76% < 2%. Correct.",
+    "one_flip": "50% chance of -$100. Correct.",
+    "sources": "Every number traces to a research fact with a source_url (Kahneman coin toss via LitCharts + corroborating summary, Wikipedia 2x, AEA/JEL 2024 meta-analysis 1.955, caveat source); computed figures are marked 'computed'. No number is unsourced."
+  },
+  "format_check": {
+    "spoken_words": 89,
+    "est_seconds": 34.2,
+    "scenes": 10,
+    "on_screen_max_words": 4,
+    "on_screen_ok": true,
+    "words_per_line": [
+      11,
+      5,
+      6,
+      8,
+      10,
+      10,
+      10,
+      11,
+      8,
+      10
+    ]
+  },
+  "drawability": [
+    "Line 6: 'a big prop coin drops from the top and bonks Benny's head'. The `prop` item is a floating prop with no motion fields. Use a `flipcoin` with a high start y and x2/y2 at Benny's head, or a `coins` rain with a small n.",
+    "Line 5: 'the brain shakes'. There is no item or prop shake; only camera shake exists. Use camera shake on 'aversion' or drop the instruction.",
+    "Line 9: 'the stranger's sweating' and 'glowing eyes wide' have no asset or field (stranger's face is hidden in shadow; the doc lists only smug/happy/smile as readable grins). The spoken 'sweating' will not be visible; the panic has to come from pose worry plus the '...uh-oh' bubble.",
+    "Everything else maps to documented fields: stranger cast with flip, poses run/wave/shock/point/think/slump/flex/present/worry/shrug, expressions, prop coin/brain, headline/stamp/bubble/badge/bars/counter/list/flipcoin items, sfx thud/whoosh/clink/ding, camera beats/shake, tail 0.3. Positions (x 120-780, y ~420) are inside the safe area."
+  ],
+  "ph_check": "Natural Taglish with the same meaning throughout. Small polish: line 9 'Pustahan niya, tatakbo ka' reads stiffly; 'Taya niya, tatakbo ka' or 'Pusta niya, tatakbo ka' is more natural. Line 4 'Ang weird?' is fine, 'Ang weird pa?' flows slightly better.",
+  "fixes": [
+    "Line 1 (hook 7, stakes 7): 11 words put 'one fifty' at ~4 s and 'lose a hundred' (line 2) at ~6 s. Cut it to reach the offer by ~2 s, e.g. 'What if this stranger says: heads, you win one fifty...' and merge line 2 in: '...tails, you lose a hundred?' Keep the stranger plus coin plus '+$150 / -$100' on screen from frame 0.",
+    "Line 9 (payoff 7, surprise 7): the twist is illogical. If the stranger loses $25 a flip and expects you to run, he gains nothing, so 'he bet you'd run' doesn't explain why he offered. Make the twist the money flip itself: 'Wait... the stranger's sweating. Every flip costs HIM twenty five.' That is sourced (zero-sum EV) and pays off line 4.",
+    "Line 4 (open loop 7): 'This flip is on your side' is answered right away in lines 5-7, so the loop closes ~8 s before the end. Plant the stranger half explicitly so it survives until line 9, e.g. 'Weird part? He's the one who should run.'",
+    "Lines 5-8 (escalation 7, entertainment 7): four fact beats in a row (~16 s: loss aversion, $195, +$25, <2%) with Benny reacting to a brain, bars and counters is the episode-1 lecture problem again. Cut one stat (merge 5+6: 'Your brain makes losing a hundred feel like one ninety five.') and turn line 8 into action: Benny actually flips (flipcoin montage, loses the first one, gets bonked, keeps going, coin pile grows) while the '100 FLIPS' counter runs. Show, don't tell.",
+    "Length (clarity 7): 89 words is 1 word under the cap; with pauses the render will likely exceed 35 s. The merges above should bring it to ~75-80 words (~29-31 s).",
+    "Line 8 (clarity 7): 'Chance you end up losing: under two percent' after '100 flips' is a two-step idea a 12-year-old may miss. Say it as a result: 'A hundred flips? You almost never end up behind.' and keep '<2% lose' on screen.",
+    "Line 10 (ending 8): 'One flip's still fifty fifty' is a deflating hedge right before the choice. Keep the caveat in the on-screen badge and end tighter: 'Heads, one fifty. Tails, a hundred. A: flip. B: run. You?' which also loops into line 1's offer.",
+    "Originality 7: the $150/$100 coin flip is Kahneman's best-known example and is common in psych Shorts. Make the Benny story the unique part (e.g. Benny loses flip #1, panics, then wins the long game while the stranger empties his pockets) rather than the stat.",
+    "Line 6 / line 5 / line 9 visuals: fix the three non-drawable notes listed in `drawability` (coin drop via flipcoin, no brain shake, 'sweating' not renderable).",
+    "Line 9 ph: change 'Pustahan niya, tatakbo ka' to 'Taya niya, tatakbo ka'."
+  ]
+}

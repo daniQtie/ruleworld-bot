@@ -1,0 +1,129 @@
+{
+  "id": "2026-11-16-coin-flip-brain",
+  "version": 4,
+  "topic": "psychology",
+  "outfit": "psych",
+  "title_yt": "A Stranger Offers You This Coin Flip... Do You? #Shorts",
+  "title_fb": "May stranger na nag-alok ng coin flip... G ka ba?",
+  "hook": "What if a hooded stranger says: heads, you win $150?",
+  "open_loop": "Line 4 ('Weird part? This flip is on your side.') plants two questions: why is a bad-looking deal actually good, and why did a stranger offer it at all? The brain half (loss aversion, about 2x) lands in lines 5-6; the stranger half ('he bet you'd run') pays off in line 9, inside the last ~5 s before the A/B ending.",
+  "payoff": "Your brain weighs a loss about twice as heavily as a win, so the $100 loss feels like about $195 and you run. But each flip pays you +$25 on average, and over 100 flips the chance you end up losing is under 2%. Twist: the stranger is the one taking the bad side; he offers it because he is betting you'll run, like most people do.",
+  "ending": "choice",
+  "lines": [
+    {
+      "text": "What if a hooded stranger says: heads, you win $150?",
+      "say": "What if a hooded stranger says: heads, you win one fifty?",
+      "ph": "What if may hooded na stranger na nagsabi: heads, panalo ka ng $150?",
+      "beat": "hook",
+      "visual": "Frame 0, dark-ish street bg (#2b2a33, floor #1d1c24). Benny (psych outfit) walks in from the left (pose run -> wave, expr smile, strolling). Stranger (cast outfit stranger, flip true, x 780) is already there, pose present, expr smug, glowing eyes. On 'heads' the stranger holds up a coin (prop coin) and a big gold prop coin floats between them; green headline '+$150' pops on 'win'. Benny's beat on '$150': expr happy, hop true (gap-tooth grin, little jump).",
+      "on_screen": "HEADS: +$150"
+    },
+    {
+      "text": "Tails, you lose $100.",
+      "say": "Tails, you lose a hundred.",
+      "ph": "Tails, talo ka ng $100.",
+      "beat": "stakes",
+      "visual": "Snap-zoom on Benny. Red headline '-$100' slams over the green one on 'lose' with sfx thud and camera shake. Benny's grin collapses: beat on 'lose' -> pose shock, expr shocked. Stranger keeps the smug grin, pose shrug ('your call').",
+      "on_screen": "TAILS: -$100"
+    },
+    {
+      "text": "Your hand freezes. *Nope!* You run.",
+      "ph": "Nanigas 'yung kamay mo. *Ayoko!* Takbo!",
+      "beat": "escalate",
+      "visual": "Gag: Benny reaches for the coin (pose point), then a bubble 'NOPE.' pops over his head (tail left), red stamp 'NOPE' slams (sfx thud). On 'run' Benny flips around (flip true) and sprints off left (pose run, expr shocked, drift toward x 120), sfx whoosh. Stranger, unbothered, pose shrug.",
+      "on_screen": "NOPE."
+    },
+    {
+      "text": "Weird part? This flip is on *your* side.",
+      "ph": "Ang weird? Pabor sa *'yo* 'tong flip.",
+      "beat": "loop",
+      "visual": "Cut: Benny peeks back in from the edge (x 160, pose think, expr thinking, one brow up). A bubble '?!' over him. Gold flipcoin tossed from the stranger's hand arcs over to Benny and lands at his feet (sfx clink). Headline 'ON YOUR SIDE?' in gold, y ~420.",
+      "on_screen": "On YOUR side?"
+    },
+    {
+      "text": "*Loss aversion*: losses hurt about *twice* as much as wins.",
+      "ph": "*Loss aversion*: mga *doble* ang sakit ng talo kaysa saya ng panalo.",
+      "beat": "twist",
+      "visual": "Light bg (#fbf7ef). Benny holds his brain (prop brain), it shakes; red stamp 'LOSS AVERSION' slams on 'aversion' (sfx thud, flash false). On 'twice' a giant red badge '~2x' pops beside the brain; Benny's beat -> pose shock, expr shocked, camera snap-zoom to 1.3 on his face.",
+      "on_screen": "LOSS AVERSION ~2x"
+    },
+    {
+      "text": "So losing $100 feels like about $195.",
+      "say": "So losing a hundred feels like about one ninety five.",
+      "ph": "Kaya 'yung talo na $100, parang mga $195 ang sakit.",
+      "beat": "escalate",
+      "visual": "Gag: two bars grow: green 'real +$150' and red 'feels -$195'; the red bar shoots past the green one. A big prop coin drops from the top and bonks Benny's head on '$195' (sfx thud, camera shake); Benny slumps (pose slump, expr broke, little tear).",
+      "on_screen": "-$100 feels like -$195"
+    },
+    {
+      "text": "But on average, each flip *pays you* $25.",
+      "say": "But on average, each flip pays you twenty five bucks.",
+      "ph": "Pero sa average, bawat flip, *kumikita ka* ng $25.",
+      "beat": "twist",
+      "visual": "Benny sits up, picks up the coin (prop coin), squints at it, then the smug 'alam ko na' grin (pose flex, expr smug). Green counter counts 0 -> +$25 above the coin (prefix '+$'), sfx ding on the bump.",
+      "on_screen": "+$25 per flip"
+    },
+    {
+      "text": "100 flips? Chance you end up losing: under *2%*.",
+      "say": "A hundred flips? Chance you end up losing: under two percent.",
+      "ph": "100 flips? Ang chance na malugi ka sa dulo: wala pang *2%*.",
+      "beat": "escalate",
+      "visual": "Montage feel inside one scene: three flipcoin items tossed in quick succession (at 0.0, 0.4, 0.8 s) while a counter '100 FLIPS' runs up (suffix ' FLIPS'). On '2%' a gold headline '< 2% LOSE' slams; Benny's jaw drops (pose shock, expr shocked), hop true.",
+      "on_screen": "100 flips: <2% lose"
+    },
+    {
+      "text": "Wait... the stranger's *sweating*. He bet you'd run.",
+      "ph": "Teka... *pinagpapawisan* si stranger. Pustahan niya, tatakbo ka.",
+      "beat": "payoff",
+      "visual": "Back to the dark street. Benny walks back toward the stranger holding the coin (pose point at stranger, expr smug). The stranger's grin flips: beat on 'sweating' -> pose worry, expr shocked, glowing eyes wide; a small bubble '...uh-oh' over him (tail right). Badge '-$25 for HIM' pops under the stranger on 'run'.",
+      "on_screen": "He bet you'd RUN"
+    },
+    {
+      "text": "One flip's still 50/50. A: flip. B: run. *You?*",
+      "say": "One flip's still fifty fifty. A, flip. B, run. You?",
+      "ph": "Isang flip, 50/50 pa rin. A: flip. B: takbo. *Ikaw?*",
+      "beat": "ending",
+      "visual": "Benny faces camera, coin raised like the stranger in frame 0 (pose present, expr happy), stranger behind him nervously (pose worry). List of two rows pops on the words: 'A  FLIP' (mark check) on 'flip', 'B  RUN' (mark x) on 'run'. Small badge 'Not financial advice' in the corner the whole scene. Hard cut on 'You?' (tail ~0.3) so it loops back to the stranger's offer.",
+      "on_screen": "A: FLIP  B: RUN"
+    }
+  ],
+  "disclaimer_on_screen": "Not financial advice (corner badge, final scene; a brain/decision thought experiment, not advice to gamble). Spoken caveat: 'One flip's still 50/50.'",
+  "facts_used": [
+    {
+      "claim": "In the coin toss (win $150 / lose $100), most people decline ('You run' / 'He bet you'd run').",
+      "source_url": "https://litcharts.com/lit/thinking-fast-and-slow/part-4-chapter-26"
+    },
+    {
+      "claim": "Most people reject the 50/50 win $150 / lose $100 flip even though it is positive on average (corroborating).",
+      "source_url": "https://margin-notes-600.pages.dev/books/thinking-fast-and-slow/ch-26"
+    },
+    {
+      "claim": "Losses are treated as about twice as large as an equivalent gain; named loss aversion.",
+      "source_url": "https://en.wikipedia.org/wiki/Loss_aversion"
+    },
+    {
+      "claim": "Meta-analysis mean loss-aversion coefficient 1.955 (about 2x), so a $100 loss feels like about $195.",
+      "source_url": "https://www.aeaweb.org/doi/10.1257/jel.20221698"
+    },
+    {
+      "claim": "The ratio varies by context (hence 'about twice', 'about $195').",
+      "source_url": "https://atticusli.com/replication-crisis/loss-aversion/"
+    },
+    {
+      "claim": "+$25 average per flip; over 100 fair flips the chance of a net loss is 1.76% (<2%); a single flip is 50/50.",
+      "source_url": "computed; no external source needed"
+    }
+  ],
+  "math_check": "Average per flip for you = 0.5*150 - 0.5*100 = +$25, so for the stranger -$25 per flip (zero-sum). Felt loss = 1.955*100 = $195.50 -> 'about $195' (95% range $182.00-$210.20, all > $150). 100 flips: total = 150h - 100(100-h) = 250h - 10,000 < 0 iff h <= 39; P(h <= 39 | n=100, p=0.5) = 0.0176 = 1.76% < 2%. One flip: 50% chance of -$100.",
+  "est_seconds": 34.2,
+  "word_count": 89,
+  "changes_from_previous": [
+    "Owner: 'walang what if' -> the first spoken words are now 'What if a hooded stranger says: heads, you win one fifty?' (v3 opened 'Heads, you win...').",
+    "Owner: 'hindi hookable' -> the hook is now a picturable situation with a character and tension at 0 s (a glowing-eyed stranger offers Benny a coin), not a bare math question. Stakes ('Tails, you lose $100') land by ~3 s.",
+    "Owner: 'hindi nakaka-entertain' -> rewritten as a mini cartoon: Benny wants the $150, gets scared, runs away, gets bonked by a coin, comes back smug and makes the stranger sweat. Visual gags every 2-4 s (NOPE stamp + sprint, peek-back, brain shaking, coin bonk + tear, jaw drop, stranger's grin flipping to panic).",
+    "Twist added: the stranger is the one on the losing side (-$25 a flip); he offers it because he bets you'll run, like most people. This is the 'wait, what?' moment and pays off the line-4 open loop in the last ~5 s.",
+    "Lecture removed: no pie chart or split-screen calculator; bars and counters appear only as quick props inside the story beats. '150 studies' and '+$2,500' dropped to keep one clean idea per beat.",
+    "Length: 89 spoken words (v3: 112) = ~34.2 s at 2.6 wps, inside the 25-35 s gate; 10 lines/scenes.",
+    "Ending: A/B comment choice ('A: flip. B: run. You?') with a hard cut that loops to the stranger's offer. Hedges kept: 'about twice', 'about $195', 'One flip's still 50/50', 'Not financial advice' on screen."
+  ]
+}

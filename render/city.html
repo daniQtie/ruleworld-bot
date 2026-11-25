@@ -1,0 +1,98 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+import { THREE, scene, camera, sun, avatar, plastic, studTex, cane, glasses, scarf, backpack, ease, frame } from './lib.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const S = 14;
+const TINT = ['#ffd9b3', '#cfe8ff', '#ffe7a3', '#ffc9c9', '#d6f5d6', '#e6d6ff', '#fff3c4', '#c9f0ff']; let tint = 0;                                   // 1 Kenney tile = 14 avatar units
+const loader = new GLTFLoader(), cache = {};
+const KIT = { r: 'city-kit-roads', c: 'city-kit-commercial', s: 'city-kit-suburban' };
+async function model(kit, name) {
+  const key = kit + name;
+  if (!cache[key]) cache[key] = (await loader.loadAsync(`/assets/kenney/${KIT[kit]}/Models/GLB format/${name}.glb`)).scene;
+  const m = cache[key].clone(true);
+  m.traverse(o => { if (o.isMesh) { o.castShadow = o.receiveShadow = true; if (o.material) { o.material = o.material.clone(); o.material.roughness = 0.55; o.material.metalness = 0; } } });
+  return m;
+}
+async function put(kit, name, tx, tz, ry = 0, sc = 1, y = 0) {
+  const m = await model(kit, name);
+  if (kit === 'r' && name.startsWith('road')) m.traverse(o => { if (o.isMesh) o.material.color.setScalar(0.62); });
+  if (name === 'tile-low') m.traverse(o => { if (o.isMesh) o.material.color.set('#c9c3b8'); });
+  if (kit === 'c' && TINT.length) { const c = TINT[(tint++) % TINT.length]; m.traverse(o => { if (o.isMesh) o.material.color.set(c); }); }
+  m.scale.setScalar(S * sc); m.position.set(tx * S, y, tz * S); m.rotation.y = ry; scene.add(m); return m;
+}
+
+scene.fog = new THREE.Fog(0xcfeaff, 260, 700);
+// ground (green studded baseplate far away, city on top)
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(800, 800), new THREE.MeshStandardMaterial({ map: studTex('#58b947', 400), roughness: 0.75 }));
+ground.rotation.x = -Math.PI / 2; ground.position.y = -0.02; ground.receiveShadow = true; scene.add(ground);
+sun.shadow.camera.left = sun.shadow.camera.bottom = -110; sun.shadow.camera.right = sun.shadow.camera.top = 110; sun.shadow.camera.far = 300;
+sun.position.set(60, 110, 70); sun.shadow.camera.updateProjectionMatrix();
+
+// ---------- city block ----------
+const tasks = [];
+const Z0 = 3, Z1 = -9, CROSS = -3;
+for (let z = Z1; z <= Z0; z++) {
+  tasks.push(put('r', z === CROSS ? 'road-crossroad-path' : 'road-straight', 0, z, 0));
+  for (const x of [-1, 1, -2, 2]) tasks.push(put('r', 'tile-low', x, z, 0));
+}
+for (const x of [-3, -2, -1, 1, 2, 3, -4, 4]) tasks.push(put('r', 'road-straight', x, CROSS, Math.PI / 2));
+const shops = ['building-a', 'building-b', 'building-c', 'building-d', 'building-e', 'building-f', 'building-g', 'building-h', 'building-i', 'building-j', 'building-k', 'building-l'];
+let k = 0;
+for (let z = Z0 - 1; z >= Z1; z--) {
+  if (z === CROSS) continue;
+  tasks.push(put('c', shops[k++ % shops.length], -3, z, Math.PI / 2));
+  tasks.push(put('c', shops[k++ % shops.length], 3, z, -Math.PI / 2));
+}
+for (const [x, z, n] of [[-5, -1, 'a'], [5, -2, 'b'], [-5, -6, 'c'], [5, -7, 'd'], [-1.5, -12, 'e'], [2, -13, 'a'], [-6, 2, 'b'], [6, 1, 'c']]) tasks.push(put('c', 'building-skyscraper-' + n, x, z, 0));
+for (let z = Z0 - 1; z >= Z1; z -= 2) {
+  if (Math.abs(z - CROSS) < 1) continue;
+  tasks.push(put('r', 'light-square', -1.45, z, Math.PI / 2));
+  tasks.push(put('r', 'light-square', 1.45, z - 1, -Math.PI / 2));
+}
+for (const [x, z] of [[-1.55, CROSS + 0.55], [1.55, CROSS - 0.55]]) tasks.push(put('r', 'traffic-light', x, z, x < 0 ? Math.PI / 2 : -Math.PI / 2));
+for (const [x, z] of [[-2.2, 1.2], [2.2, -0.6], [-2.2, -5.4], [2.2, -7.4], [2.2, 2.6]]) { tasks.push(put('s', 'planter', x, z)); tasks.push(put('s', 'tree-large', x, z, x)); }
+await Promise.all(tasks);
+
+// a few parked cars made of blocks (simple, Roblox-like)
+function car(x, z, color, ry = 0) {
+  const g = new THREE.Group();
+  const body = new THREE.Mesh(new THREE.BoxGeometry(4.6, 1.6, 9), plastic(color)); body.position.y = 1.5; g.add(body);
+  const top = new THREE.Mesh(new THREE.BoxGeometry(4.2, 1.5, 4.6), plastic('#dfe9f2', { roughness: 0.2 })); top.position.set(0, 3.0, -0.6); g.add(top);
+  for (const sx of [-1, 1]) for (const sz of [-1, 1]) { const w = new THREE.Mesh(new THREE.CylinderGeometry(0.95, 0.95, 0.7, 20), plastic('#222')); w.rotation.z = Math.PI / 2; w.position.set(2.3 * sx, 0.95, 3 * sz); g.add(w); }
+  g.traverse(o => { if (o.isMesh) o.castShadow = o.receiveShadow = true; });
+  g.position.set(x, 0, z); g.rotation.y = ry; scene.add(g);
+}
+car(-4.2, -12, '#e74c3c'); car(4.2, -40, '#f1c40f', Math.PI); car(-4.2, -70, '#3498db');
+
+// ---------- cast on the right sidewalk ----------
+const milo = avatar({ shirt: '#2f80ed', shirtOpts: { collar: '#ffffff', print: 'star' }, pants: '#46505c', shoe: '#e74c3c', hair: '#6b3e1e', extras: [backpack, scarf('#e74c3c')] });
+const tilda = avatar({ shirt: '#9aa1a8', shirtOpts: { collar: '#e6e6e6', print: 'buttons' }, pants: '#7d838a', shoe: '#5b3a1e', hair: '#f4f4f4', hairStyle: 'bun', face: 'old', extras: [cane, glasses] });
+scene.add(milo, tilda);
+const X = 1.15 * S;                              // sidewalk line
+tilda.position.set(X + 2.6, 0, 3);
+
+// ---------- shot (4 s): Milo walks along the sidewalk toward Tilda, stops, waves; she nods ----------
+window.renderFrame = (t) => {
+  const M = milo.userData, T = tilda.userData;
+  const walk = 1 - ease((t - 1.3) / 0.35), ph = t * 7.5;
+  milo.position.set(X - 2.4, Math.abs(Math.sin(ph)) * 0.12 * walk, -16 + 19 * ease(t / 1.6));
+  milo.rotation.y = 1.15 * ease((t - 1.3) / 0.5);          // walks toward camera, then turns to Tilda
+  M.legs[0].rotation.x = Math.sin(ph) * 0.7 * walk; M.legs[1].rotation.x = -Math.sin(ph) * 0.7 * walk;
+  M.arms[0].rotation.x = -Math.sin(ph) * 0.6 * walk;
+  const wv = ease((t - 1.7) / 0.35);
+  M.arms[1].rotation.x = Math.sin(ph) * 0.6 * walk * (1 - wv);
+  M.arms[1].rotation.z = 2.7 * wv + Math.sin(t * 10) * 0.32 * wv;
+  tilda.rotation.y = -0.4 - 0.8 * ease((t - 1.4) / 0.6);
+  T.head.rotation.x = Math.max(0, Math.sin((t - 2.4) * 5)) * 0.18 * ease((t - 2.4) / 0.2);
+  const p = ease(t / 4);
+  camera.fov = 44; camera.updateProjectionMatrix();
+  camera.position.set(X - 2.5 + p * 1.5, 6.2 - p * 0.5, 25 - p * 4);
+  camera.lookAt(X, 4.6, 0);
+  return frame();
+};
+window.ready = true;
+</script></body></html>

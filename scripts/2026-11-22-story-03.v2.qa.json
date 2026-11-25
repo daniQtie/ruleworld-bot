@@ -1,0 +1,39 @@
+{
+ "id": "2026-11-22-story-03",
+ "version": 2,
+ "pass": false,
+ "average": 7.85,
+ "scores": {"hook": 8, "world_rule": 8, "characters": 8, "escalation": 8, "reveal": 7, "ending": 8, "clarity": 8, "visual": 8, "consistency": 8, "originality": 8, "retention": 8, "performance": 8, "dialogue": 7},
+ "hard_gates": {"rotation": true, "structure": true, "original": true, "length": true, "english_clear": true, "producible": true, "kit_story_blockers": true, "voice_tags_safe": true},
+ "gate_notes": {
+  "rotation": "Hook #6 Question Hook (line 1: 'What would you do?') and format #2 'In this world' (line 2). Previous AI episode was #5 / format 1. Story-02 owner-supplied, exempt.",
+  "length": "422 words. Formula 110.6 s + 2.5 s tail = 113.1 s (1:53). Below 2:00 by the raw formula; expected real = 113.1 x 1.2 = about 136 s (2:16), inside 2:00-2:40. Margin is better than v1: it still holds down to a 1.06x factor. The 1.2x factor is from one episode only, so the narration measurement must confirm it. Not padded: the added lines are story (why 62, fog obstacle).",
+  "kit_story_blockers": "Pass now. The plot hole is closed: Kai asks Pell to take the key up (line 21), Pell refuses because she froze alone here as a girl (lines 22-24), so the solution is going together (lines 29-33). Hook clear in 3 s, goal clear, conflict caused by the rule, payoff pays off the hook.",
+  "voice_tags_safe": "All tags documented Fish s1 and in the 24 basic set. No regretful/hopeful/guilty. No tags in text. At most 2 per sentence. Still unverified for leak: moved, empathetic, frustrated, upset, relaxed, curious, surprised, confident, scared, in a hurry tone. Whisper leak check required on the real narration.",
+  "english_clear": "All sentences 14 words or fewer. Longest lines are multi-sentence (6: 17 words, 23: 15 words, 4: 15 words), each sentence short. No slang.",
+  "freeze_rule": "Fixed: line 4 says 'You stay awake, but you can't move' and the shot has only the eyes moving. This now explains talking Marlo (line 12) and Pell's 'All night. Nobody came.' (line 23).",
+  "numbers": "Checked: start 62; 3 steps wasted in fog (line 17 shows 12, 11, 10, 9); halfway = 50 path steps + 3 wasted = 53 spent, 62-53 = 9 (line 18) OK; then 8, 6, 4 = 5 more steps = 55 climbed, 100-55 = 45 to go (line 26, sign '45 TO THE TOP') OK; Pell 900 -> 895 (5 steps to reach Kai, line 32) -> 895-45 = 850 at the top (line 38) OK. The hold-hands rule is planted in line 6 and paid off in lines 34-35. All consistent. Only soft spot: 'three steps the wrong way' then stumbling back could read as 6 wasted steps, but the screen shows exactly 3 drops (12 to 9), so keep the shot as written and say 'Three steps lost' or keep it."
+ },
+ "originality_notes": "Title now 'In This World, Every Step You Take Is Counted' (fixed from the TeamDeam 'You Only Get N' mirror). Premise is a daily step budget plus a freeze, with a lighthouse rescue and a hold-hands twist, so it is not a noun-swap of TeamDeam's 10 Jumps. Different from story-01 (accessory jumps) and story-02 (lies make a monster). The mechanic family (a movement allowance) is shared with TeamDeam, which is acceptable.",
+ "fixes": [
+  "Line 33 (reveal, why it scores 7): Pell says 'We walk on mine' as if she already knows hands share one number, so the reveal is Kai's surprise only and Pell seems to have withheld a rescue trick. She also froze alone as a girl, so she never walked with anyone. Change to a line that offers steps without knowing the trick, e.g. 'Then we go together. Hold on tight. I have plenty to spare.' Then line 34 'My four didn't move' is a real discovery for all three of them, and line 35 echoing the kids reframes the story.",
+  "Line 30 'Your steps disappear at sunrise anyway' still repeats the rule from line 5 and sounds like a lecture before the strong line. Make it a plea, e.g. 'Your steps are gone by sunrise anyway. Please!' and split it so each line has one idea, keeping 'Tonight, they could bring my mum home.' as one idea per line (the current line carries two ideas).",
+  "Line 29 'You won't be alone this time. I'm right here!' works as the choice line, but Kai has 4 steps and will freeze first; add a beat or shot that shows Kai knows this (he says 'even if I freeze, I'll stay with you') so Pell's trust is earned and not a coincidence. Keep within 14 words.",
+  "Line 17 shot: 'grey fog' conflicts with Rule J/M if the whole frame goes grey; keep the fog blue-grey with the yellow raincoat, red boots and the amber lamp-glow in frame. Line 16 counts 'Fifty. Forty. Thirty...' but the screen jump to 12 (line 17) is unexplained; show 20 and the 12 mark, or cut the count at 'Thirty' and make the montage clearly end at 12 before the fog.",
+  "Length: confirm with the real Adam render. If the real narration is shorter than 2:00 (factor under about 1.06), add one more 4-6 s story beat (for example a frozen neighbour on the path who cannot help) rather than padding.",
+  "Upload description: 'Would you have walked with him?' now matches the story. Add a second description line such as 'Who would you walk with tonight?' only if the owner wants engagement; not required.",
+  "Line 7 order: 'That evening I saw two kids' (6) then 'I had spent all day running to the harbour' (7) is fine, but tag (sad)(soft tone) on a plain fact line is slightly heavy; consider (worried)."
+ ],
+ "fixed_from_v1": [
+  "Plot hole closed (Pell refuses to climb alone; solution is together).",
+  "Freeze rule now awake-but-cannot-move.",
+  "62-step reason added (ran to the harbour all day).",
+  "Fog obstacle added; 'Don't waste a single one' is paid off.",
+  "Hook shortened to 13 words with stakes in 3 s.",
+  "'45 TO THE TOP' sign added; 850s shot fixed to 895 ticking toward 850.",
+  "Ending now says 'walk together', matching what happened.",
+  "Title no longer mirrors TeamDeam."
+ ],
+ "producibility_notes": "Feasible with the existing hill set, chest number sprites, freeze tint, fog, lamp beam and ferry lights. The 'Man', the memory-flash girl and the two kids still have no fixed look entry (Rule N); give each a fixed colourful outfit in the script's characters.",
+ "checked": "Read script v2 and its changes_from_previous. Recomputed words, formula duration and every number in Python. Compared with the v1 QA. Did not listen to audio or run Whisper."
+}

@@ -1,0 +1,121 @@
+{
+  "id": "2026-11-16-coin-flip-brain",
+  "version": 7,
+  "topic": "psychology",
+  "outfit": "psych",
+  "title_yt": "A Stranger Offers Benny a Coin Flip. Would You? #Shorts",
+  "title_fb": "A stranger offers Benny a coin flip. Would you take it?",
+  "hook": "What if a stranger offers you a coin flip?",
+  "open_loop": "Line 8 shows the stranger hoping Benny quits, and Benny keeps flipping anyway. The viewer wonders why the stranger is worried. It is paid off only in lines 9-10 (the last ~7 s): each flip pays Benny twenty five dollars on average and costs the stranger twenty five. The $25 is not said or shown before line 9.",
+  "payoff": "Benny's brain makes a one hundred dollar loss feel like nearly two hundred, so the stranger expects him to quit after one tails. Benny keeps flipping, and on average each flip pays him twenty five dollars and costs the stranger twenty five.",
+  "ending": "choice",
+  "lines": [
+    {
+      "text": "What if a stranger offers you a coin flip?",
+      "beat": "hook",
+      "visual": "SCENE 1, frame 0, dark street (bg #2b2a33, floor #1d1c24). Hooded stranger (cast, outfit stranger, x 780, flip true, pose present, expr smug, prop coin) holds the coin out toward Benny (x 320, pose wave, expr smile). Big prop coin visible from frame 0. Benny beat on 'coin': expr thinking.",
+      "on_screen": "COIN FLIP?"
+    },
+    {
+      "text": "Heads wins one hundred fifty dollars.",
+      "say": "Heads wins one hundred fifty dollars.",
+      "beat": "stakes",
+      "visual": "SCENE 2. Green headline '+$150' at y 420 pops on 'Heads' (sfx ding). Benny beat on 'wins': expr happy, hop true. Stranger stays smug.",
+      "on_screen": "+$150"
+    },
+    {
+      "text": "Tails costs you one hundred dollars.",
+      "beat": "stakes",
+      "visual": "SCENE 3. Red headline '-$100' at y 560 pops on 'Tails' (sfx thud) with camera shake 0.4 s. Benny beat on 'costs': pose shock, expr shocked, hop false. Green '+$150' remains at y 420.",
+      "on_screen": "-$100"
+    },
+    {
+      "text": "Benny says no and runs.",
+      "beat": "loop",
+      "visual": "SCENE 4. Red stamp 'NO' slams over Benny on 'no' (sfx thud). Benny beat on 'runs': flip true, pose run, expr shocked, drift toward x 140 (sfx whoosh). Stranger: pose shrug, expr smug.",
+      "on_screen": "NO!"
+    },
+    {
+      "text": "His brain makes losing one hundred feel like nearly two hundred.",
+      "say": "His brain makes losing one hundred feel like nearly two hundred.",
+      "beat": "escalate",
+      "visual": "SCENE 5, same dark street. Benny frozen mid-step at x 300 holding his brain (prop brain), pose worry, expr shocked. Beat on 'brain' (word 1): snap-zoom 1.2 on Benny's brain. Red headline '-$100' at y 560 on 'losing' (word 3). On 'two' (word 9) a red stamp 'FEELS LIKE -$200' slams over it (sfx thud, camera shake 0.5 s). Stranger in the background: pose point, expr happy (sly grin).",
+      "on_screen": "FEELS LIKE -$200"
+    },
+    {
+      "text": "He flips, and it is tails.",
+      "beat": "escalate",
+      "visual": "SCENE 6. Benny turned back (flip false, x 340, pose flex, expr determined). On 'flips' a flipcoin item launches from his hand (x 340, y 1000, height 650) and lands ON his head (x2 320, y2 880). On 'tails' (word 5) red stamp 'TAILS -$100' (sfx thud), camera shake; Benny beat: pose slump, expr broke (tear).",
+      "on_screen": "TAILS -$100"
+    },
+    {
+      "text": "The stranger hopes Benny will quit.",
+      "beat": "twist",
+      "visual": "SCENE 7. Snap-zoom on the stranger (pose present, expr smug). Bubble 'Quit!' over his hood (tail right, sfx pop) on 'hopes'. Red headline 'QUIT?' at y 420 on 'quit'. Benny (slumped, tear) at x 320.",
+      "on_screen": "QUIT?"
+    },
+    {
+      "text": "Benny keeps flipping anyway.",
+      "beat": "twist",
+      "visual": "SCENE 8. Benny stands up on 'keeps' (pose flex, expr determined). Three flipcoin items from his hand on 'flipping' (sfx clink). Stamp 'NO' on the 'QUIT?' headline. Stranger beats: pose think, expr thinking, then worry. Badge 'Not financial advice' (size 40) at x 540, y 1230 from this scene to the end.",
+      "on_screen": "KEEP FLIPPING"
+    },
+    {
+      "text": "Each flip pays Benny twenty five dollars on average.",
+      "say": "Each flip pays Benny twenty five dollars on average.",
+      "beat": "payoff",
+      "visual": "SCENE 9 (flash true). Coin rain (coins, n 30, floor 1300, layer back) around Benny (x 320, pose hero, expr happy, hop true, sfx ding). On 'twenty' (word 4) green headline '+$25 EACH FLIP' at y 420. Stranger: pose worry. Badge 'Not financial advice' stays at x 540, y 1230.",
+      "on_screen": "+$25 EACH FLIP"
+    },
+    {
+      "text": "It costs the stranger twenty five dollars.",
+      "say": "It costs the stranger twenty five dollars.",
+      "beat": "twist",
+      "visual": "SCENE 10. Coin pile re-added (coins, n 14, floor 1300, layer back) under Benny (pose point at the stranger, expr smug). On 'twenty' (word 4) red headline '-$25 HIM' at y 560 near the stranger (sfx ding); snap-zoom on the stranger: pose worry, expr shocked, bubble 'GULP' (tail right, sfx pop). Badge stays at x 540, y 1230.",
+      "on_screen": "-$25 HIM"
+    },
+    {
+      "text": "Would you flip? Comment A or B.",
+      "beat": "ending",
+      "visual": "SCENE 11. Frame-0 layout with roles swapped: stranger (x 780, flip true, pose present, expr smug, prop coin) holds the coin out to the CAMERA; Benny (x 220, pose shrug, expr thinking). List (x 560, y 760, w 400): rows 'A  FLIP' (mark check) on 'Would' and 'B  RUN' (mark x) on 'B'. Badge 'Not financial advice' at x 540, y 1230. Tail 0.3 s, hard cut on 'B', looping into frame 0.",
+      "on_screen": "A: FLIP  B: RUN"
+    }
+  ],
+  "disclaimer_on_screen": "'Not financial advice' badge from scene 8 to the end. Framed as a brain/decision thought experiment, not advice to gamble.",
+  "facts_used": [
+    {
+      "claim": "In the coin toss (win $150 / lose $100), most people decline.",
+      "source_url": "https://litcharts.com/lit/thinking-fast-and-slow/part-4-chapter-26"
+    },
+    {
+      "claim": "Most people reject the 50/50 win $150 / lose $100 flip even though it pays on average (corroborating).",
+      "source_url": "https://margin-notes-600.pages.dev/books/thinking-fast-and-slow/ch-26"
+    },
+    {
+      "claim": "Meta-analysis mean loss-aversion coefficient 1.955, so a $100 loss feels like about $195 ('nearly two hundred').",
+      "source_url": "https://www.aeaweb.org/doi/10.1257/jel.20221698"
+    },
+    {
+      "claim": "Losses are treated as about twice as large as an equivalent gain; the ratio varies by context, hence 'nearly'.",
+      "source_url": "https://en.wikipedia.org/wiki/Loss_aversion"
+    },
+    {
+      "claim": "On average +$25 per flip for Benny and -$25 per flip for the stranger (zero-sum). A single flip is still 50/50.",
+      "source_url": "computed; no external source needed"
+    }
+  ],
+  "math_check": "Benny per flip: 0.5*150 - 0.5*100 = +$25; zero-sum, so the stranger averages -$25 per flip. Felt loss = 1.955*100 = $195.50 -> 'nearly two hundred' (95% range $182.00-$210.20, all above the $150 win). Ending: one flip is a true 50/50 (+$150 or -$100). Re-computed.",
+  "est_seconds": 32.6,
+  "word_count": 75,
+  "changes_from_previous": [
+    "Pure English: removed every `ph` field and rewrote title_fb in English. No Taglish, no 'bucks'.",
+    "Opening: 'What if a stranger offers you a coin flip?' (9 words) replaces the 14-word line whose 'he' had no referent. The stranger is now named before the offer.",
+    "The offer is split into two short complete sentences with plain numbers: 'Heads wins one hundred fifty dollars.' / 'Tails costs you one hundred dollars.'",
+    "Removed all fragments and slang ('Nope! You run.', 'Weird part? HE should run.', 'His plan? You quit. You don't. Flip, flip, flip.', 'Wait...', 'Ouch', 'Quit now?'). Each line is now one full subject-verb sentence of 4-11 words.",
+    "Cause then effect order: Benny says no and runs -> his brain makes the loss feel bigger -> he flips and gets tails -> the stranger hopes he quits -> Benny keeps flipping -> each flip pays Benny $25 and costs the stranger $25.",
+    "The brain line says 'nearly two hundred' (about $195.50, so it stays accurate) in plain words instead of 'a hundred ninety five dollars'.",
+    "The twist is stated as two plain sentences, one for each side (Benny +$25, stranger -$25), with the number said for both. The 100-flip stat is dropped, so the final reveal is the only surprise (this also resolves the v6 QA note that line 7 stole line 8's twist).",
+    "Kept: stranger offers the flip, Benny runs, the brain beat, first flip = tails bonks his head, the stranger hopes he quits, Benny keeps flipping, '+$25 / -$25' twist with GULP, A/B ending that loops. 'Not financial advice' badge moved to x 540 and the A/B list moved to x 560 so they no longer cover Benny (v6 QA drawability fixes). Stamp is anchored to word 9 of line 5, which exists in the text.",
+    "Length: 75 spoken words = 32.6 s at 2.3 w/s, 11 lines, 11 scenes."
+  ]
+}

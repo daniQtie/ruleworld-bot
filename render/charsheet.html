@@ -1,0 +1,72 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+// Character approval sheets rendered with the real engine.
+//   charsheet.html?mode=turn            Noah + Lily, front / 3-4 / side
+//   charsheet.html?mode=faces&who=noah  expression grid (12)
+//   charsheet.html?mode=monster         Lie-Monster growth stages next to Noah + close-ups
+import { THREE, scene, camera, renderer, studTex, canvasTex, W as WIDTH, H as HEIGHT } from './lib.js';
+import { makeKitCharacter, lieMonster, MONSTER_H, EXPRS } from './kit.js';
+
+const q = new URLSearchParams(location.search), mode = q.get('mode') || 'turn';
+scene.fog = null;
+scene.background = canvasTex(8, 512, (g, w, h) => { const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, '#9fd3ff'); gr.addColorStop(1, '#fff1df'); g.fillStyle = gr; g.fillRect(0, 0, w, h); });
+const floor = new THREE.Mesh(new THREE.PlaneGeometry(600, 600), new THREE.MeshStandardMaterial({ map: studTex('#f2d3ad', 300), roughness: 0.8 }));
+floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; scene.add(floor);
+const sun = scene.children.find(o => o.isDirectionalLight && o.castShadow);
+Object.assign(sun.shadow.camera, { left: -160, right: 160, top: 160, bottom: -160, far: 400 }); sun.position.set(40, 90, 80); sun.shadow.camera.updateProjectionMatrix();
+renderer.autoClear = false;
+
+const views = [];   // {x,y,w,h (px, top-left origin), pos, look, fov, label, before()}
+const lookAtHead = (c) => { const v = new THREE.Vector3(); c.userData.head.getWorldPosition(v); return v; };
+
+if (mode === 'turn') {
+  for (const [who, X, row] of [['noah', 0, 0], ['lily', 80, 1]]) {
+    [0, -40, -90].forEach((deg, i) => { const c = makeKitCharacter(who); c.position.set(X + (i - 1) * (who === 'noah' ? 4.6 : 3.9), 0, 0); c.rotation.y = THREE.MathUtils.degToRad(deg); scene.add(c);
+      c.userData.kitFace('neutral', i === 0 ? 'happy' : 'neutral', 1); });
+    const h = who === 'noah' ? 3.0 : 2.5;
+    views.push({ x: 0, y: row * 960, w: 1080, h: 960, pos: [X, h + 0.6, who === 'noah' ? 19 : 16.5], look: [X, h - 0.1, 0], fov: 40, label: who === 'noah' ? 'NOAH (15) - blue hoodie, messy brown hair' : 'LILY (8) - pink sweater, long brown hair + pink bow' });
+  }
+} else if (mode === 'faces') {
+  const who = q.get('who') || 'noah', c = makeKitCharacter(who); scene.add(c);
+  const list = ['neutral', 'happy', 'sad', 'angry', 'scared', 'surprised', 'confused', 'crying', 'relieved', 'guilty', 'nervous', 'holdtears'];
+  const hp = new THREE.Vector3(); c.updateMatrixWorld(true); c.userData.head.getWorldPosition(hp);
+  list.forEach((e, i) => views.push({ x: (i % 3) * 360, y: Math.floor(i / 3) * 480, w: 360, h: 480, pos: [hp.x + 0.15, hp.y + 0.35, hp.z + 4.3], look: [hp.x, hp.y + 0.15, hp.z], fov: 30,
+    label: { holdtears: 'TRYING NOT TO CRY', nervous: 'NERVOUS SMILE' }[e] || e.toUpperCase(), before: () => c.userData.kitFace(e, e, 1) }));
+  views.title = who.toUpperCase();
+} else if (mode === 'monster') {
+  scene.background = canvasTex(8, 512, (g, w, h) => { const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, '#c9b8e8'); gr.addColorStop(1, '#f3e4d0'); g.fillStyle = gr; g.fillRect(0, 0, w, h); });
+  const noah = makeKitCharacter('noah'); noah.position.set(-10, 0, 0); noah.rotation.y = 0.3; scene.add(noah);
+  const stages = [['shoe', -4.5], ['knee', -1], ['waist', 3.2], ['tall', 9]];
+  const ms = stages.map(([k, x], i) => { const m = lieMonster(); m.position.set(x, 0, 0); m.rotation.y = -0.25; scene.add(m); m.userData.set({ h: MONSTER_H[k], eyes: [0.15, 0.35, 0.6, 1][i], t: 1.2 + i }); return m; });
+  views.push({ x: 0, y: 0, w: 1080, h: 1000, pos: [0, 4.2, 30], look: [0, 3.3, 0], fov: 38, label: 'LIE-MONSTER: shoe > knee > waist > taller than Noah' });
+  const close = lieMonster(); close.position.set(60, 0, 0); scene.add(close); close.userData.set({ h: 6.9, eyes: 1, t: 2 });
+  const crack = lieMonster(); crack.position.set(90, 0, 0); scene.add(crack); crack.userData.set({ h: 6.9, eyes: 1, crack: 0.8, dissolve: 0.35, t: 2 });
+  views.push({ x: 0, y: 1000, w: 540, h: 920, pos: [60.5, 5.6, 7.5], look: [60, 5.2, 0], fov: 40, label: 'eyes brighten as it grows' });
+  views.push({ x: 540, y: 1000, w: 540, h: 920, pos: [90.5, 4.5, 11], look: [90, 4, 0], fov: 44, label: 'truth: cracks + dissolves' });
+}
+
+window.renderFrame = () => {
+  renderer.setScissorTest(true);
+  for (const v of views) {
+    if (v.before) v.before();
+    const y = HEIGHT - v.y - v.h;
+    renderer.setViewport(v.x, y, v.w, v.h); renderer.setScissor(v.x, y, v.w, v.h);
+    camera.aspect = v.w / v.h; camera.fov = v.fov; camera.position.set(...v.pos); camera.lookAt(...v.look); camera.updateProjectionMatrix();
+    renderer.clear(); renderer.render(scene, camera);
+  }
+  renderer.setScissorTest(false);
+  // labels
+  const c = document.createElement('canvas'); c.width = WIDTH; c.height = HEIGHT; const g = c.getContext('2d');
+  g.drawImage(renderer.domElement, 0, 0);
+  g.font = 'bold 30px Arial'; g.textAlign = 'center';
+  for (const v of views) { if (!v.label) continue; const fs = v.w < 500 ? 26 : 34; g.font = `bold ${fs}px Arial`;
+    const tw = g.measureText(v.label).width + 24; g.fillStyle = 'rgba(20,20,30,0.72)'; g.fillRect(v.x + v.w / 2 - tw / 2, v.y + v.h - fs - 26, tw, fs + 16);
+    g.fillStyle = '#fff'; g.fillText(v.label, v.x + v.w / 2, v.y + v.h - 24);
+    g.strokeStyle = 'rgba(0,0,0,0.25)'; g.lineWidth = 2; g.strokeRect(v.x + 1, v.y + 1, v.w - 2, v.h - 2); }
+  return c.toDataURL('image/jpeg', 0.92);
+};
+window.ready = true;
+</script></body></html>

@@ -1,0 +1,63 @@
+{
+ "pass": false,
+ "average": 7.54,
+ "scores": {"hook": 8, "world_rule": 7, "characters": 7, "escalation": 8, "reveal": 7, "ending": 7, "clarity": 8, "visual": 8, "consistency": 7, "originality": 4, "retention": 8, "performance": 8, "dialogue": 7},
+ "hard_gates": {"rotation": true, "structure": true, "original": false, "length": true, "english_clear": false, "producible": true, "kit_story_blockers": false, "voice_tags_safe": true, "title_first_rule_r": true},
+ "checked": {
+  "words": 185,
+  "est_seconds_words_plus_pauses": 39.3,
+  "est_seconds_in_script": 41.3,
+  "length_note": "inside the owner-accepted 41-55 s exception; not failed",
+  "sentences_over_14_words": [
+   "Line 4 (15): At school, he was just the smallest kid in class, and everyone laughed at him.",
+   "Line 6 (15): Chase, the star jumper, had won every year, and everyone knew he would win again."
+  ],
+  "rule_r": "Line 1 equals upload title minus ' #Shorts': OK",
+  "voice_tags": "All tags are documented basic Fish s1 tags/tones (confident, calm, soft tone, sad, nervous, worried, surprised, moved). None of the unsafe ones (regretful, hopeful, guilty). Max 2 tags per line. (moved) and (confident) are untested for leaks: run the Whisper tag-leak check.",
+  "rule_q": "Speeds 0.82-0.96 (floor 0.75 respected); pauses 0-0.6 (max 0.6 on line 10); shock lines louder (8 +2, 11 +4 = loudest, 13 +2, 15 +3); sad/hushed lines -2 to -3 (4, 9, 10, 12). Line 5 is labelled mocking but gets a flat (calm) at 0 dB.",
+  "maths": "Record 2.0 m, Chase clears it for the new record, roof 20.4 m, 'ten times' = 2.0 x 10 = 20 (20.4 is 10.2x). Consistent, but the voice says 'ten times' while the board shows 20.4 m (Rule A: say 'over ten times').",
+  "originality_lines_too_close": [
+   "Line 2: 'Ever since Nico was five, he could jump higher than any human alive' vs 'since age five he could run faster than any human alive': same sentence frame, verb swapped. TOO CLOSE.",
+   "Line 5: 'everyone laughed when Nico stepped up to the mat' vs 'everyone laughed as he stepped onto the track'. TOO CLOSE (explicitly flagged phrase).",
+   "Line 6: 'everyone knew he would win again' vs 'everyone knew he'd win'. CLOSE.",
+   "Line 11: 'A second later, he was standing on the gym roof' vs 'a second later he was at the finish line'. TOO CLOSE (same opener, same clause shape).",
+   "Line 12: 'The whole school went silent' vs 'everyone went completely silent'. CLOSE.",
+   "Lines 13-14: 'measured it three times, sure her tape was broken. But it wasn't.' vs 'checked the timer three times thinking it was broken, but it wasn't'. TOO CLOSE: the competitor sentence with timer swapped for tape (explicitly flagged).",
+   "Line 15: 'Nico had just jumped ten times the school record' vs 'broke the school's fastest time by 10 times'. TOO CLOSE (explicitly flagged).",
+   "Lines 16-17: 'from that day on, everyone knew ... wasn't just the best jumper in school. He was the highest human alive' vs 'from that day on everyone knew he wasn't just the fastest kid in school, he was the fastest human alive'. TOO CLOSE: near-verbatim template (explicitly flagged).",
+   "Lines 4 and 5 both use 'everyone laughed', so the shared phrase is also repeated within our own script."
+  ],
+  "originality_ok": "New ability (jump), new event (jump contest), names, the secret promise to mum, the one-jump stake, the 2.0 m / 20.4 m numbers, the floor-crack foreshadowing and the mum-smile ending are genuinely new. The problem is phrasing only: about 8 of 18 lines echo the competitor's wording."
+ },
+ "blocking_failures": [
+  "ORIGINALITY (hard gate): phrasing in lines 2, 5, 11, 13-14, 15 and 16-17 is too close to the competitor; the owner accepted the same beats, not the same wording.",
+  "ENGLISH (hard gate): lines 4 and 6 each contain a 15-word sentence (limit 14).",
+  "KIT BLOCKER: Nico's choice is unmotivated. Nothing shows him deciding to break the promise or why now (the want 'prove himself' appears only in the logline). He is passive, and the world rule has no consequence because the promise is never tested; the mum is absent until the last line.",
+  "CONSISTENCY: the title and line 1 promise that he 'jumped over the gym', but the story ends with him standing ON the roof. The title overpromises and is never paid off as stated."
+ ],
+ "fixes": [
+  "ORIGINALITY, lines 2, 5, 11, 13, 14, 15, 16, 17: reword each with different sentence shapes and verbs. Line 2: show the ability, not 'since X he could ... any human alive'. Line 5: show the crowd snickering at the bar height, no 'everyone laughed when X stepped up'. Line 11: do not open with 'A second later'. Lines 13-14: drop 'three times / broken / But it wasn't' and use a different proof beat. Line 15: do not use 'ten times the school record'; say the number concretely, e.g. '20 metres. The record was 2.' Lines 16-17: remove 'from that day on, everyone knew' and 'not just the best ... the highest human alive'; use a different label for his status.",
+  "Lines 4 and 6: split to 14 words or fewer. Line 4 also repeats 'laughed' from line 5, so keep that word once and use a different beat in one of them (ignored, picked last).",
+  "Motivation, between lines 5 and 9: add one short beat in which Nico decides to break the promise and why now (Chase mocking him, a look at his mum, a held breath). That fixes the passive protagonist, tests the world rule and makes the final mum smile earned.",
+  "Title / line 1 vs line 11: make the claim match the picture. Either keep 'over the gym' and show him clearing the roof (arc over it, landing beyond), or change the title and line 1 to 'onto the gym roof' (Rule R: line 1 and the upload title must stay equal).",
+  "Line 11 / Rule O: show the actual jump arc (crouch, launch, rising camera tilt) so he does not teleport. The 'how?' promised by the title is never answered; give a short half-answer (e.g. the crack is the power).",
+  "Rule A: voice says 'ten times' but the board shows 20.4 m (10.2x). Say 'over ten times' or put 20 m on screen. Line 14-15 shots also show more than is said (Rule C).",
+  "Line 5: voice emotion is 'mocking' but the tag is a flat (calm) at 0 dB. Use a fitting documented tone or drop the label.",
+  "Loop ending: the last line (mum smiling) does not circle back to line 1 (the smirk, 'jumped over the gym'). Add a callback so the loop is real. Run the Whisper tag-leak check for (moved) and (confident) before voicing.",
+  "Dialogue: the whole script is narrated and the mum's promise is only reported. If runtime allows, give the mum or Chase one 2-4 word spoken line."
+ ],
+ "retention_review": {
+  "title_how": "Present, but 'how?' is never answered and the title spoils the outcome in line 1. Keep the question, but pay it off.",
+  "open_loop_promise": "Good: promise to mum set in line 3, paid off in line 17.",
+  "one_chance_stakes": "Good (line 7), but Nico's own turn is never announced, so the stake lands on Chase, not him.",
+  "raised_rival": "Good: Chase sets the record, so Nico's jump has to beat it.",
+  "foreshadow_silence": "Good: crack plus a 0.6 s pause (line 10).",
+  "numbers_on_screen": "Good: 2.0 m, 20.4 m, scoreboard.",
+  "micro_cliffhangers": "Lines 9-10 work well.",
+  "camera_cadence": "About 2.3 s per line, OK.",
+  "loop_ending": "Weak, see fixes."
+ },
+ "producibility": "All feasible with code-rendered avatars: field with bleachers, bar and mat, tall flat-roof gym, hallway, kitchen flashback, scoreboard, crack decal and an arc with a camera tilt. Line 12 needs the headband as a distinct prop.",
+ "kid_safe": true,
+ "verdict": "FAIL: originality hard gate (phrasing), the 14-word English gate, the kit blocker (unmotivated choice) and originality score 4 (<7). Story logic and maths are sound; a v2 that rewords the flagged lines and adds a decision beat should pass."
+}

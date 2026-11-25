@@ -1,0 +1,153 @@
+{
+  "id": "2026-11-19-gta6-problem-agitate",
+  "version": 1,
+  "hook_type": {
+    "number": 4,
+    "name": "The Problem-Agitate Hook"
+  },
+  "topic": "money",
+  "outfit": "everyday",
+  "title_yt": "GTA 6 Really Costs More Than $79.99 #Shorts",
+  "title_fb": "GTA 6 Really Costs More Than $79.99",
+  "hook": "Your GTA six preorder does not cost seventy-nine ninety-nine. It costs way more.",
+  "open_loop": "Line 2 promises 'Watch Benny's total more than double' and the running counter climbs all video; the real year-one total ($195.87, more than double $79.99) is revealed only in line 12, with the 'wait, what?' twist (upgrading lands exactly on the Ultimate price) in line 8.",
+  "payoff": "Benny's real year-one total is $195.87: $79.99 + $20 upgrade = $99.99, plus 12 months of a forgotten GTA+ trial ($95.88). Fix: pick your edition once, cancel the trial the same day.",
+  "ending": "choice",
+  "scenes_planned": 16,
+  "lines": [
+    {
+      "text": "Your GTA 6 preorder does not cost $79.99. It costs way more.",
+      "say": "Your GTA six preorder does not cost seventy-nine ninety-nine. It costs way more.",
+      "beat": "hook",
+      "visual": "SCENE 1 (frame 0, first word by 0.5 s): Benny (hoodie, controller in one hand, phone in the other) at a generic store counter, pose point, expr smug. Big price sign '$79.99' already on screen at frame 0; a red STRIKE slashes through it on 'not' (thud) and Benny's smile drops (expr shocked). SCENE 2 (on 'It'): a running TOTAL counter appears top-right at '$79.99' and wobbles upward on 'way more'; camera snap-zoom on Benny, pose shock.",
+      "on_screen": "$79.99 / WAY MORE"
+    },
+    {
+      "text": "It is launch day. Watch Benny's total more than double.",
+      "beat": "stakes",
+      "visual": "SCENE 3 (on 'It'): generic calendar badge 'LAUNCH DAY' drops (ding); Benny pose flex, expr happy, wallet in hand. On 'double' a gold badge 'x2?' pops next to the TOTAL counter (still $79.99); Benny glances at the camera, expr smug (gag: he has no idea).",
+      "on_screen": "LAUNCH DAY / TOTAL x2?"
+    },
+    {
+      "text": "He shakes the store box. There is no disc.",
+      "beat": "escalate",
+      "visual": "SCENE 4 (on 'He'): Benny holds a plain generic game box (no logos) to his ear and shakes it hard (pose present, expr thinking); a tiny sound bubble 'rattle?' gets crossed out (silence gag). On 'no disc' badge 'NO DISC' stamps (thud); Benny expr shocked.",
+      "on_screen": "NO DISC"
+    },
+    {
+      "text": "It is just a download code. He goes digital.",
+      "beat": "escalate",
+      "visual": "SCENE 5 (on 'It'): the box pops open and a single small card flutters out, badge 'DOWNLOAD CODE'; Benny pose shrug, expr smirk-annoyed. On 'digital' he tosses the box over his shoulder (bonk sound off-screen) and holds up his phone, badge 'DIGITAL'.",
+      "on_screen": "DOWNLOAD CODE / DIGITAL"
+    },
+    {
+      "text": "Ultimate is listed at $99.99.",
+      "say": "Ultimate is listed at ninety-nine ninety-nine.",
+      "beat": "stakes",
+      "visual": "SCENE 6 (on 'Ultimate'): generic phone shop screen splits into two cards: 'STANDARD $79.99' and 'ULTIMATE $99.99' (gold); the Ultimate card glows on 'ninety-nine'. Benny pose think, expr thinking, eyebrows jump at the price.",
+      "on_screen": "ULTIMATE $99.99"
+    },
+    {
+      "text": "He picks Standard to save $20.",
+      "say": "He picks Standard to save twenty dollars.",
+      "beat": "escalate",
+      "visual": "SCENE 7 (on 'He'): Benny taps 'STANDARD $79.99' (click); badge 'SAVED $20' pops on 'twenty'; Benny pose flex, expr smug, a tiny graduation cap lands on his head (gag: he feels like a genius). TOTAL counter stays $79.99.",
+      "on_screen": "SAVED $20"
+    },
+    {
+      "text": "That night, he pays $20 to upgrade.",
+      "say": "That night, he pays twenty dollars to upgrade.",
+      "beat": "escalate",
+      "visual": "SCENE 8 (on 'That'): night tint, Benny in bed scrolling the phone (pose scroll, expr thinking), the Ultimate card glows at him. On 'upgrade' he taps it; badge '+$20 UPGRADE' flies into the TOTAL counter (cha-ching); the graduation cap falls off his head.",
+      "on_screen": "+$20 UPGRADE"
+    },
+    {
+      "text": "Now he has paid $99.99, the Ultimate price!",
+      "say": "Now he has paid ninety-nine ninety-nine, the Ultimate price!",
+      "beat": "twist",
+      "visual": "SCENE 9 (on 'Now'): TOTAL counter rolls $79.99 -> $99.99 and lands on 'ninety-nine'; on 'Ultimate' it slides next to the 'ULTIMATE $99.99' card and the two numbers match with a ding. Benny face-palms (pose slump, expr broke); the 'SAVED $20' badge deflates like a balloon. Wait-what beat.",
+      "on_screen": "$99.99 = ULTIMATE"
+    },
+    {
+      "text": "His digital preorder came with one free month of GTA+.",
+      "say": "His digital preorder came with one free month of GTA plus.",
+      "beat": "loop",
+      "visual": "SCENE 10 (on 'His'): a gift box pops out of the phone with badge 'GTA+ 1 FREE MONTH' on 'free'; Benny pose wave, expr happy, hugs the gift (gag: suspiciously happy music sting).",
+      "on_screen": "GTA+ 1 FREE MONTH"
+    },
+    {
+      "text": "He forgets to cancel. Now it costs $7.99 a month.",
+      "say": "He forgets to cancel. Now it costs seven ninety-nine a month.",
+      "beat": "escalate",
+      "visual": "SCENE 11 (on 'He'): Benny plays happily (pose present, controller), a sticky note 'CANCEL TRIAL' falls behind the couch unseen. On 'Now' a wall calendar flips one page and bites a coin out of Benny's wallet; badge '$7.99 A MONTH' on 'seven'. Benny expr shocked.",
+      "on_screen": "$7.99 A MONTH"
+    },
+    {
+      "text": "One year costs $95.88.",
+      "say": "One year costs ninety-five eighty-eight.",
+      "beat": "escalate",
+      "visual": "SCENE 12 (on 'One'): the calendar flips fast 12 times, each flip a coin bonks Benny's head (12 quick bonks, comedic); a counter beside it rolls to '$95.88' on 'ninety-five'. Benny pose worry, expr broke, sweat drops.",
+      "on_screen": "1 YEAR = $95.88"
+    },
+    {
+      "text": "His real total for the year is $195.87. That is more than double.",
+      "say": "His real total for the year is one hundred ninety-five eighty-seven. That is more than double.",
+      "beat": "payoff",
+      "visual": "SCENE 13 (on 'His'): a receipt prints from the phone and keeps unrolling to the floor (gag); equation slams in rows: '$99.99 + $95.88' then '= $195.87' (gold) on 'one hundred'. SCENE 14 (on 'That'): the old '$79.99' sign sits small next to the big '$195.87'; badge 'MORE THAN x2' stamps on 'double' (thud), closing the 'x2?' from line 2. Benny pose shock, expr shocked, jaw drops.",
+      "on_screen": "$195.87 / MORE THAN x2"
+    },
+    {
+      "text": "Pick your edition once. Cancel the trial the same day. Not financial advice.",
+      "beat": "payoff",
+      "visual": "SCENE 15 (on 'Pick'): rewind effect (tape whoosh) back to the store counter; Benny pose determined, expr determined, slaps a sticky note 'PICK ONCE' on the phone. On 'Cancel' a phone reminder 'CANCEL TRIAL TODAY' pops with a check mark; Benny pose hero, expr happy. On 'Not' small footer 'NOT FINANCIAL ADVICE'.",
+      "on_screen": "PICK ONCE / CANCEL TRIAL TODAY"
+    },
+    {
+      "text": "Did you pick Standard or Ultimate? Comment A or B.",
+      "beat": "ending",
+      "visual": "SCENE 16 (on 'Did'): Benny on a couch with a generic 'LAUNCH DAY' screen behind him (no game footage), pose point at viewer on 'Comment', expr smile. List rows 'A: STANDARD' on 'Standard' and 'B: ULTIMATE' on 'Ultimate'. End on 'B'.",
+      "on_screen": "A: STANDARD / B: ULTIMATE"
+    }
+  ],
+  "facts_used": [
+    {
+      "claim": "Rockstar's official GTA VI page says 'Coming November 19, 2026' (today). We only say 'launch day'; we never say it is out, playable or reviewed.",
+      "source_url": "https://www.rockstargames.com/VI"
+    },
+    {
+      "claim": "Standard Edition $79.99, Ultimate Edition $99.99 (US); Standard buyers can later pay the $20 difference to upgrade.",
+      "source_url": "https://www.ibtimes.co.uk/gta-6-release-date-pre-load-time-price-editions-platforms-confirmed-rockstar-1819557"
+    },
+    {
+      "claim": "The boxed 'physical edition' is only a download code with no disc in the box (as reported), same $79.99 price as digital.",
+      "source_url": "https://tech-insider.org/gta-6-launch-nov-19-79-99-whats-confirmed-2026/"
+    },
+    {
+      "claim": "Digital pre-orders include one month of GTA+, which can convert to a paid subscription if not cancelled in time.",
+      "source_url": "https://www.ibtimes.co.uk/gta-6-release-date-pre-load-time-price-editions-platforms-confirmed-rockstar-1819557"
+    },
+    {
+      "claim": "GTA+ costs $7.99 per month in the US. 12 x $7.99 = $95.88 a year.",
+      "source_url": "https://www.tweaktown.com/news/97501/gta-price-increased-by-33-was-5-99-now-7-per-month/index.html"
+    }
+  ],
+  "math_check": "$99.99 - $79.99 = $20.00. $79.99 + $20.00 = $99.99 (= Ultimate). 12 x $7.99 = $95.88. $99.99 + $95.88 = $195.87 (year one, trial never cancelled). $79.99 x 2 = $159.98 < $195.87, so 'more than double' is true. Every figure identical in say (spoken), text (caption) and on_screen: $79.99, $99.99, $20, $7.99, $95.88, $195.87. Note: the first free month is free, so 12 paid months strictly fall in the 13 months after launch; the script says 'one year costs' (the price of a year of GTA+), which is exact, and 'real total for the year' follows the research file's year-one total. Spoken words: 137 (counted by whitespace on 'say' or 'text'); longest sentence 11 words. 137 / 2.3 = 59.6 s.",
+  "est_seconds": 59.6,
+  "word_count": 137,
+  "upload": {
+    "title": "GTA 6 Really Costs More Than $79.99 #Shorts",
+    "description": "The price tag is not the price you pay. Benny found out the hard way.\nDid you pick Standard or Ultimate? Comment A or B.\nStandard is listed at $79.99 and Ultimate at $99.99, so a $20 upgrade later costs exactly the Ultimate price. Forget to cancel the free GTA+ month and it is $7.99 a month, or $95.88 a year.\nNot financial advice. Prices listed in US dollars, check the store. Unofficial fan commentary, not affiliated with Rockstar or Take-Two.\n#gta6 #money #gaming #savingmoney #Shorts",
+    "tags": [
+      "gta 6",
+      "gta 6 price",
+      "gta 6 ultimate edition",
+      "gta 6 standard vs ultimate",
+      "gta plus subscription",
+      "gta 6 preorder",
+      "gta 6 launch day",
+      "how to save money gaming"
+    ],
+    "hashtags": ["#gta6", "#money", "#gaming", "#savingmoney", "#Shorts"]
+  },
+  "changes_from_previous": "New episode (v1). Lesson from the rejected 2026-11-19-gta6-curiosity: no side-parable; Benny himself is the hype-driven buyer and lives every cost (box with no disc, Standard 'savings', night-time upgrade, forgotten trial) with a running total counter and a gag in each scene, then the payoff and an A/B comment question."
+}

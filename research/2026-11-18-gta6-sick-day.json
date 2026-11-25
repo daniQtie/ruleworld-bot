@@ -1,0 +1,46 @@
+{
+  "id": "2026-11-18-gta6-sick-day",
+  "hook": "If you call in sick to play GTA 6, that free day costs you three games.",
+  "angle": "MONEY + psychology. The 'free' fake sick day is the most expensive way to play: an unpaid day at the US median full-time wage is about $247, vs a $79.99 game.",
+  "facts": [
+    {"claim": "US median usual weekly earnings of full-time wage and salary workers, Q1 2026 = $1,235 (not seasonally adjusted); 121.0 million workers; full time = usually 35+ hours/week.", "source_url": "https://www.bls.gov/news.release/archives/wkyeng_04162026.htm"},
+    {"claim": "Math (python, assumes 40 h week as an example): $1,235 / 40 = $30.88 per hour; 8 h = $247.00; $247 / $79.99 = 3.09 games. At 35 h/week it is $35.29/h, $282/day (so 'about three games' is safe, even conservative to say 'more than three' only at 35h).", "source_url": "https://www.bls.gov/news.release/archives/wkyeng_04162026.htm"},
+    {"claim": "GTA 6 Standard Edition price $79.99 (Ultimate $99.99); release Nov 19, 2026 on PS5 / Xbox Series X|S.", "source_url": "https://gameluster.com/gta-6-pre-order-pricing-standard-ultimate-edition/"},
+    {"claim": "'GTA Flu' = people faking sick days to play on launch day; a launch-week meme/trend, no measured stats.", "source_url": "https://meme.com/memes/gta-flu"},
+    {"claim": "Federal minimum wage is $7.25/h; $79.99 / 7.25 = 11.03 hours of work before tax (backup fact for a minimum-wage variant).", "source_url": "https://www.dol.gov/general/topic/wages/minimumwage"}
+  ],
+  "twist": "Wait, what? The sick day is not free: you lose pay for 8 hours, about $247 for the median worker, so you pay for the game three times over just to play it a few hours earlier. Waiting until the evening costs $0.",
+  "outfit": "Money Benny / City Benny (original: hoodie, backwards cap, gold shades, $ chain). Start in office shirt and tie, then swap to hoodie for the couch scene.",
+  "open_loop": "Hook promises 'three games'. Benny fake-coughs on the phone; a wallet/coin pile shrinks every second he is on the couch. The viewer waits to see where the money goes; the exact price is revealed only in the last 6 seconds.",
+  "payoff": "Pay stub scene: a $247 stub slides next to the $79.99 box (plain generic game box, no logo). 3 boxes stack up. Then Benny's tip: finish work, play at night, pay $0 extra.",
+  "ending_ab": "Choice: 'Sick day or play after work? Comment A or B.' Splits opinion because many viewers have paid sick days or will say 'once-a-decade game, worth it'. Safer than preaching: frame as 'was it worth it?'",
+  "story_beats": [
+    "0-3s: Benny at desk, phone in hand, fake cough. Hook line.",
+    "3-9s: Boss voice on the phone (off-screen shape, speech bubble only). Benny nods, grins, throws tie.",
+    "9-17s: Couch scene, controller-shaped silhouette, snacks; a coin pile under his feet shrinks each hour (clock gag).",
+    "17-25s: Twist: pay stub with minus $247 beside a generic $79.99 box; 3 boxes stack up. Benny's grin freezes.",
+    "25-32s: Benny returns at 5 pm, plays at night with money intact. Ending question A/B."
+  ],
+  "notes_for_scriptwriter": [
+    "Spoken length 25-35 s, 55-75 words, every sentence complete and <= 12 words, pure English, say numbers plainly ('two hundred forty-seven dollars').",
+    "Must open with 'If you...' (hook line as given). Benny must be living the story, not presenting charts.",
+    "Say 'the average full-time worker' or 'a typical full-time worker' ('median' is a jargon word). Label it an example: 'at forty hours a week'. Not financial or employment advice; many workers have paid sick leave, so say 'if the day is unpaid'.",
+    "Do not encourage lying to employers as a good thing: the twist is that it backfires financially. Keep tone comic.",
+    "IP: no Rockstar characters, logos, footage, music, art style or fonts. Write 'GTA 6' as plain text only; do not show the logo. Game box must be a generic gray box with no art. No GTA-style sirens/radio jingles.",
+    "Do not claim any stat about how many people actually call in sick (none verified).",
+    "Do not use the budget estimates or the $3,858/s idea (unverified / dropped)."
+  ],
+  "alternates": {
+    "H6_anticipation": {
+      "hook": "What if waiting for GTA 6 makes you happier than playing it?",
+      "verified": "Nawijn et al. 2010, Applied Research in Quality of Life, 1,530 Dutch adults (974 vacationed): people planning a vacation were happier than those not going; after the trip no difference unless very relaxing, and that boost wore off after 8 weeks.",
+      "source_url": "https://www.sciencedaily.com/releases/2010/02/100218125204.htm",
+      "caveat": "Study is about VACATIONS, not games. Must say 'a study on vacations found...'. Do not claim it applies to GTA. Dopamine: Schultz/Berridge confirm 'wanting' (dopamine) differs from 'liking' (not dopamine dependent) but only seen in search summaries, not opened, so do not use specific claims. Use as backup or a later episode."
+    }
+  },
+  "not_verified": [
+    "Exact current paid-sick-leave coverage in the US (not looked up).",
+    "That the median earner's lost pay is exactly $247: depends on hours/week and on whether the day is unpaid.",
+    "Whether any employer actually fires or docks GTA flu callers."
+  ]
+}

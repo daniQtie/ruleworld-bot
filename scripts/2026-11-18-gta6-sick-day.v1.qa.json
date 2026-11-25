@@ -1,0 +1,33 @@
+{
+  "pass": false,
+  "average": 6.8,
+  "scores": {"hook": 7, "stakes": 8, "open_loop": 6, "escalation": 7, "payoff": 7, "surprise": 6, "ending": 8, "clarity": 6, "facts": 5, "originality": 8, "entertainment": 7},
+  "hard_gates": {"what_if_opener": true, "benny_in_story": true, "length_25_35s": true, "english_clear": false},
+  "gate_notes": {
+    "english_clear": "Line 1 (hook) is ONE sentence of 16 spoken words ('If you call in sick for G T A six, that free day costs three games.'). Rubric hard gate is <= 12 words per sentence. All other lines pass (line 4 = 12 words exactly).",
+    "length": "65 spoken words total (16+4+10+12+5+8+10), ~28 s at <=2.3 w/s; at speed 0.9 still ~29-31 s. OK."
+  },
+  "math_recheck": "1235/40=30.875/h; x8=247.00; 247/79.99=3.09 (spoken 'about 250' = 3.13, still 'three games'; 3 x 79.99 = 239.97 < 247 so 'more than three' is true). At 35 h/wk: 282/day (still >3). Math correct.",
+  "viewer_notes": {
+    "one_a_m_scroller": "Would likely stay past 0.5 s (GTA 6 launch week + 'free day costs' tension), but a 16-word first sentence delays the click of the idea, and the answer ('three games') is already given at ~5 s, so the remaining 20 s only confirms it.",
+    "twist_giveaway": "Yes, the hook gives away the twist. Line 5 ('That is three whole games!') repeats 'three games' from line 1, so the on-screen reveal lands as confirmation, not 'wait, what?'. The only real new info is the number $247. The curiosity gap is 'why three games?' which line 4 closes at ~16 s, then lines 5-6 are repetition.",
+    "hook_clarity_16_words": "On one listen at speed 0.9 (~7 s) a non-native listener will probably catch 'call in sick', 'free day', 'three games' but may lose the link between 'G T A six' and the cost. Needs a replay. Too long.",
+    "fact_wording": "BLS $1,235 is a MEDIAN of usual weekly earnings, not an average. 'At average pay' (line 4 say/text) is technically inaccurate (mean vs median, and the research notes said to use 'typical'). Also upload description says 'the average US full-time worker'. Use 'typical'. The 40 h/week assumption is stated only in a visual badge; fine.",
+    "ethics_ip": "Does not endorse lying: the twist is that faking sick backfires financially, tone comic, 'if unpaid' caveat present (line 4 'unpaid day'), description notes paid sick leave. IP clean: generic gray boxes, no logo/art, 'GTA 6' plain text only, no Rockstar characters. Minor: sources for $79.99 is a secondary site (gameluster.com), not Rockstar/official; fine for a pre-launch price but note it."
+  },
+  "fixes": [
+    "Line 1 (hook, HARD GATE): 16-word sentence breaks the <=12 rule. Make it a question that withholds the number, e.g. say: 'If you fake sick for G T A six, is it free?' (12 words, still opens 'If you'). Keep the on-screen text 'GTA 6 SICK DAY'.",
+    "Line 1 / Line 5 (open loop + surprise, 6/6): do not say 'three games' in the hook. Let the hook plant 'is that day really free?' (or 'what does that day really cost?') and reveal 'three games' for the first time in line 5, so line 5 becomes the 'wait, what?'. Remove the hook's scene-change on 'three games' (question-mark boxes) or keep them as unlabeled mystery boxes.",
+    "Line 4 (facts): replace 'At average pay' with 'At typical pay' or 'If you earn a typical wage'. Say: 'At typical pay, an unpaid day costs about two hundred fifty dollars.' (12 words). Also change upload.description 'the average US full-time worker' to 'the typical US full-time worker'. Optional: say 'two hundred forty-seven' to match the on-screen -$247 exactly.",
+    "Line 4 visual badge: 'AVG US FULL-TIME, 40 H WEEK, IF UNPAID' -> 'TYPICAL PAY, 40 H WEEK, UNPAID'; the word AVG repeats the inaccuracy.",
+    "Line 5 (escalation/payoff, 7/7): after the hook change it already tells something new ('That is three whole games!'). Strengthen with a physical gag: the three gray boxes stack onto sleeping Benny, or each box 'eats' a chunk of the pay stub. Currently lines 4-5 are two beats saying one idea.",
+    "Line 2 (escalation, 7): 'You fake a cough.' is a thin beat (4 words, no new info after the hook already showed the cough). Merge into line 1 visually, or give it the boss reaction ('Your boss believes you.') so the story moves.",
+    "Line 3 (clarity, 6): 'while your pay drains' is figurative; a non-native listener may need a replay. Say 'Now you sit on the couch and lose money every hour.' (10 words).",
+    "Line 7 on_screen: 'A: SICK DAY / B: AFTER WORK' is 6 words, over the <=5-word cap. Use 'A: SICK  B: WORK' or split into two badges.",
+    "Line 6 (payoff, 7): 'costs nothing extra' reads like a lecture tip. Add a final gag: Benny plays at night, the three game boxes disappear, coins stay; or end on Benny wearing the tie again. Keep it <= 8 words."
+  ],
+  "upload_check": {
+    "status": "ok with minor fixes",
+    "notes": "Title (<=60 chars + #Shorts) matches hook; description line 1 'Think a fake sick day is free? Do the math first.' is a real hook, line 2 is the A/B, key number present, 'Not financial advice.' present, 4 hashtags, 9 tags. Fix: 'average' -> 'typical' in description; 'that is three games' -> 'that is more than three games' to match title; if the hook changes to a question, title 'costs more than 3 games' still pays off in line 5."
+  }
+}

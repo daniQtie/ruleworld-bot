@@ -1,0 +1,17 @@
+name: commit
+description: Save scripts, logs and lessons back to the repo (retries if another job pushed first)
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        git config user.name "ruleworld-bot"
+        git config user.email "ruleworld-bot@users.noreply.github.com"
+        git add -A scripts logs rubrics render/specs 2>/dev/null || true
+        git diff --cached --quiet && exit 0
+        git commit -qm "bot: ${GITHUB_WORKFLOW} #${GITHUB_RUN_NUMBER}"
+        for i in 1 2 3 4 5 6; do
+          git pull -q --rebase && git push -q && exit 0
+          sleep $((RANDOM % 10 + 3))
+        done
+        exit 1

@@ -1,0 +1,21 @@
+{"pass": true, "average": 8.08,
+ "scores": {"hook": 9, "world_rule": 7, "characters": 8, "escalation": 8, "reveal": 8, "ending": 8, "clarity": 9, "visual": 8, "consistency": 8, "originality": 8, "retention": 8, "performance": 8, "dialogue": 8},
+ "hard_gates": {"rotation": true, "structure": true, "original": true, "length": true, "english_clear": true, "producible": true, "kit_story_blockers": true, "voice_tags_safe": true, "title_first_ruleR": true},
+ "gate_notes": {
+  "rotation": "Owner-directed, exempt.",
+  "length": "187 words, est. 43.1 s incl. 2 s tail; inside the owner exception (25-180 s, about 40 s accepted). Added lines each add a new idea; not padded.",
+  "original": "Same skeleton and moral as the competitor; new cast, new vote rule, new reveal (Ellie sat silently beside crying Theo, plus Mia and Sam examples). No lifted lines. Skeleton-level phrase overlap remains only on lines 3, 5, 9-11, which are generic beats.",
+  "voice_tags_safe": "All documented basic s1 tags, none from unsafe_tags. (moved) appears on 5 lines and (frustrated) once and are untested for leaks: run the Whisper leak check; fall back to (sad)(soft tone) if it leaks.",
+  "title_first_ruleR": "Line 1 text equals upload title minus ' #Shorts'.",
+  "rule_Q": "Speeds 0.82-0.96, pauses 0.2-0.5, shock louder (l8 +4 loudest, l12 +3), sad/tender -2 to -3. OK."
+ },
+ "below_8": ["world_rule 7: not a strange-rule world (owner-directed school vote); the rule is simple but has little consequence to play out. Acceptable under the exemption."],
+ "v1_fixes_verified": "Line 9 tag now calm; 'The class voted'; bridge line 6 with doorway shot; Maya reaction line 13; Theo named in line 14; Mia/Sam payoff lines 17-18 make the hands concrete; line 8 is the loudest. All applied.",
+ "fixes": [
+  "Lines 12-13: narrator 'Maya stared at the paper, speechless' followed at once by Maya speaking is slightly contradictory; change line 12 to 'Maya stared at the paper.' or drop 'speechless'.",
+  "Line 6: shot shows a boy in the hallway seen from the library doorway; say in the shot that it is Theo (orange hoodie) so the flashback in line 15-16 pays off a planted image.",
+  "Lines 17-18: Mia and Sam are voiced by Adam like Theo; make the on-screen speaker clear with a name caption or the standing shot before each line (shots already do this), and keep both short.",
+  "Line 14: (nervous) with +1 volume on a plain narrator action is mild; use (calm) and volume 0 to keep tension for line 7.",
+  "Run the Whisper leak check on (moved) (five uses); swap to (sad)(soft tone) on any line that leaks.",
+  "Optional originality hardening of lines 3, 5, 11 with a specific detail (e.g. Ellie's window seat in line 5)."
+ ]}

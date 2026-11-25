@@ -1,0 +1,44 @@
+{
+ "pass": false,
+ "average": 7.9,
+ "scores": {"hook": 7, "stakes": 8, "open_loop": 9, "escalation": 8, "payoff": 8, "surprise": 7, "ending": 8, "clarity": 8, "facts": 8, "originality": 8, "entertainment": 8},
+ "hard_gates": {"assigned_hook_type": true, "previous_episode_differs": true, "benny_in_story": true, "length_25_35s": true, "english_clear": true},
+ "hook_gate_detail": "hook_rotation show: this_episode #2 Listicle/Number, previous 2026-11-18-gta6-sick-day #1. Script hook_type=2. Opener 'Three launch day mistakes. Number three is the worst.' promises 3 and pays all 3; tease pays off (item 3 = fake site + malware gremlin). Passes. Weakness: 'launch day' of what? Nothing spoken says GTA 6.",
+ "math": {"99.99-79.99": 20.0, "say_words": "68 (hyphenated forty-seven as one) / 70 (as two)", "est_seconds_at_2.3wps": "29.6-30.4", "scenes": 13, "47_of_100_icons": "47%, 'almost half' ok", "ph_fields": 0},
+ "v2_fixes_check": {
+  "landed": ["'One:' + 'than Standard' added", "he -> you in items 2 and 3", "Benny quip 'Not my device!' added", "'console' malware claim removed; laptop/phone + 'your device' (scene 10, upload line 1)", "'KEEP $20' B row; counter '+$20 MORE'", "LENDINGTREE SURVEY badge + 100-icon grid", "tiny coin replaced by neutral box"],
+  "not_landed_or_new": ["GTA 6 dropped from spoken hook/caption (new v3 regression, deliberate for word count)", "'BONUS PACK' tag on Ultimate box mislabels the edition (see findings)"]
+ },
+ "special_attention": {
+  "1_gta6_hype": "Weak. Spoken script and caption never say GTA 6; only a plain-text sign (frame 0), title and #gta6 carry it. A 1 a.m. scroller hears 'launch day mistakes' with no subject, so it does not ride the hype on the audio/caption track and the Shorts title is not visible in-feed. Cheapest word-neutral fix: make the frame-0 badge read 'GTA 6 LAUNCH DAY' (written form allowed by Rule B for badges) and enlarge the 'GTA 6' store sign behind Benny, zero spoken words changed. Optional stronger fix: say 'Three G T A six mistakes. Number three is the worst.' replacing 'launch day' (about +2 words, ~70 words, ~30.4 s, still in range; caption 'G T A 6' per Rule B).",
+  "2_ultimate_ab": "Mostly fair now. Voice says Ultimate costs $20 more; box is neutral; A/B is 'Ultimate, or keep twenty dollars?' with no mocking art. Residual tilt: item 1 sits under 'mistakes', and the wallet-shrinks gag still frames spending as the error, so A reads as the wrong answer. Also the 'BONUS PACK' tag is inaccurate: source says the bonus pack is a separate pre-order bonus (contents unlisted); Ultimate adds in-game vehicles, weapon variants, storefronts and a mission. Change tag to 'EXTRAS' or 'IN-GAME EXTRAS'. Dilemma works as comment bait.",
+  "3_malware_claim": "Faithful. CyberInsider/NordVPN: dozens of malicious sites impersonating Rockstar/storefronts, fake pre-orders, malware disguised as installers. 'Dozens of fake sites exist. Some spread malware.' invents no counts or platform; 'your device' is safe. Pass.",
+  "4_nfa": "Acceptable. On-screen only, 3x, plus 'Not financial advice.' in the upload description. The topic is a consumer pay-later survey, not investment advice, so spoken NFA is not required; Rule C is touched only mildly (screen says a bit more than voice, a disclaimer, not a claim). Caveat: it breaks the <=5 on-screen words per moment target in scenes 3 and 12 (see findings)."
+ },
+ "consistency": {
+  "ok": [
+   "3 mistakes: say 'Three', text 'Three', on_screen '3 MISTAKES', red '3', title/upload '3'.",
+   "$20: say 'twenty dollars', text '$20', counter '+$20 MORE', B row 'KEEP $20', upload '$20'. Same figure everywhere (Rule A).",
+   "47%: say 'forty-seven percent', text '47%', badge/counter 47%, grid 47 of 100, upload 47%; all 'pay later users', 'paid late'.",
+   "'Dozens of fake sites' say = text = headline; 'malware' stamp = spoken; 'your device' headline matches quip 'Not my device!'.",
+   "Item numbering: voice One/Two/Three = on-screen rows 1/2/3.",
+   "Upload: title pays off, line 1 is a real hook (not title copy), 4 hashtags, 'Not financial advice.', sources named."
+  ],
+  "findings": [
+   "'BONUS PACK' tag on the Ultimate box (scene 3, 12) contradicts the source (Ultimate = in-game extras; bonus pack = pre-order bonus). Rule C: screen says something different from the facts. Use 'EXTRAS'.",
+   "Rule B: no acronym in say/text, so no mismatch; but 'GTA 6' appears only on a sign/title/hashtag (see special attention 1).",
+   "Scene 6 stacks LENDINGTREE SURVEY + PAY LATER USERS + 47% + PAID LATE; scene 12 shows 'A: ULTIMATE / B: KEEP $20' + NOT FINANCIAL ADVICE. Both exceed 5 on-screen words at one moment. Shrink the badges/NFA to a tiny footer or show NFA only on scene 3.",
+   "Line 1 says 'launch day mistakes' but the fake site is a pre-order (pre-launch) and BNPL is generic. Minor; item 3 reads fine because Benny is in a launch-day line.",
+   "Upload description says 'last year' for 47% while voice/screen say nothing about the period; harmless but source is 'past year' (survey Mar 2026).",
+   "Scenes planned 13 vs QA target 8-12 (scene-format allows 8-14): merge scenes 12 and 13 or 8 and 9 if the renderer allows."
+  ]
+ },
+ "fixes": [
+  "Hook 7 / Line 1 and scene 1: spoken hook never names GTA 6. Cheapest: badge 'GTA 6 LAUNCH DAY' and a bigger 'GTA 6' sign at frame 0 (no word change). Better: 'Three G T A six mistakes. Number three is the worst.' (caption 'G T A 6', ~70 words, ~30.4 s).",
+  "Surprise 7 / Line 4: 47% is the only 'wait, what' and is a generic BNPL stat. Make the grid reveal punchier ('almost half' visually, snap to red) and keep voice = '47%'; optionally pay it off with Benny gasping on 'forty-seven'.",
+  "Stakes 8 / Line 2: item 1 is not obviously a 'mistake'. Add a visual beat showing the wallet shrinking after 'twenty dollars more' (already planned) and keep Ultimate neutral; consider 'Ultimate costs you twenty dollars more' framed as a choice, not an error, since the A/B treats it as one.",
+  "Facts 8 / scenes 3 and 12: replace the 'BONUS PACK' tag with 'EXTRAS' (source: in-game vehicles, weapons, storefronts, mission).",
+  "Clarity 8 / Line 4: 'LendingTree' is a brand a non-native listener may not catch, and 'pay later users' is unexplained. The badge helps; keep it readable (but see on-screen word count).",
+  "Format / scenes 6 and 12: cut stacked on-screen text to <= 5 words per moment; show 'NOT FINANCIAL ADVICE' only once, small."
+ ]
+}

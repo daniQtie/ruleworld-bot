@@ -1,0 +1,60 @@
+{
+ "pass": false,
+ "average": 7.0,
+ "scores": {
+  "hook": 7,
+  "stakes": 6,
+  "open_loop": 6,
+  "escalation": 7,
+  "payoff": 7,
+  "surprise": 7,
+  "ending": 8,
+  "clarity": 7,
+  "facts": 8,
+  "originality": 8,
+  "entertainment": 6
+ },
+ "hard_gates": {
+  "assigned_hook_type": true,
+  "previous_episode_differs": true,
+  "benny_in_story": true,
+  "length_25_35s": true,
+  "english_clear": true
+ },
+ "hook_gate_detail": "Assigned #2 Listicle/Number; script hook_type=2; previous episode (2026-11-18-gta6-sick-day) used #1. Opener 'Three money mistakes on G T A six launch day.' promises 3 and pays all 3 (Ultimate, pay later, cheap key) in order. Passes. Weakness: opener is a bare title-like statement, no picture/tension beyond the number.",
+ "math": {
+  "99.99-79.99": 20.0,
+  "20/79.99": "25.003% -> 25% ok"
+ },
+ "say_words": 70,
+ "est_seconds_at_2.3wps": 30.4,
+ "consistency": {
+  "ok": [
+   "$20/twenty dollars, 25%/twenty-five percent, 47%/forty-seven percent, 3 mistakes/Three all match across say/text/visual/on_screen/upload",
+   "upload says $20, 25%, 47% = same figures"
+  ],
+  "findings": [
+   "Line 1: text 'G T A 6' vs say 'G T A six' is acceptable per Rule B convention, but scene 1 shows a store sign 'GTA 6' (written form allowed on signs, only if not read as a caption). Keep it off captions.",
+   "Line 7: on_screen 'DOZENS FAKE SITES' vs visual headline 'DOZENS OF FAKE SITES' differ; pick one, make it match 'dozens of fake sites'.",
+   "Line 8: say/text 'keep the twenty' (idiom, no unit) vs screen '+$20' and upload '$20'; say 'twenty dollars' so voice = screen.",
+   "Line 5: voice 'users paid late' omits 'pay later' but on-screen is '47% PAID LATE'; screen has no 'of pay-later users', so the population is ambiguous (see fix).",
+   "NordVPN: TTS may mispronounce 'NordVPN' (non-native/Kokoro); caption 'NordVPN' vs heard form could differ. Verify audio or write 'Nord V P N' in both."
+  ]
+ },
+ "extra_checks": {
+  "story_vs_narrator": "Mostly narrator reading a list: 'First/Second/Third, Benny buys...' in third person, Benny never speaks, no you-address. Visual gags exist (wallet coughs, bills rain, bugs bury him) so sound-off entertainment is decent, but the voice track is a list read-out. No twist beyond item 3.",
+  "nord_hedged": "Mostly. 'dozens' only, no invented victims or losses, and matches the research. But the source says dozens of sites for fake pre-orders, beta access and phishing for Social Club logins, not all malware; 'fake sites that spread malware' narrows it. Also a 'cheap key' is not what the source describes (fake pre-orders/early access). Say 'fake pre-order sites' or 'fake sites, some with malware'.",
+  "bnpl_47": "Does not say people finance GTA 6, but 'of users' is ambiguous right after 'he uses pay later', and scene 4 shows Benny paying later (implicitly for the game). Say 'of pay later users' and keep scene 4 from showing a game purchase on credit.",
+  "do_not_claim": "No Rockstar art, no Ultimate item names, no loss totals, no guaranteed income, no 'people buy games with BNPL' line. 'NOT FINANCIAL ADVICE' present. Nothing forbidden claimed.",
+  "upload": "Good: title pays off, line 1 'Number three could wreck your computer, not just your wallet.' is a real hook, 4 hashtags, 'Not financial advice.' present. Note the voice never teases number three; that tease only lives in the description."
+ },
+ "fixes": [
+  "Line 1 (hook, 7): add tension, e.g. 'Three money mistakes Benny makes on G T A six launch day. Number three is the worst.' (keep <=12 words per sentence). That also plants the open loop (6).",
+  "Whole script (stakes 6): never addresses the viewer. Add a 'you' line, e.g. line 3 'That is twenty dollars of your money, or twenty-five percent, more.' or line 5 'Maybe you do this too.'",
+  "Line 4/5 (surprise 7, clarity 7): say 'LendingTree found forty-seven percent of pay later users paid late.' It fixes the BNPL population and avoids implying game financing.",
+  "Line 7: change to 'NordVPN found dozens of fake game sites. Some spread malware.' and fix on_screen/headline mismatch; confirm TTS says NordVPN clearly.",
+  "Line 8 (ending 8, clarity 7): 'keep the twenty' -> 'keep the twenty dollars'; the voice also should state the lesson (e.g. pay in full, official store) before the A/B, so the payoff >= the promise.",
+  "Entertainment 6: let Benny react aloud or add a gag per item (e.g. Benny's I-saved-twenty smirk breaks when the bill arrives); items 1 and 2 have no real consequence beat, only item 3 pays off with action.",
+  "Open loop/escalation: items 1 and 2 are flat declarative (First/Second/Third pattern). Vary phrasing and add the 'number three' tease to the voice."
+ ]
+}

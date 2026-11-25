@@ -1,0 +1,23 @@
+// "Which Room Would You Pick To Save Your Mom?" (9 lines). Three rooms: frozen, pitch black, perfect; subscribe call-to-action.
+import * as K from './_common.mjs';
+const ID = '2026-11-29-story-15'; const { OUT, slot } = K.timing(ID);
+const { C, arm, both, push, pull, drift, low, high, follow, cam, FX } = K;
+const SNOW = (n = 220, sp = -0.9) => ({ color: '#ffffff', count: n, size: 0.45, speed: sp });
+const ROOM = { loc: 'lilyroom', light: 'day', exposure: 0.55, fx: FX.indoor };
+const COLD = { ...ROOM, exposure: 0.5, fx: { bloom: 0.2, bloomThreshold: 0.95, vignette: 0.45, grain: 0.04, sat: 0.75, contrast: 1.08, tint: [0.8, 0.93, 1.2], sparkles: SNOW() } };
+const DARK = { ...ROOM, light: 'night', exposure: 0.13, fx: { bloom: 0.1, bloomThreshold: 0.98, vignette: 0.75, grain: 0.07, sat: 0.7, contrast: 1.2, tint: [0.75, 0.82, 1.1] } };
+const FIELD = { loc: 'field', light: 'day', exposure: 1.0, fx: FX.day };
+const ELI = (o = {}) => C('e', 'eli', 0, 3, 0, 'worried', o);
+const MOM = (o = {}) => C('m', 'mumn', 0, 3, 0, 'sad', o);
+const num = (n, x, z, s = 1.4) => ({ id: 'n' + n, type: 'sign', color: String(n), at: [x, 0, z], scale: s });
+const S = [];
+S[0] = { ...ROOM, fx: FX.sad, cast: [MOM({ at: [1.6, 2], rot: -30 }), ELI({ at: [-1.8, 3.5], rot: 50 })], acts: [{ who: 'm', do: 'sit', seat: 0.8, t: [0, 1], hold: true }, { who: 'e', do: 'kneel', t: [0.1, 1], hold: true }, arm('e', -1.3, -0.5, [0.3, 0.5])], cam: push(0, 3, 2.8, 14, 10.5, 40) };
+S[1] = { ...FIELD, props: [num(1, -3.8, -1), num(2, 0, -2), num(3, 3.8, -1)], cast: [ELI({ at: [0, 6], rot: 180, face: 'thinking' })], acts: [], cam: push(0, 1, 4.6, 22, 17, 44) };
+S[2] = { ...COLD, props: [num(1, 3.4, 1, 1.1)], cast: [ELI({ face: 'scared' })], acts: [{ who: 'e', do: 'shiver', t: [0, 1] }, arm('e', -1.2, 0.9, [0.1, 0.3]), arm('e', -1.2, -0.9, [0.1, 0.3], 'L')], cam: push(0, 3, 3.2, 14, 10.5, 40) };
+S[3] = { ...COLD, fx: { ...COLD.fx, sparkles: SNOW(160, -0.6) }, cast: [ELI({ face: 'sob' })], acts: [{ who: 'e', do: 'sit', seat: 0, t: [0, 1], hold: true }, { who: 'e', do: 'shiver', t: [0, 1] }, { who: 'e', do: 'lookdown', t: [0.2, 1], hold: true }], cam: { ...high(0, 3, 1.8, 12, 46), to: [-1, 13, 14] } };
+S[4] = { ...DARK, props: [num(2, 2.2, 1.5, 1.0)], cast: [ELI({ face: 'scared' })], acts: [{ who: 'e', do: 'lookside', deg: 35, t: [0.2, 0.5], hold: true }], cam: push(0, 3, 3.2, 13, 10, 40) };
+S[5] = { ...DARK, cast: [ELI({ at: [-3, 3], rot: 90, face: 'sob' })], acts: [{ who: 'e', do: 'walk', to: [3, 3], t: [0.05, 1] }], cam: follow(-4.5, 1.5, 3, 3.2, 13, 42) };
+S[6] = { ...ROOM, exposure: 0.5, fx: { ...FX.indoor, sparkles: { color: '#ffe9a0', count: 160, size: 0.5, speed: 0.5 } }, props: [{ id: 'st', type: 'stack', at: [-2.4, 0, 5], scale: 1.2 }, { id: 'ck', type: 'cake', at: [2.4, 0, 5] }, num(3, 0, 0, 1.0)], cast: [ELI({ face: 'starstruck' })], acts: [{ who: 'e', do: 'jump', to: [0, 3], toY: 0, h: 2, t: [0.3, 0.7], crouch: 0.15 }, ...both('e', [0.35, 0.5])], cam: pull(0, 3, 3.2, 13, 16, 44) };
+S[7] = { ...ROOM, exposure: 0.6, fx: { ...FX.indoor, sparkles: { color: '#ffe0f0', count: 120, size: 0.45, speed: 0.35 } }, cast: [MOM({ at: [1.4, 3], rot: -45, face: 'happy' }), ELI({ at: [-1.4, 3.4], rot: 45, face: 'happy' })], acts: [arm('m', -1.4, 0.5, [0.2, 0.4]), arm('e', -1.4, -0.5, [0.2, 0.4], 'L')], cam: push(0, 3, 3.2, 13, 10, 38) };
+S[8] = { ...FIELD, fx: FX.win, props: [{ id: 'sub', type: 'sign', color: 'SUBSCRIBE', at: [2.2, 0, 2], rot: -15, scale: 1.3 }, num(1, -5, -6), num(2, -1.5, -8), num(3, 3, -7)], cast: [ELI({ at: [-1.6, 4], face: 'laugh' })], acts: [arm('e', -1.55, 0.1, [0.1, 0.3])], cam: pull(0, 3, 3.6, 13, 19, 42) };
+K.write(ID, S, slot, OUT);

@@ -1,0 +1,86 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+// TEST (2026-11-25): OUR kit characters (Kaito, Hana: Roblox faces, blinks, talking mouth) driven by the REAL animation
+// clips of Kenney Blocky Characters (CC0: walk/idle/emote-yes/emote-no...). Same rig layout: legs, arms, head + root bob,
+// so each frame we sample the Kenney clip and copy the joint rotations onto our avatar's pivots.
+// Camera rules from the claude-animated-shorts skill (MIT): never static, smootherstep glides, slight roll, impact kick.
+//   node render.js test-anim.html ../output/anim-test/new.mp4 6
+import { THREE, scene, camera, renderer, frame } from './lib.js';
+import * as W from './world.js';
+import * as KIT from './kit.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+W.setLighting('day');
+renderer.toneMappingExposure = 0.95;
+await W.buildCity();
+const loader = new GLTFLoader();
+const RIG = '/assets/kenney/blocky-characters/Models/GLB%20format/character-a.glb';
+
+async function actor(who, x, z, rotY) {
+  const g = KIT.makeKitCharacter(who); scene.add(g);
+  g.position.set(x, W.groundY(x, z), z); g.rotation.y = rotY;
+  const P = g.userData;
+  const src = await loader.loadAsync(RIG);                       // one invisible Kenney rig per actor (own clip timing)
+  const mixer = new THREE.AnimationMixer(src.scene);
+  const acts = Object.fromEntries(src.animations.map(c => { const a = mixer.clipAction(c); a.play(); a.setEffectiveWeight(0); return [c.name, a]; }));
+  const N = n => src.scene.getObjectByName(n);
+  // Kenney faces +z like ours: its "left" limbs sit at +x = our index 1
+  const map = [[N('leg-left'), P.legs[1]], [N('leg-right'), P.legs[0]], [N('arm-left'), P.arms[1]], [N('arm-right'), P.arms[0]], [N('head'), P.head]];
+  const root = N('root'), k = 5.3 / 2.6;                         // Kenney rig is ~2.6 units tall, ours ~5.3
+  return { g, P, mixer, acts, map, root, k, y0: g.position.y };
+}
+const X = 0.25;
+function pose(c, plan, t) {
+  for (const a of Object.values(c.acts)) a.setEffectiveWeight(0);
+  for (const [clip, t0, t1] of plan) {
+    const w = Math.min(1, Math.max(0, (t - t0 + X) / X), Math.max(0, (t1 + X - t) / X));
+    if (w <= 0) continue;
+    const a = c.acts[clip]; a.setEffectiveWeight(w); a.time = Math.max(0, t - t0 + X) % a.getClip().duration;
+  }
+  c.mixer.update(0);
+  for (const [from, to] of c.map) to.quaternion.copy(from.quaternion);
+  c.g.position.y = c.y0 + c.root.position.y * c.k * c.g.scale.y;
+}
+// face plan: [expr, from s], talk windows [s0, s1]
+function face(c, faces, talks, t) {
+  let prev = faces[0][0], cur = prev, tc = -9;
+  for (const [e, t0] of faces) if (t >= t0) { prev = cur; cur = e; tc = t0; }
+  let talk = 0;
+  for (const [a, b] of talks) if (t >= a && t <= b) { const syl = 0.5 + 0.5 * Math.sin(t * 2 * Math.PI * 3.7 + 1.6 * Math.sin(t * 4.3)); talk = Math.min(1, (t - a) / 0.08, (b - t) / 0.08) * (syl > 0.35 ? 0.35 + 0.65 * syl : 0.1); }
+  const blink = ((t + c.P.blinkSeed || t) % 3.3) < 0.12 ? 1 : 0;
+  c.P.kitFace(prev, cur, Math.min(1, (t - tc) / 0.22), { talk, blink, gx: c.gx || 0, gy: 0 });
+}
+const sm = x => { x = Math.min(1, Math.max(0, x)); return x * x * x * (x * (x * 6 - 15) + 10); };
+const lerp = THREE.MathUtils.lerp;
+
+const Z = -20;
+const kaito = await actor('kaito', -9, Z + 0.4, Math.PI / 2);
+const hana = await actor('hana', 1.8, Z, -Math.PI / 2.5);
+hana.gx = -0.6;
+const K_PLAN = [['walk', 0, 2.4], ['idle', 2.4, 3.4], ['emote-yes', 3.4, 4.6], ['idle', 4.6, 6.5]];
+const H_PLAN = [['idle', 0, 2.5], ['emote-no', 2.5, 3.9], ['idle', 3.9, 6.5]];
+
+window.renderFrame = (t) => {
+  const ex = lerp(-9, -1.4, Math.min(1, t / 2.4) * 0.85 + sm(t / 2.6) * 0.15);
+  kaito.g.position.x = ex;
+  kaito.g.rotation.y = lerp(Math.PI / 2, Math.PI / 3, sm((t - 2.2) / 0.6));
+  pose(kaito, K_PLAN, t); pose(hana, H_PLAN, t);
+  kaito.gx = t > 2.3 ? 0.5 : 0;
+  face(kaito, [['smirk', 0], ['happy', 3.4]], [[2.7, 4.4]], t);
+  face(hana, [['neutral', 0], ['shocked', 2.5], ['laugh', 4.6]], [], t);
+
+  // camera: follow-glide while he walks -> slow push to a two-shot (faces upper-middle) with a 4 deg roll; always creeping
+  const g = sm((t - 1.8) / 1.8);
+  camera.position.set(lerp(ex + 2.5, 0.8, g), lerp(6.4, 5.4, g), lerp(Z + 23, Z + 17.5, g) - t * 0.22);
+  camera.lookAt(lerp(ex + 0.5, 0.35, g), lerp(3.4, 3.9, g), Z);
+  const kick = t > 2.5 && t < 2.73 ? Math.sin((t - 2.5) * 90) * 0.035 * (1 - (t - 2.5) / 0.23) : 0;
+  camera.rotation.z += THREE.MathUtils.degToRad(lerp(0, 4, g)) + kick;
+  camera.fov = lerp(42, 36, g); camera.updateProjectionMatrix();
+  scene.updateMatrixWorld(true);
+  return frame();
+};
+window.ready = true;
+</script></body></html>

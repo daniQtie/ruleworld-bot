@@ -1,0 +1,94 @@
+{
+  "id": "2026-11-18-gta-every-second",
+  "version": 2,
+  "topic": "money",
+  "outfit": "money",
+  "title_yt": "What If You Got Paid Every Second Like GTA 5? #Shorts",
+  "title_fb": "What if you got paid what GTA 5 sold, every second?",
+  "hook": "What if you got paid G, T, A five's sales every second?",
+  "open_loop": "Hook plants 'how much per second?' (bubble at ~3 s). Per-second amount at line 3, then new numbers each beat (car, per day). The held reveal is the one-second-a-day-for-a-year total ($1.4M) in line 6, which sets up the A/B in line 7.",
+  "payoff": "One second of GTA 5's estimated sales (~$3,858) paid once a day for a year is about $1.4 million.",
+  "ending": "choice",
+  "lines": [
+    {
+      "text": "What if you got paid *G, *T, *A *5's sales every second?",
+      "say": "What if you got paid G, T, A five's sales every second?",
+      "beat": "hook",
+      "visual": "Frame 0: Benny (money outfit) in lemonade apron at his tiny stand, smug, holding a cup; a giant generic cash register is already in frame on the right with a gold '$ / SECOND' counter at $0 and a wall clock. Plain white outlined text 'GTA 5' (no logo). Bubble 'HOW MUCH?!' on 'every second' plants the question.",
+      "on_screen": "PAID PER SECOND"
+    },
+    {
+      "text": "It sold *about *one *billion dollars in three days.",
+      "say": "It sold about one billion dollars in three days.",
+      "beat": "stakes",
+      "visual": "Badge 'ESTIMATED SALES'; stamp '3 DAYS'; counter climbs to $1 BILLION; Benny gasps, hops, cup drops. Cash rains from the register.",
+      "on_screen": "$1B IN 3 DAYS"
+    },
+    {
+      "text": "That pays you *almost *four thousand dollars every second.",
+      "say": "That pays you almost four thousand dollars every second.",
+      "beat": "escalate",
+      "visual": "Tick sfx each second; each tick the register fires a cash stack and a '+$3,858' badge; cash piles up and buries Benny to his head, only his eyes and a coin on his head visible; thud sfx. Gold counter $3,858 with 'ABOUT'.",
+      "on_screen": "ABOUT $3,858 A SECOND"
+    },
+    {
+      "text": "You buy a *ten-thousand-dollar car in *three seconds.",
+      "say": "You buy a ten-thousand-dollar car in three seconds.",
+      "beat": "escalate",
+      "visual": "Benny digs out, hero pose, a generic cartoon car prop-style sketch (plain, no brand) slides in; badge 'EXAMPLE: $10,000 CAR'; clock ticks 1-2-3 with ding. Benny flexes, happy.",
+      "on_screen": "CAR = 3 SECONDS"
+    },
+    {
+      "text": "By tomorrow, you would have *about *three *hundred *thirty *million dollars.",
+      "say": "By tomorrow, you would have about three hundred thirty million dollars.",
+      "beat": "twist",
+      "visual": "Stamp 'QUIT' slams on the lemonade stand; Benny throws his apron and flips a coin, shades-on smug; the hooded stranger (friend) runs in, begs with bubble 'LOAN?!', Benny shrugs. Counter to $333,000,000 'ABOUT PER DAY'; coin rain.",
+      "on_screen": "$333 MILLION A DAY"
+    },
+    {
+      "text": "One second a day is about *one *point *four million a year.",
+      "say": "One second a day is about one point four million a year.",
+      "beat": "payoff",
+      "visual": "Calendar flips with 365 pages flying; each page drops a '$3,858'; counter climbs to $1.4 MILLION; confetti; Benny shocked then happy. Small badge 'NOT FINANCIAL ADVICE'.",
+      "on_screen": "$1.4M A YEAR"
+    },
+    {
+      "text": "Would you take that, or *one million now? Comment *A or *B.",
+      "say": "Would you take that, or one million now? Comment A or B.",
+      "beat": "ending",
+      "visual": "Benny points at viewer, thinking; list rows 'A: 1 SECOND A DAY' and 'B: $1 MILLION NOW'; stranger shrugs. Gold headline 'COMMENT A OR B'. Hard cut after the last word (tail ~0.3 s).",
+      "on_screen": "A OR B?"
+    }
+  ],
+  "facts_used": [
+    {
+      "claim": "GTA 5 sold over $1 billion in its first 3 days (retail sales estimate).",
+      "source_url": "https://www.engadget.com/2013-09-20-grand-theft-auto-5-sales-surpass-1-billion.html"
+    },
+    {
+      "claim": "Same $1B in 3 days figure.",
+      "source_url": "https://shacknews.com/article/81231/grand-theft-auto-5-hits-1-billion-sets-new-record"
+    }
+  ],
+  "math_check": "Python: $1e9 / 3 = $333,333,333 per day ('about three hundred thirty million'); / 86,400 = $3,858.02 per second ('almost four thousand', exact $3,858 on screen); $10,000 car / 3,858 = 2.59 s -> 'three seconds' (hypothetical car, labelled EXAMPLE); $3,858.02 x 365 = $1,408,177 -> 'about one point four million'. Revenue (sales), not profit: wording says 'sold' / 'sales'. A/B: one second of pay a day for a year (~$1.4M, paid daily) vs $1M now is a pay-over-time vs lump-sum choice; A is larger in total, so the dilemma is patience vs certainty.",
+  "est_seconds": 32,
+  "word_count": 73,
+  "longest_sentence_words": 12,
+  "word_count_note": "Counted on 'say' (G, T, A five = 4 words).",
+  "ip_notes": "'GTA 5' is plain topic text only. No Rockstar characters, logos, lettering, footage, art or music; register and car are generic cartoon props.",
+  "upload": {
+    "title": "What If You Got Paid Every Second Like GTA 5?",
+    "description": "What would you do with the money GTA 5 sold every single second? 💰\nWould you take one second of that pay every day for a year, or $1 million now? Comment A or B!\nBy sales estimates, GTA 5 sold over $1 billion in its first 3 days. That is about $3,858 every second, and about $1.4 million if you got just one second a day for a year.\nNot financial advice. Estimated retail sales (not profit). Source: Engadget, Shacknews.\n#gta6 #gta5 #gaming #money #Shorts",
+    "tags": [
+      "gta 5 sales record",
+      "gta 5 sales",
+      "how much money did gta 5 make",
+      "gta 5 first 3 days",
+      "gta 6 vs gta 5",
+      "money per second",
+      "gaming facts",
+      "video game sales"
+    ]
+  },
+  "changes_from_previous": "(1) Viewer is now the earner: hook 'What if you got paid G, T, A five's sales every second?' and Benny gets the cash (buried in it, buys a car, quits lemonade, friend begs). (2) Bait-and-switch removed; 'earned/made' replaced by 'sold/sales', 'over/about' hedges and ESTIMATED SALES badge. (3) New number each beat: $1B/3 days, almost $4,000/s, $10,000 car in 3 s (labelled hypothetical), about $333M by tomorrow, about $1.4M for one second a day for a year; no repeated rate, cups dropped. (4) Exact $3,858 only on screen; speech says 'almost four thousand'. (5) Question 'how much per second?' planted in frame 0 bubble, reveal held to line 6. (6) Register in frame 0; physical gags with consequences (cash burial, apron quit). (7) Clear A/B: one second a day for a year vs one million now. (8) Upload: title curiosity gap without exact number, 'Not financial advice.', tag 'gta 5 sales record' added, loose tags removed."
+}

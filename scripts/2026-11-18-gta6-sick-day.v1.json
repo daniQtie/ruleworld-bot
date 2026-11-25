@@ -1,0 +1,91 @@
+{
+  "id": "2026-11-18-gta6-sick-day",
+  "version": 1,
+  "topic": "money",
+  "outfit": "everyday",
+  "title_yt": "The GTA 6 sick day costs more than 3 games #Shorts",
+  "title_fb": "The GTA 6 sick day costs more than three games",
+  "hook": "If you call in sick for G T A six, that free day costs three games.",
+  "open_loop": "Hook promises the free day costs 'three games'. The coins drain on the couch; the exact price ($247 vs $79.99 boxes) is revealed in the last ~8 s.",
+  "payoff": "Pay stub -$247 next to three generic $79.99 game boxes. Playing after work costs $0 extra.",
+  "ending": "choice",
+  "lines": [
+    {
+      "text": "If you call in sick for GTA 6, that free day costs three games.",
+      "say": "If you call in sick for G T A six, that free day costs three games.",
+      "beat": "hook",
+      "visual": "Benny in office shirt and tie at a desk, phone to ear, fake cough with fist. Stranger (boss, hooded) behind him, arms crossed, suspicious. Headline 'GTA 6 SICK DAY'. Cough bubble 'cough cough'. Scene change on 'free day' to a big gold '$0?' stamp, then on 'three games' to three question-mark boxes.",
+      "on_screen": "GTA 6 SICK DAY"
+    },
+    {
+      "text": "You fake a cough.",
+      "beat": "stakes",
+      "visual": "Close-up: Benny coughs, shocked-then-smug. Boss stranger squints and shrugs 'okay'. Benny throws the tie, hoodie on.",
+      "on_screen": "cough, cough"
+    },
+    {
+      "text": "Now you are on the couch while your pay drains.",
+      "beat": "escalate",
+      "visual": "Benny in hoodie on a couch with a plain controller-shaped silhouette and snacks. Coin pile under his feet; coins slide away. Wall clock ticks hour by hour. Badge 'HOUR 3'.",
+      "on_screen": "HOUR 3"
+    },
+    {
+      "text": "At average pay, an unpaid day costs about $247.",
+      "say": "At average pay, an unpaid day costs about two hundred fifty dollars.",
+      "beat": "loop",
+      "visual": "Pay stub slides in with counter counting down to -$247. Small badge 'AVG US FULL-TIME, 40 H WEEK, IF UNPAID'. Benny's grin freezes.",
+      "on_screen": "-$247"
+    },
+    {
+      "text": "That is three whole games!",
+      "beat": "twist",
+      "visual": "Three plain gray generic game boxes (no art, no logo) stack up with pop sfx, each tagged '$79.99'. Benny shocked, snap-zoom on 'three'.",
+      "on_screen": "3 x $79.99"
+    },
+    {
+      "text": "Play after work, and it costs nothing extra.",
+      "beat": "payoff",
+      "visual": "Benny back at 5 pm, hoodie, happy on couch at night, coins intact. Badge '$0 EXTRA'. Confetti small.",
+      "on_screen": "$0 EXTRA"
+    },
+    {
+      "text": "Sick day, or play after work? Comment A or B.",
+      "beat": "ending",
+      "visual": "Split frame: Benny flu-face on the left 'A: SICK DAY', Benny smug at night on the right 'B: AFTER WORK'. Benny points at the viewer.",
+      "on_screen": "A: SICK DAY / B: AFTER WORK"
+    }
+  ],
+  "facts_used": [
+    {
+      "claim": "US median usual weekly earnings of full-time workers Q1 2026 = $1,235; full time = 35+ h/week.",
+      "source_url": "https://www.bls.gov/news.release/archives/wkyeng_04162026.htm"
+    },
+    {
+      "claim": "GTA 6 Standard Edition price $79.99; release Nov 19, 2026.",
+      "source_url": "https://gameluster.com/gta-6-pre-order-pricing-standard-ultimate-edition/"
+    },
+    {
+      "claim": "'GTA Flu' = launch-week meme of faking sick days (no stats used).",
+      "source_url": "https://meme.com/memes/gta-flu"
+    }
+  ],
+  "math_check": "1235/40 = 30.875/h; x8 = 247.00; 247/79.99 = 3.09 games.",
+  "est_seconds": 28,
+  "word_count": 65,
+  "upload": {
+    "title": "The GTA 6 sick day costs more than 3 games #Shorts",
+    "description": "Think a fake sick day is free? Do the math first.\nSick day, or play after work? Comment A or B.\nIf the day is unpaid, the average US full-time worker (40 hours a week) loses about $247. A new game costs $79.99, so that is three games.\nNot financial advice. Many jobs offer paid sick leave. Pay data: US Bureau of Labor Statistics.\n#gta6 #money #savingmoney #Shorts",
+    "tags": [
+      "gta 6",
+      "gta 6 release date",
+      "gta 6 price",
+      "gta flu",
+      "sick day cost",
+      "how much is a day of pay",
+      "save money gaming",
+      "gaming money tips",
+      "gta 6 sick day"
+    ]
+  },
+  "changes_from_previous": ""
+}

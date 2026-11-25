@@ -1,0 +1,181 @@
+{
+ "id": "anim-demo",
+ "version": 1,
+ "source": "2026-11-25 animation/camera test scene (not an episode, not for upload)",
+ "hook_type": {
+  "number": null,
+  "name": "format bank"
+ },
+ "format": {
+  "number": null,
+  "name": "Funny school twist"
+ },
+ "title_working": "Animation Demo",
+ "hook_text": "STAY QUIET 1 MINUTE",
+ "hook_until": 2.6,
+ "music": "bounce",
+ "music_gain": 0.13,
+ "world_rule": "Animation Demo",
+ "lines": [
+  {
+   "text": "Hana bet Kaito he couldn't stay quiet for one whole minute.",
+   "say": "(confident) Hana bet Kaito he couldn't stay quiet for one whole minute.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "set": "street",
+    "cast": [
+     "Hana",
+     "Kaito"
+    ],
+    "face": "smirk",
+    "action": "talk",
+    "camera": "drone",
+    "tag": {
+     "name": "Hana",
+     "role": "the dare"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "Kaito laughed. Easy.",
+   "say": "(happy) Kaito laughed. Easy.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Kaito",
+     "Hana"
+    ],
+    "face": "smirk",
+    "action": "agree",
+    "camera": "push",
+    "tag": {
+     "name": "Kaito",
+     "role": "never loses"
+    }
+   },
+   "acting": {}
+  },
+  {
+   "text": "So she told him the funniest joke she knew.",
+   "say": "(happy) So she told him the funniest joke she knew.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Hana",
+     "Kaito"
+    ],
+    "face": "laugh",
+    "action": "talk",
+    "camera": "close"
+   },
+   "acting": {}
+  },
+  {
+   "text": "He held it in. His whole face turned red.",
+   "say": "(nervous) He held it in. His whole face turned red.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "cast": [
+     "Kaito",
+     "Hana"
+    ],
+    "face": "nervous",
+    "action": "still",
+    "camera": "eye"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Three seconds left, she leaned in and whispered, you're cute.",
+   "say": "(soft tone) Three seconds left, she leaned in and whispered, you're cute.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "cast": [
+     "Hana",
+     "Kaito"
+    ],
+    "face": "smirk",
+    "action": "talk",
+    "camera": "push",
+    "mood": "win"
+   },
+   "acting": {}
+  },
+  {
+   "text": "He lost.",
+   "say": "(happy) He lost.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "cast": [
+     "Kaito",
+     "Hana"
+    ],
+    "face": "laugh",
+    "action": "disagree",
+    "camera": "low",
+    "trans": "flash"
+   },
+   "acting": {}
+  }
+ ],
+ "word_count": 44,
+ "est_seconds": 12.9,
+ "tail_hold": 1.2,
+ "upload": {
+  "title": "Animation Demo #Shorts",
+  "description": "test\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "animated story",
+   "roblox story"
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+{
+  "pass": false,
+  "average": 7.91,
+  "scores": {"hook": 8, "stakes": 8, "open_loop": 7, "escalation": 8, "payoff": 8, "surprise": 7, "ending": 8, "clarity": 8, "facts": 9, "originality": 8, "entertainment": 8},
+  "hard_gates": {"what_if_opener": true, "benny_in_story": true, "length_25_35s": true, "english_clear": true},
+  "checks": {
+    "spoken_words": 70,
+    "words_per_line": [9, 7, 5, 10, 8, 8, 8, 8, 7],
+    "est_seconds_2.3wps": 30.4,
+    "scenes": 9,
+    "math": "EV 0.5*150-0.5*100=+25; 1.955*100=195.5 (range 182.0-210.2) -> 'about two hundred' ok; zero-sum stranger -25 ok",
+    "taglish_ph": "none found",
+    "v8_fixes_landed": "Yes: line 1 'offered'; line 4 now 10 words without 'nearly'; line 5 gives motive; WHY SMILE? seed at line 3; line 7 no longer contradicts -$100; scene 4 snap-zoom removed. Residual: the seed pays off only 1 line after the explicit question."
+  },
+  "fixes": [
+    "Line 6 -> 7 (open_loop 7): the explicit question 'Why does the stranger want you to quit?' is answered in the very next line (~3 s), so the loop is short. Delay the answer: add one beat between them (e.g. Benny tries a second flip and wins, or stranger sweats), or drop the spoken question and let only the visual WHY SMILE? / WHY QUIT? carry the curiosity until line 7.",
+    "Line 7 (surprise 7, clarity 8): 'come out ahead' is an idiom for a non-native listener, and the twist is a modest +$25 fact. Say it plainly, e.g. 'Because over many flips, you win more money.' (8 words), and make the on-screen '-$25 HIM' land as the gag.",
+    "Line 2-3 (hook/stakes 8): 'Heads, you win one hundred fifty dollars' is a number-heavy opening beat after the hook; consider a visual gag (stranger's coin sticks to his hood) in scene 2 so it is not static before the bonk in scene 5.",
+    "Line 8 (surprise): 'Your brain says no. The math says flip.' is crisp but tells rather than shows; ensure the green check on 'math' is the loudest visual and the stranger visibly panics, so the viewer feels the reversal."
+  ],
+  "viewer_verdict": "As a 1 a.m. scroller I stop at 0.5 s (hooded stranger and giant coin, 'What if'). The bonk gag and WHY SMILE? keep me. The answer comes quickly and is clear, the A/B ending invites comments. A non-native listener should follow every line on one listen; 'come out ahead' is the only mild idiom. Solid and close, but average is just under 8."
+}

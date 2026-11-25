@@ -1,0 +1,54 @@
+{
+  "pass": false,
+  "average": 7.45,
+  "scores": {
+    "hook": 8,
+    "stakes": 7,
+    "open_loop": 6,
+    "escalation": 8,
+    "payoff": 7,
+    "surprise": 7,
+    "ending": 8,
+    "clarity": 7,
+    "facts": 9,
+    "originality": 7,
+    "entertainment": 8
+  },
+  "hard_gates": {
+    "what_if_opener": true,
+    "benny_in_story": true,
+    "length_25_35s": true,
+    "english_clear": true
+  },
+  "checks": {
+    "spoken_words": 76,
+    "words_per_line": [
+      9,
+      6,
+      6,
+      5,
+      11,
+      6,
+      6,
+      4,
+      9,
+      7,
+      7
+    ],
+    "est_seconds_2.3wps": 33.0,
+    "scenes": 11,
+    "math": "EV=+25 per flip, zero-sum so stranger -25; 1.955*100=195.5 -> nearly two hundred: correct",
+    "taglish_ph": "none found",
+    "note_length": "76 words (script claims 75) is just over the 55-75 band; real am_adam pacing may exceed 35 s, so trim 3-5 words"
+  },
+  "fixes": [
+    "Line 5 (open loop / stakes): the loop is weak; nothing planted tells the viewer WHY the stranger would care. Line 7 'The stranger hopes Benny will quit' is the only seed and it is subtle. Make the question explicit, e.g. line 4 'Benny says no. But the stranger smiles.' or line 7 'Why does the stranger want Benny to quit?', paid off in lines 9-10.",
+    "Line 4 vs line 6 (story logic): Benny 'says no and runs' then 'He flips' with no reason. Add a turn-back beat, e.g. line 6 'Then Benny turns back, flips, and gets tails.' (cut words elsewhere).",
+    "Line 5 (stakes + clarity): third person loses the YOU stakes after line 3 and this is the hardest line. Change to 'Your brain makes a hundred dollar loss feel like two hundred.' (10 words, says dollars, puts the brain on the viewer). Keep Benny on screen as the avatar.",
+    "Lines 2-3 (clarity/stakes): 'Heads wins one hundred fifty dollars' has no subject for who wins. Use 'If heads, you win one hundred fifty dollars. If tails, you lose one hundred.' or keep line 3 and make line 2 'Heads wins you one hundred fifty dollars.' so both lines say you.",
+    "Line 9 (clarity): 'on average' is abstract for a non-native listener. Use 'Flip many times, and Benny gains twenty five dollars each flip.' or 'Each flip pays Benny twenty five dollars, over time.' Ensure the picture (coin rain) shows many flips.",
+    "Lines 9-10 (payoff/surprise): reveal is mild and does not explain why the stranger offered a losing bet. Add a one-line payoff that lands on the viewer, e.g. 'Your brain says no. The math says flip.' replacing part of line 11, then A/B.",
+    "Length: 76 words is over the 75 ceiling; trim to ~68 (shorten line 5, line 7) to stay under 35 s at real TTS pace."
+  ],
+  "third_person_verdict": "Third person is fine for the story (Benny as avatar, drawable, comic), but stakes about YOU thin out after line 3. Keep Benny narration but put 'you/your' in lines 2, 3 and 5 (brain line) and line 11 so the viewer owns the decision; do not mix 'you' and Benny without the brain line anchoring them."
+}

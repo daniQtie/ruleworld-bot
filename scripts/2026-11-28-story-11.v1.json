@@ -1,0 +1,220 @@
+{
+ "id": "2026-11-28-story-11",
+ "version": 1,
+ "source": "TeamDeam 'She Was Just Helping Her Little Brother' (3.1M) beat plan; new names and wording; loop ending",
+ "hook_type": {
+  "number": null,
+  "name": "owner-directed (exempt from rotation)"
+ },
+ "format": {
+  "number": 1,
+  "name": "Liars' faces flash red"
+ },
+ "title_working": "Ever Since He Was Five, Leo Could See When Someone Lied",
+ "hook_text": "SHE LIED EVERY DAY. WHY?",
+ "hook_until": 2.6,
+ "music": "tender",
+ "music_gain": 0.13,
+ "world_rule": "Liars' faces flash red",
+ "lines": [
+  {
+   "text": "Ever since he was five, Leo could see when someone lied.",
+   "say": "(confident) Ever since he was five, Leo could see when someone lied.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "A liar's face flashes bright red, just for a second.",
+   "say": "(happy) A liar's face flashes bright red, just for a second.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "matter-of-fact",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "But one girl at school, Pia, turned red almost every time she spoke.",
+   "say": "(nervous) But one girl at school, Pia, turned red almost every time she spoke.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "curious",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "I'm fine, she would say. Red. I don't need help. Red.",
+   "say": "(soft tone) I'm fine, she would say. Red. I don't need help. Red.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": -1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "soft",
+    "tags": "(soft tone)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "So Leo decided she was fake, and he stayed away.",
+   "say": "(sad) So Leo decided she was fake, and he stayed away.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": -1,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "flat",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "One day, the teacher asked why her homework was missing. I forgot, she said. Red.",
+   "say": "(nervous) One day, the teacher asked why her homework was missing. I forgot, she said. Red.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "tense",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "After school, Leo followed her home.",
+   "say": "(nervous) After school, Leo followed her home.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": -1,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "hushed",
+    "tags": "(nervous)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "She cooked dinner, helped her little brother with his homework, and tucked him into bed.",
+   "say": "(soft tone) She cooked dinner, helped her little brother with his homework, and tucked him into bed.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": -1,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "warm",
+    "tags": "(soft tone)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Their mom wasn't home. She never was.",
+   "say": "(sad) Their mom wasn't home. She never was.",
+   "speaker": "narrator",
+   "speed": 0.82,
+   "volume": -3,
+   "pause": 0.35,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "Are you okay? her brother asked. I'm fine, she smiled. Red.",
+   "say": "(sad) Are you okay? her brother asked. I'm fine, she smiled. Red.",
+   "speaker": "narrator",
+   "speed": 0.85,
+   "volume": -2,
+   "pause": 0.35,
+   "beat": "",
+   "voice": {
+    "emotion": "heavy",
+    "tags": "(sad)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "That's when Leo understood. She wasn't fake. She was carrying everything alone.",
+   "say": "(soft tone) That's when Leo understood. She wasn't fake. She was carrying everything alone.",
+   "speaker": "narrator",
+   "speed": 0.85,
+   "volume": -1,
+   "pause": 0.3,
+   "beat": "",
+   "voice": {
+    "emotion": "realization",
+    "tags": "(soft tone)"
+   },
+   "shot": "",
+   "acting": {}
+  },
+  {
+   "text": "The next morning, he sat next to her and said, you don't have to be fine.",
+   "say": "(happy) The next morning, he sat next to her and said, you don't have to be fine.",
+   "speaker": "narrator",
+   "speed": 0.85,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "",
+   "voice": {
+    "emotion": "warm",
+    "tags": "(happy)"
+   },
+   "shot": "",
+   "acting": {}
+  }
+ ],
+ "word_count": 137,
+ "est_seconds": 39.1,
+ "tail_hold": 1.2,
+ "upload": {
+  "title": "Ever Since He Was Five, Leo Could See When Someone Lied #Shorts",
+  "description": "Leo can see every lie. The girl who lies the most has the saddest reason.\nWould you have figured it out? Tell us below.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "lie detector story",
+   "can see lies",
+   "emotional story",
+   "sad story animation",
+   "school story",
+   "animated story",
+   "story time animation",
+   "plot twist story",
+   "roblox story",
+   "roblox animation"
+  ]
+ }
+}

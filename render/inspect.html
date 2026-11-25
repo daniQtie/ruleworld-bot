@@ -1,0 +1,8 @@
+<!doctype html><html><head><script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script></head><body><script type="module">
+import * as THREE from 'three'; import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+const L=new GLTFLoader(), K='/assets/kenney/';
+const files=['city-kit-commercial/Models/GLB format/building-a.glb','city-kit-commercial/Models/GLB format/building-c.glb','city-kit-commercial/Models/GLB format/detail-awning.glb','city-kit-commercial/Models/GLB format/detail-awning-wide.glb','city-kit-roads/Models/GLB format/tile-low.glb','city-kit-suburban/Models/GLB format/tree-large.glb','city-kit-suburban/Models/GLB format/fence.glb','city-kit-suburban/Models/GLB format/building-type-a.glb'];
+const out={};
+for(const f of files){const g=await L.loadAsync(K+f);const b=new THREE.Box3().setFromObject(g.scene);const s=b.getSize(new THREE.Vector3());out[f.split('/').pop()]=[s.x,s.y,s.z,b.min.x,b.min.y,b.min.z].map(v=>+v.toFixed(2));}
+window.dims=out; window.ready=true;
+</script></body></html>

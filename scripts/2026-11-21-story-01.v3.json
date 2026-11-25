@@ -1,0 +1,1052 @@
+{
+ "id": "2026-11-21-story-01",
+ "version": 3,
+ "hook_type": {
+  "number": 5,
+  "name": "The Bold Statement / Controversial Hook"
+ },
+ "format": {
+  "number": 1,
+  "name": "In This Town..."
+ },
+ "premise": "In a town where every kind act makes one of your accessories jump onto the person you helped, a colourful outsider keeps helping anyway.",
+ "world_rule": "In Mirrowick, every time you help someone, one accessory you wear jumps onto them. The hidden half: when the helped person says thank you, the helper's hair glows gold and a brand new copy appears on the helper.",
+ "logline": "Milo arrives covered in thank-you gifts, searching for someone, and keeps helping a town that forgot kindness until one thank-you shows what the rule really means.",
+ "style_line": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, default game lighting, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters.",
+ "lighting_presets": {
+  "day": "bright game daylight, clear blue sky",
+  "morning": "soft early-morning light, pale sky",
+  "sunset": "warm orange sunset light, long shadows",
+  "night": "dark blue night, moonlight, warm lantern glow, no daylight",
+  "sunrise": "golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours",
+  "cellar": "dim cellar, only the warm glow of one small lantern, dark corners, no daylight"
+ },
+ "characters": [
+  {
+   "name": "Milo",
+   "role": "protagonist",
+   "want": "Find the person he is looking for (his sister Lena) and keep being kind.",
+   "look": "Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile",
+   "accessory_note": "Base look fixed. Accessories change per shot as written in each action. Start: a tall stack of five hats (red cap on top, then purple beanie, teal bucket hat, yellow straw hat, black top hat), three scarves with a green scarf on the outside, two pairs of round glasses and a big orange backpack. Hair glows gold ONLY when someone thanks him (line 36)."
+  },
+  {
+   "name": "Mayor Tilda",
+   "role": "mentor",
+   "want": "Stop Milo from losing everything like she did; secretly still hurt that nobody ever thanked her.",
+   "look": "Mayor Tilda: blocky old woman avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, white hair bun, bent back, wooden walking cane"
+  },
+  {
+   "name": "Pip",
+   "role": "supporting",
+   "want": "Own a hat of his own, because nobody ever dared to help him.",
+   "look": "Pip: small blocky kid avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, short spiky black hair, white bandage on one knee"
+  },
+  {
+   "name": "Lena",
+   "role": "supporting (sister, secret)",
+   "want": "Help the town in secret, even though it costs her everything.",
+   "look": "Lena: small blocky girl avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, two brown pigtails, holding a small glowing lantern"
+  },
+  {
+   "name": "The baker",
+   "role": "supporting",
+   "want": "Keep to himself and owe nobody; scared of being helped.",
+   "look": "The baker: large round blocky man avatar with yellow head and yellow hands, plain grey shirt, white apron, bald head, flour on his cheeks"
+  },
+  {
+   "name": "Young Tilda",
+   "role": "flashback (Mayor Tilda, long ago)",
+   "want": "Help everyone in town.",
+   "look": "Young Tilda: blocky young woman avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, dark brown hair bun, straight back, no cane"
+  },
+  {
+   "name": "Home folk",
+   "role": "flashback crowd (Milo's home village)",
+   "want": "Thank Milo for helping them.",
+   "look": "Home folk: smiling blocky avatars with yellow heads and yellow hands in bright red, purple and teal shirts, each wearing one colourful hat"
+  },
+  {
+   "name": "Townsfolk",
+   "role": "crowd",
+   "want": "Keep what they wear, so they avoid each other.",
+   "look": "Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants"
+  }
+ ],
+ "locations": [
+  {
+   "name": "Town square",
+   "look": "Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts"
+  },
+  {
+   "name": "Town gate",
+   "look": "Mirrowick town gate: a simple wooden arch gate on a dirt path, grey straw-roof huts behind it, studded green baseplate ground"
+  },
+  {
+   "name": "Bakery",
+   "look": "Mirrowick bakery: a small grey block shop with a straw roof, wooden counter, round loaves of bread, studded green baseplate street"
+  },
+  {
+   "name": "Lighthouse hill",
+   "look": "Lighthouse hill: a grassy studded green hill with a winding dirt path up to an old white-and-red block lighthouse, sea behind"
+  },
+  {
+   "name": "Lighthouse cellar",
+   "look": "Lighthouse cellar: a small empty stone room under the lighthouse, one wooden crate, bare stone walls, a low wooden door"
+  }
+ ],
+ "beats": {
+  "hook": "In this town, being kind is the worst thing you can do. (Shot: a hat is ripped off a helper and flies onto the person he helped.)",
+  "rule": "One accessory jumps per kind act; three fast examples; nobody helps anybody. Open loop: people wake up wearing tiny things nobody gave them. Milo arrives covered in accessories with a secret.",
+  "conflict": "Milo helps Pip and loses his red cap; it is Pip's first hat, and Milo is not sad. Mayor Tilda shows her bare hands: she helped once and lost everything. She warns him; he refuses.",
+  "escalation": [
+   "The baker gets Milo's green scarf and yells at him to stay away",
+   "Milo sees the baker already wears the red scarf Milo knitted (clue)",
+   "Neighbours slam their doors as Milo walks by",
+   "By sunset Milo has nothing left but his shirt; tiny footprints lead from every door to the lighthouse"
+  ],
+  "reveal": "In the cellar sits Lena, Milo's runaway sister. She helped everyone at night while they slept, so the rule left her ribbon, clip and red scarf on them.",
+  "resolution": "Pip followed Milo and says thank you; Milo's hair blazes gold and a new red cap appears. Kindness waits for thanks, which is why Milo, from a thankful home, wore so much. Pip tells the town; they thank Lena and the town turns bright.",
+  "ending": "The town thanks Mayor Tilda; her hair glows and a golden crown appears. Sequel hook: a locked chest 'for the one who was helped first'."
+ },
+ "lines": [
+  {
+   "text": "In this town, being kind is the worst thing you can do.",
+   "say": "In this town, being kind is the worst thing you can do.",
+   "beat": "hook",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "medium shot, fast push-in",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Townsfolk"
+    ],
+    "action": "a townsperson helps another stand up; at that moment his big orange backpack rips off his back and flies onto the other person",
+    "motion": true,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. a townsperson helps another stand up; at that moment his big orange backpack rips off his back and flies onto the other person.",
+    "sfx": "whoosh"
+   }
+  },
+  {
+   "text": "Every time you helped someone, one thing you wore jumped onto them.",
+   "say": "Every time you helped someone, one thing you wore jumped onto them.",
+   "beat": "rule",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "medium shot, slight high angle",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Townsfolk"
+    ],
+    "action": "a townsperson pats a sad grey kid on the shoulder; a purple bow tie jumps off the helper's neck onto the kid",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. a townsperson pats a sad grey kid on the shoulder; a purple bow tie jumps off the helper's neck onto the kid."
+   }
+  },
+  {
+   "text": "Carry a bag, and your hat flew straight onto their head.",
+   "say": "Carry a bag, and your hat flew straight onto their head.",
+   "beat": "rule",
+   "words": 11,
+   "shot": {
+    "seconds": 3.1,
+    "camera": "medium two-shot, side angle",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Townsfolk"
+    ],
+    "action": "a townsperson lifts another's bag; a green bucket hat lifts off the helper's head and lands on the other person",
+    "motion": true,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. a townsperson lifts another's bag; a green bucket hat lifts off the helper's head and lands on the other person.",
+    "sfx": "whoosh"
+   }
+  },
+  {
+   "text": "Share your lunch, and your glasses landed right on their face.",
+   "say": "Share your lunch, and your glasses landed right on their face.",
+   "beat": "rule",
+   "words": 11,
+   "shot": {
+    "seconds": 3.1,
+    "camera": "close-up two-shot",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Townsfolk"
+    ],
+    "action": "a townsperson hands over a sandwich; round black glasses jump off his face onto the other person's face",
+    "motion": true,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. a townsperson hands over a sandwich; round black glasses jump off his face onto the other person's face.",
+    "sfx": "pop"
+   }
+  },
+  {
+   "text": "Hold a door, and your scarf wrapped itself around a stranger.",
+   "say": "Hold a door, and your scarf wrapped itself around a stranger.",
+   "beat": "rule",
+   "words": 11,
+   "shot": {
+    "seconds": 3.1,
+    "camera": "over-the-shoulder at a hut door",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Townsfolk"
+    ],
+    "action": "a townsperson holds a hut door open; a yellow scarf unwinds from his neck and wraps around a stranger walking through",
+    "motion": true,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. a townsperson holds a hut door open; a yellow scarf unwinds from his neck and wraps around a stranger walking through.",
+    "sfx": "whoosh"
+   }
+  },
+  {
+   "text": "Because of this, nobody had helped anybody in years.",
+   "say": "Because of this, nobody had helped anybody in years.",
+   "beat": "rule",
+   "words": 9,
+   "shot": {
+    "seconds": 3.0,
+    "camera": "high angle, wide",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Townsfolk"
+    ],
+    "action": "plain grey townsfolk walk past each other with arms crossed, nobody touching, no accessories anywhere",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. plain grey townsfolk walk past each other with arms crossed, nobody touching, no accessories anywhere."
+   }
+  },
+  {
+   "text": "But lately, every morning, someone woke up wearing something they had never seen.",
+   "say": "But lately, every morning, someone woke up wearing something they had never seen.",
+   "beat": "rule",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "slow push-in through a hut window",
+    "location": "Town square",
+    "lighting": "soft early-morning light, pale sky",
+    "characters": [
+     "Townsfolk"
+    ],
+    "action": "a grey townsperson sits up in a simple block bed, touching a tiny pink ribbon on his head, confused",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, soft early-morning light, pale sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. a grey townsperson sits up in a simple block bed, touching a tiny pink ribbon on his head, confused.",
+    "sfx": "rooster"
+   }
+  },
+  {
+   "text": "A pink ribbon. A yellow hair clip. Nobody knew who gave them.",
+   "say": "A pink ribbon. A yellow hair clip. Nobody knew who gave them.",
+   "beat": "rule",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "quick close-ups, side by side",
+    "location": "Town square",
+    "lighting": "soft early-morning light, pale sky",
+    "characters": [
+     "Townsfolk"
+    ],
+    "action": "two confused townsfolk in a doorway compare a tiny pink ribbon and a tiny yellow hair clip on their heads",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, soft early-morning light, pale sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. two confused townsfolk in a doorway compare a tiny pink ribbon and a tiny yellow hair clip on their heads."
+   }
+  },
+  {
+   "text": "Then one day, a boy named Milo walked through the town gate.",
+   "say": "Then one day, a boy named Milo walked through the town gate.",
+   "beat": "rule",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "low angle, wide, from behind the gate",
+    "location": "Town gate",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Milo"
+    ],
+    "action": "Milo steps through the wooden arch gate onto the dirt path",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town gate: a simple wooden arch gate on a dirt path, grey straw-roof huts behind it, studded green baseplate ground. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Milo steps through the wooden arch gate onto the dirt path.",
+    "sfx": "footsteps"
+   }
+  },
+  {
+   "text": "He wore five hats, three scarves, two pairs of glasses and a backpack.",
+   "say": "He wore five hats, three scarves, two pairs of glasses and a backpack.",
+   "beat": "rule",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "slow tilt up from shoes to hats",
+    "location": "Town gate",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Milo"
+    ],
+    "action": "Milo wears a tall stack of five hats (red cap on top, then purple beanie, teal bucket hat, yellow straw hat, black top hat), three scarves with a green scarf on the outside, two pairs of round glasses and a big orange backpack",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town gate: a simple wooden arch gate on a dirt path, grey straw-roof huts behind it, studded green baseplate ground. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Milo wears a tall stack of five hats (red cap on top, then purple beanie, teal bucket hat, yellow straw hat, black top hat), three scarves with a green scarf on the outside, two pairs of round glasses and a big orange backpack."
+   }
+  },
+  {
+   "text": "The whole town stared. And Milo had a secret. He was looking for someone.",
+   "say": "The whole town stared. And Milo had a secret. He was looking for someone.",
+   "beat": "rule",
+   "words": 14,
+   "shot": {
+    "seconds": 4.0,
+    "camera": "over-the-shoulder from the crowd, then close on Milo",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Milo",
+     "Townsfolk"
+    ],
+    "action": "grey townsfolk freeze and stare; Milo, in all his accessories, scans the huts with a serious searching face",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. grey townsfolk freeze and stare; Milo, in all his accessories, scans the huts with a serious searching face.",
+    "sfx": "crowd gasp"
+   }
+  },
+  {
+   "text": "Suddenly, a small kid named Pip tripped and fell in the dirt.",
+   "say": "Suddenly, a small kid named Pip tripped and fell in the dirt.",
+   "beat": "conflict",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "low angle, ground level",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Pip",
+     "Townsfolk"
+    ],
+    "action": "Pip lies flat on the studded ground; grey townsfolk step around him without stopping",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Pip: small blocky kid avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, short spiky black hair, white bandage on one knee. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. Pip lies flat on the studded ground; grey townsfolk step around him without stopping.",
+    "sfx": "thud"
+   }
+  },
+  {
+   "text": "Milo helped him up, and pop! His red cap jumped onto Pip's head.",
+   "say": "Milo helped him up, and pop! His red cap jumped onto Pip's head.",
+   "beat": "conflict",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "medium two-shot",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Milo",
+     "Pip"
+    ],
+    "action": "Milo holds Pip's hand; the red cap from the top of Milo's hat stack is now on Pip's head, Pip's eyes wide",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Pip: small blocky kid avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, short spiky black hair, white bandage on one knee. Milo holds Pip's hand; the red cap from the top of Milo's hat stack is now on Pip's head, Pip's eyes wide.",
+    "sfx": "pop"
+   }
+  },
+  {
+   "text": "Pip touched it slowly. It was the first hat he had ever owned.",
+   "say": "Pip touched it slowly. It was the first hat he had ever owned.",
+   "beat": "conflict",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "close-up on Pip",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Pip"
+    ],
+    "action": "Pip touches the red cap on his head with both hands, eyes wide, a small smile",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Pip: small blocky kid avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, short spiky black hair, white bandage on one knee. Pip touches the red cap on his head with both hands, eyes wide, a small smile.",
+    "sfx": "soft chime"
+   }
+  },
+  {
+   "text": "But something was strange. Milo did not look sad at all.",
+   "say": "But something was strange. Milo did not look sad at all.",
+   "beat": "conflict",
+   "words": 11,
+   "shot": {
+    "seconds": 3.1,
+    "camera": "close-up on Milo's face",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Milo"
+    ],
+    "action": "Milo, missing his red cap, smiles calmly at Pip",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Milo, missing his red cap, smiles calmly at Pip."
+   }
+  },
+  {
+   "text": "Then Mayor Tilda, the oldest person in town, walked over with her cane.",
+   "say": "Then Mayor Tilda, the oldest person in town, walked over with her cane.",
+   "beat": "conflict",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "tracking shot following her cane",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Mayor Tilda"
+    ],
+    "action": "Mayor Tilda walks slowly across the square toward the camera, leaning on her wooden cane",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Mayor Tilda: blocky old woman avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, white hair bun, bent back, wooden walking cane. Mayor Tilda walks slowly across the square toward the camera, leaning on her wooden cane.",
+    "sfx": "cane taps"
+   }
+  },
+  {
+   "text": "She held up her bare hands. She did not own a single thing.",
+   "say": "She held up her bare hands. She did not own a single thing.",
+   "beat": "conflict",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "close-up on her empty hands, then her face",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Mayor Tilda"
+    ],
+    "action": "Mayor Tilda holds up two empty yellow hands; no hat, no glasses, no scarf, nothing",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Mayor Tilda: blocky old woman avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, white hair bun, bent back, wooden walking cane. Mayor Tilda holds up two empty yellow hands; no hat, no glasses, no scarf, nothing."
+   }
+  },
+  {
+   "text": "Long ago, she had helped people too, and the rule took everything.",
+   "say": "Long ago, she had helped people too, and the rule took everything.",
+   "beat": "conflict",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "flashback, slow push-in",
+    "location": "Town square",
+    "lighting": "warm orange sunset light, long shadows",
+    "characters": [
+     "Young Tilda",
+     "Townsfolk"
+    ],
+    "action": "flashback: Young Tilda carries a townsperson's basket while her last hat lifts off her dark brown hair bun and lands on the townsperson",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, warm orange sunset light, long shadows, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Young Tilda: blocky young woman avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, dark brown hair bun, straight back, no cane. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. flashback: Young Tilda carries a townsperson's basket while her last hat lifts off her dark brown hair bun and lands on the townsperson.",
+    "sfx": "soft music"
+   }
+  },
+  {
+   "text": "She told Milo to stop, or he would end up like her. He refused.",
+   "say": "She told Milo to stop, or he would end up like her. He refused.",
+   "beat": "conflict",
+   "words": 14,
+   "shot": {
+    "seconds": 4.0,
+    "camera": "over-the-shoulder from Tilda to Milo",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Mayor Tilda",
+     "Milo"
+    ],
+    "action": "Mayor Tilda points her cane at Milo with a stern face; Milo smiles and shakes his head",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Mayor Tilda: blocky old woman avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, white hair bun, bent back, wooden walking cane. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Mayor Tilda points her cane at Milo with a stern face; Milo smiles and shakes his head."
+   }
+  },
+  {
+   "text": "The next morning, the grumpy baker dropped a huge tray of bread.",
+   "say": "The next morning, the grumpy baker dropped a huge tray of bread.",
+   "beat": "escalate",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "wide, slight high angle",
+    "location": "Bakery",
+    "lighting": "soft early-morning light, pale sky",
+    "characters": [
+     "The baker"
+    ],
+    "action": "round loaves roll across the street; the baker stands with an empty tray and a grumpy face",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, soft early-morning light, pale sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick bakery: a small grey block shop with a straw roof, wooden counter, round loaves of bread, studded green baseplate street. The baker: large round blocky man avatar with yellow head and yellow hands, plain grey shirt, white apron, bald head, flour on his cheeks. round loaves roll across the street; the baker stands with an empty tray and a grumpy face.",
+    "sfx": "clatter"
+   }
+  },
+  {
+   "text": "Milo picked up every loaf, and his green scarf flew onto the baker.",
+   "say": "Milo picked up every loaf, and his green scarf flew onto the baker.",
+   "beat": "escalate",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "medium two-shot",
+    "location": "Bakery",
+    "lighting": "soft early-morning light, pale sky",
+    "characters": [
+     "Milo",
+     "The baker"
+    ],
+    "action": "Milo hands the bread back; Milo's green scarf is now around the baker's neck, the baker scowling",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, soft early-morning light, pale sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick bakery: a small grey block shop with a straw roof, wooden counter, round loaves of bread, studded green baseplate street. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. The baker: large round blocky man avatar with yellow head and yellow hands, plain grey shirt, white apron, bald head, flour on his cheeks. Milo hands the bread back; Milo's green scarf is now around the baker's neck, the baker scowling.",
+    "sfx": "whoosh"
+   }
+  },
+  {
+   "text": "But the baker did not smile. He yelled at Milo to stay away.",
+   "say": "But the baker did not smile. He yelled at Milo to stay away.",
+   "beat": "escalate",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "low angle on the baker",
+    "location": "Bakery",
+    "lighting": "soft early-morning light, pale sky",
+    "characters": [
+     "The baker",
+     "Milo"
+    ],
+    "action": "the baker points angrily at the road with flour flying from his hands; Milo steps back",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, soft early-morning light, pale sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick bakery: a small grey block shop with a straw roof, wooden counter, round loaves of bread, studded green baseplate street. The baker: large round blocky man avatar with yellow head and yellow hands, plain grey shirt, white apron, bald head, flour on his cheeks. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. the baker points angrily at the road with flour flying from his hands; Milo steps back."
+   }
+  },
+  {
+   "text": "Then Milo saw it. The baker already wore the red scarf Milo knitted.",
+   "say": "Then Milo saw it. The baker already wore the red scarf Milo knitted.",
+   "beat": "escalate",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "close-up on the baker's neck, Milo in the foreground",
+    "location": "Bakery",
+    "lighting": "soft early-morning light, pale sky",
+    "characters": [
+     "The baker",
+     "Milo"
+    ],
+    "action": "a small hand-knitted red scarf sits under the green scarf on the baker's neck; Milo stares at it in shock",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, soft early-morning light, pale sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick bakery: a small grey block shop with a straw roof, wooden counter, round loaves of bread, studded green baseplate street. The baker: large round blocky man avatar with yellow head and yellow hands, plain grey shirt, white apron, bald head, flour on his cheeks. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. a small hand-knitted red scarf sits under the green scarf on the baker's neck; Milo stares at it in shock.",
+    "sfx": "sting"
+   }
+  },
+  {
+   "text": "Meanwhile, the town grew scared. Neighbours slammed their doors as Milo walked by.",
+   "say": "Meanwhile, the town grew scared. Neighbours slammed their doors as Milo walked by.",
+   "beat": "escalate",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "tracking shot down a row of huts",
+    "location": "Town square",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Milo",
+     "Townsfolk"
+    ],
+    "action": "Milo walks past huts as grey townsfolk slam their doors and shutters one after another",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. Milo walks past huts as grey townsfolk slam their doors and shutters one after another.",
+    "sfx": "doors slam"
+   }
+  },
+  {
+   "text": "By sunset, Milo had given away everything but his blue shirt.",
+   "say": "By sunset, Milo had given away everything but his blue shirt.",
+   "beat": "escalate",
+   "words": 11,
+   "shot": {
+    "seconds": 3.1,
+    "camera": "wide, back-lit, lonely framing",
+    "location": "Town square",
+    "lighting": "warm orange sunset light, long shadows",
+    "characters": [
+     "Milo"
+    ],
+    "action": "Milo stands alone in the empty square with no accessories, only his blue shirt and grey pants",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, warm orange sunset light, long shadows, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Milo stands alone in the empty square with no accessories, only his blue shirt and grey pants.",
+    "sfx": "wind"
+   }
+  },
+  {
+   "text": "Then he saw tiny footprints leading from every door up to the lighthouse.",
+   "say": "Then he saw tiny footprints leading from every door up to the lighthouse.",
+   "beat": "escalate",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "tracking shot along the ground, then wide up the hill",
+    "location": "Lighthouse hill",
+    "lighting": "warm orange sunset light, long shadows",
+    "characters": [
+     "Milo"
+    ],
+    "action": "small glowing footprints run along the dirt path up the hill; Milo follows them toward the lighthouse",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, warm orange sunset light, long shadows, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse hill: a grassy studded green hill with a winding dirt path up to an old white-and-red block lighthouse, sea behind. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. small glowing footprints run along the dirt path up the hill; Milo follows them toward the lighthouse.",
+    "sfx": "footsteps"
+   }
+  },
+  {
+   "text": "Under the lighthouse, he found a small, dark cellar with one lantern.",
+   "say": "Under the lighthouse, he found a small, dark cellar with one lantern.",
+   "beat": "escalate",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "slow push-in through the low door",
+    "location": "Lighthouse cellar",
+    "lighting": "dim cellar, only the warm glow of one small lantern, dark corners, no daylight",
+    "characters": [
+     "Milo"
+    ],
+    "action": "Milo opens the low wooden door and looks into the dark stone room lit by one small lantern",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dim cellar, only the warm glow of one small lantern, dark corners, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse cellar: a small empty stone room under the lighthouse, one wooden crate, bare stone walls, a low wooden door. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Milo opens the low wooden door and looks into the dark stone room lit by one small lantern.",
+    "sfx": "creak"
+   }
+  },
+  {
+   "text": "And in the corner sat a little girl in plain grey clothes.",
+   "say": "And in the corner sat a little girl in plain grey clothes.",
+   "beat": "reveal",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "slow dolly toward the corner",
+    "location": "Lighthouse cellar",
+    "lighting": "dim cellar, only the warm glow of one small lantern, dark corners, no daylight",
+    "characters": [
+     "Lena"
+    ],
+    "action": "Lena sits alone on the wooden crate, hugging her knees, her lantern beside her",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dim cellar, only the warm glow of one small lantern, dark corners, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse cellar: a small empty stone room under the lighthouse, one wooden crate, bare stone walls, a low wooden door. Lena: small blocky girl avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, two brown pigtails, holding a small glowing lantern. Lena sits alone on the wooden crate, hugging her knees, her lantern beside her."
+   }
+  },
+  {
+   "text": "Milo froze. It was Lena, his little sister. She ran away months ago.",
+   "say": "Milo froze. It was Lena, his little sister. She ran away months ago.",
+   "beat": "reveal",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "fast push-in on Milo, then reverse on Lena",
+    "location": "Lighthouse cellar",
+    "lighting": "dim cellar, only the warm glow of one small lantern, dark corners, no daylight",
+    "characters": [
+     "Milo",
+     "Lena"
+    ],
+    "action": "Milo's eyes go wide; Lena slowly lifts her head, her pigtails swinging, and looks at him",
+    "motion": true,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dim cellar, only the warm glow of one small lantern, dark corners, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse cellar: a small empty stone room under the lighthouse, one wooden crate, bare stone walls, a low wooden door. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Lena: small blocky girl avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, two brown pigtails, holding a small glowing lantern. Milo's eyes go wide; Lena slowly lifts her head, her pigtails swinging, and looks at him.",
+    "sfx": "heartbeat"
+   }
+  },
+  {
+   "text": "Every night, she had sneaked out to help people while they slept.",
+   "say": "Every night, she had sneaked out to help people while they slept.",
+   "beat": "reveal",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "wide night shot",
+    "location": "Town square",
+    "lighting": "dark blue night, moonlight, warm lantern glow, no daylight",
+    "characters": [
+     "Lena"
+    ],
+    "action": "Lena tiptoes between dark huts carrying her small lantern and a bowl of soup",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dark blue night, moonlight, warm lantern glow, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Lena: small blocky girl avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, two brown pigtails, holding a small glowing lantern. Lena tiptoes between dark huts carrying her small lantern and a bowl of soup.",
+    "sfx": "crickets"
+   }
+  },
+  {
+   "text": "Each time, the rule took one thing from her and left it on them.",
+   "say": "Each time, the rule took one thing from her and left it on them.",
+   "beat": "reveal",
+   "words": 14,
+   "shot": {
+    "seconds": 4.0,
+    "camera": "close-up on Lena",
+    "location": "Town square",
+    "lighting": "dark blue night, moonlight, warm lantern glow, no daylight",
+    "characters": [
+     "Lena",
+     "Townsfolk"
+    ],
+    "action": "a tiny pink ribbon lifts off Lena's pigtail and floats onto a sleeping townsperson's head",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dark blue night, moonlight, warm lantern glow, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town square: studded green baseplate ground, grey straw-roof huts in a circle, a dry stone fountain, round low-poly trees made of smooth parts. Lena: small blocky girl avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, two brown pigtails, holding a small glowing lantern. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. a tiny pink ribbon lifts off Lena's pigtail and floats onto a sleeping townsperson's head.",
+    "sfx": "soft whoosh"
+   }
+  },
+  {
+   "text": "The ribbon, the hair clip, even the red scarf were all hers.",
+   "say": "The ribbon, the hair clip, even the red scarf were all hers.",
+   "beat": "reveal",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "slow push-in on Lena",
+    "location": "Lighthouse cellar",
+    "lighting": "dim cellar, only the warm glow of one small lantern, dark corners, no daylight",
+    "characters": [
+     "Lena"
+    ],
+    "action": "Lena touches her bare neck and bare pigtails, looking down",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dim cellar, only the warm glow of one small lantern, dark corners, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse cellar: a small empty stone room under the lighthouse, one wooden crate, bare stone walls, a low wooden door. Lena: small blocky girl avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, two brown pigtails, holding a small glowing lantern. Lena touches her bare neck and bare pigtails, looking down."
+   }
+  },
+  {
+   "text": "Lena started to cry. She thought being kind only made you lose.",
+   "say": "Lena started to cry. She thought being kind only made you lose.",
+   "beat": "reveal",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "close-up two-shot",
+    "location": "Lighthouse cellar",
+    "lighting": "dim cellar, only the warm glow of one small lantern, dark corners, no daylight",
+    "characters": [
+     "Lena",
+     "Milo"
+    ],
+    "action": "Lena cries; Milo kneels in front of her and holds her hands",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dim cellar, only the warm glow of one small lantern, dark corners, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse cellar: a small empty stone room under the lighthouse, one wooden crate, bare stone walls, a low wooden door. Lena: small blocky girl avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, two brown pigtails, holding a small glowing lantern. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Lena cries; Milo kneels in front of her and holds her hands."
+   }
+  },
+  {
+   "text": "But then, Pip ran in, still wearing his red cap. He had followed Milo.",
+   "say": "But then, Pip ran in, still wearing his red cap. He had followed Milo.",
+   "beat": "resolution",
+   "words": 14,
+   "shot": {
+    "seconds": 4.0,
+    "camera": "wide from inside toward the door",
+    "location": "Lighthouse cellar",
+    "lighting": "dim cellar, only the warm glow of one small lantern, dark corners, no daylight",
+    "characters": [
+     "Pip",
+     "Milo",
+     "Lena"
+    ],
+    "action": "Pip in the red cap bursts through the low door, out of breath",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dim cellar, only the warm glow of one small lantern, dark corners, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse cellar: a small empty stone room under the lighthouse, one wooden crate, bare stone walls, a low wooden door. Pip: small blocky kid avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, short spiky black hair, white bandage on one knee. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Lena: small blocky girl avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, two brown pigtails, holding a small glowing lantern. Pip in the red cap bursts through the low door, out of breath.",
+    "sfx": "door bang"
+   }
+  },
+  {
+   "text": "He looked at Milo and said two words nobody here ever said. Thank you.",
+   "say": "He looked at Milo and said two words nobody here ever said. Thank you.",
+   "beat": "resolution",
+   "words": 14,
+   "shot": {
+    "seconds": 4.0,
+    "camera": "close-up on Pip",
+    "location": "Lighthouse cellar",
+    "lighting": "dim cellar, only the warm glow of one small lantern, dark corners, no daylight",
+    "characters": [
+     "Pip"
+    ],
+    "action": "Pip touches his red cap and looks at Milo with a big shy smile, bowing his head",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dim cellar, only the warm glow of one small lantern, dark corners, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse cellar: a small empty stone room under the lighthouse, one wooden crate, bare stone walls, a low wooden door. Pip: small blocky kid avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, short spiky black hair, white bandage on one knee. Pip touches his red cap and looks at Milo with a big shy smile, bowing his head."
+   }
+  },
+  {
+   "text": "Suddenly, Milo's hair blazed gold, and a brand new red cap appeared.",
+   "say": "Suddenly, Milo's hair blazed gold, and a brand new red cap appeared.",
+   "beat": "resolution",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "low angle, medium shot",
+    "location": "Lighthouse cellar",
+    "lighting": "dim cellar, only the warm glow of one small lantern, dark corners, no daylight",
+    "characters": [
+     "Milo",
+     "Pip"
+    ],
+    "action": "Milo's hair shines bright gold, lighting the whole cellar; a new red cap sits on his head while Pip still wears his own",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dim cellar, only the warm glow of one small lantern, dark corners, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse cellar: a small empty stone room under the lighthouse, one wooden crate, bare stone walls, a low wooden door. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Pip: small blocky kid avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, short spiky black hair, white bandage on one knee. Milo's hair shines bright gold, lighting the whole cellar; a new red cap sits on his head while Pip still wears his own.",
+    "sfx": "sparkle pop"
+   }
+  },
+  {
+   "text": "That was the real rule. Kindness waited for thanks, and nobody knew to thank Lena.",
+   "say": "That was the real rule. Kindness waited for thanks, and nobody knew to thank Lena.",
+   "beat": "resolution",
+   "words": 15,
+   "shot": {
+    "seconds": 4.3,
+    "camera": "slow push-in on Milo and Lena",
+    "location": "Lighthouse cellar",
+    "lighting": "dim cellar, only the warm glow of one small lantern, dark corners, no daylight",
+    "characters": [
+     "Milo",
+     "Lena"
+    ],
+    "action": "Milo and Lena look at each other in the golden glow",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dim cellar, only the warm glow of one small lantern, dark corners, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse cellar: a small empty stone room under the lighthouse, one wooden crate, bare stone walls, a low wooden door. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Lena: small blocky girl avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, two brown pigtails, holding a small glowing lantern. Milo and Lena look at each other in the golden glow.",
+    "sfx": "music swell"
+   }
+  },
+  {
+   "text": "And back home, people always said thank you. That was why Milo wore so much.",
+   "say": "And back home, people always said thank you. That was why Milo wore so much.",
+   "beat": "resolution",
+   "words": 15,
+   "shot": {
+    "seconds": 4.3,
+    "camera": "warm flashback, wide",
+    "location": "Town gate",
+    "lighting": "bright game daylight, clear blue sky",
+    "characters": [
+     "Milo",
+     "Home folk"
+    ],
+    "action": "flashback in Milo's home village: Home folk bow and say thanks to Milo while his hats, scarves, glasses and backpack appear on him one by one: a tall stack of five hats (red cap on top, then purple beanie, teal bucket hat, yellow straw hat, black top hat), three scarves with a green scarf on the outside, two pairs of round glasses and a big orange backpack",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, bright game daylight, clear blue sky, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Mirrowick town gate: a simple wooden arch gate on a dirt path, grey straw-roof huts behind it, studded green baseplate ground. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Home folk: smiling blocky avatars with yellow heads and yellow hands in bright red, purple and teal shirts, each wearing one colourful hat. flashback in Milo's home village: Home folk bow and say thanks to Milo while his hats, scarves, glasses and backpack appear on him one by one: a tall stack of five hats (red cap on top, then purple beanie, teal bucket hat, yellow straw hat, black top hat), three scarves with a green scarf on the outside, two pairs of round glasses and a big orange backpack."
+   }
+  },
+  {
+   "text": "Pip ran down the hill and told the whole town about Lena.",
+   "say": "Pip ran down the hill and told the whole town about Lena.",
+   "beat": "resolution",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "tracking shot, fast",
+    "location": "Lighthouse hill",
+    "lighting": "dark blue night, moonlight, warm lantern glow, no daylight",
+    "characters": [
+     "Pip",
+     "Townsfolk"
+    ],
+    "action": "Pip runs down the moonlit path waving to a crowd of grey townsfolk holding lanterns",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dark blue night, moonlight, warm lantern glow, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse hill: a grassy studded green hill with a winding dirt path up to an old white-and-red block lighthouse, sea behind. Pip: small blocky kid avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, short spiky black hair, white bandage on one knee. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. Pip runs down the moonlit path waving to a crowd of grey townsfolk holding lanterns.",
+    "sfx": "running"
+   }
+  },
+  {
+   "text": "By sunrise, the whole town had climbed the hill and thanked her.",
+   "say": "By sunrise, the whole town had climbed the hill and thanked her.",
+   "beat": "resolution",
+   "words": 12,
+   "shot": {
+    "seconds": 3.4,
+    "camera": "wide, high angle down the path",
+    "location": "Lighthouse hill",
+    "lighting": "golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours",
+    "characters": [
+     "Townsfolk",
+     "Lena"
+    ],
+    "action": "a long line of grey townsfolk with lanterns bows to Lena at the lighthouse door",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse hill: a grassy studded green hill with a winding dirt path up to an old white-and-red block lighthouse, sea behind. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. Lena: small blocky girl avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, two brown pigtails, holding a small glowing lantern. a long line of grey townsfolk with lanterns bows to Lena at the lighthouse door.",
+    "sfx": "footsteps"
+   }
+  },
+  {
+   "text": "Hats, ribbons and scarves rained down on her, and the grey town turned bright.",
+   "say": "Hats, ribbons and scarves rained down on her, and the grey town turned bright.",
+   "beat": "resolution",
+   "words": 14,
+   "shot": {
+    "seconds": 4.0,
+    "camera": "low angle looking up, then aerial pull-back",
+    "location": "Lighthouse hill",
+    "lighting": "golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours",
+    "characters": [
+     "Lena",
+     "Townsfolk"
+    ],
+    "action": "colourful hats, ribbons and scarves fall from the sky onto Lena; the townsfolk's grey clothes turn bright colours",
+    "motion": true,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse hill: a grassy studded green hill with a winding dirt path up to an old white-and-red block lighthouse, sea behind. Lena: small blocky girl avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, two brown pigtails, holding a small glowing lantern. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. colourful hats, ribbons and scarves fall from the sky onto Lena; the townsfolk's grey clothes turn bright colours.",
+    "sfx": "chimes"
+   }
+  },
+  {
+   "text": "Last of all, a new red scarf wrapped around her neck.",
+   "say": "Last of all, a new red scarf wrapped around her neck.",
+   "beat": "resolution",
+   "words": 11,
+   "shot": {
+    "seconds": 3.1,
+    "camera": "close-up on Lena",
+    "location": "Lighthouse hill",
+    "lighting": "golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours",
+    "characters": [
+     "Lena"
+    ],
+    "action": "a new hand-knitted red scarf wraps around Lena's neck; she holds it and smiles",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse hill: a grassy studded green hill with a winding dirt path up to an old white-and-red block lighthouse, sea behind. Lena: small blocky girl avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, two brown pigtails, holding a small glowing lantern. a new hand-knitted red scarf wraps around Lena's neck; she holds it and smiles.",
+    "sfx": "soft chime"
+   }
+  },
+  {
+   "text": "Lena hugged her brother tight. She was finally going home.",
+   "say": "Lena hugged her brother tight. She was finally going home.",
+   "beat": "resolution",
+   "words": 10,
+   "shot": {
+    "seconds": 3.0,
+    "camera": "medium two-shot",
+    "location": "Lighthouse hill",
+    "lighting": "golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours",
+    "characters": [
+     "Milo",
+     "Lena"
+    ],
+    "action": "Milo and Lena hug in front of the lighthouse, both wearing bright accessories",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse hill: a grassy studded green hill with a winding dirt path up to an old white-and-red block lighthouse, sea behind. Milo: blocky boy avatar with yellow head and yellow hands, bright blue shirt, dark grey pants, messy brown hair, small smile. Lena: small blocky girl avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, two brown pigtails, holding a small glowing lantern. Milo and Lena hug in front of the lighthouse, both wearing bright accessories."
+   }
+  },
+  {
+   "text": "But then, everyone turned to Mayor Tilda, still grey and alone.",
+   "say": "But then, everyone turned to Mayor Tilda, still grey and alone.",
+   "beat": "ending",
+   "words": 11,
+   "shot": {
+    "seconds": 3.1,
+    "camera": "over-the-shoulder from the crowd",
+    "location": "Lighthouse hill",
+    "lighting": "golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours",
+    "characters": [
+     "Mayor Tilda",
+     "Townsfolk"
+    ],
+    "action": "the colourful crowd turns toward Mayor Tilda, who stands at the back, still all grey, leaning on her cane",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse hill: a grassy studded green hill with a winding dirt path up to an old white-and-red block lighthouse, sea behind. Mayor Tilda: blocky old woman avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, white hair bun, bent back, wooden walking cane. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. the colourful crowd turns toward Mayor Tilda, who stands at the back, still all grey, leaning on her cane.",
+    "sfx": "music drops"
+   }
+  },
+  {
+   "text": "So the whole town said it together. Thank you, Mayor Tilda.",
+   "say": "So the whole town said it together. Thank you, Mayor Tilda.",
+   "beat": "ending",
+   "words": 11,
+   "shot": {
+    "seconds": 3.1,
+    "camera": "wide crowd shot",
+    "location": "Lighthouse hill",
+    "lighting": "golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours",
+    "characters": [
+     "Townsfolk",
+     "Mayor Tilda"
+    ],
+    "action": "the whole colourful crowd bows to Mayor Tilda at once",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse hill: a grassy studded green hill with a winding dirt path up to an old white-and-red block lighthouse, sea behind. Townsfolk: blocky avatars with yellow heads and yellow hands, all in identical plain grey shirts and grey pants. Mayor Tilda: blocky old woman avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, white hair bun, bent back, wooden walking cane. the whole colourful crowd bows to Mayor Tilda at once."
+   }
+  },
+  {
+   "text": "Her hair glowed gold, and a shining golden crown appeared on her head.",
+   "say": "Her hair glowed gold, and a shining golden crown appeared on her head.",
+   "beat": "ending",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "low angle, slow push-in",
+    "location": "Lighthouse hill",
+    "lighting": "golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours",
+    "characters": [
+     "Mayor Tilda"
+    ],
+    "action": "Mayor Tilda's white hair bun glows gold and a golden crown sits on it; she touches it in surprise",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, golden sunrise light breaking over the sea, warm lantern glow, bright saturated colours, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse hill: a grassy studded green hill with a winding dirt path up to an old white-and-red block lighthouse, sea behind. Mayor Tilda: blocky old woman avatar with yellow head and yellow hands, plain grey shirt, plain grey pants, white hair bun, bent back, wooden walking cane. Mayor Tilda's white hair bun glows gold and a golden crown sits on it; she touches it in surprise.",
+    "sfx": "big shimmer"
+   }
+  },
+  {
+   "text": "But deep in the dark cellar, one tiny chest stayed locked.",
+   "say": "But deep in the dark cellar, one tiny chest stayed locked.",
+   "beat": "ending",
+   "words": 11,
+   "shot": {
+    "seconds": 3.1,
+    "camera": "slow dolly through the dark cellar",
+    "location": "Lighthouse cellar",
+    "lighting": "dim cellar, only the warm glow of one small lantern, dark corners, no daylight",
+    "characters": [],
+    "action": "the empty cellar; a tiny wooden chest with an iron lock sits alone on the floor",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dim cellar, only the warm glow of one small lantern, dark corners, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse cellar: a small empty stone room under the lighthouse, one wooden crate, bare stone walls, a low wooden door. the empty cellar; a tiny wooden chest with an iron lock sits alone on the floor.",
+    "sfx": "creak"
+   }
+  },
+  {
+   "text": "And a note on it said: for the one who was helped first.",
+   "say": "And a note on it said: for the one who was helped first.",
+   "beat": "ending",
+   "words": 13,
+   "shot": {
+    "seconds": 3.7,
+    "camera": "extreme close-up",
+    "location": "Lighthouse cellar",
+    "lighting": "dim cellar, only the warm glow of one small lantern, dark corners, no daylight",
+    "characters": [],
+    "action": "a small folded paper note tied to the locked chest with string, no writing visible; the lantern flickers and goes out",
+    "motion": false,
+    "prompt": "Roblox-style 3D game screenshot look: blocky R15-style avatar characters with square blocky limbs, smooth plastic shading, simple flat-textured faces, catalog-style hair and hat accessories, bright low-poly game map with round low-poly Roblox-style trees made of smooth parts, studded baseplate ground and simple buildings, dim cellar, only the warm glow of one small lantern, dark corners, no daylight, vertical 9:16 framing, no logos, no UI, no text, no signs, no letters. Lighthouse cellar: a small empty stone room under the lighthouse, one wooden crate, bare stone walls, a low wooden door. a small folded paper note tied to the locked chest with string, no writing visible; the lantern flickers and goes out.",
+    "sfx": "lantern out"
+   }
+  }
+ ],
+ "word_count": 594,
+ "words_per_second": 3.5,
+ "est_seconds": 169.7,
+ "shot_plan_seconds": 169.3,
+ "shot_count": 48,
+ "motion_shots": 6,
+ "longest_sentence_words": 14,
+ "production_note": "Hybrid: motion=true shots are image-to-video clips (hook transfer, 3 rule-example transfers, Lena reveal, town colour transformation); motion=false shots are still images with pan/zoom. Lighting is set per shot from lighting_presets and replaces 'default game lighting' in the style line. No on-screen text anywhere (the chest note is folded, no writing). Final shot lengths follow the Adam audio timing.",
+ "upload": {
+  "title": "In This Town, Being Kind Costs You Your Hat... #Shorts",
+  "description": "In this town, every kind thing you do costs you something you are wearing.\nWould you still help people here? Comment YES or NO.\nA boy covered in hats and scarves keeps helping a town that forgot kindness.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animation #story #shorts",
+  "tags": [
+   "roblox story",
+   "in this town",
+   "animated story",
+   "kindness story",
+   "rule based world",
+   "story time animation",
+   "shorts story",
+   "roblox animation"
+  ]
+ },
+ "changes_from_previous": "v3 fixes the v2 QA notes: (1) Milo's hair no longer glows before anyone thanks him (line 15 is now 'Milo did not look sad at all'); the glow appears only on thanks (Milo line 36, Tilda line 46). (2) Restored Pip's first-hat beat (line 14) and line 34 says he came still wearing his red cap, which motivates his thank-you. (3) New fixed looks: 'Young Tilda' (dark brown hair bun, straight back, no cane) for the line-18 flashback, and 'Home folk' for the line-38 flashback; Milo's hat stack colours are fixed and reused. (4) Celebration shots (lines 40-46) use a new 'sunrise' lighting preset and line 40 says 'By sunrise'. (5) Line 1 shows a backpack transfer and line 2 a bow tie, so no transfer repeats the line-3 hat. Line 37 adds 'nobody knew to thank Lena'."
+}
