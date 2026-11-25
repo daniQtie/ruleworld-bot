@@ -1,0 +1,477 @@
+{
+ "id": "2026-11-28-story-24",
+ "version": 1,
+ "source": "Gemini writer, format bank: Rule world",
+ "hook_type": {
+  "number": null,
+  "name": "format bank"
+ },
+ "format": {
+  "number": null,
+  "name": "Rule world"
+ },
+ "title_working": "In This Town, Every Kid Gets A Floating Defense Number",
+ "hook_text": "STUCK AT ZERO?",
+ "hook_until": 2.6,
+ "music": "drift",
+ "music_gain": 0.13,
+ "world_rule": "In This Town, Every Kid Gets A Floating Defense Number",
+ "lines": [
+  {
+   "text": "In this town, every kid gets a floating number showing how many pounds of force they can reflect, so why was Mason stuck at zero?",
+   "say": "(serious) In this town, every kid gets a floating number showing how many pounds of force they can reflect, so why was Mason stuck at zero?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "hallway",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mason"
+    ],
+    "face": "confused",
+    "action": "still",
+    "camera": "push",
+    "prop": {
+     "type": "number",
+     "text": "0"
+    },
+    "board": "DEFENSE EVALUATION TODAY",
+    "tag": {
+     "name": "Mason",
+     "role": "Zero Score"
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "Mason wore heavy rubber boots every day, but his classmates teased him whenever he stumbled during gym class.",
+   "say": "(sad) Mason wore heavy rubber boots every day, but his classmates teased him whenever he stumbled during gym class.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Mason"
+    ],
+    "face": "sad",
+    "action": "walk",
+    "camera": "feet",
+    "prop": {
+     "type": "number",
+     "text": "0"
+    },
+    "board": "",
+    "tag": {
+     "name": "Mason",
+     "role": "Main Character"
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "So everyone laughed and called him useless, while Marcus bragged about his massive score of nine hundred.",
+   "say": "(angry) So everyone laughed and called him useless, while Marcus bragged about his massive score of nine hundred.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Marcus",
+     "Mason"
+    ],
+    "face": "smirk",
+    "action": "cheer",
+    "camera": "eye",
+    "prop": {
+     "type": "number",
+     "text": "900"
+    },
+    "board": "",
+    "tag": {
+     "name": "Marcus",
+     "role": "Class Leader"
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "But during afternoon recess, the sky suddenly turned deep purple as a rogue magnetic storm hit the playground.",
+   "say": "(worried) But during afternoon recess, the sky suddenly turned deep purple as a rogue magnetic storm hit the playground.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "sunset",
+    "mood": "danger",
+    "cast": [
+     "Mason",
+     "Marcus"
+    ],
+    "face": "scared",
+    "action": "think",
+    "camera": "wide",
+    "prop": {
+     "type": "smoke",
+     "text": "DANGER"
+    },
+    "board": "",
+    "tag": {
+     "name": "Storm",
+     "role": "Magnetic Anomaly"
+    },
+    "trans": "cut",
+    "glitch": true
+   },
+   "acting": {}
+  },
+  {
+   "text": "So the high defense numbers began attracting heavy metal debris from across the city straight toward the crowd.",
+   "say": "(nervous) So the high defense numbers began attracting heavy metal debris from across the city straight toward the crowd.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "sunset",
+    "mood": "danger",
+    "cast": [
+     "Marcus"
+    ],
+    "face": "shocked",
+    "action": "run",
+    "camera": "dutch",
+    "prop": {
+     "type": "tower",
+     "text": "COLLAPSE"
+    },
+    "board": "",
+    "tag": {
+     "name": "Debris",
+     "role": "Falling Metal"
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "Marcus tried to run, but his nine hundred score magnetised a giant steel beam and pinned him to the ground.",
+   "say": "(worried) Marcus tried to run, but his nine hundred score magnetised a giant steel beam and pinned him to the ground.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "sunset",
+    "mood": "danger",
+    "cast": [
+     "Marcus"
+    ],
+    "face": "sob",
+    "action": "hurt",
+    "camera": "low",
+    "prop": {
+     "type": "crack",
+     "text": "PINNED"
+    },
+    "board": "",
+    "tag": {
+     "name": "Marcus",
+     "role": "Trapped"
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "So Mason charged into the electrical wind, completely unfazed by the pull.",
+   "say": "(confident) So Mason charged into the electrical wind, completely unfazed by the pull.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "sunset",
+    "mood": "win",
+    "cast": [
+     "Mason"
+    ],
+    "face": "determined",
+    "action": "run",
+    "camera": "follow",
+    "prop": {
+     "type": "number",
+     "text": "0"
+    },
+    "board": "",
+    "tag": {
+     "name": "Mason",
+     "role": "Rescuer"
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "The truth was that Mason's zero score was not weakness, but absolute zero magnetic charge.",
+   "say": "(serious) The truth was that Mason's zero score was not weakness, but absolute zero magnetic charge.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "sunset",
+    "mood": "win",
+    "cast": [
+     "Mason",
+     "Marcus"
+    ],
+    "face": "determined",
+    "action": "pickup",
+    "camera": "close",
+    "prop": {
+     "type": "fire",
+     "text": "ZERO CHARGE"
+    },
+    "board": "",
+    "tag": {
+     "name": "Truth",
+     "role": "Insulated"
+    },
+    "trans": "flash",
+    "glitch": true
+   },
+   "acting": {}
+  },
+  {
+   "text": "His heavy rubber boots had kept his body grounded, allowing him to lift the steel beam safely off Marcus.",
+   "say": "(confident) His heavy rubber boots had kept his body grounded, allowing him to lift the steel beam safely off Marcus.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "sunset",
+    "mood": "win",
+    "cast": [
+     "Mason",
+     "Marcus"
+    ],
+    "face": "determined",
+    "action": "jump",
+    "camera": "ots",
+    "prop": {
+     "type": "stack",
+     "text": "LIFTED"
+    },
+    "board": "",
+    "tag": {
+     "name": "Rescue",
+     "role": "Lifting Beam"
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "So the zero rating was actually an emergency bypass created to save the town when shields went wild.",
+   "say": "(happy) So the zero rating was actually an emergency bypass created to save the town when shields went wild.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Mason"
+    ],
+    "face": "starstruck",
+    "action": "cheer",
+    "camera": "high",
+    "prop": {
+     "type": "sign",
+     "text": "HERO"
+    },
+    "board": "",
+    "tag": {
+     "name": "Bypass",
+     "role": "Safety System"
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "Marcus hugged Mason in tears, while the whole school cheered for the kid they once mocked.",
+   "say": "(happy) Marcus hugged Mason in tears, while the whole school cheered for the kid they once mocked.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Marcus",
+     "Mason"
+    ],
+    "face": "happy",
+    "action": "hug",
+    "camera": "close",
+    "prop": {
+     "type": "number",
+     "text": "0"
+    },
+    "board": "",
+    "tag": {
+     "name": "Marcus",
+     "role": "Grateful"
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  },
+  {
+   "text": "And now nobody chuckles when they ask why Mason was stuck at zero.",
+   "say": "(soft tone) And now nobody chuckles when they ask why Mason was stuck at zero.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "set": "hallway",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mason"
+    ],
+    "face": "smirk",
+    "action": "still",
+    "camera": "pull",
+    "prop": {
+     "type": "number",
+     "text": "0"
+    },
+    "board": "ZERO HERO",
+    "tag": {
+     "name": "Mason",
+     "role": "Zero Score"
+    },
+    "trans": "cut",
+    "glitch": false
+   },
+   "acting": {}
+  }
+ ],
+ "word_count": 209,
+ "est_seconds": 61.5,
+ "tail_hold": 2.5,
+ "upload": {
+  "title": "In This Town, Every Kid Gets A Floating Defense Number #Shorts",
+  "description": "Mason was mocked for having a zero defense score until a magnetic storm struck the school! Watch how his weakness became the ultimate shield.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "roblox",
+   "roblox animation",
+   "rule world",
+   "storytime",
+   "shorts",
+   "roblox stories",
+   "animated story",
+   "rule world stories",
+   "animated story",
+   "roblox story"
+  ]
+ }
+}
