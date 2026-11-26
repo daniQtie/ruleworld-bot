@@ -317,7 +317,34 @@ NOTE_LABEL = re.compile(r"(?i)^(title|characters?|cast|theme|genre|scene(\s*\d+)
 SPOKEN_LABEL = re.compile(r"(?i)^(narration|narrator|voice ?over|vo|adam)\s*(\([^)]*\))?\s*:\s*")
 
 
+def _sentences(x):
+    parts, cur = [], ""
+    for sent in re.split(r"(?<=[.!?…])\s+(?=[\"“A-Z0-9])", x):   # one or two sentences per scene
+        if cur and len((cur + " " + sent).split()) > 22:
+            parts.append(cur)
+            cur = sent
+        else:
+            cur = (cur + " " + sent).strip()
+    return [p for p in parts + [cur] if p]
+
+
+def split_quoted(text):
+    """Scripts that put every spoken line in quotes: the quotes are spoken, everything between them is a stage note."""
+    title = re.search(r"(?im)^\s*title\s*:\s*(.+)$", text)
+    out, pos = [], 0
+    for m in re.finditer(r"[“\"]([^”\"]{2,})[”\"]", text, re.S):
+        notes = [n.strip(" *-•\t") for n in text[pos:m.start()].split("\n") if n.strip(" *-•\t")]
+        pos = m.end()
+        notes = [n for n in notes if not re.match(r"(?i)^title\s*:", n)]
+        for j, line in enumerate(l.strip() for l in m.group(1).split("\n")):
+            for k, part in enumerate(_sentences(" ".join(line.split()))):
+                out.append((part, notes if (j == 0 and k == 0) else []))
+    return (title.group(1).strip() if title else ""), out
+
+
 def split_owner(text):
+    if len(re.findall(r"[“\"][^”\"]{8,}[”\"]", text)) >= 3:
+        return split_quoted(text)
     """The owner's words, split by CODE (so they are never changed): returns (title, [(spoken line, notes before it)]).
     If the script labels its narration ("Narrator: ..."), only those lines are spoken and everything else is a note."""
     clean = lambda t: re.sub(r"^[\s*_#>\-•]+|[\s*_]+$", "", t).strip()
@@ -361,10 +388,96 @@ def _names_in(text, mapping):
     return [c for orig, c in mapping.items() if re.search(rf"(?i)\b{re.escape(orig)}\b", text)]
 
 
+SET_WORDS = [("bedroom", r"bed(room)?\b|lying|pillow"), ("hospital", r"hospital|doctor|nurse"), ("police", r"police|jail|station"),
+             ("classroom", r"classroom|\bclass\b|teacher's"), ("hallway", r"hallway|school|locker"), ("library", r"library"),
+             ("shop", r"market|shop|store|vendor|stall|\bwork(ing|s|place)?\b|office|factory"), ("forest", r"forest|woods|\btree\b|grave|tomb|cemetery"),
+             ("cave", r"cave|tunnel"), ("lab", r"\blab\b|laboratory"), ("vault", r"vault|\bbank\b"), ("bunker", r"bunker|basement|attic"),
+             ("rooftop", r"rooftop|\broof\b"), ("house", r"\bhouse\b|\bhome\b|living room|kitchen|\bdoor\b"), ("field", r"field|park|river|garden|yard|treehouse"),
+             ("street", r"street|road|walking home|neighbou?rhood"), ("city", r"city|crowd"), ("town", r"town|village|square|plaza")]
+FACE_WORDS = [("sob", r"cry|cries|crying|tears|sobs"), ("angry", r"angry|anger|furious|glare|annoy|irritat|shout|yell"), ("scared", r"scared|terrif|fear|afraid|panic|shak|trembl"),
+              ("shocked", r"shock|stunned|gasp|freeze|frozen|scream"), ("surprised", r"surpris|suddenly"), ("laugh", r"laugh"), ("smirk", r"smirk|sarcas|teas"),
+              ("confused", r"confus|puzzl"), ("nervous", r"nervous|tense|hesitat|whisper"), ("worried", r"worr|anxious|weak|pale|tired|exhaust"),
+              ("determined", r"determin|brave|decid|focus|purpose|fight"), ("happy", r"happy|smil|warm|relie|peace|soft|grateful"),
+              ("sad", r"\bsad|alone|lonely|broken|empty|grave|miss|lost"), ("thinking", r"think|wonder|stare|notic|remember")]
+ACTION_WORDS = [("run", r"\bran\b|\brun|chase|rush"), ("hug", r"\bhug|embrac|holds? (her|his) hand|reach(es)? for"), ("cry", r"cry|cries|crying|sob"),
+                ("sit", r"\bsits?\b|sitting|\bsat\b|lying|\blies down"), ("walk", r"walk|arriv|approach|enter|leav"), ("point", r"point|accus|shout|yell|argu"),
+                ("cheer", r"cheer|celebrat"), ("dance", r"danc"), ("shock", r"shock|gasp|scream|freeze|frozen"), ("shiver", r"shiver|trembl|shak"),
+                ("pickup", r"pick|plac(e|es|ing)|reach|carr|work"), ("think", r"think|stare|notic|wonder|look"), ("wave", r"\bwave"),
+                ("disagree", r"shakes? (his|her|their) head|refus|rolls"), ("agree", r"\bnods?\b|agree"), ("hurt", r"fall|slip|collaps|hurt")]
+NAME_HINTS = [("grandma", r"mother|\bmom\b|grandmother|old woman|nanay"), ("grandpa", r"grandfather|old man|older"), ("dad", r"\bfather\b|\bdad\b|\bman\b"),
+              ("mom", r"\bwoman\b|\bwife\b"), ("mayor", r"mayor"), ("officer", r"police|officer|guard"), ("doctor", r"doctor"), ("teacher", r"teacher|boss"),
+              ("mia", r"\bgirl\b|girlfriend|sister|maya|female"), ("leo", r"narrator|protagonist|main character|\bi\b|\bboy\b|hero"), ("eli", r"friend|best friend")]
+
+
+def _owner_characters(text):
+    """{name or alias in the owner's script (lowercase): our cast name}."""
+    cast = {c.lower(): c for c in CAST}
+    found = {}
+    block = re.search(r"(?is)characters?\s*:\s*\n(.*?)(\n\s*\n|full |\[|$)", text)
+    names = []
+    for row in (block.group(1).split("\n") if block else []):
+        row = row.strip(" *-•\t")
+        if row:
+            names.append((re.split(r"\s*[–—(:\-]\s*", row, maxsplit=1)[0].strip(), row.lower()))
+    pool = [c for c in ("Leo", "Hana", "Eli", "Zoe", "Marcus", "Lucy", "Mason", "Pia")]
+    for name, row in names:
+        key = name.lower()
+        if not key or re.search(r"villager|people|crowd|background|townsp|monster|\bbug\b", key):
+            continue
+        pick = cast.get(key) or next((cast[c] for c, pat in NAME_HINTS if re.search(pat, row) and cast[c] not in found.values()), None)
+        pick = pick or next((c for c in pool if c not in found.values()), "Leo")
+        found[re.sub(r"^the\s+", "", key)] = pick
+    for low, c in cast.items():                      # cast names used directly in the script
+        if re.search(rf"(?i)\b{re.escape(low)}\b", text) and c not in found.values() and low not in found:
+            found[low] = c
+    return found or {"leo": "Leo"}
+
+
+def auto_plan(spoken, text):
+    """Backup director when Gemini is not available: place, people, feeling and action from the owner's own words and notes."""
+    people = _owner_characters(text)
+    hero = list(people.values())[0]
+    pick = lambda table, hay: next((k for k, pat in table if re.search(pat, hay)), None)
+    place, time_, focus, others, plan = "town", "day", hero, [], {}
+    cams = ["push", "two", "low", "push", "wide", "follow"]
+    for i, (words, notes) in enumerate(spoken, 1):
+        note, line = " ".join(notes[-3:]).lower(), words.lower()      # only the notes closest to the line
+        hay = note + " " + line
+        place = pick(SET_WORDS, note) or pick(SET_WORDS, line) or place
+        if re.search(r"night|midnight|dark|evening|lantern", note):
+            time_ = "night"
+        elif re.search(r"sunset|afternoon|golden", note):
+            time_ = "sunset"
+        elif re.search(r"morning|daytime|\bday\b", note):
+            time_ = "day"
+        def spots(h):
+            at = [(m.start(), c) for nm, c in people.items() if (m := re.search(rf"\b{re.escape(nm)}\b", h))]
+            return list(dict.fromkeys(c for _, c in sorted(at)))
+        # a speaker label right before the line ("Maya (sharp):", "Voiceover (Leo):") decides who we look at
+        last_note = notes[-1].lower() if notes else ""
+        speaker = spots(last_note) if last_note.endswith(":") else []
+        here = list(dict.fromkeys(speaker + spots(line) + spots(note)))
+        if here:
+            focus, others = here[0], here[1:4]
+        face = pick(FACE_WORDS, line) or pick(FACE_WORDS, note) or "thinking"
+        action = pick(ACTION_WORDS, line) or pick(ACTION_WORDS, note) or ("walk" if i == 1 else "talk")
+        if action == "cry":
+            face = "sob"
+        cast = [focus] + [c for c in others if c != focus]
+        if action == "hug" and len(cast) < 2:
+            cast.append(next((c for c in people.values() if c != focus), "Hana"))
+        shot = {"set": place, "time": time_, "cast": cast[:3], "action": action, "camera": "drone" if i == 1 else cams[i % len(cams)],
+                "mood": "danger" if re.search(r"monster|siren|terrif|attack", hay) else "sad" if face in ("sob", "sad") else "win" if face in ("laugh", "happy") and i > len(spoken) * 0.7 else "day"}
+        beat = "hook" if i == 1 else "ending" if i == len(spoken) else "escalation"
+        feel = {c: (face if c == focus else "worried" if face in ("sob", "sad", "scared", "shocked") else "neutral") for c in shot["cast"]}
+        plan[i] = {"beat": beat, "scene": "", "emotions": feel, "shot": shot}
+    return plan
+
+
 def from_owner(text, ep=None, notes=None, ver=1):
     """The owner sends their own script (any layout). Code splits the words; Gemini only plans the scenes."""
     e = env()
-    key = e.get("GEMINI_API_KEY") or sys.exit("GEMINI_API_KEY is missing in .env (free key: aistudio.google.com)")
+    key = e.get("GEMINI_API_KEY", "")
     ep, text = ep or next_id(), text.strip()[:9000]
     title, spoken = split_owner(text)
     if len(spoken) < 3:
@@ -407,8 +520,14 @@ Reply with JSON only: {{"title": "...", "hook_text": "2-5 WORDS", "characters": 
             if 1 <= n <= len(spoken) and isinstance(l.get("shot"), dict) and l["shot"].get("cast"):
                 plan.setdefault(n, l)
         print(f"owner script, pass {attempt}: {len(plan)}/{len(spoken)} lines planned")
-    if len(plan) < 0.5 * len(spoken):
-        raise RuntimeError(f"Gemini could only plan {len(plan)} of {len(spoken)} lines (free quota busy or used up). Try again later.")
+    backup = False
+    if len(plan) < len(spoken):          # Gemini quota used up or busy: the code directs the missing lines itself
+        if notes:
+            raise RuntimeError("Gemini is not available right now, so I cannot apply your change notes. Try Revise again later.")
+        backup = len(plan) < 0.5 * len(spoken)
+        auto = auto_plan(spoken, text)
+        plan = auto if backup else {**auto, **plan}
+        print("backup director used" if backup else "backup director filled the missing lines")
     lines, last = [], {"set": "town", "cast": ["Eli"]}
     for i, (words, _) in enumerate(spoken, 1):
         l = dict(plan.get(i) or {"beat": "escalation", "scene": "", "emotions": {}, "shot": {"set": last["set"], "cast": last["cast"], "action": "talk"}})
@@ -425,7 +544,7 @@ Reply with JSON only: {{"title": "...", "hook_text": "2-5 WORDS", "characters": 
               "title": (title or str(meta.get("title") or "") or lines[0]["text"])[:90],
               "story": {"characters": meta.get("characters") or []}})
     sc = to_script(ep, d, "town")
-    sc.update(version=ver, source="Owner's own script", format=dict(number=None, name="Your script"), owner_text=text, review=None)
+    sc.update(version=ver, source="Owner's own script", format=dict(number=None, name="Your script (backup director)" if backup else "Your script"), owner_text=text, review=None)
     if notes:
         sc["owner_text"] = (f"Title: {title}\n" if title else "") + "\n".join(l["text"] for l in lines)
     f = ROOT / "scripts" / f"{ep}.v{ver}.json"
