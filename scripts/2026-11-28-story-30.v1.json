@@ -1,0 +1,1197 @@
+{
+ "id": "2026-11-28-story-30",
+ "version": 1,
+ "story": {
+  "characters": [
+   {
+    "name": "Eli",
+    "role": "Eli - Main Character",
+    "want": "To find his missing sister",
+    "personality": "Curious and emotionally burdened"
+   },
+   {
+    "name": "Maya",
+    "role": "Maya - Missing Sister",
+    "want": "To give her brother closure",
+    "personality": "Gentle and affectionate"
+   },
+   {
+    "name": "Mom",
+    "role": "Mom - Supporting Character",
+    "want": "To protect her son",
+    "personality": "Caring and protective"
+   }
+  ]
+ },
+ "source": "Owner's own script",
+ "hook_type": {
+  "number": null,
+  "name": "format bank"
+ },
+ "format": {
+  "number": null,
+  "name": "Your script"
+ },
+ "title_working": "The Red Door in Blackpine Forest",
+ "hook_text": "THE RED DOOR",
+ "hook_until": 2.6,
+ "music": "drift",
+ "music_gain": 0.3,
+ "world_rule": "The Red Door in Blackpine Forest",
+ "lines": [
+  {
+   "text": "Every Friday, at exactly 11:11 PM, the same red door appears in Blackpine Forest.",
+   "say": "(nervous) Every Friday, at exactly 11:11 PM, the same red door appears in Blackpine Forest.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "hook",
+   "scene": "Start with a completely dark screen, slowly revealing a red wooden door standing in the middle of the forest as the narrator speaks.",
+   "emotions": {
+    "Eli": "scared"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Eli"
+    ],
+    "face": "scared",
+    "action": "talk",
+    "camera": "push",
+    "prop": {
+     "type": "cabin",
+     "text": "RED DOOR"
+    },
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "scared"
+    }
+   }
+  },
+  {
+   "text": "Last night, I heard my missing sister knocking from the other side.",
+   "say": "(nervous) Last night, I heard my missing sister knocking from the other side.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "hook",
+   "scene": "Camera moves toward the red door while three loud knocks echo from the other side.",
+   "emotions": {
+    "Eli": "scared"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Eli"
+    ],
+    "face": "scared",
+    "action": "talk",
+    "camera": "push",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "scared"
+    }
+   }
+  },
+  {
+   "text": "Maya disappeared here five years ago, on a Friday night. Our last conversation was an argument. I told her to go away.",
+   "say": "(sad) Maya disappeared here five years ago, on a Friday night. Our last conversation was an argument. I told her to go away.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "Eli walks through the dark forest holding a flashlight, remembering his past argument with his sister.",
+   "emotions": {
+    "Eli": "sad"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Eli"
+    ],
+    "face": "sad",
+    "action": "walk",
+    "camera": "follow",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "sad"
+    }
+   }
+  },
+  {
+   "text": "She ran into the trees… and never came home.",
+   "say": "(sad) She ran into the trees… and never came home.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "A brief flashback shows a little girl running into the dark trees in a yellow raincoat.",
+   "emotions": {
+    "Eli": "neutral"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Eli"
+    ],
+    "face": "neutral",
+    "action": "run",
+    "camera": "wide",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "flash",
+    "faces": {
+     "Eli": "neutral"
+    }
+   }
+  },
+  {
+   "text": "The townspeople warned me never to touch the door. But on its lower corner were three tiny scratches.",
+   "say": "(soft tone) The townspeople warned me never to touch the door. But on its lower corner were three tiny scratches.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "goal",
+   "scene": "Eli approaches the mysterious red door and examines the three tiny scratches near the bottom.",
+   "emotions": {
+    "Eli": "thinking"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Eli"
+    ],
+    "face": "thinking",
+    "action": "talk",
+    "camera": "close",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "thinking"
+    }
+   }
+  },
+  {
+   "text": "Maya used to make that exact mark whenever she wanted me to find her.",
+   "say": "(worried) Maya used to make that exact mark whenever she wanted me to find her.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "goal",
+   "scene": "Eli recognizes the exact mark his sister used to make, pausing in disbelief.",
+   "emotions": {
+    "Eli": "shocked"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Eli"
+    ],
+    "face": "shocked",
+    "action": "still",
+    "camera": "eye",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "shocked"
+    }
+   }
+  },
+  {
+   "text": "Eli? Please… it's cold.",
+   "say": "(nervous) Eli? Please… it's cold.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Three more knocks sound from inside as Eli steps backward and his flashlight flickers.",
+   "emotions": {
+    "Eli": "scared"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Eli"
+    ],
+    "face": "scared",
+    "action": "shiver",
+    "camera": "ots",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "scared"
+    }
+   }
+  },
+  {
+   "text": "Maya?",
+   "say": "(nervous) Maya?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Eli whispers his sister's name with a trembling voice in front of the door.",
+   "emotions": {
+    "Eli": "nervous"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Eli"
+    ],
+    "face": "nervous",
+    "action": "talk",
+    "camera": "close",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "nervous"
+    }
+   }
+  },
+  {
+   "text": "My hands went numb. That voice… I hadn't heard it in five years.",
+   "say": "(worried) My hands went numb. That voice… I hadn't heard it in five years.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Eli reacts with utter shock upon hearing the voice he hasn't heard in five years.",
+   "emotions": {
+    "Eli": "shocked"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Eli"
+    ],
+    "face": "shocked",
+    "action": "talk",
+    "camera": "eye",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "shocked"
+    }
+   }
+  },
+  {
+   "text": "ELI, I FOUND MAYA'S OLD VOICE RECORDING. LISTEN BEFORE YOU OPEN IT.",
+   "say": "(worried) ELI, I FOUND MAYA'S OLD VOICE RECORDING. LISTEN BEFORE YOU OPEN IT.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "choice",
+   "scene": "Eli's phone vibrates, showing a text message from Mom with a stern warning.",
+   "emotions": {
+    "Eli": "surprised",
+    "Mom": "neutral"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Eli",
+     "Mom"
+    ],
+    "face": "surprised",
+    "action": "talk",
+    "camera": "close",
+    "prop": {
+     "type": "screen",
+     "text": "LISTEN BEFORE YOU OPEN IT"
+    },
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "surprised",
+     "Mom": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Eli, if you ever hear my voice behind a red door, ask me our secret question.",
+   "say": "(nervous) Eli, if you ever hear my voice behind a red door, ask me our secret question.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "choice",
+   "scene": "Eli quickly plays the old voice recording from his mother.",
+   "emotions": {
+    "Eli": "nervous"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Eli"
+    ],
+    "face": "nervous",
+    "action": "pickup",
+    "camera": "eye",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "nervous"
+    }
+   }
+  },
+  {
+   "text": "Don't open it until you hear the answer.",
+   "say": "(soft tone) Don't open it until you hear the answer.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "choice",
+   "scene": "Maya's recorded voice warns him not to open the door until he asks the secret question.",
+   "emotions": {
+    "Eli": "thinking"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Eli"
+    ],
+    "face": "thinking",
+    "action": "talk",
+    "camera": "close",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "thinking"
+    }
+   }
+  },
+  {
+   "text": "You remember our question, don't you, Eli?",
+   "say": "(nervous) You remember our question, don't you, Eli?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "The door handle turns by itself and a shadow appears underneath the red door.",
+   "emotions": {
+    "Eli": "scared"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Eli"
+    ],
+    "face": "scared",
+    "action": "shock",
+    "camera": "low",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "scared"
+    }
+   }
+  },
+  {
+   "text": "WHAT'S BEHIND THE DOOR?",
+   "say": "(sad) WHAT'S BEHIND THE DOOR?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Eli stares at the door with tear-filled eyes as the screen cuts to black.",
+   "emotions": {
+    "Eli": "sad"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Eli"
+    ],
+    "face": "sad",
+    "action": "still",
+    "camera": "close",
+    "prop": {
+     "type": "screen",
+     "text": "WHAT'S BEHIND THE DOOR?"
+    },
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "sad"
+    }
+   }
+  },
+  {
+   "text": "I played the recording again. Maya and I had one secret question.",
+   "say": "(nervous) I played the recording again. Maya and I had one secret question.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "explanation",
+   "scene": "Eli holds his phone tightly in front of the red door, recalling their secret question.",
+   "emotions": {
+    "Eli": "nervous"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Eli"
+    ],
+    "face": "nervous",
+    "action": "talk",
+    "camera": "eye",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "nervous"
+    }
+   }
+  },
+  {
+   "text": "I'd ask, 'Where's home?' She would always answer, 'Where you are.'",
+   "say": "(happy) I'd ask, 'Where's home?' She would always answer, 'Where you are.'",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "explanation",
+   "scene": "A short flashback reveals young Eli and Maya sitting together under a tree.",
+   "emotions": {
+    "Eli": "happy"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Eli"
+    ],
+    "face": "happy",
+    "action": "sit",
+    "camera": "wide",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "flash",
+    "faces": {
+     "Eli": "happy"
+    }
+   }
+  },
+  {
+   "text": "Where's home?",
+   "say": "(nervous) Where's home?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "choice",
+   "scene": "Eli speaks the secret question into the cold night air with a trembling voice.",
+   "emotions": {
+    "Eli": "nervous"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Eli"
+    ],
+    "face": "nervous",
+    "action": "talk",
+    "camera": "close",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "nervous"
+    }
+   }
+  },
+  {
+   "text": "Where you are.",
+   "say": "(happy) Where you are.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "choice",
+   "scene": "Maya's voice answers gently and clearly from beyond the red door.",
+   "emotions": {
+    "Eli": "neutral"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Eli"
+    ],
+    "face": "neutral",
+    "action": "talk",
+    "camera": "eye",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "neutral"
+    }
+   }
+  },
+  {
+   "text": "The door unlocked. On the other side was the forest… but five years earlier.",
+   "say": "(worried) The door unlocked. On the other side was the forest… but five years earlier.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "The red door unlocks with a metallic click and opens to reveal a golden light and the past forest.",
+   "emotions": {
+    "Eli": "surprised"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Eli"
+    ],
+    "face": "surprised",
+    "action": "talk",
+    "camera": "push",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "flash",
+    "faces": {
+     "Eli": "surprised"
+    }
+   }
+  },
+  {
+   "text": "There she was, wearing the same yellow raincoat she had disappeared in.",
+   "say": "(happy) There she was, wearing the same yellow raincoat she had disappeared in.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "Maya stands beneath a tree wearing her yellow raincoat just as she did five years ago.",
+   "emotions": {
+    "Eli": "neutral"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Eli"
+    ],
+    "face": "neutral",
+    "action": "talk",
+    "camera": "wide",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "neutral"
+    }
+   }
+  },
+  {
+   "text": "You came back.",
+   "say": "(happy) You came back.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "resolution",
+   "scene": "Maya turns around and smiles softly at her older brother.",
+   "emotions": {
+    "Eli": "neutral"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Eli"
+    ],
+    "face": "neutral",
+    "action": "wave",
+    "camera": "close",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "neutral"
+    }
+   }
+  },
+  {
+   "text": "I'm sorry. I should've followed you. I should've saved you.",
+   "say": "(sad) I'm sorry. I should've followed you. I should've saved you.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "resolution",
+   "scene": "Eli cries tears of relief and regret, barely able to speak his apology.",
+   "emotions": {
+    "Eli": "sob"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Eli"
+    ],
+    "face": "sob",
+    "action": "cry",
+    "camera": "close",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "sob"
+    }
+   }
+  },
+  {
+   "text": "You were just a kid, Eli. You called for help. You never abandoned me.",
+   "say": "(happy) You were just a kid, Eli. You called for help. You never abandoned me.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "resolution",
+   "scene": "Maya walks toward Eli and gently holds his hand, comforting him.",
+   "emotions": {
+    "Eli": "happy"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Eli"
+    ],
+    "face": "happy",
+    "action": "walk",
+    "camera": "eye",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "happy"
+    }
+   }
+  },
+  {
+   "text": "But I left you alone…",
+   "say": "(sad) But I left you alone…",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "resolution",
+   "scene": "Eli falls to his knees, crying about leaving her alone.",
+   "emotions": {
+    "Eli": "sob"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Eli"
+    ],
+    "face": "sob",
+    "action": "cry",
+    "camera": "low",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "sob"
+    }
+   }
+  },
+  {
+   "text": "I know you looked for me. But you need to stop blaming yourself.",
+   "say": "(happy) I know you looked for me. But you need to stop blaming yourself.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "resolution",
+   "scene": "Maya smiles lovingly and tells him to stop blaming himself.",
+   "emotions": {
+    "Eli": "happy"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Eli"
+    ],
+    "face": "happy",
+    "action": "talk",
+    "camera": "ots",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "happy"
+    }
+   }
+  },
+  {
+   "text": "I can't come home. But you can. Mom is waiting. Please… go home.",
+   "say": "(sad) I can't come home. But you can. Mom is waiting. Please… go home.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "ending",
+   "scene": "Maya gives him her small bracelet and tells him to go back home to Mom.",
+   "emotions": {
+    "Eli": "sad"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Eli"
+    ],
+    "face": "sad",
+    "action": "hug",
+    "camera": "close",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "sad"
+    }
+   }
+  },
+  {
+   "text": "Maya, please don't go!",
+   "say": "(sad) Maya, please don't go!",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "ending",
+   "scene": "Eli desperately cries out for Maya not to leave him again.",
+   "emotions": {
+    "Eli": "sob"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Eli"
+    ],
+    "face": "sob",
+    "action": "cry",
+    "camera": "close",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "sob"
+    }
+   }
+  },
+  {
+   "text": "When I opened my eyes, the door was gone. For five years, I kept searching for my sister.",
+   "say": "(sad) When I opened my eyes, the door was gone. For five years, I kept searching for my sister.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "ending",
+   "scene": "Maya slowly disappears into the golden light as the red door closes.",
+   "emotions": {
+    "Eli": "sad"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "sunrise",
+    "mood": "day",
+    "cast": [
+     "Eli"
+    ],
+    "face": "sad",
+    "action": "still",
+    "camera": "wide",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "fade",
+    "faces": {
+     "Eli": "sad"
+    }
+   }
+  },
+  {
+   "text": "That morning, I finally went home without looking back.",
+   "say": "(happy) That morning, I finally went home without looking back.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "ending",
+   "scene": "Eli stands alone in Blackpine Forest at sunrise, looking down at the bracelet.",
+   "emotions": {
+    "Eli": "happy"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "sunrise",
+    "mood": "day",
+    "cast": [
+     "Eli"
+    ],
+    "face": "happy",
+    "action": "pickup",
+    "camera": "eye",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "happy"
+    }
+   }
+  },
+  {
+   "text": "Sometimes, goodbye doesn't bring someone back. It gives you permission to live again.",
+   "say": "(happy) Sometimes, goodbye doesn't bring someone back. It gives you permission to live again.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "ending",
+   "scene": "Eli finally smiles through his tears, accepting the goodbye as a chance to live again.",
+   "emotions": {
+    "Eli": "happy"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "sunrise",
+    "mood": "day",
+    "cast": [
+     "Eli"
+    ],
+    "face": "happy",
+    "action": "walk",
+    "camera": "push",
+    "prop": {},
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Eli": "happy"
+    }
+   }
+  },
+  {
+   "text": "SOME PEOPLE LEAVE OUR LIVES, BUT THEY NEVER LEAVE OUR HEARTS.",
+   "say": "(happy) SOME PEOPLE LEAVE OUR LIVES, BUT THEY NEVER LEAVE OUR HEARTS.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "ending",
+   "scene": "Eli walks toward the sunrise as the final on-screen message appears.",
+   "emotions": {
+    "Eli": "happy"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "sunrise",
+    "mood": "day",
+    "cast": [
+     "Eli"
+    ],
+    "face": "happy",
+    "action": "walk",
+    "camera": "wide",
+    "prop": {
+     "type": "screen",
+     "text": "SOME PEOPLE LEAVE OUR LIVES, BUT THEY NEVER LEAVE OUR HEARTS."
+    },
+    "board": "",
+    "monster": [],
+    "trans": "fade",
+    "faces": {
+     "Eli": "happy"
+    }
+   }
+  }
+ ],
+ "word_count": 321,
+ "est_seconds": 94.4,
+ "tail_hold": 2.5,
+ "upload": {
+  "title": "The Red Door in Blackpine Forest #Shorts",
+  "description": "Every Friday at 11:11 PM, a mysterious red door appears in the dark Blackpine Forest, leading to secrets from the past.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "roblox",
+   "horror",
+   "supernatural",
+   "mystery",
+   "cinematic",
+   "sad",
+   "story",
+   "brother",
+   "sister",
+   "forest",
+   "animated story",
+   "roblox story"
+  ]
+ },
+ "owner_text": "THE DOOR THAT APPEARS EVERY FRIDAY\nGenre: Supernatural Mystery / Emotional Horror\nStyle: Roblox Cinematic 3D Horror\nLanguage: English narration and dialogue\nEstimated duration: 1:10–1:20 per episode\nCHARACTERS\n1. Eli — Main Character\n17 years old.\nOlder brother of Maya.\nCurious but emotionally burdened by his sister's disappearance.\nEmotions: Curious → Suspicious → Terrified → Hopeful → Heartbroken → Relieved.\n2. Maya — Missing Sister\n10 years old when she disappeared.\nWears a yellow raincoat and a small bracelet.\nGentle, innocent, and affectionate.\nHer voice is initially mysterious, then warm and emotional.\n3. Mom — Supporting Character\nNever needs to appear physically.\nCommunicates through text messages and an old voice recording.\nLOCATION AND VISUAL STYLE\nMain location: Blackpine Forest, a dark forest outside a small town.\nImportant object: An old red wooden door standing upright between two trees. There is no house, wall, or building attached to it.\nRecurring detail: Three small scratches on the lower corner of the door.\nAtmosphere: Fog, cold moonlight, dark blue color grading, heavy silence, cinematic camera movements, expressive character faces.\nPART 1 — THE MYSTERIOUS DOOR\nTarget duration: 1 minute and 15 seconds\nSCENE 1 — THE HOOK\nTime: 0:00–0:10\nLocation: Blackpine Forest — Friday, 11:11 PM.\nVisual:\nStart with a completely dark screen.\nSlowly reveal a red wooden door standing in the middle of the forest.\nCamera moves toward the door.\nSuddenly, three loud knocks come from the other side.\nThe door handle begins moving by itself.\nNarrator — mysterious, serious, slightly frightened:\n\"Every Friday, at exactly 11:11 PM, the same red door appears in Blackpine Forest. Last night, I heard my missing sister knocking from the other side.\"\nSound: Deep cinematic impact, followed by three knocks.\nSCENE 2 — THE BACKSTORY\nTime: 0:10–0:25\nLocation: Forest entrance, transitioning to a flashback.\nVisual:\nEli walks through the forest holding a flashlight.\nShow a brief flashback of a little girl wearing a yellow raincoat running into the woods.\nReturn to Eli's face. His expression becomes sad.\nNarrator — emotional, regretful:\n\"Maya disappeared here five years ago, on a Friday night. Our last conversation was an argument. I told her to go away. She ran into the trees… and never came home.\"\nCharacter reaction:\nEli lowers his flashlight. His eyes become watery as he remembers his sister.\nSCENE 3 — THE DISCOVERY\nTime: 0:25–0:40\nLocation: Deep inside Blackpine Forest.\nVisual:\nEli notices something between the trees.\nCamera slowly reveals the red door.\nHe approaches carefully.\nClose-up of three tiny scratches near the bottom of the door.\nNarrator — suspicious, slowly building tension:\n\"The townspeople warned me never to touch the door. But on its lower corner were three tiny scratches. Maya used to make that exact mark whenever she wanted me to find her.\"\nCharacter reaction:\nEli freezes. He slowly reaches toward the scratches but stops before touching them.\nSCENE 4 — THE VOICE\nTime: 0:40–0:53\nLocation: Directly in front of the red door.\nVisual:\nThree knocks come from inside.\nEli immediately steps backward.\nHis flashlight begins flickering.\nThe camera focuses on his frightened face.\nMaya — faint, soft, almost crying, from behind the door:\n\"Eli? Please… it's cold.\"\nEli — whispering, trembling:\n\"Maya?\"\nNarrator — shocked:\n\"My hands went numb. That voice… I hadn't heard it in five years.\"\nSCENE 5 — THE WARNING\nTime: 0:53–1:06\nLocation: In front of the door.\nVisual:\nEli's phone vibrates.\nClose-up of the screen showing a message from Mom:\nON-SCREEN TEXT:\n\"ELI, I FOUND MAYA'S OLD VOICE RECORDING. LISTEN BEFORE YOU OPEN IT.\"\nEli quickly plays the recording.\nMaya's recorded voice — serious and frightened:\n\"Eli, if you ever hear my voice behind a red door, ask me our secret question. Don't open it until you hear the answer.\"\nSCENE 6 — CLIFFHANGER\nTime: 1:06–1:16\nLocation: Same forest, in front of the red door.\nVisual:\nEli slowly raises his head.\nThe door handle turns.\nA shadow appears underneath the door.\nVoice behind the door — quiet, almost identical to Maya:\n\"You remember our question, don't you, Eli?\"\nVisual:\nEli stares at the door.\nHis eyes fill with tears.\nCut to black before he answers.\nON-SCREEN TEXT:\n\"WHAT'S BEHIND THE DOOR?\"\nEND OF PART 1.\nPART 2 — WHAT WAS BEHIND THE DOOR?\nTarget duration: 1 minute and 15 seconds\nSCENE 1 — THE SECRET QUESTION\nTime: 0:00–0:13\nLocation: Blackpine Forest, directly in front of the red door.\nVisual:\nContinue from the exact final shot of Part 1.\nEli holds his phone tightly.\nHe replays Maya's recording.\nShow a short flashback of young Eli and Maya sitting together under a tree.\nNarrator — nervous, emotional:\n\"I played the recording again. Maya and I had one secret question. I'd ask, 'Where's home?' She would always answer, 'Where you are.'\"\nEli — slowly, with a trembling voice:\n\"Where's home?\"\nMaya's voice — gentle and clear:\n\"Where you are.\"\nSound: A metallic unlocking sound.\nSCENE 2 — THE DOOR OPENS\nTime: 0:13–0:30\nLocation: A mysterious version of Blackpine Forest behind the door.\nVisual:\nThe red door slowly opens.\nA warm golden light escapes.\nInstead of darkness, Eli sees the same forest as it looked five years ago.\nA little girl in a yellow raincoat stands beneath a tree.\nShe turns around.\nNarrator — amazed, emotional:\n\"The door unlocked. On the other side was the forest… but five years earlier. There she was, wearing the same yellow raincoat she had disappeared in.\"\nMaya — smiling softly:\n\"You came back.\"\nEli — crying, barely able to speak:\n\"I'm sorry. I should've followed you. I should've saved you.\"\nSCENE 3 — THE TRUTH\nTime: 0:30–0:53\nLocation: The forest from five years ago.\nVisual:\nMaya walks toward Eli.\nEli falls to his knees and starts crying.\nMaya gently holds his hand.\nCamera moves close to their faces.\nMaya — gentle, comforting, emotional:\n\"You were just a kid, Eli. You called for help. You never abandoned me.\"\nEli — crying:\n\"But I left you alone…\"\nMaya — softly, with a loving smile:\n\"I know you looked for me. But you need to stop blaming yourself.\"\nCharacter reaction:\nEli looks down. Tears fall from his face. Maya gently hugs him.\nSCENE 4 — THE GOODBYE\nTime: 0:53–1:06\nLocation: Inside the mysterious forest.\nVisual:\nMaya slowly steps backward.\nThe golden light begins fading.\nShe removes her small bracelet and places it in Eli's hand.\nMaya — emotional, almost whispering:\n\"I can't come home. But you can. Mom is waiting. Please… go home.\"\nEli — desperate, crying:\n\"Maya, please don't go!\"\nVisual:\nMaya smiles one last time before slowly disappearing.\nSCENE 5 — THE FINAL MESSAGE\nTime: 1:06–1:18\nLocation: Blackpine Forest — sunrise.\nVisual:\nThe red door slowly closes.\nCut to Eli standing alone in the forest.\nThe sun rises through the trees.\nHe looks at the bracelet in his hand.\nHe finally smiles through his tears.\nNarrator — calm, emotional, hopeful:\n\"When I opened my eyes, the door was gone. For five years, I kept searching for my sister. That morning, I finally went home without looking back.\"\nFinal narration — meaningful, gentle:\n\"Sometimes, goodbye doesn't bring someone back. It gives you permission to live again.\"\nVisual:\nEli walks toward the sunrise.\nON-SCREEN TEXT:\n\"SOME PEOPLE LEAVE OUR LIVES, BUT THEY NEVER LEAVE OUR HEARTS.\"\nEND OF PART 2.",
+ "review": null
+}
