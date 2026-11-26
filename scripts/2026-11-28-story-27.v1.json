@@ -1,0 +1,727 @@
+{
+ "id": "2026-11-28-story-27",
+ "version": 1,
+ "source": "Hand-written full version of the owner-approved test story (2026-11-26)",
+ "story": {
+  "theme_rule": "If you get angry even once, you turn into a monster.",
+  "logline": "Leo has hidden his anger for three years, until the Mayor tries to tear down the treehouse he built with Hana.",
+  "characters": [
+   {
+    "name": "Leo",
+    "role": "hero",
+    "want": "to save the treehouse",
+    "personality": "kind, brave"
+   },
+   {
+    "name": "Hana",
+    "role": "best friend",
+    "want": "to keep their treehouse",
+    "personality": "loyal, gentle"
+   },
+   {
+    "name": "Mayor",
+    "role": "the one who made the rule",
+    "want": "to hide his own anger",
+    "personality": "proud, lonely"
+   },
+   {
+    "name": "Officer",
+    "role": "enforces the rule",
+    "want": "to follow orders",
+    "personality": "strict"
+   }
+  ],
+  "clue": {
+   "line": 4,
+   "text": "Whenever the Mayor got upset, he hummed their song."
+  },
+  "twist": {
+   "line": 13,
+   "text": "The Mayor is the biggest monster; he banned anger because he cannot control his own."
+  },
+  "ending": "People are allowed to get angry, because someone can sing them back."
+ },
+ "hook_type": {
+  "number": null,
+  "name": "format bank"
+ },
+ "format": {
+  "number": null,
+  "name": "Monster world"
+ },
+ "title_working": "In This Town, Getting Angry Turns You Into A Monster",
+ "hook_text": "ONE ANGRY MOMENT?",
+ "hook_until": 2.6,
+ "music": "drift",
+ "music_gain": 0.3,
+ "world_rule": "In This Town, Getting Angry Turns You Into A Monster",
+ "lines": [
+  {
+   "text": "In this town, if you get angry even once, you turn into a monster.",
+   "say": "(serious) In this town, if you get angry even once, you turn into a monster.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 2,
+   "pause": 0.2,
+   "beat": "hook",
+   "scene": "The Mayor stands in the town square next to a warning sign.",
+   "emotions": {
+    "Mayor": "smirk",
+    "Officer": "determined"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mayor",
+     "Officer"
+    ],
+    "face": "smirk",
+    "action": "point",
+    "camera": "drone",
+    "trans": "cut",
+    "faces": {
+     "Mayor": "smirk",
+     "Officer": "determined"
+    },
+    "prop": {
+     "type": "sign",
+     "text": "NO ANGER"
+    }
+   }
+  },
+  {
+   "text": "So Leo has smiled every single day for three years. Even on the days it really hurt.",
+   "say": "(soft tone) So Leo has smiled every single day for three years. Even on the days it really hurt.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "setup",
+   "scene": "Leo walks down the street forcing a stiff smile.",
+   "emotions": {
+    "Leo": "fake"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Leo"
+    ],
+    "face": "fake",
+    "action": "walk",
+    "camera": "follow",
+    "trans": "cut",
+    "faces": {
+     "Leo": "fake"
+    }
+   }
+  },
+  {
+   "text": "His best friend Hana made it easy. All summer, they built a treehouse and sang their own silly song.",
+   "say": "(happy) His best friend Hana made it easy. All summer, they built a treehouse and sang their own silly song.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "goal",
+   "scene": "Leo and Hana laugh and dance beside their new treehouse.",
+   "emotions": {
+    "Hana": "laugh",
+    "Leo": "happy"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Hana",
+     "Leo"
+    ],
+    "face": "laugh",
+    "action": "dance",
+    "camera": "two",
+    "trans": "whip",
+    "faces": {
+     "Hana": "laugh",
+     "Leo": "happy"
+    },
+    "prop": {
+     "type": "cabin",
+     "text": "TREEHOUSE"
+    }
+   }
+  },
+  {
+   "text": "But Leo noticed something strange. Whenever the Mayor got upset, he quietly hummed that exact same song.",
+   "say": "(nervous) But Leo noticed something strange. Whenever the Mayor got upset, he quietly hummed that exact same song.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "setup",
+   "scene": "The Mayor hums to himself with a nervous face while Leo watches.",
+   "emotions": {
+    "Mayor": "nervous",
+    "Leo": "confused"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mayor",
+     "Leo"
+    ],
+    "face": "nervous",
+    "action": "think",
+    "camera": "ots",
+    "trans": "whip",
+    "faces": {
+     "Mayor": "nervous",
+     "Leo": "confused"
+    }
+   }
+  },
+  {
+   "text": "Then one Friday, the Officer put up a red sign. The Mayor wanted their treehouse torn down.",
+   "say": "(worried) Then one Friday, the Officer put up a red sign. The Mayor wanted their treehouse torn down.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "consequence",
+   "scene": "The Officer points at a sign by the treehouse while the children stare.",
+   "emotions": {
+    "Officer": "determined",
+    "Leo": "shocked",
+    "Hana": "worried"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Officer",
+     "Leo",
+     "Hana"
+    ],
+    "face": "determined",
+    "action": "point",
+    "camera": "push",
+    "trans": "flash",
+    "faces": {
+     "Officer": "determined",
+     "Leo": "shocked",
+     "Hana": "worried"
+    },
+    "prop": {
+     "type": "sign",
+     "text": "TEAR DOWN"
+    }
+   }
+  },
+  {
+   "text": "Hana burst into tears. And for the first time in three years, Leo felt his face getting hot.",
+   "say": "(sad) Hana burst into tears. And for the first time in three years, Leo felt his face getting hot.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "escalation",
+   "scene": "Hana cries while Leo clenches up and his smile disappears.",
+   "emotions": {
+    "Hana": "sob",
+    "Leo": "worried"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Hana",
+     "Leo"
+    ],
+    "face": "sob",
+    "action": "cry",
+    "camera": "push",
+    "trans": "cut",
+    "faces": {
+     "Hana": "sob",
+     "Leo": "worried"
+    }
+   }
+  },
+  {
+   "text": "He knew the rule. But he couldn't keep smiling while his friend was crying, so he marched to the town square.",
+   "say": "(serious) He knew the rule. But he couldn't keep smiling while his friend was crying, so he marched to the town square.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "choice",
+   "scene": "Leo runs to the town square with a determined face.",
+   "emotions": {
+    "Leo": "determined"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "city",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Leo"
+    ],
+    "face": "determined",
+    "action": "run",
+    "camera": "follow",
+    "trans": "whip",
+    "faces": {
+     "Leo": "determined"
+    }
+   }
+  },
+  {
+   "text": "\"You can't take it from her!\" Leo shouted. The Mayor just smiled and waited.",
+   "say": "(angry) \"You can't take it from her!\" Leo shouted. The Mayor just smiled and waited.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 3,
+   "pause": 0.2,
+   "beat": "escalation",
+   "scene": "Leo yells angrily at the smiling Mayor.",
+   "emotions": {
+    "Leo": "angry",
+    "Mayor": "smirk"
+   },
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Leo",
+     "Mayor"
+    ],
+    "face": "angry",
+    "action": "point",
+    "camera": "low",
+    "trans": "zoom",
+    "faces": {
+     "Leo": "angry",
+     "Mayor": "smirk"
+    }
+   }
+  },
+  {
+   "text": "In one flash of light, Leo grew giant horns, sharp claws and a long purple tail.",
+   "say": "(worried) In one flash of light, Leo grew giant horns, sharp claws and a long purple tail.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "escalation",
+   "scene": "Leo turns into a purple monster in a burst of smoke.",
+   "emotions": {
+    "Leo": "angry",
+    "Mayor": "shocked"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Leo",
+     "Mayor"
+    ],
+    "face": "angry",
+    "action": "shock",
+    "camera": "low",
+    "trans": "flash",
+    "faces": {
+     "Leo": "angry",
+     "Mayor": "shocked"
+    },
+    "monster": [
+     "Leo"
+    ]
+   }
+  },
+  {
+   "text": "Everyone screamed and ran away. Everyone except Hana, who walked right up to him and started to sing.",
+   "say": "(nervous) Everyone screamed and ran away. Everyone except Hana, who walked right up to him and started to sing.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "escalation",
+   "scene": "Hana steps toward monster Leo and sings while the Officer backs away.",
+   "emotions": {
+    "Hana": "determined",
+    "Leo": "angry",
+    "Officer": "scared"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Hana",
+     "Leo",
+     "Officer"
+    ],
+    "face": "determined",
+    "action": "talk",
+    "camera": "two",
+    "trans": "cut",
+    "faces": {
+     "Hana": "determined",
+     "Leo": "angry",
+     "Officer": "scared"
+    },
+    "monster": [
+     "Leo"
+    ]
+   }
+  },
+  {
+   "text": "As she sang, his horns started to shrink, and soon Leo was just Leo again.",
+   "say": "(soft tone) As she sang, his horns started to shrink, and soon Leo was just Leo again.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "resolution",
+   "scene": "Leo becomes himself again and hugs Hana.",
+   "emotions": {
+    "Leo": "happy",
+    "Hana": "happy"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Leo",
+     "Hana"
+    ],
+    "face": "happy",
+    "action": "hug",
+    "camera": "two",
+    "trans": "flash",
+    "faces": {
+     "Leo": "happy",
+     "Hana": "happy"
+    }
+   }
+  },
+  {
+   "text": "But that's when the Mayor lost it. His rule had just failed in front of the whole town.",
+   "say": "(angry) But that's when the Mayor lost it. His rule had just failed in front of the whole town.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 2,
+   "pause": 0.2,
+   "beat": "escalation",
+   "scene": "The Mayor shakes with anger in front of the crowd.",
+   "emotions": {
+    "Mayor": "angry",
+    "Officer": "surprised"
+   },
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Mayor",
+     "Officer"
+    ],
+    "face": "angry",
+    "action": "disagree",
+    "camera": "dutch",
+    "trans": "zoom",
+    "faces": {
+     "Mayor": "angry",
+     "Officer": "surprised"
+    }
+   }
+  },
+  {
+   "text": "In another flash, he became the biggest monster of all. He had banned anger because he could never control his own.",
+   "say": "(worried) In another flash, he became the biggest monster of all. He had banned anger because he could never control his own.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 2,
+   "pause": 0.2,
+   "beat": "twist",
+   "scene": "The Mayor transforms into a huge monster under a dark storm.",
+   "emotions": {
+    "Mayor": "angry",
+    "Leo": "shocked"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Mayor",
+     "Leo"
+    ],
+    "face": "angry",
+    "action": "shock",
+    "camera": "low",
+    "trans": "flash",
+    "faces": {
+     "Mayor": "angry",
+     "Leo": "shocked"
+    },
+    "monster": [
+     "Mayor"
+    ]
+   }
+  },
+  {
+   "text": "Years ago, his little sister used to calm him with that song. When she moved away, nobody was left to sing it.",
+   "say": "(sad) Years ago, his little sister used to calm him with that song. When she moved away, nobody was left to sing it.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "explanation",
+   "scene": "The sad monster Mayor cries alone in the rain.",
+   "emotions": {
+    "Mayor": "sob"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Mayor"
+    ],
+    "face": "sob",
+    "action": "cry",
+    "camera": "push",
+    "trans": "cut",
+    "faces": {
+     "Mayor": "sob"
+    },
+    "monster": [
+     "Mayor"
+    ]
+   }
+  },
+  {
+   "text": "Leo had every reason to stay mad. Instead, he walked up to the monster and sang it for him.",
+   "say": "(confident) Leo had every reason to stay mad. Instead, he walked up to the monster and sang it for him.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "choice",
+   "scene": "Leo bravely walks up to the monster Mayor and sings.",
+   "emotions": {
+    "Leo": "determined",
+    "Mayor": "surprised"
+   },
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Leo",
+     "Mayor"
+    ],
+    "face": "determined",
+    "action": "walk",
+    "camera": "two",
+    "trans": "black",
+    "faces": {
+     "Leo": "determined",
+     "Mayor": "surprised"
+    },
+    "monster": [
+     "Mayor"
+    ]
+   }
+  },
+  {
+   "text": "The monster began to cry, and slowly, the Mayor came back. That day, he tore down his rule instead of the treehouse.",
+   "say": "(soft tone) The monster began to cry, and slowly, the Mayor came back. That day, he tore down his rule instead of the treehouse.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "resolution",
+   "scene": "The Mayor is himself again, crying happy tears beside a new sign.",
+   "emotions": {
+    "Mayor": "sob",
+    "Leo": "happy",
+    "Hana": "happy"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Mayor",
+     "Leo",
+     "Hana"
+    ],
+    "face": "sob",
+    "action": "agree",
+    "camera": "push",
+    "trans": "flash",
+    "faces": {
+     "Mayor": "sob",
+     "Leo": "happy",
+     "Hana": "happy"
+    },
+    "prop": {
+     "type": "sign",
+     "text": "NEW RULE"
+    }
+   }
+  },
+  {
+   "text": "Now in this town, you're allowed to get angry, as long as someone stays to sing you back.",
+   "say": "(happy) Now in this town, you're allowed to get angry, as long as someone stays to sing you back.",
+   "speaker": "narrator",
+   "speed": 0.98,
+   "volume": 0,
+   "pause": 0.2,
+   "beat": "ending",
+   "scene": "Leo and Hana celebrate beside the saved treehouse at sunset.",
+   "emotions": {
+    "Leo": "laugh",
+    "Hana": "laugh"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "field",
+    "time": "sunset",
+    "mood": "win",
+    "cast": [
+     "Leo",
+     "Hana"
+    ],
+    "face": "laugh",
+    "action": "cheer",
+    "camera": "pull",
+    "trans": "whip",
+    "faces": {
+     "Leo": "laugh",
+     "Hana": "laugh"
+    },
+    "prop": {
+     "type": "cabin",
+     "text": "TREEHOUSE"
+    }
+   }
+  }
+ ],
+ "word_count": 306,
+ "est_seconds": 95.6,
+ "tail_hold": 2.0,
+ "review": null,
+ "owner_text": "In this town, if you get angry even once, you turn into a monster.\nSo Leo has smiled every single day for three years. Even on the days it really hurt.\nHis best friend Hana made it easy. All summer, they built a treehouse and sang their own silly song.\nBut Leo noticed something strange. Whenever the Mayor got upset, he quietly hummed that exact same song.\nThen one Friday, the Officer put up a red sign. The Mayor wanted their treehouse torn down.\nHana burst into tears. And for the first time in three years, Leo felt his face getting hot.\nHe knew the rule. But he couldn't keep smiling while his friend was crying, so he marched to the town square.\n\"You can't take it from her!\" Leo shouted. The Mayor just smiled and waited.\nIn one flash of light, Leo grew giant horns, sharp claws and a long purple tail.\nEveryone screamed and ran away. Everyone except Hana, who walked right up to him and started to sing.\nAs she sang, his horns started to shrink, and soon Leo was just Leo again.\nBut that's when the Mayor lost it. His rule had just failed in front of the whole town.\nIn another flash, he became the biggest monster of all. He had banned anger because he could never control his own.\nYears ago, his little sister used to calm him with that song. When she moved away, nobody was left to sing it.\nLeo had every reason to stay mad. Instead, he walked up to the monster and sang it for him.\nThe monster began to cry, and slowly, the Mayor came back. That day, he tore down his rule instead of the treehouse.\nNow in this town, you're allowed to get angry, as long as someone stays to sing you back.",
+ "upload": {
+  "title": "Get Angry Once And You Turn Into A Monster #Shorts",
+  "description": "In this town, one angry moment turns you into a monster. Leo smiled for three years, until someone tried to take his best friend's treehouse. Would you sing someone back?\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "monster story",
+   "friendship story",
+   "plot twist",
+   "animated story",
+   "storytime",
+   "shorts",
+   "in this town",
+   "emotional story",
+   "roblox story"
+  ]
+ }
+}
