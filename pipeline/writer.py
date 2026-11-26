@@ -174,8 +174,11 @@ def ask(text, key, first=None, temperature=1.0):
     """Try each model in turn: a busy (503), rate-limited (429) or retired (404) model falls through to the next one."""
     import time
     import urllib.error
-    last = None
+    last, busy = None, False
     for rnd in (0, 60, 180):   # whole-list retries: Gemini's free tier is often busy for a few minutes (503 on every model)
+        if rnd and not busy:      # every model said "quota used up": waiting will not help
+            break
+        busy = False
         time.sleep(rnd)
         for m in ([first] if first else []) + [x for x in MODELS if x != first]:
             for wait in (0, 20):
@@ -187,11 +190,13 @@ def ask(text, key, first=None, temperature=1.0):
                     print("  gemini", last, flush=True)
                     if e.code not in (500, 503):
                         break
+                    busy = True
                 except (json.JSONDecodeError, KeyError) as e:
                     last = f"{m}: bad reply {e}"
                     print("  gemini", last, flush=True)
                 except (TimeoutError, OSError) as e:   # a slow or dropped connection: try again, then the next model
                     last = f"{m}: {type(e).__name__}"
+                    busy = True
     raise RuntimeError(f"all Gemini models failed (last: {last})")
 
 
@@ -307,96 +312,122 @@ def to_script(ep, d, fmt):
                             tags=(d.get("tags") or [])[:10] + ["animated story", "roblox story"]))
 
 
-def _plain(s):
-    return " ".join(re.sub(r"[^a-z0-9 ]", " ", s.lower().replace("’", "'").replace("'", "")).split())
+NOTE_LABEL = re.compile(r"(?i)^(title|characters?|cast|theme|genre|scene(\s*\d+)?|setting|location|place|emotions?|feelings?|visuals?|action|camera|"
+                        r"shot|music|sfx|sound|beat|mood|note|notes|hook|twist|ending|duration|length|on[- ]screen|caption)\b[^:\n]{0,20}:")
+SPOKEN_LABEL = re.compile(r"(?i)^(narration|narrator|voice ?over|vo|adam)\s*(\([^)]*\))?\s*:\s*")
 
 
-def owner_checks(d, source, strict_words):
-    """Only what the video needs. The story itself is the owner's: it is never rejected, and their words are never changed."""
-    bad, L, src = [], d.get("lines") or [], _plain(source)
-    if not 3 <= len(L) <= 60:
-        bad.append(f"needs 3 to 60 lines, has {len(L)}")
-    if sum(len(l.get("text", "").split()) for l in L) > 700:
-        bad.append("the script is longer than about 3.5 minutes (700 words)")
-    at = 0
-    for i, l in enumerate(L, 1):
-        if not str(l.get("text", "")).strip():
-            bad.append(f"line {i}: empty text")
-        elif strict_words:
-            j = src.find(_plain(l["text"]), at)
-            if j < 0:
-                bad.append(f"line {i}: text must be copied word for word, in order, from the owner's script: {l['text'][:60]!r}")
+def split_owner(text):
+    """The owner's words, split by CODE (so they are never changed): returns (title, [(spoken line, notes before it)]).
+    If the script labels its narration ("Narrator: ..."), only those lines are spoken and everything else is a note."""
+    clean = lambda t: re.sub(r"^[\s*_#>\-•]+|[\s*_]+$", "", t).strip()
+    raw = [clean(x) for x in text.replace("\r", "").split("\n")]
+    raw = [x for x in raw if x]
+    labelled = any(SPOKEN_LABEL.match(x) for x in raw)
+    title, out, notes = "", [], []
+    for x in raw:
+        m = re.match(r"(?i)^title\s*:\s*(.+)$", x)
+        if m:
+            title = clean(m.group(1)).strip('"“”')
+            continue
+        said = SPOKEN_LABEL.match(x)
+        if said:
+            x = x[said.end():]
+        elif labelled or NOTE_LABEL.match(x) or re.fullmatch(r"[\[(].*[\])]", x) or (len(x.split()) <= 6 and not re.search(r"[.!?\"”…]$", x)):
+            notes.append(x)
+            continue
+        notes += re.findall(r"\[[^\]]*\]", x)
+        x = re.sub(r"\[[^\]]*\]", " ", x)
+        x = " ".join(x.split()).strip()
+        if len(x) > 1 and x[0] in "\"“" and x[-1] in "\"”" and x.count('"') <= 2:
+            x = x[1:-1].strip()
+        if not x:
+            continue
+        parts, cur = [], ""
+        for sent in re.split(r"(?<=[.!?…])\s+(?=[\"“A-Z0-9])", x):   # one or two sentences per scene
+            if cur and len((cur + " " + sent).split()) > 28:
+                parts.append(cur)
+                cur = sent
             else:
-                at = j + len(_plain(l["text"]))
-        shot = l.get("shot") or {}
-        if shot.get("set") not in SHOT_SETS:
-            bad.append(f"line {i}: shot set must be one of {SHOT_SETS}")
-        if shot.get("action") not in SHOT_ACTIONS:
-            bad.append(f"line {i}: shot action must be one of {SHOT_ACTIONS}")
-        if not shot.get("cast"):
-            bad.append(f"line {i}: shot.cast is empty")
-        for n in shot.get("cast", []):
-            if n not in CAST:
-                bad.append(f"line {i}: {n!r} is not in the cast list; map the owner's character to a cast name")
-            elif (l.get("emotions") or {}).get(n) not in story_gate.FACES:
-                bad.append(f"line {i}: emotions must give {n} one of {story_gate.FACES}")
-    return bad
+                cur = (cur + " " + sent).strip()
+        parts.append(cur)
+        for j, part in enumerate(parts):
+            out.append((part, notes if j == 0 else []))
+        notes = []
+    return title, out
+
+
+def _names_in(text, mapping):
+    return [c for orig, c in mapping.items() if re.search(rf"(?i)\b{re.escape(orig)}\b", text)]
 
 
 def from_owner(text, ep=None, notes=None, ver=1):
-    """The owner sends their own script (any layout). Gemini only turns it into scenes; the spoken words stay theirs."""
+    """The owner sends their own script (any layout). Code splits the words; Gemini only plans the scenes."""
     e = env()
     key = e.get("GEMINI_API_KEY") or sys.exit("GEMINI_API_KEY is missing in .env (free key: aistudio.google.com)")
     ep, text = ep or next_id(), text.strip()[:9000]
-    change = (f"\nThe owner now asks for these changes (apply them, and keep every other spoken word as it is):\n{notes}\n" if notes else "")
-    p = f"""Turn the owner's own script into the JSON that our animation uses. The script is the OWNER'S: do NOT rewrite, improve,
-translate, shorten or add to the story. Each "text" is the narration copied WORD FOR WORD and in order from the script.
-Leave out only things that are not meant to be spoken (titles, scene headings, character lists, stage notes, emotion labels);
-use those notes to choose the shot, the emotions and the scene. If a character speaks, keep their words in the text.
-Split long paragraphs into lines of one or two sentences (one scene each).
-{change}
-THE OWNER'S SCRIPT:
+    title, spoken = split_owner(text)
+    if len(spoken) < 3:
+        raise RuntimeError("I could not find at least 3 spoken lines. Write each narration sentence on its own line.")
+    spoken = spoken[:60]
+    numbered = "\n".join(f"{i}. " + (f"(notes: {' | '.join(n)}) " if n else "") + t for i, (t, n) in enumerate(spoken, 1))
+    change = (f"\nThe owner asks for these changes: {notes}\nIf a change is about the spoken words, also give a new \"text\" for those lines.\n" if notes else "")
+    p = f"""Plan the animation scenes for the owner's own script. Do not rewrite the story.{change}
+FULL SCRIPT AS SENT:
 <<<
 {text}
 >>>
+NUMBERED SPOKEN LINES (plan EXACTLY these {len(spoken)} lines):
+{numbered}
 
-Characters on screen must use these cast names: {", ".join(CAST)}. If the owner's characters have other names, pick one fitting
-cast name for each, use it everywhere in shot.cast and emotions, and list the choice in story.characters as
-{{"name": "<cast name>", "role": "<owner's character name and role; mark the main one 'hero'>", "want": "...", "personality": "..."}}.
-The spoken text keeps the owner's names.
-
-For each line give "beat" (one of {", ".join(story_gate.BEATS)}), "scene" (one sentence of what we see), "emotions" (every name in
-shot.cast -> one of {", ".join(story_gate.FACES)}), "say" (one tag from {", ".join(SAFE_TAGS)} + the same text) and "shot" using only:
-{SHOT_SCHEMA}
-Use a prop on at most 6 lines. Mark "monster" only if the script says someone is a monster.
-"title": the owner's title if there is one, else a short one from line 1 (under 90 characters). "hook_text": 2-5 words in CAPS.
-
-Reply with JSON only:
-{{"title": "...", "hook_text": "...", "story": {{"theme_rule": "...", "logline": "...", "characters": [], "clue": {{"line": 0, "text": ""}},
- "twist": {{"line": 0, "text": ""}}, "ending": "..."}}, "lines": [...], "description": "2 short lines for YouTube", "tags": ["8-10 tags"]}}"""
-    problems, last = [], None
-    for attempt in range(1, 5):
-        d = ask(p + (("\n\nFIX THESE PROBLEMS IN YOUR LAST ANSWER:\n- " + "\n- ".join(problems[:25]) + "\nLAST ANSWER:\n" + json.dumps(last, ensure_ascii=False)) if problems else ""),
-                key, e.get("GEMINI_MODEL"), temperature=0.3)
-        last = d
-        for l in d.get("lines") or []:           # the voice tag is ours; the words are never taken from "say"
-            tag = re.match(r"^\(([a-z ]+)\)", str(l.get("say", "")))
-            tag = tag.group(0) if tag and tag.group(0) in SAFE_TAGS else "(serious)"
-            l["say"] = f"{tag} {str(l.get('text', '')).strip()}"
-        problems = owner_checks(d, text, strict_words=not notes)
-        print(f"owner script, pass {attempt}: {len(problems)} problem(s)")
-        if not problems:
+On-screen characters must be cast names: {", ".join(CAST)}. If the owner's characters have other names, pick one cast name for each.
+For EVERY numbered line return an object with exactly these keys:
+ "n": the line number,
+ "beat": one of {", ".join(story_gate.BEATS)},
+ "scene": one sentence of what we see,
+ "emotions": {{"CastName": one of {", ".join(story_gate.FACES)}}} for every name in shot.cast,
+ "shot": {SHOT_SCHEMA}
+Follow the owner's notes (places, feelings, actions). Use a prop on at most 6 lines. Mark "monster" only if the script says someone is a monster.
+Reply with JSON only: {{"title": "...", "hook_text": "2-5 WORDS", "characters": [{{"name": "<cast name>", "role": "<owner's name and role>",
+"want": "...", "personality": "..."}}], "description": "2 short lines for YouTube", "tags": ["8-10 tags"],
+"lines": [{{"n": 1, "beat": "hook", "scene": "...", "emotions": {{}}, "shot": {{}}}}]}}"""
+    plan, meta = {}, {}
+    for attempt in range(1, 4):
+        missing = [i for i in range(1, len(spoken) + 1) if i not in plan]
+        if not missing:
             break
-    if problems:
-        raise RuntimeError("could not turn your script into scenes: " + "; ".join(problems[:4]))
-    d["title"] = str(d.get("title") or d["lines"][0]["text"])[:90]
-    d["hook_text"] = re.sub(r"[^A-Z0-9 ?!'.,]", "", str(d.get("hook_text", "")).upper())[:40]
+        try:
+            d = ask(p + (f"\n\nReturn the lines for these numbers: {missing}" if plan else ""), key, e.get("GEMINI_MODEL"), temperature=0.3)
+        except RuntimeError as err:
+            print("scene planning:", err)
+            break
+        meta = meta or d
+        for k, l in enumerate(d.get("lines") or [], 1):
+            n = l.get("n") if isinstance(l.get("n"), int) else k
+            if 1 <= n <= len(spoken) and isinstance(l.get("shot"), dict) and l["shot"].get("cast"):
+                plan.setdefault(n, l)
+        print(f"owner script, pass {attempt}: {len(plan)}/{len(spoken)} lines planned")
+    if len(plan) < 0.5 * len(spoken):
+        raise RuntimeError(f"Gemini could only plan {len(plan)} of {len(spoken)} lines (free quota busy or used up). Try again later.")
+    lines, last = [], {"set": "town", "cast": ["Eli"]}
+    for i, (words, _) in enumerate(spoken, 1):
+        l = dict(plan.get(i) or {"beat": "escalation", "scene": "", "emotions": {}, "shot": {"set": last["set"], "cast": last["cast"], "action": "talk"}})
+        l["text"] = str(l.get("text")).strip() if notes and str(l.get("text") or "").strip() else words
+        l.pop("say", None)
+        lines.append(l)
+        tidy({"lines": [l]})
+        if l["shot"].get("set") not in SHOT_SETS:
+            l["shot"]["set"] = last["set"]
+        l["shot"]["cast"] = [c for c in l["shot"]["cast"] if c in CAST] or last["cast"]
+        l["emotions"] = {c: l["emotions"].get(c, "neutral") for c in l["shot"]["cast"]}
+        last = {"set": l["shot"]["set"], "cast": l["shot"]["cast"]}
+    d = tidy({"lines": lines, "hook_text": meta.get("hook_text", ""), "tags": meta.get("tags"), "description": str(meta.get("description", "")),
+              "title": (title or str(meta.get("title") or "") or lines[0]["text"])[:90],
+              "story": {"characters": meta.get("characters") or []}})
     sc = to_script(ep, d, "town")
     sc.update(version=ver, source="Owner's own script", format=dict(number=None, name="Your script"), owner_text=text, review=None)
-    try:   # advice only: the owner decides
-        sc["review"] = story_gate.review(d, lambda q: ask(q, key, e.get("GEMINI_MODEL"), temperature=0.2))[0]
-    except Exception as err:
-        print("editor advice skipped:", err)
+    if notes:
+        sc["owner_text"] = (f"Title: {title}\n" if title else "") + "\n".join(l["text"] for l in lines)
     f = ROOT / "scripts" / f"{ep}.v{ver}.json"
     f.write_text(json.dumps(sc, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"{ep} v{ver}: {sc['title_working']} (your script, {sc['word_count']} words, ~{sc['est_seconds']} s)")

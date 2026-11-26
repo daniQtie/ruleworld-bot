@@ -297,7 +297,8 @@ def main(ep, spec_only=False):
     voice, _ = sf.read(str(wav), dtype="float32")
     soundtrack(spec, voice, out / "mix.wav")
     silent = out / "video-v2.mp4"
-    page = f"v2/engine.html?ep={ep}" + ("&sm=1024" if os.environ.get("GITHUB_ACTIONS") else "")
+    # the cloud has no graphics card: render the 3D at 2/3 size with lighter shadows (captions stay full 1080p), about 2-3x faster
+    page = f"v2/engine.html?ep={ep}" + ("&sm=1024&rs=0.667&aa=0&sh=hard" if os.environ.get("GITHUB_ACTIONS") else "")
     subprocess.run(["node", "render.js", page, str(silent), f"{spec['total']}"], cwd=ROOT / "render", check=True)
     ff("-i", silent, "-i", out / "mix.wav", "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-r", "30",
        "-af", "acompressor=threshold=-20dB:ratio=2.2:attack=8:release=160,loudnorm=I=-14:TP=-1.2:LRA=8,aresample=48000",

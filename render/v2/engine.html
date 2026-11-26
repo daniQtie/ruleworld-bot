@@ -13,9 +13,11 @@ import { buildSet, buildProp, INDOOR } from './sets.js';
 const Q = new URLSearchParams(location.search);
 const SPEC = await (await fetch(`/output/${Q.get('ep')}/v2spec.json`)).json();
 const W = 1080, H = 1920;
-const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
-renderer.setSize(W, H); renderer.setPixelRatio(1);
-renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+// speed settings for the cloud (no graphics card there): rs = 3D resolution scale (captions stay full 1080p), aa=0, sh=0 shadows off
+const RS = +(Q.get('rs') || 1), AA = Q.get('aa') !== '0', SH = Q.get('sh') || 'soft';
+const renderer = new THREE.WebGLRenderer({ antialias: AA, preserveDrawingBuffer: true });
+renderer.setSize(Math.round(W * RS), Math.round(H * RS)); renderer.setPixelRatio(1);
+renderer.shadowMap.enabled = SH !== '0'; renderer.shadowMap.type = SH === 'soft' ? THREE.PCFSoftShadowMap : THREE.PCFShadowMap;
 renderer.outputColorSpace = THREE.SRGBColorSpace; renderer.toneMapping = THREE.ACESFilmicToneMapping;
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(42, W / H, 0.1, 800);
@@ -197,8 +199,8 @@ window.renderFrame = (t) => {
   g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlpha = 1; g.clearRect(0, 0, W, H);
   const next = SHOTS[i + 1], toNext = next ? next.at - t : 99;
   const whipIn = s.in === 'whip' && d < 0.16 ? 1 - d / 0.16 : 0, whipOut = next && next.in === 'whip' && toNext < 0.12 ? 1 - toNext / 0.12 : 0;
-  if (whipIn || whipOut) { const off = whipIn ? whipIn * whipIn * 620 : -whipOut * whipOut * 620, n = 9; g.fillStyle = '#000'; g.fillRect(0, 0, W, H); for (let k = 0; k < n; k++) { g.globalAlpha = 1 / (k + 1); const x = off * (1 - k / n * 0.55); g.drawImage(gl, x, 0); g.drawImage(gl, x - Math.sign(off) * W, 0); } g.globalAlpha = 1; }
-  else g.drawImage(gl, 0, 0);
+  if (whipIn || whipOut) { const off = whipIn ? whipIn * whipIn * 620 : -whipOut * whipOut * 620, n = 9; g.fillStyle = '#000'; g.fillRect(0, 0, W, H); g.imageSmoothingQuality = 'high'; for (let k = 0; k < n; k++) { g.globalAlpha = 1 / (k + 1); const x = off * (1 - k / n * 0.55); g.drawImage(gl, x, 0, W, H); g.drawImage(gl, x - Math.sign(off) * W, 0, W, H); } g.globalAlpha = 1; }
+  else g.drawImage(gl, 0, 0, W, H);
   const vg = g.createRadialGradient(W / 2, H * 0.45, H * 0.3, W / 2, H * 0.45, H * 0.72); vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, MOOD[m][10]); g.fillStyle = vg; g.fillRect(0, 0, W, H);
   if (s.in === 'flash' && d < 0.2) { g.fillStyle = `rgba(255,255,255,${1 - d / 0.2})`; g.fillRect(0, 0, W, H); }
   if (s.in === 'black' && d < 0.3) { g.fillStyle = `rgba(0,0,0,${1 - d / 0.3})`; g.fillRect(0, 0, W, H); }
