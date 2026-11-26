@@ -13,3 +13,4 @@ render/node_modules/
 .claude/settings.local.json
 render/*.mp4
 render/*-frame.png
+cloud/worker/.wrangler/
