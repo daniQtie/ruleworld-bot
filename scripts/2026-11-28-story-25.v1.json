@@ -1,0 +1,383 @@
+{
+ "id": "2026-11-28-story-25",
+ "version": 1,
+ "source": "Gemini writer, format bank: Underdog twist",
+ "hook_type": {
+  "number": null,
+  "name": "format bank"
+ },
+ "format": {
+  "number": null,
+  "name": "Underdog twist"
+ },
+ "title_working": "The Boy Who Bought Broken Bike Wheels",
+ "hook_text": "TRASH OR GENIUS?",
+ "hook_until": 2.6,
+ "music": "tender",
+ "music_gain": 0.13,
+ "world_rule": "The Boy Who Bought Broken Bike Wheels",
+ "lines": [
+  {
+   "text": "Every Friday at three o'clock, Mason spends his entire allowance buying broken bike wheels from the school janitor.",
+   "say": "(serious) Every Friday at three o'clock, Mason spends his entire allowance buying broken bike wheels from the school janitor.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "hallway",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mason"
+    ],
+    "face": "neutral",
+    "action": "walk",
+    "camera": "drone",
+    "prop": {
+     "type": "stack",
+     "text": "OLD WHEELS"
+    },
+    "tag": {
+     "name": "Mason",
+     "role": "Quiet Student"
+    },
+    "trans": "cut"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So the whole sixth grade laughed at him, especially Marcus, who mocked him daily for carrying greasy scrap metal.",
+   "say": "(angry) So the whole sixth grade laughed at him, especially Marcus, who mocked him daily for carrying greasy scrap metal.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   },
+   "shot": {
+    "set": "hallway",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Marcus",
+     "Mason"
+    ],
+    "face": "smirk",
+    "action": "point",
+    "camera": "eye",
+    "tag": {
+     "name": "Marcus",
+     "role": "Class Bully"
+    },
+    "trans": "cut"
+   },
+   "acting": {}
+  },
+  {
+   "text": "But Mason never argued back; he simply tucked each bent rim into his heavy backpack and sketched notes in a blue pocketbook.",
+   "say": "(soft tone) But Mason never argued back; he simply tucked each bent rim into his heavy backpack and sketched notes in a blue pocketbook.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "set": "library",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mason"
+    ],
+    "face": "thinking",
+    "action": "sit",
+    "camera": "close",
+    "trans": "cut"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So whenever Marcus kicked an old dented gear down the hall, Mason quietly retrieved it and wiped off the dust.",
+   "say": "(sad) So whenever Marcus kicked an old dented gear down the hall, Mason quietly retrieved it and wiped off the dust.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "shot": {
+    "set": "hallway",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Mason",
+     "Marcus"
+    ],
+    "face": "sad",
+    "action": "pickup",
+    "camera": "low",
+    "trans": "cut"
+   },
+   "acting": {}
+  },
+  {
+   "text": "But when the annual downhill derby arrived, Noel, the quietest boy in class who walked with leg braces, sat alone by the bleachers.",
+   "say": "(worried) But when the annual downhill derby arrived, Noel, the quietest boy in class who walked with leg braces, sat alone by the bleachers.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Noel"
+    ],
+    "face": "worried",
+    "action": "sit",
+    "camera": "wide",
+    "tag": {
+     "name": "Noel",
+     "role": "Mason's Friend"
+    },
+    "trans": "cut"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So Marcus announced across the entire hill that his store-bought kart had already won without any real challenger.",
+   "say": "(confident) So Marcus announced across the entire hill that his store-bought kart had already won without any real challenger.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Marcus"
+    ],
+    "face": "smirk",
+    "action": "talk",
+    "camera": "ots",
+    "prop": {
+     "type": "sign",
+     "text": "CHAMPION"
+    },
+    "trans": "cut"
+   },
+   "acting": {}
+  },
+  {
+   "text": "But right before the starter raised the flag, Mason rolled onto the track pushing a shiny, hand-cranked speed cart.",
+   "say": "(serious) But right before the starter raised the flag, Mason rolled onto the track pushing a shiny, hand-cranked speed cart.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Mason",
+     "Noel"
+    ],
+    "face": "determined",
+    "action": "walk",
+    "camera": "push",
+    "trans": "flash"
+   },
+   "acting": {}
+  },
+  {
+   "text": "The truth was, Mason had spent three months rebuilding every piece of discarded metal to engineer a custom hand-pedal racer for Noel.",
+   "say": "(soft tone) The truth was, Mason had spent three months rebuilding every piece of discarded metal to engineer a custom hand-pedal racer for Noel.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Mason",
+     "Noel"
+    ],
+    "face": "happy",
+    "action": "hug",
+    "camera": "close",
+    "trans": "cut"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So the whole crowd fell silent as Noel strapped himself into the padded seat and grabbed the twin steering levers.",
+   "say": "(nervous) So the whole crowd fell silent as Noel strapped himself into the padded seat and grabbed the twin steering levers.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Noel"
+    ],
+    "face": "determined",
+    "action": "sit",
+    "camera": "follow",
+    "trans": "cut"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So Noel cranked the rebuilt gears downhill and crossed the finish line first while Marcus froze in disbelief.",
+   "say": "(happy) So Noel cranked the rebuilt gears downhill and crossed the finish line first while Marcus froze in disbelief.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "field",
+    "time": "sunset",
+    "mood": "win",
+    "cast": [
+     "Noel",
+     "Marcus"
+    ],
+    "face": "shocked",
+    "action": "cheer",
+    "camera": "wide",
+    "trans": "cut"
+   },
+   "acting": {}
+  },
+  {
+   "text": "So nobody in the sixth grade ever makes fun of the boy with the rusty backpack again.",
+   "say": "(happy) So nobody in the sixth grade ever makes fun of the boy with the rusty backpack again.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "shot": {
+    "set": "hallway",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mason",
+     "Noel"
+    ],
+    "face": "happy",
+    "action": "walk",
+    "camera": "pull",
+    "trans": "cut"
+   },
+   "acting": {}
+  },
+  {
+   "text": "Instead, everyone cheers when Friday hits at three o'clock, and Mason spends his entire allowance buying broken bike wheels from the school janitor.",
+   "say": "(confident) Instead, everyone cheers when Friday hits at three o'clock, and Mason spends his entire allowance buying broken bike wheels from the school janitor.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "",
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "shot": {
+    "set": "hallway",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Mason"
+    ],
+    "face": "happy",
+    "action": "wave",
+    "camera": "drone",
+    "prop": {
+     "type": "stack",
+     "text": "NEW RACER"
+    },
+    "trans": "cut"
+   },
+   "acting": {}
+  }
+ ],
+ "word_count": 239,
+ "est_seconds": 70.3,
+ "tail_hold": 2.5,
+ "upload": {
+  "title": "The Boy Who Bought Broken Bike Wheels #Shorts",
+  "description": "Mason was mocked for buying broken junk every week. But when race day came, his true reason left everyone speechless.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "roblox",
+   "animation",
+   "storytime",
+   "shorts",
+   "underdog",
+   "emotional",
+   "twist",
+   "wholesome",
+   "school",
+   "animated story",
+   "roblox story"
+  ]
+ }
+}
