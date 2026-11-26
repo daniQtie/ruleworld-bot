@@ -152,7 +152,10 @@ def revisions():
 
 def make(mode, fmt):
     revisions()
-    if mode == "owner":
+    if mode == "script":   # make a script file that is already in scripts/ (its id comes in OWNER_SCRIPT)
+        from pipeline import produce
+        produce.make(os.environ.get("OWNER_SCRIPT", "").strip())
+    elif mode == "owner":
         from pipeline import produce, writer
         text = os.environ.get("OWNER_SCRIPT", "").strip()
         if not text:

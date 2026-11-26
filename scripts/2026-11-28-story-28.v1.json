@@ -1,0 +1,512 @@
+{
+ "id": "2026-11-28-story-28",
+ "version": 1,
+ "source": "Owner's script, hand-directed",
+ "story": {},
+ "hook_type": {
+  "number": null,
+  "name": "owner"
+ },
+ "format": {
+  "number": null,
+  "name": "Your script"
+ },
+ "title_working": "He Only Cared About Money",
+ "hook_text": "ONLY ABOUT MONEY?",
+ "hook_until": 2.4,
+ "music": "drift",
+ "music_gain": 0.34,
+ "world_rule": "He Only Cared About Money",
+ "lines": [
+  {
+   "text": "He only cared about money.",
+   "say": "(serious) He only cared about money.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.6,
+   "beat": "hook",
+   "scene": "",
+   "emotions": {
+    "Dad": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "city",
+    "time": "day",
+    "mood": "cold",
+    "cast": [
+     "Dad"
+    ],
+    "face": "neutral",
+    "action": "walk",
+    "camera": "drone",
+    "trans": "cut",
+    "faces": {
+     "Dad": "neutral"
+    }
+   }
+  },
+  {
+   "text": "He woke up before everyone else.",
+   "say": "(serious) He woke up before everyone else.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.35,
+   "beat": "setup",
+   "scene": "",
+   "emotions": {
+    "Dad": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "day",
+    "mood": "cold",
+    "cast": [
+     "Dad"
+    ],
+    "face": "neutral",
+    "action": "walk",
+    "camera": "follow",
+    "trans": "zoom",
+    "faces": {
+     "Dad": "neutral"
+    }
+   }
+  },
+  {
+   "text": "He came home after everyone was already asleep.",
+   "say": "(serious) He came home after everyone was already asleep.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.35,
+   "beat": "setup",
+   "scene": "",
+   "emotions": {
+    "Dad": "sad"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "night",
+    "mood": "night",
+    "cast": [
+     "Dad"
+    ],
+    "face": "sad",
+    "action": "walk",
+    "camera": "low",
+    "trans": "cut",
+    "faces": {
+     "Dad": "sad"
+    }
+   }
+  },
+  {
+   "text": "He never joined anyone.",
+   "say": "(serious) He never joined anyone.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.35,
+   "beat": "setup",
+   "scene": "",
+   "emotions": {
+    "Dad": "determined",
+    "Teacher": "confused",
+    "Mom": "confused"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "shop",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Dad",
+     "Teacher",
+     "Mom"
+    ],
+    "face": "determined",
+    "action": "pickup",
+    "camera": "two",
+    "trans": "whip",
+    "faces": {
+     "Dad": "determined",
+     "Teacher": "confused",
+     "Mom": "confused"
+    },
+    "prop": {
+     "type": "stack",
+     "text": "WORK"
+    }
+   }
+  },
+  {
+   "text": "He never rested.",
+   "say": "(serious) He never rested.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.35,
+   "beat": "setup",
+   "scene": "",
+   "emotions": {
+    "Dad": "determined"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "shop",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Dad"
+    ],
+    "face": "determined",
+    "action": "pickup",
+    "camera": "dutch",
+    "trans": "cut",
+    "faces": {
+     "Dad": "determined"
+    }
+   }
+  },
+  {
+   "text": "People said he was greedy.",
+   "say": "(serious) People said he was greedy.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.35,
+   "beat": "consequence",
+   "scene": "",
+   "emotions": {
+    "Teacher": "angry",
+    "Dad": "neutral",
+    "Mom": "smirk"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "shop",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Teacher",
+     "Dad",
+     "Mom"
+    ],
+    "face": "angry",
+    "action": "disagree",
+    "camera": "two",
+    "trans": "zoom",
+    "faces": {
+     "Teacher": "angry",
+     "Dad": "neutral",
+     "Mom": "smirk"
+    }
+   }
+  },
+  {
+   "text": "Cold.",
+   "say": "(serious) Cold.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.35,
+   "beat": "escalation",
+   "scene": "",
+   "emotions": {
+    "Mom": "smirk",
+    "Dad": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "shop",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mom",
+     "Dad"
+    ],
+    "face": "smirk",
+    "action": "point",
+    "camera": "close",
+    "trans": "cut",
+    "faces": {
+     "Mom": "smirk",
+     "Dad": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Obsessed.",
+   "say": "(serious) Obsessed.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.9,
+   "beat": "escalation",
+   "scene": "",
+   "emotions": {
+    "Dad": "neutral",
+    "Teacher": "angry"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "shop",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Dad",
+     "Teacher"
+    ],
+    "face": "neutral",
+    "action": "pickup",
+    "camera": "low",
+    "trans": "cut",
+    "faces": {
+     "Dad": "neutral",
+     "Teacher": "angry"
+    }
+   }
+  },
+  {
+   "text": "People thought he only cared about money.",
+   "say": "(soft tone) People thought he only cared about money.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 0.6,
+   "beat": "twist",
+   "scene": "",
+   "emotions": {
+    "Grandma": "worried",
+    "Dad": "sad"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "house",
+    "time": "night",
+    "mood": "night",
+    "cast": [
+     "Grandma",
+     "Dad"
+    ],
+    "face": "worried",
+    "action": "sit",
+    "camera": "two",
+    "trans": "black",
+    "faces": {
+     "Grandma": "worried",
+     "Dad": "sad"
+    }
+   }
+  },
+  {
+   "text": "But a man doesn't look for money to be happy.",
+   "say": "(soft tone) But a man doesn't look for money to be happy.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 0.35,
+   "beat": "explanation",
+   "scene": "",
+   "emotions": {
+    "Dad": "sad",
+    "Grandma": "sad"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "mood": "night",
+    "cast": [
+     "Dad",
+     "Grandma"
+    ],
+    "face": "sad",
+    "action": "sit",
+    "camera": "push",
+    "trans": "cut",
+    "faces": {
+     "Dad": "sad",
+     "Grandma": "sad"
+    },
+    "prop": {
+     "type": "sign",
+     "text": "FOR MOM"
+    }
+   }
+  },
+  {
+   "text": "A man looks for money to make the people he loves happy.",
+   "say": "(soft tone) A man looks for money to make the people he loves happy.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 0.35,
+   "beat": "explanation",
+   "scene": "",
+   "emotions": {
+    "Grandma": "sob",
+    "Dad": "thinking"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "sunset",
+    "mood": "sunset",
+    "cast": [
+     "Grandma",
+     "Dad"
+    ],
+    "face": "sob",
+    "action": "sit",
+    "camera": "close",
+    "trans": "flash",
+    "faces": {
+     "Grandma": "sob",
+     "Dad": "thinking"
+    }
+   }
+  },
+  {
+   "text": "Seeing that his hard work gives his loved ones peace of mind,",
+   "say": "(soft tone) Seeing that his hard work gives his loved ones peace of mind,",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 0.45,
+   "beat": "resolution",
+   "scene": "",
+   "emotions": {
+    "Dad": "neutral",
+    "Grandma": "happy"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "sunset",
+    "mood": "win",
+    "cast": [
+     "Dad",
+     "Grandma"
+    ],
+    "face": "neutral",
+    "action": "hug",
+    "camera": "two",
+    "trans": "cut",
+    "faces": {
+     "Dad": "neutral",
+     "Grandma": "happy"
+    }
+   }
+  },
+  {
+   "text": "is his greatest satisfaction.",
+   "say": "(soft tone) is his greatest satisfaction.",
+   "speaker": "narrator",
+   "speed": 0.88,
+   "volume": 0,
+   "pause": 0.35,
+   "beat": "ending",
+   "scene": "",
+   "emotions": {
+    "Dad": "happy",
+    "Grandma": "happy"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "sunset",
+    "mood": "win",
+    "cast": [
+     "Dad",
+     "Grandma"
+    ],
+    "face": "happy",
+    "action": "still",
+    "camera": "close",
+    "trans": "zoom",
+    "faces": {
+     "Dad": "happy",
+     "Grandma": "happy"
+    }
+   }
+  }
+ ],
+ "word_count": 78,
+ "est_seconds": 45,
+ "tail_hold": 3.0,
+ "review": null,
+ "owner_text": "He only cared about money.\nHe woke up before everyone else.\nHe came home after everyone was already asleep.\nHe never joined anyone.\nHe never rested.\nPeople said he was greedy.\nCold.\nObsessed.\nPeople thought he only cared about money.\nBut a man doesn't look for money to be happy.\nA man looks for money to make the people he loves happy.\nSeeing that his hard work gives his loved ones peace of mind,\nis his greatest satisfaction.",
+ "upload": {
+  "title": "He Only Cared About Money #Shorts",
+  "description": "Everyone called him greedy. Then they saw who he was working for. Who are you working hard for?\nOriginal animated story. Not affiliated with Roblox or any creator.\n#animatedstory #storytime #shorts",
+  "tags": [
+   "emotional story",
+   "family",
+   "mother",
+   "hard work",
+   "animated story",
+   "storytime",
+   "shorts",
+   "roblox story",
+   "plot twist"
+  ]
+ }
+}
