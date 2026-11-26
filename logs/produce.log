@@ -33,3 +33,10 @@
 2026-11-26 05:31:54 2026-11-28-story-25: assemble
 2026-11-26 05:33:13 2026-11-28-story-25: send to Telegram
 2026-11-26 05:33:26 2026-11-28-story-25: done (check warnings, see output)
+2026-11-26 13:19:02 2026-11-28-story-26: voice
+2026-11-26 13:19:20 2026-11-28-story-26: direct, render and mix (style v2)
+2026-11-26 13:25:09 rendered 668 frames in 313.5 s -> /home/runner/work/ruleworld-bot/ruleworld-bot/output/2026-11-28-story-26/video-v2.mp4
+directed: 6 lines -> 11 shots, average 2.0s, longest 3.0s, 22.3s total
+done: /home/runner/work/ruleworld-bot/ruleworld-bot/output/2026-11-28-story-26/final.mp4
+2026-11-26 13:25:20 2026-11-28-story-26: send to Telegram
+2026-11-26 13:25:25 2026-11-28-story-26: done (check warnings, see output)

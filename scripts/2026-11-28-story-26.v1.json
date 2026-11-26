@@ -1,0 +1,335 @@
+{
+ "id": "2026-11-28-story-26",
+ "version": 1,
+ "story": {
+  "characters": [
+   {
+    "name": "Leo",
+    "role": "Leo, a young boy with big feelings",
+    "want": "To protect his treehouse and express himself freely",
+    "personality": "Sensitive, passionate, and loyal"
+   },
+   {
+    "name": "Hana",
+    "role": "Hana, Leo's brave best friend",
+    "want": "To comfort Leo and keep him safe",
+    "personality": "Caring, brave, and soothing"
+   },
+   {
+    "name": "Mayor",
+    "role": "Mayor, the town's strict leader",
+    "want": "To tear down the treehouse and enforce order",
+    "personality": "Impulsive, strict, and quick to anger"
+   }
+  ]
+ },
+ "source": "Owner's own script",
+ "hook_type": {
+  "number": null,
+  "name": "format bank"
+ },
+ "format": {
+  "number": null,
+  "name": "Your script"
+ },
+ "title_working": "The Day Leo Turned Into A Monster",
+ "hook_text": "DON'T GET ANGRY",
+ "hook_until": 2.6,
+ "music": "drift",
+ "music_gain": 0.3,
+ "world_rule": "The Day Leo Turned Into A Monster",
+ "lines": [
+  {
+   "text": "In this town, if you get angry even once, you turn into a monster.",
+   "say": "(serious) In this town, if you get angry even once, you turn into a monster.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "hook",
+   "scene": "In a peaceful town, citizens walk cautiously to avoid feeling any anger.",
+   "emotions": {
+    "Leo": "neutral",
+    "Hana": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Leo",
+     "Hana"
+    ],
+    "face": "neutral",
+    "action": "walk",
+    "camera": "wide",
+    "prop": {
+     "type": "sign",
+     "text": "STAY CALM"
+    },
+    "board": "",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "neutral",
+     "Hana": "neutral"
+    }
+   }
+  },
+  {
+   "text": "So when the Mayor tore down the treehouse, Leo felt his face get hot.",
+   "say": "(angry) So when the Mayor tore down the treehouse, Leo felt his face get hot.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "The Mayor destroys the treehouse, causing Leo's face to turn bright red with rage.",
+   "emotions": {
+    "Leo": "angry",
+    "Mayor": "smirk",
+    "Hana": "worried"
+   },
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Leo",
+     "Mayor",
+     "Hana"
+    ],
+    "face": "angry",
+    "action": "still",
+    "camera": "close",
+    "prop": {
+     "type": "smoke",
+     "text": "CRASH"
+    },
+    "board": "",
+    "monster": [],
+    "trans": "flash",
+    "faces": {
+     "Leo": "angry",
+     "Mayor": "smirk",
+     "Hana": "worried"
+    }
+   }
+  },
+  {
+   "text": "In one flash, Leo grew giant horns and a long purple tail.",
+   "say": "(angry) In one flash, Leo grew giant horns and a long purple tail.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "consequence",
+   "scene": "In a burst of energy, giant horns sprout from Leo's head and a purple tail grows.",
+   "emotions": {
+    "Leo": "angry",
+    "Hana": "scared",
+    "Mayor": "shocked"
+   },
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Leo",
+     "Hana",
+     "Mayor"
+    ],
+    "face": "angry",
+    "action": "shock",
+    "camera": "dutch",
+    "prop": {
+     "type": "fire",
+     "text": "POOF"
+    },
+    "board": "",
+    "monster": [
+     "Leo"
+    ],
+    "trans": "flash",
+    "faces": {
+     "Leo": "angry",
+     "Hana": "scared",
+     "Mayor": "shocked"
+    }
+   }
+  },
+  {
+   "text": "Hana cried, but she stayed and sang their treehouse song.",
+   "say": "(sad) Hana cried, but she stayed and sang their treehouse song.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "choice",
+   "scene": "Tears stream down Hana's face, but she stands firm and softly sings their treehouse song.",
+   "emotions": {
+    "Hana": "sob",
+    "Leo": "confused"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Hana",
+     "Leo"
+    ],
+    "face": "sob",
+    "action": "talk",
+    "camera": "ots",
+    "prop": {
+     "type": "wave",
+     "text": "SOOTHING SONG"
+    },
+    "board": "",
+    "monster": [
+     "Leo"
+    ],
+    "trans": "cut",
+    "faces": {
+     "Hana": "sob",
+     "Leo": "confused"
+    }
+   }
+  },
+  {
+   "text": "Then the horns shrank, and the shocked Mayor turned into a monster too.",
+   "say": "(angry) Then the horns shrank, and the shocked Mayor turned into a monster too.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "Leo's horns shrink away, but the enraged Mayor suddenly transforms into a monster himself.",
+   "emotions": {
+    "Mayor": "angry",
+    "Leo": "surprised",
+    "Hana": "shocked"
+   },
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Mayor",
+     "Leo",
+     "Hana"
+    ],
+    "face": "angry",
+    "action": "shock",
+    "camera": "push",
+    "prop": {
+     "type": "smoke",
+     "text": "ROAR"
+    },
+    "board": "",
+    "monster": [
+     "Mayor"
+    ],
+    "trans": "flash",
+    "faces": {
+     "Mayor": "angry",
+     "Leo": "surprised",
+     "Hana": "shocked"
+    }
+   }
+  },
+  {
+   "text": "So Leo sang for the Mayor, and now nobody has to hide their feelings.",
+   "say": "(happy) So Leo sang for the Mayor, and now nobody has to hide their feelings.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "resolution",
+   "scene": "Leo sings the treehouse song to soothe the Mayor, freeing the town from hiding their true feelings.",
+   "emotions": {
+    "Leo": "happy",
+    "Hana": "happy",
+    "Mayor": "happy"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "sunset",
+    "mood": "win",
+    "cast": [
+     "Leo",
+     "Hana",
+     "Mayor"
+    ],
+    "face": "happy",
+    "action": "cheer",
+    "camera": "wide",
+    "prop": {
+     "type": "wave",
+     "text": "HARMONY"
+    },
+    "board": "",
+    "monster": [],
+    "trans": "zoom",
+    "faces": {
+     "Leo": "happy",
+     "Hana": "happy",
+     "Mayor": "happy"
+    }
+   }
+  }
+ ],
+ "word_count": 77,
+ "est_seconds": 22.6,
+ "tail_hold": 2.5,
+ "upload": {
+  "title": "The Day Leo Turned Into A Monster #Shorts",
+  "description": "When anger turns people into real monsters, Leo faces his biggest test.\nDiscover how a simple song brings healing and understanding to an entire town.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "animation",
+   "storytime",
+   "monster",
+   "emotions",
+   "friendship",
+   "kids animation",
+   "treehouse",
+   "music",
+   "cartoon",
+   "animated story",
+   "roblox story"
+  ]
+ },
+ "owner_text": "Title: The Day Leo Turned Into A Monster\nNarrator: In this town, if you get angry even once, you turn into a monster.\nNarrator: So when the Mayor tore down the treehouse, Leo felt his face get hot.\nNarrator: In one flash, Leo grew giant horns and a long purple tail.\nNarrator: Hana cried, but she stayed and sang their treehouse song.\nNarrator: Then the horns shrank, and the shocked Mayor turned into a monster too.\nNarrator: So Leo sang for the Mayor, and now nobody has to hide their feelings.",
+ "review": null
+}
