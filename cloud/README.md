@@ -35,7 +35,7 @@ All keys live in the repo's **Settings → Secrets and variables → Actions**. 
 
 ## Daily use: same buttons as before
 
-- 🎬 New video, 📋 Status, 📊 Stats, ⏸ Pause, ▶️ Resume, 🔑 Reconnect YouTube, ❓ Help.
+- 📝 My script (paste your own script, or "Idea: ..."), 🎬 New video, 📋 Status, 📊 Stats, ⏸ Pause, ▶️ Resume, 🔑 Reconnect YouTube, ❓ Help.
 - Every video comes with ✅ / ✏️ / ❌ buttons.
   - ✅ checks that the button matches the exact file (sha256), then uploads.
   - ✏️ takes typed or voice notes and makes a new version.

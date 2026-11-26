@@ -1,7 +1,7 @@
 """Jobs that GitHub Actions runs (2026-11-26: Oracle needed a card, so the channel moved to GitHub Actions + a Cloudflare Worker).
 
   python -m pipeline.cloudjobs env                       write .env and secrets/*.json from the Actions secrets (never printed)
-  python -m pipeline.cloudjobs make --mode new|revise [--format rule|choice|underdog|school|any]
+  python -m pipeline.cloudjobs make --mode new|revise [--format town|power|monster|mystery|choice|school|any]
   python -m pipeline.cloudjobs uploads                   upload every APPROVED video, log REJECTED ones
   python -m pipeline.cloudjobs reconnect                 YouTube phone sign-in, saves the new token as a GitHub secret
   python -m pipeline.cloudjobs stats                     views/likes of the last 10 Shorts to Telegram
@@ -17,6 +17,7 @@ How the pieces talk:
 """
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -151,7 +152,15 @@ def revisions():
 
 def make(mode, fmt):
     revisions()
-    if mode == "new":
+    if mode == "owner":
+        from pipeline import produce, writer
+        text = os.environ.get("OWNER_SCRIPT", "").strip()
+        if not text:
+            raise RuntimeError("your script arrived empty")
+        idea = re.match(r"(?is)^\s*idea\s*:\s*(.+)$", text)
+        ep = writer.write(None, None if fmt in (None, "", "any") else fmt, idea=idea.group(1)) if idea else writer.from_owner(text)
+        produce.make(ep)
+    elif mode == "new":
         from pipeline import produce, writer
         ep = writer.write(None, None if fmt in (None, "", "any") else fmt)
         produce.make(ep)

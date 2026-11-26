@@ -28,8 +28,9 @@ MAKE_AT = ["11:00", "21:00"]   # PHT: each makes 1 episode (about 30-40 min on t
 MAX_WAITING = 4                          # don't pile up videos the owner hasn't decided on
 KB = {"keyboard": [["🎬 New video", "📋 Status"], ["📊 Stats", "⏸ Pause", "▶️ Resume"], ["🔑 Reconnect YouTube", "❓ Help"]],
       "resize_keyboard": True, "is_persistent": True}
-FORMAT_KB = {"inline_keyboard": [[{"text": "🌍 Rule world", "callback_data": "new:rule"}, {"text": "🔢 Choice", "callback_data": "new:choice"}],
-                                 [{"text": "💪 Underdog", "callback_data": "new:underdog"}, {"text": "🏫 School twist", "callback_data": "new:school"}],
+FORMAT_KB = {"inline_keyboard": [[{"text": "🏛️ Town law", "callback_data": "new:town"}, {"text": "⚡ Powers", "callback_data": "new:power"}],
+                                 [{"text": "👹 Monsters", "callback_data": "new:monster"}, {"text": "🗺️ Mystery", "callback_data": "new:mystery"}],
+                                 [{"text": "🚪 Pick one", "callback_data": "new:choice"}, {"text": "🏫 School", "callback_data": "new:school"}],
                                  [{"text": "🎲 Any", "callback_data": "new:any"}]]}
 RECONNECT_KB = {"inline_keyboard": [[{"text": "🔑 Reconnect YouTube", "callback_data": "yt:reconnect"}]]}
 

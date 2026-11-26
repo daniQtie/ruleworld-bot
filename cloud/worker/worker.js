@@ -4,15 +4,25 @@
 // Bindings: KV (paused flag, the "waiting for notes" state). Secrets: BOT_TOKEN, OWNER_ID, GH_TOKEN, WEBHOOK_SECRET.
 // Cron (wrangler.toml): 03:00, 13:00 UTC = 11:00, 21:00 PHT -> one new video each, unless paused.
 
-const KB = { keyboard: [['🎬 New video', '📋 Status'], ['📊 Stats', '⏸ Pause', '▶️ Resume'], ['🔑 Reconnect YouTube', '❓ Help']],
+const KB = { keyboard: [['🎬 New video', '📝 My script'], ['📋 Status'], ['📊 Stats', '⏸ Pause', '▶️ Resume'], ['🔑 Reconnect YouTube', '❓ Help']],
   resize_keyboard: true, is_persistent: true };
 const FORMAT_KB = { inline_keyboard: [
-  [{ text: '🌍 Rule world', callback_data: 'new:rule' }, { text: '🔢 Choice', callback_data: 'new:choice' }],
-  [{ text: '💪 Underdog', callback_data: 'new:underdog' }, { text: '🏫 School twist', callback_data: 'new:school' }],
+  [{ text: '🏛️ Town law', callback_data: 'new:town' }, { text: '⚡ Powers', callback_data: 'new:power' }],
+  [{ text: '👹 Monsters', callback_data: 'new:monster' }, { text: '🗺️ Mystery', callback_data: 'new:mystery' }],
+  [{ text: '🚪 Pick one', callback_data: 'new:choice' }, { text: '🏫 School', callback_data: 'new:school' }],
   [{ text: '🎲 Any', callback_data: 'new:any' }]] };
 const LABELS = { approve: '✅ Approve', revise: '✏️ Revise', reject: '❌ Reject' };
 const MAX_WAITING = 4;
+const SCRIPT_KB = { inline_keyboard: [[{ text: '✅ Gawin ang video', callback_data: 'script:go' }, { text: '🗑 Cancel', callback_data: 'script:cancel' }]] };
+const SCRIPT_HELP = `📝 I-paste ang script mo (puwedeng ilang mensahe kung mahaba). Kahit anong ayos: title, characters, emosyon, eksena at narration.
+
+• English ang narration. Hindi babaguhin ang mga salita mo.
+• Kung ideya lang ang meron ka, simulan sa "Idea:" at ako ang bubuo ng kuwento.
+• Public ang GitHub repo, kaya makikita ng iba ang script.
+
+Pagkatapos i-paste, pindutin ang ✅.`;
 const HELP = `🎬 New video: make one now (you pick the format).
+📝 My script: send your own script (or "Idea: ...") and get a video of it.
 📋 Status: what is being made, what waits for you, the latest uploads.
 📊 Stats: views and likes of the last 10 Shorts.
 ⏸ Pause / ▶️ Resume: stop or restart the automatic videos (11 AM, 9 PM). Approved videos still upload.
@@ -131,10 +141,27 @@ function parseCsv(text) {
   return body.map(r => Object.fromEntries(head.map((h, i) => [h, r[i] || ''])));
 }
 
+async function startScript(env) {
+  await env.KV.delete('awaiting');
+  await env.KV.put('script', JSON.stringify({ text: '' }), { expirationTtl: 3600 });
+  await say(env, SCRIPT_HELP);
+}
+
+async function scriptDone(env, go) {
+  const d = JSON.parse((await env.KV.get('script')) || 'null');
+  if (!go) { await env.KV.delete('script'); return say(env, '🗑 Cancelled.'); }
+  if (!d || d.text.trim().length < 20) return say(env, 'Wala pa akong script. Pindutin ang 📝 My script at i-paste ito.');
+  if (await inLine(env, 'make.yml') > 0) return say(env, '⏳ May video pang nakapila. Pindutin ulit ang ✅ kapag nagsimula na iyon.', SCRIPT_KB);
+  await dispatch(env, 'make.yml', { mode: 'owner', format: 'any', script: d.text.slice(0, 9000) });
+  await env.KV.delete('script');
+  return say(env, '🎬 Ginagawa ko na ang video mula sa script mo… mga 30-60 min. Ipapadala ko rito kasama ang script sheet.');
+}
+
 async function onText(env, t) {
   t = (t || '').trim();
   if (['/start', '/help', '❓ Help'].includes(t)) await say(env, HELP);
   else if (['🎬 New video', '/new'].includes(t)) await say(env, 'Which format?', FORMAT_KB);
+  else if (['📝 My script', '/script'].includes(t)) await startScript(env);
   else if (['📋 Status', '/status'].includes(t)) await status(env);
   else if (['📊 Stats', '/stats'].includes(t)) { await dispatch(env, 'stats.yml'); await say(env, '📊 Getting the numbers… about 1 min.'); }
   else if (['⏸ Pause', '/pause'].includes(t)) { await env.KV.put('paused', '1'); await say(env, '⏸ Auto mode paused. Approved videos still upload.'); }
@@ -157,6 +184,7 @@ async function handle(env, u) {
     await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id });
     const data = cb.data || '';
     if (data.startsWith('new:')) return newVideo(env, data.slice(4));
+    if (data.startsWith('script:')) return scriptDone(env, data === 'script:go');
     if (data === 'yt:reconnect') return reconnect(env);
     const [action, ...rest] = data.split(':');
     const sha8 = rest.pop(), ep = rest.join(':');
@@ -165,6 +193,14 @@ async function handle(env, u) {
   }
   if (!msg) return;
   if (await onText(env, msg.text)) return;
+  const draft = JSON.parse((await env.KV.get('script')) || 'null');
+  if (draft) {
+    if (!msg.text) return say(env, 'Text lang muna: i-paste ang script bilang mensahe.');
+    draft.text = (draft.text ? draft.text + '\n' : '') + msg.text;
+    if (draft.text.length > 9000) return say(env, '⚠️ Masyadong mahaba (hanggang 9,000 characters). Paikliin, tapos pindutin ulit ang 📝 My script.');
+    await env.KV.put('script', JSON.stringify(draft), { expirationTtl: 3600 });
+    return say(env, `📝 Natanggap (${draft.text.length} characters). May kasunod pa? I-paste lang. Kung kumpleto na, pindutin ang ✅.`, SCRIPT_KB);
+  }
   const a = JSON.parse((await env.KV.get('awaiting')) || 'null');
   if (a) {
     const voice = (msg.voice || msg.audio)?.file_id;

@@ -1,0 +1,213 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+// Data-driven style-v2 engine. engine.html?ep=<id> reads /output/<id>/v2spec.json (made by pipeline/v2.py)
+// and exposes window.renderFrame(t): the whole video with transitions, captions and the hook title.
+import * as THREE from 'three';
+import { tex, mat, mesh, makeChar, pose } from './cast.js';
+import { LOOKS } from './looks.js';
+import { buildSet, buildProp, INDOOR } from './sets.js';
+
+const Q = new URLSearchParams(location.search);
+const SPEC = await (await fetch(`/output/${Q.get('ep')}/v2spec.json`)).json();
+const W = 1080, H = 1920;
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setSize(W, H); renderer.setPixelRatio(1);
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.outputColorSpace = THREE.SRGBColorSpace; renderer.toneMapping = THREE.ACESFilmicToneMapping;
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(42, W / H, 0.1, 800);
+
+// ---------- sky + light moods ----------
+function skyTex(top, bottom, cloud, n, stars) {
+  return tex(2048, 1024, (g) => {
+    const gr = g.createLinearGradient(0, 0, 0, 560); gr.addColorStop(0, top); gr.addColorStop(1, bottom); g.fillStyle = gr; g.fillRect(0, 0, 2048, 1024);
+    let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    if (stars) { for (let i = 0; i < 500; i++) { g.fillStyle = `rgba(255,255,240,${0.3 + rnd() * 0.7})`; g.fillRect(rnd() * 2048, rnd() * 470, 3, 3); } }
+    for (let c = 0; c < n; c++) { const cx = rnd() * 2048, cy = 150 + rnd() * 330, s = 30 + rnd() * 62; for (let i = 0; i < 22; i++) { const x = cx + (rnd() - 0.5) * s * 3.6, y = cy + (rnd() - 0.5) * s * 0.7, r = s * (0.3 + rnd() * 0.5); const rg = g.createRadialGradient(x, y, 0, x, y, r); rg.addColorStop(0, `rgba(${cloud},.75)`); rg.addColorStop(1, `rgba(${cloud},0)`); g.fillStyle = rg; g.fillRect(x - r, y - r, r * 2, r * 2); } }
+  });
+}
+const MOOD = {   // [sky, fog, hemi sky, hemi ground, hemi i, sun colour, sun i, rim colour, rim i, exposure, vignette]
+  day: [['#2e7fe8', '#bfe4ff', '255,255,255', 36], '#cfe8ff', '#eef7ff', '#8a9a6a', 1.2, '#fff0d4', 2.5, '#bcd8ff', 0.7, 1.1, 'rgba(0,0,0,.10)'],
+  win: [['#1f78f0', '#ffe9b8', '255,248,230', 30], '#ffeed0', '#fff6e6', '#9aa860', 1.25, '#ffe2a8', 2.8, '#fff0b0', 1.1, 1.16, 'rgba(60,30,0,.10)'],
+  sad: [['#6f87ab', '#c3cede', '225,230,240', 60], '#bcc7d6', '#dbe4f4', '#6f786f', 1.25, '#dfe6f5', 1.5, '#9fb2d8', 0.7, 1.08, 'rgba(10,20,50,.28)'],
+  cold: [['#4f9bd8', '#e2f4ff', '240,250,255', 44], '#dcf0ff', '#e4f4ff', '#9fb6c8', 1.35, '#dff0ff', 2.0, '#bfe6ff', 1.0, 1.08, 'rgba(0,40,80,.2)'],
+  sunset: [['#4a3f9c', '#ffb066', '255,190,150', 34], '#ffbf8f', '#ffd9c0', '#8a6a52', 1.15, '#ffa860', 2.5, '#9a7bff', 1.1, 1.12, 'rgba(60,10,30,.2)'],
+  night: [['#07102e', '#33447a', '90,104,150', 22, true], '#26345e', '#9fb2ff', '#3a3550', 1.35, '#b8c8ff', 1.5, '#ffb978', 1.2, 1.28, 'rgba(0,0,20,.35)'],
+  storm: [['#0e0f24', '#3b3560', '96,92,128', 70], '#2c2a4a', '#8e93d8', '#2a2438', 1.45, '#9aa6ff', 1.7, '#ff9a6a', 1.4, 1.3, 'rgba(5,0,20,.42)'],
+};
+const skies = {};
+const sky = (m) => (skies[m] ||= skyTex(...MOOD[m][0]));
+const dome = new THREE.Mesh(new THREE.SphereGeometry(380, 48, 24), new THREE.MeshBasicMaterial({ side: THREE.BackSide, fog: false, toneMapped: false })); scene.add(dome);
+scene.fog = new THREE.Fog('#cfe8ff', 80, 260);
+const hemi = new THREE.HemisphereLight('#eef7ff', '#8a9a6a', 1.2); scene.add(hemi);
+const sun = new THREE.DirectionalLight('#fff0d4', 2.5); sun.position.set(14, 34, 30); sun.castShadow = true; const SM = +(Q.get('sm') || 2048); sun.shadow.mapSize.set(SM, SM);
+Object.assign(sun.shadow.camera, { left: -30, right: 30, top: 30, bottom: -30, near: 1, far: 120 }); sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.03; scene.add(sun);
+const rim = new THREE.DirectionalLight('#bcd8ff', 0.7); rim.position.set(-25, 18, -6); scene.add(rim);
+const flashL = new THREE.DirectionalLight('#dfe6ff', 0); flashL.position.set(-8, 40, 18); scene.add(flashL);
+let moodNow = null;
+function setMood(m, indoor) {
+  const key = m + indoor; if (key === moodNow) return; moodNow = key; const v = MOOD[m];
+  dome.material.map = sky(m); dome.material.needsUpdate = true; scene.fog.color.set(v[1]);
+  hemi.color.set(v[2]); hemi.groundColor.set(v[3]); hemi.intensity = v[4] * (indoor ? 1.12 : 1);
+  sun.color.set(v[5]); sun.intensity = v[6] * (indoor ? 0.72 : 1); sun.castShadow = true;
+  rim.color.set(v[7]); rim.intensity = v[8];
+  renderer.toneMappingExposure = v[9] * (indoor ? 0.94 : 1);
+}
+
+// ---------- storm: dark cloud, rain, lightning ----------
+function cloudMesh(color, scale) { const g = new THREE.Group(), m = mat(color, { roughness: 1 }); let seed = 11; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647; for (let i = 0; i < 22; i++) { const a = (i / 22) * Math.PI * 2, rr = rnd(); const b = mesh(new THREE.SphereGeometry(0.55 + rnd() * 0.45, 16, 12), m, g, Math.cos(a) * 1.5 * rr + (rnd() - 0.5), (rnd() - 0.35) * 0.65, Math.sin(a) * 0.7 * rr); b.castShadow = false; } g.scale.setScalar(scale); return g; }
+const storm = new THREE.Group(); scene.add(storm);
+[[0, 0, 0, 4.0], [-6.5, -0.6, -1, 3.3], [6.5, -0.4, -1, 3.4], [-2.5, 2, -2, 3.1], [3, 1.8, -2, 3.0]].forEach(([x, y, z, s]) => { const c = cloudMesh('#4a4766', s); c.position.set(x, 16.5 + y, -14 + z); storm.add(c); });
+const drops = []; { const geo = new THREE.CylinderGeometry(0.035, 0.035, 0.55, 5), m = new THREE.MeshBasicMaterial({ color: '#86cfff' }); for (let i = 0; i < 150; i++) { const d = new THREE.Mesh(geo, m); storm.add(d); drops.push({ d, x: ((i * 0.618) % 1 - 0.5) * 26, z: ((i * 0.381) % 1 - 0.5) * 12 - 4, p: (i * 0.137) % 1 }); } }
+function bolt(pts) { const g = new THREE.Group(), m = new THREE.MeshBasicMaterial({ color: '#fff6a8', toneMapped: false }); for (let i = 1; i < pts.length; i++) { const a = new THREE.Vector3(...pts[i - 1]), b = new THREE.Vector3(...pts[i]); const s = new THREE.Mesh(new THREE.CylinderGeometry(0.07, 0.1, a.distanceTo(b), 6), m); s.position.copy(a).lerp(b, 0.5); s.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), b.clone().sub(a).normalize()); g.add(s); } scene.add(g); g.visible = false; return g; }
+const bolts = [bolt([[-6, 15, -6], [-4.9, 13.2, -6], [-6.3, 12.2, -6], [-4.6, 9.6, -6], [-5.7, 8.9, -6], [-4.4, 6, -6], [-4.9, 3, -6]]), bolt([[6.2, 15, -7], [5.1, 12.6, -7], [6.5, 11.7, -7], [5.0, 8.4, -7], [5.8, 7.8, -7], [4.9, 4, -7]])];
+
+// ---------- transformation burst ----------
+const morphPuffs = Array.from({ length: 28 }, (_, i) => { const m = mesh(new THREE.IcosahedronGeometry(0.55, 1), mat(['#b06bff', '#7b3fd1', '#ffffff'][i % 3], { emissive: '#5a1fa8', emissiveIntensity: 0.7, roughness: 1 }), scene); m.castShadow = false; m.visible = false; return m; });
+
+// ---------- caches ----------
+const sets = new Map(), chars = new Map(), props = new Map();
+const benches = [0, 1, 2, 3, 4].map(() => { const b = new THREE.Group(); const wm = mat('#8a5a32', { roughness: 0.8 }); mesh(new THREE.BoxGeometry(2.6, 0.3, 1.3), wm, b, 0, 0.8, 0); for (const x of [-1.15, 1.15]) mesh(new THREE.BoxGeometry(0.22, 0.7, 1.1), wm, b, x, 0.35, 0); b.visible = false; scene.add(b); return b; });
+const getSet = (n, board) => { const k = n + '|' + (n === 'classroom' ? board || '' : ''); if (!sets.has(k)) { const s = buildSet(n, board); s.visible = false; scene.add(s); sets.set(k, s); } return sets.get(k); };
+const getChar = (id) => { if (!chars.has(id)) { const [name, form] = id.split(':'); const c = makeChar(LOOKS[name] || LOOKS.eli, form === 'monster', name); scene.add(c.root); c.root.visible = false; chars.set(id, c); } return chars.get(id); };
+const getProp = (p) => { const k = p.type + '|' + (p.text || ''); if (!props.has(k)) { const o = buildProp(p.type, p.text); if (o) { o.visible = false; scene.add(o); } props.set(k, o); } return props.get(k); };
+
+// ---------- helpers ----------
+const clamp = (x) => Math.max(0, Math.min(1, x)), lerp = THREE.MathUtils.lerp, out = (x) => 1 - Math.pow(1 - x, 3);
+const V = (x, y, z) => new THREE.Vector3(x, y, z);
+
+// camera framing from a semantic name: returns [pos0, pos1, look0, look1, fov0, fov1, roll0, roll1, drop]
+function frameShot(kind, F, others, indoor, side) {
+  const hs = F.scale, head = 5.25 * hs, fx = F.x, fz = F.z, a = F.ry * 0.55;
+  const at = (dist, y, off = 0) => V(fx + Math.sin(a) * dist + off, y, fz + Math.cos(a) * dist);
+  const L = (y) => V(fx, y, fz);
+  const dmax = indoor ? 15.5 : 40;
+  const xs = [F, ...others].map(c => c.x), cx = (Math.min(...xs) + Math.max(...xs)) / 2, spread = Math.max(...xs) - Math.min(...xs);
+  const pairDist = Math.min(dmax, 11.5 + spread * 1.25);
+  switch (kind) {
+    case 'close': return [at(8.3, head + 0.3, 0.5 * side), at(7.2, head + 0.3, 0.2 * side), L(head), L(head), 40, 38, 0, 0, 0.9 * hs];
+    case 'eye': return [at(6.8, head + 0.1, -0.35 * side), at(5.9, head + 0.1, -0.1 * side), L(head + 0.05), L(head + 0.1), 38, 36, 0, 0, 0.66 * hs];
+    case 'dutch': return [at(8.4, head - 0.7, 1.0 * side), at(7.1, head - 0.4, 0.5 * side), L(head), L(head), 43, 39, 4 * side, 9 * side, 0.85 * hs];
+    case 'low': return [at(11, 1.8, 1.8 * side), at(9, 2.2, 0.9 * side), L(head - 1.0), L(head - 0.7), 44, 41, 0, 0, 0];
+    case 'high': return [at(12.5, 11.5, 2.5 * side), at(11, 10.6, 0.5 * side), L(3.3), L(3.5), 42, 40, 0, 0, 0];
+    case 'feet': return [at(9.5, 2.2, 1.5 * side), at(8, 1.9, 0.6 * side), L(1.9), L(1.9), 46, 44, 0, 0, 0];
+    case 'ots': { const o = others[0]; if (o) { const d = V(o.x - fx, 0, o.z - fz).normalize(); const p = V(o.x, 0, o.z).addScaledVector(d, 3.4); return [V(p.x * 0.55 + fx * 0.45 + 2.4 * side, head + 1.3, Math.max(fz + 9.6, p.z + 4)), V(p.x * 0.45 + fx * 0.55 + 1.7 * side, head + 1.0, Math.max(fz + 8.6, p.z + 3.4)), L(head - 0.4), L(head - 0.3), 42, 39, 0, 0, 0.55]; }
+      return [at(9.4, head + 1.3, 3.4 * side), at(8.2, head + 1.0, 2.6 * side), L(head - 0.3), L(head - 0.2), 41, 39, 0, 0, 0.6]; }
+    case 'wide': return [V(cx - 2.4 * side, 5.6, Math.min(dmax + 1.5, fz + pairDist + 5)), V(cx - 0.8 * side, 5.4, Math.min(dmax, fz + pairDist + 2.5)), V(cx, 3.9, fz - 1), V(cx, 4.0, fz - 1), indoor ? 52 : 47, indoor ? 50 : 45, 0, 0, 0];
+    case 'drone': return indoor ? [V(cx + 5 * side, 11, fz + 15.5), at(10.5, head + 0.6), V(cx, 3, fz - 2), L(head - 1.1), 56, 42, 0, 0, 0]
+      : [V(cx + 12 * side, 25, fz + 40), at(11, head + 0.8, 0.6 * side), V(cx, 2, fz - 8), L(head - 1.1), 50, 41, 0, 0, 0];
+    case 'follow': return [at(13, head + 0.4, -2 * side), at(11.5, head + 0.3, 0.4 * side), L(head - 1.4), L(head - 1.4), 43, 41, 0, 0, 0];
+    case 'pull': return [at(8.6, head + 0.4, 0.4 * side), at(Math.min(dmax - 1, 15), head + 1.2, 1.4 * side), L(head - 0.5), L(head - 1.6), 40, 45, 0, 0, 0.35];
+    case 'two': return [V(cx + 1.8 * side, 5.4, fz + pairDist + 0.8), V(cx + 0.6 * side, 5.3, fz + pairDist - 0.8), V(cx, 4.2, fz - 0.4), V(cx, 4.3, fz - 0.4), indoor ? 47 : 43, indoor ? 45 : 41, 0, 0, 0];
+    default: /* push */ return [at(13.5, head + 0.9, 1.5 * side), at(10, head + 0.5, 0.6 * side), L(head - 1.5), L(head - 1.1), 43, 40, 0, 0, 0];
+  }
+}
+
+function frameWithProp(F, px, indoor, side) {
+  const mid = (F.x + px) / 2 + (px > F.x ? 0.35 : -0.35), d = indoor ? 16 : 17.5, head = 5.25 * F.scale;
+  return [V(mid + 1.6 * side, head + 0.8, F.z + d + 0.8), V(mid + 0.5 * side, head + 0.5, F.z + d - 1.2), V(mid, 4.1, F.z), V(mid, 4.2, F.z), 43, 41, 0, 0, 0.1];
+}
+function frameTall(F, indoor, side) {
+  const d = indoor ? 15 : 18;
+  return [V(F.x + 2.2 * side, 5.6, F.z + d + 1), V(F.x + 0.8 * side, 5.4, F.z + d - 1.4), V(F.x, 5.2, F.z - 1), V(F.x, 5.3, F.z - 1), indoor ? 50 : 45, indoor ? 48 : 43, 0, 0, 0];
+}
+const SHOTS = SPEC.shots, END = SPEC.total;
+// build everything once so no frame stalls
+for (const s of SHOTS) { getSet(s.set, s.board); for (const c of s.cast) getChar(c.who); if (s.prop) getProp(s.prop); }
+
+function drawScene(t) {
+  let i = 0; while (i + 1 < SHOTS.length && t >= SHOTS[i + 1].at) i++;
+  const s = SHOTS[i], end = i + 1 < SHOTS.length ? SHOTS[i + 1].at : END, dur = end - s.at, u = clamp((t - s.at) / dur), local = t - s.at;
+  sets.forEach(v => v.visible = false); chars.forEach(c => c.root.visible = false); props.forEach(p => p && (p.visible = false));
+  const set = getSet(s.set, s.board); set.visible = true;
+  const indoor = INDOOR.has(s.set), m = indoor && s.mood === 'storm' ? 'night' : s.mood;
+  setMood(m, indoor);
+  const placed = s.cast.map((c, k) => {
+    const ch = getChar(c.who); ch.root.visible = true;
+    const sc = ch.root.scale.x; let x = c.x, z = c.z, ry = c.ry;
+    if (c.from !== undefined) { const k2 = clamp(local / Math.max(0.8, dur * 0.92)); x = lerp(c.from, c.x, k2); if (k2 >= 1 && c.pose === 'walk') { /* arrived */ } }
+    ch.root.position.set(x, 0, z); ch.root.rotation.y = ry;
+    let p = c.pose; if (c.from !== undefined && local > Math.max(0.8, dur * 0.92)) p = 'idle';
+    pose(ch, p, t, k * 0.37);
+    const w = SPEC.words.find(w => t >= w.start && t <= w.end);
+    const talk = c.talk && w ? 0.3 + 0.7 * Math.abs(Math.sin(t * 17) * Math.cos(t * 6.3)) : 0;
+    ch.setFace(c.face, talk, ((t + k * 0.9 + 1) % 2.7) < 0.11);
+    return { x, z, ry, scale: sc };
+  });
+  let prop = null, sideProp = null;
+  if (s.prop) {
+    prop = getProp(s.prop);
+    if (prop) {
+      prop.visible = true; const f = placed[0];
+      if (prop.overHead) prop.position.set(f.x, (f.scale - 1) * 5, f.z);
+      else if (prop.backdrop) prop.position.set(s.prop.type === 'wave' ? 0 : -3.4, 0, indoor ? -4.5 : -6.0);
+      else { sideProp = f.x + (f.x > 1 ? -3.0 : 3.0); prop.position.set(sideProp, 0, f.z - 0.2); }
+      prop.scale.setScalar((sideProp === null ? 1 : 0.72) * (0.7 + 0.3 * out(clamp(local / 0.3)))); prop.tick && prop.tick(t);
+    }
+  }
+  const morphAge = s.morph !== undefined ? t - s.morph : 99;   // transformation burst
+  morphPuffs.forEach((p, i) => { p.visible = morphAge >= 0 && morphAge < 0.7; if (p.visible) { const k = morphAge / 0.7, a = i * 2.39996; const f = placed[0]; p.position.set(f.x + Math.cos(a) * (0.8 + k * 3.4), 0.8 + (i % 7) * 0.9 * (0.6 + k), f.z + Math.sin(a) * (0.6 + k * 2)); p.scale.setScalar(1.5 * (1 - k) + 0.1); } });
+  // storm dressing (outdoors only)
+  const stormy = s.mood === 'storm' && !indoor; storm.visible = stormy; bolts.forEach(b => b.visible = false);
+  if (stormy) drops.forEach(o => o.d.position.set(o.x, 15 - ((t * 1.9 + o.p) % 1) * 15, o.z));
+  let flash = 0;
+  if (s.mood === 'storm') (s.bolts || []).forEach((bt, k) => { const d = t - bt; if (d >= 0 && d < 0.28) { if (stormy) bolts[k % 2].visible = d < 0.1 || (d > 0.16 && d < 0.24); flash = Math.max(flash, 1 - d / 0.28); } });
+  flashL.intensity = flash * 4;
+  // camera
+  const tall = prop && prop.visible && (prop.overHead || prop.backdrop);   // keep the number / big prop inside the frame
+  const framing = tall ? frameTall(placed[0], indoor, s.side || 1) : sideProp !== null ? frameWithProp(placed[0], sideProp, indoor, s.side || 1) : frameShot(s.camera, placed[0], placed.slice(1), indoor, s.side || 1);
+  const [p0, p1, l0, l1, f0, f1, r0, r1, drop] = framing;
+  // other people must not stand where the prop is
+  if (sideProp !== null) s.cast.forEach((c, k) => { if (k && Math.abs(placed[k].x - sideProp) < 2.6) getChar(c.who).root.visible = false; });
+  // a bench under anyone who sits
+  benches.forEach(b => b.visible = false);
+  s.cast.forEach((c, k) => { if (c.pose === 'sit') { const b = benches[k % benches.length]; b.visible = true; b.position.set(placed[k].x, 0, placed[k].z - 0.25); b.rotation.y = placed[k].ry; b.scale.setScalar(placed[k].scale); } });
+  const e = out(u) * 0.72 + u * 0.28;
+  camera.position.copy(p0).lerp(p1, e); const look = l0.clone().lerp(l1, e);
+  look.y -= drop; camera.position.y -= drop * 0.25;
+  const sh = (s.shake || 0) * (0.3 + 0.7 * Math.max(0, 1 - local / 0.7)) + flash * 0.12;
+  camera.position.x += Math.sin(t * 47) * sh; camera.position.y += Math.cos(t * 59) * sh;
+  camera.lookAt(look); camera.rotateZ(THREE.MathUtils.degToRad(lerp(r0, r1, e)));
+  const punch = s.in === 'zoom' ? 1 - out(clamp(local / 0.22)) : 0;
+  camera.fov = lerp(f0, f1, e) * (1 + punch * 0.26); camera.updateProjectionMatrix();
+  renderer.render(scene, camera);
+  return { s, i, m, flash };
+}
+
+// ---------- 2D layer: transitions, hook title, word captions ----------
+const cv = document.createElement('canvas'); cv.width = W; cv.height = H; const g = cv.getContext('2d');
+function bigText(txt, y, size, color, scale = 1, rot = 0, maxW = 960) {
+  g.save(); g.translate(W / 2, y); g.scale(scale, scale); g.rotate(rot);
+  g.font = `900 ${size}px "Arial Black", "Archivo Black", Arial`; while (g.measureText(txt).width > maxW && size > 40) { size -= 4; g.font = `900 ${size}px "Arial Black", "Archivo Black", Arial`; }
+  g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineJoin = 'round';
+  g.lineWidth = size * 0.24; g.strokeStyle = '#0b0b10'; g.strokeText(txt, 0, size * 0.05); g.lineWidth = size * 0.18; g.strokeText(txt, 0, 0);
+  g.fillStyle = color; g.fillText(txt, 0, 0); g.restore();
+}
+function caption(t) {
+  const ws = SPEC.words; let k = -1; for (let i = 0; i < ws.length; i++) { if (t >= ws[i].start - 0.02) k = i; else break; }
+  if (k < 0 || t > ws[k].end + 0.35) return;
+  const w = ws[k], a = clamp((t - w.start) / 0.12), pop = a < 1 ? 0.65 + 0.35 * out(a) + Math.sin(a * Math.PI) * 0.14 : 1;
+  bigText(w.text, H * 0.725, w.hot ? 146 : 112, w.hot ? '#ffe11f' : '#ffffff', pop, w.hot ? -0.035 : 0);
+}
+window.renderFrame = (t) => {
+  const { s, i, m, flash } = drawScene(t), d = t - s.at, gl = renderer.domElement;
+  g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlpha = 1; g.clearRect(0, 0, W, H);
+  const next = SHOTS[i + 1], toNext = next ? next.at - t : 99;
+  const whipIn = s.in === 'whip' && d < 0.16 ? 1 - d / 0.16 : 0, whipOut = next && next.in === 'whip' && toNext < 0.12 ? 1 - toNext / 0.12 : 0;
+  if (whipIn || whipOut) { const off = whipIn ? whipIn * whipIn * 620 : -whipOut * whipOut * 620, n = 9; g.fillStyle = '#000'; g.fillRect(0, 0, W, H); for (let k = 0; k < n; k++) { g.globalAlpha = 1 / (k + 1); const x = off * (1 - k / n * 0.55); g.drawImage(gl, x, 0); g.drawImage(gl, x - Math.sign(off) * W, 0); } g.globalAlpha = 1; }
+  else g.drawImage(gl, 0, 0);
+  const vg = g.createRadialGradient(W / 2, H * 0.45, H * 0.3, W / 2, H * 0.45, H * 0.72); vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, MOOD[m][10]); g.fillStyle = vg; g.fillRect(0, 0, W, H);
+  if (s.in === 'flash' && d < 0.2) { g.fillStyle = `rgba(255,255,255,${1 - d / 0.2})`; g.fillRect(0, 0, W, H); }
+  if (s.in === 'black' && d < 0.3) { g.fillStyle = `rgba(0,0,0,${1 - d / 0.3})`; g.fillRect(0, 0, W, H); }
+  if (next && next.in === 'black' && toNext < 0.12) { g.fillStyle = `rgba(0,0,0,${1 - toNext / 0.12})`; g.fillRect(0, 0, W, H); }
+  if (SPEC.hook && t < SPEC.hook.until) { g.globalAlpha = clamp((SPEC.hook.until - t) / 0.25); bigText(SPEC.hook.text, H * 0.17, 104, '#ffe11f', 1, -0.02, 940); g.globalAlpha = 1; }
+  caption(t);
+  return cv.toDataURL('image/jpeg', 0.94);
+};
+renderer.domElement.remove(); document.body.appendChild(cv);
+window.renderFrame(0); window.ready = true;
+</script>
+</body></html>

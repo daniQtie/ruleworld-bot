@@ -177,3 +177,7 @@ The owner said videos from Episode 9 on looked blurry and dim compared with Epis
   - **End hold:** keep at least 2.5 s of picture and music after the last word (`tail_hold` ≥ 2.5) so the ending never feels cut.
 
 - **Schedule, 2026-11-26 (replaces Rule Z volume):** 2 Shorts a day, upload slots 3 AM and 8 AM PHT (`SLOTS_ET = (14, 19)`). The bot makes videos at 11:00 and 21:00 PHT. Mostly story formats; 1 choice video in 6.
+
+- **Style v2, 2026-11-26 (owner approved the 12 s sample "Smile Law": "gusto ko yan, lahat"):** big acting faces, painted clothes, sculpted hair, 8+ poses, a new shot every 1.5-3 s with zoom/whip/flash/black transitions, word-pop captions, twist with storm lighting (`render/v2/`). Background music: **drift** (owner pick). Do not use the third-party kit's assets or the song "Numbers". The owner rejected the new lo-fi beats.
+
+- **Themes, 2026-11-26 (owner):** strange town law, special powers, monsters (a character turns into a monster, e.g. when angry; the writer decides the plot), mystery adventure, pick one door, school. Not always school (1 in 9). Monsters stay kid-friendly: they never hurt anyone.

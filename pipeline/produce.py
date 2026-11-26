@@ -1,6 +1,6 @@
 """One command makes a whole episode, on Windows or the Linux server (2026-11-24, cloud migration):
 
-  python -m pipeline.produce new [--format choice|rule|underdog|school]   Gemini script -> voice -> shots -> render -> video -> Telegram
+  python -m pipeline.produce new [--format town|power|monster|mystery|choice|school]   Gemini script -> voice -> shots -> render -> video -> Telegram
   python -m pipeline.produce make <episode-id>                           same, from an existing scripts/<id>.v*.json
   python -m pipeline.produce render <episode-id>                         only render the shots + join clips (python port of render/render-ep.ps1)
 
@@ -55,6 +55,20 @@ def render(ep):
     (out / "shots.json").write_text(json.dumps({"shots": [{"line": n, "file": f"clips/s{n:02d}.mp4"} for n in mains]}), encoding="utf-8")
 
 
+def send_sheet(sc):
+    """The detailed script (characters, scenes, feelings) as Telegram messages. Never fails the run."""
+    try:
+        from pipeline import approve, story_gate
+        e = approve.env()
+        bot, text = approve.Bot(e.get("TELEGRAM_BOT_TOKEN")), story_gate.sheet(sc)
+        while text:
+            cut = len(text) if len(text) <= 3900 else text.rfind("\n", 0, 3900)
+            bot.call("sendMessage", chat_id=e.get("TELEGRAM_CHAT_ID"), text=text[:cut])
+            text = text[cut:].lstrip("\n")
+    except Exception as err:
+        log(f"script sheet not sent: {err}")
+
+
 def make(ep):
     out = ROOT / "output" / ep
     out.mkdir(parents=True, exist_ok=True)
@@ -62,16 +76,21 @@ def make(ep):
     run([PY, "-m", "pipeline.voicecheck", ep, "--tries", "2"], check=False)
     if not json.loads((out / "qa" / "voice-check.json").read_text()).get("pass"):
         log(f"{ep}: voice check failed on some lines (continuing; captions follow the real audio)")
-    log(f"{ep}: shots")
-    sc = json.loads(sorted((ROOT / "scripts").glob(f"{ep}.v*.json"))[-1].read_text(encoding="utf-8"))
-    if any(l.get("shot") for l in sc["lines"]) or not (ROOT / "render" / "specs" / f"{ep}.mjs").exists():
-        run([PY, "-m", "pipeline.autoshots", ep])
+    from pipeline.assemble import script_for
+    sc = script_for(ep)
+    if os.environ.get("STYLE", "v2") == "v2":   # style v2 (owner approved 2026-11-26): auto-director + one-pass render + drift
+        log(f"{ep}: direct, render and mix (style v2)")
+        log(run([PY, "-m", "pipeline.v2", ep]).strip())
     else:
-        run(["node", f"render/specs/{ep}.mjs"])
-    log(f"{ep}: render")
-    render(ep)
-    log(f"{ep}: assemble")
-    run([PY, "-m", "pipeline.assemble", ep])
+        log(f"{ep}: shots")
+        if any(l.get("shot") for l in sc["lines"]) or not (ROOT / "render" / "specs" / f"{ep}.mjs").exists():
+            run([PY, "-m", "pipeline.autoshots", ep])
+        else:
+            run(["node", f"render/specs/{ep}.mjs"])
+        log(f"{ep}: render")
+        render(ep)
+        log(f"{ep}: assemble")
+        run([PY, "-m", "pipeline.assemble", ep])
     chk = run([PY, "-m", "pipeline.check_video", str(out / "final.mp4")], check=False)
     (out / "upload.json").write_text(json.dumps(sc["upload"], indent=1, ensure_ascii=False), encoding="utf-8")
     shutil.rmtree(out / "parts", ignore_errors=True)   # disk: parts are only needed while assembling
@@ -80,6 +99,7 @@ def make(ep):
         cloudjobs.publish(ep)
     log(f"{ep}: send to Telegram")
     run([PY, "-m", "pipeline.approve", "send", ep])
+    send_sheet(sc)
     log(f"{ep}: done ({'checks ok' if 'false' not in chk.lower() else 'check warnings, see output'})")
     return ep
 

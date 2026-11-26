@@ -102,3 +102,17 @@ The Worker only records the tap (after checking the 8-character hash on the butt
 3. A full test is `make.yml` (about 70 minutes, uses Gemini and Fish). Tell the owner before starting it.
 4. If you changed `cloud/worker/`, redeploy the Worker (section 8).
 5. Add what you learned to `rubrics/lessons.md` (script rules) or `rubrics/owner-feedback.md` (the owner's rules), one short line.
+
+## 12. Style v2 (2026-11-26, current look)
+- `pipeline/v2.py` (auto-director: 1-3 shots per line, camera, transitions, sound effects, drift music) + `render/v2/` (`cast.js` characters, faces,
+  poses, monster form; `looks.js` one look per name; `sets.js` locations and props; `engine.html` renderer). All assets are original and drawn in code.
+  `STYLE=v1` switches back to the old templates. New set / name / action: add it in `sets.js` or `looks.js`, in `pipeline/v2.py` and in `pipeline/writer.py`.
+- Themes: `FORMATS` and `DAILY_MIX` in `writer.py`; menu in `cloud/worker/worker.js` (`FORMAT_KB`).
+- **Strict script gate:** `rubrics/script-skill.md` (the owner's standard), `pipeline/story_gate.py` (code checks + story editor; pass = every score >= 7 and
+  average >= 8, constants `MIN_EACH`, `MIN_AVG`). Up to 5 drafts; if none passes, no video is made and Telegram says why. If videos are rarely made,
+  ask the owner before lowering the bar.
+- **Owner's own script:** Telegram "My script" -> `make.yml` mode `owner` -> `writer.from_owner` (words are copied exactly; no story rejection).
+  A message starting with "Idea:" goes through the writer and the gate.
+- Gemini free tier: 20 requests per day on each bigger model, so `MODELS` lists many. Do not use extra accounts or keys to get around limits.
+- Every video is sent to Telegram with a script sheet (characters, scenes, feelings).
+- Do not use third-party Roblox asset exports or commercial songs.

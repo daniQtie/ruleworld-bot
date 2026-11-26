@@ -7,8 +7,11 @@ on:
         description: "new = a new video, revise = redo videos the owner sent notes for"
         default: new
       format:
-        description: "rule, choice, underdog, school or any"
+        description: "town, power, monster, mystery, choice, school or any"
         default: any
+      script:
+        description: "mode owner: the owner's own script, or Idea: ..."
+        default: ""
 permissions:
   contents: write
   actions: write
@@ -39,5 +42,7 @@ jobs:
           CLIENT_TV_JSON: ${{ secrets.CLIENT_TV_JSON }}
       - name: Run
         run: python -m pipeline.cloudjobs make --mode "${{ inputs.mode }}" --format "${{ inputs.format }}"
+        env:
+          OWNER_SCRIPT: ${{ inputs.script }}   # passed as a variable, never pasted into the shell command
       - if: always()
         uses: ./.github/actions/commit
