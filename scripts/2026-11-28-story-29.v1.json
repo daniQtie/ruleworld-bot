@@ -1,0 +1,831 @@
+{
+ "id": "2026-11-28-story-29",
+ "version": 1,
+ "source": "Owner's script, hand-directed",
+ "story": {},
+ "hook_type": {
+  "number": null,
+  "name": "owner"
+ },
+ "format": {
+  "number": null,
+  "name": "Your script"
+ },
+ "title_working": "She Hated Me Until the End",
+ "hook_text": "SHE HATED ME?",
+ "hook_until": 2.6,
+ "music": "drift",
+ "music_gain": 0.3,
+ "world_rule": "She Hated Me Until the End",
+ "lines": [
+  {
+   "text": "Watch where you're going.",
+   "say": "(angry) Watch where you're going.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Mia": "angry",
+    "Leo": "neutral"
+   },
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "city",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mia",
+     "Leo"
+    ],
+    "face": "angry",
+    "action": "point",
+    "camera": "dutch",
+    "trans": "zoom",
+    "faces": {
+     "Mia": "angry",
+     "Leo": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Maybe you should watch your temper first.",
+   "say": "(serious) Maybe you should watch your temper first.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.7,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Leo": "smirk",
+    "Mia": "angry"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "city",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Leo",
+     "Mia"
+    ],
+    "face": "smirk",
+    "action": "talk",
+    "camera": "ots",
+    "trans": "cut",
+    "faces": {
+     "Leo": "smirk",
+     "Mia": "angry"
+    }
+   }
+  },
+  {
+   "text": "She hated me from the first second she saw me.",
+   "say": "(serious) She hated me from the first second she saw me.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Mia": "angry",
+    "Leo": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "city",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mia",
+     "Leo"
+    ],
+    "face": "angry",
+    "action": "disagree",
+    "camera": "two",
+    "trans": "whip",
+    "faces": {
+     "Mia": "angry",
+     "Leo": "neutral"
+    }
+   }
+  },
+  {
+   "text": "And honestly… I didn't like her either.",
+   "say": "(serious) And honestly… I didn't like her either.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.8,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Leo": "smirk"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "city",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Leo"
+    ],
+    "face": "smirk",
+    "action": "walk",
+    "camera": "follow",
+    "trans": "cut",
+    "faces": {
+     "Leo": "smirk"
+    }
+   }
+  },
+  {
+   "text": "We argued almost every day.",
+   "say": "(serious) We argued almost every day.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Mia": "angry",
+    "Leo": "smirk",
+    "Grandma": "surprised"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "shop",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mia",
+     "Leo",
+     "Grandma"
+    ],
+    "face": "angry",
+    "action": "pickup",
+    "camera": "two",
+    "trans": "whip",
+    "faces": {
+     "Mia": "angry",
+     "Leo": "smirk",
+     "Grandma": "surprised"
+    },
+    "prop": {
+     "type": "stack",
+     "text": "MARKET"
+    }
+   }
+  },
+  {
+   "text": "She called me cold.",
+   "say": "(serious) She called me cold.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Mia": "angry",
+    "Leo": "neutral",
+    "Zoe": "confused"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mia",
+     "Leo",
+     "Zoe"
+    ],
+    "face": "angry",
+    "action": "point",
+    "camera": "push",
+    "trans": "zoom",
+    "faces": {
+     "Mia": "angry",
+     "Leo": "neutral",
+     "Zoe": "confused"
+    }
+   }
+  },
+  {
+   "text": "I called her impossible.",
+   "say": "(confident) I called her impossible.",
+   "speaker": "narrator",
+   "speed": 0.95,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Leo": "smirk",
+    "Mia": "angry",
+    "Marcus": "laugh"
+   },
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Leo",
+     "Mia",
+     "Marcus"
+    ],
+    "face": "smirk",
+    "action": "talk",
+    "camera": "two",
+    "trans": "cut",
+    "faces": {
+     "Leo": "smirk",
+     "Mia": "angry",
+     "Marcus": "laugh"
+    }
+   }
+  },
+  {
+   "text": "But somehow… I started looking for her without realizing it.",
+   "say": "(soft tone) But somehow… I started looking for her without realizing it.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.9,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Leo": "surprised",
+    "Mia": "shocked"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Leo",
+     "Mia"
+    ],
+    "face": "surprised",
+    "action": "hug",
+    "camera": "two",
+    "trans": "flash",
+    "faces": {
+     "Leo": "surprised",
+     "Mia": "shocked"
+    }
+   }
+  },
+  {
+   "text": "I don't know when it changed.",
+   "say": "(soft tone) I don't know when it changed.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.5,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Mia": "sad",
+    "Leo": "thinking"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "field",
+    "time": "sunset",
+    "mood": "sunset",
+    "cast": [
+     "Mia",
+     "Leo"
+    ],
+    "face": "sad",
+    "action": "sit",
+    "camera": "two",
+    "trans": "black",
+    "faces": {
+     "Mia": "sad",
+     "Leo": "thinking"
+    }
+   }
+  },
+  {
+   "text": "One day I just… stopped wanting to win against her.",
+   "say": "(soft tone) One day I just… stopped wanting to win against her.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Leo": "worried",
+    "Mia": "neutral"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "field",
+    "time": "sunset",
+    "mood": "sunset",
+    "cast": [
+     "Leo",
+     "Mia"
+    ],
+    "face": "worried",
+    "action": "sit",
+    "camera": "push",
+    "trans": "cut",
+    "faces": {
+     "Leo": "worried",
+     "Mia": "neutral"
+    }
+   }
+  },
+  {
+   "text": "I just wanted to be near her.",
+   "say": "(happy) I just wanted to be near her.",
+   "speaker": "narrator",
+   "speed": 0.92,
+   "volume": 0,
+   "pause": 0.9,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Leo": "happy",
+    "Mia": "laugh"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "sunset",
+    "mood": "win",
+    "cast": [
+     "Leo",
+     "Mia"
+    ],
+    "face": "happy",
+    "action": "walk",
+    "camera": "follow",
+    "trans": "whip",
+    "faces": {
+     "Leo": "happy",
+     "Mia": "laugh"
+    }
+   }
+  },
+  {
+   "text": "I don't hate you anymore.",
+   "say": "(nervous) I don't hate you anymore.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 1.0,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Leo": "nervous",
+    "Mia": "surprised"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "night",
+    "mood": "night",
+    "cast": [
+     "Leo",
+     "Mia"
+    ],
+    "face": "nervous",
+    "action": "talk",
+    "camera": "two",
+    "trans": "black",
+    "faces": {
+     "Leo": "nervous",
+     "Mia": "surprised"
+    }
+   }
+  },
+  {
+   "text": "Took you long enough.",
+   "say": "(soft tone) Took you long enough.",
+   "speaker": "narrator",
+   "speed": 0.9,
+   "volume": 0,
+   "pause": 0.7,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Mia": "sob",
+    "Leo": "happy"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "night",
+    "mood": "night",
+    "cast": [
+     "Mia",
+     "Leo"
+    ],
+    "face": "sob",
+    "action": "talk",
+    "camera": "close",
+    "trans": "cut",
+    "faces": {
+     "Mia": "sob",
+     "Leo": "happy"
+    }
+   }
+  },
+  {
+   "text": "Don't look at me like that… I'm still annoying, right?",
+   "say": "(happy) Don't look at me like that… I'm still annoying, right?",
+   "speaker": "narrator",
+   "speed": 0.86,
+   "volume": 0,
+   "pause": 2.0,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Mia": "happy",
+    "Leo": "sob"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Mia",
+     "Leo"
+    ],
+    "face": "happy",
+    "action": "sit",
+    "camera": "two",
+    "trans": "black",
+    "faces": {
+     "Mia": "happy",
+     "Leo": "sob"
+    }
+   }
+  },
+  {
+   "text": "She hated me at first.",
+   "say": "(sad) She hated me at first.",
+   "speaker": "narrator",
+   "speed": 0.88,
+   "volume": 0,
+   "pause": 0.6,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Grandpa": "sad"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "forest",
+    "time": "day",
+    "mood": "cold",
+    "cast": [
+     "Grandpa"
+    ],
+    "face": "sad",
+    "action": "walk",
+    "camera": "follow",
+    "trans": "black",
+    "faces": {
+     "Grandpa": "sad"
+    }
+   }
+  },
+  {
+   "text": "Then she became the only person I ever truly loved.",
+   "say": "(sad) Then she became the only person I ever truly loved.",
+   "speaker": "narrator",
+   "speed": 0.86,
+   "volume": 0,
+   "pause": 0.7,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Grandpa": "sob"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "field",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Grandpa"
+    ],
+    "face": "sob",
+    "action": "still",
+    "camera": "wide",
+    "trans": "zoom",
+    "faces": {
+     "Grandpa": "sob"
+    },
+    "prop": {
+     "type": "grave",
+     "text": "MAYA"
+    }
+   }
+  },
+  {
+   "text": "I still remember her voice.",
+   "say": "(soft tone) I still remember her voice.",
+   "speaker": "narrator",
+   "speed": 0.86,
+   "volume": 0,
+   "pause": 0.4,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Mia": "laugh"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "sunset",
+    "mood": "win",
+    "cast": [
+     "Mia"
+    ],
+    "face": "laugh",
+    "action": "talk",
+    "camera": "close",
+    "trans": "flash",
+    "faces": {
+     "Mia": "laugh"
+    }
+   }
+  },
+  {
+   "text": "Her glare.",
+   "say": "(soft tone) Her glare.",
+   "speaker": "narrator",
+   "speed": 0.86,
+   "volume": 0,
+   "pause": 0.4,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Mia": "angry"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "city",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mia"
+    ],
+    "face": "angry",
+    "action": "still",
+    "camera": "eye",
+    "trans": "flash",
+    "faces": {
+     "Mia": "angry"
+    }
+   }
+  },
+  {
+   "text": "Her smile.",
+   "say": "(soft tone) Her smile.",
+   "speaker": "narrator",
+   "speed": 0.86,
+   "volume": 0,
+   "pause": 0.7,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Mia": "happy"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "sunset",
+    "mood": "win",
+    "cast": [
+     "Mia"
+    ],
+    "face": "happy",
+    "action": "still",
+    "camera": "close",
+    "trans": "flash",
+    "faces": {
+     "Mia": "happy"
+    }
+   }
+  },
+  {
+   "text": "I never stopped remembering her.",
+   "say": "(sad) I never stopped remembering her.",
+   "speaker": "narrator",
+   "speed": 0.84,
+   "volume": 0,
+   "pause": 1.8,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Grandpa": "sad"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "field",
+    "time": "sunset",
+    "mood": "sad",
+    "cast": [
+     "Grandpa"
+    ],
+    "face": "sad",
+    "action": "sit",
+    "camera": "push",
+    "trans": "black",
+    "faces": {
+     "Grandpa": "sad"
+    }
+   }
+  },
+  {
+   "text": "Some people hate you first…",
+   "say": "(soft tone) Some people hate you first…",
+   "speaker": "narrator",
+   "speed": 0.84,
+   "volume": 0,
+   "pause": 0.5,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Grandpa": "happy"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "field",
+    "time": "sunset",
+    "mood": "sunset",
+    "cast": [
+     "Grandpa"
+    ],
+    "face": "happy",
+    "action": "sit",
+    "camera": "pull",
+    "trans": "cut",
+    "faces": {
+     "Grandpa": "happy"
+    },
+    "prop": {
+     "type": "grave",
+     "text": "MAYA"
+    }
+   }
+  },
+  {
+   "text": "only to become the one you can never forget.",
+   "say": "(soft tone) only to become the one you can never forget.",
+   "speaker": "narrator",
+   "speed": 0.82,
+   "volume": 0,
+   "pause": 0.3,
+   "beat": "",
+   "scene": "",
+   "emotions": {
+    "Grandpa": "neutral"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "field",
+    "time": "night",
+    "mood": "night",
+    "cast": [
+     "Grandpa"
+    ],
+    "face": "neutral",
+    "action": "sit",
+    "camera": "drone",
+    "trans": "black",
+    "faces": {
+     "Grandpa": "neutral"
+    },
+    "prop": {
+     "type": "grave",
+     "text": "MAYA"
+    }
+   }
+  }
+ ],
+ "word_count": 136,
+ "est_seconds": 95,
+ "tail_hold": 3.5,
+ "review": null,
+ "owner_text": "Watch where you're going.\nMaybe you should watch your temper first.\nShe hated me from the first second she saw me.\nAnd honestly… I didn't like her either.\nWe argued almost every day.\nShe called me cold.\nI called her impossible.\nBut somehow… I started looking for her without realizing it.\nI don't know when it changed.\nOne day I just… stopped wanting to win against her.\nI just wanted to be near her.\nI don't hate you anymore.\nTook you long enough.\nDon't look at me like that… I'm still annoying, right?\nShe hated me at first.\nThen she became the only person I ever truly loved.\nI still remember her voice.\nHer glare.\nHer smile.\nI never stopped remembering her.\nSome people hate you first…\nonly to become the one you can never forget.",
+ "upload": {
+  "title": "She Hated Me Until The End #Shorts",
+  "description": "They argued every single day. Neither of them expected how it would end. Who is the one you can never forget?\nOriginal animated story. Not affiliated with Roblox or any creator.\n#lovestory #animatedstory #storytime #shorts",
+  "tags": [
+   "love story",
+   "sad story",
+   "enemies to lovers",
+   "emotional story",
+   "animated story",
+   "storytime",
+   "shorts",
+   "roblox story"
+  ]
+ }
+}
