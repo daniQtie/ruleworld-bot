@@ -24,7 +24,7 @@ from pipeline import approve, produce, upload_youtube, uploads_log, writer
 
 ROOT = approve.ROOT
 CSTATE = ROOT / "logs" / "controller.json"
-MAKE_AT = ["11:00", "15:00", "21:00"]   # PHT: each makes 1 episode (about 30-40 min on the server), ready long before the 3/5/7 AM slots
+MAKE_AT = ["11:00", "21:00"]   # PHT: each makes 1 episode (about 30-40 min on the server), ready long before the 3 and 8 AM slots
 MAX_WAITING = 4                          # don't pile up videos the owner hasn't decided on
 KB = {"keyboard": [["🎬 New video", "📋 Status"], ["📊 Stats", "⏸ Pause", "▶️ Resume"], ["🔑 Reconnect YouTube", "❓ Help"]],
       "resize_keyboard": True, "is_persistent": True}

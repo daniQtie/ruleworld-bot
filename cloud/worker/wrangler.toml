@@ -12,4 +12,4 @@ binding = "KV"
 id = "__KV_ID__"
 
 [triggers]
-crons = ["0 3,7,13 * * *"]   # 11:00, 15:00, 21:00 PHT
+crons = ["0 3,13 * * *"]   # 11:00, 21:00 PHT

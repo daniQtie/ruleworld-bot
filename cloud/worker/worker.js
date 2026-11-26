@@ -2,7 +2,7 @@
 // Telegram sends every message/tap here (webhook). Quick things are answered here; heavy work starts a GitHub Actions
 // workflow (make / upload / reconnect / stats) in env.REPO. Owner-only: every other chat is ignored.
 // Bindings: KV (paused flag, the "waiting for notes" state). Secrets: BOT_TOKEN, OWNER_ID, GH_TOKEN, WEBHOOK_SECRET.
-// Cron (wrangler.toml): 03:00, 07:00, 13:00 UTC = 11:00, 15:00, 21:00 PHT -> one new video each, unless paused.
+// Cron (wrangler.toml): 03:00, 13:00 UTC = 11:00, 21:00 PHT -> one new video each, unless paused.
 
 const KB = { keyboard: [['🎬 New video', '📋 Status'], ['📊 Stats', '⏸ Pause', '▶️ Resume'], ['🔑 Reconnect YouTube', '❓ Help']],
   resize_keyboard: true, is_persistent: true };
@@ -15,10 +15,10 @@ const MAX_WAITING = 4;
 const HELP = `🎬 New video: make one now (you pick the format).
 📋 Status: what is being made, what waits for you, the latest uploads.
 📊 Stats: views and likes of the last 10 Shorts.
-⏸ Pause / ▶️ Resume: stop or restart the automatic videos (11 AM, 3 PM, 9 PM). Approved videos still upload.
+⏸ Pause / ▶️ Resume: stop or restart the automatic videos (11 AM, 9 PM). Approved videos still upload.
 🔑 Reconnect YouTube: I send a code; open google.com/device on your phone and type it.
 
-Under each video: ✅ uploads it to the next free slot (3 / 5 / 7 AM PHT), ✏️ + your notes (typed or voice) makes a new version, ❌ drops it.
+Under each video: ✅ uploads it to the next free slot (3 AM / 8 AM PHT), ✏️ + your notes (typed or voice) makes a new version, ❌ drops it.
 A video takes about 30-60 min to make.`;
 
 const phtNow = () => new Date(Date.now() + 8 * 3600e3).toISOString().slice(0, 19) + '+08:00';
@@ -111,7 +111,7 @@ async function status(env) {
     ups = [...latest.values()].filter(r => r.platform === 'youtube' && r.post_id).slice(-6)
       .map(r => `• ${(r.scheduled_at_pht || '').slice(5, 16)} ${(r.title || r.video_id).slice(0, 45)}`).join('\n') || 'none';
   } catch { /* no uploads yet */ }
-  return say(env, `${paused ? '⏸ PAUSED' : '▶️ Auto mode ON'} (makes videos at 11:00, 15:00, 21:00 PHT)\n` +
+  return say(env, `${paused ? '⏸ PAUSED' : '▶️ Auto mode ON'} (makes videos at 11:00, 21:00 PHT)\n` +
     `Working now: ${runs(busy)}\nIn line: ${runs(queued, pending)}\n\n⏳ Waiting for your decision:\n${waiting.join('\n') || 'none'}` +
     (other.length ? `\n\n🔧 In progress:\n${other.join('\n')}` : '') + `\n\n📺 Latest uploads:\n${ups}`);
 }

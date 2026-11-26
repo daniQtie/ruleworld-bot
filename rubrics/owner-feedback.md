@@ -175,3 +175,5 @@ The owner said videos from Episode 9 on looked blurry and dim compared with Epis
   - **Resolution:** after the twist, 3–5 lines show what happens next and how the characters feel.
   - **Final line:** a clear closing image or line, not a cliff.
   - **End hold:** keep at least 2.5 s of picture and music after the last word (`tail_hold` ≥ 2.5) so the ending never feels cut.
+
+- **Schedule, 2026-11-26 (replaces Rule Z volume):** 2 Shorts a day, upload slots 3 AM and 8 AM PHT (`SLOTS_ET = (14, 19)`). The bot makes videos at 11:00 and 21:00 PHT. Mostly story formats; 1 choice video in 6.

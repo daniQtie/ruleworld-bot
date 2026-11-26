@@ -142,7 +142,7 @@ def access_token():
                                      refresh_token=rt, grant_type="refresh_token"))["access_token"]
 
 
-SLOTS_ET = (14, 16, 18)  # owner 2026-11-24: US peak 3-9 PM ET seen in analytics -> 2, 4, 6 PM ET (= 3, 5, 7 AM PHT in winter); was (12, 14, 19) since 2026-11-23
+SLOTS_ET = (14, 19)  # owner 2026-11-26: 2 a day, 2 PM + 7 PM ET (= 3 AM + 8 AM PHT in winter), his two best posting times; was (14, 16, 18) since 2026-11-24
 
 
 def next_slot(now=None, taken=()):

@@ -11,7 +11,7 @@ An automated YouTube Shorts channel. It makes **original Roblox-style rule-based
 - Ask before installing anything or using any paid service. Do not add duplicate tools.
 - Never print or paste secrets. `.env` and `secrets/` hold the Fish key, the Telegram token and YouTube OAuth.
 - **Nothing uploads without the owner's Telegram ✅ on that exact file** (sha256 lock in `pipeline/approve.py`).
-- Never change `pipeline/approve.py` callbacks, `pipeline/upload_youtube.py` OAuth or the schedule (2 PM / 4 PM / 6 PM America/New_York = 3 / 5 / 7 AM PHT in winter, owner 2026-11-24) unless the owner asks.
+- Never change `pipeline/approve.py` callbacks, `pipeline/upload_youtube.py` OAuth or the schedule (2 PM / 7 PM America/New_York = 3 / 8 AM PHT in winter, owner 2026-11-26) unless the owner asks.
 - OpenArt is connected but **not used**. Never spend its credits or buy a plan (`config/openart.json`).
 - Do not delete the owner's files without permission.
 

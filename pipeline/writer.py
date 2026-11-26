@@ -32,7 +32,7 @@ FORMATS = {  # the format bank (owner 2026-11-24: no per-video competitor resear
     "school": ("Funny school twist", "A strict teacher or school rule. The class obeys too literally and the rule backfires "
                "on the teacher in a smart, funny way. One extra twist at the end. 9-11 lines."),
 }
-DAILY_MIX = ["rule", "choice", "underdog", "choice", "school", "rule", "underdog"]   # rotates; stories beat choices (owner analytics)
+DAILY_MIX = ["rule", "underdog", "school", "rule", "choice", "underdog"]   # rotates; stories beat choices (owner analytics 2026-11-26): 1 choice in 6
 SAFE_TAGS = ["(confident)", "(happy)", "(sad)", "(nervous)", "(worried)", "(soft tone)", "(angry)", "(serious)"]
 CAST = ["Hana", "Kaito", "Eli", "Mason", "Lucy", "Leo", "Pia", "Mia", "Zoe", "Jada", "Marcus", "Rex", "Ollie", "Vince", "Gwen", "Noob",
         "Beanie", "Noel", "Baby", "Mom", "Dad", "Grandma", "Grandpa", "Teacher", "Stranger", "Doctor"]

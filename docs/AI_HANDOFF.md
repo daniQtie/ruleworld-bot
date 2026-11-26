@@ -31,8 +31,8 @@ Telegram button / Cloudflare cron
 The repo is public **on purpose** (a private repo has only 2,000 free minutes per month and one video takes about 70 minutes on the 2-CPU private runner). Because it is public: never commit `.env`, `secrets/`, tokens or the owner's email, and remember that videos waiting for approval are downloadable from the Releases page.
 
 ## 3. Schedule
-- **Auto videos:** the Cloudflare cron `0 3,7,13 * * *` UTC = **11:00, 15:00, 21:00 Philippine time** makes one video each. It skips a slot if 4 videos already wait for a decision, or if the owner pressed ⏸ Pause.
-- **YouTube upload slots:** 2 PM, 4 PM, 6 PM New York time (= 3, 5, 7 AM Philippine time in winter). Set in `pipeline/upload_youtube.py` (`SLOTS_ET`). Do not change without the owner asking.
+- **Auto videos:** the Cloudflare cron `0 3,13 * * *` UTC = **11:00 and 21:00 Philippine time** makes one video each. It skips a slot if 4 videos already wait for a decision, or if the owner pressed ⏸ Pause.
+- **YouTube upload slots:** 2 PM and 7 PM New York time (= 3 AM and 8 AM Philippine time in winter), 2 videos a day. Set in `pipeline/upload_youtube.py` (`SLOTS_ET`). Do not change without the owner asking.
 
 ## 4. Telegram buttons
 🎬 New video (choose a format) · 📋 Status · 📊 Stats · ⏸ Pause · ▶️ Resume · 🔑 Reconnect YouTube · ❓ Help. Under each video: ✅ Approve · ✏️ Revise (typed or voice note) · ❌ Reject. Owner-only: the Worker ignores every other chat.

@@ -6,9 +6,9 @@ Since 2026-11-26, Oracle is no longer used because it would not accept the owner
 
 | Part | Where | Cost |
 |---|---|---|
-| Telegram bot (buttons, schedule 11:00 / 15:00 / 21:00 PHT) | Cloudflare Worker `ruleworld-bot` (`cloud/worker/worker.js`) | ₱0 |
-| Making a video (Gemini script → Fish voice → three.js render → ffmpeg) | GitHub Actions `make.yml` (private repo `daniQtie/ruleworld-bot`) | ₱0 within 2,000 min/month |
-| Upload after ✅ (slots 3 / 5 / 7 AM PHT) | GitHub Actions `upload.yml` | ₱0 |
+| Telegram bot (buttons, schedule 11:00 / 21:00 PHT) | Cloudflare Worker `ruleworld-bot` (`cloud/worker/worker.js`) | ₱0 |
+| Making a video (Gemini script → Fish voice → three.js render → ffmpeg) | GitHub Actions `make.yml` (public repo `daniQtie/ruleworld-bot`) | ₱0, unlimited minutes |
+| Upload after ✅ (slots 3 AM / 8 AM PHT) | GitHub Actions `upload.yml` | ₱0 |
 | 🔑 Reconnect YouTube / 📊 Stats | `reconnect.yml` / `stats.yml` | ₱0 |
 | Finished videos waiting for a decision | GitHub Releases `ep-<id>` (title starts with WAITING / APPROVED / UPLOADED …) | ₱0 |
 
@@ -40,7 +40,7 @@ All keys live in the repo's **Settings → Secrets and variables → Actions**. 
   - ✅ checks that the button matches the exact file (sha256), then uploads.
   - ✏️ takes typed or voice notes and makes a new version.
   - ❌ drops the video and saves your notes.
-- Auto mode makes one video at 11:00, 15:00 and 21:00 PHT. It skips a slot when 4 videos are already waiting for your decision.
+- Auto mode makes one video at 11:00 and 21:00 PHT. It skips a slot when 4 videos are already waiting for your decision.
 
 ## If something breaks
 
@@ -48,5 +48,5 @@ All keys live in the repo's **Settings → Secrets and variables → Actions**. 
 - **The bot does not answer at all:**
   - Run **Actions → Deploy Telegram bot** again.
   - Check that `GH_PAT` has not expired. If it has, make a new one (step 2) and replace the secret.
-- **Minutes running out:** check github.com → Settings → Billing → Actions minutes. If they run out, make the repo public: unlimited minutes, and the keys stay hidden.
+- **Keep the repo public:** a private repo has only 2,000 free minutes a month, too few for 2 videos a day. The keys stay hidden in Secrets.
 - **Going back to the laptop bot:** open `https://api.telegram.org/bot<TOKEN>/deleteWebhook` once, then start `python -m pipeline.controller`.
