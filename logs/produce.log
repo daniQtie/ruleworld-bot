@@ -93,3 +93,11 @@ directed: 25 lines -> 35 shots, average 2.0s, longest 2.9s, 70.4s total
 done: /home/runner/work/ruleworld-bot/ruleworld-bot/output/2026-11-29-story-34/final.mp4
 2026-11-27 14:37:18 2026-11-29-story-34: send to Telegram
 2026-11-27 14:37:39 2026-11-29-story-34: done (check warnings, see output)
+2026-11-27 14:45:58 2026-11-29-story-34: voice
+2026-11-27 14:47:03 2026-11-29-story-34: voice check failed on some lines (continuing; captions follow the real audio)
+2026-11-27 14:47:04 2026-11-29-story-34: direct, render and mix (style v2)
+2026-11-27 15:02:36 rendered 2114 frames in 859.7 s -> /home/runner/work/ruleworld-bot/ruleworld-bot/output/2026-11-29-story-34/video-v2.mp4
+directed: 25 lines -> 35 shots, average 2.0s, longest 3.1s, 70.5s total
+done: /home/runner/work/ruleworld-bot/ruleworld-bot/output/2026-11-29-story-34/final.mp4
+2026-11-27 15:02:58 2026-11-29-story-34: send to Telegram
+2026-11-27 15:03:16 2026-11-29-story-34: done (check warnings, see output)
