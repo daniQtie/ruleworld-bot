@@ -1,0 +1,518 @@
+{
+ "id": "2026-11-29-story-33",
+ "version": 1,
+ "story": {
+  "theme_rule": "In this world, every child is born with skin made of a specific metal, except for Eli who has skin made of rubber.",
+  "logline": "Eli wants to be strong like the metal kids, but when a giant magnet traps the city, he must use his non-magnetic skin to save everyone.",
+  "characters": [
+   {
+    "name": "Eli",
+    "role": "hero",
+    "want": "to be respected like the metal-skinned kids",
+    "personality": "determined and brave"
+   },
+   {
+    "name": "Mason",
+    "role": "rival",
+    "want": "to show off his steel strength",
+    "personality": "arrogant and loud"
+   },
+   {
+    "name": "Doctor",
+    "role": "scientist",
+    "want": "to shut down a failing machine",
+    "personality": "panicked and frantic"
+   }
+  ],
+  "clue": {
+   "line": 3,
+   "text": "Eli gets his rubber hands stuck to a wall because they are too grippy."
+  },
+  "twist": {
+   "line": 8,
+   "text": "The massive magnet in the lab has no effect on Eli because rubber is non-magnetic."
+  },
+  "ending": "Eli is no longer laughed at because his rubber skin was the only thing that could stop the magnetic storm."
+ },
+ "source": "Gemini writer, format bank: Special power world",
+ "hook_type": {
+  "number": null,
+  "name": "format bank"
+ },
+ "format": {
+  "number": null,
+  "name": "Special power world"
+ },
+ "title_working": "The Boy with Rubber Skin",
+ "hook_text": "USELESS POWER?",
+ "hook_until": 2.6,
+ "music": "drift",
+ "music_gain": 0.3,
+ "world_rule": "The Boy with Rubber Skin",
+ "lines": [
+  {
+   "text": "In this world, Eli is the only kid whose skin isn’t made of hard metal, so why is he the only one running toward the city’s giant magnet?",
+   "say": "(serious) In this world, Eli is the only kid whose skin isn’t made of hard metal, so why is he the only one running toward the city’s giant magnet?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "hook",
+   "scene": "Eli stands in a crowded city square where every other kid has shiny silver or copper skin.",
+   "emotions": {
+    "Eli": "determined"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "city",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Eli"
+    ],
+    "face": "determined",
+    "action": "run",
+    "camera": "drone",
+    "trans": "cut",
+    "faces": {
+     "Eli": "determined"
+    }
+   }
+  },
+  {
+   "text": "While the other kids show off their heavy steel arms and iron legs, Eli’s body is made of soft, bouncy rubber.",
+   "say": "(soft tone) While the other kids show off their heavy steel arms and iron legs, Eli’s body is made of soft, bouncy rubber.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "Mason flexes his metallic bicep while Eli stands nearby looking at his own soft, flexible arm.",
+   "emotions": {
+    "Mason": "smirk",
+    "Eli": "sad"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mason",
+     "Eli"
+    ],
+    "face": "smirk",
+    "action": "point",
+    "camera": "wide",
+    "trans": "cut",
+    "faces": {
+     "Mason": "smirk",
+     "Eli": "sad"
+    }
+   }
+  },
+  {
+   "text": "Eli tries to climb a building to prove he is strong, but his rubber hands are so grippy that he gets stuck to the side of a shop.",
+   "say": "(nervous) Eli tries to climb a building to prove he is strong, but his rubber hands are so grippy that he gets stuck to the side of a shop.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "goal",
+   "scene": "Eli is stuck halfway up a wall, his palms pressed flat against the surface, unable to pull them away.",
+   "emotions": {
+    "Eli": "confused"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "shop",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Eli"
+    ],
+    "face": "confused",
+    "action": "still",
+    "camera": "close",
+    "prop": {
+     "type": "screen",
+     "text": "GRIP ERROR"
+    },
+    "trans": "cut",
+    "faces": {
+     "Eli": "confused"
+    }
+   }
+  },
+  {
+   "text": "Mason laughs and points a heavy iron finger, calling Eli a useless toy that will never be a real hero.",
+   "say": "(angry) Mason laughs and points a heavy iron finger, calling Eli a useless toy that will never be a real hero.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "consequence",
+   "scene": "On the street below, Mason and a crowd of metal kids laugh while looking up at the stuck Eli.",
+   "emotions": {
+    "Mason": "laugh",
+    "Eli": "sad"
+   },
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Mason",
+     "Eli"
+    ],
+    "face": "laugh",
+    "action": "point",
+    "camera": "low",
+    "trans": "cut",
+    "faces": {
+     "Mason": "laugh",
+     "Eli": "sad"
+    }
+   }
+  },
+  {
+   "text": "Suddenly, a massive experimental magnet at the city lab malfunctions, sending a blue energy wave through the streets.",
+   "say": "(worried) Suddenly, a massive experimental magnet at the city lab malfunctions, sending a blue energy wave through the streets.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "The lab in the distance starts sparking with electricity and a blue glow fills the air.",
+   "emotions": {
+    "Eli": "shocked"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Eli"
+    ],
+    "face": "shocked",
+    "action": "shock",
+    "camera": "wide",
+    "prop": {
+     "type": "smoke",
+     "text": ""
+    },
+    "trans": "whip",
+    "faces": {
+     "Eli": "shocked"
+    }
+   }
+  },
+  {
+   "text": "The pulse is so strong that every metal-skinned person is pulled toward the lab like they are weightless beads.",
+   "say": "(nervous) The pulse is so strong that every metal-skinned person is pulled toward the lab like they are weightless beads.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Mason and the other kids are suddenly lifted off the ground and dragged toward the lab building by an invisible force.",
+   "emotions": {
+    "Mason": "scared",
+    "Doctor": "worried"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Mason",
+     "Doctor"
+    ],
+    "face": "scared",
+    "action": "shiver",
+    "camera": "follow",
+    "trans": "cut",
+    "faces": {
+     "Mason": "scared",
+     "Doctor": "worried"
+    }
+   }
+  },
+  {
+   "text": "Eli sees Mason pinned against the lab’s outer wall by the magnetic force, so he decides to jump into the storm to help.",
+   "say": "(confident) Eli sees Mason pinned against the lab’s outer wall by the magnetic force, so he decides to jump into the storm to help.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "choice",
+   "scene": "Eli pulls his hands free from the shop wall and runs toward the sparking lab building.",
+   "emotions": {
+    "Eli": "determined"
+   },
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Eli"
+    ],
+    "face": "determined",
+    "action": "run",
+    "camera": "follow",
+    "trans": "cut",
+    "faces": {
+     "Eli": "determined"
+    }
+   }
+  },
+  {
+   "text": "As Eli crosses the threshold into the lab, the giant magnet has absolutely no effect on his body.",
+   "say": "(confident) As Eli crosses the threshold into the lab, the giant magnet has absolutely no effect on his body.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "Eli walks calmly through the center of the magnetic storm while metal objects fly past him.",
+   "emotions": {
+    "Eli": "surprised",
+    "Doctor": "shocked"
+   },
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Eli",
+     "Doctor"
+    ],
+    "face": "surprised",
+    "action": "walk",
+    "camera": "push",
+    "trans": "flash",
+    "faces": {
+     "Eli": "surprised",
+     "Doctor": "shocked"
+    }
+   }
+  },
+  {
+   "text": "Eli realizes that his rubber skin is the only thing in the city that isn't magnetic, allowing him to move freely.",
+   "say": "(happy) Eli realizes that his rubber skin is the only thing in the city that isn't magnetic, allowing him to move freely.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "explanation",
+   "scene": "Eli looks at his own hands while standing right in front of the massive glowing magnet core.",
+   "emotions": {
+    "Eli": "smirk"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Eli"
+    ],
+    "face": "smirk",
+    "action": "think",
+    "camera": "close",
+    "prop": {
+     "type": "number",
+     "text": "0"
+    },
+    "trans": "cut",
+    "faces": {
+     "Eli": "smirk"
+    }
+   }
+  },
+  {
+   "text": "He uses his sticky, grippy hands to walk straight up the side of the machine to reach the manual shut-off lever.",
+   "say": "(serious) He uses his sticky, grippy hands to walk straight up the side of the machine to reach the manual shut-off lever.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "resolution",
+   "scene": "Eli is on the side of the giant machine, using his hands to grip the metal casing as he reaches for a handle.",
+   "emotions": {
+    "Eli": "determined"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Eli"
+    ],
+    "face": "determined",
+    "action": "jump",
+    "camera": "high",
+    "trans": "cut",
+    "faces": {
+     "Eli": "determined"
+    }
+   }
+  },
+  {
+   "text": "Eli pulls the lever, the magnet shuts down, and Mason falls to the ground, looking up in total disbelief.",
+   "say": "(happy) Eli pulls the lever, the magnet shuts down, and Mason falls to the ground, looking up in total disbelief.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "resolution",
+   "scene": "Eli pulls a giant handle and the blue glow fades; Mason sits on the floor of the lab looking stunned.",
+   "emotions": {
+    "Eli": "happy",
+    "Mason": "shocked"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Eli",
+     "Mason"
+    ],
+    "face": "happy",
+    "action": "cheer",
+    "camera": "wide",
+    "prop": {
+     "type": "sign",
+     "text": "OFF"
+    },
+    "trans": "cut",
+    "faces": {
+     "Eli": "happy",
+     "Mason": "shocked"
+    }
+   }
+  },
+  {
+   "text": "In this world, Eli is the only kid whose skin isn’t made of hard metal, and today, that made him the strongest of all.",
+   "say": "(confident) In this world, Eli is the only kid whose skin isn’t made of hard metal, and today, that made him the strongest of all.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "ending",
+   "scene": "Eli stands in the city square with Mason and the other kids, who are all cheering for him.",
+   "emotions": {
+    "Eli": "determined",
+    "Mason": "starstruck"
+   },
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "city",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Eli",
+     "Mason"
+    ],
+    "face": "determined",
+    "action": "still",
+    "camera": "drone",
+    "trans": "cut",
+    "faces": {
+     "Eli": "determined",
+     "Mason": "starstruck"
+    }
+   }
+  }
+ ],
+ "word_count": 260,
+ "est_seconds": 76.5,
+ "tail_hold": 2.5,
+ "upload": {
+  "title": "The Boy with Rubber Skin #Shorts",
+  "description": "Eli is the only kid in town with useless rubber skin, until a giant magnet puts the metal city in danger. Can his 'weakness' save them?\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "roblox animation",
+   "superpower world",
+   "hero story",
+   "rubber skin",
+   "magnetic storm",
+   "useless power",
+   "saving the city",
+   "rule world",
+   "animated story",
+   "roblox story"
+  ]
+ },
+ "review": {
+  "scores": {
+   "hook": 8.0,
+   "clarity": 9.0,
+   "one_rule": 9.0,
+   "cause_and_effect": 8.0,
+   "hero_drives_story": 8.0,
+   "twist": 8.0,
+   "ending": 8.0,
+   "emotion": 7.0,
+   "originality": 8.0,
+   "can_be_animated": 9.0
+  },
+  "average": 8.2
+ }
+}
