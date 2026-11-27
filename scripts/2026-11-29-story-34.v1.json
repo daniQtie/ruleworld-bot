@@ -1,0 +1,975 @@
+{
+ "id": "2026-11-29-story-34",
+ "version": 1,
+ "story": {
+  "characters": [
+   {
+    "name": "Leo",
+    "role": "Ethan, the main character seeking to protect his memories",
+    "want": "To keep his family memories without losing them to the doors.",
+    "personality": "Curious, emotional, brave but impulsive."
+   },
+   {
+    "name": "Mia",
+    "role": "Emma, Ethan's younger sister appearing in memories",
+    "want": "To play and be with her family.",
+    "personality": "Innocent, playful, and affectionate."
+   },
+   {
+    "name": "Stranger",
+    "role": "The Doorkeeper, a supernatural entity guarding the hallway",
+    "want": "To collect memories from those who enter the doors.",
+    "personality": "Deep, calm, emotionless, and unnatural."
+   },
+   {
+    "name": "Mom",
+    "role": "Ethan's mother appearing in flashbacks",
+    "want": "To care for her children.",
+    "personality": "Warm, gentle, and loving."
+   }
+  ]
+ },
+ "source": "Owner's own script",
+ "hook_type": {
+  "number": null,
+  "name": "format bank"
+ },
+ "format": {
+  "number": null,
+  "name": "Your script"
+ },
+ "title_working": "The Midnight Doors",
+ "hook_text": "THREE DOORS APPEAR",
+ "hook_until": 2.6,
+ "music": "drift",
+ "music_gain": 0.3,
+ "world_rule": "The Midnight Doors",
+ "lines": [
+  {
+   "text": "Every midnight, three doors appear. You may enter only one. But whatever door you choose, you will lose one memory forever.",
+   "say": "(nervous) Every midnight, three doors appear. You may enter only one. But whatever door you choose, you will lose one memory forever.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "hook",
+   "scene": "Kaito stands terrified in a dark hallway as three massive glowing doors materialize out of the fog.",
+   "emotions": {
+    "Kaito": "scared"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "scared",
+    "action": "talk",
+    "camera": "wide",
+    "prop": null,
+    "board": null,
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Kaito": "scared"
+    }
+   }
+  },
+  {
+   "text": "Every midnight, three doors appear in my hallway. You can enter only one.",
+   "say": "(nervous) Every midnight, three doors appear in my hallway. You can enter only one.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "hook",
+   "scene": "Leo stands frightened in the dark hallway looking at the three glowing doors.",
+   "emotions": {
+    "Leo": "scared"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Leo"
+    ],
+    "face": "scared",
+    "action": "shiver",
+    "camera": "push",
+    "trans": "cut",
+    "faces": {
+     "Leo": "scared"
+    }
+   }
+  },
+  {
+   "text": "But whichever door you choose… you lose a memory forever.",
+   "say": "(nervous) But whichever door you choose… you lose a memory forever.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "hook",
+   "scene": "Leo's trembling hand reaches for the red door as a shadowy figure looms behind him.",
+   "emotions": {
+    "Leo": "scared",
+    "Stranger": "neutral"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Leo",
+     "Stranger"
+    ],
+    "face": "scared",
+    "action": "still",
+    "camera": "close",
+    "monster": [
+     "Stranger"
+    ],
+    "trans": "zoom",
+    "faces": {
+     "Leo": "scared",
+     "Stranger": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Choose carefully, boy. One door will show you happiness. One will show you pain.",
+   "say": "(serious) Choose carefully, boy. One door will show you happiness. One will show you pain.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "The Stranger towers over Leo, holding an old silver pocket watch that reads 11:59.",
+   "emotions": {
+    "Stranger": "neutral",
+    "Leo": "nervous"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Stranger",
+     "Leo"
+    ],
+    "face": "neutral",
+    "action": "talk",
+    "camera": "low",
+    "prop": {
+     "type": "number",
+     "text": "11:59"
+    },
+    "monster": [
+     "Stranger"
+    ],
+    "trans": "cut",
+    "faces": {
+     "Stranger": "neutral",
+     "Leo": "nervous"
+    }
+   }
+  },
+  {
+   "text": "And one will show you what you have yet to lose.",
+   "say": "(serious) And one will show you what you have yet to lose.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "The Stranger points toward the white door which glows with a soft golden light.",
+   "emotions": {
+    "Stranger": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Stranger"
+    ],
+    "face": "neutral",
+    "action": "point",
+    "camera": "wide",
+    "monster": [
+     "Stranger"
+    ],
+    "trans": "cut",
+    "faces": {
+     "Stranger": "neutral"
+    }
+   }
+  },
+  {
+   "text": "What happens if I don’t choose?",
+   "say": "(worried) What happens if I don’t choose?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Leo looks back at the Stranger with a confused and nervous expression.",
+   "emotions": {
+    "Leo": "confused"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Leo"
+    ],
+    "face": "confused",
+    "action": "talk",
+    "camera": "eye",
+    "trans": "cut",
+    "faces": {
+     "Leo": "confused"
+    }
+   }
+  },
+  {
+   "text": "Then the doors will choose for you.",
+   "say": "(serious) Then the doors will choose for you.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "The Stranger slowly turns his featureless face toward Leo as the doors begin to shake.",
+   "emotions": {
+    "Stranger": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Stranger"
+    ],
+    "face": "neutral",
+    "action": "still",
+    "camera": "close",
+    "monster": [
+     "Stranger"
+    ],
+    "trans": "whip",
+    "faces": {
+     "Stranger": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Come on, you two. Dinner is ready!",
+   "say": "(happy) Come on, you two. Dinner is ready!",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "goal",
+   "scene": "The red door opens to a warm living room where young Leo and Mia are playing with their Mom.",
+   "emotions": {
+    "Mom": "happy",
+    "Mia": "happy",
+    "Leo": "happy"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "house",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Mom",
+     "Mia",
+     "Leo"
+    ],
+    "face": "happy",
+    "action": "talk",
+    "camera": "wide",
+    "prop": {
+     "type": "cake",
+     "text": "Dinner"
+    },
+    "trans": "flash",
+    "faces": {
+     "Mom": "happy",
+     "Mia": "happy",
+     "Leo": "happy"
+    }
+   }
+  },
+  {
+   "text": "Behind the red door was my happiest memory. A time when my family was still together.",
+   "say": "(happy) Behind the red door was my happiest memory. A time when my family was still together.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "goal",
+   "scene": "Leo watches the memory of his family with a nostalgic and emotional smile.",
+   "emotions": {
+    "Leo": "happy"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Leo"
+    ],
+    "face": "happy",
+    "action": "think",
+    "camera": "close",
+    "trans": "cut",
+    "faces": {
+     "Leo": "happy"
+    }
+   }
+  },
+  {
+   "text": "Enter… and you will never feel that happiness again.",
+   "say": "(serious) Enter… and you will never feel that happiness again.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "consequence",
+   "scene": "The Stranger whispers into Leo's ear as the happy memory begins to fade into smoke.",
+   "emotions": {
+    "Stranger": "neutral",
+    "Leo": "sad"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Stranger",
+     "Leo"
+    ],
+    "face": "neutral",
+    "action": "still",
+    "camera": "ots",
+    "monster": [
+     "Stranger"
+    ],
+    "trans": "cut",
+    "faces": {
+     "Stranger": "neutral",
+     "Leo": "sad"
+    }
+   }
+  },
+  {
+   "text": "Behind the blue door was the worst night of my life. The night I lost my mother.",
+   "say": "(sad) Behind the blue door was the worst night of my life. The night I lost my mother.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "The blue door opens to a rainy hospital corridor where young Leo and Mia are crying.",
+   "emotions": {
+    "Leo": "sob",
+    "Mia": "sob"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hospital",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Leo",
+     "Mia"
+    ],
+    "face": "sob",
+    "action": "cry",
+    "camera": "wide",
+    "trans": "flash",
+    "faces": {
+     "Leo": "sob",
+     "Mia": "sob"
+    }
+   }
+  },
+  {
+   "text": "I don’t want to remember that night anymore.",
+   "say": "(sad) I don’t want to remember that night anymore.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Leo looks away from the blue door with trembling lips and tears in his eyes.",
+   "emotions": {
+    "Leo": "sad"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Leo"
+    ],
+    "face": "sad",
+    "action": "shiver",
+    "camera": "close",
+    "trans": "cut",
+    "faces": {
+     "Leo": "sad"
+    }
+   }
+  },
+  {
+   "text": "Pain is still a memory, boy. And memories are what make you who you are.",
+   "say": "(serious) Pain is still a memory, boy. And memories are what make you who you are.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "explanation",
+   "scene": "The Stranger stands motionless as he explains the value of painful memories.",
+   "emotions": {
+    "Stranger": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Stranger"
+    ],
+    "face": "neutral",
+    "action": "talk",
+    "camera": "low",
+    "monster": [
+     "Stranger"
+    ],
+    "trans": "cut",
+    "faces": {
+     "Stranger": "neutral"
+    }
+   }
+  },
+  {
+   "text": "You’re late, big brother!",
+   "say": "(happy) You’re late, big brother!",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "goal",
+   "scene": "The white door opens to show an older Leo sitting with a girl who looks like Mia.",
+   "emotions": {
+    "Mia": "happy",
+    "Leo": "surprised"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "house",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Mia",
+     "Leo"
+    ],
+    "face": "happy",
+    "action": "talk",
+    "camera": "wide",
+    "trans": "flash",
+    "faces": {
+     "Mia": "happy",
+     "Leo": "surprised"
+    }
+   }
+  },
+  {
+   "text": "Behind the white door was a memory I had never lived. A future where Emma was still beside me.",
+   "say": "(worried) Behind the white door was a memory I had never lived. A future where Emma was still beside me.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "goal",
+   "scene": "Leo stares into the white door, shocked to see a future he hasn't lived yet.",
+   "emotions": {
+    "Leo": "shocked"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "win",
+    "cast": [
+     "Leo"
+    ],
+    "face": "shocked",
+    "action": "still",
+    "camera": "close",
+    "trans": "cut",
+    "faces": {
+     "Leo": "shocked"
+    }
+   }
+  },
+  {
+   "text": "Is that… my future?",
+   "say": "(nervous) Is that… my future?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "choice",
+   "scene": "Leo whispers his question while bathed in the golden light of the white door.",
+   "emotions": {
+    "Leo": "nervous"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "win",
+    "cast": [
+     "Leo"
+    ],
+    "face": "nervous",
+    "action": "talk",
+    "camera": "eye",
+    "trans": "cut",
+    "faces": {
+     "Leo": "nervous"
+    }
+   }
+  },
+  {
+   "text": "Some memories haven’t happened yet. But you can still lose them.",
+   "say": "(serious) Some memories haven’t happened yet. But you can still lose them.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "consequence",
+   "scene": "The Stranger warns Leo that even future memories can be lost forever.",
+   "emotions": {
+    "Stranger": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Stranger"
+    ],
+    "face": "neutral",
+    "action": "talk",
+    "camera": "low",
+    "monster": [
+     "Stranger"
+    ],
+    "trans": "cut",
+    "faces": {
+     "Stranger": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Why do you keep taking people’s memories?",
+   "say": "(angry) Why do you keep taking people’s memories?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Leo turns to the Stranger, his face full of anger and emotion.",
+   "emotions": {
+    "Leo": "angry"
+   },
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Leo"
+    ],
+    "face": "angry",
+    "action": "talk",
+    "camera": "close",
+    "prop": {
+     "type": "fire",
+     "text": ""
+    },
+    "trans": "cut",
+    "faces": {
+     "Leo": "angry"
+    }
+   }
+  },
+  {
+   "text": "Because people would rather forget their pain than remember the people they loved.",
+   "say": "(serious) Because people would rather forget their pain than remember the people they loved.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "explanation",
+   "scene": "The Stranger lowers his head, explaining the human desire to forget pain.",
+   "emotions": {
+    "Stranger": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Stranger"
+    ],
+    "face": "neutral",
+    "action": "talk",
+    "camera": "eye",
+    "monster": [
+     "Stranger"
+    ],
+    "trans": "cut",
+    "faces": {
+     "Stranger": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Then I choose none of them.",
+   "say": "(confident) Then I choose none of them.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "choice",
+   "scene": "Leo steps away from all three doors, his expression determined.",
+   "emotions": {
+    "Leo": "determined"
+   },
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "win",
+    "cast": [
+     "Leo"
+    ],
+    "face": "determined",
+    "action": "disagree",
+    "camera": "wide",
+    "trans": "cut",
+    "faces": {
+     "Leo": "determined"
+    }
+   }
+  },
+  {
+   "text": "You’re the first person who ever refused.",
+   "say": "(worried) You’re the first person who ever refused.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "The Stranger stands perfectly still, his glowing blue eyes wide with surprise.",
+   "emotions": {
+    "Stranger": "surprised"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Stranger"
+    ],
+    "face": "surprised",
+    "action": "shock",
+    "camera": "close",
+    "monster": [
+     "Stranger"
+    ],
+    "trans": "whip",
+    "faces": {
+     "Stranger": "surprised"
+    }
+   }
+  },
+  {
+   "text": "I finally understood. You don’t have to erase painful memories to move forward.",
+   "say": "(serious) I finally understood. You don’t have to erase painful memories to move forward.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "resolution",
+   "scene": "Leo wakes up in his bright bedroom as morning sunlight pours in.",
+   "emotions": {
+    "Leo": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Leo"
+    ],
+    "face": "neutral",
+    "action": "still",
+    "camera": "wide",
+    "trans": "flash",
+    "faces": {
+     "Leo": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Sometimes, remembering is how you keep the people you love alive.",
+   "say": "(happy) Sometimes, remembering is how you keep the people you love alive.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "resolution",
+   "scene": "Leo smiles warmly while holding an old photograph of Mom and Mia close to his chest.",
+   "emotions": {
+    "Leo": "happy"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Leo"
+    ],
+    "face": "happy",
+    "action": "hug",
+    "camera": "close",
+    "prop": {
+     "type": "stack",
+     "text": "PHOTO"
+    },
+    "trans": "cut",
+    "faces": {
+     "Leo": "happy"
+    }
+   }
+  },
+  {
+   "text": "IF YOU HAD TO CHOOSE, WHICH DOOR WOULD YOU ENTER?",
+   "say": "(confident) IF YOU HAD TO CHOOSE, WHICH DOOR WOULD YOU ENTER?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "ending",
+   "scene": "The screen displays the central question over the mystical hallway background.",
+   "emotions": {
+    "Kaito": "determined"
+   },
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "determined",
+    "action": "still",
+    "camera": "wide",
+    "prop": {
+     "type": "sign",
+     "text": "WHICH DOOR?"
+    },
+    "board": null,
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Kaito": "determined"
+    }
+   }
+  },
+  {
+   "text": "RED ❤️ | BLUE 💙 | WHITE 🤍 | NONE",
+   "say": "(soft tone) RED ❤️ | BLUE 💙 | WHITE 🤍 | NONE",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "ending",
+   "scene": "The four choices flash brightly on the screen prompting viewers to vote in the comments.",
+   "emotions": {
+    "Kaito": "thinking"
+   },
+   "voice": {
+    "emotion": "soft tone",
+    "tags": "(soft tone)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hallway",
+    "time": "night",
+    "mood": "win",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "thinking",
+    "action": "point",
+    "camera": "close",
+    "prop": {
+     "type": "sign",
+     "text": "RED BLUE WHITE NONE"
+    },
+    "board": null,
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Kaito": "thinking"
+    }
+   }
+  }
+ ],
+ "word_count": 269,
+ "est_seconds": 79.1,
+ "tail_hold": 2.5,
+ "upload": {
+  "title": "The Midnight Doors #Shorts",
+  "description": "Every midnight, three doors appear in Ethan's hallway. He must choose one, but the price is a memory lost forever.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "mystery",
+   "psychological horror",
+   "supernatural",
+   "choices",
+   "memory",
+   "thriller",
+   "animation",
+   "storytelling",
+   "creepy",
+   "animated story",
+   "roblox story"
+  ]
+ },
+ "owner_text": "Genre: Mystery / Psychological Horror / Supernatural\nTarget duration: 1:15–1:20\nFormat: Vertical 9:16\nStorytelling: First-person narration + character dialogue\nAudience engagement: Viewers choose which door they would enter.\n\nMain rule:\n“Every midnight, three doors appear. You may enter only one. But whatever door you choose, you will lose one memory forever.”\n\n\nTHREE DOORS OPEN EVERY MIDNIGHT AND ENTERING ONE ERASES A MEMORY\n1. CHARACTER DESIGN — KEEP CONSISTENT\nIMPORTANT: All character appearances, clothes, accessories, proportions, and facial features must remain identical throughout the entire video.\n\nETHAN — Main Character\n• Age: 16\n• Messy black hair.\n• Dark blue hoodie.\n• Black pants and white sneakers.\n• Brown eyes.\n• Small bandage on his right cheek.\n• Personality: Curious, emotional, brave but impulsive.\n• Facial expressions: Confused, suspicious, terrified, regretful, heartbroken.\n\nEMMA — Ethan’s Younger Sister\n• Age: 9\n• Shoulder-length blonde hair.\n• Yellow sweater.\n• Blue skirt and white shoes.\n• Always carries a small white teddy bear.\n• Personality: Innocent, playful, affectionate.\n• Facial expressions: Happy, confused, frightened, loving.\n\nTHE DOORKEEPER\n• Tall, unusually thin humanoid figure.\n• Wears a long black coat.\n• White featureless face with no visible mouth.\n• Glowing pale blue eyes.\n• Carries an old silver pocket watch.\n• Moves slowly and unnaturally.\n• Voice: Deep, calm, emotionless.\n\nTHE MOTHER — FLASHBACK\n• Long brown hair.\n• Beige cardigan.\n• White blouse.\n• Warm, gentle expression.\n• Appears only in Ethan’s memories.\n\n2. ENVIRONMENT AND WORLD DESIGN\nLOCATION: THE FORGOTTEN HALLWAY\nA mysterious hallway that appears inside Ethan’s house every midnight.\n\nEnvironment details:\n• Extremely long corridor.\n• Black marble floor.\n• Dark gray walls.\n• Floating dust particles.\n• Three enormous wooden doors.\n• No visible windows.\n• An old grandfather clock at the end of the hallway.\n• Thick white fog covering the floor.\n\nTHE THREE DOORS\nDOOR 1 — RED DOOR\n\n• Dark red wooden texture.\n• Small golden handle.\n• Faint sounds of laughter behind it.\n• Represents memories of happiness.\n\nDOOR 2 — BLUE DOOR\n\n• Dark blue wooden texture.\n• Ice-covered edges.\n• Faint sounds of someone crying.\n• Represents memories of pain and loss.\n\nDOOR 3 — WHITE DOOR\n\n• Pure white surface.\n• No handle.\n• Soft golden light coming from underneath.\n• Represents memories you haven’t experienced yet.\n\nIMPORTANT: Each door must be visually distinguishable in every shot. Never change their colors or positions.\n\n3. COMPLETE SCRIPT\nSCENE 1 — THE HOOK\nTIME: 0:00–0:09\n\nLOCATION: The Forgotten Hallway — Midnight.\n\nCAMERA AND ACTION:\n1. Start with a completely black screen.\n2. A loud grandfather clock strikes twelve.\n3. Quick cut to three enormous doors appearing inside a dark hallway.\n4. Camera rapidly pushes toward the doors.\n5. A frightened boy stands in front of them.\n6. Close-up of his trembling hand reaching toward the red door.\n7. Suddenly, a shadowy figure appears behind him.\n\nLIGHTING:\n• Red light illuminates Door 1.\n• Blue light illuminates Door 2.\n• Soft golden light illuminates Door 3.\n• The rest of the hallway remains almost completely dark.\n\nSOUND DESIGN:\n• Three deep clock strikes.\n• Low atmospheric rumbling.\n• Faint whispering coming from behind the doors.\n\nNARRATOR (ETHAN) — urgent, mysterious, frightened:\n“Every midnight, three doors appear in my hallway. You can enter only one. But whichever door you choose… you lose a memory forever.”\n\nTRANSITION: Fast zoom toward Ethan’s eyes.\n\nSCENE 2 — THE WARNING\nTIME: 0:09–0:22\n\nLOCATION: The Forgotten Hallway.\n\nCAMERA:\n• Medium shot of Ethan slowly stepping backward.\n• The Doorkeeper emerges from the darkness.\n• Low-angle shot makes the Doorkeeper appear extremely tall.\n• Close-up of his silver pocket watch.\n• The clock reads 11:59 PM, despite the hallway already appearing at midnight.\n\nDOORKEEPER — deep, emotionless voice:\n“Choose carefully, boy. One door will show you happiness. One will show you pain. And one will show you what you have yet to lose.”\n\nETHAN — confused, nervous:\n“What happens if I don’t choose?”\n\nDOORKEEPER — slowly turning his head:\n“Then the doors will choose for you.”\n\nACTION:\nThe three doors suddenly shake.\n\nSOUND: Three heavy wooden knocks.\n\nSCENE 3 — THE FIRST MEMORY\nTIME: 0:22–0:35\n\nLOCATION: Directly in front of the RED DOOR.\n\nCAMERA:\n• Ethan slowly approaches Door 1.\n• The golden handle turns by itself.\n• The door opens slightly.\n• Warm light spills into the dark hallway.\n• A flashback appears.\n\nFLASHBACK LOCATION: Ethan’s childhood living room.\n\nVISUAL:\n• Young Ethan and Emma are playing together.\n• Their mother sits on a couch, laughing.\n• Emma hugs Ethan.\n• Their mother calls them both to dinner.\n\nMOTHER — warm, loving voice:\n“Come on, you two. Dinner is ready!”\n\nNARRATOR — nostalgic, emotional:\n“Behind the red door was my happiest memory. A time when my family was still together.”\n\nACTION:\n• Ethan smiles.\n• A tear slowly forms in his eye.\n• The memory begins fading.\n\nDOORKEEPER — whispering:\n“Enter… and you will never feel that happiness again.”\n\nSCENE 4 — THE SECOND MEMORY\nTIME: 0:35–0:48\n\nLOCATION: Directly in front of the BLUE DOOR.\n\nCAMERA:\n• Ethan turns toward Door 2.\n• A cold breeze blows through the hallway.\n• The blue door slowly opens.\n• Camera moves inside.\n\nFLASHBACK LOCATION: Hospital corridor — Rainy evening.\n\nVISUAL:\n• Young Ethan sits alone outside a hospital room.\n• His mother is lying in a hospital bed.\n• Emma is crying while holding his hand.\n• Ethan looks down, unable to speak.\n\nNARRATOR — sad, hesitant:\n“Behind the blue door was the worst night of my life. The night I lost my mother.”\n\nETHAN — quietly, with trembling lips:\n“I don’t want to remember that night anymore.”\n\nDOORKEEPER — emotionless:\n“Pain is still a memory, boy. And memories are what make you who you are.”\n\nCAMERA: Extreme close-up of Ethan’s eyes.\n\nSCENE 5 — THE THIRD DOOR\nTIME: 0:48–1:02\n\nLOCATION: Directly in front of the WHITE DOOR.\n\nLIGHTING:\n• Soft golden light.\n• Floating white particles.\n• The hallway becomes strangely silent.\n\nCAMERA:\n• Ethan slowly approaches the white door.\n• It opens without anyone touching it.\n• Inside is a bright living room.\n• An older Ethan is sitting with a little girl.\n• The girl looks exactly like Emma.\n\nFUTURE EMMA — smiling:\n“You’re late, big brother!”\n\nNARRATOR — shocked, confused:\n“Behind the white door was a memory I had never lived. A future where Emma was still beside me.”\n\nETHAN — whispering:\n“Is that… my future?”\n\nDOORKEEPER:\n“Some memories haven’t happened yet. But you can still lose them.”\n\nSCENE 6 — THE REALIZATION\nTIME: 1:02–1:12\n\nLOCATION: The center of the hallway.\n\nCAMERA:\n• Ethan turns toward the Doorkeeper.\n• Close-up of the pocket watch.\n• The watch reveals three small photographs.\n• Each photograph shows Ethan with his mother and Emma.\n• Ethan looks at the Doorkeeper.\n\nETHAN — emotional, angry:\n“Why do you keep taking people’s memories?”\n\nDOORKEEPER — slowly lowering his head:\n“Because people would rather forget their pain than remember the people they loved.”\n\nACTION:\n• Ethan looks at all three doors.\n• He steps away from them.\n• The Doorkeeper tilts his head.\n\nETHAN — determined, emotional:\n“Then I choose none of them.”\n\nSCENE 7 — THE TWIST AND ENDING\nTIME: 1:12–1:20\n\nLOCATION: The Forgotten Hallway — Midnight.\n\nCAMERA:\n• The Doorkeeper suddenly becomes completely still.\n• The three doors begin disappearing.\n• The grandfather clock stops ticking.\n• Extreme close-up of the Doorkeeper’s glowing eyes.\n\nDOORKEEPER — almost whispering, surprised:\n“You’re the first person who ever refused.”\n\nVISUAL:\n• Ethan wakes up in his bedroom.\n• Morning sunlight enters through the window.\n• He sees an old photograph of his mother and Emma beside his bed.\n• He smiles and holds it close.\n\nNARRATOR — calm, emotional, meaningful:\n“I finally understood. You don’t have to erase painful memories to move forward. Sometimes, remembering is how you keep the people you love alive.”\n\nFINAL ON-SCREEN TEXT:\n“IF YOU HAD TO CHOOSE, WHICH DOOR WOULD YOU ENTER?”\n\nCOMMENT PROMPT:\n“RED ❤️ | BLUE 💙 | WHITE 🤍 | NONE”\n\nEND.",
+ "review": null
+}
