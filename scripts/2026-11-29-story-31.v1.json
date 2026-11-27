@@ -1,0 +1,930 @@
+{
+ "id": "2026-11-29-story-31",
+ "version": 1,
+ "story": {
+  "characters": [
+   {
+    "name": "Leo",
+    "role": "Leo — 12-year-old brave but sensitive boy in red hoodie",
+    "want": "To protect his little sister and find his missing mother",
+    "personality": "Brave, sensitive, determined, caring"
+   },
+   {
+    "name": "Mia",
+    "role": "Ava — 8-year-old innocent little sister carrying a teddy bear",
+    "want": "To remember her mother's voice",
+    "personality": "Innocent, emotional, easily frightened"
+   },
+   {
+    "name": "Mayor",
+    "role": "Mayor Blackwood — 55-year-old exhausted, manipulative mayor",
+    "want": "To prevent all crying by stealing citizens' tears and memories",
+    "personality": "Calm, manipulative, emotionally broken"
+   },
+   {
+    "name": "Mom",
+    "role": "Elena — Leo and Ava's missing mother",
+    "want": "To protect her children's memories from the Mayor",
+    "personality": "Gentle, loving, frightened"
+   },
+   {
+    "name": "Officer",
+    "role": "Tear Collector — Tall masked guard in black uniform",
+    "want": "To enforce the illegal crying law and capture tears",
+    "personality": "Robotic, emotionless, intimidating"
+   }
+  ]
+ },
+ "source": "Owner's own script",
+ "hook_type": {
+  "number": null,
+  "name": "format bank"
+ },
+ "format": {
+  "number": null,
+  "name": "Your script"
+ },
+ "title_working": "The Town That Stole Everyone's Tears",
+ "hook_text": "CRYING IS ILLEGAL",
+ "hook_until": 2.6,
+ "music": "drift",
+ "music_gain": 0.3,
+ "world_rule": "The Town That Stole Everyone's Tears",
+ "lines": [
+  {
+   "text": "In my town, crying is illegal. And yesterday, I watched the police arrest my eight-year-old sister… for shedding ONE tear.",
+   "say": "(nervous) In my town, crying is illegal. And yesterday, I watched the police arrest my eight-year-old sister… for shedding ONE tear.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "hook",
+   "scene": "A mechanical officer hand catches a child's tear in a vial before smash cutting to the flashing red lights of the town clock tower.",
+   "emotions": {
+    "Leo": "scared",
+    "Officer": "neutral"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Leo",
+     "Officer"
+    ],
+    "face": "scared",
+    "action": "shock",
+    "camera": "close",
+    "prop": {
+     "type": "tower",
+     "text": "CLOCK TOWER"
+    },
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "scared",
+     "Officer": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Mayor Blackwood created this law ten years ago. Nobody was allowed to cry. Not at funerals. Not at hospitals.",
+   "say": "(serious) Mayor Blackwood created this law ten years ago. Nobody was allowed to cry. Not at funerals. Not at hospitals.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "Aerial view of Grayhaven streets as silent citizens walk under the gray fog while a tear collector watches closely.",
+   "emotions": {
+    "Leo": "neutral",
+    "Officer": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "day",
+    "mood": "cold",
+    "cast": [
+     "Leo",
+     "Officer"
+    ],
+    "face": "neutral",
+    "action": "walk",
+    "camera": "drone",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "neutral",
+     "Officer": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Not even when someone they loved disappeared.",
+   "say": "(sad) Not even when someone they loved disappeared.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "A heartbroken mother quickly wipes away a tear on the street before an officer spots her.",
+   "emotions": {
+    "Mom": "sad",
+    "Officer": "determined"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Mom",
+     "Officer"
+    ],
+    "face": "sad",
+    "action": "still",
+    "camera": "ots",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Mom": "sad",
+     "Officer": "determined"
+    }
+   }
+  },
+  {
+   "text": "LAW NO. 01: EVERY TEAR BELONGS TO THE MAYOR.",
+   "say": "(worried) LAW NO. 01: EVERY TEAR BELONGS TO THE MAYOR.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "Camera pushes toward a massive digital sign above the gray town square proclaiming the mayor's strict law.",
+   "emotions": {
+    "Leo": "worried"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "cold",
+    "cast": [
+     "Leo"
+    ],
+    "face": "worried",
+    "action": "still",
+    "camera": "push",
+    "prop": {
+     "type": "sign",
+     "text": "LAW NO. 01: EVERY TEAR BELONGS TO THE MAYOR"
+    },
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "worried"
+    }
+   }
+  },
+  {
+   "text": "Leo… what did Mom’s voice sound like?",
+   "say": "(sad) Leo… what did Mom’s voice sound like?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "In their softly lit bedroom, little sister Mia looks at an old photo of their mother while holding her teddy bear.",
+   "emotions": {
+    "Mia": "sad",
+    "Leo": "neutral"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Mia",
+     "Leo"
+    ],
+    "face": "sad",
+    "action": "sit",
+    "camera": "close",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Mia": "sad",
+     "Leo": "neutral"
+    }
+   }
+  },
+  {
+   "text": "You don’t remember?",
+   "say": "(worried) You don’t remember?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "Leo turns to his little sister in surprise, trying to offer a reassuring smile.",
+   "emotions": {
+    "Leo": "surprised",
+    "Mia": "sad"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Leo",
+     "Mia"
+    ],
+    "face": "surprised",
+    "action": "talk",
+    "camera": "close",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "surprised",
+     "Mia": "sad"
+    }
+   }
+  },
+  {
+   "text": "I remember her face… but I can’t remember her voice.",
+   "say": "(sad) I remember her face… but I can’t remember her voice.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "Mia's eyes fill with tears as she whispers softly about losing her memories of their mother.",
+   "emotions": {
+    "Mia": "sob",
+    "Leo": "worried"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Mia",
+     "Leo"
+    ],
+    "face": "sob",
+    "action": "cry",
+    "camera": "eye",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Mia": "sob",
+     "Leo": "worried"
+    }
+   }
+  },
+  {
+   "text": "Our mother disappeared three years ago. And every month, Ava remembers a little less about her.",
+   "say": "(sad) Our mother disappeared three years ago. And every month, Ava remembers a little less about her.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "Leo looks down in silence as his smile completely fades away at the tragic realization.",
+   "emotions": {
+    "Leo": "sad"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Leo"
+    ],
+    "face": "sad",
+    "action": "think",
+    "camera": "close",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "sad"
+    }
+   }
+  },
+  {
+   "text": "EMOTIONAL VIOLATION DETECTED.",
+   "say": "(nervous) EMOTIONAL VIOLATION DETECTED.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Walking through the town square, a single tear rolls down Mia's cheek triggering red warning alarms.",
+   "emotions": {
+    "Mia": "scared",
+    "Leo": "shocked"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Mia",
+     "Leo"
+    ],
+    "face": "scared",
+    "action": "walk",
+    "camera": "follow",
+    "prop": {
+     "type": "sign",
+     "text": "EMOTIONAL VIOLATION DETECTED"
+    },
+    "monster": [],
+    "trans": "flash",
+    "faces": {
+     "Mia": "scared",
+     "Leo": "shocked"
+    }
+   }
+  },
+  {
+   "text": "LEO! HELP ME!",
+   "say": "(nervous) LEO! HELP ME!",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "A robotic Tear Collector grabs Mia's arm violently as she screams out for her brother.",
+   "emotions": {
+    "Mia": "scared",
+    "Officer": "neutral",
+    "Leo": "angry"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Mia",
+     "Officer",
+     "Leo"
+    ],
+    "face": "scared",
+    "action": "talk",
+    "camera": "low",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Mia": "scared",
+     "Officer": "neutral",
+     "Leo": "angry"
+    }
+   }
+  },
+  {
+   "text": "LET HER GO! SHE’S JUST A CHILD!",
+   "say": "(angry) LET HER GO! SHE’S JUST A CHILD!",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Leo desperately rushes forward to tackle the guard and save his little sister.",
+   "emotions": {
+    "Leo": "angry",
+    "Officer": "neutral"
+   },
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "danger",
+    "cast": [
+     "Leo",
+     "Officer"
+    ],
+    "face": "angry",
+    "action": "run",
+    "camera": "push",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "angry",
+     "Officer": "neutral"
+    }
+   }
+  },
+  {
+   "text": "I followed the guards to the clock tower. But what I found underground was worse than prison.",
+   "say": "(worried) I followed the guards to the clock tower. But what I found underground was worse than prison.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "consequence",
+   "scene": "Leo sneaks into the subterranean cavern beneath the clock tower and peers down at a vast lab.",
+   "emotions": {
+    "Leo": "shocked"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Leo"
+    ],
+    "face": "shocked",
+    "action": "think",
+    "camera": "high",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "shocked"
+    }
+   }
+  },
+  {
+   "text": "Every tear ever collected was stored inside a glass bottle.",
+   "say": "(worried) Every tear ever collected was stored inside a glass bottle.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "consequence",
+   "scene": "Thousands of glowing golden glass bottles line endless subterranean shelves.",
+   "emotions": {
+    "Leo": "confused"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Leo"
+    ],
+    "face": "confused",
+    "action": "walk",
+    "camera": "wide",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "confused"
+    }
+   }
+  },
+  {
+   "text": "ELENA — LEO AND AVA’S MOTHER.",
+   "say": "(worried) ELENA — LEO AND AVA’S MOTHER.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "Leo inspects a shelf label glowing with his missing mother's full name.",
+   "emotions": {
+    "Leo": "shocked"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Leo"
+    ],
+    "face": "shocked",
+    "action": "pickup",
+    "camera": "close",
+    "prop": {
+     "type": "screen",
+     "text": "ELENA — LEO AND AVA'S MOTHER"
+    },
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "shocked"
+    }
+   }
+  },
+  {
+   "text": "Mom…?",
+   "say": "(sad) Mom…?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "Leo trembles as he holds the glowing golden glass bottle in his hands.",
+   "emotions": {
+    "Leo": "sob"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Leo"
+    ],
+    "face": "sob",
+    "action": "shiver",
+    "camera": "eye",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "sob"
+    }
+   }
+  },
+  {
+   "text": "Leo… if you can hear me… don’t let him take Ava’s memories too.",
+   "say": "(worried) Leo… if you can hear me… don’t let him take Ava’s memories too.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "A faint echo of his mother's voice emanates from the glowing tear bottle in Leo's hands.",
+   "emotions": {
+    "Leo": "surprised",
+    "Mom": "sad"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Leo",
+     "Mom"
+    ],
+    "face": "surprised",
+    "action": "talk",
+    "camera": "ots",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "surprised",
+     "Mom": "sad"
+    }
+   }
+  },
+  {
+   "text": "You’re not supposed to be here, boy.",
+   "say": "(serious) You’re not supposed to be here, boy.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "Mayor Blackwood emerges from the shadows behind Leo with an icy exhausted gaze.",
+   "emotions": {
+    "Mayor": "neutral",
+    "Leo": "scared"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Mayor",
+     "Leo"
+    ],
+    "face": "neutral",
+    "action": "walk",
+    "camera": "dutch",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Mayor": "neutral",
+     "Leo": "scared"
+    }
+   }
+  },
+  {
+   "text": "WHAT IS THE MAYOR HIDING?",
+   "say": "(nervous) WHAT IS THE MAYOR HIDING?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "The scene cuts abruptly to black with glowing warning text on screen.",
+   "emotions": {
+    "Leo": "scared"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Leo"
+    ],
+    "face": "scared",
+    "action": "still",
+    "camera": "close",
+    "prop": {
+     "type": "screen",
+     "text": "WHAT IS THE MAYOR HIDING?"
+    },
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "scared"
+    }
+   }
+  },
+  {
+   "text": "Put the bottle down, Leo.",
+   "say": "(serious) Put the bottle down, Leo.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Two tall armored guards step out from behind the Mayor, surrounding Leo in the red lab lights.",
+   "emotions": {
+    "Mayor": "neutral",
+    "Leo": "nervous",
+    "Officer": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Mayor",
+     "Leo",
+     "Officer"
+    ],
+    "face": "neutral",
+    "action": "talk",
+    "camera": "low",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Mayor": "neutral",
+     "Leo": "nervous",
+     "Officer": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Where is my mother? What did you do to her?",
+   "say": "(confident) Where is my mother? What did you do to her?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Leo confronts the Mayor bravely, demanding to know where his mother is held.",
+   "emotions": {
+    "Leo": "determined",
+    "Mayor": "neutral"
+   },
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Leo",
+     "Mayor"
+    ],
+    "face": "determined",
+    "action": "talk",
+    "camera": "close",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Leo": "determined",
+     "Mayor": "neutral"
+    }
+   }
+  },
+  {
+   "text": "I protected this town from something far worse than sadness.",
+   "say": "(sad) I protected this town from something far worse than sadness.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "explanation",
+   "scene": "Mayor Blackwood steps closer slowly, explaining his tragic belief about protecting the city.",
+   "emotions": {
+    "Mayor": "sad",
+    "Leo": "confused"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "lab",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Mayor",
+     "Leo"
+    ],
+    "face": "sad",
+    "action": "walk",
+    "camera": "ots",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Mayor": "sad",
+     "Leo": "confused"
+    }
+   }
+  },
+  {
+   "text": "Then I saw her photograph. The mayor had a daughter. She died ten years ago. After that, he couldn’t stop crying.",
+   "say": "(sad) Then I saw her photograph. The mayor had a daughter. She died ten years ago. After that, he couldn’t stop crying.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "explanation",
+   "scene": "A spotlight highlights an old framed photo of a young girl inside the Mayor's private chamber.",
+   "emotions": {
+    "Mayor": "sad",
+    "Leo": "shocked"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "vault",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Mayor",
+     "Leo"
+    ],
+    "face": "sad",
+    "action": "think",
+    "camera": "push",
+    "monster": [],
+    "trans": "whip",
+    "faces": {
+     "Mayor": "sad",
+     "Leo": "shocked"
+    }
+   }
+  },
+  {
+   "text": "I just wanted to hear her voice one more time.",
+   "say": "(sad) I just wanted to hear her voice one more time.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "explanation",
+   "scene": "Flashback to ten years ago as a younger Mayor weeps uncontrollably at his sick daughter's bedside.",
+   "emotions": {
+    "Mayor": "sob"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "hospital",
+    "time": "day",
+    "mood": "sad",
+    "cast": [
+     "Mayor"
+    ],
+    "face": "sob",
+    "action": "cry",
+    "camera": "close",
+    "monster": [],
+    "trans": "cut",
+    "faces": {
+     "Mayor": "sob"
+    }
+   }
+  }
+ ],
+ "word_count": 219,
+ "est_seconds": 64.4,
+ "tail_hold": 2.5,
+ "upload": {
+  "title": "The Town That Stole Everyone's Tears #Shorts",
+  "description": "In a foggy town where crying is forbidden, Leo's sister is arrested for shedding a single tear. Leo uncovers a dark secret underground laboratory hidden beneath the clock tower.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "roblox",
+   "roblox story",
+   "animation",
+   "horror",
+   "mystery",
+   "drama",
+   "cinematic",
+   "tear collector",
+   "grayhaven",
+   "animated story",
+   "roblox story"
+  ]
+ },
+ "owner_text": "THE TOWN THAT STOLE EVERYONE’S TEARS\nGenre: Supernatural Horror / Mystery / Emotional Drama\nFormat: In This Town – Roblox Cinematic Story\nLanguage: English\nAspect Ratio: 9:16 Vertical\nTarget Duration: 1:10–1:20 each episode\nNarration: First-person storytelling, with character dialogue\nEnding: Emotional twist + meaningful message\n\nCHARACTER DESIGN AND CONSISTENCY\nIMPORTANT: Maintain the exact same character appearance, clothes, hair, body proportions, and accessories throughout both episodes.\n\n1. LEO — Main Character\n• Age: 12\n• Black messy hair.\n• Dark brown eyes.\n• Red hoodie, black pants, white sneakers.\n• Small scar above his left eyebrow.\n• Personality: Brave but sensitive.\n• Facial expressions: Curious, frightened, confused, crying, determined.\n\n2. AVA — Leo’s Little Sister\n• Age: 8\n• Shoulder-length brown hair.\n• Blue eyes.\n• Yellow sweater, denim skirt, white shoes.\n• Carries a small teddy bear.\n• Personality: Innocent, emotional, easily frightened.\n\n3. MAYOR BLACKWOOD — Main Antagonist\n• Age: 55\n• Gray slicked-back hair.\n• Black suit, red tie.\n• Pale face, dark tired eyes.\n• Carries a golden pocket watch.\n• Personality: Calm, manipulative, emotionally broken.\n• Never smiles. His eyes should look exhausted rather than purely evil.\n\n4. MOTHER — Elena\n• Age: 35\n• Long dark brown hair.\n• Beige cardigan, white blouse.\n• Gentle facial expressions.\n• Looks exhausted and frightened in the tower.\n\n5. THE TEAR COLLECTORS\n• Tall guards wearing black uniforms.\n• Featureless black masks with glowing red eye slits.\n• Carry transparent glass containers.\n• Move in synchronized, robotic movements.\n• No dialogue. Only mechanical breathing.\n\nWORLD DESIGN\nTown: GRAYHAVEN\nVisual identity:\n• Old European-inspired town.\n• Narrow cobblestone streets.\n• Victorian-style houses.\n• Black street lamps.\n• Large clock tower in the town center.\n• Constant gray fog.\n• Muted colors, except red warning lights.\n\nImportant locations\n1. Leo’s House: Small two-story house, old family photographs, warm interior lighting.\n2. Town Square: Large public clock, warning sirens, citizens walking with emotionless faces.\n3. School: Old school building, gray walls, fluorescent lights.\n4. Clock Tower: Huge mechanical clock, underground laboratory, thousands of glass bottles containing glowing golden tears.\n5. Underground Prison: Glass chambers where people who refuse to surrender their memories are kept.\n\nPART 1 — THE FIRST TEAR\nEstimated duration: 1:15\n\nSCENE 1 — THE HOOK\nTIME: 0:00–0:08\n\nLOCATION: Grayhaven Town Square — Night.\n\nCAMERA:\n• Extreme close-up of a child’s eye.\n• A tear slowly rolls down the cheek.\n• Before it reaches the chin, a mechanical hand suddenly catches it inside a glass vial.\n• Smash cut to a giant clock tower.\n• Red warning lights flash across the entire town.\n\nLIGHTING: Dark blue moonlight with intense red flashing lights.\n\nSOUND: One loud alarm, followed by a heartbeat.\n\nNARRATOR (LEO) — terrified, urgent, serious:\n“In my town, crying is illegal. And yesterday, I watched the police arrest my eight-year-old sister… for shedding ONE tear.”\n\nTRANSITION: Fast zoom into Leo’s frightened face.\n\nSCENE 2 — THE LAW\nTIME: 0:08–0:21\n\nLOCATION: Grayhaven streets — Morning.\n\nCAMERA:\n• Wide aerial shot of the town.\n• Citizens walking silently.\n• A mother accidentally drops a photograph.\n• Her eyes become watery, but she quickly wipes them.\n• A Tear Collector turns its head toward her.\n\nNARRATOR — calm but unsettling:\n“Mayor Blackwood created this law ten years ago. Nobody was allowed to cry. Not at funerals. Not at hospitals. Not even when someone they loved disappeared.”\n\nCUT TO: A large digital sign above the town square.\n\nON-SCREEN TEXT:\n“LAW NO. 01: EVERY TEAR BELONGS TO THE MAYOR.”\n\nCAMERA: Slow push toward the sign.\n\nSOUND: Deep mechanical ticking.\n\nSCENE 3 — THE FAMILY\nTIME: 0:21–0:33\n\nLOCATION: Leo’s bedroom — Evening.\n\nLIGHTING: Warm yellow lamp, soft shadows.\n\nCAMERA:\n• Medium shot of Leo sitting beside Ava.\n• Ava holds a teddy bear.\n• An old photograph of their mother sits on the bedside table.\n• Ava looks at the photograph with a confused expression.\n\nAVA — innocent, quiet, sad:\n“Leo… what did Mom’s voice sound like?”\n\nLEO — surprised, trying to smile:\n“You don’t remember?”\n\nAVA — eyes beginning to water:\n“I remember her face… but I can’t remember her voice.”\n\nCAMERA: Extreme close-up of Leo’s face. His smile disappears.\n\nNARRATOR — emotional, quiet:\n“Our mother disappeared three years ago. And every month, Ava remembers a little less about her.”\n\nSCENE 4 — THE ARREST\nTIME: 0:33–0:47\n\nLOCATION: Town Square — Next morning.\n\nLIGHTING: Cold gray daylight.\n\nCAMERA:\n• Tracking shot following Ava and Leo walking through the square.\n• Ava sees a little girl hugging her mother.\n• She stops and looks at them.\n• A tear falls from Ava’s right eye.\n\nSOUND: Sudden silence.\n\nSFX: RED WARNING SIREN.\n\nON-SCREEN TEXT:\n“EMOTIONAL VIOLATION DETECTED.”\n\nCAMERA:\n• Two Tear Collectors turn simultaneously.\n• Low-angle shot as they approach.\n• One guard grabs Ava’s arm.\n\nAVA — screaming, terrified:\n“LEO! HELP ME!”\n\nLEO — angry, desperate:\n“LET HER GO! SHE’S JUST A CHILD!”\n\nACTION:\n• Leo tries to pull Ava away.\n• One guard pushes him to the ground.\n• Ava is dragged toward a black vehicle.\n\nSCENE 5 — THE DISCOVERY\nTIME: 0:47–1:05\n\nLOCATION: Clock Tower — Underground Laboratory, Night.\n\nLIGHTING: Dark environment illuminated by thousands of glowing golden glass bottles.\n\nCAMERA:\n• Leo sneaks through a metal ventilation entrance.\n• Over-the-shoulder shot as he looks down at a massive laboratory.\n• Slow panoramic camera movement revealing thousands of bottles.\n• Each bottle has a citizen’s name written on it.\n\nNARRATOR — whispering, shocked:\n“I followed the guards to the clock tower. But what I found underground was worse than prison. Every tear ever collected was stored inside a glass bottle.”\n\nACTION:\n• Leo walks toward a shelf.\n• He notices one bottle with a familiar name.\n• Extreme close-up of its label.\n\nON-SCREEN LABEL:\n“ELENA — LEO AND AVA’S MOTHER.”\n\nLEO — whispering, trembling:\n“Mom…?”\n\nSCENE 6 — THE CLIFFHANGER\nTIME: 1:05–1:16\n\nLOCATION: Underground Laboratory — Same shelf.\n\nCAMERA:\n• Leo slowly picks up the bottle.\n• Golden light reflects in his eyes.\n• A faint woman’s voice comes from inside.\n\nMOTHER — faint, emotional, desperate:\n“Leo… if you can hear me… don’t let him take Ava’s memories too.”\n\nCAMERA:\n• Leo drops the bottle slightly but catches it.\n• Behind him, a shadow appears.\n• Slow camera rotation reveals Mayor Blackwood standing in the darkness.\n\nMAYOR BLACKWOOD — calm, cold:\n“You’re not supposed to be here, boy.”\n\nCUT TO BLACK.\n\nON-SCREEN TEXT:\n“WHAT IS THE MAYOR HIDING?”\n\nEND OF PART 1.\n\nPART 2 — THE MAYOR’S SECRET\nEstimated duration: 1:15\n\nSCENE 1 — CAUGHT\nTIME: 0:00–0:12\n\nLOCATION: Underground Laboratory.\n\nLIGHTING: Red emergency lights mixed with golden bottle reflections.\n\nCAMERA:\n• Start with a close-up of Mayor Blackwood’s eyes.\n• Slowly pull back to reveal Leo holding his mother’s bottle.\n• Two guards emerge behind Leo.\n\nMAYOR BLACKWOOD — emotionless, intimidating:\n“Put the bottle down, Leo.”\n\nLEO — frightened but determined:\n“Where is my mother? What did you do to her?”\n\nMAYOR — slowly approaching:\n“I protected this town from something far worse than sadness.”\n\nSOUND: Deep cinematic bass.\n\nSCENE 2 — THE SECRET\nTIME: 0:12–0:29\n\nLOCATION: Mayor’s private chamber inside the clock tower.\n\nLIGHTING: Dim golden light. A single spotlight illuminates an old photograph of a little girl.\n\nCAMERA:\n• Mayor walks toward the photograph.\n• Close-up of his trembling hand touching the frame.\n• Flashback transition with a warm, desaturated filter.\n\nNARRATOR — confused, slowly understanding:\n“Then I saw her photograph. The mayor had a daughter. She died ten years ago. After that, he couldn’t stop crying.”\n\nFLASHBACK:\n• A younger Mayor kneels beside his sick daughter’s hospital bed.\n• The little girl holds his hand.\n• Her monitor slowly goes silent.\n• The mayor breaks down crying.\n\nMAYOR — voice breaking during the flashback:\n“I just wanted to hear her voice one more time.”\n\nSCENE 3 — THE REAL PURPOSE\nTIME: 0:29–0:44",
+ "review": null
+}
