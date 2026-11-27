@@ -1,0 +1,861 @@
+{
+ "id": "2026-11-29-story-32",
+ "version": 1,
+ "story": {
+  "characters": [
+   {
+    "name": "Kaito",
+    "role": "Noah - 14 year old protagonist in blue hoodie",
+    "want": "To get money to cure his sick younger sister",
+    "personality": "Worried, caring, determined, cautious"
+   },
+   {
+    "name": "Mia",
+    "role": "Lily - Noah's 8 year old sick sister",
+    "want": "To get better and stay safe with her brother",
+    "personality": "Innocent, sweet, frightened"
+   },
+   {
+    "name": "Marcus",
+    "role": "Mr. Vale - 50 year old sinister banker",
+    "want": "To trap citizens into lifetime debt contracts",
+    "personality": "Calm, manipulative, confident, cold"
+   },
+   {
+    "name": "Grandpa",
+    "role": "Old Man Henry - 70 year old victim of the bank",
+    "want": "To warn others about the bank's traps",
+    "personality": "Regretful, exhausted, compassionate"
+   }
+  ]
+ },
+ "source": "Owner's own script",
+ "hook_type": {
+  "number": null,
+  "name": "format bank"
+ },
+ "format": {
+  "number": null,
+  "name": "Your script"
+ },
+ "title_working": "The Debt That Doubled Every Night",
+ "hook_text": "THE DOUBLING DEBT",
+ "hook_until": 2.6,
+ "music": "drift",
+ "music_gain": 0.3,
+ "world_rule": "The Debt That Doubled Every Night",
+ "lines": [
+  {
+   "text": "In this town, every coin you borrowed doubled every night.",
+   "say": "(worried) In this town, every coin you borrowed doubled every night.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 2,
+   "pause": 0.25,
+   "beat": "hook",
+   "scene": "A golden coin duplicates on a desk at midnight as Kaito watches in horror.",
+   "emotions": {
+    "Kaito": "shocked"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "shocked",
+    "action": "shock",
+    "camera": "close",
+    "trans": "cut",
+    "faces": {
+     "Kaito": "shocked"
+    }
+   }
+  },
+  {
+   "text": "And if you couldn't pay… the bank took something you could never get back.",
+   "say": "(nervous) And if you couldn't pay… the bank took something you could never get back.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "hook",
+   "scene": "Kaito turns toward the massive ringing bank clocktower looming over the town.",
+   "emotions": {
+    "Kaito": "scared"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "street",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "scared",
+    "action": "think",
+    "camera": "push",
+    "trans": "cut",
+    "faces": {
+     "Kaito": "scared"
+    }
+   }
+  },
+  {
+   "text": "BLACKTHORN BANK",
+   "say": "(serious) BLACKTHORN BANK",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "Citizens line up outside the grand golden bank building in town square.",
+   "emotions": {
+    "Kaito": "neutral",
+    "Marcus": "smirk"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Kaito",
+     "Marcus"
+    ],
+    "face": "neutral",
+    "action": "walk",
+    "camera": "drone",
+    "prop": {
+     "type": "sign",
+     "text": "BLACKTHORN BANK"
+    },
+    "trans": "flash",
+    "faces": {
+     "Kaito": "neutral",
+     "Marcus": "smirk"
+    }
+   }
+  },
+  {
+   "text": "EVERY LOAN DOUBLES AT MIDNIGHT.",
+   "say": "(confident) EVERY LOAN DOUBLES AT MIDNIGHT.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "A terrifying sign displays the bank's midnight doubling rules.",
+   "emotions": {
+    "Marcus": "smirk"
+   },
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "cold",
+    "cast": [
+     "Marcus"
+    ],
+    "face": "smirk",
+    "action": "still",
+    "camera": "eye",
+    "prop": {
+     "type": "sign",
+     "text": "LOANS DOUBLE AT MIDNIGHT"
+    },
+    "trans": "cut",
+    "faces": {
+     "Marcus": "smirk"
+    }
+   }
+  },
+  {
+   "text": "Everyone knew the rule. Borrow ten coins, owe twenty tomorrow. Borrow twenty, owe forty. Nobody questioned the bank because everyone needed money.",
+   "say": "(worried) Everyone knew the rule. Borrow ten coins, owe twenty tomorrow. Borrow twenty, owe forty. Nobody questioned the bank because everyone needed money.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "setup",
+   "scene": "Poor citizens count their tiny coins while Marcus watches coldly from his balcony.",
+   "emotions": {
+    "Kaito": "worried",
+    "Marcus": "neutral"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Kaito",
+     "Marcus"
+    ],
+    "face": "worried",
+    "action": "walk",
+    "camera": "wide",
+    "trans": "cut",
+    "faces": {
+     "Kaito": "worried",
+     "Marcus": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Noah… will I get better soon?",
+   "say": "(sad) Noah… will I get better soon?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "goal",
+   "scene": "Mia lies in bed clutching her teddy bear, looking weakly up at Kaito.",
+   "emotions": {
+    "Mia": "sad",
+    "Kaito": "worried"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Mia",
+     "Kaito"
+    ],
+    "face": "sad",
+    "action": "talk",
+    "camera": "close",
+    "trans": "cut",
+    "faces": {
+     "Mia": "sad",
+     "Kaito": "worried"
+    }
+   }
+  },
+  {
+   "text": "Of course. I'll find a way. I promise.",
+   "say": "(confident) Of course. I'll find a way. I promise.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "goal",
+   "scene": "Kaito holds Mia's hand while trying to reassure her with a brave face.",
+   "emotions": {
+    "Kaito": "determined",
+    "Mia": "worried"
+   },
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Kaito",
+     "Mia"
+    ],
+    "face": "determined",
+    "action": "talk",
+    "camera": "ots",
+    "trans": "cut",
+    "faces": {
+     "Kaito": "determined",
+     "Mia": "worried"
+    }
+   }
+  },
+  {
+   "text": "My little sister needed medicine. I had only three coins. So I went to the bank.",
+   "say": "(sad) My little sister needed medicine. I had only three coins. So I went to the bank.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "goal",
+   "scene": "Kaito looks inside his almost empty coin jar with only three coins left.",
+   "emotions": {
+    "Kaito": "sad"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "sad",
+    "action": "pickup",
+    "camera": "low",
+    "trans": "whip",
+    "faces": {
+     "Kaito": "sad"
+    }
+   }
+  },
+  {
+   "text": "Please. I need ten coins for my sister's medicine.",
+   "say": "(nervous) Please. I need ten coins for my sister's medicine.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Kaito approaches Marcus's huge desk inside the grand bank main hall.",
+   "emotions": {
+    "Kaito": "nervous",
+    "Marcus": "neutral"
+   },
+   "voice": {
+    "emotion": "nervous",
+    "tags": "(nervous)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "vault",
+    "time": "day",
+    "mood": "cold",
+    "cast": [
+     "Kaito",
+     "Marcus"
+    ],
+    "face": "nervous",
+    "action": "talk",
+    "camera": "low",
+    "trans": "cut",
+    "faces": {
+     "Kaito": "nervous",
+     "Marcus": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Ten coins today. Twenty tomorrow. Forty the next day. Do you agree?",
+   "say": "(confident) Ten coins today. Twenty tomorrow. Forty the next day. Do you agree?",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Marcus smiles subtly while explaining the exponential debt terms to Kaito.",
+   "emotions": {
+    "Marcus": "smirk",
+    "Kaito": "confused"
+   },
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "vault",
+    "time": "day",
+    "mood": "cold",
+    "cast": [
+     "Marcus",
+     "Kaito"
+    ],
+    "face": "smirk",
+    "action": "talk",
+    "camera": "eye",
+    "trans": "cut",
+    "faces": {
+     "Marcus": "smirk",
+     "Kaito": "confused"
+    }
+   }
+  },
+  {
+   "text": "Yes… just give me the money.",
+   "say": "(confident) Yes… just give me the money.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "escalation",
+   "scene": "Desperate to help his sister, Kaito signs the contract without reading the tiny text.",
+   "emotions": {
+    "Kaito": "determined",
+    "Marcus": "smirk"
+   },
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "vault",
+    "time": "day",
+    "mood": "cold",
+    "cast": [
+     "Kaito",
+     "Marcus"
+    ],
+    "face": "determined",
+    "action": "agree",
+    "camera": "close",
+    "trans": "cut",
+    "faces": {
+     "Kaito": "determined",
+     "Marcus": "smirk"
+    }
+   }
+  },
+  {
+   "text": "10 → 20 → 40 → 80 → 160",
+   "say": "(worried) 10 → 20 → 40 → 80 → 160",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "consequence",
+   "scene": "At midnight, Kaito's loan balance rapidly multiplies exponentially on the document.",
+   "emotions": {
+    "Kaito": "shocked"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "vault",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "shocked",
+    "action": "shock",
+    "camera": "push",
+    "prop": {
+     "type": "screen",
+     "text": "10->20->40->80->160"
+    },
+    "trans": "cut",
+    "faces": {
+     "Kaito": "shocked"
+    }
+   }
+  },
+  {
+   "text": "WHAT?! I only borrowed ten coins!",
+   "say": "(angry) WHAT?! I only borrowed ten coins!",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "consequence",
+   "scene": "Kaito confronts Marcus in terror as red alarm lights flood the room.",
+   "emotions": {
+    "Kaito": "angry",
+    "Marcus": "neutral"
+   },
+   "voice": {
+    "emotion": "angry",
+    "tags": "(angry)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "vault",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Kaito",
+     "Marcus"
+    ],
+    "face": "angry",
+    "action": "talk",
+    "camera": "dutch",
+    "trans": "cut",
+    "faces": {
+     "Kaito": "angry",
+     "Marcus": "neutral"
+    }
+   }
+  },
+  {
+   "text": "You agreed to the terms.",
+   "say": "(serious) You agreed to the terms.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "consequence",
+   "scene": "Marcus sits calmly behind his desk without a single sign of empathy.",
+   "emotions": {
+    "Marcus": "neutral",
+    "Kaito": "scared"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "vault",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Marcus",
+     "Kaito"
+    ],
+    "face": "neutral",
+    "action": "talk",
+    "camera": "low",
+    "trans": "cut",
+    "faces": {
+     "Marcus": "neutral",
+     "Kaito": "scared"
+    }
+   }
+  },
+  {
+   "text": "IF PAYMENT IS IMPOSSIBLE, FUTURE EARNINGS WILL BE CLAIMED.",
+   "say": "(worried) IF PAYMENT IS IMPOSSIBLE, FUTURE EARNINGS WILL BE CLAIMED.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "consequence",
+   "scene": "A printing machine reveals the fine print stating future earnings will be claimed.",
+   "emotions": {
+    "Kaito": "shocked"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "vault",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "shocked",
+    "action": "shock",
+    "camera": "close",
+    "prop": {
+     "type": "screen",
+     "text": "FUTURE EARNINGS CLAIMED"
+    },
+    "trans": "cut",
+    "faces": {
+     "Kaito": "shocked"
+    }
+   }
+  },
+  {
+   "text": "Then I discovered the real punishment. The bank wasn't taking people's money. It was taking years of their future earnings.",
+   "say": "(worried) Then I discovered the real punishment. The bank wasn't taking people's money. It was taking years of their future earnings.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "explanation",
+   "scene": "Kaito realizes the bank's ultimate goal is taking decades of people's lives.",
+   "emotions": {
+    "Kaito": "shocked",
+    "Marcus": "smirk"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "vault",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Kaito",
+     "Marcus"
+    ],
+    "face": "shocked",
+    "action": "think",
+    "camera": "pull",
+    "trans": "cut",
+    "faces": {
+     "Kaito": "shocked",
+     "Marcus": "smirk"
+    }
+   }
+  },
+  {
+   "text": "I borrowed five coins forty years ago. I still haven't finished paying.",
+   "say": "(sad) I borrowed five coins forty years ago. I still haven't finished paying.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "Grandpa steps forward holding an old faded contract from forty years ago.",
+   "emotions": {
+    "Grandpa": "sad",
+    "Kaito": "shocked"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "vault",
+    "time": "night",
+    "mood": "cold",
+    "cast": [
+     "Grandpa",
+     "Kaito"
+    ],
+    "face": "sad",
+    "action": "talk",
+    "camera": "eye",
+    "trans": "cut",
+    "faces": {
+     "Grandpa": "sad",
+     "Kaito": "shocked"
+    }
+   }
+  },
+  {
+   "text": "Forty years?!",
+   "say": "(worried) Forty years?!",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "Kaito stares in horror at Grandpa's endless remaining balance statement.",
+   "emotions": {
+    "Kaito": "shocked",
+    "Grandpa": "sad"
+   },
+   "voice": {
+    "emotion": "worried",
+    "tags": "(worried)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "vault",
+    "time": "night",
+    "mood": "danger",
+    "cast": [
+     "Kaito",
+     "Grandpa"
+    ],
+    "face": "shocked",
+    "action": "shock",
+    "camera": "close",
+    "trans": "cut",
+    "faces": {
+     "Kaito": "shocked",
+     "Grandpa": "sad"
+    }
+   }
+  },
+  {
+   "text": "I thought I was borrowing money. I was borrowing my future.",
+   "say": "(sad) I thought I was borrowing money. I was borrowing my future.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "twist",
+   "scene": "Grandpa looks down in grief while Kaito looks around at thousands of trapped contracts.",
+   "emotions": {
+    "Grandpa": "sad",
+    "Kaito": "determined"
+   },
+   "voice": {
+    "emotion": "sad",
+    "tags": "(sad)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "vault",
+    "time": "night",
+    "mood": "sad",
+    "cast": [
+     "Grandpa",
+     "Kaito"
+    ],
+    "face": "sad",
+    "action": "talk",
+    "camera": "wide",
+    "trans": "cut",
+    "faces": {
+     "Grandpa": "sad",
+     "Kaito": "determined"
+    }
+   }
+  },
+  {
+   "text": "That day, I learned something. Borrowing isn't always wrong. But never borrow without understanding what you'll owe.",
+   "say": "(confident) That day, I learned something. Borrowing isn't always wrong. But never borrow without understanding what you'll owe.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "choice",
+   "scene": "Morning sun enters the room as Kaito places coins safely into Mia's savings jar.",
+   "emotions": {
+    "Kaito": "determined",
+    "Mia": "happy"
+   },
+   "voice": {
+    "emotion": "confident",
+    "tags": "(confident)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Kaito",
+     "Mia"
+    ],
+    "face": "determined",
+    "action": "pickup",
+    "camera": "eye",
+    "trans": "flash",
+    "faces": {
+     "Kaito": "determined",
+     "Mia": "happy"
+    }
+   }
+  },
+  {
+   "text": "Because sometimes, the smallest loan can cost you the biggest part of your future.",
+   "say": "(happy) Because sometimes, the smallest loan can cost you the biggest part of your future.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "resolution",
+   "scene": "Mia smiles happily and holds Kaito's hand as warm sunlight fills the bedroom.",
+   "emotions": {
+    "Mia": "happy",
+    "Kaito": "happy"
+   },
+   "voice": {
+    "emotion": "happy",
+    "tags": "(happy)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "bedroom",
+    "time": "day",
+    "mood": "win",
+    "cast": [
+     "Mia",
+     "Kaito"
+    ],
+    "face": "happy",
+    "action": "hug",
+    "camera": "close",
+    "trans": "cut",
+    "faces": {
+     "Mia": "happy",
+     "Kaito": "happy"
+    }
+   }
+  },
+  {
+   "text": "UNDERSTAND THE PRICE BEFORE YOU BORROW.",
+   "say": "(serious) UNDERSTAND THE PRICE BEFORE YOU BORROW.",
+   "speaker": "narrator",
+   "speed": 0.94,
+   "volume": 0,
+   "pause": 0.25,
+   "beat": "ending",
+   "scene": "The distant bank clock looms over Blackthorn Town with a clear warning on screen.",
+   "emotions": {
+    "Kaito": "neutral"
+   },
+   "voice": {
+    "emotion": "serious",
+    "tags": "(serious)"
+   },
+   "acting": {},
+   "shot": {
+    "set": "town",
+    "time": "day",
+    "mood": "day",
+    "cast": [
+     "Kaito"
+    ],
+    "face": "neutral",
+    "action": "still",
+    "camera": "drone",
+    "prop": {
+     "type": "sign",
+     "text": "UNDERSTAND THE PRICE BEFORE YOU BORROW"
+    },
+    "trans": "cut",
+    "faces": {
+     "Kaito": "neutral"
+    }
+   }
+  }
+ ],
+ "word_count": 221,
+ "est_seconds": 65.0,
+ "tail_hold": 2.5,
+ "upload": {
+  "title": "The Debt That Doubled Every Night #Shorts",
+  "description": "Noah borrows money from Blackthorn Bank to save his sick sister, only to realize the horrifying truth behind the doubling debt contract.\nA cinematic Roblox story about debt, choices, and reading the fine print.\nOriginal animated story. Not affiliated with Roblox or any creator.\n#robloxstory #animatedstory #storytime #shorts",
+  "tags": [
+   "roblox",
+   "roblox drama",
+   "roblox story",
+   "roblox movie",
+   "cinematic",
+   "suspense",
+   "blackthorn bank",
+   "roblox mini movie",
+   "animated story",
+   "roblox story"
+  ]
+ },
+ "owner_text": "THE DEBT THAT DOUBLED EVERY NIGHT\nComplete Roblox Cinematic Story Script\nDuration: 1:15–1:20\nAspect Ratio: 9:16\nResolution: 1080 × 1920\nFPS: 30\nLanguage: English\nNarration: First-person, male youthful voice\nVisual Style: Cinematic Roblox 3D, expressive characters, dramatic lighting, realistic camera movements.\nCHARACTER REFERENCE — KEEP CONSISTENT\n1. NOAH — Protagonist\n14 years old.\nMessy dark brown hair.\nBlue hoodie, black pants, white sneakers.\nBrown eyes.\nThin build.\nExpressions: worried, hopeful, shocked, determined.\n2. LILY — Noah's younger sister\n8 years old.\nBlonde shoulder-length hair.\nPink sweater, blue skirt.\nHolds a small teddy bear.\nExpressions: innocent, sick, frightened, relieved.\n3. MR. VALE — The Banker\n50 years old.\nSlick black hair.\nExpensive black suit, gold tie.\nCarries a golden pocket watch.\nExpressions: calm, manipulative, confident, eventually shocked.\n4. OLD MAN HENRY — The Witness\n70 years old.\nGray hair and beard.\nBrown coat, old walking stick.\nLooks exhausted.\nExpressions: regretful, frightened, compassionate.\nSCENE 1 — THE HOOK\nTIME: 0:00–0:08\nLOCATION: Blackthorn Town — Main Street, Midnight.\nCAMERA AND ACTION:\nStart with an extreme close-up of a golden coin on a wooden table.\nA digital clock changes from 11:59 PM to 12:00 AM.\nThe coin suddenly splits into two identical coins.\nQuick zoom out reveals a terrified boy staring at his growing debt.\nIn the background, a huge bank clock begins ringing.\nLIGHTING:\nDark blue moonlight, flickering golden street lamps, sharp shadows.\nSFX: Clock ticking, metallic coin duplication, dramatic bass impact.\nNARRATOR (NOAH) — urgent, shocked:\n\"In this town, every coin you borrowed doubled every night. And if you couldn't pay… the bank took something you could never get back.\"\nTRANSITION: Smash cut to the bank's golden sign.\nSCENE 2 — THE TOWN RULE\nTIME: 0:08–0:19\nLOCATION: Blackthorn Town Square — Morning.\nCAMERA:\nWide aerial shot showing a wealthy-looking bank surrounded by poor houses.\nCitizens line up outside the bank.\nA man holds a small bag of coins while looking terrified.\nA bank employee stamps a document.\nON-SCREEN TEXT:\n\"BLACKTHORN BANK\"\n\"EVERY LOAN DOUBLES AT MIDNIGHT.\"\nNARRATOR — mysterious, explanatory:\n\"Everyone knew the rule. Borrow ten coins, owe twenty tomorrow. Borrow twenty, owe forty. Nobody questioned the bank because everyone needed money.\"\nVISUAL ACTION:\nA poor citizen looks at his empty wallet. A wealthy banker watches from a balcony.\nSCENE 3 — THE REASON\nTIME: 0:19–0:31\nLOCATION: Noah's small house — Evening.\nLIGHTING: Warm, dim candlelight.\nCAMERA:\nMedium shot of Noah sitting beside Lily's bed.\nLily is covered with a blanket.\nShe coughs and holds her teddy bear.\nNoah checks an almost empty coin jar.\nClose-up: only three coins remain.\nLILY — weak, innocent voice:\n\"Noah… will I get better soon?\"\nNOAH — trying to smile, but worried:\n\"Of course. I'll find a way. I promise.\"\nNARRATOR — emotional, quiet:\n\"My little sister needed medicine. I had only three coins. So I went to the bank.\"\nTRANSITION: Slow fade to the bank entrance.\nSCENE 4 — THE LOAN\nTIME: 0:31–0:43\nLOCATION: Blackthorn Bank — Main Counter.\nLIGHTING: Bright golden chandeliers, cold shadows behind the banker.\nCAMERA:\nLow-angle shot of Mr. Vale sitting behind an enormous wooden desk.\nNoah approaches nervously.\nOver-the-shoulder shot showing a loan document.\nNOAH — desperate:\n\"Please. I need ten coins for my sister's medicine.\"\nMR. VALE — calm, smiling slightly:\n\"Ten coins today. Twenty tomorrow. Forty the next day. Do you agree?\"\nNOAH — confused but desperate:\n\"Yes… just give me the money.\"\nACTION:\nMr. Vale slides the contract toward Noah.\nClose-up of Noah signing without reading the smaller text.\nSCENE 5 — THE DISCOVERY\nTIME: 0:43–0:57\nLOCATION: Bank — Midnight.\nLIGHTING: Red emergency lights, dark blue shadows.\nCAMERA:\nExtreme close-up of Noah's debt statement.\nShow the number changing rapidly:\n\"10 → 20 → 40 → 80 → 160\"\nNoah's eyes widen.\nHe looks at Mr. Vale.\nNOAH — panicking:\n\"WHAT?! I only borrowed ten coins!\"\nMR. VALE — emotionless:\n\"You agreed to the terms.\"\nACTION:\nA mechanical machine prints a document.\nClose-up reveals a hidden clause:\n\"IF PAYMENT IS IMPOSSIBLE, FUTURE EARNINGS WILL BE CLAIMED.\"\nNARRATOR — shocked, serious:\n\"Then I discovered the real punishment. The bank wasn't taking people's money. It was taking years of their future earnings.\"\nSCENE 6 — THE TWIST\nTIME: 0:57–1:10\nLOCATION: Bank — Hall of Contracts.\nLIGHTING: Dim golden light, long shadows.\nCAMERA:\nAn old man approaches Noah.\nHe holds an old document.\nClose-up reveals his name and a remaining balance.\nOLD MAN HENRY — trembling, regretful:\n\"I borrowed five coins forty years ago. I still haven't finished paying.\"\nNOAH — horrified:\n\"Forty years?!\"\nOLD MAN HENRY — sad, looking down:\n\"I thought I was borrowing money. I was borrowing my future.\"\nCAMERA:\nNoah looks at the hundreds of contracts on the wall.\nHis frightened expression changes into determination.\nSCENE 7 — THE FINAL MESSAGE\nTIME: 1:10–1:20\nLOCATION: Noah's house — Sunrise.\nCAMERA:\nNoah sits beside Lily.\nHe places the remaining coins into a small savings jar.\nLily smiles and holds his hand.\nCut to the bank's giant clock in the distance.\nNARRATOR — calm, sincere, meaningful:\n\"That day, I learned something. Borrowing isn't always wrong. But never borrow without understanding what you'll owe. Because sometimes, the smallest loan can cost you the biggest part of your future.\"\nFINAL ON-SCREEN TEXT:\n\"UNDERSTAND THE PRICE BEFORE YOU BORROW.\"\nEND.",
+ "review": null
+}
