@@ -30,3 +30,4 @@ video_id,decision,notes,approved_by,decided_at_pht,file,file_sha256
 2026-11-27-story-23,approve,,VeraSys00,2026-11-25T16:26:59+08:00,output\2026-11-27-story-23\final.mp4,f53f47a71f937ead71471fd907dc419be30ded02fead39a56b7cd59ff010f394
 2026-11-28-story-27,approve,,VeraSys00,2026-11-26T21:48:37+08:00,output/2026-11-28-story-27/final.mp4,7ab40ab48a08b78835f910e9b9c015a467d832f0f7b1d18c78911a76baf9c3b2
 2026-11-28-story-28,approve,,VeraSys00,2026-11-27T02:12:29+08:00,output/2026-11-28-story-28/final.mp4,563592a7d9bbf23f685a0f24ab23e414402b216acd9616630c87a5f8abfa6aba
+2026-11-29-story-32,approve,,VeraSys00,2026-11-27T20:29:57+08:00,output/2026-11-29-story-32/final.mp4,cba50683d70026a5e72547259e22574701b059b8ff3ff61dd7463ecf1270c0fe
