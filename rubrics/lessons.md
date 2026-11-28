@@ -21,3 +21,4 @@ Keep each lesson to one short line. Newest at the bottom.
 - Show the stimulus first, then the reaction (what the character sees comes before their face).
 - 2026-11-25: Owner rejected stories 18-20 as pointless with no hook: never ship a soft "Before you…" or "Nobody tells you…" opener or a moral-lesson ending; line 1 must shock or promise something concrete, and the twist must be surprising AND make sense.
 - 2026-11-25: Owner: endings felt cut and the plot unclear. State the twist in plain words ("he was my dad"), explain the backstory, add a 3-5 line resolution; 60-90 s (up to 2 min) is fine; tail_hold >= 2.5 s.
+- 2026-11-28: Check failed again and again: line N: monster 'Mayor' must also be in shot.cast
